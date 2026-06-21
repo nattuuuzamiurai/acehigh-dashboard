@@ -108,6 +108,7 @@
     .task-name { cursor:pointer; display:flex; align-items:center; gap:6px; font-weight:500; }
     .task-name:hover { color:var(--acc); }
     .ta { font-size:.6em; color:#ccc; transition:transform .2s; flex-shrink:0; }
+    .task-name-input { border:1px solid var(--acc); border-radius:4px; padding:2px 7px; font-size:.88em; font-family:inherit; color:var(--txt); background:#fff; outline:none; box-shadow:0 0 0 3px rgba(102,116,240,.12); min-width:150px; font-weight:500; }
     tr.open .ta { transform:rotate(90deg); color:var(--acc); }
     .dr { display:none; }
     .dr.open { display:table-row; }
@@ -243,6 +244,8 @@
     <div class="ni" onclick="showPage('revenue')"><span class="ni-ic">¥</span>収益管理</div>
     <div class="ni" onclick="showPage('reports')"><span class="ni-ic">▤</span>AIレポート</div>
     <div class="ni" onclick="showPage('projects')"><span class="ni-ic">◈</span>プロジェクト管理</div>
+    <div class="ng">ツール</div>
+    <div class="ni" onclick="showPage('kyotei')"><span class="ni-ic">🚤</span>競艇予測</div>
     <div class="ng">システム</div>
     <div class="ni" onclick="showPage('settings')"><span class="ni-ic">⚙</span>設定・同期</div>
   </nav>
@@ -308,7 +311,7 @@
           <tbody id="main-tbody">
             <!-- t6 -->
             <tr class="tr" data-id="t6" data-priority="1" data-cat="新規事業">
-              <td><div class="task-name" onclick="toggleDetail('t6')"><span class="ta">▶</span>ホブデ英語スクール ドメイン取得</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t6')" ondblclick="editTaskName(event,'t6')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>ホブデ英語スクール ドメイン取得</div></td>
               <td><span class="cat-tag">新規事業</span></td><td><span class="badge high">高</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t6')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t6')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t6-bar" style="width:0%"></div></div></div></td>
@@ -321,7 +324,7 @@
             </div></td></tr>
             <!-- t31 -->
             <tr class="tr" data-id="t31" data-priority="1" data-cat="軽配送事業">
-              <td><div class="task-name" onclick="toggleDetail('t31')"><span class="ta">▶</span>メタ広告の数値分析</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t31')" ondblclick="editTaskName(event,'t31')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>メタ広告の数値分析</div></td>
               <td><span class="cat-tag">軽配送事業</span></td><td><span class="badge high">高</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t31')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t31')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t31-bar" style="width:0%"></div></div></div></td>
@@ -334,7 +337,7 @@
             </div></td></tr>
             <!-- t36 -->
             <tr class="tr" data-id="t36" data-priority="1" data-cat="軽配送事業">
-              <td><div class="task-name" onclick="toggleDetail('t36')"><span class="ta">▶</span>6月分エース杯メタ広告分析</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t36')" ondblclick="editTaskName(event,'t36')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>6月分エース杯メタ広告分析</div></td>
               <td><span class="cat-tag">軽配送事業</span></td><td><span class="badge high">高</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t36')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t36')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t36-bar" style="width:0%"></div></div></div></td>
@@ -347,7 +350,7 @@
             </div></td></tr>
             <!-- t1 -->
             <tr class="tr" data-id="t1" data-priority="2" data-cat="新規事業">
-              <td><div class="task-name" onclick="toggleDetail('t1')"><span class="ta">▶</span>デジタル遺品整理</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t1')" ondblclick="editTaskName(event,'t1')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>デジタル遺品整理</div></td>
               <td><span class="cat-tag">新規事業</span></td><td><span class="badge mid">中</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t1')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t1')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t1-bar" style="width:0%"></div></div></div></td>
@@ -360,7 +363,7 @@
             </div></td></tr>
             <!-- t37 -->
             <tr class="tr" data-id="t37" data-priority="2" data-cat="開発">
-              <td><div class="task-name" onclick="toggleDetail('t37')"><span class="ta">▶</span>携帯からクラウドコードAIを操作</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t37')" ondblclick="editTaskName(event,'t37')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>携帯からクラウドコードAIを操作</div></td>
               <td><span class="cat-tag">開発</span></td><td><span class="badge mid">中</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t37')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t37')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t37-bar" style="width:0%"></div></div></div></td>
@@ -373,7 +376,7 @@
             </div></td></tr>
             <!-- t38 -->
             <tr class="tr" data-id="t38" data-priority="2" data-cat="アプリ開発">
-              <td><div class="task-name" onclick="toggleDetail('t38')"><span class="ta">▶</span>開発・収益状況ダッシュボード作成</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t38')" ondblclick="editTaskName(event,'t38')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>開発・収益状況ダッシュボード作成</div></td>
               <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge mid">中</span></td>
               <td><select class="ss s-wip" onchange="onStatus(this,'t38')"><option value="s-todo">未着手</option><option value="s-wip" selected>進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t38')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t38-bar" style="width:0%"></div></div></div></td>
@@ -386,7 +389,7 @@
             </div></td></tr>
             <!-- t2 -->
             <tr class="tr" data-id="t2" data-priority="3" data-cat="新規事業">
-              <td><div class="task-name" onclick="toggleDetail('t2')"><span class="ta">▶</span>警備会社</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t2')" ondblclick="editTaskName(event,'t2')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>警備会社</div></td>
               <td><span class="cat-tag">新規事業</span></td><td><span class="badge low">低</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t2')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t2')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t2-bar" style="width:0%"></div></div></div></td>
@@ -399,7 +402,7 @@
             </div></td></tr>
             <!-- t4 -->
             <tr class="tr" data-id="t4" data-priority="3" data-cat="アプリ開発">
-              <td><div class="task-name" onclick="toggleDetail('t4')"><span class="ta">▶</span>連絡先の細分化保存アプリ開発</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t4')" ondblclick="editTaskName(event,'t4')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>連絡先の細分化保存アプリ開発</div></td>
               <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge low">低</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t4')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t4')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t4-bar" style="width:0%"></div></div></div></td>
@@ -412,7 +415,7 @@
             </div></td></tr>
             <!-- t7 -->
             <tr class="tr" data-id="t7" data-priority="3" data-cat="新規事業">
-              <td><div class="task-name" onclick="toggleDetail('t7')"><span class="ta">▶</span>Xのアカウント運用</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t7')" ondblclick="editTaskName(event,'t7')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>Xのアカウント運用</div></td>
               <td><span class="cat-tag">新規事業</span></td><td><span class="badge low">低</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t7')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t7')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t7-bar" style="width:0%"></div></div></div></td>
@@ -425,7 +428,7 @@
             </div></td></tr>
             <!-- t5 -->
             <tr class="tr" data-id="t5" data-priority="3" data-cat="アプリ開発">
-              <td><div class="task-name" onclick="toggleDetail('t5')"><span class="ta">▶</span>競艇予測ツール開発</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t5')" ondblclick="editTaskName(event,'t5')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>競艇予測ツール開発</div></td>
               <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge low">低</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t5')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t5')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t5-bar" style="width:0%"></div></div></div></td>
@@ -438,7 +441,7 @@
             </div></td></tr>
             <!-- t32 -->
             <tr class="tr" data-id="t32" data-priority="3" data-cat="新規事業">
-              <td><div class="task-name" onclick="toggleDetail('t32')"><span class="ta">▶</span>チャイぽの最適計算ツールの作成</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t32')" ondblclick="editTaskName(event,'t32')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>チャイぽの最適計算ツールの作成</div></td>
               <td><span class="cat-tag">新規事業</span></td><td><span class="badge low">低</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t32')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t32')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t32-bar" style="width:0%"></div></div></div></td>
@@ -451,7 +454,7 @@
             </div></td></tr>
             <!-- t34 -->
             <tr class="tr" data-id="t34" data-priority="3" data-cat="プライベート">
-              <td><div class="task-name" onclick="toggleDetail('t34')"><span class="ta">▶</span>自宅環境のWi-Fiのセキュリティー検証</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t34')" ondblclick="editTaskName(event,'t34')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>自宅環境のWi-Fiのセキュリティー検証</div></td>
               <td><span class="cat-tag">プライベート</span></td><td><span class="badge low">低</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t34')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t34')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t34-bar" style="width:0%"></div></div></div></td>
@@ -464,7 +467,7 @@
             </div></td></tr>
             <!-- t35 -->
             <tr class="tr" data-id="t35" data-priority="3" data-cat="プライベート">
-              <td><div class="task-name" onclick="toggleDetail('t35')"><span class="ta">▶</span>コンピューターディスプレイの増設</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t35')" ondblclick="editTaskName(event,'t35')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>コンピューターディスプレイの増設</div></td>
               <td><span class="cat-tag">プライベート</span></td><td><span class="badge low">低</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t35')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t35')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t35-bar" style="width:0%"></div></div></div></td>
@@ -477,7 +480,7 @@
             </div></td></tr>
             <!-- t33 -->
             <tr class="tr" data-id="t33" data-priority="4" data-cat="プライベート">
-              <td><div class="task-name" onclick="toggleDetail('t33')"><span class="ta">▶</span>家の家電ツール最適化</div></td>
+              <td><div class="task-name" onclick="toggleDetail('t33')" ondblclick="editTaskName(event,'t33')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>家の家電ツール最適化</div></td>
               <td><span class="cat-tag">プライベート</span></td><td><span class="badge routine">定例</span></td>
               <td><select class="ss s-todo" onchange="onStatus(this,'t33')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
               <td><div class="pw"><select class="ps" onchange="onProgress(this,'t33')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t33-bar" style="width:0%"></div></div></div></td>
@@ -585,6 +588,27 @@
         <span style="font-size:.78em;color:var(--mut);">/ダッシュボード追加 スキルで自動登録・更新</span>
       </div>
       <div class="proj-grid mt12" id="proj-grid"></div>
+    </div>
+
+    <!-- ===== 競艇予測 ===== -->
+    <div class="page" id="page-kyotei">
+      <div id="kyotei-check" style="padding:48px 24px;text-align:center;">
+        <div style="font-size:2.4rem;margin-bottom:14px;">🚤</div>
+        <div style="font-size:1.1em;font-weight:700;margin-bottom:8px;">競艇予測ツール ダッシュボード</div>
+        <div style="color:var(--mut);font-size:.87em;margin-bottom:20px;">ローカルサーバー（localhost:5050）に接続します</div>
+        <div id="kyotei-status" style="margin-bottom:18px;"></div>
+        <button class="btn bp" onclick="checkKyotei()" style="margin:0 auto;">接続 / 再接続</button>
+        <div style="margin-top:24px;background:#1e2235;color:#a8d8a8;font-family:monospace;font-size:.82em;padding:14px 20px;border-radius:8px;display:inline-block;text-align:left;line-height:1.8;">
+          # サーバーが起動していない場合:<br>
+          cd "~/cloude code/競艇予測ツール"<br>
+          .venv/bin/python dashboard.py
+        </div>
+      </div>
+      <iframe id="kyotei-frame"
+        src="about:blank"
+        style="width:100%;height:calc(100vh - 60px);border:none;display:none;"
+        onload="onKyoteiLoad(this)">
+      </iframe>
     </div>
 
     <!-- ===== SETTINGS ===== -->
@@ -714,7 +738,7 @@ function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',reports:'AIレポート',projects:'プロジェクト管理',settings:'設定・同期'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',reports:'AIレポート',projects:'プロジェクト管理',settings:'設定・同期',kyotei:'競艇予測ツール'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
@@ -722,6 +746,7 @@ function showPage(name) {
   if (name==='revenue') { renderRevenues(); renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown(); }
   if (name==='reports') renderReports();
   if (name==='projects') { renderProjectStats(); renderProjects(); }
+  if (name==='kyotei') checkKyotei();
 }
 
 // ===== TASKS =====
@@ -731,6 +756,7 @@ function toggleDetail(id) {
   if (!row||!dr) return;
   const open = row.classList.toggle('open');
   dr.classList.toggle('open', open);
+  dr.style.display = open ? '' : 'none';
 }
 
 function saveDetail(id, field, value) {
@@ -1215,9 +1241,60 @@ async function syncAll() {
   setSyncStatus('ok');
 }
 
+
+// ===== 競艇予測 =====
+async function checkKyotei() {
+  const frame  = document.getElementById('kyotei-frame');
+  const check  = document.getElementById('kyotei-check');
+  const status = document.getElementById('kyotei-status');
+  status.innerHTML = '<span style="color:var(--mut);">接続を確認中...</span>';
+  try {
+    await fetch('http://localhost:5050/', {mode:'no-cors', cache:'no-cache'});
+    // fetch が成功（opaque response）＝サーバー起動中
+    frame.src = 'http://localhost:5050/';
+    status.innerHTML = '<span style="color:var(--grn);">✓ サーバー起動中 — 読み込んでいます...</span>';
+  } catch(e) {
+    status.innerHTML = '<span style="color:var(--red);">✗ サーバーに接続できません。上記のコマンドで起動してください。</span>';
+    frame.style.display = 'none';
+    check.style.display  = '';
+  }
+}
+function onKyoteiLoad(iframe) {
+  // about:blank の初回ロードは無視
+  if (!iframe.src || iframe.src === 'about:blank') return;
+  const frame = document.getElementById('kyotei-frame');
+  const check = document.getElementById('kyotei-check');
+  frame.style.display = '';
+  check.style.display  = 'none';
+}
+
 function copySQL() {
   const sql = document.getElementById('sql-block').textContent;
   navigator.clipboard.writeText(sql).then(()=>{ const b=document.querySelector('.fs h3 .btn'); if(b){b.textContent='コピー済！'; setTimeout(()=>b.textContent='コピー',1500);}});
+}
+
+// ===== TASK NAME EDIT =====
+function editTaskName(e, id) {
+  e.stopPropagation();
+  const nameDiv = document.querySelector('tr[data-id="'+id+'"] .task-name');
+  if (!nameDiv || nameDiv.querySelector('input.task-name-input')) return;
+  const currentName = localStorage.getItem('db_'+id+'_name') || nameDiv.textContent.replace('▶','').trim();
+  const input = document.createElement('input');
+  input.type = 'text'; input.className = 'task-name-input'; input.value = currentName;
+  nameDiv.innerHTML = '<span class="ta">▶</span>';
+  nameDiv.appendChild(input);
+  input.focus(); input.select();
+  function commit() {
+    const n = input.value.trim() || currentName;
+    localStorage.setItem('db_'+id+'_name', n);
+    nameDiv.innerHTML = '<span class="ta">▶</span>' + n;
+    refreshOverview();
+  }
+  input.addEventListener('blur', commit);
+  input.addEventListener('keydown', ev => {
+    if (ev.key === 'Enter') { ev.preventDefault(); input.blur(); }
+    if (ev.key === 'Escape') { nameDiv.innerHTML = '<span class="ta">▶</span>' + currentName; }
+  });
 }
 
 // ===== INIT =====
@@ -1243,6 +1320,14 @@ window.addEventListener('DOMContentLoaded', async () => {
     const sd = localStorage.getItem('db_'+id+'_date');
     if (sd && di) di.value=sd;
     ['desc','tool','next'].forEach(f => { const sv2=localStorage.getItem('db_'+id+'_'+f); const e=document.getElementById(id+'-'+f); if(sv2&&e) e.value=sv2; });
+  });
+
+  // Restore saved task names
+  TASK_IDS.forEach(id => {
+    const saved = localStorage.getItem('db_'+id+'_name');
+    if (!saved) return;
+    const nd = document.querySelector('tr[data-id="'+id+'"] .task-name');
+    if (nd) nd.innerHTML = '<span class="ta">▶</span>' + saved;
   });
 
   updateDone();
