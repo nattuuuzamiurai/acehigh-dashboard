@@ -41,10 +41,6 @@
     .ni.active { background:rgba(129,140,248,.18); color:var(--sb-act); }
     .ni-ic { width:18px; text-align:center; flex-shrink:0; }
     .sb-foot { padding:12px 16px; border-top:1px solid rgba(255,255,255,.06); font-size:.76em; color:var(--sb-mut); }
-    .sync-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--sb-mut); margin-right:5px; vertical-align:middle; }
-    .sync-dot.green { background:#34d399; }
-    .sync-dot.red   { background:#f87171; }
-    .sync-dot.blue  { background:#60a5fa; }
 
     /* MAIN */
     #main { margin-left:var(--sw); flex:1; display:flex; flex-direction:column; }
@@ -52,7 +48,6 @@
     .tb-title { font-size:1.05em; font-weight:700; }
     .tb-right { display:flex; align-items:center; gap:12px; }
     .tb-date { font-size:.82em; color:var(--mut); }
-    .sync-badge { font-size:.75em; padding:3px 9px; border-radius:20px; background:var(--sur2); border:1px solid var(--bor); color:var(--mut); }
     #content { padding:22px 26px; flex:1; }
 
     /* PAGES */
@@ -181,22 +176,8 @@
     .mt-table th { background:var(--sb); color:var(--sb-text); }
     .mt-total td { background:var(--sur2); font-weight:700; border-top:2px solid var(--bor); }
 
-    /* REPORTS */
-    .rp-card { background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); padding:15px 18px; box-shadow:var(--sha); }
-    .rp-title { font-weight:700; margin-bottom:5px; }
-    .rp-body { font-size:.87em; color:#4b5563; line-height:1.65; white-space:pre-wrap; margin-top:7px; }
-    .rp-tag { display:inline-block; font-size:.71em; padding:1px 7px; border-radius:20px; background:#eef0fe; color:var(--acc); margin-right:4px; font-weight:500; }
-    .rp-meta { font-size:.77em; color:var(--mut); }
 
-    /* SETTINGS */
-    .sql-block { background:#1e2235; color:#a8d8a8; font-family:monospace; font-size:.82em; padding:14px; border-radius:8px; overflow-x:auto; white-space:pre; line-height:1.6; margin-top:8px; }
-    .conn-ok  { color:var(--grn); font-weight:600; }
-    .conn-err { color:var(--red); font-weight:600; }
-    .step-num { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:50%; background:var(--acc); color:#fff; font-size:.76em; font-weight:700; flex-shrink:0; }
-    .step { display:flex; gap:10px; align-items:flex-start; margin-bottom:16px; }
-    .step-body { flex:1; }
-    .step-title { font-weight:600; margin-bottom:4px; }
-    .step-desc { font-size:.85em; color:var(--mut); line-height:1.5; }
+    .rp-tag { display:inline-block; font-size:.71em; padding:1px 7px; border-radius:20px; background:#eef0fe; color:var(--acc); margin-right:4px; font-weight:500; }
 
     /* PROJECTS */
     .proj-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; }
@@ -229,6 +210,8 @@
     ::-webkit-scrollbar-thumb { background:var(--bor); border-radius:3px; }
   </style>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="kyotei_data.js" onerror="window.KYOTEI_DATA=null"></script>
 <body>
 
 <div id="sidebar">
@@ -242,17 +225,10 @@
     <div class="ng">管理</div>
     <div class="ni" onclick="showPage('tasks')"><span class="ni-ic">✓</span>タスク管理</div>
     <div class="ni" onclick="showPage('revenue')"><span class="ni-ic">¥</span>収益管理</div>
-    <div class="ni" onclick="showPage('reports')"><span class="ni-ic">▤</span>AIレポート</div>
     <div class="ni" onclick="showPage('projects')"><span class="ni-ic">◈</span>プロジェクト管理</div>
     <div class="ng">ツール</div>
     <div class="ni" onclick="showPage('kyotei')"><span class="ni-ic">🚤</span>競艇予測</div>
-    <div class="ng">システム</div>
-    <div class="ni" onclick="showPage('settings')"><span class="ni-ic">⚙</span>設定・同期</div>
   </nav>
-  <div class="sb-foot">
-    <span class="sync-dot" id="sync-dot"></span>
-    <span id="sync-label">ローカル保存</span>
-  </div>
 </div>
 
 <div id="main">
@@ -280,10 +256,6 @@
             <div class="c-val" id="ov-net">¥0</div>
             <div class="c-sub" id="ov-sub">収入 ¥0 / 支出 ¥0</div>
             <div class="rev-bar" id="ov-bar"></div>
-          </div>
-          <div class="mt20">
-            <div class="sh"><h2>最新 AIレポート</h2></div>
-            <div class="card" id="ov-report"><div style="color:var(--mut);font-size:.87em;">レポートはまだありません</div></div>
           </div>
         </div>
       </div>
@@ -562,23 +534,6 @@
       </div>
     </div>
 
-    <!-- ===== REPORTS ===== -->
-    <div class="page" id="page-reports">
-      <div class="fs" style="margin-bottom:16px;">
-        <h3>AIレポートを追加</h3>
-        <div class="fg fg-2" style="margin-bottom:10px;">
-          <div><label class="fgl">タイトル</label><input class="fi" id="rpt-title" placeholder="例：メタ広告分析レポート"></div>
-          <div><label class="fgl">タグ（カンマ区切り）</label><input class="fi" id="rpt-tag" placeholder="例：軽配送事業, マーケティング"></div>
-        </div>
-        <div><label class="fgl">内容・成果</label><textarea class="fta" id="rpt-body" placeholder="Claudeによる成果・レポート内容..."></textarea></div>
-        <div style="display:flex;justify-content:flex-end;margin-top:10px;">
-          <button class="btn bp" onclick="addReport()">保存</button>
-        </div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:11px;" id="rpt-list">
-        <div class="card" style="color:var(--mut);font-size:.87em;text-align:center;">レポートはまだありません</div>
-      </div>
-    </div>
 
     <!-- ===== PROJECTS ===== -->
     <div class="page" id="page-projects">
@@ -592,106 +547,9 @@
 
     <!-- ===== 競艇予測 ===== -->
     <div class="page" id="page-kyotei">
-      <div id="kyotei-check" style="padding:48px 24px;text-align:center;">
-        <div style="font-size:2.4rem;margin-bottom:14px;">🚤</div>
-        <div style="font-size:1.1em;font-weight:700;margin-bottom:8px;">競艇予測ツール ダッシュボード</div>
-        <div style="color:var(--mut);font-size:.87em;margin-bottom:20px;">ローカルサーバー（localhost:5050）に接続します</div>
-        <div id="kyotei-status" style="margin-bottom:18px;"></div>
-        <button class="btn bp" onclick="checkKyotei()" style="margin:0 auto;">接続 / 再接続</button>
-        <div style="margin-top:24px;background:#1e2235;color:#a8d8a8;font-family:monospace;font-size:.82em;padding:14px 20px;border-radius:8px;display:inline-block;text-align:left;line-height:1.8;">
-          # サーバーが起動していない場合:<br>
-          cd "~/cloude code/競艇予測ツール"<br>
-          .venv/bin/python dashboard.py
-        </div>
-      </div>
-      <iframe id="kyotei-frame"
-        src="about:blank"
-        style="width:100%;height:calc(100vh - 60px);border:none;display:none;"
-        onload="onKyoteiLoad(this)">
-      </iframe>
+      <div id="kyotei-root"></div>
     </div>
 
-    <!-- ===== SETTINGS ===== -->
-    <div class="page" id="page-settings">
-      <div class="g2">
-        <div>
-          <div class="fs">
-            <h3>Supabase クラウド同期</h3>
-            <p style="font-size:.84em;color:var(--mut);margin-bottom:14px;line-height:1.6;">設定すると複数デバイスでデータを共有できます。<strong>無料</strong>で利用できます。</p>
-            <div class="step">
-              <span class="step-num">1</span>
-              <div class="step-body">
-                <div class="step-title">Supabaseでプロジェクトを作成</div>
-                <div class="step-desc">supabase.com → New Project を作成してください。</div>
-              </div>
-            </div>
-            <div class="step">
-              <span class="step-num">2</span>
-              <div class="step-body">
-                <div class="step-title">SQL Editorで下のSQLを実行</div>
-                <div class="step-desc">右のSQLをコピーして Supabase SQL Editor に貼り付け実行してください。</div>
-              </div>
-            </div>
-            <div class="step">
-              <span class="step-num">3</span>
-              <div class="step-body">
-                <div class="step-title">URLとAnon Keyを入力</div>
-                <div class="step-desc">Settings → API からコピーして入力してください。</div>
-              </div>
-            </div>
-            <div style="margin-bottom:10px;"><label class="fgl">Project URL</label><input class="fi" id="sb-url" placeholder="https://xxxx.supabase.co"></div>
-            <div style="margin-bottom:12px;"><label class="fgl">Anon (public) Key</label><input class="fi" id="sb-key" placeholder="eyJhbGc..."></div>
-            <div style="display:flex;gap:8px;align-items:center;">
-              <button class="btn bp" onclick="saveSettings()">保存 & テスト</button>
-              <button class="btn be" onclick="clearSettings()">接続を解除</button>
-              <span id="conn-status" style="font-size:.84em;"></span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="fs">
-            <h3>テーブル作成 SQL <button class="btn be bs" onclick="copySQL()" style="float:right;">コピー</button></h3>
-            <pre class="sql-block" id="sql-block">create table task_states (
-  task_id text primary key,
-  status text default 's-todo',
-  progress text default '0%',
-  deadline text default '',
-  desc text default '',
-  tool text default '',
-  next_action text default '',
-  updated_at timestamptz default now()
-);
-
-create table revenues (
-  id bigint generated always as identity primary key,
-  date text not null,
-  desc text not null,
-  cat text not null,
-  amount numeric not null,
-  type text not null,
-  created_at timestamptz default now()
-);
-
-create table reports (
-  id bigint generated always as identity primary key,
-  title text not null,
-  tag text default '',
-  body text not null,
-  created_at timestamptz default now()
-);
-
-alter table task_states disable row level security;
-alter table revenues disable row level security;
-alter table reports disable row level security;</pre>
-          </div>
-          <div class="fs mt12">
-            <h3>データ同期</h3>
-            <p style="font-size:.84em;color:var(--mut);margin-bottom:12px;">Supabase接続後、手動でデータを同期できます。</p>
-            <button class="btn bp" onclick="syncAll()" id="sync-btn" disabled>クラウドから読み込む</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
   </div>
 </div>
@@ -707,46 +565,20 @@ const SO = {'s-wip':0,'s-todo':1,'s-hold':2,'s-done':3};
 const PO = {'1':0,'2':1,'3':2,'4':3};
 let sortState = {key:null, dir:1};
 let filterCat = 'all';
-let saveTimers = {};
-
-// ===== DB =====
-const DB = {
-  url: '', key: '',
-  load() { this.url = localStorage.getItem('sb_url')||''; this.key = localStorage.getItem('sb_key')||''; },
-  ready() { return !!(this.url && this.key); },
-  hdrs(extra) {
-    return Object.assign({'apikey':this.key,'Authorization':'Bearer '+this.key,'Content-Type':'application/json'}, extra||{});
-  },
-  async req(path, opts) {
-    if (!this.ready()) return null;
-    try {
-      const r = await fetch(this.url+'/rest/v1/'+path, Object.assign({headers: this.hdrs(opts&&opts.headers)}, opts));
-      if (!r.ok) return null;
-      if (r.status === 204) return true;
-      return r.json();
-    } catch(e) { return null; }
-  },
-  getAll(t) { return this.req(t+'?select=*&order=created_at.desc'); },
-  upsert(t, d) { return this.req(t, {method:'POST', headers:{'Prefer':'resolution=merge-duplicates,return=minimal'}, body:JSON.stringify(d)}); },
-  insert(t, d) { return this.req(t, {method:'POST', headers:{'Prefer':'return=representation'}, body:JSON.stringify(d)}); },
-  remove(t, id) { return this.req(t+'?id=eq.'+id, {method:'DELETE'}); },
-  async test() { return this.req('task_states?select=task_id&limit=1') !== null; }
-};
 
 // ===== NAV =====
 function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',reports:'AIレポート',projects:'プロジェクト管理',settings:'設定・同期',kyotei:'競艇予測ツール'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',kyotei:'競艇予測ツール'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
   if (name==='overview') refreshOverview();
   if (name==='revenue') { renderRevenues(); renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown(); }
-  if (name==='reports') renderReports();
   if (name==='projects') { renderProjectStats(); renderProjects(); }
-  if (name==='kyotei') checkKyotei();
+  if (name==='kyotei') renderKyotei();
 }
 
 // ===== TASKS =====
@@ -761,7 +593,6 @@ function toggleDetail(id) {
 
 function saveDetail(id, field, value) {
   localStorage.setItem('db_'+id+'_'+field, value);
-  scheduleSync(id);
 }
 
 function onStatus(el, id) {
@@ -769,40 +600,18 @@ function onStatus(el, id) {
   el.classList.add(el.value);
   localStorage.setItem('db_'+id+'_status', el.value);
   updateDone(); refreshOverview();
-  scheduleSync(id);
 }
 
 function onProgress(el, id) {
   const bar = document.getElementById(id+'-bar');
   if (bar) bar.style.width = el.value;
   localStorage.setItem('db_'+id+'_progress', el.value);
-  scheduleSync(id);
 }
 
 function onDate(el, id) {
   localStorage.setItem('db_'+id+'_date', el.value);
-  scheduleSync(id);
 }
 
-function scheduleSync(id) {
-  if (!DB.ready()) return;
-  clearTimeout(saveTimers[id]);
-  saveTimers[id] = setTimeout(() => syncTask(id), 800);
-}
-
-async function syncTask(id) {
-  if (!DB.ready()) return;
-  const s = {
-    task_id: id,
-    status: localStorage.getItem('db_'+id+'_status')||'s-todo',
-    progress: localStorage.getItem('db_'+id+'_progress')||'0%',
-    deadline: localStorage.getItem('db_'+id+'_date')||'',
-    desc: localStorage.getItem('db_'+id+'_desc')||'',
-    tool: localStorage.getItem('db_'+id+'_tool')||'',
-    next_action: localStorage.getItem('db_'+id+'_next')||''
-  };
-  await DB.upsert('task_states', s);
-}
 
 function applyTaskState(s) {
   const id = s.task_id;
@@ -930,19 +739,14 @@ async function addRevenue() {
   const amount = parseFloat(document.getElementById('rev-amount').value);
   const type = document.getElementById('rev-type').value;
   if (!date||!desc||isNaN(amount)||amount<=0) return;
-  const item = {date, desc, cat, amount, type};
-  if (DB.ready()) {
-    const res = await DB.insert('revenues', item);
-    item.id = (res&&res[0]) ? res[0].id : Date.now();
-  } else { item.id = Date.now(); }
+  const item = {date, desc, cat, amount, type, id: Date.now()};
   const arr = getRevenues(); arr.unshift(item); setRevenues(arr);
   document.getElementById('rev-desc').value='';
   document.getElementById('rev-amount').value='';
   renderRevenues(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
 }
 
-async function deleteRevenue(id) {
-  if (DB.ready()) await DB.remove('revenues', id);
+function deleteRevenue(id) {
   setRevenues(getRevenues().filter(r => r.id!==id));
   renderRevenues(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
 }
@@ -1013,46 +817,6 @@ function renderMonthlyBreakdown() {
   tf.innerHTML = `<tr class="mt-total"><td>累計合計</td><td style="text-align:right;color:var(--grn)">¥${ti.toLocaleString()}</td><td style="text-align:right;color:var(--red)">¥${tv.toLocaleString()}</td><td style="text-align:right;color:var(--amb)">¥${tf2.toLocaleString()}</td><td style="text-align:right;${clr(tn)}">${fmt(tn)}</td></tr>`;
 }
 
-// ===== REPORTS =====
-function getReports() { return JSON.parse(localStorage.getItem('db_reports')||'[]'); }
-function setReports(arr) { localStorage.setItem('db_reports', JSON.stringify(arr)); }
-
-async function addReport() {
-  const title = document.getElementById('rpt-title').value.trim();
-  const tag = document.getElementById('rpt-tag').value.trim();
-  const body = document.getElementById('rpt-body').value.trim();
-  if (!title||!body) return;
-  const item = {title, tag, body};
-  if (DB.ready()) {
-    const res = await DB.insert('reports', item);
-    item.id = (res&&res[0]) ? res[0].id : Date.now();
-    item.date = new Date().toLocaleDateString('ja-JP');
-  } else {
-    item.id = Date.now();
-    item.date = new Date().toLocaleDateString('ja-JP');
-  }
-  const arr = getReports(); arr.unshift(item); setReports(arr);
-  document.getElementById('rpt-title').value='';
-  document.getElementById('rpt-tag').value='';
-  document.getElementById('rpt-body').value='';
-  renderReports(); refreshOverview();
-}
-
-async function deleteReport(id) {
-  if (DB.ready()) await DB.remove('reports', id);
-  setReports(getReports().filter(r=>r.id!==id));
-  renderReports(); refreshOverview();
-}
-
-function renderReports() {
-  const el = document.getElementById('rpt-list');
-  const arr = getReports();
-  if (!arr.length) { el.innerHTML='<div class="card" style="color:var(--mut);font-size:.87em;text-align:center;">レポートはまだありません</div>'; return; }
-  el.innerHTML = arr.map(r => {
-    const tags = r.tag ? r.tag.split(/[、,，]/).map(t=>`<span class="rp-tag">${t.trim()}</span>`).join('') : '';
-    return `<div class="rp-card"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;"><div><div class="rp-title">${r.title}</div><div style="margin-top:4px;">${tags}</div></div><div style="display:flex;align-items:center;gap:8px;"><span class="rp-meta">${r.date||''}</span><button class="btn bd bs" onclick="deleteReport(${r.id})">削除</button></div></div><div class="rp-body">${r.body}</div></div>`;
-  }).join('');
-}
 
 // ===== PROJECTS =====
 const PROJ_COLORS = ['#4f8ef7','#7c3aed','#1aaa80','#d97706','#e05050','#0891b2'];
@@ -1181,97 +945,234 @@ function refreshOverview() {
   const bar = document.getElementById('ov-bar');
   bar.innerHTML = total>0 ? `<div class="rb-seg" style="width:${(cur.income/total*100).toFixed(1)}%;background:var(--grn)"></div><div class="rb-seg" style="width:${((cur.varExp+cur.fixedExp)/total*100).toFixed(1)}%;background:var(--red)"></div>` : '';
 
-  const rpts = getReports();
-  const re = document.getElementById('ov-report');
-  if (rpts.length) {
-    const r = rpts[0];
-    const tags = r.tag ? r.tag.split(/[、,，]/).map(t=>`<span class="rp-tag">${t.trim()}</span>`).join('') : '';
-    re.innerHTML = `<div style="font-weight:700;margin-bottom:4px;">${r.title}</div><div style="margin-bottom:6px;">${tags}</div><div class="rp-body">${r.body.slice(0,200)}${r.body.length>200?'…':''}</div><div style="font-size:.76em;color:var(--mut);margin-top:6px;">${r.date||''}</div>`;
-  } else {
-    re.innerHTML = '<div style="color:var(--mut);font-size:.87em;">レポートはまだありません</div>';
-  }
 }
 
-// ===== SETTINGS =====
-function setSyncStatus(state) {
-  const dot = document.getElementById('sync-dot');
-  const lbl = document.getElementById('sync-label');
-  const states = {local:{cls:'',txt:'ローカル保存'},ok:{cls:'green',txt:'クラウド同期中'},err:{cls:'red',txt:'同期エラー'},loading:{cls:'blue',txt:'接続中...'}};
-  const s = states[state]||states.local;
-  dot.className = 'sync-dot '+(s.cls||'');
-  lbl.textContent = s.txt;
-  const sb = document.getElementById('sync-btn');
-  if (sb) sb.disabled = state!=='ok';
-}
-
-async function saveSettings() {
-  const url = document.getElementById('sb-url').value.trim();
-  const key = document.getElementById('sb-key').value.trim();
-  const cs = document.getElementById('conn-status');
-  if (!url||!key) { cs.innerHTML='<span class="conn-err">URLとKeyを入力してください</span>'; return; }
-  cs.innerHTML='接続テスト中...'; setSyncStatus('loading');
-  DB.url=url; DB.key=key;
-  const ok = await DB.test();
-  if (ok) {
-    localStorage.setItem('sb_url',url); localStorage.setItem('sb_key',key);
-    cs.innerHTML='<span class="conn-ok">✓ 接続成功</span>'; setSyncStatus('ok');
-  } else {
-    DB.url=''; DB.key='';
-    cs.innerHTML='<span class="conn-err">✗ 接続失敗 — URLとKeyを確認してください</span>'; setSyncStatus('err');
-  }
-}
-
-function clearSettings() {
-  localStorage.removeItem('sb_url'); localStorage.removeItem('sb_key');
-  DB.url=''; DB.key='';
-  document.getElementById('sb-url').value='';
-  document.getElementById('sb-key').value='';
-  document.getElementById('conn-status').innerHTML='<span style="color:var(--mut)">接続を解除しました</span>';
-  setSyncStatus('local');
-}
-
-async function syncAll() {
-  if (!DB.ready()) return;
-  setSyncStatus('loading');
-  const [ts, rv, rp] = await Promise.all([DB.getAll('task_states'), DB.getAll('revenues'), DB.getAll('reports')]);
-  if (ts) ts.forEach(s => applyTaskState(s));
-  if (rv) setRevenues(rv.map(r=>({id:r.id,date:r.date,desc:r.desc,cat:r.cat,amount:parseFloat(r.amount),type:r.type})));
-  if (rp) setReports(rp.map(r=>({id:r.id,title:r.title,tag:r.tag,body:r.body,date:new Date(r.created_at).toLocaleDateString('ja-JP')})));
-  updateDone(); renderRevenues(); renderReports(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
-  setSyncStatus('ok');
-}
 
 
 // ===== 競艇予測 =====
-async function checkKyotei() {
-  const frame  = document.getElementById('kyotei-frame');
-  const check  = document.getElementById('kyotei-check');
-  const status = document.getElementById('kyotei-status');
-  status.innerHTML = '<span style="color:var(--mut);">接続を確認中...</span>';
-  try {
-    await fetch('http://localhost:5050/', {mode:'no-cors', cache:'no-cache'});
-    // fetch が成功（opaque response）＝サーバー起動中
-    frame.src = 'http://localhost:5050/';
-    status.innerHTML = '<span style="color:var(--grn);">✓ サーバー起動中 — 読み込んでいます...</span>';
-  } catch(e) {
-    status.innerHTML = '<span style="color:var(--red);">✗ サーバーに接続できません。上記のコマンドで起動してください。</span>';
-    frame.style.display = 'none';
-    check.style.display  = '';
+window._kyoteiWeekIdx  = 0;
+window._kyoteiWeeksData = [];
+
+function renderKyoteiWeekPerfSection() {
+  const el = document.getElementById('kyotei-week-perf');
+  if (!el) return;
+  const weeks = window._kyoteiWeeksData;
+  const idx   = window._kyoteiWeekIdx;
+
+  if (!weeks || !weeks.length) {
+    el.innerHTML = '<div class="card" style="text-align:center;color:var(--mut);padding:20px;">検証データがまだありません</div>';
+    return;
   }
-}
-function onKyoteiLoad(iframe) {
-  // about:blank の初回ロードは無視
-  if (!iframe.src || iframe.src === 'about:blank') return;
-  const frame = document.getElementById('kyotei-frame');
-  const check = document.getElementById('kyotei-check');
-  frame.style.display = '';
-  check.style.display  = 'none';
+
+  const week    = weeks[idx];
+  const perf    = week.perf || {};
+  const hasPrev = idx < weeks.length - 1;
+  const hasNext = idx > 0;
+
+  const navBtn = (dir, label, enabled) =>
+    `<button onclick="window.kyoteiWeekNav(${dir})" ${enabled?'':'disabled'}
+      style="padding:4px 12px;border-radius:6px;border:1px solid var(--bor);background:${enabled?'var(--sur)':'var(--sur2)'};
+             color:${enabled?'var(--txt)':'var(--mut)'};cursor:${enabled?'pointer':'default'};font-size:.8em;font-family:inherit;">${label}</button>`;
+
+  const perfRows = [1.15, 1.20, 1.30].map(t => {
+    const s = perf[String(t)];
+    if (!s) return '';
+    const rc = s.roi >= 100 ? 'var(--grn)' : s.roi >= 75 ? 'var(--amb)' : 'var(--red)';
+    return `<tr>
+      <td style="padding:8px 10px;font-weight:600;">EV ${t.toFixed(2)} 以上</td>
+      <td style="padding:8px 10px;text-align:right;">${s.bets}件</td>
+      <td style="padding:8px 10px;text-align:right;">${s.hits}件</td>
+      <td style="padding:8px 10px;text-align:right;">${s.hit_rate}%</td>
+      <td style="padding:8px 10px;text-align:right;">¥${s.invested.toLocaleString()}</td>
+      <td style="padding:8px 10px;text-align:right;">¥${s.returned.toLocaleString()}</td>
+      <td style="padding:8px 10px;text-align:right;font-weight:700;color:${rc};">${s.roi}%</td>
+    </tr>`;
+  }).join('');
+
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      ${navBtn(1, '◀ 前週', hasPrev)}
+      <span style="font-size:.88em;font-weight:700;">${week.week_label}${week.is_current ? ' <span style="font-size:.75em;color:var(--acc);">今週</span>' : ''}</span>
+      ${navBtn(-1, '次週 ▶', hasNext)}
+    </div>
+    <div class="tw" style="margin-bottom:8px;">
+      <table style="width:100%;font-size:.82em;">
+        <thead><tr style="background:var(--sb);color:#fff;">
+          <th style="padding:8px 10px;">EV閾値</th><th style="padding:8px 10px;text-align:right;">推奨数</th>
+          <th style="padding:8px 10px;text-align:right;">的中数</th><th style="padding:8px 10px;text-align:right;">的中率</th>
+          <th style="padding:8px 10px;text-align:right;">投資</th><th style="padding:8px 10px;text-align:right;">回収</th>
+          <th style="padding:8px 10px;text-align:right;">回収率</th>
+        </tr></thead>
+        <tbody>${perfRows || '<tr><td colspan="7" style="text-align:center;color:var(--mut);padding:16px;">この週のデータがありません</td></tr>'}</tbody>
+      </table>
+    </div>
+    <div style="font-size:.65em;color:var(--mut);">※ 100%以上＝プラス収支 / 75%が競艇の理論上限（控除率25%）</div>
+  `;
 }
 
-function copySQL() {
-  const sql = document.getElementById('sql-block').textContent;
-  navigator.clipboard.writeText(sql).then(()=>{ const b=document.querySelector('.fs h3 .btn'); if(b){b.textContent='コピー済！'; setTimeout(()=>b.textContent='コピー',1500);}});
+window.kyoteiWeekNav = function(dir) {
+  const len = window._kyoteiWeeksData.length;
+  window._kyoteiWeekIdx = Math.max(0, Math.min(len - 1, window._kyoteiWeekIdx + dir));
+  renderKyoteiWeekPerfSection();
+};
+
+function renderKyotei() {
+  const root = document.getElementById('kyotei-root');
+  if (!root) return;
+  const d = window.KYOTEI_DATA;
+
+  if (!d) {
+    root.innerHTML = `
+      <div style="text-align:center;padding:60px 20px;">
+        <div style="font-size:2.4rem;margin-bottom:14px;">🚤</div>
+        <div style="font-size:1.05em;font-weight:700;margin-bottom:10px;">競艇予測ツール</div>
+        <div style="color:var(--mut);font-size:.86em;line-height:1.8;">
+          データがまだありません。<br>
+          競艇予測ツールを実行すると自動的に表示されます。<br><br>
+          <code style="background:#1e2235;color:#a8d8a8;padding:8px 14px;border-radius:6px;font-size:.85em;">
+            cd ~/cloude\ code/競艇予測ツール<br>
+            .venv/bin/python main.py
+          </code>
+        </div>
+      </div>`;
+    return;
+  }
+
+  function roiColor(v) { return v >= 100 ? 'var(--grn)' : v >= 75 ? 'var(--amb)' : 'var(--red)'; }
+  function roiBadge(v) {
+    const c = v >= 100 ? '#dcfce7;color:#16a34a' : v >= 75 ? '#fef3c7;color:#d97706' : '#fee2e2;color:#dc2626';
+    const l = v >= 100 ? 'プラス収支' : v >= 75 ? '平均的損失' : '要改善';
+    return `<span style="background:${c};padding:2px 10px;border-radius:20px;font-size:.72em;font-weight:700;">${l}</span>`;
+  }
+
+  function demoCard(label, period, demo) {
+    if (!demo) return '';
+    const roi   = demo.roi;
+    const daily = demo.daily || [];
+    const pills = daily.map(row => {
+      const bg = row.roi >= 100 ? '#dcfce7;color:#16a34a' : row.roi >= 75 ? '#fef3c7;color:#d97706' : '#fee2e2;color:#dc2626';
+      return `<span style="background:${bg};padding:2px 7px;border-radius:5px;font-size:.67em;font-weight:700;white-space:nowrap;"
+              title="${row.date} 推奨${row.bets}件 的中${row.hits}件">${row.date} ${row.roi}%</span>`;
+    }).join('');
+
+    return `<div class="card" style="flex:1;min-width:0;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+        <div>
+          <div style="font-size:.7em;color:var(--mut);text-transform:uppercase;font-weight:600;letter-spacing:.05em;">${label}</div>
+          <div style="font-size:.73em;color:var(--mut);margin-top:1px;">${period}</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="font-size:2rem;font-weight:800;line-height:1;color:${roiColor(roi)};">${roi.toFixed(1)}<span style="font-size:.85rem;font-weight:400;">%</span></div>
+          ${roiBadge(roi)}
+        </div>
+      </div>
+      <div style="font-size:.73em;color:var(--mut);margin-bottom:8px;">
+        推奨 ${demo.total_bets}件 / 的中 ${demo.total_hits}件 ／ 投資 ¥${demo.total_invested.toLocaleString()} → 回収 ¥${demo.total_returned.toLocaleString()}
+      </div>
+      ${daily.length ? `<div style="display:flex;flex-wrap:wrap;gap:4px;">${pills}</div>` : ''}
+      <div style="font-size:.63em;color:var(--mut);margin-top:6px;">※ デモ（仮想投票）。結果未確定分は推定確率で模擬。</div>
+    </div>`;
+  }
+
+  // 予測テーブル
+  const preds    = d.today_preds || [];
+  const predDate = d.pred_date || d.today_label;
+  const predNote = d.pred_is_today === false && d.pred_date
+    ? `<span style="background:#fff3cd;color:#856404;padding:1px 8px;border-radius:4px;font-size:.75em;margin-left:8px;">直近データ（${d.pred_date}）</span>`
+    : '';
+  const predRows = preds.map(p => {
+    // EV > 20 はモデル過大評価の可能性が高いためオレンジ警告色
+    const evBg = p.ev > 20 ? '#fff3e0;color:#e65100' : p.ev >= 2.0 ? '#e8f5e9;color:#1b5e20' : p.ev >= 1.5 ? '#fff9c4;color:#f57f17' : '#fce4ec;color:#880e4f';
+    const hitHtml = p.hit === '1'
+      ? '<span style="color:var(--grn);font-weight:700;">✓ 的中</span>'
+      : p.hit === '0'
+        ? '<span style="color:var(--red);">✗ 外れ</span>'
+        : '<span style="color:var(--mut);">⏳ 待機</span>';
+    // 払戻%: 実データ優先、なければオッズから推計 (odds × 100%)
+    const payoutPct = (() => {
+      if (p.payout && parseInt(p.payout) > 0) return parseInt(p.payout);
+      if (p.hit === '1' && p.odds && parseFloat(p.odds) > 0) return Math.round(parseFloat(p.odds) * 100);
+      return null;
+    })();
+    const payHtml = payoutPct
+      ? `<span style="font-weight:700;color:var(--grn);">${payoutPct.toLocaleString()}%</span>` : '—';
+    return `<tr>
+      <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
+      <td style="padding:8px 10px;">${p.race_no}R</td>
+      <td style="padding:8px 10px;">${p.start_time}</td>
+      <td style="padding:8px 10px;"><code style="color:#1a237e;font-size:.9em;">${p.combo}</code></td>
+      <td style="padding:8px 10px;"><span style="background:${evBg};padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">${p.ev}</span></td>
+      <td style="padding:8px 10px;">${p.odds}倍</td>
+      <td style="padding:8px 10px;">${p.prob_pct}%</td>
+      <td style="padding:8px 10px;">${hitHtml}</td>
+      <td style="padding:8px 10px;">${payHtml}</td>
+    </tr>`;
+  }).join('');
+
+  // 機能一覧
+  const features = d.features || [];
+  const featHtml = features.map(f =>
+    `<div style="display:flex;gap:10px;padding:9px 12px;border-bottom:1px solid var(--bor);">
+      <div style="width:6px;height:6px;background:var(--acc);border-radius:50%;margin-top:5px;flex-shrink:0;"></div>
+      <div>
+        <div style="font-weight:600;font-size:.88em;">${f.name}</div>
+        <div style="font-size:.78em;color:var(--mut);margin-top:1px;">${f.desc}</div>
+      </div>
+    </div>`
+  ).join('');
+
+  root.innerHTML = `
+    <div style="margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-size:.75em;color:var(--mut);">最終更新: ${d.updated}</div>
+      <div style="font-size:.75em;color:var(--mut);">EV${d.ev_threshold}以上を推奨</div>
+    </div>
+
+    <!-- デモ収益 -->
+    <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📈 デモ収益（仮想投票シミュレーション）</div>
+    <div style="display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;">
+      ${demoCard('週間デモ収益', d.week_label, d.weekly_demo)}
+      ${demoCard('月間デモ収益', d.month_label, d.monthly_demo)}
+    </div>
+
+    <!-- 予測レポート -->
+    <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">
+      🎯 予測レポート${predNote}
+    </div>
+    ${preds.length ? `
+    <div class="tw" style="margin-bottom:22px;overflow-x:auto;">
+      <table style="width:100%;font-size:.82em;">
+        <thead><tr style="background:var(--sur2);">
+          <th style="padding:8px 10px;">会場</th><th style="padding:8px 10px;">R</th>
+          <th style="padding:8px 10px;">発走</th><th style="padding:8px 10px;">組み合わせ</th>
+          <th style="padding:8px 10px;">EV</th><th style="padding:8px 10px;">オッズ</th>
+          <th style="padding:8px 10px;">確率</th><th style="padding:8px 10px;">結果</th><th style="padding:8px 10px;">払戻</th>
+        </tr></thead>
+        <tbody>${predRows}</tbody>
+      </table>
+    </div>` : `<div class="card" style="padding:16px;margin-bottom:22px;border-left:4px solid #f59e0b;">
+      <div style="font-weight:700;color:#92400e;margin-bottom:4px;">🔧 本日の予測データ待機中</div>
+      <div style="font-size:.8em;color:var(--mut);">6/21以前のデータはオッズ取得バグ（120通り中20通りしか取れず値も誤り）のため非表示。本日 main.py 実行後に正しい予測が表示されます。</div>
+    </div>`}
+
+    <!-- 週次検証レポート -->
+    <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📊 週次検証レポート</div>
+    <div id="kyotei-week-perf" style="margin-bottom:22px;"></div>
+
+    <!-- 実装機能一覧 -->
+    <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">⚙️ 実装済み機能</div>
+    <div class="tw" style="margin-bottom:16px;">
+      ${featHtml || '<div style="padding:16px;color:var(--mut);text-align:center;">—</div>'}
+      <div style="padding:9px 12px;font-size:.65em;color:var(--mut);">※ 1レースあたり最高EV1組み合わせ×上位5件でデモ収益を計算</div>
+    </div>
+  `;
+
+  // 週ナビゲーション初期化
+  window._kyoteiWeekIdx  = 0;
+  window._kyoteiWeeksData = d.weekly_perfs || [];
+  renderKyoteiWeekPerfSection();
+
 }
+
 
 // ===== TASK NAME EDIT =====
 function editTaskName(e, id) {
@@ -1302,11 +1203,6 @@ window.addEventListener('DOMContentLoaded', async () => {
   const today = new Date();
   document.getElementById('today-label').textContent = today.toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'});
   document.getElementById('rev-date').value = today.toISOString().slice(0,10);
-  document.getElementById('sb-url').value = localStorage.getItem('sb_url')||'';
-  document.getElementById('sb-key').value = localStorage.getItem('sb_key')||'';
-
-  DB.load();
-  if (DB.ready()) setSyncStatus('ok'); else setSyncStatus('local');
 
   // Restore from localStorage
   TASK_IDS.forEach(id => {
@@ -1333,15 +1229,12 @@ window.addEventListener('DOMContentLoaded', async () => {
   updateDone();
   renderFixedCosts();
   renderRevenues();
-  renderReports();
   refreshRevenueSummary();
   renderMonthlyBreakdown();
   refreshOverview();
   renderProjectStats();
   renderProjects();
 
-  // Auto-sync if Supabase configured
-  if (DB.ready()) syncAll();
 });
 </script>
 </body>
