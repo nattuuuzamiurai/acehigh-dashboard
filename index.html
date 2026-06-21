@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>エースハイ ダッシュボード</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --sb:      #1e2235;
+      --sb2:     #262a3f;
+      --sb-text: #b8b5c8;
+      --sb-mut:  #6b6880;
+      --sb-act:  #818cf8;
+      --bg:      #f5f1eb;
+      --sur:     #ffffff;
+      --sur2:    #faf7f2;
+      --bor:     #e6dfd4;
+      --txt:     #2c2420;
+      --mut:     #9e9088;
+      --acc:     #6674f0;
+      --grn:     #1aaa80;
+      --amb:     #d97706;
+      --red:     #e05050;
+      --sha:     0 2px 10px rgba(40,25,10,.08);
+      --r:       10px;
+      --sw:      220px;
+    }
+    body { font-family:"Hiragino Sans","Yu Gothic UI",sans-serif; background:var(--bg); color:var(--txt); display:flex; min-height:100vh; font-size:14px; }
+
+    /* SIDEBAR */
+    #sidebar { width:var(--sw); background:var(--sb); display:flex; flex-direction:column; position:fixed; top:0; left:0; bottom:0; z-index:100; }
+    .sb-logo { padding:20px 18px 14px; border-bottom:1px solid rgba(255,255,255,.07); }
+    .sb-co { font-size:.68em; color:var(--sb-mut); letter-spacing:.1em; text-transform:uppercase; }
+    .sb-logo h1 { font-size:1.05em; color:#fff; margin-top:3px; font-weight:700; }
+    .ai-badge { background:var(--acc); color:#fff; font-size:.62em; padding:2px 7px; border-radius:20px; margin-left:5px; font-weight:600; vertical-align:middle; }
+    nav { padding:10px; flex:1; overflow-y:auto; }
+    .ng { font-size:.67em; color:var(--sb-mut); letter-spacing:.1em; text-transform:uppercase; padding:14px 8px 5px; }
+    .ni { display:flex; align-items:center; gap:9px; padding:9px 12px; border-radius:8px; cursor:pointer; color:var(--sb-text); font-size:.92em; font-weight:500; transition:background .13s,color .13s; user-select:none; }
+    .ni:hover { background:var(--sb2); color:#fff; }
+    .ni.active { background:rgba(129,140,248,.18); color:var(--sb-act); }
+    .ni-ic { width:18px; text-align:center; flex-shrink:0; }
+    .sb-foot { padding:12px 16px; border-top:1px solid rgba(255,255,255,.06); font-size:.76em; color:var(--sb-mut); }
+    .sync-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--sb-mut); margin-right:5px; vertical-align:middle; }
+    .sync-dot.green { background:#34d399; }
+    .sync-dot.red   { background:#f87171; }
+    .sync-dot.blue  { background:#60a5fa; }
+
+    /* MAIN */
+    #main { margin-left:var(--sw); flex:1; display:flex; flex-direction:column; }
+    #topbar { background:var(--sur); border-bottom:1px solid var(--bor); padding:13px 26px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:50; box-shadow:0 1px 4px rgba(0,0,0,.05); }
+    .tb-title { font-size:1.05em; font-weight:700; }
+    .tb-right { display:flex; align-items:center; gap:12px; }
+    .tb-date { font-size:.82em; color:var(--mut); }
+    .sync-badge { font-size:.75em; padding:3px 9px; border-radius:20px; background:var(--sur2); border:1px solid var(--bor); color:var(--mut); }
+    #content { padding:22px 26px; flex:1; }
+
+    /* PAGES */
+    .page { display:none; }
+    .page.active { display:block; }
+
+    /* GRIDS */
+    .g4 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+    .g2 { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+    .g3 { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .mt12 { margin-top:12px; }
+    .mt20 { margin-top:20px; }
+    .mt28 { margin-top:28px; }
+
+    /* CARDS */
+    .card { background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); padding:18px 20px; box-shadow:var(--sha); }
+    .c-label { font-size:.72em; color:var(--mut); text-transform:uppercase; letter-spacing:.05em; font-weight:600; margin-bottom:5px; }
+    .c-val { font-size:1.9em; font-weight:800; line-height:1; }
+    .c-sub { font-size:.8em; color:var(--mut); margin-top:4px; }
+
+    /* SEC HEADER */
+    .sh { display:flex; align-items:center; justify-content:space-between; margin-bottom:11px; }
+    .sh h2 { font-size:.98em; font-weight:700; }
+
+    /* OVERVIEW summary chips */
+    .chip { background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); padding:16px 18px; box-shadow:var(--sha); text-align:center; }
+    .chip .n { font-size:2.2em; font-weight:800; line-height:1; }
+    .chip .l { font-size:.76em; color:var(--mut); margin-top:4px; font-weight:500; }
+    .n.todo { color:#94a3b8; } .n.wip { color:var(--acc); } .n.done { color:var(--grn); } .n.hold { color:var(--amb); }
+
+    .pi-list { display:flex; flex-direction:column; gap:7px; }
+    .pi { display:flex; align-items:center; gap:9px; padding:10px 13px; background:var(--sur); border:1px solid var(--bor); border-radius:8px; box-shadow:var(--sha); }
+    .pi-name { flex:1; font-size:.9em; font-weight:500; }
+    .pi-cat { font-size:.74em; color:var(--mut); }
+
+    .rev-bar { display:flex; height:6px; border-radius:3px; overflow:hidden; margin-top:10px; background:var(--bor); }
+    .rb-seg { transition:width .4s; }
+
+    /* BADGES */
+    .badge { display:inline-block; padding:2px 9px; border-radius:20px; font-size:.75em; font-weight:700; }
+    .high    { background:#fee2e2; color:#dc2626; }
+    .mid     { background:#fef3c7; color:#d97706; }
+    .low     { background:#dcfce7; color:#16a34a; }
+    .routine { background:#ede9fe; color:#7c3aed; }
+
+    /* TABLE */
+    .tw { background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); overflow:hidden; box-shadow:var(--sha); }
+    table { width:100%; border-collapse:collapse; }
+    th { background:var(--sur2); color:var(--mut); padding:10px 13px; text-align:left; font-size:.76em; font-weight:600; letter-spacing:.04em; border-bottom:1px solid var(--bor); white-space:nowrap; }
+    td { padding:9px 13px; border-bottom:1px solid var(--bor); font-size:.9em; vertical-align:middle; }
+    tr:last-child td { border-bottom:none; }
+    tr.tr:hover td { background:#faf7f2; }
+    .task-name { cursor:pointer; display:flex; align-items:center; gap:6px; font-weight:500; }
+    .task-name:hover { color:var(--acc); }
+    .ta { font-size:.6em; color:#ccc; transition:transform .2s; flex-shrink:0; }
+    tr.open .ta { transform:rotate(90deg); color:var(--acc); }
+    .dr { display:none; }
+    .dr.open { display:table-row; }
+    .dr td { background:#f8f5f0; border-bottom:2px solid var(--bor); padding:13px 17px; }
+    .di { display:grid; grid-template-columns:1fr 1fr; gap:10px 20px; }
+    .di label { display:block; font-size:.73em; color:var(--mut); margin-bottom:3px; font-weight:600; }
+    .di textarea, .di input[type="text"] { width:100%; background:#fff; border:1px solid var(--bor); border-radius:6px; padding:6px 9px; font-size:.87em; font-family:inherit; color:var(--txt); resize:vertical; outline:none; }
+    .di textarea:focus, .di input[type="text"]:focus { border-color:var(--acc); box-shadow:0 0 0 3px rgba(102,116,240,.1); }
+    .di textarea { min-height:52px; }
+    .df { grid-column:1/-1; }
+    .cat-tag { display:inline-block; font-size:.74em; padding:2px 8px; border-radius:20px; background:#eef0fe; color:var(--acc); font-weight:500; }
+
+    select.ss { border:1px solid var(--bor); border-radius:5px; padding:3px 7px; font-size:.82em; background:#fff; color:var(--txt); cursor:pointer; outline:none; font-family:inherit; }
+    select.ss.s-todo { color:var(--mut); }
+    select.ss.s-wip  { border-color:var(--acc); color:var(--acc); background:#eef0fe; }
+    select.ss.s-done { border-color:#16a34a; color:#16a34a; background:#dcfce7; }
+    select.ss.s-hold { border-color:var(--amb); color:var(--amb); background:#fef3c7; }
+
+    .pw { display:flex; align-items:center; gap:6px; }
+    select.ps { border:1px solid var(--bor); border-radius:5px; padding:3px 5px; font-size:.8em; width:63px; background:#fff; color:var(--txt); cursor:pointer; outline:none; font-family:inherit; }
+    .pb { flex:1; height:5px; background:#ede8e0; border-radius:3px; overflow:hidden; min-width:46px; }
+    .pf { height:100%; border-radius:3px; background:var(--acc); transition:width .3s; }
+    input.di-date { border:1px solid var(--bor); border-radius:5px; padding:3px 7px; font-size:.82em; font-family:inherit; color:var(--txt); background:#fff; cursor:pointer; outline:none; }
+    input.di-date:focus { border-color:var(--acc); }
+
+    th.sort { cursor:pointer; user-select:none; }
+    th.sort:hover { color:var(--txt); }
+    .si { opacity:.35; font-size:.72em; margin-left:3px; }
+    th.sort.sa .si { opacity:1; color:var(--acc); }
+
+    .empty { color:var(--mut); font-size:.87em; padding:18px; text-align:center; }
+    .done-lbl { font-size:.74em; color:var(--mut); letter-spacing:.06em; text-transform:uppercase; font-weight:600; margin-bottom:8px; }
+
+    /* FILTER */
+    .fb { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:12px; }
+    .fb-btn { padding:4px 13px; border-radius:20px; border:1px solid var(--bor); background:#fff; color:var(--mut); font-size:.79em; cursor:pointer; font-family:inherit; transition:all .13s; font-weight:500; }
+    .fb-btn:hover { background:var(--sur2); color:var(--txt); }
+    .fb-btn.on { background:var(--acc); border-color:var(--acc); color:#fff; }
+
+    /* FORMS */
+    .fs { background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); padding:18px 20px; box-shadow:var(--sha); }
+    .fs h3 { font-size:.78em; color:var(--mut); text-transform:uppercase; letter-spacing:.06em; font-weight:600; margin-bottom:13px; }
+    .fg { display:grid; gap:10px; align-items:end; }
+    .fg-5 { grid-template-columns:1fr 2fr 1fr 1fr auto; }
+    .fg-2 { grid-template-columns:1fr 1fr; }
+    .fgl { display:block; font-size:.73em; color:var(--mut); margin-bottom:4px; font-weight:600; }
+    .fi, .fsel, .fta { width:100%; background:#fff; border:1px solid var(--bor); border-radius:6px; padding:7px 10px; font-size:.87em; font-family:inherit; color:var(--txt); outline:none; }
+    .fi:focus, .fsel:focus, .fta:focus { border-color:var(--acc); box-shadow:0 0 0 3px rgba(102,116,240,.1); }
+    .fta { resize:vertical; min-height:68px; }
+
+    .btn { padding:7px 16px; border-radius:7px; border:none; cursor:pointer; font-size:.87em; font-family:inherit; font-weight:600; transition:opacity .13s,transform .1s; }
+    .btn:hover { opacity:.85; }
+    .btn:active { transform:scale(.97); }
+    .bp { background:var(--acc); color:#fff; }
+    .bd { background:#fee2e2; color:#dc2626; border:1px solid #fecaca; }
+    .bs { padding:3px 9px; font-size:.76em; }
+    .be { background:var(--sur2); border:1px solid var(--bor); color:var(--txt); }
+
+    /* REVENUE */
+    .rev-pos { color:#16a34a; font-weight:600; }
+    .rev-neg { color:#dc2626; font-weight:600; }
+    .fc-row { display:flex; align-items:center; gap:10px; padding:9px 13px; border-bottom:1px solid var(--bor); }
+    .fc-row:last-child { border-bottom:none; }
+    .fc-name { flex:1; font-weight:500; }
+    .fc-note { font-size:.78em; color:var(--mut); }
+    .fc-amt { font-weight:700; color:var(--txt); min-width:80px; text-align:right; }
+    .fc-input { width:100px; }
+
+    /* MONTHLY TABLE */
+    .mt-table th { background:var(--sb); color:var(--sb-text); }
+    .mt-total td { background:var(--sur2); font-weight:700; border-top:2px solid var(--bor); }
+
+    /* REPORTS */
+    .rp-card { background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); padding:15px 18px; box-shadow:var(--sha); }
+    .rp-title { font-weight:700; margin-bottom:5px; }
+    .rp-body { font-size:.87em; color:#4b5563; line-height:1.65; white-space:pre-wrap; margin-top:7px; }
+    .rp-tag { display:inline-block; font-size:.71em; padding:1px 7px; border-radius:20px; background:#eef0fe; color:var(--acc); margin-right:4px; font-weight:500; }
+    .rp-meta { font-size:.77em; color:var(--mut); }
+
+    /* SETTINGS */
+    .sql-block { background:#1e2235; color:#a8d8a8; font-family:monospace; font-size:.82em; padding:14px; border-radius:8px; overflow-x:auto; white-space:pre; line-height:1.6; margin-top:8px; }
+    .conn-ok  { color:var(--grn); font-weight:600; }
+    .conn-err { color:var(--red); font-weight:600; }
+    .step-num { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:50%; background:var(--acc); color:#fff; font-size:.76em; font-weight:700; flex-shrink:0; }
+    .step { display:flex; gap:10px; align-items:flex-start; margin-bottom:16px; }
+    .step-body { flex:1; }
+    .step-title { font-weight:600; margin-bottom:4px; }
+    .step-desc { font-size:.85em; color:var(--mut); line-height:1.5; }
+
+    /* PROJECTS */
+    .proj-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; }
+    .proj-card { background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); overflow:hidden; box-shadow:var(--sha); display:flex; flex-direction:column; }
+    .proj-hdr { padding:16px 18px; color:#fff; }
+    .proj-name { font-size:1.05em; font-weight:800; margin-bottom:5px; }
+    .proj-meta { display:flex; gap:7px; align-items:center; font-size:.78em; opacity:.9; flex-wrap:wrap; }
+    .proj-body { padding:14px 18px; flex:1; }
+    .proj-desc { font-size:.86em; color:var(--mut); margin-bottom:10px; line-height:1.55; }
+    .proj-sect { font-size:.72em; color:var(--mut); text-transform:uppercase; font-weight:600; letter-spacing:.05em; margin-bottom:5px; }
+    .proj-rpt { background:var(--sur2); border:1px solid var(--bor); border-radius:7px; padding:9px 12px; margin-bottom:9px; }
+    .proj-rpt-title { font-weight:600; font-size:.88em; margin-bottom:3px; }
+    .proj-rpt-sum { font-size:.81em; color:var(--mut); line-height:1.5; }
+    .proj-rev { display:flex; gap:10px; margin-bottom:10px; }
+    .proj-rev-item { flex:1; text-align:center; padding:8px 5px; background:var(--sur2); border-radius:6px; }
+    .proj-rev-val { font-size:1em; font-weight:700; color:var(--grn); }
+    .proj-rev-lbl { font-size:.71em; color:var(--mut); margin-top:2px; }
+    .proj-hl { display:flex; flex-wrap:wrap; gap:5px; margin-top:9px; }
+    .proj-hl-item { font-size:.75em; padding:2px 8px; background:#eef0fe; color:var(--acc); border-radius:20px; font-weight:500; }
+    .proj-footer { padding:9px 18px; border-top:1px solid var(--bor); display:flex; justify-content:space-between; align-items:center; font-size:.75em; color:var(--mut); background:var(--sur2); }
+    .proj-expand { cursor:pointer; color:var(--acc); font-size:.8em; border:none; background:none; font-family:inherit; font-weight:600; padding:2px 6px; border-radius:4px; }
+    .proj-expand:hover { background:#eef0fe; }
+    .proj-detail { display:none; padding:13px 18px; background:var(--sur2); border-top:1px solid var(--bor); }
+    .proj-detail.open { display:block; }
+    .proj-empty { color:var(--mut); font-size:.87em; text-align:center; padding:32px 20px; grid-column:1/-1; background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); }
+
+    /* SCROLL */
+    ::-webkit-scrollbar { width:5px; }
+    ::-webkit-scrollbar-track { background:transparent; }
+    ::-webkit-scrollbar-thumb { background:var(--bor); border-radius:3px; }
+  </style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div class="sb-logo">
+    <div class="sb-co">エースハイ合同会社</div>
+    <h1>Dashboard <span class="ai-badge">AI</span></h1>
+  </div>
+  <nav>
+    <div class="ng">メイン</div>
+    <div class="ni active" onclick="showPage('overview')"><span class="ni-ic">⊞</span>概要</div>
+    <div class="ng">管理</div>
+    <div class="ni" onclick="showPage('tasks')"><span class="ni-ic">✓</span>タスク管理</div>
+    <div class="ni" onclick="showPage('revenue')"><span class="ni-ic">¥</span>収益管理</div>
+    <div class="ni" onclick="showPage('reports')"><span class="ni-ic">▤</span>AIレポート</div>
+    <div class="ni" onclick="showPage('projects')"><span class="ni-ic">◈</span>プロジェクト管理</div>
+    <div class="ng">システム</div>
+    <div class="ni" onclick="showPage('settings')"><span class="ni-ic">⚙</span>設定・同期</div>
+  </nav>
+  <div class="sb-foot">
+    <span class="sync-dot" id="sync-dot"></span>
+    <span id="sync-label">ローカル保存</span>
+  </div>
+</div>
+
+<div id="main">
+  <div id="topbar">
+    <span class="tb-title" id="page-title">概要</span>
+    <div class="tb-right">
+      <span class="tb-date" id="today-label"></span>
+    </div>
+  </div>
+
+  <div id="content">
+
+    <!-- ===== OVERVIEW ===== -->
+    <div class="page active" id="page-overview">
+      <div class="g4" id="ov-stats" style="margin-bottom:18px;"></div>
+      <div class="g2">
+        <div>
+          <div class="sh"><h2>高優先タスク</h2></div>
+          <div class="pi-list" id="ov-high"></div>
+        </div>
+        <div>
+          <div class="sh"><h2>今月の収益</h2></div>
+          <div class="card">
+            <div class="c-label">今月純利益（固定費込）</div>
+            <div class="c-val" id="ov-net">¥0</div>
+            <div class="c-sub" id="ov-sub">収入 ¥0 / 支出 ¥0</div>
+            <div class="rev-bar" id="ov-bar"></div>
+          </div>
+          <div class="mt20">
+            <div class="sh"><h2>最新 AIレポート</h2></div>
+            <div class="card" id="ov-report"><div style="color:var(--mut);font-size:.87em;">レポートはまだありません</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TASKS ===== -->
+    <div class="page" id="page-tasks">
+      <div class="fb">
+        <button class="fb-btn on" onclick="filterTasks('all',this)">すべて</button>
+        <button class="fb-btn" onclick="filterTasks('新規事業',this)">新規事業</button>
+        <button class="fb-btn" onclick="filterTasks('軽配送事業',this)">軽配送事業</button>
+        <button class="fb-btn" onclick="filterTasks('アプリ開発',this)">アプリ開発</button>
+        <button class="fb-btn" onclick="filterTasks('開発',this)">開発</button>
+        <button class="fb-btn" onclick="filterTasks('プライベート',this)">プライベート</button>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr>
+            <th>タスク名</th><th>カテゴリ</th>
+            <th class="sort" data-sort="priority" onclick="sortTable('priority')">優先度<span class="si">↕</span></th>
+            <th class="sort" data-sort="status"   onclick="sortTable('status')">ステータス<span class="si">↕</span></th>
+            <th class="sort" data-sort="progress" onclick="sortTable('progress')">進捗<span class="si">↕</span></th>
+            <th>期限</th>
+          </tr></thead>
+          <tbody id="main-tbody">
+            <!-- t6 -->
+            <tr class="tr" data-id="t6" data-priority="1" data-cat="新規事業">
+              <td><div class="task-name" onclick="toggleDetail('t6')"><span class="ta">▶</span>ホブデ英語スクール ドメイン取得</div></td>
+              <td><span class="cat-tag">新規事業</span></td><td><span class="badge high">高</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t6')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t6')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t6-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t6')"></td>
+            </tr>
+            <tr class="dr" id="detail-t6"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t6','desc',this.value)" id="t6-desc"></textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t6','tool',this.value)" id="t6-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t6','next',this.value)" id="t6-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t31 -->
+            <tr class="tr" data-id="t31" data-priority="1" data-cat="軽配送事業">
+              <td><div class="task-name" onclick="toggleDetail('t31')"><span class="ta">▶</span>メタ広告の数値分析</div></td>
+              <td><span class="cat-tag">軽配送事業</span></td><td><span class="badge high">高</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t31')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t31')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t31-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t31')"></td>
+            </tr>
+            <tr class="dr" id="detail-t31"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t31','desc',this.value)" id="t31-desc"></textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t31','tool',this.value)" id="t31-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t31','next',this.value)" id="t31-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t36 -->
+            <tr class="tr" data-id="t36" data-priority="1" data-cat="軽配送事業">
+              <td><div class="task-name" onclick="toggleDetail('t36')"><span class="ta">▶</span>6月分エース杯メタ広告分析</div></td>
+              <td><span class="cat-tag">軽配送事業</span></td><td><span class="badge high">高</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t36')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t36')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t36-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" value="2026-06-30" onchange="onDate(this,'t36')"></td>
+            </tr>
+            <tr class="dr" id="detail-t36"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t36','desc',this.value)" id="t36-desc">6月21日から28日までの期間に掲載した広告の数値の分析</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t36','tool',this.value)" id="t36-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t36','next',this.value)" id="t36-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t1 -->
+            <tr class="tr" data-id="t1" data-priority="2" data-cat="新規事業">
+              <td><div class="task-name" onclick="toggleDetail('t1')"><span class="ta">▶</span>デジタル遺品整理</div></td>
+              <td><span class="cat-tag">新規事業</span></td><td><span class="badge mid">中</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t1')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t1')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t1-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t1')"></td>
+            </tr>
+            <tr class="dr" id="detail-t1"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t1','desc',this.value)" id="t1-desc"></textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t1','tool',this.value)" id="t1-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t1','next',this.value)" id="t1-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t37 -->
+            <tr class="tr" data-id="t37" data-priority="2" data-cat="開発">
+              <td><div class="task-name" onclick="toggleDetail('t37')"><span class="ta">▶</span>携帯からクラウドコードAIを操作</div></td>
+              <td><span class="cat-tag">開発</span></td><td><span class="badge mid">中</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t37')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t37')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t37-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t37')"></td>
+            </tr>
+            <tr class="dr" id="detail-t37"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t37','desc',this.value)" id="t37-desc">仕事先でもクラウドコードAIでVSCでの開発を進めるかどうか</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t37','tool',this.value)" id="t37-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t37','next',this.value)" id="t37-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t38 -->
+            <tr class="tr" data-id="t38" data-priority="2" data-cat="アプリ開発">
+              <td><div class="task-name" onclick="toggleDetail('t38')"><span class="ta">▶</span>開発・収益状況ダッシュボード作成</div></td>
+              <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge mid">中</span></td>
+              <td><select class="ss s-wip" onchange="onStatus(this,'t38')"><option value="s-todo">未着手</option><option value="s-wip" selected>進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t38')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t38-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t38')"></td>
+            </tr>
+            <tr class="dr" id="detail-t38"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t38','desc',this.value)" id="t38-desc">すべての開発状況や収益状況レポート等を一覧で確認できるダッシュボードを作成する</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t38','tool',this.value)" id="t38-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t38','next',this.value)" id="t38-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t2 -->
+            <tr class="tr" data-id="t2" data-priority="3" data-cat="新規事業">
+              <td><div class="task-name" onclick="toggleDetail('t2')"><span class="ta">▶</span>警備会社</div></td>
+              <td><span class="cat-tag">新規事業</span></td><td><span class="badge low">低</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t2')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t2')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t2-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t2')"></td>
+            </tr>
+            <tr class="dr" id="detail-t2"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t2','desc',this.value)" id="t2-desc"></textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t2','tool',this.value)" id="t2-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t2','next',this.value)" id="t2-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t4 -->
+            <tr class="tr" data-id="t4" data-priority="3" data-cat="アプリ開発">
+              <td><div class="task-name" onclick="toggleDetail('t4')"><span class="ta">▶</span>連絡先の細分化保存アプリ開発</div></td>
+              <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge low">低</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t4')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t4')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t4-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t4')"></td>
+            </tr>
+            <tr class="dr" id="detail-t4"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t4','desc',this.value)" id="t4-desc"></textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t4','tool',this.value)" id="t4-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t4','next',this.value)" id="t4-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t7 -->
+            <tr class="tr" data-id="t7" data-priority="3" data-cat="新規事業">
+              <td><div class="task-name" onclick="toggleDetail('t7')"><span class="ta">▶</span>Xのアカウント運用</div></td>
+              <td><span class="cat-tag">新規事業</span></td><td><span class="badge low">低</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t7')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t7')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t7-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t7')"></td>
+            </tr>
+            <tr class="dr" id="detail-t7"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t7','desc',this.value)" id="t7-desc"></textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t7','tool',this.value)" id="t7-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t7','next',this.value)" id="t7-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t5 -->
+            <tr class="tr" data-id="t5" data-priority="3" data-cat="アプリ開発">
+              <td><div class="task-name" onclick="toggleDetail('t5')"><span class="ta">▶</span>競艇予測ツール開発</div></td>
+              <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge low">低</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t5')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t5')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t5-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t5')"></td>
+            </tr>
+            <tr class="dr" id="detail-t5"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t5','desc',this.value)" id="t5-desc"></textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t5','tool',this.value)" id="t5-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t5','next',this.value)" id="t5-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t32 -->
+            <tr class="tr" data-id="t32" data-priority="3" data-cat="新規事業">
+              <td><div class="task-name" onclick="toggleDetail('t32')"><span class="ta">▶</span>チャイぽの最適計算ツールの作成</div></td>
+              <td><span class="cat-tag">新規事業</span></td><td><span class="badge low">低</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t32')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t32')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t32-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t32')"></td>
+            </tr>
+            <tr class="dr" id="detail-t32"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t32','desc',this.value)" id="t32-desc"></textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t32','tool',this.value)" id="t32-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t32','next',this.value)" id="t32-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t34 -->
+            <tr class="tr" data-id="t34" data-priority="3" data-cat="プライベート">
+              <td><div class="task-name" onclick="toggleDetail('t34')"><span class="ta">▶</span>自宅環境のWi-Fiのセキュリティー検証</div></td>
+              <td><span class="cat-tag">プライベート</span></td><td><span class="badge low">低</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t34')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t34')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t34-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t34')"></td>
+            </tr>
+            <tr class="dr" id="detail-t34"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t34','desc',this.value)" id="t34-desc">Wi-Fiによって漏洩する情報の確認。また監視カメラのセキュリティチェック</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t34','tool',this.value)" id="t34-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t34','next',this.value)" id="t34-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t35 -->
+            <tr class="tr" data-id="t35" data-priority="3" data-cat="プライベート">
+              <td><div class="task-name" onclick="toggleDetail('t35')"><span class="ta">▶</span>コンピューターディスプレイの増設</div></td>
+              <td><span class="cat-tag">プライベート</span></td><td><span class="badge low">低</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t35')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t35')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t35-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t35')"></td>
+            </tr>
+            <tr class="dr" id="detail-t35"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t35','desc',this.value)" id="t35-desc">Mac miniの3画面以上の増設方法</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t35','tool',this.value)" id="t35-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t35','next',this.value)" id="t35-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t33 -->
+            <tr class="tr" data-id="t33" data-priority="4" data-cat="プライベート">
+              <td><div class="task-name" onclick="toggleDetail('t33')"><span class="ta">▶</span>家の家電ツール最適化</div></td>
+              <td><span class="cat-tag">プライベート</span></td><td><span class="badge routine">定例</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t33')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t33')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t33-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t33')"></td>
+            </tr>
+            <tr class="dr" id="detail-t33"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t33','desc',this.value)" id="t33-desc">アレクサなどを使って家の中の電気やエアコン、鍵などを最適化すること</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t33','tool',this.value)" id="t33-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t33','next',this.value)" id="t33-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt28">
+        <div class="done-lbl">完了済み</div>
+        <div class="tw">
+          <table>
+            <thead><tr><th>タスク名</th><th>カテゴリ</th><th>優先度</th><th>ステータス</th><th>進捗</th><th>期限</th></tr></thead>
+            <tbody id="done-tbody"><tr id="done-empty"><td colspan="6" class="empty">完了済みのタスクはありません</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== REVENUE ===== -->
+    <div class="page" id="page-revenue">
+      <!-- Fixed costs -->
+      <div class="fs" style="margin-bottom:16px;">
+        <h3>固定費（毎月自動計上）</h3>
+        <div class="tw" style="margin-bottom:10px;" id="fc-list"></div>
+        <div style="display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap;">
+          <div><label class="fgl">サービス名</label><input class="fi" id="fc-name" placeholder="例：サーバー代" style="width:150px;"></div>
+          <div><label class="fgl">月額（¥）</label><input type="number" class="fi" id="fc-amount" placeholder="例：1000" style="width:110px;"></div>
+          <div><label class="fgl">備考</label><input class="fi" id="fc-note" placeholder="例：$8/月" style="width:130px;"></div>
+          <button class="btn bp" onclick="addFixedCost()">追加</button>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="g4" style="margin-bottom:16px;">
+        <div class="card"><div class="c-label">今月 収入</div><div class="c-val rev-pos" id="r-inc">¥0</div></div>
+        <div class="card"><div class="c-label">今月 変動支出</div><div class="c-val rev-neg" id="r-var">¥0</div></div>
+        <div class="card"><div class="c-label">今月 固定費</div><div class="c-val" style="color:var(--amb);" id="r-fix">¥0</div></div>
+        <div class="card"><div class="c-label">今月 純利益</div><div class="c-val" id="r-net">¥0</div></div>
+      </div>
+
+      <!-- Add form -->
+      <div class="fs" style="margin-bottom:16px;">
+        <h3>取引を追加</h3>
+        <div class="fg fg-5">
+          <div><label class="fgl">日付</label><input type="date" class="fi" id="rev-date"></div>
+          <div><label class="fgl">内容</label><input class="fi" id="rev-desc" placeholder="例：配送委託費"></div>
+          <div><label class="fgl">カテゴリ</label><select class="fsel" id="rev-cat"><option>軽配送事業</option><option>新規事業</option><option>アプリ収益</option><option>広告費</option><option>その他</option></select></div>
+          <div><label class="fgl">金額（¥）</label><input type="number" class="fi" id="rev-amount" placeholder="50000"></div>
+          <div style="display:flex;flex-direction:column;gap:5px;">
+            <div><label class="fgl">種別</label><select class="fsel" id="rev-type"><option value="income">収入</option><option value="expense">支出</option></select></div>
+            <button class="btn bp" onclick="addRevenue()" style="margin-top:auto;">追加</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monthly breakdown -->
+      <div class="sh mt12"><h2>月別収支（固定費込）</h2></div>
+      <div class="tw" style="margin-bottom:16px;">
+        <table class="mt-table">
+          <thead><tr><th>年月</th><th style="text-align:right">収入</th><th style="text-align:right">変動支出</th><th style="text-align:right">固定費</th><th style="text-align:right">純利益</th></tr></thead>
+          <tbody id="monthly-tbody"></tbody>
+          <tfoot id="monthly-tfoot"></tfoot>
+        </table>
+      </div>
+
+      <!-- Transaction list -->
+      <div class="sh"><h2>取引一覧</h2></div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>日付</th><th>内容</th><th>カテゴリ</th><th>種別</th><th style="text-align:right">金額</th><th></th></tr></thead>
+          <tbody id="rev-tbody"><tr id="rev-empty"><td colspan="6" class="empty">取引記録がありません</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===== REPORTS ===== -->
+    <div class="page" id="page-reports">
+      <div class="fs" style="margin-bottom:16px;">
+        <h3>AIレポートを追加</h3>
+        <div class="fg fg-2" style="margin-bottom:10px;">
+          <div><label class="fgl">タイトル</label><input class="fi" id="rpt-title" placeholder="例：メタ広告分析レポート"></div>
+          <div><label class="fgl">タグ（カンマ区切り）</label><input class="fi" id="rpt-tag" placeholder="例：軽配送事業, マーケティング"></div>
+        </div>
+        <div><label class="fgl">内容・成果</label><textarea class="fta" id="rpt-body" placeholder="Claudeによる成果・レポート内容..."></textarea></div>
+        <div style="display:flex;justify-content:flex-end;margin-top:10px;">
+          <button class="btn bp" onclick="addReport()">保存</button>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:11px;" id="rpt-list">
+        <div class="card" style="color:var(--mut);font-size:.87em;text-align:center;">レポートはまだありません</div>
+      </div>
+    </div>
+
+    <!-- ===== PROJECTS ===== -->
+    <div class="page" id="page-projects">
+      <div class="g4" id="proj-stats" style="margin-bottom:18px;"></div>
+      <div class="sh">
+        <h2>プロジェクト一覧</h2>
+        <span style="font-size:.78em;color:var(--mut);">/ダッシュボード追加 スキルで自動登録・更新</span>
+      </div>
+      <div class="proj-grid mt12" id="proj-grid"></div>
+    </div>
+
+    <!-- ===== SETTINGS ===== -->
+    <div class="page" id="page-settings">
+      <div class="g2">
+        <div>
+          <div class="fs">
+            <h3>Supabase クラウド同期</h3>
+            <p style="font-size:.84em;color:var(--mut);margin-bottom:14px;line-height:1.6;">設定すると複数デバイスでデータを共有できます。<strong>無料</strong>で利用できます。</p>
+            <div class="step">
+              <span class="step-num">1</span>
+              <div class="step-body">
+                <div class="step-title">Supabaseでプロジェクトを作成</div>
+                <div class="step-desc">supabase.com → New Project を作成してください。</div>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">2</span>
+              <div class="step-body">
+                <div class="step-title">SQL Editorで下のSQLを実行</div>
+                <div class="step-desc">右のSQLをコピーして Supabase SQL Editor に貼り付け実行してください。</div>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">3</span>
+              <div class="step-body">
+                <div class="step-title">URLとAnon Keyを入力</div>
+                <div class="step-desc">Settings → API からコピーして入力してください。</div>
+              </div>
+            </div>
+            <div style="margin-bottom:10px;"><label class="fgl">Project URL</label><input class="fi" id="sb-url" placeholder="https://xxxx.supabase.co"></div>
+            <div style="margin-bottom:12px;"><label class="fgl">Anon (public) Key</label><input class="fi" id="sb-key" placeholder="eyJhbGc..."></div>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <button class="btn bp" onclick="saveSettings()">保存 & テスト</button>
+              <button class="btn be" onclick="clearSettings()">接続を解除</button>
+              <span id="conn-status" style="font-size:.84em;"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="fs">
+            <h3>テーブル作成 SQL <button class="btn be bs" onclick="copySQL()" style="float:right;">コピー</button></h3>
+            <pre class="sql-block" id="sql-block">create table task_states (
+  task_id text primary key,
+  status text default 's-todo',
+  progress text default '0%',
+  deadline text default '',
+  desc text default '',
+  tool text default '',
+  next_action text default '',
+  updated_at timestamptz default now()
+);
+
+create table revenues (
+  id bigint generated always as identity primary key,
+  date text not null,
+  desc text not null,
+  cat text not null,
+  amount numeric not null,
+  type text not null,
+  created_at timestamptz default now()
+);
+
+create table reports (
+  id bigint generated always as identity primary key,
+  title text not null,
+  tag text default '',
+  body text not null,
+  created_at timestamptz default now()
+);
+
+alter table task_states disable row level security;
+alter table revenues disable row level security;
+alter table reports disable row level security;</pre>
+          </div>
+          <div class="fs mt12">
+            <h3>データ同期</h3>
+            <p style="font-size:.84em;color:var(--mut);margin-bottom:12px;">Supabase接続後、手動でデータを同期できます。</p>
+            <button class="btn bp" onclick="syncAll()" id="sync-btn" disabled>クラウドから読み込む</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t2','t4','t7','t5','t32','t34','t35','t33'];
+
+// PROJECTS_DATA_START
+const PROJECTS_DATA = [];
+// PROJECTS_DATA_END
+const SC = ['s-todo','s-wip','s-done','s-hold'];
+const SO = {'s-wip':0,'s-todo':1,'s-hold':2,'s-done':3};
+const PO = {'1':0,'2':1,'3':2,'4':3};
+let sortState = {key:null, dir:1};
+let filterCat = 'all';
+let saveTimers = {};
+
+// ===== DB =====
+const DB = {
+  url: '', key: '',
+  load() { this.url = localStorage.getItem('sb_url')||''; this.key = localStorage.getItem('sb_key')||''; },
+  ready() { return !!(this.url && this.key); },
+  hdrs(extra) {
+    return Object.assign({'apikey':this.key,'Authorization':'Bearer '+this.key,'Content-Type':'application/json'}, extra||{});
+  },
+  async req(path, opts) {
+    if (!this.ready()) return null;
+    try {
+      const r = await fetch(this.url+'/rest/v1/'+path, Object.assign({headers: this.hdrs(opts&&opts.headers)}, opts));
+      if (!r.ok) return null;
+      if (r.status === 204) return true;
+      return r.json();
+    } catch(e) { return null; }
+  },
+  getAll(t) { return this.req(t+'?select=*&order=created_at.desc'); },
+  upsert(t, d) { return this.req(t, {method:'POST', headers:{'Prefer':'resolution=merge-duplicates,return=minimal'}, body:JSON.stringify(d)}); },
+  insert(t, d) { return this.req(t, {method:'POST', headers:{'Prefer':'return=representation'}, body:JSON.stringify(d)}); },
+  remove(t, id) { return this.req(t+'?id=eq.'+id, {method:'DELETE'}); },
+  async test() { return this.req('task_states?select=task_id&limit=1') !== null; }
+};
+
+// ===== NAV =====
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',reports:'AIレポート',projects:'プロジェクト管理',settings:'設定・同期'};
+  document.getElementById('page-title').textContent = lbl[name]||name;
+  const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
+  if (ni) ni.classList.add('active');
+  if (name==='overview') refreshOverview();
+  if (name==='revenue') { renderRevenues(); renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown(); }
+  if (name==='reports') renderReports();
+  if (name==='projects') { renderProjectStats(); renderProjects(); }
+}
+
+// ===== TASKS =====
+function toggleDetail(id) {
+  const row = document.querySelector('tr[data-id="'+id+'"]');
+  const dr = document.getElementById('detail-'+id);
+  if (!row||!dr) return;
+  const open = row.classList.toggle('open');
+  dr.classList.toggle('open', open);
+}
+
+function saveDetail(id, field, value) {
+  localStorage.setItem('db_'+id+'_'+field, value);
+  scheduleSync(id);
+}
+
+function onStatus(el, id) {
+  SC.forEach(c => el.classList.remove(c));
+  el.classList.add(el.value);
+  localStorage.setItem('db_'+id+'_status', el.value);
+  updateDone(); refreshOverview();
+  scheduleSync(id);
+}
+
+function onProgress(el, id) {
+  const bar = document.getElementById(id+'-bar');
+  if (bar) bar.style.width = el.value;
+  localStorage.setItem('db_'+id+'_progress', el.value);
+  scheduleSync(id);
+}
+
+function onDate(el, id) {
+  localStorage.setItem('db_'+id+'_date', el.value);
+  scheduleSync(id);
+}
+
+function scheduleSync(id) {
+  if (!DB.ready()) return;
+  clearTimeout(saveTimers[id]);
+  saveTimers[id] = setTimeout(() => syncTask(id), 800);
+}
+
+async function syncTask(id) {
+  if (!DB.ready()) return;
+  const s = {
+    task_id: id,
+    status: localStorage.getItem('db_'+id+'_status')||'s-todo',
+    progress: localStorage.getItem('db_'+id+'_progress')||'0%',
+    deadline: localStorage.getItem('db_'+id+'_date')||'',
+    desc: localStorage.getItem('db_'+id+'_desc')||'',
+    tool: localStorage.getItem('db_'+id+'_tool')||'',
+    next_action: localStorage.getItem('db_'+id+'_next')||''
+  };
+  await DB.upsert('task_states', s);
+}
+
+function applyTaskState(s) {
+  const id = s.task_id;
+  const sel = document.querySelector('tr[data-id="'+id+'"] select.ss');
+  if (sel && s.status) { sel.value=s.status; SC.forEach(c=>sel.classList.remove(c)); sel.classList.add(s.status); }
+  const ps = document.querySelector('tr[data-id="'+id+'"] select.ps');
+  if (ps && s.progress) { ps.value=s.progress; const b=document.getElementById(id+'-bar'); if(b) b.style.width=s.progress; }
+  const di = document.querySelector('tr[data-id="'+id+'"] input.di-date');
+  if (di && s.deadline) di.value=s.deadline;
+  if (s.desc) { const e=document.getElementById(id+'-desc'); if(e) e.value=s.desc; }
+  if (s.tool) { const e=document.getElementById(id+'-tool'); if(e) e.value=s.tool; }
+  if (s.next_action) { const e=document.getElementById(id+'-next'); if(e) e.value=s.next_action; }
+  if (s.status) localStorage.setItem('db_'+id+'_status', s.status);
+  if (s.progress) localStorage.setItem('db_'+id+'_progress', s.progress);
+  if (s.deadline) localStorage.setItem('db_'+id+'_date', s.deadline);
+  if (s.desc) localStorage.setItem('db_'+id+'_desc', s.desc);
+  if (s.tool) localStorage.setItem('db_'+id+'_tool', s.tool);
+  if (s.next_action) localStorage.setItem('db_'+id+'_next', s.next_action);
+}
+
+function updateDone() {
+  const mt = document.getElementById('main-tbody');
+  const dt = document.getElementById('done-tbody');
+  const de = document.getElementById('done-empty');
+  const all = [...mt.querySelectorAll('tr.tr[data-id]'), ...dt.querySelectorAll('tr.tr[data-id]')];
+  all.forEach(row => {
+    const id = row.dataset.id;
+    const sel = row.querySelector('select.ss');
+    const dr = document.getElementById('detail-'+id);
+    if (!sel) return;
+    if (sel.value==='s-done') { dt.appendChild(row); if(dr) dt.appendChild(dr); }
+    else { mt.appendChild(row); if(dr) mt.appendChild(dr); }
+  });
+  de.style.display = dt.querySelectorAll('tr.tr[data-id]').length>0 ? 'none' : '';
+  applyFilter(filterCat);
+}
+
+function sortTable(key) {
+  if (sortState.key===key) sortState.dir*=-1; else { sortState.key=key; sortState.dir=1; }
+  const tb = document.getElementById('main-tbody');
+  const rows = [...tb.querySelectorAll('tr.tr[data-id]')];
+  rows.sort((a,b) => {
+    let va,vb;
+    if (key==='priority') { va=PO[a.dataset.priority]??99; vb=PO[b.dataset.priority]??99; }
+    else if (key==='status') { va=SO[a.querySelector('select.ss').value]??99; vb=SO[b.querySelector('select.ss').value]??99; }
+    else if (key==='progress') { va=parseInt(a.querySelector('select.ps').value)||0; vb=parseInt(b.querySelector('select.ps').value)||0; }
+    return (va-vb)*sortState.dir;
+  });
+  rows.forEach(r => { const dr=document.getElementById('detail-'+r.dataset.id); tb.appendChild(r); if(dr) tb.appendChild(dr); });
+  document.querySelectorAll('th.sort').forEach(th => { th.classList.remove('sa'); th.querySelector('.si').textContent='↕'; });
+  const at = document.querySelector('th.sort[data-sort="'+key+'"]');
+  if (at) { at.classList.add('sa'); at.querySelector('.si').textContent=sortState.dir===1?'↑':'↓'; }
+}
+
+function filterTasks(cat, btn) {
+  filterCat = cat;
+  document.querySelectorAll('.fb-btn').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  applyFilter(cat);
+}
+
+function applyFilter(cat) {
+  document.querySelectorAll('#main-tbody tr.tr').forEach(row => {
+    const show = cat==='all' || row.dataset.cat===cat;
+    row.style.display = show?'':'none';
+    const dr = document.getElementById('detail-'+row.dataset.id);
+    if (dr) dr.style.display = (show && row.classList.contains('open'))?'':'none';
+  });
+}
+
+// ===== FIXED COSTS =====
+function getFixedCosts() {
+  const def = [{id:1, name:'Claude Code', amount:3400, note:'$22/月'}];
+  return JSON.parse(localStorage.getItem('db_fixed_costs') || JSON.stringify(def));
+}
+function setFixedCosts(arr) { localStorage.setItem('db_fixed_costs', JSON.stringify(arr)); }
+
+function addFixedCost() {
+  const name = document.getElementById('fc-name').value.trim();
+  const amount = parseFloat(document.getElementById('fc-amount').value);
+  const note = document.getElementById('fc-note').value.trim();
+  if (!name || isNaN(amount)) return;
+  const arr = getFixedCosts();
+  arr.push({id: Date.now(), name, amount, note});
+  setFixedCosts(arr);
+  document.getElementById('fc-name').value='';
+  document.getElementById('fc-amount').value='';
+  document.getElementById('fc-note').value='';
+  renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown();
+}
+
+function deleteFixedCost(id) {
+  setFixedCosts(getFixedCosts().filter(c => c.id!==id));
+  renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown();
+}
+
+function updateFixedCostAmount(id, val) {
+  const arr = getFixedCosts();
+  const c = arr.find(x => x.id===id);
+  if (c) { c.amount = parseFloat(val)||0; setFixedCosts(arr); refreshRevenueSummary(); renderMonthlyBreakdown(); }
+}
+
+function renderFixedCosts() {
+  const el = document.getElementById('fc-list');
+  const arr = getFixedCosts();
+  if (!arr.length) { el.innerHTML='<div class="empty">固定費はありません</div>'; return; }
+  el.innerHTML = arr.map(c => `
+    <div class="fc-row">
+      <span class="fc-name">${c.name}</span>
+      <span class="fc-note">${c.note||''}</span>
+      <input type="number" class="fi fc-input" value="${c.amount}" onchange="updateFixedCostAmount(${c.id},this.value)">
+      <span style="font-size:.8em;color:var(--mut);">円/月</span>
+      <button class="btn bd bs" onclick="deleteFixedCost(${c.id})">削除</button>
+    </div>`).join('');
+}
+
+// ===== REVENUE =====
+function getRevenues() { return JSON.parse(localStorage.getItem('db_revenues')||'[]'); }
+function setRevenues(arr) { localStorage.setItem('db_revenues', JSON.stringify(arr)); }
+
+async function addRevenue() {
+  const date = document.getElementById('rev-date').value;
+  const desc = document.getElementById('rev-desc').value.trim();
+  const cat  = document.getElementById('rev-cat').value;
+  const amount = parseFloat(document.getElementById('rev-amount').value);
+  const type = document.getElementById('rev-type').value;
+  if (!date||!desc||isNaN(amount)||amount<=0) return;
+  const item = {date, desc, cat, amount, type};
+  if (DB.ready()) {
+    const res = await DB.insert('revenues', item);
+    item.id = (res&&res[0]) ? res[0].id : Date.now();
+  } else { item.id = Date.now(); }
+  const arr = getRevenues(); arr.unshift(item); setRevenues(arr);
+  document.getElementById('rev-desc').value='';
+  document.getElementById('rev-amount').value='';
+  renderRevenues(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
+}
+
+async function deleteRevenue(id) {
+  if (DB.ready()) await DB.remove('revenues', id);
+  setRevenues(getRevenues().filter(r => r.id!==id));
+  renderRevenues(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
+}
+
+function renderRevenues() {
+  const tb = document.getElementById('rev-tbody');
+  const empty = document.getElementById('rev-empty');
+  const items = getRevenues();
+  tb.querySelectorAll('tr[data-rid]').forEach(r => r.remove());
+  if (!items.length) { empty.style.display=''; return; }
+  empty.style.display='none';
+  items.forEach(r => {
+    const tr = document.createElement('tr');
+    tr.dataset.rid = r.id;
+    const cls = r.type==='income'?'rev-pos':'rev-neg';
+    const sign = r.type==='income'?'+':'-';
+    tr.innerHTML = `<td>${r.date}</td><td>${r.desc}</td><td><span class="cat-tag">${r.cat}</span></td><td>${r.type==='income'?'収入':'支出'}</td><td style="text-align:right"><span class="${cls}">${sign}¥${parseFloat(r.amount).toLocaleString()}</span></td><td><button class="btn bd bs" onclick="deleteRevenue(${r.id})">削除</button></td>`;
+    tb.appendChild(tr);
+  });
+}
+
+function getMonthlyData() {
+  const items = getRevenues();
+  const fixedTotal = getFixedCosts().reduce((s,c) => s+parseFloat(c.amount||0), 0);
+  const now = new Date();
+  const curYM = now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0');
+  const monthSet = new Set([curYM]);
+  items.forEach(r => monthSet.add(r.date.slice(0,7)));
+  return Array.from(monthSet).sort().reverse().map(ym => {
+    const mi = items.filter(r => r.date.startsWith(ym));
+    const income = mi.filter(r=>r.type==='income').reduce((s,r)=>s+parseFloat(r.amount||0),0);
+    const varExp = mi.filter(r=>r.type==='expense').reduce((s,r)=>s+parseFloat(r.amount||0),0);
+    return {ym, income, varExp, fixedExp:fixedTotal, net: income-varExp-fixedTotal};
+  });
+}
+
+function refreshRevenueSummary() {
+  const data = getMonthlyData();
+  const now = new Date();
+  const ym = now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0');
+  const cur = data.find(d=>d.ym===ym)||{income:0,varExp:0,fixedExp:0,net:0};
+  document.getElementById('r-inc').textContent = '¥'+cur.income.toLocaleString();
+  document.getElementById('r-var').textContent = '¥'+cur.varExp.toLocaleString();
+  document.getElementById('r-fix').textContent = '¥'+cur.fixedExp.toLocaleString();
+  const ne = document.getElementById('r-net');
+  ne.textContent = (cur.net>=0?'¥':'-¥')+Math.abs(cur.net).toLocaleString();
+  ne.style.color = cur.net>=0?'var(--grn)':'var(--red)';
+}
+
+function renderMonthlyBreakdown() {
+  const data = getMonthlyData();
+  const tb = document.getElementById('monthly-tbody');
+  const tf = document.getElementById('monthly-tfoot');
+  const fmt = n => (n>=0?'¥':'-¥')+Math.abs(n).toLocaleString();
+  const clr = n => n>=0?'color:var(--grn)':'color:var(--red)';
+  tb.innerHTML = data.map(d => `<tr>
+    <td>${d.ym}</td>
+    <td style="text-align:right;color:var(--grn)">¥${d.income.toLocaleString()}</td>
+    <td style="text-align:right;color:var(--red)">¥${d.varExp.toLocaleString()}</td>
+    <td style="text-align:right;color:var(--amb)">¥${d.fixedExp.toLocaleString()}</td>
+    <td style="text-align:right;${clr(d.net)}">${fmt(d.net)}</td>
+  </tr>`).join('');
+  if (!data.length) { tb.innerHTML='<tr><td colspan="5" class="empty">データがありません</td></tr>'; tf.innerHTML=''; return; }
+  const ti = data.reduce((s,d)=>s+d.income,0);
+  const tv = data.reduce((s,d)=>s+d.varExp,0);
+  const tf2 = data.reduce((s,d)=>s+d.fixedExp,0);
+  const tn = ti-tv-tf2;
+  tf.innerHTML = `<tr class="mt-total"><td>累計合計</td><td style="text-align:right;color:var(--grn)">¥${ti.toLocaleString()}</td><td style="text-align:right;color:var(--red)">¥${tv.toLocaleString()}</td><td style="text-align:right;color:var(--amb)">¥${tf2.toLocaleString()}</td><td style="text-align:right;${clr(tn)}">${fmt(tn)}</td></tr>`;
+}
+
+// ===== REPORTS =====
+function getReports() { return JSON.parse(localStorage.getItem('db_reports')||'[]'); }
+function setReports(arr) { localStorage.setItem('db_reports', JSON.stringify(arr)); }
+
+async function addReport() {
+  const title = document.getElementById('rpt-title').value.trim();
+  const tag = document.getElementById('rpt-tag').value.trim();
+  const body = document.getElementById('rpt-body').value.trim();
+  if (!title||!body) return;
+  const item = {title, tag, body};
+  if (DB.ready()) {
+    const res = await DB.insert('reports', item);
+    item.id = (res&&res[0]) ? res[0].id : Date.now();
+    item.date = new Date().toLocaleDateString('ja-JP');
+  } else {
+    item.id = Date.now();
+    item.date = new Date().toLocaleDateString('ja-JP');
+  }
+  const arr = getReports(); arr.unshift(item); setReports(arr);
+  document.getElementById('rpt-title').value='';
+  document.getElementById('rpt-tag').value='';
+  document.getElementById('rpt-body').value='';
+  renderReports(); refreshOverview();
+}
+
+async function deleteReport(id) {
+  if (DB.ready()) await DB.remove('reports', id);
+  setReports(getReports().filter(r=>r.id!==id));
+  renderReports(); refreshOverview();
+}
+
+function renderReports() {
+  const el = document.getElementById('rpt-list');
+  const arr = getReports();
+  if (!arr.length) { el.innerHTML='<div class="card" style="color:var(--mut);font-size:.87em;text-align:center;">レポートはまだありません</div>'; return; }
+  el.innerHTML = arr.map(r => {
+    const tags = r.tag ? r.tag.split(/[、,，]/).map(t=>`<span class="rp-tag">${t.trim()}</span>`).join('') : '';
+    return `<div class="rp-card"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;"><div><div class="rp-title">${r.title}</div><div style="margin-top:4px;">${tags}</div></div><div style="display:flex;align-items:center;gap:8px;"><span class="rp-meta">${r.date||''}</span><button class="btn bd bs" onclick="deleteReport(${r.id})">削除</button></div></div><div class="rp-body">${r.body}</div></div>`;
+  }).join('');
+}
+
+// ===== PROJECTS =====
+const PROJ_COLORS = ['#4f8ef7','#7c3aed','#1aaa80','#d97706','#e05050','#0891b2'];
+
+function renderProjectStats() {
+  const total = PROJECTS_DATA.length;
+  const active = PROJECTS_DATA.filter(p => p.status === '進行中').length;
+  const done   = PROJECTS_DATA.filter(p => p.status === '完了').length;
+  const totalRev = PROJECTS_DATA.reduce((s, p) => s + (p.revenue ? parseFloat(p.revenue.total||0) : 0), 0);
+  const el = document.getElementById('proj-stats');
+  if (!el) return;
+  el.innerHTML =
+    `<div class="chip"><div class="n" style="color:var(--txt)">${total}</div><div class="l">総プロジェクト</div></div>` +
+    `<div class="chip"><div class="n wip">${active}</div><div class="l">進行中</div></div>` +
+    `<div class="chip"><div class="n done">${done}</div><div class="l">完了</div></div>` +
+    `<div class="chip"><div class="n" style="color:var(--grn)">${totalRev > 0 ? '¥'+totalRev.toLocaleString() : '-'}</div><div class="l">累計収益</div></div>`;
+}
+
+function renderProjects() {
+  const el = document.getElementById('proj-grid');
+  if (!el) return;
+  if (!PROJECTS_DATA.length) {
+    el.innerHTML = '<div class="proj-empty"><strong>/ダッシュボード追加</strong> スキルを呼び出すと<br>開発・調査したプロジェクトが自動登録されます</div>';
+    return;
+  }
+  el.innerHTML = PROJECTS_DATA.map((p, i) => {
+    const color = p.color || PROJ_COLORS[i % PROJ_COLORS.length];
+    const latestRpt = p.reports && p.reports[0];
+    const stColors = {'進行中':'rgba(255,255,255,.75)','完了':'rgba(255,255,255,.75)','未着手':'rgba(255,255,255,.6)','保留':'rgba(255,255,255,.6)'};
+    const revM = p.revenue && parseFloat(p.revenue.monthly||0) > 0 ? '¥'+parseFloat(p.revenue.monthly).toLocaleString() : '-';
+    const revT = p.revenue && parseFloat(p.revenue.total||0)   > 0 ? '¥'+parseFloat(p.revenue.total).toLocaleString()   : '-';
+    const hasRev = revM !== '-' || revT !== '-';
+
+    const rptHtml = latestRpt ? `
+      <div class="proj-sect">最新レポート</div>
+      <div class="proj-rpt">
+        <div class="proj-rpt-title">${latestRpt.title}</div>
+        <div class="proj-rpt-sum">${latestRpt.summary ? latestRpt.summary.slice(0,120)+(latestRpt.summary.length>120?'…':'') : ''}</div>
+        <div style="font-size:.72em;color:var(--mut);margin-top:5px;">
+          ${latestRpt.date||''}
+          ${(latestRpt.tags||[]).map(t=>`<span class="rp-tag">${t}</span>`).join('')}
+        </div>
+      </div>` : '';
+
+    const revHtml = hasRev ? `
+      <div class="proj-sect">収益</div>
+      <div class="proj-rev">
+        <div class="proj-rev-item"><div class="proj-rev-val">${revM}</div><div class="proj-rev-lbl">月次</div></div>
+        <div class="proj-rev-item"><div class="proj-rev-val">${revT}</div><div class="proj-rev-lbl">累計</div></div>
+        ${p.revenue.note ? `<div class="proj-rev-item" style="flex:2;text-align:left;padding:8px 10px;"><div style="font-size:.78em;color:var(--mut);line-height:1.4;">${p.revenue.note}</div></div>` : ''}
+      </div>` : '';
+
+    const hlHtml = p.highlights && p.highlights.length ? `
+      <div class="proj-hl">${p.highlights.map(h=>`<span class="proj-hl-item">${h}</span>`).join('')}</div>` : '';
+
+    const pastRpts = p.reports && p.reports.length > 1 ? p.reports.slice(1) : [];
+    const pastHtml = pastRpts.map(r => `
+      <div class="proj-rpt" style="margin-bottom:7px;">
+        <div class="proj-rpt-title">${r.title}</div>
+        <div class="proj-rpt-sum">${r.summary ? r.summary.slice(0,100)+(r.summary.length>100?'…':'') : ''}</div>
+        <div style="font-size:.72em;color:var(--mut);margin-top:3px;">${r.date||''} ${(r.tags||[]).map(t=>`<span class="rp-tag">${t}</span>`).join('')}</div>
+      </div>`).join('');
+
+    return `<div class="proj-card">
+      <div class="proj-hdr" style="background:linear-gradient(135deg,${color},${color}bb)">
+        <div class="proj-name">${p.name}</div>
+        <div class="proj-meta">
+          <span style="background:rgba(255,255,255,.22);color:#fff;font-size:.72em;padding:2px 8px;border-radius:20px;font-weight:600;">${p.category||''}</span>
+          <span style="color:${stColors[p.status]||'rgba(255,255,255,.75)'};">${p.status||'進行中'}</span>
+        </div>
+      </div>
+      <div class="proj-body">
+        ${p.description ? `<p class="proj-desc">${p.description}</p>` : ''}
+        ${rptHtml}
+        ${revHtml}
+        ${hlHtml}
+      </div>
+      <div class="proj-footer">
+        <span>更新: ${p.updatedAt||p.addedAt||''}</span>
+        ${pastRpts.length > 0 ? `<button class="proj-expand" onclick="toggleProjDetail('${p.id}')">過去レポート(${pastRpts.length})</button>` : '<span></span>'}
+      </div>
+      ${pastHtml ? `<div class="proj-detail" id="proj-detail-${p.id}"><div class="proj-sect" style="margin-bottom:8px;">過去のレポート</div>${pastHtml}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function toggleProjDetail(id) {
+  const el = document.getElementById('proj-detail-'+id);
+  if (el) el.classList.toggle('open');
+}
+
+// ===== OVERVIEW =====
+function refreshOverview() {
+  const all = [...document.querySelectorAll('#main-tbody tr.tr[data-id],#done-tbody tr.tr[data-id]')];
+  let todo=0,wip=0,done=0,hold=0;
+  all.forEach(r => {
+    const v = (r.querySelector('select.ss')||{}).value||'s-todo';
+    if(v==='s-todo')todo++; else if(v==='s-wip')wip++; else if(v==='s-done')done++; else if(v==='s-hold')hold++;
+  });
+  document.getElementById('ov-stats').innerHTML =
+    `<div class="chip"><div class="n todo">${todo}</div><div class="l">未着手</div></div>` +
+    `<div class="chip"><div class="n wip">${wip}</div><div class="l">進行中</div></div>` +
+    `<div class="chip"><div class="n done">${done}</div><div class="l">完了</div></div>` +
+    `<div class="chip"><div class="n hold">${hold}</div><div class="l">保留</div></div>`;
+
+  const high = [...document.querySelectorAll('#main-tbody tr.tr[data-priority="1"]')];
+  const slm = {'s-todo':'未着手','s-wip':'進行中','s-done':'完了','s-hold':'保留'};
+  const scl = {'s-todo':'#94a3b8','s-wip':'var(--acc)','s-done':'var(--grn)','s-hold':'var(--amb)'};
+  document.getElementById('ov-high').innerHTML = high.length===0
+    ? '<div style="color:var(--mut);font-size:.87em;">高優先タスクはありません</div>'
+    : high.map(r => {
+        const nm = (r.querySelector('.task-name')||{}).textContent||'';
+        const st = (r.querySelector('select.ss')||{}).value||'s-todo';
+        return `<div class="pi"><span class="badge high">高</span><span class="pi-name">${nm.trim()}</span><span class="pi-cat">${r.dataset.cat||''}</span><span style="font-size:.77em;color:${scl[st]}">${slm[st]||''}</span></div>`;
+      }).join('');
+
+  const data = getMonthlyData();
+  const now = new Date();
+  const ym = now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0');
+  const cur = data.find(d=>d.ym===ym)||{income:0,varExp:0,fixedExp:0,net:0};
+  const ne = document.getElementById('ov-net');
+  ne.textContent = (cur.net>=0?'¥':'-¥')+Math.abs(cur.net).toLocaleString();
+  ne.style.color = cur.net>=0?'var(--grn)':'var(--red)';
+  document.getElementById('ov-sub').textContent = '収入 ¥'+cur.income.toLocaleString()+' / 支出（変動+固定）¥'+(cur.varExp+cur.fixedExp).toLocaleString();
+  const total = cur.income + cur.varExp + cur.fixedExp;
+  const bar = document.getElementById('ov-bar');
+  bar.innerHTML = total>0 ? `<div class="rb-seg" style="width:${(cur.income/total*100).toFixed(1)}%;background:var(--grn)"></div><div class="rb-seg" style="width:${((cur.varExp+cur.fixedExp)/total*100).toFixed(1)}%;background:var(--red)"></div>` : '';
+
+  const rpts = getReports();
+  const re = document.getElementById('ov-report');
+  if (rpts.length) {
+    const r = rpts[0];
+    const tags = r.tag ? r.tag.split(/[、,，]/).map(t=>`<span class="rp-tag">${t.trim()}</span>`).join('') : '';
+    re.innerHTML = `<div style="font-weight:700;margin-bottom:4px;">${r.title}</div><div style="margin-bottom:6px;">${tags}</div><div class="rp-body">${r.body.slice(0,200)}${r.body.length>200?'…':''}</div><div style="font-size:.76em;color:var(--mut);margin-top:6px;">${r.date||''}</div>`;
+  } else {
+    re.innerHTML = '<div style="color:var(--mut);font-size:.87em;">レポートはまだありません</div>';
+  }
+}
+
+// ===== SETTINGS =====
+function setSyncStatus(state) {
+  const dot = document.getElementById('sync-dot');
+  const lbl = document.getElementById('sync-label');
+  const states = {local:{cls:'',txt:'ローカル保存'},ok:{cls:'green',txt:'クラウド同期中'},err:{cls:'red',txt:'同期エラー'},loading:{cls:'blue',txt:'接続中...'}};
+  const s = states[state]||states.local;
+  dot.className = 'sync-dot '+(s.cls||'');
+  lbl.textContent = s.txt;
+  const sb = document.getElementById('sync-btn');
+  if (sb) sb.disabled = state!=='ok';
+}
+
+async function saveSettings() {
+  const url = document.getElementById('sb-url').value.trim();
+  const key = document.getElementById('sb-key').value.trim();
+  const cs = document.getElementById('conn-status');
+  if (!url||!key) { cs.innerHTML='<span class="conn-err">URLとKeyを入力してください</span>'; return; }
+  cs.innerHTML='接続テスト中...'; setSyncStatus('loading');
+  DB.url=url; DB.key=key;
+  const ok = await DB.test();
+  if (ok) {
+    localStorage.setItem('sb_url',url); localStorage.setItem('sb_key',key);
+    cs.innerHTML='<span class="conn-ok">✓ 接続成功</span>'; setSyncStatus('ok');
+  } else {
+    DB.url=''; DB.key='';
+    cs.innerHTML='<span class="conn-err">✗ 接続失敗 — URLとKeyを確認してください</span>'; setSyncStatus('err');
+  }
+}
+
+function clearSettings() {
+  localStorage.removeItem('sb_url'); localStorage.removeItem('sb_key');
+  DB.url=''; DB.key='';
+  document.getElementById('sb-url').value='';
+  document.getElementById('sb-key').value='';
+  document.getElementById('conn-status').innerHTML='<span style="color:var(--mut)">接続を解除しました</span>';
+  setSyncStatus('local');
+}
+
+async function syncAll() {
+  if (!DB.ready()) return;
+  setSyncStatus('loading');
+  const [ts, rv, rp] = await Promise.all([DB.getAll('task_states'), DB.getAll('revenues'), DB.getAll('reports')]);
+  if (ts) ts.forEach(s => applyTaskState(s));
+  if (rv) setRevenues(rv.map(r=>({id:r.id,date:r.date,desc:r.desc,cat:r.cat,amount:parseFloat(r.amount),type:r.type})));
+  if (rp) setReports(rp.map(r=>({id:r.id,title:r.title,tag:r.tag,body:r.body,date:new Date(r.created_at).toLocaleDateString('ja-JP')})));
+  updateDone(); renderRevenues(); renderReports(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
+  setSyncStatus('ok');
+}
+
+function copySQL() {
+  const sql = document.getElementById('sql-block').textContent;
+  navigator.clipboard.writeText(sql).then(()=>{ const b=document.querySelector('.fs h3 .btn'); if(b){b.textContent='コピー済！'; setTimeout(()=>b.textContent='コピー',1500);}});
+}
+
+// ===== INIT =====
+window.addEventListener('DOMContentLoaded', async () => {
+  const today = new Date();
+  document.getElementById('today-label').textContent = today.toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'});
+  document.getElementById('rev-date').value = today.toISOString().slice(0,10);
+  document.getElementById('sb-url').value = localStorage.getItem('sb_url')||'';
+  document.getElementById('sb-key').value = localStorage.getItem('sb_key')||'';
+
+  DB.load();
+  if (DB.ready()) setSyncStatus('ok'); else setSyncStatus('local');
+
+  // Restore from localStorage
+  TASK_IDS.forEach(id => {
+    const sel = document.querySelector('tr[data-id="'+id+'"] select.ss');
+    const sv = localStorage.getItem('db_'+id+'_status');
+    if (sv && sel) { sel.value=sv; SC.forEach(c=>sel.classList.remove(c)); sel.classList.add(sv); }
+    const ps = document.querySelector('tr[data-id="'+id+'"] select.ps');
+    const sp = localStorage.getItem('db_'+id+'_progress');
+    if (sp && ps) { ps.value=sp; const b=document.getElementById(id+'-bar'); if(b) b.style.width=sp; }
+    const di = document.querySelector('tr[data-id="'+id+'"] input.di-date');
+    const sd = localStorage.getItem('db_'+id+'_date');
+    if (sd && di) di.value=sd;
+    ['desc','tool','next'].forEach(f => { const sv2=localStorage.getItem('db_'+id+'_'+f); const e=document.getElementById(id+'-'+f); if(sv2&&e) e.value=sv2; });
+  });
+
+  updateDone();
+  renderFixedCosts();
+  renderRevenues();
+  renderReports();
+  refreshRevenueSummary();
+  renderMonthlyBreakdown();
+  refreshOverview();
+  renderProjectStats();
+  renderProjects();
+
+  // Auto-sync if Supabase configured
+  if (DB.ready()) syncAll();
+});
+</script>
+</body>
+</html>
