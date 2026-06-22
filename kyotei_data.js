@@ -1,8 +1,8 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-06-23 01:15",
-  "today_label": "2026年6月23日",
+  "updated": "2026-06-22 17:41",
+  "today_label": "2026年6月22日",
   "pred_date": "2026/06/22",
-  "pred_is_today": false,
+  "pred_is_today": true,
   "week_label": "6/22（月）〜6/28（日）",
   "month_label": "2026年6月",
   "ev_threshold": 1.3,
@@ -53,8 +53,8 @@ window.KYOTEI_DATA = {
       "ev": 22.2,
       "odds": "2635.0",
       "prob_pct": "0.8",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "宮島",
@@ -64,8 +64,8 @@ window.KYOTEI_DATA = {
       "ev": 21.96,
       "odds": "1290.0",
       "prob_pct": "1.7",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "三国",
@@ -75,8 +75,8 @@ window.KYOTEI_DATA = {
       "ev": 20.21,
       "odds": "1424.0",
       "prob_pct": "1.4",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "唐津",
@@ -86,8 +86,8 @@ window.KYOTEI_DATA = {
       "ev": 19.91,
       "odds": "2053.0",
       "prob_pct": "1.0",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "三国",
@@ -97,8 +97,8 @@ window.KYOTEI_DATA = {
       "ev": 19.8,
       "odds": "1606.0",
       "prob_pct": "1.2",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "唐津",
@@ -108,8 +108,8 @@ window.KYOTEI_DATA = {
       "ev": 18.74,
       "odds": "1907.0",
       "prob_pct": "1.0",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "琵琶湖",
@@ -119,8 +119,8 @@ window.KYOTEI_DATA = {
       "ev": 18.23,
       "odds": "2863.0",
       "prob_pct": "0.6",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "琵琶湖",
@@ -130,8 +130,8 @@ window.KYOTEI_DATA = {
       "ev": 16.11,
       "odds": "1764.0",
       "prob_pct": "0.9",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "尼崎",
@@ -141,8 +141,8 @@ window.KYOTEI_DATA = {
       "ev": 14.23,
       "odds": "2823.0",
       "prob_pct": "0.5",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "唐津",
@@ -152,8 +152,8 @@ window.KYOTEI_DATA = {
       "ev": 13.46,
       "odds": "7257.0",
       "prob_pct": "0.2",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "琵琶湖",
@@ -163,8 +163,8 @@ window.KYOTEI_DATA = {
       "ev": 13.14,
       "odds": "2319.0",
       "prob_pct": "0.6",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "浜名湖",
@@ -174,8 +174,8 @@ window.KYOTEI_DATA = {
       "ev": 9.72,
       "odds": "1434.0",
       "prob_pct": "0.7",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "戸田",
@@ -185,8 +185,8 @@ window.KYOTEI_DATA = {
       "ev": 9.27,
       "odds": "777.6",
       "prob_pct": "1.2",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "児島",
@@ -196,8 +196,8 @@ window.KYOTEI_DATA = {
       "ev": 8.4,
       "odds": "1297.0",
       "prob_pct": "0.7",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "唐津",
@@ -207,8 +207,8 @@ window.KYOTEI_DATA = {
       "ev": 7.75,
       "odds": "261.1",
       "prob_pct": "3.0",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "三国",
@@ -218,8 +218,8 @@ window.KYOTEI_DATA = {
       "ev": 7.23,
       "odds": "412.4",
       "prob_pct": "1.8",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "浜名湖",
@@ -229,8 +229,8 @@ window.KYOTEI_DATA = {
       "ev": 7.17,
       "odds": "1314.0",
       "prob_pct": "0.5",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "唐津",
@@ -240,8 +240,8 @@ window.KYOTEI_DATA = {
       "ev": 7.12,
       "odds": "732.5",
       "prob_pct": "1.0",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "尼崎",
@@ -251,8 +251,8 @@ window.KYOTEI_DATA = {
       "ev": 6.97,
       "odds": "278.2",
       "prob_pct": "2.5",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "多摩川",
@@ -262,8 +262,8 @@ window.KYOTEI_DATA = {
       "ev": 6.15,
       "odds": "665.5",
       "prob_pct": "0.9",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "三国",
@@ -273,8 +273,8 @@ window.KYOTEI_DATA = {
       "ev": 6.13,
       "odds": "1030.0",
       "prob_pct": "0.6",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "戸田",
@@ -284,8 +284,8 @@ window.KYOTEI_DATA = {
       "ev": 5.52,
       "odds": "409.7",
       "prob_pct": "1.4",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "児島",
@@ -295,8 +295,8 @@ window.KYOTEI_DATA = {
       "ev": 4.29,
       "odds": "280.7",
       "prob_pct": "1.5",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "琵琶湖",
@@ -306,8 +306,8 @@ window.KYOTEI_DATA = {
       "ev": 4.27,
       "odds": "235.0",
       "prob_pct": "1.8",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "三国",
@@ -317,8 +317,8 @@ window.KYOTEI_DATA = {
       "ev": 2.17,
       "odds": "488.1",
       "prob_pct": "0.4",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     }
   ],
   "weekly_perfs": [
