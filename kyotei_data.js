@@ -1,8 +1,8 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-06-22 12:08",
-  "today_label": "2026年6月22日",
+  "updated": "2026-06-23 01:15",
+  "today_label": "2026年6月23日",
   "pred_date": "2026/06/22",
-  "pred_is_today": true,
+  "pred_is_today": false,
   "week_label": "6/22（月）〜6/28（日）",
   "month_label": "2026年6月",
   "ev_threshold": 1.3,
