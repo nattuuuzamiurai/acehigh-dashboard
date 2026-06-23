@@ -977,7 +977,7 @@ function renderKyoteiWeekPerfSection() {
   const perfRows = [1.15, 1.20, 1.30].map(t => {
     const s = perf[String(t)];
     if (!s) return '';
-    const rc = s.roi >= 100 ? 'var(--grn)' : s.roi >= 75 ? 'var(--amb)' : 'var(--red)';
+    const rc = s.roi >= 0 ? 'var(--grn)' : s.roi >= -25 ? 'var(--amb)' : 'var(--red)';
     return `<tr>
       <td style="padding:8px 10px;font-weight:600;">EV ${t.toFixed(2)} 以上</td>
       <td style="padding:8px 10px;text-align:right;">${s.bets}件</td>
@@ -985,7 +985,7 @@ function renderKyoteiWeekPerfSection() {
       <td style="padding:8px 10px;text-align:right;">${s.hit_rate}%</td>
       <td style="padding:8px 10px;text-align:right;">¥${s.invested.toLocaleString()}</td>
       <td style="padding:8px 10px;text-align:right;">¥${s.returned.toLocaleString()}</td>
-      <td style="padding:8px 10px;text-align:right;font-weight:700;color:${rc};">${s.roi}%</td>
+      <td style="padding:8px 10px;text-align:right;font-weight:700;color:${rc};">${s.roi >= 0 ? '+' : ''}${s.roi}%</td>
     </tr>`;
   }).join('');
 
@@ -1001,12 +1001,12 @@ function renderKyoteiWeekPerfSection() {
           <th style="padding:8px 10px;">EV閾値</th><th style="padding:8px 10px;text-align:right;">推奨数</th>
           <th style="padding:8px 10px;text-align:right;">的中数</th><th style="padding:8px 10px;text-align:right;">的中率</th>
           <th style="padding:8px 10px;text-align:right;">投資</th><th style="padding:8px 10px;text-align:right;">回収</th>
-          <th style="padding:8px 10px;text-align:right;">回収率</th>
+          <th style="padding:8px 10px;text-align:right;">損益率</th>
         </tr></thead>
         <tbody>${perfRows || '<tr><td colspan="7" style="text-align:center;color:var(--mut);padding:16px;">この週のデータがありません</td></tr>'}</tbody>
       </table>
     </div>
-    <div style="font-size:.65em;color:var(--mut);">※ 100%以上＝プラス収支 / 75%が競艇の理論上限（控除率25%）</div>
+    <div style="font-size:.65em;color:var(--mut);">※ 0%以上＝プラス収支 / −25%が競艇の理論平均（控除率25%）</div>
   `;
 }
 
