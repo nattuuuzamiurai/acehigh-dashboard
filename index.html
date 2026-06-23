@@ -950,8 +950,92 @@ function refreshOverview() {
 
 
 // ===== 競艇予測 =====
-window._kyoteiWeekIdx  = 0;
+window._kyoteiWeekIdx   = 0;
 window._kyoteiWeeksData = [];
+window._predDayIdx      = 0;
+window._predDays        = [];
+
+function renderPredTable() {
+  const el = document.getElementById('pred-report-section');
+  if (!el) return;
+  const days = window._predDays || [];
+  const idx  = window._predDayIdx || 0;
+
+  if (!days.length) {
+    el.innerHTML = `<div class="card" style="padding:16px;margin-bottom:22px;border-left:4px solid #f59e0b;">
+      <div style="font-weight:700;color:#92400e;margin-bottom:4px;">🔧 本日の予測データ待機中</div>
+      <div style="font-size:.8em;color:var(--mut);">main.py 実行後に表示されます。</div>
+    </div>`;
+    return;
+  }
+
+  const day   = days[idx];
+  const preds = day.preds || [];
+  const hasPrev = idx < days.length - 1;
+  const hasNext = idx > 0;
+  const navBtn  = (dir, label, enabled) =>
+    `<button onclick="window.predDayNav(${dir})" ${enabled ? '' : 'disabled'}
+      style="padding:4px 12px;border-radius:6px;border:1px solid var(--bor);
+             background:${enabled ? 'var(--sur)' : 'var(--sur2)'};
+             color:${enabled ? 'var(--txt)' : 'var(--mut)'};
+             cursor:${enabled ? 'pointer' : 'default'};font-size:.8em;font-family:inherit;">${label}</button>`;
+
+  const predRows = preds.map(p => {
+    const evBg = p.ev > 20 ? '#fff3e0;color:#e65100' : p.ev >= 2.0 ? '#e8f5e9;color:#1b5e20' : p.ev >= 1.5 ? '#fff9c4;color:#f57f17' : '#fce4ec;color:#880e4f';
+    const actualHtml = p.actual_combo
+      ? `<code style="color:#7b1fa2;font-size:.9em;font-weight:700;">${p.actual_combo}</code>`
+      : `<span style="color:var(--mut);">—</span>`;
+    const hitHtml = p.hit === '1'
+      ? `<span style="color:var(--grn);font-weight:700;">✓ 的中</span>`
+      : p.hit === '0'
+        ? `<span style="color:var(--red);">✗</span>`
+        : `<span style="color:var(--mut);">⏳</span>`;
+    const payHtml = p.hit === '1' && p.payout
+      ? `<span style="font-weight:700;color:var(--grn);">¥${parseInt(p.payout).toLocaleString()}</span>`
+      : `<span style="color:var(--mut);">${p.odds ? p.odds + '倍' : '—'}</span>`;
+    return `<tr>
+      <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
+      <td style="padding:8px 10px;">${p.race_no}R</td>
+      <td style="padding:8px 10px;">${p.start_time}</td>
+      <td style="padding:8px 10px;"><code style="color:#1a237e;font-size:.9em;">${p.combo}</code></td>
+      <td style="padding:8px 10px;">${actualHtml}</td>
+      <td style="padding:8px 10px;"><span style="background:${evBg};padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">${p.ev}</span></td>
+      <td style="padding:8px 10px;">${p.odds}倍</td>
+      <td style="padding:8px 10px;">${p.prob_pct}%</td>
+      <td style="padding:8px 10px;">${hitHtml}</td>
+      <td style="padding:8px 10px;">${payHtml}</td>
+    </tr>`;
+  }).join('');
+
+  const dayLabel = day.date_label + (day.is_today ? ' <span style="font-size:.75em;color:var(--acc);">今日</span>' : '');
+
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      ${navBtn(1, '◀ 前日', hasPrev)}
+      <span style="font-size:.88em;font-weight:700;">${dayLabel}</span>
+      ${navBtn(-1, '翌日 ▶', hasNext)}
+    </div>
+    ${preds.length ? `
+    <div class="tw" style="margin-bottom:22px;overflow-x:auto;overflow-y:auto;max-height:420px;">
+      <table style="width:100%;font-size:.82em;">
+        <thead><tr style="background:var(--sur2);position:sticky;top:0;z-index:1;">
+          <th style="padding:8px 10px;">会場</th><th style="padding:8px 10px;">R</th>
+          <th style="padding:8px 10px;">発走</th><th style="padding:8px 10px;">予測</th>
+          <th style="padding:8px 10px;">当選</th>
+          <th style="padding:8px 10px;">EV</th><th style="padding:8px 10px;">オッズ</th>
+          <th style="padding:8px 10px;">確率</th><th style="padding:8px 10px;">結果</th><th style="padding:8px 10px;">払戻</th>
+        </tr></thead>
+        <tbody>${predRows}</tbody>
+      </table>
+    </div>` : `<div class="card" style="padding:16px;margin-bottom:22px;color:var(--mut);text-align:center;">この日の推奨レースはありません</div>`}
+  `;
+}
+
+window.predDayNav = function(dir) {
+  const len = (window._predDays || []).length;
+  window._predDayIdx = Math.max(0, Math.min(len - 1, (window._predDayIdx || 0) + dir));
+  renderPredTable();
+};
 
 function renderKyoteiWeekPerfSection() {
   const el = document.getElementById('kyotei-week-perf');
@@ -1047,14 +1131,19 @@ function renderKyotei() {
 
   function demoCard(label, period, demo) {
     if (!demo) return '';
-    const roi   = demo.roi;
+    const roi  = demo.roi;
+    const net  = demo.total_returned - demo.total_invested;
     const daily = demo.daily || [];
     const pills = daily.map(row => {
-      const bg = row.roi >= 0 ? '#dcfce7;color:#16a34a' : row.roi >= -25 ? '#fef3c7;color:#d97706' : '#fee2e2;color:#dc2626';
-      const roiStr = (row.roi >= 0 ? '+' : '') + row.roi + '%';
+      const dayNet = row.returned - row.invested;
+      const bg = dayNet >= 0 ? '#dcfce7;color:#16a34a' : dayNet >= -500 ? '#fef3c7;color:#d97706' : '#fee2e2;color:#dc2626';
+      const netStr = (dayNet >= 0 ? '+¥' : '-¥') + Math.abs(dayNet).toLocaleString();
       return `<span style="background:${bg};padding:2px 7px;border-radius:5px;font-size:.67em;font-weight:700;white-space:nowrap;"
-              title="${row.date} 推奨${row.bets}件 的中${row.hits}件 投資¥${row.invested} 回収¥${row.returned}">${row.date} ${roiStr}</span>`;
+              title="${row.date} 推奨${row.bets}件 的中${row.hits}件 投資¥${row.invested} 回収¥${row.returned}">${row.date} ${netStr}</span>`;
     }).join('');
+
+    const netColor = net >= 0 ? 'var(--grn)' : 'var(--red)';
+    const netStr   = (net >= 0 ? '+¥' : '-¥') + Math.abs(net).toLocaleString();
 
     return `<div class="card" style="flex:1;min-width:0;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
@@ -1063,7 +1152,7 @@ function renderKyotei() {
           <div style="font-size:.73em;color:var(--mut);margin-top:1px;">${period}</div>
         </div>
         <div style="display:flex;align-items:center;gap:8px;">
-          <div style="font-size:2rem;font-weight:800;line-height:1;color:${roiColor(roi)};">${roi >= 0 ? '+' : ''}${roi.toFixed(1)}<span style="font-size:.85rem;font-weight:400;">%</span></div>
+          <div style="font-size:2rem;font-weight:800;line-height:1;color:${netColor};">${netStr}</div>
           ${roiBadge(roi)}
         </div>
       </div>
@@ -1071,49 +1160,13 @@ function renderKyotei() {
         推奨 ${demo.total_bets}件 / 的中 ${demo.total_hits}件 ／ 投資 ¥${demo.total_invested.toLocaleString()} → 回収 ¥${demo.total_returned.toLocaleString()}
       </div>
       ${daily.length ? `<div style="display:flex;flex-wrap:wrap;gap:4px;">${pills}</div>` : ''}
-      <div style="font-size:.63em;color:var(--mut);margin-top:6px;">※ 1件100円の仮想投票。損益率：0%=損益分岐、マイナス=損失。結果未確定分は確率で模擬。</div>
+      <div style="font-size:.63em;color:var(--mut);margin-top:6px;">※ デモ（仮想投票・1レース100円）。結果確定分のみ集計。</div>
     </div>`;
   }
 
-  // 予測テーブル
-  const preds    = d.today_preds || [];
-  const predDate = d.pred_date || d.today_label;
-  const predNote = d.pred_is_today === false && d.pred_date
-    ? `<span style="background:#fff3cd;color:#856404;padding:1px 8px;border-radius:4px;font-size:.75em;margin-left:8px;">直近データ（${d.pred_date}）</span>`
-    : '';
-  const predRows = preds.map(p => {
-    // EV > 20 はモデル過大評価の可能性が高いためオレンジ警告色
-    const evBg = p.ev > 20 ? '#fff3e0;color:#e65100' : p.ev >= 2.0 ? '#e8f5e9;color:#1b5e20' : p.ev >= 1.5 ? '#fff9c4;color:#f57f17' : '#fce4ec;color:#880e4f';
-    const hitHtml = p.hit === '1'
-      ? '<span style="color:var(--grn);font-weight:700;">✓ 的中</span>'
-      : p.hit === '0'
-        ? '<span style="color:var(--red);">✗ 外れ</span>'
-        : '<span style="color:var(--mut);">⏳ 待機</span>';
-    // 払戻: 実データあれば確定オッズ表示、なければ事前オッズで推定
-    const payHtml = (() => {
-      const payAmt = p.payout && parseInt(p.payout) > 0 ? parseInt(p.payout) : null;
-      if (payAmt) {
-        const finalOdds = (payAmt / 100).toLocaleString();
-        return `<span style="font-weight:700;color:var(--grn);">¥${payAmt.toLocaleString()}<br><small style="font-weight:400;font-size:.85em;">${finalOdds}倍</small></span>`;
-      }
-      if (p.hit === '1' && p.odds && parseFloat(p.odds) > 0) {
-        const estOdds = parseFloat(p.odds).toLocaleString();
-        return `<span style="font-weight:700;color:var(--grn);">~${estOdds}倍<br><small style="font-weight:400;font-size:.75em;color:var(--mut);">(事前オッズ)</small></span>`;
-      }
-      return '—';
-    })();
-    return `<tr>
-      <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
-      <td style="padding:8px 10px;">${p.race_no}R</td>
-      <td style="padding:8px 10px;">${p.start_time}</td>
-      <td style="padding:8px 10px;"><code style="color:#1a237e;font-size:.9em;">${p.combo}</code></td>
-      <td style="padding:8px 10px;"><span style="background:${evBg};padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">${p.ev}</span></td>
-      <td style="padding:8px 10px;">${p.odds}倍</td>
-      <td style="padding:8px 10px;">${p.prob_pct}%</td>
-      <td style="padding:8px 10px;">${hitHtml}</td>
-      <td style="padding:8px 10px;">${payHtml}</td>
-    </tr>`;
-  }).join('');
+  // 予測テーブルは renderPredTable() で描画するため、ここでは初期化のみ
+  window._predDays   = d.pred_days || [];
+  window._predDayIdx = 0;
 
   // 機能一覧
   const features = d.features || [];
@@ -1141,24 +1194,8 @@ function renderKyotei() {
     </div>
 
     <!-- 予測レポート -->
-    <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">
-      🎯 予測レポート${predNote}
-    </div>
-    ${preds.length ? `
-    <div class="tw" style="margin-bottom:22px;overflow-x:auto;">
-      <table style="width:100%;font-size:.82em;">
-        <thead><tr style="background:var(--sur2);">
-          <th style="padding:8px 10px;">会場</th><th style="padding:8px 10px;">R</th>
-          <th style="padding:8px 10px;">発走</th><th style="padding:8px 10px;">組み合わせ</th>
-          <th style="padding:8px 10px;">EV</th><th style="padding:8px 10px;">オッズ</th>
-          <th style="padding:8px 10px;">確率</th><th style="padding:8px 10px;">結果</th><th style="padding:8px 10px;">払戻</th>
-        </tr></thead>
-        <tbody>${predRows}</tbody>
-      </table>
-    </div>` : `<div class="card" style="padding:16px;margin-bottom:22px;border-left:4px solid #f59e0b;">
-      <div style="font-weight:700;color:#92400e;margin-bottom:4px;">🔧 本日の予測データ待機中</div>
-      <div style="font-size:.8em;color:var(--mut);">6/21以前のデータはオッズ取得バグ（120通り中20通りしか取れず値も誤り）のため非表示。本日 main.py 実行後に正しい予測が表示されます。</div>
-    </div>`}
+    <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">🎯 予測レポート</div>
+    <div id="pred-report-section" style="margin-bottom:22px;"></div>
 
     <!-- 週次検証レポート -->
     <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📊 週次検証レポート</div>
@@ -1168,14 +1205,17 @@ function renderKyotei() {
     <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">⚙️ 実装済み機能</div>
     <div class="tw" style="margin-bottom:16px;">
       ${featHtml || '<div style="padding:16px;color:var(--mut);text-align:center;">—</div>'}
-      <div style="padding:9px 12px;font-size:.65em;color:var(--mut);">※ 1レースあたり最高EV1組み合わせ×上位5件でデモ収益を計算</div>
+      <div style="padding:9px 12px;font-size:.65em;color:var(--mut);">※ 1レースあたり最高EV1組み合わせを全件対象にデモ収益を計算（1レース100円）。メール通知は上位5件。</div>
     </div>
   `;
 
   // 週ナビゲーション初期化
-  window._kyoteiWeekIdx  = 0;
+  window._kyoteiWeekIdx   = 0;
   window._kyoteiWeeksData = d.weekly_perfs || [];
   renderKyoteiWeekPerfSection();
+
+  // 予測レポート描画
+  renderPredTable();
 
 }
 
