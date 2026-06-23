@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-06-24 01:32",
+  "updated": "2026-06-24 02:09",
   "today_label": "2026年6月24日",
   "pred_date": "2026/06/24",
   "pred_is_today": true,
@@ -7,17 +7,17 @@ window.KYOTEI_DATA = {
   "month_label": "2026年6月",
   "ev_threshold": 1.3,
   "weekly_demo": {
-    "total_bets": 5,
+    "total_bets": 25,
     "total_hits": 0,
-    "total_invested": 500,
+    "total_invested": 2500,
     "total_returned": 0,
     "roi": -100.0,
     "daily": [
       {
         "date": "6/22",
-        "bets": 5,
+        "bets": 25,
         "hits": 0,
-        "invested": 500,
+        "invested": 2500,
         "returned": 0,
         "roi": -100.0
       }
@@ -26,17 +26,17 @@ window.KYOTEI_DATA = {
     "end_label": "6/28"
   },
   "monthly_demo": {
-    "total_bets": 5,
+    "total_bets": 25,
     "total_hits": 0,
-    "total_invested": 500,
+    "total_invested": 2500,
     "total_returned": 0,
     "roi": -100.0,
     "daily": [
       {
         "date": "6/22",
-        "bets": 5,
+        "bets": 25,
         "hits": 0,
-        "invested": 500,
+        "invested": 2500,
         "returned": 0,
         "roi": -100.0
       }
@@ -640,7 +640,7 @@ window.KYOTEI_DATA = {
     },
     {
       "name": "推奨レース絞り込み",
-      "desc": "EV≥1.3 の組み合わせを上位5件まで推奨"
+      "desc": "EV≥1.3 の組み合わせを全件推奨（1レース最高EV1件）"
     },
     {
       "name": "結果自動照合",
