@@ -1038,10 +1038,10 @@ function renderKyotei() {
     return;
   }
 
-  function roiColor(v) { return v >= 100 ? 'var(--grn)' : v >= 75 ? 'var(--amb)' : 'var(--red)'; }
+  function roiColor(v) { return v >= 0 ? 'var(--grn)' : v >= -25 ? 'var(--amb)' : 'var(--red)'; }
   function roiBadge(v) {
-    const c = v >= 100 ? '#dcfce7;color:#16a34a' : v >= 75 ? '#fef3c7;color:#d97706' : '#fee2e2;color:#dc2626';
-    const l = v >= 100 ? 'プラス収支' : v >= 75 ? '平均的損失' : '要改善';
+    const c = v >= 0 ? '#dcfce7;color:#16a34a' : v >= -25 ? '#fef3c7;color:#d97706' : '#fee2e2;color:#dc2626';
+    const l = v >= 0 ? 'プラス収支' : v >= -25 ? '軽微な損失' : '損失';
     return `<span style="background:${c};padding:2px 10px;border-radius:20px;font-size:.72em;font-weight:700;">${l}</span>`;
   }
 
@@ -1050,9 +1050,10 @@ function renderKyotei() {
     const roi   = demo.roi;
     const daily = demo.daily || [];
     const pills = daily.map(row => {
-      const bg = row.roi >= 100 ? '#dcfce7;color:#16a34a' : row.roi >= 75 ? '#fef3c7;color:#d97706' : '#fee2e2;color:#dc2626';
+      const bg = row.roi >= 0 ? '#dcfce7;color:#16a34a' : row.roi >= -25 ? '#fef3c7;color:#d97706' : '#fee2e2;color:#dc2626';
+      const roiStr = (row.roi >= 0 ? '+' : '') + row.roi + '%';
       return `<span style="background:${bg};padding:2px 7px;border-radius:5px;font-size:.67em;font-weight:700;white-space:nowrap;"
-              title="${row.date} 推奨${row.bets}件 的中${row.hits}件">${row.date} ${row.roi}%</span>`;
+              title="${row.date} 推奨${row.bets}件 的中${row.hits}件 投資¥${row.invested} 回収¥${row.returned}">${row.date} ${roiStr}</span>`;
     }).join('');
 
     return `<div class="card" style="flex:1;min-width:0;">
@@ -1062,7 +1063,7 @@ function renderKyotei() {
           <div style="font-size:.73em;color:var(--mut);margin-top:1px;">${period}</div>
         </div>
         <div style="display:flex;align-items:center;gap:8px;">
-          <div style="font-size:2rem;font-weight:800;line-height:1;color:${roiColor(roi)};">${roi.toFixed(1)}<span style="font-size:.85rem;font-weight:400;">%</span></div>
+          <div style="font-size:2rem;font-weight:800;line-height:1;color:${roiColor(roi)};">${roi >= 0 ? '+' : ''}${roi.toFixed(1)}<span style="font-size:.85rem;font-weight:400;">%</span></div>
           ${roiBadge(roi)}
         </div>
       </div>
@@ -1070,7 +1071,7 @@ function renderKyotei() {
         推奨 ${demo.total_bets}件 / 的中 ${demo.total_hits}件 ／ 投資 ¥${demo.total_invested.toLocaleString()} → 回収 ¥${demo.total_returned.toLocaleString()}
       </div>
       ${daily.length ? `<div style="display:flex;flex-wrap:wrap;gap:4px;">${pills}</div>` : ''}
-      <div style="font-size:.63em;color:var(--mut);margin-top:6px;">※ デモ（仮想投票）。結果未確定分は推定確率で模擬。</div>
+      <div style="font-size:.63em;color:var(--mut);margin-top:6px;">※ 1件100円の仮想投票。損益率：0%=損益分岐、マイナス=損失。結果未確定分は確率で模擬。</div>
     </div>`;
   }
 
@@ -1088,14 +1089,19 @@ function renderKyotei() {
       : p.hit === '0'
         ? '<span style="color:var(--red);">✗ 外れ</span>'
         : '<span style="color:var(--mut);">⏳ 待機</span>';
-    // 払戻%: 実データ優先、なければオッズから推計 (odds × 100%)
-    const payoutPct = (() => {
-      if (p.payout && parseInt(p.payout) > 0) return parseInt(p.payout);
-      if (p.hit === '1' && p.odds && parseFloat(p.odds) > 0) return Math.round(parseFloat(p.odds) * 100);
-      return null;
+    // 払戻: 実データあれば確定オッズ表示、なければ事前オッズで推定
+    const payHtml = (() => {
+      const payAmt = p.payout && parseInt(p.payout) > 0 ? parseInt(p.payout) : null;
+      if (payAmt) {
+        const finalOdds = (payAmt / 100).toLocaleString();
+        return `<span style="font-weight:700;color:var(--grn);">¥${payAmt.toLocaleString()}<br><small style="font-weight:400;font-size:.85em;">${finalOdds}倍</small></span>`;
+      }
+      if (p.hit === '1' && p.odds && parseFloat(p.odds) > 0) {
+        const estOdds = parseFloat(p.odds).toLocaleString();
+        return `<span style="font-weight:700;color:var(--grn);">~${estOdds}倍<br><small style="font-weight:400;font-size:.75em;color:var(--mut);">(事前オッズ)</small></span>`;
+      }
+      return '—';
     })();
-    const payHtml = payoutPct
-      ? `<span style="font-weight:700;color:var(--grn);">${payoutPct.toLocaleString()}%</span>` : '—';
     return `<tr>
       <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
       <td style="padding:8px 10px;">${p.race_no}R</td>

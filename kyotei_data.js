@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-06-23 10:10",
+  "updated": "2026-06-23 22:58",
   "today_label": "2026年6月23日",
   "pred_date": "2026/06/23",
   "pred_is_today": true,
@@ -8,10 +8,10 @@ window.KYOTEI_DATA = {
   "ev_threshold": 1.3,
   "weekly_demo": {
     "total_bets": 10,
-    "total_hits": 1,
+    "total_hits": 0,
     "total_invested": 1000,
-    "total_returned": 112200,
-    "roi": 11220.0,
+    "total_returned": 0,
+    "roi": -100.0,
     "daily": [
       {
         "date": "6/22",
@@ -19,15 +19,15 @@ window.KYOTEI_DATA = {
         "hits": 0,
         "invested": 500,
         "returned": 0,
-        "roi": 0.0
+        "roi": -100.0
       },
       {
         "date": "6/23",
         "bets": 5,
-        "hits": 1,
+        "hits": 0,
         "invested": 500,
-        "returned": 112200,
-        "roi": 22440.0
+        "returned": 0,
+        "roi": -100.0
       }
     ],
     "start_label": "6/22",
@@ -35,10 +35,10 @@ window.KYOTEI_DATA = {
   },
   "monthly_demo": {
     "total_bets": 10,
-    "total_hits": 1,
+    "total_hits": 0,
     "total_invested": 1000,
-    "total_returned": 112200,
-    "roi": 11220.0,
+    "total_returned": 0,
+    "roi": -100.0,
     "daily": [
       {
         "date": "6/22",
@@ -46,15 +46,15 @@ window.KYOTEI_DATA = {
         "hits": 0,
         "invested": 500,
         "returned": 0,
-        "roi": 0.0
+        "roi": -100.0
       },
       {
         "date": "6/23",
         "bets": 5,
-        "hits": 1,
+        "hits": 0,
         "invested": 500,
-        "returned": 112200,
-        "roi": 22440.0
+        "returned": 0,
+        "roi": -100.0
       }
     ],
     "start_label": "6/1",
