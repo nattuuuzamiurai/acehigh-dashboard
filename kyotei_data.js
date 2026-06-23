@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-06-23 23:20",
+  "updated": "2026-06-23 14:27",
   "today_label": "2026年6月23日",
   "pred_date": "2026/06/23",
   "pred_is_today": true,
@@ -7,11 +7,11 @@ window.KYOTEI_DATA = {
   "month_label": "2026年6月",
   "ev_threshold": 1.3,
   "weekly_demo": {
-    "total_bets": 5,
+    "total_bets": 10,
     "total_hits": 0,
-    "total_invested": 500,
+    "total_invested": 1000,
     "total_returned": 0,
-    "roi": -100.0,
+    "roi": 0.0,
     "daily": [
       {
         "date": "6/22",
@@ -19,18 +19,26 @@ window.KYOTEI_DATA = {
         "hits": 0,
         "invested": 500,
         "returned": 0,
-        "roi": -100.0
+        "roi": 0.0
+      },
+      {
+        "date": "6/23",
+        "bets": 5,
+        "hits": 0,
+        "invested": 500,
+        "returned": 0,
+        "roi": 0.0
       }
     ],
     "start_label": "6/22",
     "end_label": "6/28"
   },
   "monthly_demo": {
-    "total_bets": 5,
+    "total_bets": 10,
     "total_hits": 0,
-    "total_invested": 500,
+    "total_invested": 1000,
     "total_returned": 0,
-    "roi": -100.0,
+    "roi": 0.0,
     "daily": [
       {
         "date": "6/22",
@@ -38,7 +46,15 @@ window.KYOTEI_DATA = {
         "hits": 0,
         "invested": 500,
         "returned": 0,
-        "roi": -100.0
+        "roi": 0.0
+      },
+      {
+        "date": "6/23",
+        "bets": 5,
+        "hits": 0,
+        "invested": 500,
+        "returned": 0,
+        "roi": 0.0
       }
     ],
     "start_label": "6/1",
@@ -53,8 +69,8 @@ window.KYOTEI_DATA = {
       "ev": 20.78,
       "odds": "2670.0",
       "prob_pct": "0.8",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "丸亀",
@@ -64,8 +80,8 @@ window.KYOTEI_DATA = {
       "ev": 20.45,
       "odds": "1988.0",
       "prob_pct": "1.0",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "下関",
@@ -75,8 +91,8 @@ window.KYOTEI_DATA = {
       "ev": 17.81,
       "odds": "4823.0",
       "prob_pct": "0.4",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "蒲郡",
@@ -86,8 +102,8 @@ window.KYOTEI_DATA = {
       "ev": 17.13,
       "odds": "9999.0",
       "prob_pct": "0.2",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "下関",
@@ -97,8 +113,8 @@ window.KYOTEI_DATA = {
       "ev": 16.52,
       "odds": "1122.0",
       "prob_pct": "1.5",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "下関",
@@ -108,8 +124,8 @@ window.KYOTEI_DATA = {
       "ev": 16.0,
       "odds": "1089.0",
       "prob_pct": "1.5",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "蒲郡",
@@ -119,8 +135,8 @@ window.KYOTEI_DATA = {
       "ev": 14.54,
       "odds": "1212.0",
       "prob_pct": "1.2",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "丸亀",
@@ -130,8 +146,8 @@ window.KYOTEI_DATA = {
       "ev": 11.4,
       "odds": "764.8",
       "prob_pct": "1.5",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "丸亀",
@@ -141,8 +157,8 @@ window.KYOTEI_DATA = {
       "ev": 11.32,
       "odds": "1520.0",
       "prob_pct": "0.8",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "下関",
@@ -152,8 +168,8 @@ window.KYOTEI_DATA = {
       "ev": 11.27,
       "odds": "577.6",
       "prob_pct": "1.9",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "蒲郡",
@@ -163,8 +179,8 @@ window.KYOTEI_DATA = {
       "ev": 8.62,
       "odds": "1045.0",
       "prob_pct": "0.8",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "蒲郡",
@@ -174,8 +190,8 @@ window.KYOTEI_DATA = {
       "ev": 8.25,
       "odds": "666.5",
       "prob_pct": "1.2",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "下関",
@@ -185,8 +201,8 @@ window.KYOTEI_DATA = {
       "ev": 7.71,
       "odds": "680.6",
       "prob_pct": "1.1",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "丸亀",
@@ -196,8 +212,8 @@ window.KYOTEI_DATA = {
       "ev": 7.4,
       "odds": "677.2",
       "prob_pct": "1.1",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "丸亀",
@@ -207,8 +223,8 @@ window.KYOTEI_DATA = {
       "ev": 4.78,
       "odds": "290.2",
       "prob_pct": "1.7",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     },
     {
       "venue_name": "蒲郡",
@@ -218,8 +234,8 @@ window.KYOTEI_DATA = {
       "ev": 4.76,
       "odds": "1019.0",
       "prob_pct": "0.5",
-      "hit": "",
-      "payout": ""
+      "hit": "0",
+      "payout": "0"
     }
   ],
   "weekly_perfs": [
