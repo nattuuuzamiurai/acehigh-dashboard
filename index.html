@@ -359,6 +359,19 @@
               <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t38','tool',this.value)" id="t38-tool"></textarea></div>
               <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t38','next',this.value)" id="t38-next" placeholder="具体的な次の一手..."></div>
             </div></td></tr>
+            <!-- t39 -->
+            <tr class="tr" data-id="t39" data-priority="2" data-cat="アプリ開発">
+              <td><div class="task-name" onclick="toggleDetail('t39')" ondblclick="editTaskName(event,'t39')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>競艇予測ツールの期待値検証・予測レース改善</div></td>
+              <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge mid">中</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t39')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t39')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t39-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" value="2026-07-01" onchange="onDate(this,'t39')"></td>
+            </tr>
+            <tr class="dr" id="detail-t39"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t39','desc',this.value)" id="t39-desc">1週間の結果をもとに予測レースの改善を行う</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t39','tool',this.value)" id="t39-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t39','next',this.value)" id="t39-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
             <!-- t2 -->
             <tr class="tr" data-id="t2" data-priority="3" data-cat="新規事業">
               <td><div class="task-name" onclick="toggleDetail('t2')" ondblclick="editTaskName(event,'t2')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>警備会社</div></td>
@@ -555,7 +568,7 @@
 </div>
 
 <script>
-const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t2','t4','t7','t5','t32','t34','t35','t33'];
+const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t39','t2','t4','t7','t5','t32','t34','t35','t33'];
 
 // PROJECTS_DATA_START
 const PROJECTS_DATA = [];
