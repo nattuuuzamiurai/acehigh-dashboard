@@ -208,11 +208,36 @@
     ::-webkit-scrollbar { width:5px; }
     ::-webkit-scrollbar-track { background:transparent; }
     ::-webkit-scrollbar-thumb { background:var(--bor); border-radius:3px; }
+
+    /* LOGIN */
+    #login-overlay { position:fixed;inset:0;z-index:1000;background:#1a1e32;display:flex;align-items:center;justify-content:center; }
+    .login-box { background:#fff;border-radius:16px;padding:40px 44px;width:340px;box-shadow:0 24px 64px rgba(0,0,0,.5);text-align:center; }
+    .login-co { font-size:.67em;color:var(--mut);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px; }
+    .login-title { font-size:1.5em;font-weight:800;color:var(--txt);margin-bottom:6px; }
+    .login-sub { font-size:.8em;color:var(--mut);margin-bottom:24px; }
+    #login-pw { width:100%;border:1.5px solid var(--bor);border-radius:8px;padding:11px 14px;font-size:1em;font-family:inherit;outline:none;text-align:center;letter-spacing:.15em;box-sizing:border-box; }
+    #login-pw:focus { border-color:var(--acc);box-shadow:0 0 0 3px rgba(102,116,240,.15); }
+    .login-btn { margin-top:12px;width:100%;padding:11px;border-radius:8px;border:none;background:var(--acc);color:#fff;font-size:.95em;font-family:inherit;font-weight:700;cursor:pointer;transition:opacity .15s; }
+    .login-btn:hover { opacity:.88; }
+    #login-err { color:#dc2626;font-size:.82em;margin-top:9px;min-height:18px; }
   </style>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="kyotei_data.js" onerror="window.KYOTEI_DATA=null"></script>
 <body>
+
+<!-- LOGIN OVERLAY -->
+<div id="login-overlay">
+  <div class="login-box">
+    <div class="login-co">エースハイ合同会社</div>
+    <div class="login-title">Dashboard</div>
+    <div class="login-sub">パスワードを入力してください</div>
+    <input id="login-pw" type="password" placeholder="••••••••" autocomplete="current-password"
+      onkeydown="if(event.key==='Enter')doLogin()">
+    <button class="login-btn" onclick="doLogin()">ログイン</button>
+    <div id="login-err"></div>
+  </div>
+</div>
 
 <div id="sidebar">
   <div class="sb-logo">
@@ -238,6 +263,7 @@
       <span class="tb-date" id="today-label"></span>
       <span id="sync-status" style="font-size:.77em;white-space:nowrap;"></span>
       <button onclick="openSyncModal()" style="padding:4px 10px;border-radius:7px;border:1px solid var(--bor);background:var(--sur2);cursor:pointer;font-size:.77em;font-family:inherit;color:var(--txt);">⚙️ 同期</button>
+      <button onclick="doLogout()" style="padding:4px 10px;border-radius:7px;border:1px solid var(--bor);background:var(--sur2);cursor:pointer;font-size:.77em;font-family:inherit;color:var(--mut);">🔒 ログアウト</button>
     </div>
   </div>
 
@@ -609,6 +635,45 @@
 </div>
 
 <script>
+// ===== AUTH =====
+const AUTH_HASH = '6bb9ae425893281eff98ca463db7f886d06ccc5780e35cd68cd1d66dd43eda5a';
+const AUTH_KEY  = 'ace_auth';
+
+async function hashStr(s) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+async function doLogin() {
+  const pw  = document.getElementById('login-pw').value;
+  const err = document.getElementById('login-err');
+  if (!pw) { err.textContent = 'パスワードを入力してください'; return; }
+  const h = await hashStr(pw);
+  if (h === AUTH_HASH) {
+    sessionStorage.setItem(AUTH_KEY, '1');
+    document.getElementById('login-overlay').style.display = 'none';
+    err.textContent = '';
+  } else {
+    err.textContent = 'パスワードが違います';
+    document.getElementById('login-pw').value = '';
+    document.getElementById('login-pw').focus();
+  }
+}
+
+function doLogout() {
+  sessionStorage.removeItem(AUTH_KEY);
+  location.reload();
+}
+
+(function checkAuth() {
+  if (sessionStorage.getItem(AUTH_KEY) === '1') {
+    const ov = document.getElementById('login-overlay');
+    if (ov) ov.style.display = 'none';
+  } else {
+    setTimeout(() => document.getElementById('login-pw')?.focus(), 100);
+  }
+})();
+
 const TASK_IDS = [...document.querySelectorAll('tr.tr[data-id]')].map(r => r.dataset.id);
 
 // ===== CLOUD SYNC (GitHub Gist) =====
