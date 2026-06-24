@@ -372,6 +372,19 @@
               <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t39','tool',this.value)" id="t39-tool"></textarea></div>
               <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t39','next',this.value)" id="t39-next" placeholder="具体的な次の一手..."></div>
             </div></td></tr>
+            <!-- t40 -->
+            <tr class="tr" data-id="t40" data-priority="2" data-cat="開発">
+              <td><div class="task-name" onclick="toggleDetail('t40')" ondblclick="editTaskName(event,'t40')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>Telegramグループのネット内容を自動収集</div></td>
+              <td><span class="cat-tag">開発</span></td><td><span class="badge mid">中</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t40')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t40')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t40-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t40')"></td>
+            </tr>
+            <tr class="dr" id="detail-t40"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t40','desc',this.value)" id="t40-desc">Telegramグループの投稿内容を自動収集し、カテゴリー分類して管理する</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t40','tool',this.value)" id="t40-tool">Telegram Bot API / python-telegram-bot</textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t40','next',this.value)" id="t40-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
             <!-- t2 -->
             <tr class="tr" data-id="t2" data-priority="3" data-cat="新規事業">
               <td><div class="task-name" onclick="toggleDetail('t2')" ondblclick="editTaskName(event,'t2')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>警備会社</div></td>
