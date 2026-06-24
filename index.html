@@ -236,6 +236,8 @@
     <span class="tb-title" id="page-title">概要</span>
     <div class="tb-right">
       <span class="tb-date" id="today-label"></span>
+      <span id="sync-status" style="font-size:.77em;white-space:nowrap;"></span>
+      <button onclick="openSyncModal()" style="padding:4px 10px;border-radius:7px;border:1px solid var(--bor);background:var(--sur2);cursor:pointer;font-size:.77em;font-family:inherit;color:var(--txt);">⚙️ 同期</button>
     </div>
   </div>
 
@@ -580,8 +582,160 @@
   </div>
 </div>
 
+<!-- SYNC MODAL -->
+<div id="sync-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;align-items:center;justify-content:center;" onclick="if(event.target===this)closeSyncModal()">
+  <div style="background:#fff;border-radius:12px;padding:28px 32px;max-width:460px;width:90%;box-shadow:0 10px 40px rgba(0,0,0,.25);">
+    <div style="font-weight:700;font-size:1.05em;margin-bottom:6px;">☁️ クラウド同期（GitHub Gist）</div>
+    <div style="font-size:.79em;color:var(--mut);line-height:1.7;margin-bottom:16px;">
+      タスクデータをGitHub Gistに自動保存します。<br>
+      <strong>gist</strong> スコープのみの
+      <a href="https://github.com/settings/tokens/new?scopes=gist&description=AceHigh+Dashboard" target="_blank" style="color:var(--acc);">GitHub PAT</a>
+      を発行して入力してください。<br>
+      <span style="color:var(--mut);font-size:.93em;">※ トークンはこのブラウザにのみ保存されます</span>
+    </div>
+    <div style="margin-bottom:14px;">
+      <label style="display:block;font-size:.73em;color:var(--mut);font-weight:600;margin-bottom:4px;">Personal Access Token</label>
+      <input id="gh-token-input" type="password" style="width:100%;background:#fff;border:1px solid var(--bor);border-radius:6px;padding:7px 10px;font-size:.87em;font-family:monospace;outline:none;" placeholder="ghp_xxxxxxxxxxxx">
+    </div>
+    <div id="gh-gist-info" style="display:none;font-size:.77em;background:var(--sur2);border-radius:6px;padding:8px 11px;margin-bottom:14px;color:var(--mut);">
+      接続中のGist: <code id="gh-gist-id" style="color:var(--acc);word-break:break-all;"></code>
+    </div>
+    <div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;">
+      <button onclick="closeSyncModal()" style="padding:7px 14px;border-radius:7px;border:1px solid var(--bor);background:var(--sur2);cursor:pointer;font-size:.87em;font-family:inherit;">キャンセル</button>
+      <button onclick="clearGistSync()" style="padding:7px 14px;border-radius:7px;border:1px solid #fecaca;background:#fee2e2;color:#dc2626;cursor:pointer;font-size:.87em;font-family:inherit;">設定解除</button>
+      <button onclick="setupGistSync()" id="sync-connect-btn" style="padding:7px 16px;border-radius:7px;border:none;background:var(--acc);color:#fff;cursor:pointer;font-size:.87em;font-family:inherit;font-weight:600;">接続 / 保存</button>
+    </div>
+  </div>
+</div>
+
 <script>
-const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t39','t2','t4','t7','t5','t32','t34','t35','t33'];
+const TASK_IDS = [...document.querySelectorAll('tr.tr[data-id]')].map(r => r.dataset.id);
+
+// ===== CLOUD SYNC (GitHub Gist) =====
+const SYNC_KEY = 'gh_sync_cfg';
+let _saveTimer = null;
+
+function getSyncCfg() { try { return JSON.parse(localStorage.getItem(SYNC_KEY)); } catch { return null; } }
+
+function collectState() {
+  const tasks = {};
+  TASK_IDS.forEach(id => {
+    const t = {};
+    ['status','progress','date','desc','tool','next','name'].forEach(k => {
+      const v = localStorage.getItem('db_'+id+'_'+k);
+      if (v !== null) t[k] = v;
+    });
+    tasks[id] = t;
+  });
+  return {
+    tasks,
+    fixed_costs: JSON.parse(localStorage.getItem('db_fixed_costs') || 'null'),
+    revenues:    JSON.parse(localStorage.getItem('db_revenues')    || 'null'),
+    savedAt: new Date().toISOString()
+  };
+}
+
+function applyGistState(state) {
+  if (!state || !state.tasks) return;
+  Object.entries(state.tasks).forEach(([id, data]) => {
+    if (!document.querySelector('tr[data-id="'+id+'"]')) return;
+    Object.entries(data).forEach(([k, v]) => { if (v !== undefined) localStorage.setItem('db_'+id+'_'+k, v); });
+  });
+  if (state.fixed_costs) localStorage.setItem('db_fixed_costs', JSON.stringify(state.fixed_costs));
+  if (state.revenues)    localStorage.setItem('db_revenues',    JSON.stringify(state.revenues));
+}
+
+function setSyncUI(s) {
+  const el = document.getElementById('sync-status');
+  if (!el) return;
+  const m = { loading:['☁️ 読込中…','var(--mut)'], saved:['☁️ 同期済み','var(--grn)'], saving:['☁️ 保存中…','var(--mut)'], error:['⚠️ 同期エラー','var(--red)'], offline:['💾 ローカル','var(--mut)'] };
+  const [t, c] = m[s] || ['', ''];
+  el.textContent = t; el.style.color = c;
+}
+
+async function gistApi(method, id, token, body) {
+  const r = await fetch('https://api.github.com/gists' + (id ? '/'+id : ''), {
+    method,
+    headers: { 'Authorization':'token '+token, 'Accept':'application/vnd.github.v3+json', 'Content-Type':'application/json' },
+    body: body ? JSON.stringify(body) : undefined
+  });
+  if (!r.ok) throw new Error('GitHub API ' + r.status);
+  return r.json();
+}
+
+async function loadGistState() {
+  const cfg = getSyncCfg();
+  if (!cfg || !cfg.token || !cfg.gistId) return false;
+  setSyncUI('loading');
+  try {
+    const data = await gistApi('GET', cfg.gistId, cfg.token);
+    const content = data.files && data.files['task_state.json'] && data.files['task_state.json'].content;
+    if (content) { applyGistState(JSON.parse(content)); setSyncUI('saved'); return true; }
+  } catch (e) { console.warn('Gist load:', e); setSyncUI('error'); }
+  return false;
+}
+
+async function saveGistState() {
+  const cfg = getSyncCfg();
+  if (!cfg || !cfg.token || !cfg.gistId) return;
+  setSyncUI('saving');
+  try {
+    await gistApi('PATCH', cfg.gistId, cfg.token, {
+      files: { 'task_state.json': { content: JSON.stringify(collectState(), null, 2) } }
+    });
+    setSyncUI('saved');
+  } catch (e) { console.warn('Gist save:', e); setSyncUI('error'); }
+}
+
+function queueSave() { clearTimeout(_saveTimer); _saveTimer = setTimeout(saveGistState, 2000); }
+
+async function setupGistSync() {
+  const token = document.getElementById('gh-token-input').value.trim();
+  if (!token) { alert('トークンを入力してください'); return; }
+  const btn = document.getElementById('sync-connect-btn');
+  btn.disabled = true; btn.textContent = '接続中...';
+  try {
+    const res = await fetch('https://api.github.com/gists?per_page=100', {
+      headers: { 'Authorization':'token '+token, 'Accept':'application/vnd.github.v3+json' }
+    });
+    if (!res.ok) throw new Error('認証エラー: ' + res.status);
+    const gists = await res.json();
+    let gist = gists.find(g => g.description === 'AceHigh Dashboard State' && g.files['task_state.json']);
+    if (!gist) {
+      gist = await gistApi('POST', '', token, {
+        description: 'AceHigh Dashboard State',
+        public: false,
+        files: { 'task_state.json': { content: JSON.stringify(collectState(), null, 2) } }
+      });
+    }
+    localStorage.setItem(SYNC_KEY, JSON.stringify({ token, gistId: gist.id }));
+    closeSyncModal(); setSyncUI('saved'); updateSyncModalInfo();
+    alert('✅ Gist同期を設定しました！\nGist ID: ' + gist.id);
+  } catch (e) { alert('エラー: ' + e.message); }
+  finally { btn.disabled = false; btn.textContent = '接続 / 保存'; }
+}
+
+function clearGistSync() {
+  if (!confirm('Gist同期設定を解除しますか？\n（Gist本体は削除されません）')) return;
+  localStorage.removeItem(SYNC_KEY); setSyncUI('offline'); updateSyncModalInfo(); closeSyncModal();
+}
+
+function openSyncModal()  { updateSyncModalInfo(); document.getElementById('sync-modal').style.display = 'flex'; }
+function closeSyncModal() { document.getElementById('sync-modal').style.display = 'none'; }
+
+function updateSyncModalInfo() {
+  const cfg  = getSyncCfg();
+  const info = document.getElementById('gh-gist-info');
+  const inp  = document.getElementById('gh-token-input');
+  if (cfg && cfg.gistId) {
+    document.getElementById('gh-gist-id').textContent = cfg.gistId;
+    if (info) info.style.display = '';
+    if (inp)  inp.value = cfg.token || '';
+  } else {
+    if (info) info.style.display = 'none';
+    if (inp)  inp.value = '';
+  }
+}
 
 // PROJECTS_DATA_START
 const PROJECTS_DATA = [];
@@ -619,6 +773,7 @@ function toggleDetail(id) {
 
 function saveDetail(id, field, value) {
   localStorage.setItem('db_'+id+'_'+field, value);
+  queueSave();
 }
 
 function onStatus(el, id) {
@@ -626,16 +781,19 @@ function onStatus(el, id) {
   el.classList.add(el.value);
   localStorage.setItem('db_'+id+'_status', el.value);
   updateDone(); refreshOverview();
+  queueSave();
 }
 
 function onProgress(el, id) {
   const bar = document.getElementById(id+'-bar');
   if (bar) bar.style.width = el.value;
   localStorage.setItem('db_'+id+'_progress', el.value);
+  queueSave();
 }
 
 function onDate(el, id) {
   localStorage.setItem('db_'+id+'_date', el.value);
+  queueSave();
 }
 
 
@@ -723,6 +881,7 @@ function addFixedCost() {
   const arr = getFixedCosts();
   arr.push({id: Date.now(), name, amount, note});
   setFixedCosts(arr);
+  queueSave();
   document.getElementById('fc-name').value='';
   document.getElementById('fc-amount').value='';
   document.getElementById('fc-note').value='';
@@ -731,13 +890,14 @@ function addFixedCost() {
 
 function deleteFixedCost(id) {
   setFixedCosts(getFixedCosts().filter(c => c.id!==id));
+  queueSave();
   renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown();
 }
 
 function updateFixedCostAmount(id, val) {
   const arr = getFixedCosts();
   const c = arr.find(x => x.id===id);
-  if (c) { c.amount = parseFloat(val)||0; setFixedCosts(arr); refreshRevenueSummary(); renderMonthlyBreakdown(); }
+  if (c) { c.amount = parseFloat(val)||0; setFixedCosts(arr); queueSave(); refreshRevenueSummary(); renderMonthlyBreakdown(); }
 }
 
 function renderFixedCosts() {
@@ -767,6 +927,7 @@ async function addRevenue() {
   if (!date||!desc||isNaN(amount)||amount<=0) return;
   const item = {date, desc, cat, amount, type, id: Date.now()};
   const arr = getRevenues(); arr.unshift(item); setRevenues(arr);
+  queueSave();
   document.getElementById('rev-desc').value='';
   document.getElementById('rev-amount').value='';
   renderRevenues(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
@@ -774,6 +935,7 @@ async function addRevenue() {
 
 function deleteRevenue(id) {
   setRevenues(getRevenues().filter(r => r.id!==id));
+  queueSave();
   renderRevenues(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
 }
 
@@ -1263,6 +1425,7 @@ function editTaskName(e, id) {
   function commit() {
     const n = input.value.trim() || currentName;
     localStorage.setItem('db_'+id+'_name', n);
+    queueSave();
     nameDiv.innerHTML = '<span class="ta">▶</span>' + n;
     refreshOverview();
   }
@@ -1279,6 +1442,11 @@ window.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('today-label').textContent = today.toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'});
   document.getElementById('rev-date').value = today.toISOString().slice(0,10);
 
+  // Gist から読み込み → localStorage に書き込み → その後ローカルストレージで DOM 復元
+  const gistLoaded = await loadGistState();
+  if (!gistLoaded) setSyncUI('offline');
+  updateSyncModalInfo();
+
   // Restore from localStorage
   TASK_IDS.forEach(id => {
     const sel = document.querySelector('tr[data-id="'+id+'"] select.ss');
@@ -1290,7 +1458,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     const di = document.querySelector('tr[data-id="'+id+'"] input.di-date');
     const sd = localStorage.getItem('db_'+id+'_date');
     if (sd && di) di.value=sd;
-    ['desc','tool','next'].forEach(f => { const sv2=localStorage.getItem('db_'+id+'_'+f); const e=document.getElementById(id+'-'+f); if(sv2&&e) e.value=sv2; });
+    ['desc','tool','next'].forEach(f => { const sv2=localStorage.getItem('db_'+id+'_'+f); const e=document.getElementById(id+'-'+f); if(sv2!==null&&e) e.value=sv2; });
   });
 
   // Restore saved task names
