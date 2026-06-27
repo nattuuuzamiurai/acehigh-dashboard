@@ -1430,10 +1430,27 @@ function refreshOverview() {
 
 
 // ===== 競艇予測 =====
+window._kyoteiTab       = 'ev';
 window._kyoteiWeekIdx   = 0;
 window._kyoteiWeeksData = [];
 window._predDayIdx      = 0;
 window._predDays        = [];
+window._probWeekIdx     = 0;
+window._probWeeksData   = [];
+window._probPredDayIdx  = 0;
+window._probPredDays    = [];
+
+function switchKyoteiTab(tab) {
+  window._kyoteiTab = tab;
+  document.getElementById('kyotei-tab-ev').style.display   = tab === 'ev'   ? '' : 'none';
+  document.getElementById('kyotei-tab-prob').style.display = tab === 'prob' ? '' : 'none';
+  document.getElementById('kyotei-btn-ev').style.background   = tab === 'ev'   ? 'var(--acc)' : 'var(--sur)';
+  document.getElementById('kyotei-btn-ev').style.color        = tab === 'ev'   ? '#fff' : 'var(--mut)';
+  document.getElementById('kyotei-btn-prob').style.background = tab === 'prob' ? 'var(--acc)' : 'var(--sur)';
+  document.getElementById('kyotei-btn-prob').style.color      = tab === 'prob' ? '#fff' : 'var(--mut)';
+  if (tab === 'ev')   { renderPredTable(); renderKyoteiWeekPerfSection(); }
+  if (tab === 'prob') { renderPredTableProb(); renderKyoteiWeekPerfSectionProb(); }
+}
 
 function renderPredTable() {
   const el = document.getElementById('pred-report-section');
@@ -1520,6 +1537,94 @@ window.predDayNav = function(dir) {
   renderPredTable();
 };
 
+function renderPredTableProb() {
+  const el = document.getElementById('pred-report-section-prob');
+  if (!el) return;
+  const days = window._probPredDays || [];
+  const idx  = window._probPredDayIdx || 0;
+
+  if (!days.length) {
+    el.innerHTML = `<div class="card" style="padding:16px;margin-bottom:22px;border-left:4px solid #f59e0b;">
+      <div style="font-weight:700;color:#92400e;margin-bottom:4px;">🔧 本日の予測データ待機中</div>
+      <div style="font-size:.8em;color:var(--mut);">main.py 実行後に表示されます。</div>
+    </div>`;
+    return;
+  }
+
+  const day   = days[idx];
+  const preds = day.preds || [];
+  const hasPrev = idx < days.length - 1;
+  const hasNext = idx > 0;
+  const navBtn  = (dir, label, enabled) =>
+    `<button onclick="window.probDayNav(${dir})" ${enabled ? '' : 'disabled'}
+      style="padding:4px 12px;border-radius:6px;border:1px solid var(--bor);
+             background:${enabled ? 'var(--sur)' : 'var(--sur2)'};
+             color:${enabled ? 'var(--txt)' : 'var(--mut)'};
+             cursor:${enabled ? 'pointer' : 'default'};font-size:.8em;font-family:inherit;">${label}</button>`;
+
+  const predRows = preds.map(p => {
+    const hasEv = p.has_ev;
+    const evBadge = hasEv
+      ? `<span style="background:#dcfce7;color:#16a34a;padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">EV ${p.ev} ✓</span>`
+      : `<span style="background:#f1f5f9;color:#94a3b8;padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">EV ${p.ev}</span>`;
+    const actualHtml = p.actual_combo
+      ? `<code style="color:#7b1fa2;font-size:.9em;font-weight:700;">${p.actual_combo}</code>`
+      : `<span style="color:var(--mut);">—</span>`;
+    const hitHtml = p.hit === '1'
+      ? `<span style="color:var(--grn);font-weight:700;">✓ 的中</span>`
+      : p.hit === '0'
+        ? `<span style="color:var(--red);">✗</span>`
+        : `<span style="color:var(--mut);">⏳</span>`;
+    const fo = p.final_odds ? p.final_odds + '倍' : '—';
+    const payHtml = p.hit === '1'
+      ? `<span style="font-weight:700;color:var(--grn);">${p.payout ? '¥' + parseInt(p.payout).toLocaleString() : fo}</span>`
+      : p.hit === '0'
+        ? `<span style="color:var(--red);">${fo}</span>`
+        : `<span style="color:var(--mut);">⏳</span>`;
+    return `<tr>
+      <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
+      <td style="padding:8px 10px;">${p.race_no}R</td>
+      <td style="padding:8px 10px;">${p.start_time}</td>
+      <td style="padding:8px 10px;"><code style="color:#1a237e;font-size:.9em;">${p.combo}</code></td>
+      <td style="padding:8px 10px;">${actualHtml}</td>
+      <td style="padding:8px 10px;font-weight:700;color:var(--acc);">${p.prob_pct}%</td>
+      <td style="padding:8px 10px;">${evBadge}</td>
+      <td style="padding:8px 10px;">${p.odds}倍</td>
+      <td style="padding:8px 10px;">${hitHtml}</td>
+      <td style="padding:8px 10px;">${payHtml}</td>
+    </tr>`;
+  }).join('');
+
+  const dayLabel = day.date_label + (day.is_today ? ' <span style="font-size:.75em;color:var(--acc);">今日</span>' : '');
+
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      ${navBtn(1, '◀ 前日', hasPrev)}
+      <span style="font-size:.88em;font-weight:700;">${dayLabel}</span>
+      ${navBtn(-1, '翌日 ▶', hasNext)}
+    </div>
+    ${preds.length ? `
+    <div class="tw" style="margin-bottom:22px;overflow-x:auto;overflow-y:auto;max-height:420px;">
+      <table style="width:100%;font-size:.82em;">
+        <thead><tr style="background:var(--sur2);position:sticky;top:0;z-index:1;">
+          <th style="padding:8px 10px;">会場</th><th style="padding:8px 10px;">R</th>
+          <th style="padding:8px 10px;">発走</th><th style="padding:8px 10px;">予測</th>
+          <th style="padding:8px 10px;">当選</th>
+          <th style="padding:8px 10px;">推定確率</th><th style="padding:8px 10px;">EV判定</th>
+          <th style="padding:8px 10px;">オッズ</th><th style="padding:8px 10px;">結果</th><th style="padding:8px 10px;">払戻</th>
+        </tr></thead>
+        <tbody>${predRows}</tbody>
+      </table>
+    </div>` : `<div class="card" style="padding:16px;margin-bottom:22px;color:var(--mut);text-align:center;">この日の推奨レースはありません</div>`}
+  `;
+}
+
+window.probDayNav = function(dir) {
+  const len = (window._probPredDays || []).length;
+  window._probPredDayIdx = Math.max(0, Math.min(len - 1, (window._probPredDayIdx || 0) + dir));
+  renderPredTableProb();
+};
+
 function renderKyoteiWeekPerfSection() {
   const el = document.getElementById('kyotei-week-perf');
   if (!el) return;
@@ -1581,6 +1686,69 @@ window.kyoteiWeekNav = function(dir) {
   const len = window._kyoteiWeeksData.length;
   window._kyoteiWeekIdx = Math.max(0, Math.min(len - 1, window._kyoteiWeekIdx + dir));
   renderKyoteiWeekPerfSection();
+};
+
+function renderKyoteiWeekPerfSectionProb() {
+  const el = document.getElementById('kyotei-week-perf-prob');
+  if (!el) return;
+  const weeks = window._probWeeksData;
+  const idx   = window._probWeekIdx;
+
+  if (!weeks || !weeks.length) {
+    el.innerHTML = '<div class="card" style="text-align:center;color:var(--mut);padding:20px;">検証データがまだありません</div>';
+    return;
+  }
+
+  const week    = weeks[idx];
+  const perf    = week.perf || {};
+  const hasPrev = idx < weeks.length - 1;
+  const hasNext = idx > 0;
+
+  const navBtn = (dir, label, enabled) =>
+    `<button onclick="window.probWeekNav(${dir})" ${enabled?'':'disabled'}
+      style="padding:4px 12px;border-radius:6px;border:1px solid var(--bor);background:${enabled?'var(--sur)':'var(--sur2)'};
+             color:${enabled?'var(--txt)':'var(--mut)'};cursor:${enabled?'pointer':'default'};font-size:.8em;font-family:inherit;">${label}</button>`;
+
+  const rows = ['all', 'ev'].map(key => {
+    const s = perf[key];
+    if (!s) return '';
+    const rc = s.roi >= 0 ? 'var(--grn)' : s.roi >= -25 ? 'var(--amb)' : 'var(--red)';
+    return `<tr>
+      <td style="padding:8px 10px;font-weight:600;">${s.label}</td>
+      <td style="padding:8px 10px;text-align:right;">${s.bets}件</td>
+      <td style="padding:8px 10px;text-align:right;">${s.hits}件</td>
+      <td style="padding:8px 10px;text-align:right;">${s.hit_rate}%</td>
+      <td style="padding:8px 10px;text-align:right;">¥${s.invested.toLocaleString()}</td>
+      <td style="padding:8px 10px;text-align:right;">¥${s.returned.toLocaleString()}</td>
+      <td style="padding:8px 10px;text-align:right;font-weight:700;color:${rc};">${s.roi >= 0 ? '+' : ''}${s.roi}%</td>
+    </tr>`;
+  }).join('');
+
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      ${navBtn(1, '◀ 前週', hasPrev)}
+      <span style="font-size:.88em;font-weight:700;">${week.week_label}${week.is_current ? ' <span style="font-size:.75em;color:var(--acc);">今週</span>' : ''}</span>
+      ${navBtn(-1, '次週 ▶', hasNext)}
+    </div>
+    <div class="tw" style="margin-bottom:8px;">
+      <table style="width:100%;font-size:.82em;">
+        <thead><tr style="background:var(--sb);color:#fff;">
+          <th style="padding:8px 10px;">戦略</th><th style="padding:8px 10px;text-align:right;">推奨数</th>
+          <th style="padding:8px 10px;text-align:right;">的中数</th><th style="padding:8px 10px;text-align:right;">的中率</th>
+          <th style="padding:8px 10px;text-align:right;">投資</th><th style="padding:8px 10px;text-align:right;">回収</th>
+          <th style="padding:8px 10px;text-align:right;">損益率</th>
+        </tr></thead>
+        <tbody>${rows || '<tr><td colspan="7" style="text-align:center;color:var(--mut);padding:16px;">この週のデータがありません</td></tr>'}</tbody>
+      </table>
+    </div>
+    <div style="font-size:.65em;color:var(--mut);">※ 各レースの最高推定確率コンボを1件選択（1レース100円）。</div>
+  `;
+}
+
+window.probWeekNav = function(dir) {
+  const len = window._probWeeksData.length;
+  window._probWeekIdx = Math.max(0, Math.min(len - 1, window._probWeekIdx + dir));
+  renderKyoteiWeekPerfSectionProb();
 };
 
 function renderKyotei() {
@@ -1647,9 +1815,12 @@ function renderKyotei() {
     </div>`;
   }
 
-  // 予測テーブルは renderPredTable() で描画するため、ここでは初期化のみ
-  window._predDays   = d.pred_days || [];
-  window._predDayIdx = 0;
+  // 状態初期化
+  window._predDays       = d.pred_days || [];
+  window._predDayIdx     = 0;
+  window._probPredDays   = d.prob_pred_days || [];
+  window._probPredDayIdx = 0;
+  window._kyoteiTab      = 'ev';
 
   // 機能一覧
   const features = d.features || [];
@@ -1663,41 +1834,66 @@ function renderKyotei() {
     </div>`
   ).join('');
 
+  const tabBtnStyle = (active) =>
+    `padding:7px 20px;border-radius:7px;border:1px solid var(--bor);cursor:pointer;font-size:.88em;font-family:inherit;font-weight:600;transition:all .13s;background:${active ? 'var(--acc)' : 'var(--sur)'};color:${active ? '#fff' : 'var(--mut)'};`;
+
   root.innerHTML = `
     <div style="margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;">
       <div style="font-size:.75em;color:var(--mut);">最終更新: ${d.updated}</div>
       <div style="font-size:.75em;color:var(--mut);">EV${d.ev_threshold}以上を推奨</div>
     </div>
 
-    <!-- デモ収益 -->
-    <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📈 デモ収益（仮想投票シミュレーション）</div>
-    <div style="display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;">
-      ${demoCard('週間デモ収益', d.week_label, d.weekly_demo)}
-      ${demoCard('月間デモ収益', d.month_label, d.monthly_demo)}
+    <!-- タブ切り替え -->
+    <div style="display:flex;gap:8px;margin-bottom:20px;border-bottom:2px solid var(--bor);padding-bottom:12px;">
+      <button id="kyotei-btn-ev"   onclick="switchKyoteiTab('ev')"   style="${tabBtnStyle(true)}">📊 最高EV戦略</button>
+      <button id="kyotei-btn-prob" onclick="switchKyoteiTab('prob')" style="${tabBtnStyle(false)}">🎯 最高的中率戦略</button>
     </div>
 
-    <!-- 予測レポート -->
-    <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">🎯 予測レポート</div>
-    <div id="pred-report-section" style="margin-bottom:22px;"></div>
+    <!-- ===== 最高EV タブ ===== -->
+    <div id="kyotei-tab-ev">
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📈 デモ収益（仮想投票・1レース最高EVコンボ×100円）</div>
+      <div style="display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;">
+        ${demoCard('週間デモ収益', d.week_label, d.weekly_demo)}
+        ${demoCard('月間デモ収益', d.month_label, d.monthly_demo)}
+      </div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">🎯 予測レポート</div>
+      <div id="pred-report-section" style="margin-bottom:22px;"></div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📊 週次検証レポート</div>
+      <div id="kyotei-week-perf" style="margin-bottom:22px;"></div>
+    </div>
 
-    <!-- 週次検証レポート -->
-    <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📊 週次検証レポート</div>
-    <div id="kyotei-week-perf" style="margin-bottom:22px;"></div>
+    <!-- ===== 最高的中率 タブ ===== -->
+    <div id="kyotei-tab-prob" style="display:none;">
+      <div style="background:#eef0fe;border:1px solid #c7d2fe;border-radius:8px;padding:10px 14px;margin-bottom:16px;font-size:.83em;color:#3730a3;line-height:1.6;">
+        各レースで <strong>推定的中率が最も高いコンボ</strong> を1件選択。EV判定（緑=EV有り）も併せて表示。
+      </div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📈 デモ収益（仮想投票・推定的中率最高コンボ×100円）</div>
+      <div style="display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;">
+        ${demoCard('週間デモ収益', d.week_label, d.prob_weekly_demo)}
+        ${demoCard('月間デモ収益', d.month_label, d.prob_monthly_demo)}
+      </div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">🎯 予測レポート</div>
+      <div id="pred-report-section-prob" style="margin-bottom:22px;"></div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📊 週次検証レポート</div>
+      <div id="kyotei-week-perf-prob" style="margin-bottom:22px;"></div>
+    </div>
 
     <!-- 実装機能一覧 -->
     <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">⚙️ 実装済み機能</div>
     <div class="tw" style="margin-bottom:16px;">
       ${featHtml || '<div style="padding:16px;color:var(--mut);text-align:center;">—</div>'}
-      <div style="padding:9px 12px;font-size:.65em;color:var(--mut);">※ 1レースあたり最高EV1組み合わせを全件対象にデモ収益を計算（1レース100円）。メール通知は上位5件。</div>
+      <div style="padding:9px 12px;font-size:.65em;color:var(--mut);">※ タブで最高EV戦略と最高的中率戦略を切り替えて比較できます。</div>
     </div>
   `;
 
-  // 週ナビゲーション初期化
+  // 週次データ初期化
   window._kyoteiWeekIdx   = 0;
   window._kyoteiWeeksData = d.weekly_perfs || [];
-  renderKyoteiWeekPerfSection();
+  window._probWeekIdx     = 0;
+  window._probWeeksData   = d.prob_weekly_perfs || [];
 
-  // 予測レポート描画
+  // 初期描画（最高EVタブ）
+  renderKyoteiWeekPerfSection();
   renderPredTable();
 
 }
