@@ -1487,11 +1487,11 @@ function renderPredTable() {
       : p.hit === '0'
         ? `<span style="color:var(--red);">✗</span>`
         : `<span style="color:var(--mut);">⏳</span>`;
-    const fo = p.final_odds ? p.final_odds + '倍' : '—';
+    const fo = p.final_odds ? p.final_odds + '倍' : (p.odds ? p.odds + '倍(予測)' : '—');
     const payHtml = p.hit === '1'
       ? `<span style="font-weight:700;color:var(--grn);">${p.payout ? '¥' + parseInt(p.payout).toLocaleString() : fo}</span><span style="font-size:.8em;color:var(--mut);margin-left:4px;">(${fo})</span>`
       : p.hit === '0'
-        ? `<span style="color:var(--red);">${fo}</span>`
+        ? `<span style="color:var(--red);font-size:.85em;">外れ</span><span style="font-size:.78em;color:var(--mut);margin-left:4px;">${fo}</span>`
         : `<span style="color:var(--mut);">⏳</span>`;
     return `<tr>
       <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
@@ -1575,11 +1575,11 @@ function renderPredTableProb() {
       : p.hit === '0'
         ? `<span style="color:var(--red);">✗</span>`
         : `<span style="color:var(--mut);">⏳</span>`;
-    const fo = p.final_odds ? p.final_odds + '倍' : '—';
+    const fo = p.final_odds ? p.final_odds + '倍' : (p.odds ? p.odds + '倍(予測)' : '—');
     const payHtml = p.hit === '1'
       ? `<span style="font-weight:700;color:var(--grn);">${p.payout ? '¥' + parseInt(p.payout).toLocaleString() : fo}</span>`
       : p.hit === '0'
-        ? `<span style="color:var(--red);">${fo}</span>`
+        ? `<span style="color:var(--red);font-size:.85em;">外れ</span><span style="font-size:.78em;color:var(--mut);margin-left:4px;">${fo}</span>`
         : `<span style="color:var(--mut);">⏳</span>`;
     return `<tr>
       <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
