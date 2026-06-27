@@ -1493,13 +1493,16 @@ function renderPredTable() {
       : p.hit === '0'
         ? `<span style="color:var(--red);font-size:.85em;">外れ</span><span style="font-size:.78em;color:var(--mut);margin-left:4px;">${fo}</span>`
         : `<span style="color:var(--mut);">⏳</span>`;
+    const actualEvHtml = p.actual_ev != null
+      ? `<br><span style="font-size:.72em;color:var(--mut);">実績:<span style="color:${p.actual_ev >= 1.0 ? 'var(--grn)' : 'var(--red)'};">${p.actual_ev}</span></span>`
+      : '';
     return `<tr>
       <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
       <td style="padding:8px 10px;">${p.race_no}R</td>
       <td style="padding:8px 10px;">${p.start_time}</td>
       <td style="padding:8px 10px;"><code style="color:#1a237e;font-size:.9em;">${p.combo}</code></td>
       <td style="padding:8px 10px;">${actualHtml}</td>
-      <td style="padding:8px 10px;"><span style="background:${evBg};padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">${p.ev}</span></td>
+      <td style="padding:8px 10px;"><span style="background:${evBg};padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">${p.ev}</span>${actualEvHtml}</td>
       <td style="padding:8px 10px;">${p.odds}倍</td>
       <td style="padding:8px 10px;">${p.prob_pct}%</td>
       <td style="padding:8px 10px;">${hitHtml}</td>
@@ -1564,9 +1567,12 @@ function renderPredTableProb() {
 
   const predRows = preds.map(p => {
     const hasEv = p.has_ev;
+    const actualEvHtml = p.actual_ev != null
+      ? `<br><span style="font-size:.72em;color:var(--mut);">実績:<span style="color:${p.actual_ev >= 1.0 ? 'var(--grn)' : 'var(--red)'};">${p.actual_ev}</span></span>`
+      : '';
     const evBadge = hasEv
-      ? `<span style="background:#dcfce7;color:#16a34a;padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">EV ${p.ev} ✓</span>`
-      : `<span style="background:#f1f5f9;color:#94a3b8;padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">EV ${p.ev}</span>`;
+      ? `<span style="background:#dcfce7;color:#16a34a;padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">EV ${p.ev} ✓</span>${actualEvHtml}`
+      : `<span style="background:#f1f5f9;color:#94a3b8;padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">EV ${p.ev}</span>${actualEvHtml}`;
     const actualHtml = p.actual_combo
       ? `<code style="color:#7b1fa2;font-size:.9em;font-weight:700;">${p.actual_combo}</code>`
       : `<span style="color:var(--mut);">—</span>`;
