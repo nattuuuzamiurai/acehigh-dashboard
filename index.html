@@ -450,6 +450,19 @@
               <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t35','tool',this.value)" id="t35-tool"></textarea></div>
               <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t35','next',this.value)" id="t35-next" placeholder="具体的な次の一手..."></div>
             </div></td></tr>
+            <!-- t41 -->
+            <tr class="tr" data-id="t41" data-priority="3" data-cat="アプリ開発">
+              <td><div class="task-name" onclick="toggleDetail('t41')" ondblclick="editTaskName(event,'t41')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>麻雀牌譜アドバイスアプリ開発</div></td>
+              <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge low">低</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t41')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t41')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t41-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t41')"></td>
+            </tr>
+            <tr class="dr" id="detail-t41"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t41','desc',this.value)" id="t41-desc">麻雀の牌譜を読み込むことでアドバイスをしてくれるアプリの開発</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t41','tool',this.value)" id="t41-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t41','next',this.value)" id="t41-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
             <!-- t33 -->
             <tr class="tr" data-id="t33" data-priority="4" data-cat="プライベート">
               <td><div class="task-name" onclick="toggleDetail('t33')" ondblclick="editTaskName(event,'t33')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>家の家電ツール最適化</div></td>
