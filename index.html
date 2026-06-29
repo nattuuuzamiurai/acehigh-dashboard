@@ -208,128 +208,11 @@
     ::-webkit-scrollbar { width:5px; }
     ::-webkit-scrollbar-track { background:transparent; }
     ::-webkit-scrollbar-thumb { background:var(--bor); border-radius:3px; }
-
-    /* LOGIN */
-    #login-overlay { position:fixed;inset:0;z-index:1000;background:#1a1e32;display:flex;align-items:center;justify-content:center; }
-    .login-box { background:#fff;border-radius:16px;padding:40px 44px;width:340px;box-shadow:0 24px 64px rgba(0,0,0,.5);text-align:center; }
-    .login-co { font-size:.67em;color:var(--mut);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px; }
-    .login-title { font-size:1.5em;font-weight:800;color:var(--txt);margin-bottom:6px; }
-    .login-sub { font-size:.8em;color:var(--mut);margin-bottom:24px; }
-    #login-pw { width:100%;border:1.5px solid var(--bor);border-radius:8px;padding:11px 14px;font-size:1em;font-family:inherit;outline:none;text-align:center;letter-spacing:.15em;box-sizing:border-box; }
-    #login-pw:focus { border-color:var(--acc);box-shadow:0 0 0 3px rgba(102,116,240,.15); }
-    .login-btn { margin-top:12px;width:100%;padding:11px;border-radius:8px;border:none;background:var(--acc);color:#fff;font-size:.95em;font-family:inherit;font-weight:700;cursor:pointer;transition:opacity .15s; }
-    .login-btn:hover { opacity:.88; }
-    #login-err { color:#dc2626;font-size:.82em;margin-top:9px;min-height:18px; }
-
-    /* ===== CHAIPO BOARD ===== */
-    .cb-outer{display:flex;gap:12px;height:calc(100vh - 148px);min-height:550px;}
-    .cb-left{width:150px;flex-shrink:0;display:flex;flex-direction:column;gap:10px;overflow-y:auto;}
-    .cb-center{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:8px;min-width:0;}
-    .cb-right{width:240px;flex-shrink:0;overflow-y:auto;}
-
-    .cb-zone-wrap{background:var(--sur);border:1px solid var(--bor);border-radius:var(--r);padding:12px 14px;}
-    .cb-plbl{font-size:.67em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:9px;}
-    .cb-opp-lbl{color:#e03030;}.cb-self-lbl{color:var(--acc);}
-    .cb-board-rows{display:flex;flex-direction:column;gap:7px;}
-    .cb-row{display:flex;align-items:center;gap:5px;}
-    .cb-rl{width:36px;text-align:right;font-size:.64em;color:var(--mut);font-weight:600;flex-shrink:0;}
-
-    .cb-card{
-      width:48px;height:68px;background:#fff;border:1.5px solid #dde;border-radius:6px;
-      display:flex;flex-direction:column;justify-content:space-between;padding:3px 4px;
-      cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.09);font-weight:700;
-      user-select:none;position:relative;overflow:hidden;flex-shrink:0;
-      transition:transform .1s,box-shadow .1s,border-color .1s;
-    }
-    .cb-card:hover{transform:translateY(-2px);box-shadow:0 3px 8px rgba(0,0,0,.13);}
-    .cb-sel{border:2px solid var(--acc)!important;box-shadow:0 0 0 3px rgba(102,116,240,.22)!important;transform:translateY(-5px)!important;}
-    .cb-locked{cursor:default!important;border-color:#c8cfe8!important;background:#f7f8fc!important;}
-    .cb-locked:hover{transform:none!important;box-shadow:0 1px 3px rgba(0,0,0,.09)!important;}
-    .cb-lock-ic{position:absolute;bottom:1px;right:2px;font-size:.5em;opacity:.5;pointer-events:none;}
-    .cb-pending{border-color:#6674f0!important;}
-    .cb-facedown{background:repeating-linear-gradient(45deg,#1e2a50 0,#1e2a50 4px,#252e5a 4px,#252e5a 8px);border:1.5px solid #2a355e;}
-    .cb-sm{width:34px;height:48px;}.cb-sm .cb-cm{font-size:1.1em;}
-    .cb-ct{font-size:.76em;line-height:1.15;}.cb-cs{font-size:.72em;}
-    .cb-cm{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.45em;line-height:1;pointer-events:none;}
-    .cb-cb{font-size:.76em;line-height:1.15;transform:rotate(180deg);align-self:flex-end;}
-
-    .cb-slot{
-      width:48px;height:68px;border:2px dashed #d8dce8;border-radius:6px;
-      cursor:pointer;display:flex;align-items:center;justify-content:center;
-      font-size:.85em;color:#c8cce0;font-weight:700;
-      transition:border-color .15s,background .15s;flex-shrink:0;
-    }
-    .cb-slot:hover,.cb-hi{border-color:var(--acc)!important;background:#f0f2ff;color:var(--acc);}
-
-    .cb-div{display:flex;align-items:center;gap:10px;margin:2px 0;}
-    .cb-div::before,.cb-div::after{content:'';flex:1;height:1px;background:var(--bor);}
-    .cb-div-t{font-size:.66em;color:var(--mut);font-weight:700;letter-spacing:.12em;white-space:nowrap;}
-
-    .cb-hand-area{background:var(--sur);border:1px solid var(--bor);border-radius:var(--r);padding:10px 14px;}
-    .cb-hand-lbl{font-size:.67em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);margin-bottom:8px;}
-    .cb-hand-cards{display:flex;flex-wrap:wrap;gap:5px;min-height:74px;align-items:flex-start;}
-
-    .cb-dis-sec{background:var(--sur);border:1px solid var(--bor);border-radius:var(--r);padding:10px 12px;}
-    .cb-dis-lbl{font-size:.63em;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:6px;}
-    .cb-dis-cards{display:flex;flex-wrap:wrap;gap:3px;min-height:20px;}
-
-    .cb-tr-title{font-size:.67em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:10px;}
-    .cb-tr-row{display:flex;align-items:center;gap:2px;margin-bottom:3px;}
-    .cb-tr-suit{width:20px;text-align:center;font-size:.92em;flex-shrink:0;}
-    .cb-tr-c{
-      width:16px;height:24px;display:flex;align-items:center;justify-content:center;
-      font-size:.59em;font-weight:700;border-radius:3px;cursor:pointer;
-      border:1px solid #e8eaf0;background:#fff;
-      transition:opacity .15s,background .1s;
-    }
-    .cb-tr-c:hover:not(.cb-used){background:#f0f2ff;}
-    .cb-used{opacity:.18!important;cursor:default;}
-    .cb-tr-remain{font-size:.72em;color:var(--mut);margin-top:8px;font-weight:600;}
-
-    #cb-picker-modal{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:500;display:none;align-items:center;justify-content:center;}
-    .cb-pk-box{background:#fff;border-radius:14px;padding:22px 24px;max-width:680px;width:94%;box-shadow:0 12px 48px rgba(0,0,0,.3);max-height:90vh;overflow-y:auto;}
-    .cb-pk-title{font-size:.9em;font-weight:700;color:var(--txt);}
-    .cb-pk-row{display:flex;align-items:center;gap:4px;margin-bottom:5px;}
-    .cb-pk-suit{width:26px;text-align:center;font-size:1.1em;flex-shrink:0;}
-    .cb-pk-card{
-      flex:1;height:52px;border:1px solid #dde;border-radius:7px;
-      cursor:pointer;font-weight:700;font-size:.76em;
-      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
-      transition:background .1s,transform .1s;
-    }
-    .cb-pk-card:hover:not(.cb-pk-used):not(.cb-pk-sel){background:#f0f2ff;transform:scale(1.06);}
-    .cb-pk-used{opacity:.18;cursor:not-allowed;pointer-events:none;}
-    .cb-pk-jk{flex:none;width:72px;}
-    .cb-pk-sel{background:#eef0fe!important;border:2px solid var(--acc)!important;transform:scale(1.04);}
-    .cb-pk-sel:hover{opacity:.9;}
-    /* ===== ゲームモード拡張 ===== */
-    #cb-score-modal{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:600;display:none;align-items:center;justify-content:center;}
-    .cb-score-box{background:#fff;border-radius:14px;padding:22px 24px;max-width:700px;width:94%;box-shadow:0 16px 56px rgba(0,0,0,.35);max-height:90vh;overflow-y:auto;}
-    #cb-opp-hand-wrap{display:none;}
-    .cb-opp-hand-sec{background:var(--sur);border:1px solid #fecaca;border-radius:var(--r);padding:10px 14px;margin-bottom:6px;}
-    .cb-opp-hand-lbl{font-size:.67em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#e03030;margin-bottom:8px;}
-    .cb-opp-hand-cards{display:flex;flex-wrap:wrap;gap:5px;min-height:52px;align-items:flex-start;}
-    #cb-deal-btn:disabled{opacity:.45;cursor:not-allowed;}
   </style>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="kyotei_data.js" onerror="window.KYOTEI_DATA=null"></script>
-<script src="../チャイポ/poker.js"></script>
-<script src="../チャイポ/montecarlo.js"></script>
 <body>
-
-<!-- LOGIN OVERLAY -->
-<div id="login-overlay">
-  <div class="login-box">
-    <div class="login-co">エースハイ合同会社</div>
-    <div class="login-title">Dashboard</div>
-    <div class="login-sub">パスワードを入力してください</div>
-    <input id="login-pw" type="password" placeholder="••••••••" autocomplete="current-password"
-      onkeydown="if(event.key==='Enter')doLogin()">
-    <button class="login-btn" onclick="doLogin()">ログイン</button>
-    <div id="login-err"></div>
-  </div>
-</div>
 
 <div id="sidebar">
   <div class="sb-logo">
@@ -345,7 +228,6 @@
     <div class="ni" onclick="showPage('projects')"><span class="ni-ic">◈</span>プロジェクト管理</div>
     <div class="ng">ツール</div>
     <div class="ni" onclick="showPage('kyotei')"><span class="ni-ic">🚤</span>競艇予測</div>
-    <div class="ni" onclick="showPage('chaipo')"><span class="ni-ic">🃏</span>チャイポ OFC</div>
   </nav>
 </div>
 
@@ -354,9 +236,6 @@
     <span class="tb-title" id="page-title">概要</span>
     <div class="tb-right">
       <span class="tb-date" id="today-label"></span>
-      <span id="sync-status" style="font-size:.77em;white-space:nowrap;"></span>
-      <button onclick="openSyncModal()" style="padding:4px 10px;border-radius:7px;border:1px solid var(--bor);background:var(--sur2);cursor:pointer;font-size:.77em;font-family:inherit;color:var(--txt);">⚙️ 同期</button>
-      <button onclick="doLogout()" style="padding:4px 10px;border-radius:7px;border:1px solid var(--bor);background:var(--sur2);cursor:pointer;font-size:.77em;font-family:inherit;color:var(--mut);">🔒 ログアウト</button>
     </div>
   </div>
 
@@ -480,32 +359,6 @@
               <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t38','tool',this.value)" id="t38-tool"></textarea></div>
               <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t38','next',this.value)" id="t38-next" placeholder="具体的な次の一手..."></div>
             </div></td></tr>
-            <!-- t39 -->
-            <tr class="tr" data-id="t39" data-priority="2" data-cat="アプリ開発">
-              <td><div class="task-name" onclick="toggleDetail('t39')" ondblclick="editTaskName(event,'t39')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>競艇予測ツールの期待値検証・予測レース改善</div></td>
-              <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge mid">中</span></td>
-              <td><select class="ss s-todo" onchange="onStatus(this,'t39')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
-              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t39')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t39-bar" style="width:0%"></div></div></div></td>
-              <td><input type="date" class="di-date" value="2026-07-01" onchange="onDate(this,'t39')"></td>
-            </tr>
-            <tr class="dr" id="detail-t39"><td colspan="6"><div class="di">
-              <div><label>概要・説明</label><textarea oninput="saveDetail('t39','desc',this.value)" id="t39-desc">1週間の結果をもとに予測レースの改善を行う</textarea></div>
-              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t39','tool',this.value)" id="t39-tool"></textarea></div>
-              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t39','next',this.value)" id="t39-next" placeholder="具体的な次の一手..."></div>
-            </div></td></tr>
-            <!-- t40 -->
-            <tr class="tr" data-id="t40" data-priority="2" data-cat="開発">
-              <td><div class="task-name" onclick="toggleDetail('t40')" ondblclick="editTaskName(event,'t40')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>Telegramグループのネット内容を自動収集</div></td>
-              <td><span class="cat-tag">開発</span></td><td><span class="badge mid">中</span></td>
-              <td><select class="ss s-todo" onchange="onStatus(this,'t40')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
-              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t40')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t40-bar" style="width:0%"></div></div></div></td>
-              <td><input type="date" class="di-date" onchange="onDate(this,'t40')"></td>
-            </tr>
-            <tr class="dr" id="detail-t40"><td colspan="6"><div class="di">
-              <div><label>概要・説明</label><textarea oninput="saveDetail('t40','desc',this.value)" id="t40-desc">Telegramグループの投稿内容を自動収集し、カテゴリー分類して管理する</textarea></div>
-              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t40','tool',this.value)" id="t40-tool">Telegram Bot API / python-telegram-bot</textarea></div>
-              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t40','next',this.value)" id="t40-next" placeholder="具体的な次の一手..."></div>
-            </div></td></tr>
             <!-- t2 -->
             <tr class="tr" data-id="t2" data-priority="3" data-cat="新規事業">
               <td><div class="task-name" onclick="toggleDetail('t2')" ondblclick="editTaskName(event,'t2')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>警備会社</div></td>
@@ -597,19 +450,6 @@
               <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t35','tool',this.value)" id="t35-tool"></textarea></div>
               <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t35','next',this.value)" id="t35-next" placeholder="具体的な次の一手..."></div>
             </div></td></tr>
-            <!-- t41 -->
-            <tr class="tr" data-id="t41" data-priority="3" data-cat="アプリ開発">
-              <td><div class="task-name" onclick="toggleDetail('t41')" ondblclick="editTaskName(event,'t41')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>麻雀牌譜アドバイスアプリ開発</div></td>
-              <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge low">低</span></td>
-              <td><select class="ss s-todo" onchange="onStatus(this,'t41')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
-              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t41')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t41-bar" style="width:0%"></div></div></div></td>
-              <td><input type="date" class="di-date" onchange="onDate(this,'t41')"></td>
-            </tr>
-            <tr class="dr" id="detail-t41"><td colspan="6"><div class="di">
-              <div><label>概要・説明</label><textarea oninput="saveDetail('t41','desc',this.value)" id="t41-desc">麻雀の牌譜を読み込むことでアドバイスをしてくれるアプリの開発</textarea></div>
-              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t41','tool',this.value)" id="t41-tool"></textarea></div>
-              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t41','next',this.value)" id="t41-next" placeholder="具体的な次の一手..."></div>
-            </div></td></tr>
             <!-- t33 -->
             <tr class="tr" data-id="t33" data-priority="4" data-cat="プライベート">
               <td><div class="task-name" onclick="toggleDetail('t33')" ondblclick="editTaskName(event,'t33')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>家の家電ツール最適化</div></td>
@@ -625,15 +465,6 @@
             </div></td></tr>
           </tbody>
         </table>
-      </div>
-      <div class="mt28">
-        <div class="done-lbl" style="color:var(--amb);">保留中</div>
-        <div class="tw">
-          <table>
-            <thead><tr><th>タスク名</th><th>カテゴリ</th><th>優先度</th><th>ステータス</th><th>進捗</th><th>期限</th></tr></thead>
-            <tbody id="hold-tbody"><tr id="hold-empty"><td colspan="6" class="empty">保留中のタスクはありません</td></tr></tbody>
-          </table>
-        </div>
       </div>
       <div class="mt28">
         <div class="done-lbl">完了済み</div>
@@ -719,338 +550,12 @@
       <div id="kyotei-root"></div>
     </div>
 
-    <!-- ===== 配置アシスト ===== -->
-    <div class="page" id="page-chaipo-board">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:6px;">
-        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-          <div style="font-size:.78em;color:var(--mut);">OFC チャイポ — 盤面入力・残りカード追跡ツール</div>
-          <div id="cb-round-bar" style="display:flex;align-items:center;gap:6px;"></div>
-        </div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;">
-          <button id="cb-deal-btn" class="btn be bs" onclick="cbDealRound()">🎴 ラウンド1 自動配布</button>
-          <button class="btn bp bs" onclick="cbConfirmRound()">✅ ラウンド確定</button>
-          <button class="btn bd bs" onclick="cbReset()">🗑 全リセット</button>
-        </div>
-      </div>
-      <div class="cb-outer">
-        <!-- LEFT: Discard piles -->
-        <div class="cb-left">
-          <div class="cb-dis-sec" id="cb-opp-dis"></div>
-          <div class="cb-dis-sec" id="cb-self-dis"></div>
-        </div>
-        <!-- CENTER: Board -->
-        <div class="cb-center">
-          <div class="cb-zone-wrap">
-            <div class="cb-plbl cb-opp-lbl">▲ 相手の盤面</div>
-            <div class="cb-board-rows" id="cb-opp-rows"></div>
-          </div>
-          <!-- 相手の手牌エリア（ゲームモード） -->
-          <div id="cb-opp-hand-wrap"></div>
-          <div class="cb-div"><span class="cb-div-t">VS</span></div>
-          <div class="cb-zone-wrap">
-            <div class="cb-plbl cb-self-lbl">▼ 自分の盤面</div>
-            <div class="cb-board-rows" id="cb-self-rows"></div>
-          </div>
-          <div class="cb-hand-area">
-            <div class="cb-hand-lbl">手牌（加えたカード）</div>
-            <div class="cb-hand-cards" id="cb-hand-cards"
-              ondragover="event.preventDefault();this.style.outline='2px solid var(--acc)'"
-              ondragleave="this.style.outline=''"
-              ondrop="cbDropHand(event)"></div>
-            <div id="cb-place-limit"></div>
-            <div id="cb-hand-actions" style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;"></div>
-          </div>
-        </div>
-        <!-- RIGHT: Card tracker -->
-        <div class="cb-right">
-          <div class="cb-zone-wrap" id="cb-tracker"></div>
-        </div>
-      </div>
-      <!-- スコアモーダル（ゲームモード） -->
-      <div id="cb-score-modal" onclick="if(event.target===this)cbCloseScore()">
-        <div class="cb-score-box" id="cb-score-box"></div>
-      </div>
-      <!-- Card picker modal -->
-      <div id="cb-picker-modal" onclick="if(event.target===this)cbClosePicker()">
-        <div class="cb-pk-box">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
-            <div class="cb-pk-title" id="cb-picker-title">カードを選択</div>
-            <button onclick="cbClosePicker()" style="background:none;border:none;cursor:pointer;font-size:1.3em;color:var(--mut);line-height:1;">✕</button>
-          </div>
-          <div id="cb-picker-grid"></div>
-          <div id="cb-picker-footer"></div>
-        </div>
-      </div>
-    </div>
 
-    <!-- ===== チャイポ OFC ===== -->
-    <div class="page" id="page-chaipo">
-      <div class="sh" style="margin-bottom:16px;">
-        <h2>チャイポ OFC — AIシミュレーター</h2>
-        <div style="display:flex;gap:8px;align-items:center;">
-          <button onclick="showPage('chaipo-board')"
-            style="padding:8px 18px;border-radius:8px;border:1.5px solid var(--acc);background:#fff;color:var(--acc);font-size:.88em;font-weight:600;cursor:pointer;font-family:inherit;">
-            🎴 配置アシスト
-          </button>
-          <button id="chaipo-run-btn" onclick="runChaipoSim()"
-            style="padding:8px 18px;border-radius:8px;border:none;background:var(--acc);color:#fff;font-size:.88em;font-weight:600;cursor:pointer;font-family:inherit;">
-            ▶ 10,000ハンド実行
-          </button>
-        </div>
-      </div>
-
-      <div id="chaipo-progress-wrap" style="display:none;margin-bottom:14px;">
-        <div style="display:flex;align-items:center;gap:10px;">
-          <div style="flex:1;height:5px;background:var(--bor);border-radius:3px;overflow:hidden;">
-            <div id="chaipo-prog-bar" style="height:100%;background:var(--acc);width:0%;transition:width .2s;"></div>
-          </div>
-          <span id="chaipo-prog-txt" style="font-size:.78em;color:var(--mut);white-space:nowrap;">0 / 0</span>
-        </div>
-      </div>
-
-      <div class="g3" style="margin-bottom:16px;">
-        <div class="card">
-          <div class="c-label">バースト率</div>
-          <div class="c-val" id="c-burst" style="color:var(--grn);">—</div>
-          <div class="c-sub">目標 &lt; 5%</div>
-        </div>
-        <div class="card">
-          <div class="c-label">FL突入率</div>
-          <div class="c-val" id="c-fl-rate" style="color:var(--acc);">—</div>
-          <div class="c-sub">目標 &gt; 27%（人間平均）</div>
-        </div>
-        <div class="card">
-          <div class="c-label">平均ロイヤリティ</div>
-          <div class="c-val" id="c-royalty">—</div>
-          <div class="c-sub">バースト除く / ハンド</div>
-        </div>
-      </div>
-      <div class="g3" style="margin-bottom:16px;">
-        <div class="card">
-          <div class="c-label">FL内訳</div>
-          <div id="c-fl-breakdown" style="font-size:.85em;line-height:2;color:var(--mut);">—</div>
-        </div>
-        <div class="card">
-          <div class="c-label">速度</div>
-          <div class="c-val" id="c-speed">—</div>
-          <div class="c-sub">ms / ハンド</div>
-        </div>
-        <div class="card" style="visibility:hidden;"></div>
-      </div>
-
-      <div class="g3" style="margin-bottom:16px;">
-        <div class="card">
-          <div style="font-weight:700;font-size:.9em;margin-bottom:12px;">上段 役分布</div>
-          <div id="chaipo-rank-top"><p style="color:var(--mut);font-size:.85em;">実行後に表示</p></div>
-        </div>
-        <div class="card">
-          <div style="font-weight:700;font-size:.9em;margin-bottom:12px;">中段 役分布</div>
-          <div id="chaipo-rank-middle"><p style="color:var(--mut);font-size:.85em;">実行後に表示</p></div>
-        </div>
-        <div class="card">
-          <div style="font-weight:700;font-size:.9em;margin-bottom:12px;">下段 役分布</div>
-          <div id="chaipo-rank-bottom"><p style="color:var(--mut);font-size:.85em;">実行後に表示</p></div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-</div>
-
-<!-- SYNC MODAL -->
-<div id="sync-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;align-items:center;justify-content:center;" onclick="if(event.target===this)closeSyncModal()">
-  <div style="background:#fff;border-radius:12px;padding:28px 32px;max-width:460px;width:90%;box-shadow:0 10px 40px rgba(0,0,0,.25);">
-    <div style="font-weight:700;font-size:1.05em;margin-bottom:6px;">☁️ クラウド同期（GitHub Gist）</div>
-    <div style="font-size:.79em;color:var(--mut);line-height:1.7;margin-bottom:16px;">
-      タスクデータをGitHub Gistに自動保存します。<br>
-      <strong>gist</strong> スコープのみの
-      <a href="https://github.com/settings/tokens/new?scopes=gist&description=AceHigh+Dashboard" target="_blank" style="color:var(--acc);">GitHub PAT</a>
-      を発行して入力してください。<br>
-      <span style="color:var(--mut);font-size:.93em;">※ トークンはこのブラウザにのみ保存されます</span>
-    </div>
-    <div style="margin-bottom:14px;">
-      <label style="display:block;font-size:.73em;color:var(--mut);font-weight:600;margin-bottom:4px;">Personal Access Token</label>
-      <input id="gh-token-input" type="password" style="width:100%;background:#fff;border:1px solid var(--bor);border-radius:6px;padding:7px 10px;font-size:.87em;font-family:monospace;outline:none;" placeholder="ghp_xxxxxxxxxxxx">
-    </div>
-    <div id="gh-gist-info" style="display:none;font-size:.77em;background:var(--sur2);border-radius:6px;padding:8px 11px;margin-bottom:14px;color:var(--mut);">
-      接続中のGist: <code id="gh-gist-id" style="color:var(--acc);word-break:break-all;"></code>
-    </div>
-    <div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;">
-      <button onclick="closeSyncModal()" style="padding:7px 14px;border-radius:7px;border:1px solid var(--bor);background:var(--sur2);cursor:pointer;font-size:.87em;font-family:inherit;">キャンセル</button>
-      <button onclick="clearGistSync()" style="padding:7px 14px;border-radius:7px;border:1px solid #fecaca;background:#fee2e2;color:#dc2626;cursor:pointer;font-size:.87em;font-family:inherit;">設定解除</button>
-      <button onclick="setupGistSync()" id="sync-connect-btn" style="padding:7px 16px;border-radius:7px;border:none;background:var(--acc);color:#fff;cursor:pointer;font-size:.87em;font-family:inherit;font-weight:600;">接続 / 保存</button>
-    </div>
   </div>
 </div>
 
 <script>
-// ===== AUTH =====
-const AUTH_HASH = '6bb9ae425893281eff98ca463db7f886d06ccc5780e35cd68cd1d66dd43eda5a';
-const AUTH_KEY  = 'ace_auth';
-
-async function hashStr(s) {
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
-  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
-}
-
-async function doLogin() {
-  const pw  = document.getElementById('login-pw').value;
-  const err = document.getElementById('login-err');
-  if (!pw) { err.textContent = 'パスワードを入力してください'; return; }
-  const h = await hashStr(pw);
-  if (h === AUTH_HASH) {
-    sessionStorage.setItem(AUTH_KEY, '1');
-    document.getElementById('login-overlay').style.display = 'none';
-    err.textContent = '';
-  } else {
-    err.textContent = 'パスワードが違います';
-    document.getElementById('login-pw').value = '';
-    document.getElementById('login-pw').focus();
-  }
-}
-
-function doLogout() {
-  sessionStorage.removeItem(AUTH_KEY);
-  location.reload();
-}
-
-(function checkAuth() {
-  if (sessionStorage.getItem(AUTH_KEY) === '1') {
-    const ov = document.getElementById('login-overlay');
-    if (ov) ov.style.display = 'none';
-  } else {
-    setTimeout(() => document.getElementById('login-pw')?.focus(), 100);
-  }
-})();
-
-const TASK_IDS = [...document.querySelectorAll('tr.tr[data-id]')].map(r => r.dataset.id);
-
-// ===== CLOUD SYNC (GitHub Gist) =====
-const SYNC_KEY = 'gh_sync_cfg';
-let _saveTimer = null;
-
-function getSyncCfg() { try { return JSON.parse(localStorage.getItem(SYNC_KEY)); } catch { return null; } }
-
-function collectState() {
-  const tasks = {};
-  TASK_IDS.forEach(id => {
-    const t = {};
-    ['status','progress','date','desc','tool','next','name'].forEach(k => {
-      const v = localStorage.getItem('db_'+id+'_'+k);
-      if (v !== null) t[k] = v;
-    });
-    tasks[id] = t;
-  });
-  return {
-    tasks,
-    fixed_costs: JSON.parse(localStorage.getItem('db_fixed_costs') || 'null'),
-    revenues:    JSON.parse(localStorage.getItem('db_revenues')    || 'null'),
-    savedAt: new Date().toISOString()
-  };
-}
-
-function applyGistState(state) {
-  if (!state || !state.tasks) return;
-  Object.entries(state.tasks).forEach(([id, data]) => {
-    if (!document.querySelector('tr[data-id="'+id+'"]')) return;
-    Object.entries(data).forEach(([k, v]) => { if (v !== undefined) localStorage.setItem('db_'+id+'_'+k, v); });
-  });
-  if (state.fixed_costs) localStorage.setItem('db_fixed_costs', JSON.stringify(state.fixed_costs));
-  if (state.revenues)    localStorage.setItem('db_revenues',    JSON.stringify(state.revenues));
-}
-
-function setSyncUI(s) {
-  const el = document.getElementById('sync-status');
-  if (!el) return;
-  const m = { loading:['☁️ 読込中…','var(--mut)'], saved:['☁️ 同期済み','var(--grn)'], saving:['☁️ 保存中…','var(--mut)'], error:['⚠️ 同期エラー','var(--red)'], offline:['💾 ローカル','var(--mut)'] };
-  const [t, c] = m[s] || ['', ''];
-  el.textContent = t; el.style.color = c;
-}
-
-async function gistApi(method, id, token, body) {
-  const r = await fetch('https://api.github.com/gists' + (id ? '/'+id : ''), {
-    method,
-    headers: { 'Authorization':'token '+token, 'Accept':'application/vnd.github.v3+json', 'Content-Type':'application/json' },
-    body: body ? JSON.stringify(body) : undefined
-  });
-  if (!r.ok) throw new Error('GitHub API ' + r.status);
-  return r.json();
-}
-
-async function loadGistState() {
-  const cfg = getSyncCfg();
-  if (!cfg || !cfg.token || !cfg.gistId) return false;
-  setSyncUI('loading');
-  try {
-    const data = await gistApi('GET', cfg.gistId, cfg.token);
-    const content = data.files && data.files['task_state.json'] && data.files['task_state.json'].content;
-    if (content) { applyGistState(JSON.parse(content)); setSyncUI('saved'); return true; }
-  } catch (e) { console.warn('Gist load:', e); setSyncUI('error'); }
-  return false;
-}
-
-async function saveGistState() {
-  const cfg = getSyncCfg();
-  if (!cfg || !cfg.token || !cfg.gistId) return;
-  setSyncUI('saving');
-  try {
-    await gistApi('PATCH', cfg.gistId, cfg.token, {
-      files: { 'task_state.json': { content: JSON.stringify(collectState(), null, 2) } }
-    });
-    setSyncUI('saved');
-  } catch (e) { console.warn('Gist save:', e); setSyncUI('error'); }
-}
-
-function queueSave() { clearTimeout(_saveTimer); _saveTimer = setTimeout(saveGistState, 2000); }
-
-async function setupGistSync() {
-  const token = document.getElementById('gh-token-input').value.trim();
-  if (!token) { alert('トークンを入力してください'); return; }
-  const btn = document.getElementById('sync-connect-btn');
-  btn.disabled = true; btn.textContent = '接続中...';
-  try {
-    const res = await fetch('https://api.github.com/gists?per_page=100', {
-      headers: { 'Authorization':'token '+token, 'Accept':'application/vnd.github.v3+json' }
-    });
-    if (!res.ok) throw new Error('認証エラー: ' + res.status);
-    const gists = await res.json();
-    let gist = gists.find(g => g.description === 'AceHigh Dashboard State' && g.files['task_state.json']);
-    if (!gist) {
-      gist = await gistApi('POST', '', token, {
-        description: 'AceHigh Dashboard State',
-        public: false,
-        files: { 'task_state.json': { content: JSON.stringify(collectState(), null, 2) } }
-      });
-    }
-    localStorage.setItem(SYNC_KEY, JSON.stringify({ token, gistId: gist.id }));
-    closeSyncModal(); setSyncUI('saved'); updateSyncModalInfo();
-    alert('✅ Gist同期を設定しました！\nGist ID: ' + gist.id);
-  } catch (e) { alert('エラー: ' + e.message); }
-  finally { btn.disabled = false; btn.textContent = '接続 / 保存'; }
-}
-
-function clearGistSync() {
-  if (!confirm('Gist同期設定を解除しますか？\n（Gist本体は削除されません）')) return;
-  localStorage.removeItem(SYNC_KEY); setSyncUI('offline'); updateSyncModalInfo(); closeSyncModal();
-}
-
-function openSyncModal()  { updateSyncModalInfo(); document.getElementById('sync-modal').style.display = 'flex'; }
-function closeSyncModal() { document.getElementById('sync-modal').style.display = 'none'; }
-
-function updateSyncModalInfo() {
-  const cfg  = getSyncCfg();
-  const info = document.getElementById('gh-gist-info');
-  const inp  = document.getElementById('gh-token-input');
-  if (cfg && cfg.gistId) {
-    document.getElementById('gh-gist-id').textContent = cfg.gistId;
-    if (info) info.style.display = '';
-    if (inp)  inp.value = cfg.token || '';
-  } else {
-    if (info) info.style.display = 'none';
-    if (inp)  inp.value = '';
-  }
-}
+const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t2','t4','t7','t5','t32','t34','t35','t33'];
 
 // PROJECTS_DATA_START
 const PROJECTS_DATA = [];
@@ -1066,7 +571,7 @@ function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',kyotei:'競艇予測ツール'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
@@ -1074,7 +579,6 @@ function showPage(name) {
   if (name==='revenue') { renderRevenues(); renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown(); }
   if (name==='projects') { renderProjectStats(); renderProjects(); }
   if (name==='kyotei') renderKyotei();
-  if (name==='chaipo-board') cbRenderBoard();
 }
 
 // ===== TASKS =====
@@ -1089,7 +593,6 @@ function toggleDetail(id) {
 
 function saveDetail(id, field, value) {
   localStorage.setItem('db_'+id+'_'+field, value);
-  queueSave();
 }
 
 function onStatus(el, id) {
@@ -1097,19 +600,16 @@ function onStatus(el, id) {
   el.classList.add(el.value);
   localStorage.setItem('db_'+id+'_status', el.value);
   updateDone(); refreshOverview();
-  queueSave();
 }
 
 function onProgress(el, id) {
   const bar = document.getElementById(id+'-bar');
   if (bar) bar.style.width = el.value;
   localStorage.setItem('db_'+id+'_progress', el.value);
-  queueSave();
 }
 
 function onDate(el, id) {
   localStorage.setItem('db_'+id+'_date', el.value);
-  queueSave();
 }
 
 
@@ -1134,21 +634,17 @@ function applyTaskState(s) {
 
 function updateDone() {
   const mt = document.getElementById('main-tbody');
-  const ht = document.getElementById('hold-tbody');
   const dt = document.getElementById('done-tbody');
-  const he = document.getElementById('hold-empty');
   const de = document.getElementById('done-empty');
-  const all = [...mt.querySelectorAll('tr.tr[data-id]'), ...ht.querySelectorAll('tr.tr[data-id]'), ...dt.querySelectorAll('tr.tr[data-id]')];
+  const all = [...mt.querySelectorAll('tr.tr[data-id]'), ...dt.querySelectorAll('tr.tr[data-id]')];
   all.forEach(row => {
     const id = row.dataset.id;
     const sel = row.querySelector('select.ss');
     const dr = document.getElementById('detail-'+id);
     if (!sel) return;
     if (sel.value==='s-done') { dt.appendChild(row); if(dr) dt.appendChild(dr); }
-    else if (sel.value==='s-hold') { ht.appendChild(row); if(dr) ht.appendChild(dr); }
     else { mt.appendChild(row); if(dr) mt.appendChild(dr); }
   });
-  he.style.display = ht.querySelectorAll('tr.tr[data-id]').length>0 ? 'none' : '';
   de.style.display = dt.querySelectorAll('tr.tr[data-id]').length>0 ? 'none' : '';
   applyFilter(filterCat);
 }
@@ -1178,7 +674,7 @@ function filterTasks(cat, btn) {
 }
 
 function applyFilter(cat) {
-  document.querySelectorAll('#main-tbody tr.tr, #hold-tbody tr.tr').forEach(row => {
+  document.querySelectorAll('#main-tbody tr.tr').forEach(row => {
     const show = cat==='all' || row.dataset.cat===cat;
     row.style.display = show?'':'none';
     const dr = document.getElementById('detail-'+row.dataset.id);
@@ -1201,7 +697,6 @@ function addFixedCost() {
   const arr = getFixedCosts();
   arr.push({id: Date.now(), name, amount, note});
   setFixedCosts(arr);
-  queueSave();
   document.getElementById('fc-name').value='';
   document.getElementById('fc-amount').value='';
   document.getElementById('fc-note').value='';
@@ -1210,14 +705,13 @@ function addFixedCost() {
 
 function deleteFixedCost(id) {
   setFixedCosts(getFixedCosts().filter(c => c.id!==id));
-  queueSave();
   renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown();
 }
 
 function updateFixedCostAmount(id, val) {
   const arr = getFixedCosts();
   const c = arr.find(x => x.id===id);
-  if (c) { c.amount = parseFloat(val)||0; setFixedCosts(arr); queueSave(); refreshRevenueSummary(); renderMonthlyBreakdown(); }
+  if (c) { c.amount = parseFloat(val)||0; setFixedCosts(arr); refreshRevenueSummary(); renderMonthlyBreakdown(); }
 }
 
 function renderFixedCosts() {
@@ -1247,7 +741,6 @@ async function addRevenue() {
   if (!date||!desc||isNaN(amount)||amount<=0) return;
   const item = {date, desc, cat, amount, type, id: Date.now()};
   const arr = getRevenues(); arr.unshift(item); setRevenues(arr);
-  queueSave();
   document.getElementById('rev-desc').value='';
   document.getElementById('rev-amount').value='';
   renderRevenues(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
@@ -1255,7 +748,6 @@ async function addRevenue() {
 
 function deleteRevenue(id) {
   setRevenues(getRevenues().filter(r => r.id!==id));
-  queueSave();
   renderRevenues(); refreshRevenueSummary(); renderMonthlyBreakdown(); refreshOverview();
 }
 
@@ -1418,7 +910,7 @@ function toggleProjDetail(id) {
 
 // ===== OVERVIEW =====
 function refreshOverview() {
-  const all = [...document.querySelectorAll('#main-tbody tr.tr[data-id],#hold-tbody tr.tr[data-id],#done-tbody tr.tr[data-id]')];
+  const all = [...document.querySelectorAll('#main-tbody tr.tr[data-id],#done-tbody tr.tr[data-id]')];
   let todo=0,wip=0,done=0,hold=0;
   all.forEach(r => {
     const v = (r.querySelector('select.ss')||{}).value||'s-todo';
@@ -1470,14 +962,15 @@ window._probPredDays    = [];
 
 function switchKyoteiTab(tab) {
   window._kyoteiTab = tab;
-  document.getElementById('kyotei-tab-ev').style.display   = tab === 'ev'   ? '' : 'none';
-  document.getElementById('kyotei-tab-prob').style.display = tab === 'prob' ? '' : 'none';
-  document.getElementById('kyotei-btn-ev').style.background   = tab === 'ev'   ? 'var(--acc)' : 'var(--sur)';
-  document.getElementById('kyotei-btn-ev').style.color        = tab === 'ev'   ? '#fff' : 'var(--mut)';
-  document.getElementById('kyotei-btn-prob').style.background = tab === 'prob' ? 'var(--acc)' : 'var(--sur)';
-  document.getElementById('kyotei-btn-prob').style.color      = tab === 'prob' ? '#fff' : 'var(--mut)';
-  if (tab === 'ev')   { renderPredTable(); renderKyoteiWeekPerfSection(); }
-  if (tab === 'prob') { renderPredTableProb(); renderKyoteiWeekPerfSectionProb(); }
+  ['ev','prob','proven'].forEach(t => {
+    const el  = document.getElementById('kyotei-tab-' + t);
+    const btn = document.getElementById('kyotei-btn-' + t);
+    if (el)  el.style.display     = tab === t ? '' : 'none';
+    if (btn) { btn.style.background = tab === t ? 'var(--acc)' : 'var(--sur)'; btn.style.color = tab === t ? '#fff' : 'var(--mut)'; }
+  });
+  if (tab === 'ev')     { renderPredTable(); renderKyoteiWeekPerfSection(); }
+  if (tab === 'prob')   { renderPredTableProb(); renderKyoteiWeekPerfSectionProb(); }
+  if (tab === 'proven') { renderPredTableProven(); renderKyoteiWeekPerfSectionProven(); }
 }
 
 function renderPredTable() {
@@ -1775,7 +1268,7 @@ function renderKyoteiWeekPerfSectionProb() {
         <tbody>${rows || '<tr><td colspan="7" style="text-align:center;color:var(--mut);padding:16px;">この週のデータがありません</td></tr>'}</tbody>
       </table>
     </div>
-    <div style="font-size:.65em;color:var(--mut);">※ 各レースの最高推定確率コンボを1件選択（1レース100円）。</div>
+    <div style="font-size:.65em;color:var(--mut);">※ 各レースの最高推定確率コンボを1件選択（1レース100円）。「EV有りのみ」はさらにEV≥${window.KYOTEI_DATA?.ev_threshold||1.30}のコンボに絞った場合。</div>
   `;
 }
 
@@ -1783,6 +1276,154 @@ window.probWeekNav = function(dir) {
   const len = window._probWeeksData.length;
   window._probWeekIdx = Math.max(0, Math.min(len - 1, window._probWeekIdx + dir));
   renderKyoteiWeekPerfSectionProb();
+};
+
+function renderPredTableProven() {
+  const el = document.getElementById('pred-report-section-proven');
+  if (!el) return;
+  const days = window._provenPredDays || [];
+  const idx  = window._provenPredDayIdx || 0;
+
+  if (!days.length) {
+    el.innerHTML = `<div class="card" style="padding:16px;margin-bottom:22px;border-left:4px solid #f59e0b;">
+      <div style="font-weight:700;color:#92400e;margin-bottom:4px;">🔧 本日の予測データ待機中</div>
+      <div style="font-size:.8em;color:var(--mut);">main.py 実行後に表示されます。</div>
+    </div>`;
+    return;
+  }
+
+  const day   = days[idx];
+  const preds = day.preds || [];
+  const hasPrev = idx < days.length - 1;
+  const hasNext = idx > 0;
+  const navBtn  = (dir, label, enabled) =>
+    `<button onclick="window.provenDayNav(${dir})" ${enabled ? '' : 'disabled'}
+      style="padding:4px 12px;border-radius:6px;border:1px solid var(--bor);
+             background:${enabled ? 'var(--sur)' : 'var(--sur2)'};
+             color:${enabled ? 'var(--txt)' : 'var(--mut)'};
+             cursor:${enabled ? 'pointer' : 'default'};font-size:.8em;font-family:inherit;">${label}</button>`;
+
+  const predRows = preds.map(p => {
+    const actualHtml = p.actual_combo
+      ? `<code style="color:#7b1fa2;font-size:.9em;font-weight:700;">${p.actual_combo}</code>`
+      : `<span style="color:var(--mut);">—</span>`;
+    const hitHtml = p.hit === '1'
+      ? `<span style="color:var(--grn);font-weight:700;">✓ 的中</span>`
+      : p.hit === '0'
+        ? `<span style="color:var(--red);">✗</span>`
+        : `<span style="color:var(--mut);">⏳</span>`;
+    const fo = p.final_odds ? p.final_odds + '倍' : (p.odds ? p.odds + '倍(予測)' : '—');
+    const payHtml = p.hit === '1'
+      ? `<span style="font-weight:700;color:var(--grn);">${p.payout ? '¥' + parseInt(p.payout).toLocaleString() : fo}</span>`
+      : p.hit === '0'
+        ? `<span style="color:var(--red);font-size:.85em;">外れ</span><span style="font-size:.78em;color:var(--mut);margin-left:4px;">${fo}</span>`
+        : `<span style="color:var(--mut);">⏳</span>`;
+    const top1Bg = parseFloat(p.top1_pct||0) >= 65 ? '#dcfce7;color:#16a34a' : '#fef9c3;color:#854d0e';
+    return `<tr>
+      <td style="padding:8px 10px;font-weight:600;">${p.venue_name||'—'}</td>
+      <td style="padding:8px 10px;">${p.race_no}R</td>
+      <td style="padding:8px 10px;">${p.start_time||'—'}</td>
+      <td style="padding:8px 10px;"><code style="color:#1a237e;font-size:.9em;">${p.combo}</code></td>
+      <td style="padding:8px 10px;">${actualHtml}</td>
+      <td style="padding:8px 10px;font-weight:700;color:var(--acc);">${p.prob_pct}%</td>
+      <td style="padding:8px 10px;"><span style="background:${top1Bg};padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">1着 ${p.top1_pct||'—'}%</span></td>
+      <td style="padding:8px 10px;">${hitHtml}</td>
+      <td style="padding:8px 10px;">${payHtml}</td>
+    </tr>`;
+  }).join('');
+
+  const dayLabel = day.date_label + (day.is_today ? ' <span style="font-size:.75em;color:var(--acc);">今日</span>' : '');
+
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      ${navBtn(1, '◀ 前日', hasPrev)}
+      <span style="font-size:.88em;font-weight:700;">${dayLabel}</span>
+      ${navBtn(-1, '翌日 ▶', hasNext)}
+    </div>
+    ${preds.length ? `
+    <div class="tw" style="margin-bottom:22px;overflow-x:auto;overflow-y:auto;max-height:420px;">
+      <table style="width:100%;font-size:.82em;">
+        <thead><tr style="background:var(--sur2);position:sticky;top:0;z-index:1;">
+          <th style="padding:8px 10px;">会場</th><th style="padding:8px 10px;">R</th>
+          <th style="padding:8px 10px;">発走</th><th style="padding:8px 10px;">予測</th>
+          <th style="padding:8px 10px;">当選</th>
+          <th style="padding:8px 10px;">3連確率</th><th style="padding:8px 10px;">1着信頼度</th>
+          <th style="padding:8px 10px;">結果</th><th style="padding:8px 10px;">払戻</th>
+        </tr></thead>
+        <tbody>${predRows}</tbody>
+      </table>
+    </div>` : `<div class="card" style="padding:16px;margin-bottom:22px;color:var(--mut);text-align:center;">この日の実証戦略対象レースはありません</div>`}
+  `;
+}
+
+window.provenDayNav = function(dir) {
+  const len = (window._provenPredDays || []).length;
+  window._provenPredDayIdx = Math.max(0, Math.min(len - 1, (window._provenPredDayIdx || 0) + dir));
+  renderPredTableProven();
+};
+
+function renderKyoteiWeekPerfSectionProven() {
+  const el = document.getElementById('kyotei-week-perf-proven');
+  if (!el) return;
+  const weeks = window._provenWeeksData;
+  const idx   = window._provenWeekIdx;
+
+  if (!weeks || !weeks.length) {
+    el.innerHTML = '<div class="card" style="text-align:center;color:var(--mut);padding:20px;">検証データがまだありません</div>';
+    return;
+  }
+
+  const week    = weeks[idx];
+  const perf    = week.perf || {};
+  const hasPrev = idx < weeks.length - 1;
+  const hasNext = idx > 0;
+
+  const navBtn = (dir, label, enabled) =>
+    `<button onclick="window.provenWeekNav(${dir})" ${enabled?'':'disabled'}
+      style="padding:4px 12px;border-radius:6px;border:1px solid var(--bor);background:${enabled?'var(--sur)':'var(--sur2)'};
+             color:${enabled?'var(--txt)':'var(--mut)'};cursor:${enabled?'pointer':'default'};font-size:.8em;font-family:inherit;">${label}</button>`;
+
+  const rc = perf.roi >= 0 ? 'var(--grn)' : perf.roi >= -25 ? 'var(--amb)' : 'var(--red)';
+  const row = perf.bets > 0 ? `<tr>
+    <td style="padding:8px 10px;font-weight:600;">実証戦略（top1 prob + 展示）</td>
+    <td style="padding:8px 10px;text-align:right;">${perf.bets}件</td>
+    <td style="padding:8px 10px;text-align:right;">${perf.hits}件</td>
+    <td style="padding:8px 10px;text-align:right;">${perf.hit_rate}%</td>
+    <td style="padding:8px 10px;text-align:right;">¥${perf.invested.toLocaleString()}</td>
+    <td style="padding:8px 10px;text-align:right;">¥${perf.returned.toLocaleString()}</td>
+    <td style="padding:8px 10px;text-align:right;font-weight:700;color:${rc};">${perf.roi >= 0 ? '+' : ''}${perf.roi}%</td>
+  </tr>` : '<tr><td colspan="7" style="text-align:center;color:var(--mut);padding:16px;">この週のデータがありません</td></tr>';
+
+  const params = window.KYOTEI_DATA?.proven_params || {};
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      ${navBtn(1, '◀ 前週', hasPrev)}
+      <span style="font-size:.88em;font-weight:700;">${week.week_label}${week.is_current ? ' <span style="font-size:.75em;color:var(--acc);">今週</span>' : ''}</span>
+      ${navBtn(-1, '次週 ▶', hasNext)}
+    </div>
+    <div class="tw" style="margin-bottom:8px;">
+      <table style="width:100%;font-size:.82em;">
+        <thead><tr style="background:#1e3a5f;color:#fff;">
+          <th style="padding:8px 10px;">戦略</th><th style="padding:8px 10px;text-align:right;">推奨数</th>
+          <th style="padding:8px 10px;text-align:right;">的中数</th><th style="padding:8px 10px;text-align:right;">的中率</th>
+          <th style="padding:8px 10px;text-align:right;">投資</th><th style="padding:8px 10px;text-align:right;">回収</th>
+          <th style="padding:8px 10px;text-align:right;">損益率</th>
+        </tr></thead>
+        <tbody>${row}</tbody>
+      </table>
+    </div>
+    <div style="font-size:.65em;color:var(--mut);">
+      ※ 条件: モデル最強艇勝率≥${Math.round((params.min_top1_win_prob||0.55)*100)}%${params.require_exhibition?'・展示タイム必須':''} / 1レース最高確率コンボ1件（100円）<br>
+      ※ 0%以上＝プラス収支 / −25%が競艇の理論平均（控除率25%）<br>
+      ※ バックテスト実証済み（6/21〜28: top2戦略でROI +104%）
+    </div>
+  `;
+}
+
+window.provenWeekNav = function(dir) {
+  const len = window._provenWeeksData.length;
+  window._provenWeekIdx = Math.max(0, Math.min(len - 1, window._provenWeekIdx + dir));
+  renderKyoteiWeekPerfSectionProven();
 };
 
 function renderKyotei() {
@@ -1849,12 +1490,96 @@ function renderKyotei() {
     </div>`;
   }
 
+  // ── デモカード（ナビ付き） ──────────────────────────────
+  const navBtnStyle = (disabled) =>
+    `padding:2px 10px;border-radius:5px;border:1px solid var(--bor);background:var(--sur);cursor:${disabled?'default':'pointer'};font-size:.8em;opacity:${disabled?'0.35':'1'};`;
+
+  function demoCardNavHtml(label, demo, canOlder, canNewer, navKey) {
+    if (!demo) return '';
+    const roi  = demo.roi;
+    const net  = demo.total_returned - demo.total_invested;
+    const daily = demo.daily || [];
+    const pills = daily.map(row => {
+      const dayNet = row.returned - row.invested;
+      const bg = dayNet >= 0 ? '#dcfce7;color:#16a34a' : dayNet >= -500 ? '#fef3c7;color:#d97706' : '#fee2e2;color:#dc2626';
+      const netStr = (dayNet >= 0 ? '+¥' : '-¥') + Math.abs(dayNet).toLocaleString();
+      return `<span style="background:${bg};padding:2px 7px;border-radius:5px;font-size:.67em;font-weight:700;white-space:nowrap;"
+              title="${row.date} 推奨${row.bets}件 的中${row.hits}件 投資¥${row.invested} 回収¥${row.returned}">${row.date} ${netStr}</span>`;
+    }).join('');
+    const period = demo.week_label || demo.month_label || '';
+    const netColor = net >= 0 ? 'var(--grn)' : 'var(--red)';
+    const netStr   = (net >= 0 ? '+¥' : '-¥') + Math.abs(net).toLocaleString();
+    return `<div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+        <div>
+          <div style="font-size:.7em;color:var(--mut);text-transform:uppercase;font-weight:600;letter-spacing:.05em;">${label}</div>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
+            <button onclick="demoNavPrev('${navKey}')" ${canOlder?'':'disabled'} style="${navBtnStyle(!canOlder)}">◀</button>
+            <div style="font-size:.72em;color:var(--mut);">${period}</div>
+            <button onclick="demoNavNext('${navKey}')" ${canNewer?'':'disabled'} style="${navBtnStyle(!canNewer)}">▶</button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="font-size:2rem;font-weight:800;line-height:1;color:${netColor};">${netStr}</div>
+          ${roiBadge(roi)}
+        </div>
+      </div>
+      <div style="font-size:.73em;color:var(--mut);margin-bottom:8px;">
+        推奨 ${demo.total_bets}件 / 的中 ${demo.total_hits}件 ／ 投資 ¥${demo.total_invested.toLocaleString()} → 回収 ¥${demo.total_returned.toLocaleString()}
+      </div>
+      ${daily.length ? `<div style="display:flex;flex-wrap:wrap;gap:4px;">${pills}</div>` : ''}
+      <div style="font-size:.63em;color:var(--mut);margin-top:6px;">※ デモ（仮想投票・1レース100円）。結果確定分のみ集計。</div>
+    </div>`;
+  }
+
+  // デモカードナビ状態（グローバル）
+  window._demoNavState = {
+    'ev-week':      { label: '週間デモ収益', demos: d.ev_weekly_demos   || [], idx: 0 },
+    'ev-month':     { label: '月間デモ収益', demos: d.ev_monthly_demos  || [], idx: 0 },
+    'prob-week':    { label: '週間デモ収益', demos: d.prob_weekly_demos  || [], idx: 0 },
+    'prob-month':   { label: '月間デモ収益', demos: d.prob_monthly_demos || [], idx: 0 },
+    'proven-week':  { label: '週間デモ収益', demos: d.proven_weekly_demos  || [], idx: 0 },
+    'proven-month': { label: '月間デモ収益', demos: d.proven_monthly_demos || [], idx: 0 },
+  };
+
+  function renderDemoCard(key) {
+    const s = window._demoNavState[key];
+    if (!s) return;
+    const el = document.getElementById(key + '-demo');
+    if (!el) return;
+    const demos = s.demos;
+    if (!demos.length) { el.innerHTML = ''; return; }
+    const canOlder = s.idx < demos.length - 1;
+    const canNewer = s.idx > 0;
+    el.innerHTML = demoCardNavHtml(s.label, demos[s.idx], canOlder, canNewer, key);
+  }
+
+  function renderAllDemoCards() {
+    Object.keys(window._demoNavState).forEach(key => renderDemoCard(key));
+  }
+
+  window.demoNavPrev = function(key) {
+    const s = window._demoNavState[key];
+    if (!s || s.idx >= s.demos.length - 1) return;
+    s.idx++;
+    renderDemoCard(key);
+  };
+
+  window.demoNavNext = function(key) {
+    const s = window._demoNavState[key];
+    if (!s || s.idx <= 0) return;
+    s.idx--;
+    renderDemoCard(key);
+  };
+
   // 状態初期化
-  window._predDays       = d.pred_days || [];
-  window._predDayIdx     = 0;
-  window._probPredDays   = d.prob_pred_days || [];
-  window._probPredDayIdx = 0;
-  window._kyoteiTab      = 'ev';
+  window._predDays         = d.pred_days || [];
+  window._predDayIdx       = 0;
+  window._probPredDays     = d.prob_pred_days || [];
+  window._probPredDayIdx   = 0;
+  window._provenPredDays   = d.proven_pred_days || [];
+  window._provenPredDayIdx = 0;
+  window._kyoteiTab        = 'ev';
 
   // 機能一覧
   const features = d.features || [];
@@ -1878,17 +1603,18 @@ function renderKyotei() {
     </div>
 
     <!-- タブ切り替え -->
-    <div style="display:flex;gap:8px;margin-bottom:20px;border-bottom:2px solid var(--bor);padding-bottom:12px;">
-      <button id="kyotei-btn-ev"   onclick="switchKyoteiTab('ev')"   style="${tabBtnStyle(true)}">📊 最高EV戦略</button>
-      <button id="kyotei-btn-prob" onclick="switchKyoteiTab('prob')" style="${tabBtnStyle(false)}">🎯 最高的中率戦略</button>
+    <div style="display:flex;gap:8px;margin-bottom:20px;border-bottom:2px solid var(--bor);padding-bottom:12px;flex-wrap:wrap;">
+      <button id="kyotei-btn-ev"     onclick="switchKyoteiTab('ev')"     style="${tabBtnStyle(true)}">📊 最高EV戦略</button>
+      <button id="kyotei-btn-prob"   onclick="switchKyoteiTab('prob')"   style="${tabBtnStyle(false)}">🎯 最高的中率戦略</button>
+      <button id="kyotei-btn-proven" onclick="switchKyoteiTab('proven')" style="${tabBtnStyle(false)}">🔬 実証戦略</button>
     </div>
 
     <!-- ===== 最高EV タブ ===== -->
     <div id="kyotei-tab-ev">
       <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📈 デモ収益（仮想投票・1レース最高EVコンボ×100円）</div>
       <div style="display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;">
-        ${demoCard('週間デモ収益', d.week_label, d.weekly_demo)}
-        ${demoCard('月間デモ収益', d.month_label, d.monthly_demo)}
+        <div id="ev-week-demo" style="flex:1;min-width:0;"></div>
+        <div id="ev-month-demo" style="flex:1;min-width:0;"></div>
       </div>
       <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">🎯 予測レポート</div>
       <div id="pred-report-section" style="margin-bottom:22px;"></div>
@@ -1903,8 +1629,8 @@ function renderKyotei() {
       </div>
       <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📈 デモ収益（仮想投票・推定的中率最高コンボ×100円）</div>
       <div style="display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;">
-        ${demoCard('週間デモ収益', d.week_label, d.prob_weekly_demo)}
-        ${demoCard('月間デモ収益', d.month_label, d.prob_monthly_demo)}
+        <div id="prob-week-demo" style="flex:1;min-width:0;"></div>
+        <div id="prob-month-demo" style="flex:1;min-width:0;"></div>
       </div>
       <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">🎯 予測レポート</div>
       <div id="pred-report-section-prob" style="margin-bottom:22px;"></div>
@@ -1912,21 +1638,41 @@ function renderKyotei() {
       <div id="kyotei-week-perf-prob" style="margin-bottom:22px;"></div>
     </div>
 
+    <!-- ===== 実証戦略 タブ ===== -->
+    <div id="kyotei-tab-proven" style="display:none;">
+      <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:10px 14px;margin-bottom:16px;font-size:.83em;color:#166534;line-height:1.6;">
+        <strong>バックテスト実証済み戦略</strong>（6/21〜28: top2で ROI +104%）<br>
+        条件: ① モデルの最強艇勝率≥55% ② 展示タイム取得済み → 最高確率コンボを1件選択
+      </div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📈 デモ収益（仮想投票・1レース最高確率コンボ×100円）</div>
+      <div style="display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;">
+        <div id="proven-week-demo" style="flex:1;min-width:0;"></div>
+        <div id="proven-month-demo" style="flex:1;min-width:0;"></div>
+      </div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">🎯 予測レポート</div>
+      <div id="pred-report-section-proven" style="margin-bottom:22px;"></div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📊 週次検証レポート</div>
+      <div id="kyotei-week-perf-proven" style="margin-bottom:22px;"></div>
+    </div>
+
     <!-- 実装機能一覧 -->
     <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">⚙️ 実装済み機能</div>
     <div class="tw" style="margin-bottom:16px;">
       ${featHtml || '<div style="padding:16px;color:var(--mut);text-align:center;">—</div>'}
-      <div style="padding:9px 12px;font-size:.65em;color:var(--mut);">※ タブで最高EV戦略と最高的中率戦略を切り替えて比較できます。</div>
+      <div style="padding:9px 12px;font-size:.65em;color:var(--mut);">※ タブで最高EV戦略・最高的中率戦略・実証戦略を切り替えて比較できます。</div>
     </div>
   `;
 
   // 週次データ初期化
-  window._kyoteiWeekIdx   = 0;
-  window._kyoteiWeeksData = d.weekly_perfs || [];
-  window._probWeekIdx     = 0;
-  window._probWeeksData   = d.prob_weekly_perfs || [];
+  window._kyoteiWeekIdx    = 0;
+  window._kyoteiWeeksData  = d.weekly_perfs || [];
+  window._probWeekIdx      = 0;
+  window._probWeeksData    = d.prob_weekly_perfs || [];
+  window._provenWeekIdx    = 0;
+  window._provenWeeksData  = d.proven_weekly_perfs || [];
 
   // 初期描画（最高EVタブ）
+  renderAllDemoCards();
   renderKyoteiWeekPerfSection();
   renderPredTable();
 
@@ -1947,7 +1693,6 @@ function editTaskName(e, id) {
   function commit() {
     const n = input.value.trim() || currentName;
     localStorage.setItem('db_'+id+'_name', n);
-    queueSave();
     nameDiv.innerHTML = '<span class="ta">▶</span>' + n;
     refreshOverview();
   }
@@ -1964,11 +1709,6 @@ window.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('today-label').textContent = today.toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'});
   document.getElementById('rev-date').value = today.toISOString().slice(0,10);
 
-  // Gist から読み込み → localStorage に書き込み → その後ローカルストレージで DOM 復元
-  const gistLoaded = await loadGistState();
-  if (!gistLoaded) setSyncUI('offline');
-  updateSyncModalInfo();
-
   // Restore from localStorage
   TASK_IDS.forEach(id => {
     const sel = document.querySelector('tr[data-id="'+id+'"] select.ss');
@@ -1980,7 +1720,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     const di = document.querySelector('tr[data-id="'+id+'"] input.di-date');
     const sd = localStorage.getItem('db_'+id+'_date');
     if (sd && di) di.value=sd;
-    ['desc','tool','next'].forEach(f => { const sv2=localStorage.getItem('db_'+id+'_'+f); const e=document.getElementById(id+'-'+f); if(sv2!==null&&e) e.value=sv2; });
+    ['desc','tool','next'].forEach(f => { const sv2=localStorage.getItem('db_'+id+'_'+f); const e=document.getElementById(id+'-'+f); if(sv2&&e) e.value=sv2; });
   });
 
   // Restore saved task names
@@ -2001,1213 +1741,6 @@ window.addEventListener('DOMContentLoaded', async () => {
   renderProjects();
 
 });
-
-// ===== CHAIPO =====
-const RANK_LABELS = ['ハイカード','ワンペア','ツーペア','トリップス','ストレート','フラッシュ','フルハウス','フォーカード','ストレートフラッシュ','ロイヤルフラッシュ'];
-const RANK_COLORS = ['var(--mut)','var(--mut)','#d97706','#f97316','#2563eb','#2563eb','#7c3aed','#7c3aed','#dc2626','#dc2626'];
-
-let chaipoRunning = false;
-let chaipoStart   = 0;
-
-function runChaipoSim() {
-  if (chaipoRunning) return;
-  chaipoRunning = true;
-
-  ['c-burst','c-fl-rate','c-royalty','c-speed'].forEach(id => document.getElementById(id).textContent = '計算中…');
-  document.getElementById('c-fl-breakdown').textContent = '計算中…';
-  document.getElementById('chaipo-progress-wrap').style.display = '';
-  document.getElementById('chaipo-prog-bar').style.width = '0%';
-  document.getElementById('chaipo-prog-txt').textContent = '0 / 10000';
-  document.getElementById('chaipo-run-btn').disabled = true;
-  chaipoStart = performance.now();
-
-  const TOTAL = 10000;
-  const BATCH = 200;
-  const deck  = Poker.buildDeck();
-  const stats = {
-    total: 0, busts: 0, flCount: 0,
-    flByType: { trips: 0, pair14: 0, pair13: 0, pair12: 0 },
-    royaltySum: 0,
-    handRankDist: { top: Array(10).fill(0), middle: Array(10).fill(0), bottom: Array(10).fill(0) },
-  };
-  let processed = 0;
-
-  function runBatch() {
-    const end = Math.min(processed + BATCH, TOTAL);
-    for (let i = processed; i < end; i++) {
-      const r = MC.simulateOneHand(deck);
-      stats.total++;
-      if (r.isBurst) {
-        stats.busts++;
-      } else {
-        stats.royaltySum += r.royalty;
-        if (r.fl) {
-          stats.flCount++;
-          if      (r.fl.type === 'trips')   stats.flByType.trips++;
-          else if (r.fl.pairRank === 14)    stats.flByType.pair14++;
-          else if (r.fl.pairRank === 13)    stats.flByType.pair13++;
-          else if (r.fl.pairRank === 12)    stats.flByType.pair12++;
-        }
-        const te = Poker.evaluateHand(r.board.top, true);
-        const me = Poker.evaluateHand(r.board.middle, false);
-        const be = Poker.evaluateHand(r.board.bottom, false);
-        stats.handRankDist.top[te.rank]++;
-        stats.handRankDist.middle[me.rank]++;
-        stats.handRankDist.bottom[be.rank]++;
-      }
-    }
-    processed = end;
-
-    const n     = stats.total;
-    const valid = n - stats.busts;
-    const snap  = {
-      burstRate:    n > 0 ? stats.busts / n : 0,
-      flRate:       n > 0 ? stats.flCount / n : 0,
-      flByType:     { ...stats.flByType },
-      avgRoyalty:   valid > 0 ? stats.royaltySum / valid : 0,
-      handRankDist: stats.handRankDist,
-    };
-
-    const pct = processed / TOTAL * 100;
-    document.getElementById('chaipo-prog-bar').style.width = pct.toFixed(0) + '%';
-    document.getElementById('chaipo-prog-txt').textContent = processed.toLocaleString() + ' / ' + TOTAL.toLocaleString();
-    updateChaipoStats(snap, performance.now() - chaipoStart, processed);
-
-    if (processed < TOTAL) {
-      setTimeout(runBatch, 0);
-    } else {
-      document.getElementById('chaipo-run-btn').disabled = false;
-      chaipoRunning = false;
-    }
-  }
-
-  setTimeout(runBatch, 0);
-}
-
-function updateChaipoStats(s, elapsed, processed) {
-  // バースト率
-  const burstPct = (s.burstRate * 100).toFixed(2) + '%';
-  const burstEl = document.getElementById('c-burst');
-  burstEl.textContent = burstPct;
-  burstEl.style.color = s.burstRate < 0.05 ? 'var(--grn)' : 'var(--red)';
-
-  // FL突入率
-  const flPct = ((s.flRate || 0) * 100).toFixed(2) + '%';
-  const flEl = document.getElementById('c-fl-rate');
-  flEl.textContent = flPct;
-  flEl.style.color = (s.flRate || 0) >= 0.27 ? 'var(--grn)' : 'var(--acc)';
-
-  // FL内訳
-  if (s.flByType) {
-    const n = processed || 1;
-    const b = s.flByType;
-    document.getElementById('c-fl-breakdown').innerHTML =
-      `AA (FL16): ${(b.pair14/n*100).toFixed(1)}%<br>` +
-      `KK (FL15): ${(b.pair13/n*100).toFixed(1)}%<br>` +
-      `QQ (FL14): ${(b.pair12/n*100).toFixed(1)}%<br>` +
-      `Trips (FL17): ${(b.trips/n*100).toFixed(1)}%`;
-  }
-
-  document.getElementById('c-royalty').textContent = s.avgRoyalty.toFixed(2);
-  document.getElementById('c-speed').textContent = processed > 0 ? (elapsed / processed).toFixed(2) + 'ms' : '—';
-  renderRankDist('chaipo-rank-top',    s.handRankDist.top);
-  renderRankDist('chaipo-rank-middle', s.handRankDist.middle);
-  renderRankDist('chaipo-rank-bottom', s.handRankDist.bottom);
-}
-
-function renderRankDist(elId, dist) {
-  const el = document.getElementById(elId);
-  if (!el) return;
-  const total = dist.reduce((s, v) => s + v, 0);
-  if (!total) return;
-  el.innerHTML = dist.map((v, i) => {
-    if (!v) return '';
-    const pct = (v / total * 100);
-    return `<div style="margin-bottom:7px;">
-      <div style="display:flex;justify-content:space-between;font-size:.78em;margin-bottom:2px;">
-        <span>${RANK_LABELS[i]}</span>
-        <span style="color:var(--mut);">${pct.toFixed(1)}%</span>
-      </div>
-      <div style="height:4px;background:var(--bor);border-radius:2px;overflow:hidden;">
-        <div style="width:${Math.min(pct,100).toFixed(1)}%;height:100%;background:${RANK_COLORS[i]};border-radius:2px;"></div>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-// ===== CHAIPO BOARD (配置アシスト) =====
-(function() {
-  const CB = window.CB_STATE = {
-    self: {top:[null,null,null], mid:[null,null,null,null,null], bot:[null,null,null,null,null]},
-    opp:  {top:[null,null,null], mid:[null,null,null,null,null], bot:[null,null,null,null,null]},
-    hand: [], selfDiscards: [], oppDiscardCount: 0,
-    selected: null, pickerMode: 'hand_add', pickerTarget: null,
-    pickerPending: [], _drag: null,
-    round: 1,
-    locked: {
-      self: {top:[false,false,false], mid:[false,false,false,false,false], bot:[false,false,false,false,false]},
-      opp:  {top:[false,false,false], mid:[false,false,false,false,false], bot:[false,false,false,false,false]},
-    },
-  };
-  const TOTAL = 54; // 52 + ジョーカー2枚
-
-  const RANKS = [14,13,12,11,10,9,8,7,6,5,4,3,2];
-  const SUITS = ['S','H','D','C'];
-  const RSTR  = {14:'A',13:'K',12:'Q',11:'J',10:'T',9:'9',8:'8',7:'7',6:'6',5:'5',4:'4',3:'3',2:'2'};
-  const RMAP  = {A:14,K:13,Q:12,J:11,T:10,9:9,8:8,7:7,6:6,5:5,4:4,3:3,2:2};
-  const SSYM  = {S:'♠',H:'♥',D:'♦',C:'♣'};
-  const SCOL  = {S:'#3b6bbf',H:'#e03030',D:'#e03030',C:'#3b6bbf'};
-
-  // {cardKey: count}。ジョーカーは 'JK' キーで最大2カウント
-  function countUsed() {
-    const c = {};
-    function add(card) {
-      if (!card) return;
-      const k = card.joker ? 'JK' : RSTR[card.rank]+card.suit;
-      c[k] = (c[k]||0) + 1;
-    }
-    ['top','mid','bot'].forEach(r => { CB.self[r].forEach(add); CB.opp[r].forEach(add); });
-    CB.hand.forEach(add); CB.selfDiscards.forEach(add);
-    return c;
-  }
-
-  function totalUsed(used) {
-    return Object.entries(used).reduce((s,[k,v]) => s + (k==='JK' ? Math.min(v,2) : Math.min(v,1)), 0);
-  }
-
-  function pJKCount() { return CB.pickerPending.filter(c=>c.joker).length; }
-
-  function isLocked(zone, row, idx) {
-    return !!(CB.locked[zone] && CB.locked[zone][row][idx]);
-  }
-
-  function pendingSelfCount() {
-    let n = 0;
-    ['top','mid','bot'].forEach(row => {
-      CB.self[row].forEach((c, i) => { if (c && !CB.locked.self[row][i]) n++; });
-    });
-    return n;
-  }
-
-  function canPlaceOnSelf() {
-    return CB.round === 1 || pendingSelfCount() < 2;
-  }
-
-  // 確定時にカードをソート（A左・2右。A2345ストレートのみAが右端）
-  function sortRow(cards) {
-    const filled = cards.filter(c => c !== null);
-    if (filled.length < 2) return cards;
-    const nonJK = filled.filter(c => !c.joker);
-    const ranks = nonJK.map(c => c.rank).sort((a,b) => b-a);
-    // A-2-3-4-5 wheel: ranks=[14,5,4,3,2]
-    const isWheel = filled.length === 5 && nonJK.length === 5 &&
-      ranks[0]===14 && ranks[1]===5 && ranks[2]===4 && ranks[3]===3 && ranks[4]===2;
-    const sorted = [...filled].sort((a,b) => {
-      if (a.joker && b.joker) return 0;
-      if (a.joker) return -1;
-      if (b.joker) return 1;
-      const ra = isWheel && a.rank===14 ? 1 : a.rank;
-      const rb = isWheel && b.rank===14 ? 1 : b.rank;
-      return rb - ra;
-    });
-    const result = [...cards];
-    let j = 0;
-    for (let i=0; i<result.length; i++) { if (result[i]!==null) result[i]=sorted[j++]; }
-    return result;
-  }
-
-  function cardEl(c, extra, onclick, selected, drag, locked) {
-    if (!c) return '';
-    const isJK = c.joker;
-    const rk = isJK ? '' : RSTR[c.rank];
-    const sy = isJK ? '🃏' : SSYM[c.suit];
-    const cl = isJK ? '#8b5cf6' : SCOL[c.suit];
-    const lkCls = locked ? ' cb-locked' : '';
-    return `<div class="cb-card${selected?' cb-sel':''}${lkCls} ${extra||''}" onclick="${onclick||''}" style="color:${cl}" ${drag||''}>
-      <div class="cb-ct">${rk}<div class="cb-cs">${isJK?'':sy}</div></div>
-      <div class="cb-cm">${sy}</div>
-      <div class="cb-cb">${rk}<div class="cb-cs">${isJK?'':sy}</div></div>
-      ${locked?'<div class="cb-lock-ic">🔒</div>':''}
-    </div>`;
-  }
-
-  function slotEl(zone, row, idx) {
-    const c = CB[zone][row][idx];
-    const locked = isLocked(zone, row, idx);
-    const isSel = CB.selected && CB.selected.from==='slot' && CB.selected.zone===zone && CB.selected.row===row && CB.selected.idx===idx;
-    const hasHand = CB.selected && CB.selected.from==='hand';
-    const hasOppSel = CB.selected && CB.selected.from==='slot' && CB.selected.zone==='opp';
-    // Self locked cards: no interaction. Opp cards always clickable.
-    const fn = (zone==='self' && locked) ? '' : `cbClick('${zone}','${row}',${idx})`;
-    // Drop targets: self (not locked) + opp (always, for opp-to-opp)
-    const canDrop = (zone==='self' && !locked) || zone==='opp';
-    const drop = canDrop
-      ? `ondragover="event.preventDefault();this.style.outline='2px solid #f97316'" ondragleave="this.style.outline=''" ondrop="cbDropSlot('${zone}','${row}',${idx},event)"`
-      : '';
-    // Draggable: pending self cards + all opp cards
-    const isDraggable = (c && zone==='self' && !locked) || (c && zone==='opp');
-    const dragAttr = isDraggable
-      ? `draggable="true" ondragstart="cbSlotDragStart('${zone}','${row}',${idx},event)" ondragend="cbDragEnd()"`
-      : '';
-    if (!c) {
-      const canHiSelf = hasHand && (zone !== 'self' || canPlaceOnSelf());
-      const canHiOpp = hasOppSel && zone==='opp';
-      return `<div class="cb-slot${(canHiSelf||canHiOpp)?' cb-hi':''}" onclick="${fn}" ${drop}>+</div>`;
-    }
-    return cardEl(c, '', fn, isSel, (drop+' '+dragAttr).trim(), zone==='self' && locked);
-  }
-
-  window.cbRenderBoard = function() {
-    const used = countUsed();
-    const rowLabels = {top:'上段', mid:'中段', bot:'下段'};
-    const pending = pendingSelfCount();
-
-    // Round bar
-    const roundBar = document.getElementById('cb-round-bar');
-    if (roundBar) {
-      let ri = `<span style="font-size:.8em;font-weight:700;color:var(--acc);background:var(--sur);border:1px solid var(--bor);padding:2px 10px;border-radius:99px;">ラウンド ${CB.round}</span>`;
-      if (CB.round >= 2) ri += `<span style="font-size:.74em;color:${pending>=2?'#dc2626':'var(--mut)'};">配置 ${pending}/2</span>`;
-      roundBar.innerHTML = ri;
-    }
-
-    const oppEl = document.getElementById('cb-opp-rows');
-    if (oppEl) oppEl.innerHTML = ['top','mid','bot'].map(row =>
-      `<div class="cb-row"><div class="cb-rl">${rowLabels[row]}</div>${CB.opp[row].map((_,i)=>slotEl('opp',row,i)).join('')}</div>`
-    ).join('');
-
-    const selfEl = document.getElementById('cb-self-rows');
-    if (selfEl) selfEl.innerHTML = ['top','mid','bot'].map(row =>
-      `<div class="cb-row"><div class="cb-rl">${rowLabels[row]}</div>${CB.self[row].map((_,i)=>slotEl('self',row,i)).join('')}</div>`
-    ).join('');
-
-    const handEl = document.getElementById('cb-hand-cards');
-    if (handEl) {
-      const hc = CB.hand.map((c,i) => {
-        const sel = CB.selected && CB.selected.from==='hand' && CB.selected.idx===i;
-        const drag = `draggable="true" ondragstart="cbDragStart(${i},event)" ondragend="cbDragEnd()"`;
-        return cardEl(c, '', `cbClickHand(${i})`, sel, drag, false);
-      }).join('');
-      handEl.innerHTML = hc || '<div style="color:var(--mut);font-size:.78em;padding:8px 0;">「手牌追加」でカードを追加 / ドラッグでスロット・捨て場へ</div>';
-    }
-
-    const limitEl = document.getElementById('cb-place-limit');
-    if (limitEl) {
-      if (CB.round >= 2 && pending >= 2 && CB.hand.length > 0) {
-        limitEl.innerHTML = `<div style="font-size:.72em;color:#dc2626;padding:4px 8px;background:#fee2e2;border-radius:6px;margin-top:6px;">配置上限（2枚）に達しました。残り ${CB.hand.length} 枚は「ラウンド確定」で自動的に捨て牌になります。</div>`;
-      } else { limitEl.innerHTML = ''; }
-    }
-
-    const actEl = document.getElementById('cb-hand-actions');
-    if (actEl) {
-      let act = `<button class="btn bs" style="background:#16a34a;border-color:#16a34a;color:#fff;" onclick="cbConfirmRound()">✅ ラウンド確定</button>`;
-      act += `<button class="btn bp bs" onclick="cbAddToHand()">＋ 手牌追加</button>`;
-      if (CB.hand.length > 0) act += `<button class="btn bd bs" onclick="cbClearHand()">手札リセット</button>`;
-      if (CB.selected && CB.selected.from==='hand') {
-        act += `<button class="btn bs" style="background:#fee2e2;color:#dc2626;border:1px solid #fecaca" onclick="cbDiscard()">捨てる</button>`;
-        act += `<button class="btn be bs" onclick="cbClearSel()">選択解除</button>`;
-      } else if (CB.selected && CB.selected.from==='slot') {
-        const selLocked = isLocked(CB.selected.zone, CB.selected.row, CB.selected.idx);
-        if (CB.selected.zone==='self' && !selLocked) act += `<button class="btn be bs" onclick="cbReturnToHand()">手牌に戻す</button>`;
-        if (!selLocked) act += `<button class="btn bd bs" onclick="cbClearSlot()">スロット削除</button>`;
-        act += `<button class="btn be bs" onclick="cbClearSel()">選択解除</button>`;
-      }
-      actEl.innerHTML = act;
-    }
-
-    // Opp discards (face-down)
-    const odEl = document.getElementById('cb-opp-dis');
-    if (odEl) {
-      let h = `<div class="cb-dis-lbl">相手の捨て（非公開）</div><div class="cb-dis-cards">`;
-      for (let i=0; i<CB.oppDiscardCount; i++) h += `<div class="cb-card cb-facedown cb-sm"></div>`;
-      h += `</div><div style="margin-top:6px;display:flex;gap:5px;flex-wrap:wrap;">`;
-      h += `<button class="btn be bs" style="font-size:.68em;" onclick="CB_STATE.oppDiscardCount++;cbRenderBoard()">＋ 捨て追加</button>`;
-      if (CB.oppDiscardCount>0) h += `<button class="btn bd bs" style="font-size:.68em;" onclick="CB_STATE.oppDiscardCount--;cbRenderBoard()">−</button>`;
-      h += `</div>`;
-      odEl.innerHTML = h;
-    }
-
-    // Self discards (face-up, drag drop target)
-    const sdEl = document.getElementById('cb-self-dis');
-    if (sdEl) {
-      let h = `<div class="cb-dis-lbl">自分の捨て（公開）</div>
-        <div class="cb-dis-cards" style="min-height:52px;"
-          ondragover="event.preventDefault();this.style.outline='2px solid #f97316'"
-          ondragleave="this.style.outline=''"
-          ondrop="cbDropDiscard(event)">`;
-      if (!CB.selfDiscards.length) h += `<div style="color:var(--mut);font-size:.7em;padding:4px 0;cursor:default;">ドロップで捨てる</div>`;
-      else h += CB.selfDiscards.map((c,i)=>cardEl(c,'cb-sm',`cbUndiscard(${i})`)).join('');
-      h += `</div>`;
-      if (CB.selfDiscards.length) h += `<div style="font-size:.63em;color:var(--mut);margin-top:4px;">タップで手牌に戻す</div>`;
-      sdEl.innerHTML = h;
-    }
-
-    // Card tracker (ジョーカー2枚対応)
-    const trEl = document.getElementById('cb-tracker');
-    if (trEl) {
-      let h = `<div class="cb-tr-title">残りカード追跡</div>`;
-      SUITS.forEach(suit => {
-        h += `<div class="cb-tr-row"><span class="cb-tr-suit" style="color:${SCOL[suit]}">${SSYM[suit]}</span>`;
-        RANKS.forEach(r => {
-          const key = RSTR[r]+suit, u = (used[key]||0) >= 1;
-          h += `<div class="cb-tr-c${u?' cb-used':''}" style="color:${SCOL[suit]}" title="${RSTR[r]}${SSYM[suit]}">${RSTR[r]}</div>`;
-        });
-        h += `</div>`;
-      });
-      const jkCount = used['JK'] || 0;
-      h += `<div class="cb-tr-row"><span class="cb-tr-suit" style="color:#8b5cf6">JK</span>
-        <div class="cb-tr-c${jkCount>=1?' cb-used':''}" style="color:#8b5cf6;width:auto;padding:0 3px;font-size:.55em;" title="JK①">JK①</div>
-        <div class="cb-tr-c${jkCount>=2?' cb-used':''}" style="color:#8b5cf6;width:auto;padding:0 3px;font-size:.55em;" title="JK②">JK②</div>
-      </div>`;
-      h += `<div class="cb-tr-remain">残り ${TOTAL - totalUsed(used)} / ${TOTAL} 枚</div>`;
-      trEl.innerHTML = h;
-    }
-  };
-
-  window.cbClick = function(zone, row, idx) {
-    const card = CB[zone][row][idx];
-    // Locked self cards: no interaction
-    if (zone === 'self' && isLocked(zone, row, idx)) return;
-
-    if (CB.selected) {
-      const sel = CB.selected;
-      // Opp-selected card can only go to opp zone
-      if (sel.from==='slot' && sel.zone==='opp' && zone!=='opp') {
-        CB.selected = null; cbRenderBoard(); return;
-      }
-      if (!card) {
-        if (zone === 'self' && sel.from === 'hand' && !canPlaceOnSelf()) {
-          CB.selected = null; cbRenderBoard(); return;
-        }
-        if (sel.from==='hand') {
-          CB[zone][row][idx] = CB.hand.splice(sel.idx,1)[0];
-        } else {
-          CB[zone][row][idx] = CB[sel.zone][sel.row][sel.idx];
-          CB[sel.zone][sel.row][sel.idx] = null;
-        }
-        CB.selected = null;
-      } else {
-        if (sel.from==='slot' && sel.zone===zone && sel.row===row && sel.idx===idx) {
-          CB.selected = null;
-        } else if (sel.from==='hand') {
-          const hc = CB.hand.splice(sel.idx,1)[0];
-          CB.hand.splice(sel.idx,0,card);
-          CB[zone][row][idx] = hc;
-          CB.selected = null;
-        } else {
-          // Slot-to-slot swap (opp-to-opp or self-to-self)
-          const a = CB[sel.zone][sel.row][sel.idx];
-          CB[sel.zone][sel.row][sel.idx] = card;
-          CB[zone][row][idx] = a;
-          CB.selected = null;
-        }
-      }
-    } else {
-      if (card) {
-        // Pending self card: click returns directly to hand
-        if (zone === 'self') {
-          CB.self[row][idx] = null;
-          CB.hand.push(card);
-          cbRenderBoard(); return;
-        }
-        // Opp card: select for moving within opp board
-        CB.selected = {from:'slot', zone, row, idx};
-      } else {
-        CB.pickerTarget={zone,row,idx}; CB.pickerMode='place'; cbOpenPicker(); return;
-      }
-    }
-    cbRenderBoard();
-  };
-
-  window.cbClickHand = function(idx) {
-    if (CB.selected && CB.selected.from==='slot') {
-      const { zone, row, idx: si } = CB.selected;
-      if (!isLocked(zone, row, si)) {
-        const c = CB[zone][row][si];
-        CB[zone][row][si] = null;
-        CB.hand.push(c);
-      }
-      CB.selected = null;
-    } else if (CB.selected && CB.selected.from==='hand' && CB.selected.idx===idx) {
-      CB.selected = null;
-    } else {
-      CB.selected = {from:'hand', idx};
-    }
-    cbRenderBoard();
-  };
-
-  window.cbDiscard = function() {
-    if (!CB.selected || CB.selected.from!=='hand') return;
-    CB.selfDiscards.push(CB.hand.splice(CB.selected.idx,1)[0]);
-    CB.selected = null; cbRenderBoard();
-  };
-
-  window.cbUndiscard = function(idx) {
-    CB.hand.push(CB.selfDiscards.splice(idx,1)[0]); cbRenderBoard();
-  };
-
-  window.cbReturnToHand = function() {
-    if (!CB.selected || CB.selected.from!=='slot') return;
-    const { zone, row, idx } = CB.selected;
-    if (isLocked(zone, row, idx)) { CB.selected = null; cbRenderBoard(); return; }
-    const c = CB[zone][row][idx];
-    CB[zone][row][idx] = null;
-    CB.hand.push(c); CB.selected = null; cbRenderBoard();
-  };
-
-  window.cbClearSlot = function() {
-    if (!CB.selected || CB.selected.from!=='slot') return;
-    const { zone, row, idx } = CB.selected;
-    if (isLocked(zone, row, idx)) { CB.selected = null; cbRenderBoard(); return; }
-    CB[zone][row][idx] = null;
-    CB.selected = null; cbRenderBoard();
-  };
-
-  window.cbClearSel = function() { CB.selected = null; cbRenderBoard(); };
-  window.cbAddToHand = function() { CB.pickerMode='hand_add'; CB.pickerTarget=null; CB.pickerPending=[]; cbOpenPicker(); };
-
-  window.cbClearHand = function() {
-    if (!CB.hand.length) return;
-    if (!confirm(`手牌を全削除しますか？（${CB.hand.length}枚）`)) return;
-    CB.hand = []; CB.selected = null; cbRenderBoard();
-  };
-
-  window.cbReset = function() {
-    if (!confirm('全てリセットしますか？すべてのデータが消去されます。')) return;
-    CB.self = {top:[null,null,null],mid:[null,null,null,null,null],bot:[null,null,null,null,null]};
-    CB.opp  = {top:[null,null,null],mid:[null,null,null,null,null],bot:[null,null,null,null,null]};
-    CB.locked = {
-      self: {top:[false,false,false],mid:[false,false,false,false,false],bot:[false,false,false,false,false]},
-      opp:  {top:[false,false,false],mid:[false,false,false,false,false],bot:[false,false,false,false,false]},
-    };
-    CB.hand=[]; CB.selfDiscards=[]; CB.oppDiscardCount=0; CB.selected=null; CB.pickerPending=[]; CB.round=1; CB._drag=null;
-    cbRenderBoard();
-  };
-
-  window.cbConfirmRound = function() {
-    const pending = pendingSelfCount();
-    // Round 2+: auto-discard hand cards when 2 already placed on board
-    if (CB.round >= 2 && pending >= 2 && CB.hand.length > 0) {
-      while (CB.hand.length > 0) CB.selfDiscards.push(CB.hand.splice(0,1)[0]);
-    }
-    // Sort each row before locking
-    ['top','mid','bot'].forEach(row => {
-      CB.self[row] = sortRow(CB.self[row]);
-      CB.opp[row]  = sortRow(CB.opp[row]);
-    });
-    // Lock all filled slots
-    ['top','mid','bot'].forEach(row => {
-      CB.self[row].forEach((c,i) => { if (c) CB.locked.self[row][i] = true; });
-      CB.opp[row].forEach((c,i)  => { if (c) CB.locked.opp[row][i]  = true; });
-    });
-    CB.round++;
-    CB.selected = null;
-    cbRenderBoard();
-  };
-
-  // ===== ドラッグ&ドロップ =====
-  window.cbDragStart = function(idx, e) {
-    CB._drag = {from:'hand', idx};
-    if (e) { e.dataTransfer.effectAllowed='move'; e.dataTransfer.setData('text/plain','hand:'+idx); }
-  };
-  window.cbSlotDragStart = function(zone, row, idx, e) {
-    // Locked self cards can't drag; opp cards always draggable
-    if (zone === 'self' && isLocked(zone, row, idx)) { if (e) e.preventDefault(); return; }
-    CB._drag = {from:'slot', zone, row, idx};
-    if (e) { e.dataTransfer.effectAllowed='move'; e.dataTransfer.setData('text/plain','slot'); }
-  };
-  window.cbDragEnd = function() { CB._drag = null; };
-  window.cbDropSlot = function(zone, row, idx, e) {
-    e.preventDefault();
-    if (e.currentTarget) e.currentTarget.style.outline = '';
-    if (!CB._drag) return;
-    // Locked self slot: reject
-    if (zone === 'self' && isLocked(zone, row, idx)) { CB._drag = null; return; }
-    if (CB._drag.from === 'hand') {
-      // Hand cards can only go to self slots
-      if (zone !== 'self') { CB._drag = null; return; }
-      if (!canPlaceOnSelf()) { CB._drag = null; cbRenderBoard(); return; }
-      const card = CB.hand[CB._drag.idx];
-      const existing = CB[zone][row][idx];
-      CB[zone][row][idx] = card;
-      CB.hand.splice(CB._drag.idx, 1);
-      if (existing) CB.hand.splice(CB._drag.idx, 0, existing);
-    } else if (CB._drag.from === 'slot') {
-      const { zone:sz, row:sr, idx:si } = CB._drag;
-      if (sz===zone && sr===row && si===idx) { CB._drag = null; return; }
-      // Opp cards can only go to opp slots
-      if (sz === 'opp' && zone !== 'opp') { CB._drag = null; return; }
-      const a = CB[sz][sr][si];
-      CB[sz][sr][si] = CB[zone][row][idx];
-      CB[zone][row][idx] = a;
-    }
-    CB._drag = null; CB.selected = null;
-    cbRenderBoard();
-  };
-  window.cbDropDiscard = function(e) {
-    e.preventDefault();
-    if (e.currentTarget) e.currentTarget.style.outline = '';
-    if (!CB._drag) return;
-    if (CB._drag.from === 'hand') {
-      CB.selfDiscards.push(CB.hand.splice(CB._drag.idx, 1)[0]);
-    }
-    CB._drag = null; CB.selected = null;
-    cbRenderBoard();
-  };
-  window.cbDropHand = function(e) {
-    e.preventDefault();
-    if (e.currentTarget) e.currentTarget.style.outline = '';
-    if (!CB._drag || CB._drag.from !== 'slot') return;
-    const { zone, row, idx } = CB._drag;
-    if (isLocked(zone, row, idx)) { CB._drag = null; return; }
-    const card = CB[zone][row][idx];
-    CB[zone][row][idx] = null;
-    CB.hand.push(card);
-    CB._drag = null; CB.selected = null;
-    cbRenderBoard();
-  };
-
-  // ===== カードピッカー（複数選択対応・ジョーカー2枚対応） =====
-  function cbOpenPicker() {
-    CB.pickerPending = [];
-    renderPickerGrid();
-    renderPickerFooter();
-    document.getElementById('cb-picker-modal').style.display = 'flex';
-  }
-
-  function renderPickerGrid() {
-    const used = countUsed();
-    const mode = CB.pickerMode;
-    const title = mode==='hand_add' ? '手牌にカードを追加（複数タップ可）' : 'スロットに配置するカードを選択';
-    document.getElementById('cb-picker-title').textContent = title;
-
-    const boardJK = used['JK'] || 0;
-    const pJK = pJKCount();
-
-    let html = '';
-    SUITS.forEach(suit => {
-      html += `<div class="cb-pk-row"><span class="cb-pk-suit" style="color:${SCOL[suit]}">${SSYM[suit]}</span>`;
-      RANKS.forEach(r => {
-        const key = RSTR[r]+suit;
-        const boardUsed = (used[key]||0) >= 1;
-        const inPending = CB.pickerPending.some(c=>!c.joker && c.rank===RMAP[RSTR[r]] && c.suit===suit);
-        const disabled = boardUsed && !inPending;
-        html += `<div class="cb-pk-card${disabled?' cb-pk-used':''}${inPending?' cb-pk-sel':''}" style="color:${SCOL[suit]}"
-          onclick="${disabled?'':'cbPkToggle(\''+RSTR[r]+'\',\''+suit+'\')'}" title="${RSTR[r]}${SSYM[suit]}">
-          <div>${RSTR[r]}</div><div style="font-size:.75em">${SSYM[suit]}</div></div>`;
-      });
-      html += `</div>`;
-    });
-
-    // ジョーカー 2枚
-    html += `<div class="cb-pk-row"><span class="cb-pk-suit" style="color:#8b5cf6">JK</span>`;
-    for (let n=1; n<=2; n++) {
-      const combined = boardJK + pJK;
-      const onBoard  = boardJK >= n;
-      const inPend   = !onBoard && combined >= n;
-      const avail    = combined < n;
-      const canClick = inPend || avail;
-      html += `<div class="cb-pk-card cb-pk-jk${onBoard?' cb-pk-used':''}${inPend?' cb-pk-sel':''}"
-        style="color:#8b5cf6;margin-right:4px;" onclick="${canClick?'cbToggleJK('+n+')':''}" title="ジョーカー${n}">
-        <div>JK${n}</div><div style="font-size:.75em">🃏</div></div>`;
-    }
-    html += `</div>`;
-
-    document.getElementById('cb-picker-grid').innerHTML = html;
-  }
-
-  function renderPickerFooter() {
-    const el = document.getElementById('cb-picker-footer');
-    if (!el) return;
-    if (CB.pickerMode === 'place') { el.innerHTML = ''; return; }
-    const n = CB.pickerPending.length;
-    el.innerHTML = `<div style="display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--bor);margin-top:6px;">
-      <span style="font-size:.82em;color:var(--mut);">${n>0?n+'枚選択中（再タップで解除）':'カードをタップして選択'}</span>
-      <div style="display:flex;gap:8px;">
-        <button class="btn be bs" onclick="cbClosePicker()">キャンセル</button>
-        <button class="btn bp bs" onclick="cbConfirmPicks()" ${n===0?'disabled style="opacity:.4;cursor:not-allowed"':''}>確定（${n}枚追加）</button>
-      </div>
-    </div>`;
-  }
-
-  // 通常カードのトグル（複数選択 or 即配置）
-  window.cbPkToggle = function(rankStr, suit) {
-    if (CB.pickerMode === 'place') {
-      if (CB.pickerTarget) {
-        CB[CB.pickerTarget.zone][CB.pickerTarget.row][CB.pickerTarget.idx] = {rank:RMAP[rankStr], suit};
-        CB.pickerTarget = null;
-      }
-      document.getElementById('cb-picker-modal').style.display='none';
-      cbRenderBoard(); return;
-    }
-    const i = CB.pickerPending.findIndex(c=>!c.joker && c.rank===RMAP[rankStr] && c.suit===suit);
-    if (i>=0) CB.pickerPending.splice(i,1);
-    else CB.pickerPending.push({rank:RMAP[rankStr], suit});
-    renderPickerGrid(); renderPickerFooter();
-  };
-
-  // ジョーカーのトグル（n=1 or 2）
-  window.cbToggleJK = function(n) {
-    if (CB.pickerMode === 'place') {
-      if (CB.pickerTarget) {
-        CB[CB.pickerTarget.zone][CB.pickerTarget.row][CB.pickerTarget.idx] = {joker:true};
-        CB.pickerTarget = null;
-      }
-      document.getElementById('cb-picker-modal').style.display='none';
-      cbRenderBoard(); return;
-    }
-    const boardJK = (countUsed()['JK']||0);
-    const pJK = pJKCount();
-    const combined = boardJK + pJK;
-    const inPend = !( boardJK >= n ) && combined >= n;
-    if (inPend) {
-      // 解除
-      const i = CB.pickerPending.findIndex(c=>c.joker);
-      if (i>=0) CB.pickerPending.splice(i,1);
-    } else if (combined < n) {
-      // 追加
-      CB.pickerPending.push({joker:true});
-    }
-    renderPickerGrid(); renderPickerFooter();
-  };
-
-  window.cbConfirmPicks = function() {
-    if (!CB.pickerPending.length) return;
-    CB.hand.push(...CB.pickerPending);
-    CB.pickerPending = [];
-    document.getElementById('cb-picker-modal').style.display='none';
-    cbRenderBoard();
-  };
-
-  window.cbClosePicker = function() {
-    document.getElementById('cb-picker-modal').style.display='none';
-    CB.pickerTarget = null; CB.pickerPending = [];
-  };
-})();
-
-// ===== OFCゲームモード（試合機能） =====
-(function() {
-  const CB = window.CB_STATE;
-  CB.oppHand    = [];
-  CB.oppHandSel = null;
-  CB.deck       = [];
-  CB.dealDone   = false;
-
-  const RANKS_G = [14,13,12,11,10,9,8,7,6,5,4,3,2];
-  const SUITS_G = ['S','H','D','C'];
-  const RSTR_G  = {14:'A',13:'K',12:'Q',11:'J',10:'T',9:'9',8:'8',7:'7',6:'6',5:'5',4:'4',3:'3',2:'2'};
-  const SSYM_G  = {S:'♠',H:'♥',D:'♦',C:'♣'};
-  const SCOL_G  = {S:'#3b6bbf',H:'#e03030',D:'#e03030',C:'#3b6bbf'};
-
-  // カードHTML生成（既存cardElと同等）
-  function mkCard(c, onclick, sel, dragStart) {
-    if (!c) return '';
-    const isJK = c.joker;
-    const rk = isJK ? '' : RSTR_G[c.rank];
-    const sy = isJK ? '🃏' : SSYM_G[c.suit];
-    const cl = isJK ? '#8b5cf6' : SCOL_G[c.suit];
-    const drag = dragStart
-      ? `draggable="true" ondragstart="${dragStart}" ondragend="cbDragEnd()"`
-      : '';
-    return `<div class="cb-card${sel?' cb-sel':''}" onclick="${onclick||''}" style="color:${cl}" ${drag}>
-      <div class="cb-ct">${rk}<div class="cb-cs">${isJK?'':sy}</div></div>
-      <div class="cb-cm">${sy}</div>
-      <div class="cb-cb">${rk}<div class="cb-cs">${isJK?'':sy}</div></div>
-    </div>`;
-  }
-
-  // 相手手牌エリアを描画
-  function renderOppHand() {
-    const el = document.getElementById('cb-opp-hand-wrap');
-    if (!el) return;
-    if (!CB.oppHand.length) {
-      el.style.display = 'none';
-      el.innerHTML = '';
-      return;
-    }
-    const cards = CB.oppHand.map((c, i) => {
-      const sel = CB.oppHandSel === i;
-      return mkCard(c, `cbOppHandClick(${i})`, sel, `cbOppHandDragStart(${i},event)`);
-    }).join('');
-    let acts = `<div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;">`;
-    if (CB.oppHandSel !== null) {
-      acts += `<button class="btn bd bs" style="font-size:.68em;" onclick="cbOppHandDiscard()">捨てる（非公開）</button>`;
-      acts += `<button class="btn be bs" style="font-size:.68em;" onclick="cbOppHandClearSel()">選択解除</button>`;
-    }
-    acts += `</div>`;
-    el.innerHTML = `<div class="cb-hand-area" style="border-color:#fecaca;">
-      <div class="cb-hand-lbl" style="color:#e03030;">▲ 相手の手牌（${CB.oppHand.length}枚）</div>
-      <div class="cb-hand-cards"
-        ondragover="event.preventDefault();this.style.outline='2px solid #f97316'"
-        ondragleave="this.style.outline=''"
-        ondrop="cbOppHandDropBack(event)">${cards || '<div style="color:var(--mut);font-size:.78em;padding:8px 0;">カードなし</div>'}</div>
-      ${acts}
-    </div>`;
-    el.style.display = 'block';
-  }
-
-  // ヘッダー配布ボタンのラベル・状態を更新
-  function updateDealBtn() {
-    const btn = document.getElementById('cb-deal-btn');
-    if (!btn) return;
-    if (CB.round > 5) {
-      btn.disabled = true;
-      btn.textContent = '🏁 ゲーム終了';
-      return;
-    }
-    if (CB.dealDone) {
-      btn.disabled = true;
-      btn.textContent = `🃏 ラウンド${CB.round} 配布済み`;
-    } else {
-      btn.disabled = false;
-      btn.textContent = CB.round === 1
-        ? '🎴 ラウンド1 自動配布'
-        : `🎴 ラウンド${CB.round} 配布`;
-    }
-  }
-
-  // 手牌アクションエリア内の配布ボタンを同期（ラウンド確定の直後に挿入）
-  function syncHandAreaDealBtn() {
-    const actEl = document.getElementById('cb-hand-actions');
-    if (!actEl) return;
-    const old = actEl.querySelector('[data-game-deal]');
-    if (old) old.remove();
-    if (CB.round > 5) return;
-    const btn = document.createElement('button');
-    btn.setAttribute('data-game-deal', '1');
-    btn.className = 'btn be bs';
-    if (CB.dealDone) {
-      btn.disabled = true;
-      btn.style.opacity = '0.45';
-      btn.textContent = `🃏 R${CB.round} 配布済み`;
-    } else {
-      btn.onclick = function() { window.cbDealRound(); };
-      btn.textContent = CB.round === 1 ? '🎴 R1 配布' : `🎴 R${CB.round} 配布`;
-    }
-    const firstBtn = actEl.querySelector('button');
-    if (firstBtn) firstBtn.after(btn);
-    else actEl.prepend(btn);
-  }
-
-  // 各盤面の段にスコアバッジを付加（_origRenderBoard後に呼ぶ）
-  function addBadgesToRows(rowsElId, rowData, side, sBust, oBust, scoopBonus) {
-    const rowsEl = document.getElementById(rowsElId);
-    if (!rowsEl) return;
-    const ri = {win:'✅', loss:'❌', tie:'➖'};
-    const rows = rowsEl.querySelectorAll('.cb-row');
-    rows.forEach((row, i) => {
-      const info = rowData[i];
-      if (!info) return;
-      const myBust  = side === 'self' ? sBust : oBust;
-      const result  = side === 'self' ? info.r
-        : (info.r === 'win' ? 'loss' : info.r === 'loss' ? 'win' : 'tie');
-      const handName = side === 'self' ? info.sh : info.oh;
-      const royalty  = side === 'self' ? info.sR  : info.oR;
-      const royColor = side === 'self' ? '#16a34a' : '#e03030';
-      const badge = document.createElement('div');
-      badge.style.cssText = 'display:flex;align-items:center;gap:2px;margin-left:auto;padding-left:4px;flex-shrink:0;white-space:nowrap;';
-      let inner = myBust
-        ? `<span style="font-size:.62em;color:#dc2626;font-weight:700;">バースト</span>`
-        : `<span style="font-size:.62em;color:var(--mut);max-width:90px;overflow:hidden;text-overflow:ellipsis;">${handName}</span>`;
-      if (!myBust && royalty > 0) {
-        inner += `<span style="font-size:.62em;font-weight:700;color:${royColor};">+${royalty}</span>`;
-      }
-      inner += `<span style="font-size:.82em;">${ri[result]}</span>`;
-      badge.innerHTML = inner;
-      row.appendChild(badge);
-    });
-    // スクープバナー
-    let bannerText = '', bannerStyle = '';
-    if (scoopBonus === 3) {
-      bannerText  = side === 'self' ? '🏆 スクープ +3' : '❌ スクープ負け −3';
-      bannerStyle = side === 'self'
-        ? 'background:#fef3c7;color:#d97706;border:1px solid #fde68a;'
-        : 'background:#fee2e2;color:#dc2626;border:1px solid #fecaca;';
-    } else if (scoopBonus === -3) {
-      bannerText  = side === 'self' ? '❌ スクープ負け −3' : '🏆 スクープ +3';
-      bannerStyle = side === 'self'
-        ? 'background:#fee2e2;color:#dc2626;border:1px solid #fecaca;'
-        : 'background:#fef3c7;color:#d97706;border:1px solid #fde68a;';
-    }
-    if (bannerText) {
-      const banner = document.createElement('div');
-      banner.style.cssText = `text-align:center;padding:2px 6px;font-size:.66em;font-weight:700;border-radius:6px;margin-bottom:3px;${bannerStyle}`;
-      banner.textContent = bannerText;
-      rowsEl.insertBefore(banner, rowsEl.firstChild);
-    }
-  }
-
-  // ゲーム終了時：各段にスコアバッジ＋右パネルにサマリーを表示
-  function renderScoreOnBoard() {
-    const Pk = window.Poker;
-    if (!Pk) return;
-    function toPk(c) { return c.joker ? {rank:0,suit:'J'} : {rank:c.rank,suit:c.suit}; }
-    const sTop = CB.self.top.filter(c=>c).map(toPk);
-    const sMid = CB.self.mid.filter(c=>c).map(toPk);
-    const sBot = CB.self.bot.filter(c=>c).map(toPk);
-    const oTop = CB.opp.top.filter(c=>c).map(toPk);
-    const oMid = CB.opp.mid.filter(c=>c).map(toPk);
-    const oBot = CB.opp.bot.filter(c=>c).map(toPk);
-    const sComp = sTop.length===3 && sMid.length===5 && sBot.length===5;
-    const oComp = oTop.length===3 && oMid.length===5 && oBot.length===5;
-    if (!sComp || !oComp) {
-      const trEl = document.getElementById('cb-tracker');
-      if (trEl) trEl.innerHTML += `<div style="color:#dc2626;font-size:.75em;margin-top:8px;padding:4px 6px;background:#fee2e2;border-radius:5px;">⚠️ 盤面未完成</div>`;
-      return;
-    }
-
-    // poker.jsのbestValidMiddleEval/bestValidTopEvalを使った正確なジョーカー対応評価
-    // scoreBoard()のバースト判定はジョーカー中段をmeRaw(無制約)で判定するため誤検出あり
-    // ここでは「制約付き最良評価」を使いバーストを正確に判定する
-    function evalBoard(top, mid, bot) {
-      const be = Pk.evaluateHand(bot, false);
-      // 中段ジョーカー: 下段を超えない最良評価
-      let me = Pk.evaluateHand(mid, false);
-      if (mid.some(c => c.suit === 'J') && Pk.compareEval(me, be) > 0) {
-        me = Pk.bestValidMiddleEval(mid, be);
-      }
-      // 上段ジョーカー: 中段(制約後)を超えない最良評価
-      let te = Pk.evaluateHand(top, true);
-      if (top.some(c => c.suit === 'J') && Pk.compareEval(te, me) > 0) {
-        te = Pk.bestValidTopEval(top, me);
-      }
-      // バースト: 制約付き評価でも下段<中段 or 中段<上段 なら本当のバースト
-      const bust = Pk.compareEval(be, me) < 0 || Pk.compareEval(me, te) < 0;
-      const tR = bust ? 0 : Pk.getRoyalty(te, 'top');
-      const mR = bust ? 0 : Pk.getRoyalty(me, 'middle');
-      const bR = bust ? 0 : Pk.getRoyalty(be, 'bottom');
-      return { bust, te, me, be, tR, mR, bR, totRoy: bust ? 0 : tR+mR+bR };
-    }
-
-    const sEv = evalBoard(sTop, sMid, sBot);
-    const oEv = evalBoard(oTop, oMid, oBot);
-    const sBust = sEv.bust, oBust = oEv.bust;
-    const sTotRoy = sEv.totRoy, oTotRoy = oEv.totRoy;
-    const hn = Pk.HAND_NAME_JP;
-    let unitBase = 0, wins = 0, losses = 0, rowData;
-    if (sBust && oBust) {
-      rowData = [
-        {r:'tie',sh:'バースト',oh:'バースト',sR:0,oR:0},
-        {r:'tie',sh:'バースト',oh:'バースト',sR:0,oR:0},
-        {r:'tie',sh:'バースト',oh:'バースト',sR:0,oR:0},
-      ];
-    } else if (sBust) {
-      unitBase = -3; losses = 3;
-      rowData = [
-        {r:'loss',sh:'バースト',oh:hn[oEv.te.rank],sR:0,oR:oEv.tR},
-        {r:'loss',sh:'バースト',oh:hn[oEv.me.rank],sR:0,oR:oEv.mR},
-        {r:'loss',sh:'バースト',oh:hn[oEv.be.rank],sR:0,oR:oEv.bR},
-      ];
-    } else if (oBust) {
-      unitBase = 3; wins = 3;
-      rowData = [
-        {r:'win',sh:hn[sEv.te.rank],oh:'バースト',sR:sEv.tR,oR:0},
-        {r:'win',sh:hn[sEv.me.rank],oh:'バースト',sR:sEv.mR,oR:0},
-        {r:'win',sh:hn[sEv.be.rank],oh:'バースト',sR:sEv.bR,oR:0},
-      ];
-    } else {
-      rowData = [
-        {se:sEv.te,oe:oEv.te,sh:hn[sEv.te.rank],oh:hn[oEv.te.rank],sR:sEv.tR,oR:oEv.tR},
-        {se:sEv.me,oe:oEv.me,sh:hn[sEv.me.rank],oh:hn[oEv.me.rank],sR:sEv.mR,oR:oEv.mR},
-        {se:sEv.be,oe:oEv.be,sh:hn[sEv.be.rank],oh:hn[oEv.be.rank],sR:sEv.bR,oR:oEv.bR},
-      ].map(d => {
-        const cmp = Pk.compareEval(d.se, d.oe);
-        const r   = cmp > 0 ? 'win' : cmp < 0 ? 'loss' : 'tie';
-        if (r === 'win')  { wins++;  unitBase++; }
-        if (r === 'loss') { losses++; unitBase--; }
-        return {r, sh:d.sh, oh:d.oh, sR:d.sR, oR:d.oR};
-      });
-    }
-    const scoopBonus = wins===3 ? 3 : losses===3 ? -3 : 0;
-    const totalScore  = unitBase + scoopBonus + sTotRoy - oTotRoy;
-    addBadgesToRows('cb-self-rows', rowData, 'self', sBust, oBust, scoopBonus);
-    addBadgesToRows('cb-opp-rows',  rowData, 'opp',  sBust, oBust, scoopBonus);
-    // 右パネルにスコアサマリー
-    const trEl = document.getElementById('cb-tracker');
-    if (!trEl) return;
-    const rowNames = ['上段','中段','下段'];
-    const ri = {win:'✅',loss:'❌',tie:'➖'};
-    let h = `<div style="font-size:.7em;font-weight:800;letter-spacing:.05em;color:var(--mut);margin-bottom:7px;padding-bottom:5px;border-bottom:1px solid var(--bor);">🏆 ゲーム結果</div>`;
-    if (sBust) h += `<div style="font-size:.66em;background:#fee2e2;color:#dc2626;border-radius:4px;padding:2px 5px;margin-bottom:4px;">自分バースト</div>`;
-    if (oBust) h += `<div style="font-size:.66em;background:#dcfce7;color:#16a34a;border-radius:4px;padding:2px 5px;margin-bottom:4px;">相手バースト</div>`;
-    rowData.forEach((rr, i) => {
-      const sName = sBust ? 'バースト' : rr.sh;
-      const oName = oBust ? 'バースト' : rr.oh;
-      const sRoy  = (!sBust && rr.sR > 0) ? `<b style="color:#16a34a;"> +${rr.sR}</b>` : '';
-      const oRoy  = (!oBust && rr.oR > 0) ? `<b style="color:#e03030;"> +${rr.oR}</b>` : '';
-      h += `<div style="margin-bottom:5px;">
-        <div style="display:flex;justify-content:space-between;align-items:center;font-size:.7em;margin-bottom:1px;">
-          <b style="color:var(--mut);">${rowNames[i]}</b><span>${ri[rr.r]}</span>
-        </div>
-        <div style="font-size:.65em;padding-left:4px;color:var(--acc);">自: ${sName}${sRoy}</div>
-        <div style="font-size:.65em;padding-left:4px;color:#e03030;">相: ${oName}${oRoy}</div>
-      </div>`;
-    });
-    if (scoopBonus !== 0) {
-      const sc = scoopBonus > 0;
-      h += `<div style="font-size:.66em;font-weight:700;text-align:center;padding:2px 5px;border-radius:4px;margin:4px 0;${sc?'background:#fef3c7;color:#d97706;':'background:#fee2e2;color:#dc2626;'}">${sc?'スクープ +3':'スクープ負け −3'}</div>`;
-    }
-    h += `<div style="border-top:1px solid var(--bor);margin:5px 0;"></div>`;
-    const lr = (lbl, val, col) => `<div style="display:flex;justify-content:space-between;margin-bottom:3px;font-size:.7em;"><span style="color:var(--mut);">${lbl}</span><span style="font-weight:700;${col?'color:'+col:''}">${val}</span></div>`;
-    h += lr(`段勝敗 (${wins}勝${losses}敗)`, (unitBase>=0?'+':'')+unitBase);
-    if (scoopBonus!==0) h += lr(scoopBonus>0?'スクープ':'スクープ負', (scoopBonus>0?'+':'')+scoopBonus, scoopBonus>0?'#d97706':'#dc2626');
-    if (sTotRoy>0) h += lr('自分ゴット', '+'+sTotRoy, '#16a34a');
-    if (oTotRoy>0) h += lr('相手ゴット', '−'+oTotRoy, '#e03030');
-    h += `<div style="display:flex;justify-content:space-between;align-items:center;border-top:2px solid var(--bor);padding-top:6px;margin-top:3px;">
-      <span style="font-size:.75em;font-weight:800;">最終</span>
-      <span style="font-size:1.35em;font-weight:900;color:${totalScore>0?'#16a34a':totalScore<0?'#dc2626':'var(--mut)'};">${totalScore>0?'+':''}${totalScore}</span>
-    </div>`;
-    h += `<button class="btn bp bs" style="width:100%;margin-top:10px;font-size:.72em;" onclick="cbReset()">🔄 もう一度</button>`;
-    trEl.innerHTML = h;
-  }
-
-  // 残りデッキをCBフォーマットで構築してシャッフル
-  function buildRemainingDeck() {
-    const used = {};
-    function add(c) {
-      if (!c) return;
-      const k = c.joker ? 'JK' : (RSTR_G[c.rank] + c.suit);
-      used[k] = (used[k] || 0) + 1;
-    }
-    ['top','mid','bot'].forEach(r => {
-      CB.self[r].forEach(add); CB.opp[r].forEach(add);
-    });
-    CB.hand.forEach(add); CB.selfDiscards.forEach(add); CB.oppHand.forEach(add);
-
-    const deck = [];
-    SUITS_G.forEach(suit => {
-      RANKS_G.forEach(rank => {
-        if (!used[RSTR_G[rank]+suit]) deck.push({rank, suit});
-      });
-    });
-    const jkUsed = used['JK'] || 0;
-    for (let i = 0; i < 2 - jkUsed; i++) deck.push({joker: true});
-    for (let i = deck.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [deck[i], deck[j]] = [deck[j], deck[i]];
-    }
-    return deck;
-  }
-
-  // ===== 公開関数 =====
-
-  // 自動配布ボタン
-  window.cbDealRound = function() {
-    if (CB.round > 5 || CB.dealDone) return;
-    if (!CB.deck.length) CB.deck = buildRemainingDeck();
-    const n = CB.round === 1 ? 5 : 3;
-    for (let i = 0; i < n && CB.deck.length; i++) CB.hand.push(CB.deck.pop());
-    for (let i = 0; i < n && CB.deck.length; i++) CB.oppHand.push(CB.deck.pop());
-    CB.dealDone = true;
-    renderOppHand();
-    updateDealBtn();
-    window.cbRenderBoard();
-  };
-
-  // 相手手牌クリック（選択/解除）
-  window.cbOppHandClick = function(idx) {
-    CB.oppHandSel = CB.oppHandSel === idx ? null : idx;
-    if (CB.oppHandSel !== null) CB.selected = null;
-    renderOppHand();
-  };
-
-  // 相手手牌 → ドラッグ開始（再描画しない：DOM再構築でドラッグが壊れるため）
-  window.cbOppHandDragStart = function(idx, e) {
-    CB._drag = {from: 'opp_hand', idx};
-    CB.oppHandSel = null;
-    if (e) { e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain','opp_hand:'+idx); }
-  };
-
-  // 相手盤面スロット → 相手手牌へドロップで戻す
-  window.cbOppHandDropBack = function(e) {
-    e.preventDefault();
-    if (e.currentTarget) e.currentTarget.style.outline = '';
-    if (!CB._drag || CB._drag.from !== 'slot') return;
-    const { zone, row, idx } = CB._drag;
-    if (zone !== 'opp') { CB._drag = null; return; }
-    if (CB.locked && CB.locked.opp && CB.locked.opp[row][idx]) { CB._drag = null; return; }
-    const card = CB.opp[row][idx];
-    if (!card) { CB._drag = null; return; }
-    CB.opp[row][idx] = null;
-    CB.oppHand.push(card);
-    CB._drag = null;
-    renderOppHand();
-    window.cbRenderBoard();
-  };
-
-  // 相手手牌を捨てる（非公開）
-  window.cbOppHandDiscard = function() {
-    if (CB.oppHandSel === null) return;
-    CB.oppDiscardCount++;
-    CB.oppHand.splice(CB.oppHandSel, 1);
-    CB.oppHandSel = null;
-    renderOppHand();
-  };
-
-  // 相手手牌の選択解除
-  window.cbOppHandClearSel = function() {
-    CB.oppHandSel = null;
-    renderOppHand();
-  };
-
-  // スコアはインライン表示のためモーダルは使用しない
-  window.cbCloseScore = function() {
-    const m = document.getElementById('cb-score-modal');
-    if (m) m.style.display = 'none';
-  };
-
-  window.cbShowGameScore = function() { renderScoreOnBoard(); };
-
-  // ===== モンキーパッチ =====
-
-  // cbDropSlot: 相手手牌 → 相手盤面スロットへのドロップ対応
-  const _origDropSlot = window.cbDropSlot;
-  window.cbDropSlot = function(zone, row, idx, e) {
-    if (CB._drag && CB._drag.from === 'opp_hand') {
-      e.preventDefault();
-      if (e.currentTarget) e.currentTarget.style.outline = '';
-      if (zone !== 'opp') { CB._drag = null; renderOppHand(); return; }
-      const locked = CB.locked && CB.locked.opp && CB.locked.opp[row][idx];
-      if (locked) { CB._drag = null; return; }
-      const card = CB.oppHand[CB._drag.idx];
-      const existing = CB.opp[row][idx];
-      CB.opp[row][idx] = card;
-      CB.oppHand.splice(CB._drag.idx, 1);
-      if (existing) CB.oppHand.splice(CB._drag.idx, 0, existing);
-      CB._drag = null;
-      CB.oppHandSel = null;
-      renderOppHand();
-      window.cbRenderBoard();
-      return;
-    }
-    _origDropSlot(zone, row, idx, e);
-  };
-
-  // cbClick 拡張: 相手盤面の操作（手牌選択配置 / 未確定カード手牌返却）
-  const _origClick = window.cbClick;
-  window.cbClick = function(zone, row, idx) {
-    if (zone === 'opp') {
-      const locked = CB.locked && CB.locked.opp && CB.locked.opp[row][idx];
-      const card   = CB.opp[row][idx];
-
-      // ケース A: 相手手牌カード選択中 → 盤面スロットに配置（自分と同様の操作）
-      if (CB.oppHandSel !== null) {
-        if (!locked) {
-          CB.opp[row][idx] = CB.oppHand[CB.oppHandSel];
-          if (card) CB.oppHand.splice(CB.oppHandSel, 1, card); // スワップ
-          else      CB.oppHand.splice(CB.oppHandSel, 1);
-          CB.oppHandSel = null;
-          renderOppHand();
-          window.cbRenderBoard();
-          return;
-        }
-        // 確定済みスロット → 選択解除のみ
-        CB.oppHandSel = null;
-        renderOppHand();
-        return;
-      }
-
-      // ケース B: 未確定の相手盤面カードをクリック → 手牌に戻す（自分側と同様の挙動）
-      if (card && !locked) {
-        CB.opp[row][idx] = null;
-        CB.oppHand.push(card);
-        if (CB.selected && CB.selected.zone === 'opp') CB.selected = null;
-        renderOppHand();
-        window.cbRenderBoard();
-        return;
-      }
-
-      // それ以外（空スロット or 確定済み）は通常処理（ピッカー起動 or 選択）
-      _origClick(zone, row, idx);
-      return;
-    }
-
-    // opp以外のゾーンをクリック → 相手手牌選択を解除
-    if (CB.oppHandSel !== null) {
-      CB.oppHandSel = null;
-      renderOppHand();
-    }
-    _origClick(zone, row, idx);
-  };
-
-  // cbClickHand: 自分手牌クリック時に相手手牌選択を解除
-  const _origClickHand = window.cbClickHand;
-  window.cbClickHand = function(idx) {
-    if (CB.oppHandSel !== null) { CB.oppHandSel = null; renderOppHand(); }
-    _origClickHand(idx);
-  };
-
-  const _origRenderBoard = window.cbRenderBoard;
-  window.cbRenderBoard = function() {
-    _origRenderBoard();
-    updateDealBtn();
-    syncHandAreaDealBtn();
-    if (CB.round > 5) {
-      const rb = document.getElementById('cb-round-bar');
-      if (rb) rb.innerHTML = `<span style="font-size:.8em;font-weight:700;background:#fef3c7;color:#d97706;border:1px solid #fde68a;padding:2px 10px;border-radius:99px;">🏁 ゲーム終了</span>`;
-      renderScoreOnBoard();
-    }
-  };
-
-  // 相手盤面を「ソート＋前詰め（null末尾）」する — sortRowはnull位置固定のため別途実装
-  function oppSortCompact(cards) {
-    const filled = cards.filter(c => c !== null);
-    if (filled.length < 2) return [...filled, ...Array(cards.length - filled.length).fill(null)];
-    const nonJK  = filled.filter(c => !c.joker);
-    const ranks  = nonJK.map(c => c.rank).sort((a,b) => b-a);
-    const isWheel = filled.length===5 && nonJK.length===5 &&
-      ranks[0]===14 && ranks[1]===5 && ranks[2]===4 && ranks[3]===3 && ranks[4]===2;
-    const sorted = [...filled].sort((a,b) => {
-      if (a.joker && b.joker) return 0;
-      if (a.joker) return -1;
-      if (b.joker) return 1;
-      const ra = isWheel && a.rank===14 ? 1 : a.rank;
-      const rb = isWheel && b.rank===14 ? 1 : b.rank;
-      return rb - ra;
-    });
-    return [...sorted, ...Array(cards.length - sorted.length).fill(null)];
-  }
-
-  // cbConfirmRound: 相手盤面ソート→確定→相手手牌クリーンアップ
-  const _origConfirmRound = window.cbConfirmRound;
-  window.cbConfirmRound = function() {
-    const prevRound = CB.round;
-    let newOppPlaced = 0;
-    ['top','mid','bot'].forEach(row => {
-      CB.opp[row].forEach((c, i) => {
-        if (c && CB.locked && CB.locked.opp && !CB.locked.opp[row][i]) newOppPlaced++;
-      });
-    });
-    ['top','mid','bot'].forEach(row => {
-      CB.opp[row] = oppSortCompact(CB.opp[row]);
-    });
-    // dealDoneを先にリセット: _origConfirmRound内のcbRenderBoard()が正しい状態を参照する
-    CB.dealDone   = false;
-    CB.oppHandSel = null;
-    _origConfirmRound(); // 内部でcbRenderBoard()が呼ばれ、round>5ならスコア表示される
-    if (CB.oppHand.length > 0) {
-      if (prevRound >= 2) {
-        CB.oppDiscardCount += Math.max(0, CB.oppHand.length - newOppPlaced);
-      }
-      CB.oppHand = [];
-    }
-    renderOppHand();
-    updateDealBtn();
-  };
-
-  // cbReset: ゲーム状態もリセット
-  const _origReset = window.cbReset;
-  window.cbReset = function() {
-    _origReset();
-    if (CB.round === 1 && CB.self.top.every(c => !c)) {
-      CB.oppHand = [];
-      CB.deck = [];
-      CB.dealDone = false;
-      CB.oppHandSel = null;
-      renderOppHand();
-      updateDealBtn();
-    }
-  };
-})();
 </script>
 </body>
 </html>
