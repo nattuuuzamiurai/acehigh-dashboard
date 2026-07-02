@@ -420,6 +420,19 @@
               <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t38','tool',this.value)" id="t38-tool"></textarea></div>
               <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t38','next',this.value)" id="t38-next" placeholder="具体的な次の一手..."></div>
             </div></td></tr>
+            <!-- t39 -->
+            <tr class="tr" data-id="t39" data-priority="2" data-cat="アプリ開発">
+              <td><div class="task-name" onclick="toggleDetail('t39')" ondblclick="editTaskName(event,'t39')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>競艇予測ツールの期待値検証・予測レース改善</div></td>
+              <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge mid">中</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t39')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t39')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t39-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" value="2026-07-01" onchange="onDate(this,'t39')"></td>
+            </tr>
+            <tr class="dr" id="detail-t39"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t39','desc',this.value)" id="t39-desc">1週間の結果をもとに予測レースの改善を行う</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t39','tool',this.value)" id="t39-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t39','next',this.value)" id="t39-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
             <!-- t2 -->
             <tr class="tr" data-id="t2" data-priority="3" data-cat="新規事業">
               <td><div class="task-name" onclick="toggleDetail('t2')" ondblclick="editTaskName(event,'t2')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>警備会社</div></td>
@@ -524,6 +537,19 @@
               <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t41','tool',this.value)" id="t41-tool"></textarea></div>
               <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t41','next',this.value)" id="t41-next" placeholder="具体的な次の一手..."></div>
             </div></td></tr>
+            <!-- t42 -->
+            <tr class="tr" data-id="t42" data-priority="3" data-cat="アプリ開発">
+              <td><div class="task-name" onclick="toggleDetail('t42')" ondblclick="editTaskName(event,'t42')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>ポーカー成績管理アプリ</div></td>
+              <td><span class="cat-tag">アプリ開発</span></td><td><span class="badge low">低</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t42')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t42')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t42-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t42')"></td>
+            </tr>
+            <tr class="dr" id="detail-t42"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t42','desc',this.value)" id="t42-desc"></textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t42','tool',this.value)" id="t42-tool"></textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t42','next',this.value)" id="t42-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
             <!-- t33 -->
             <tr class="tr" data-id="t33" data-priority="4" data-cat="プライベート">
               <td><div class="task-name" onclick="toggleDetail('t33')" ondblclick="editTaskName(event,'t33')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>家の家電ツール最適化</div></td>
@@ -539,6 +565,15 @@
             </div></td></tr>
           </tbody>
         </table>
+      </div>
+      <div class="mt28">
+        <div class="done-lbl" style="color:var(--amb);">保留中</div>
+        <div class="tw">
+          <table>
+            <thead><tr><th>タスク名</th><th>カテゴリ</th><th>優先度</th><th>ステータス</th><th>進捗</th><th>期限</th></tr></thead>
+            <tbody id="hold-tbody"><tr id="hold-empty"><td colspan="6" class="empty">保留中のタスクはありません</td></tr></tbody>
+          </table>
+        </div>
       </div>
       <div class="mt28">
         <div class="done-lbl">完了済み</div>
@@ -661,6 +696,7 @@
               ondrop="cbDropHand(event)"></div>
             <div id="cb-place-limit"></div>
             <div id="cb-hand-actions" style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;"></div>
+            <div id="cb-ai-rec" style="display:none;margin-top:10px;border:2px solid #7c3aed;border-radius:8px;padding:10px;background:#f5f3ff;"></div>
           </div>
         </div>
         <div class="cb-right">
@@ -726,7 +762,7 @@
 </div>
 
 <script>
-const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t2','t4','t7','t5','t32','t34','t35','t33'];
+const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t39','t2','t4','t7','t5','t32','t34','t35','t33','t41','t42'];
 
 // PROJECTS_DATA_START
 const PROJECTS_DATA = [];
@@ -807,17 +843,21 @@ function applyTaskState(s) {
 function updateDone() {
   const mt = document.getElementById('main-tbody');
   const dt = document.getElementById('done-tbody');
+  const ht = document.getElementById('hold-tbody');
   const de = document.getElementById('done-empty');
-  const all = [...mt.querySelectorAll('tr.tr[data-id]'), ...dt.querySelectorAll('tr.tr[data-id]')];
+  const he = document.getElementById('hold-empty');
+  const all = [...mt.querySelectorAll('tr.tr[data-id]'), ...dt.querySelectorAll('tr.tr[data-id]'), ...ht.querySelectorAll('tr.tr[data-id]')];
   all.forEach(row => {
     const id = row.dataset.id;
     const sel = row.querySelector('select.ss');
     const dr = document.getElementById('detail-'+id);
     if (!sel) return;
-    if (sel.value==='s-done') { dt.appendChild(row); if(dr) dt.appendChild(dr); }
-    else { mt.appendChild(row); if(dr) mt.appendChild(dr); }
+    if (sel.value==='s-done')       { dt.appendChild(row); if(dr) dt.appendChild(dr); }
+    else if (sel.value==='s-hold')  { ht.appendChild(row); if(dr) ht.appendChild(dr); }
+    else                            { mt.appendChild(row); if(dr) mt.appendChild(dr); }
   });
   de.style.display = dt.querySelectorAll('tr.tr[data-id]').length>0 ? 'none' : '';
+  he.style.display = ht.querySelectorAll('tr.tr[data-id]').length>0 ? 'none' : '';
   applyFilter(filterCat);
 }
 
@@ -1930,7 +1970,110 @@ function runChaipoSim() {
   chaipoStart = performance.now();
 
   const TOTAL = 10000;
-  const BATCH = 200;
+  const N_WORKERS = 2;
+  const perWorker = TOTAL / N_WORKERS; // 各ワーカー 5000 ハンド
+
+  const pokerScript = document.querySelector('script[src*="poker.js"]');
+  const mcScript    = document.querySelector('script[src*="montecarlo.js"]');
+
+  if (pokerScript && mcScript && typeof Worker !== 'undefined') {
+    // ---- Web Worker 並列版 (2コア同時実行 → 約2倍速) ----
+    const workerStats = Array.from({ length: N_WORKERS }, () => ({
+      total: 0, busts: 0, flCount: 0, royaltySum: 0,
+      flByType: { trips: 0, pair14: 0, pair13: 0, pair12: 0 },
+      handRankDist: { top: Array(10).fill(0), middle: Array(10).fill(0), bottom: Array(10).fill(0) },
+      processed: 0, done: false,
+    }));
+    let doneCount = 0;
+    let failed = false;
+    const workers = [];
+
+    function combineStats() {
+      const c = {
+        total: 0, busts: 0, flCount: 0, royaltySum: 0,
+        flByType: { trips: 0, pair14: 0, pair13: 0, pair12: 0 },
+        handRankDist: { top: Array(10).fill(0), middle: Array(10).fill(0), bottom: Array(10).fill(0) },
+      };
+      for (const ws of workerStats) {
+        c.total += ws.total; c.busts += ws.busts;
+        c.flCount += ws.flCount; c.royaltySum += ws.royaltySum;
+        for (const k of Object.keys(ws.flByType)) c.flByType[k] += ws.flByType[k];
+        for (const row of ['top','middle','bottom'])
+          for (let i = 0; i < 10; i++) c.handRankDist[row][i] += ws.handRankDist[row][i];
+      }
+      return c;
+    }
+
+    function onWorkerMsg(idx, e) {
+      if (failed) return;
+      const { type, stats, processed } = e.data;
+
+      if (type === 'error') {
+        failed = true;
+        workers.forEach(w => { try { w.terminate(); } catch(_) {} });
+        chaipoRunning = false;
+        runChaipoSimFallback(TOTAL);
+        return;
+      }
+      if (type === 'ready') {
+        workers[idx].postMessage({ type: 'run', total: perWorker });
+        return;
+      }
+
+      // 'progress' または 'done'
+      Object.assign(workerStats[idx], stats);
+      workerStats[idx].processed = processed;
+      if (type === 'done') { workerStats[idx].done = true; doneCount++; }
+
+      const totalProc = workerStats.reduce((s, w) => s + w.processed, 0);
+      const c = combineStats();
+      const n = c.total, valid = n - c.busts;
+      const snap = {
+        burstRate:    n > 0 ? c.busts / n : 0,
+        flRate:       n > 0 ? c.flCount / n : 0,
+        flByType:     c.flByType,
+        avgRoyalty:   valid > 0 ? c.royaltySum / valid : 0,
+        handRankDist: c.handRankDist,
+      };
+      document.getElementById('chaipo-prog-bar').style.width = (totalProc / TOTAL * 100).toFixed(0) + '%';
+      document.getElementById('chaipo-prog-txt').textContent = totalProc.toLocaleString() + ' / ' + TOTAL.toLocaleString();
+      updateChaipoStats(snap, performance.now() - chaipoStart, totalProc);
+
+      if (doneCount === N_WORKERS) {
+        document.getElementById('chaipo-run-btn').disabled = false;
+        chaipoRunning = false;
+        workers.forEach(w => { try { w.terminate(); } catch(_) {} });
+      }
+    }
+
+    try {
+      for (let i = 0; i < N_WORKERS; i++) {
+        const w = new Worker('./sim-worker.js');
+        w.onmessage = (e) => onWorkerMsg(i, e);
+        w.onerror   = ()  => { if (!failed) { failed = true; workers.forEach(x => { try { x.terminate(); } catch(_) {} }); chaipoRunning = false; runChaipoSimFallback(TOTAL); } };
+        workers.push(w);
+        w.postMessage({ type: 'init', pokerUrl: pokerScript.src, mcUrl: mcScript.src });
+      }
+    } catch(err) {
+      if (!failed) {
+        failed = true;
+        workers.forEach(w => { try { w.terminate(); } catch(_) {} });
+        chaipoRunning = false;
+        runChaipoSimFallback(TOTAL);
+      }
+    }
+  } else {
+    runChaipoSimFallback(TOTAL);
+  }
+}
+
+function runChaipoSimFallback(TOTAL) {
+  // フォールバック: メインスレッドでシミュレーション（UIをブロックするが確実に動作）
+  chaipoRunning = true;
+  document.getElementById('chaipo-run-btn').disabled = true;
+  chaipoStart = performance.now();
+
+  const BATCH = 500;
   const deck  = Poker.buildDeck();
   const stats = {
     total: 0, busts: 0, flCount: 0,
@@ -1966,18 +2109,15 @@ function runChaipoSim() {
     }
     processed = end;
 
-    const n     = stats.total;
-    const valid = n - stats.busts;
-    const snap  = {
+    const n = stats.total, valid = n - stats.busts;
+    const snap = {
       burstRate:    n > 0 ? stats.busts / n : 0,
       flRate:       n > 0 ? stats.flCount / n : 0,
       flByType:     { ...stats.flByType },
       avgRoyalty:   valid > 0 ? stats.royaltySum / valid : 0,
       handRankDist: stats.handRankDist,
     };
-
-    const pct = processed / TOTAL * 100;
-    document.getElementById('chaipo-prog-bar').style.width = pct.toFixed(0) + '%';
+    document.getElementById('chaipo-prog-bar').style.width = (processed / TOTAL * 100).toFixed(0) + '%';
     document.getElementById('chaipo-prog-txt').textContent = processed.toLocaleString() + ' / ' + TOTAL.toLocaleString();
     updateChaipoStats(snap, performance.now() - chaipoStart, processed);
 
@@ -2052,6 +2192,7 @@ function renderRankDist(elId, dist) {
     selected: null, pickerMode: 'hand_add', pickerTarget: null,
     pickerPending: [], _drag: null,
     round: 1,
+    aiRecommendation: null,
     locked: {
       self: {top:[false,false,false], mid:[false,false,false,false,false], bot:[false,false,false,false,false]},
       opp:  {top:[false,false,false], mid:[false,false,false,false,false], bot:[false,false,false,false,false]},
@@ -2209,7 +2350,11 @@ function renderRankDist(elId, dist) {
     if (actEl) {
       let act = `<button class="btn bs" style="background:#16a34a;border-color:#16a34a;color:#fff;" onclick="cbConfirmRound()">✅ ラウンド確定</button>`;
       act += `<button class="btn bp bs" onclick="cbAddToHand()">＋ 手牌追加</button>`;
-      if (CB.hand.length > 0) act += `<button class="btn bd bs" onclick="cbClearHand()">手札リセット</button>`;
+      if (CB.hand.length > 0) {
+        act += `<button class="btn bd bs" onclick="cbClearHand()">手札リセット</button>`;
+        const aiLoading = CB.aiRecommendation && CB.aiRecommendation.loading;
+        act += `<button class="btn bs" style="background:#7c3aed;border-color:#7c3aed;color:#fff;${aiLoading?'opacity:.6;cursor:not-allowed':''}" onclick="${aiLoading?'':'cbAskAI()'}">🤖 ${aiLoading?'計算中…':'AIに聞く'}</button>`;
+      }
       if (CB.selected && CB.selected.from==='hand') {
         act += `<button class="btn bs" style="background:#fee2e2;color:#dc2626;border:1px solid #fecaca" onclick="cbDiscard()">捨てる</button>`;
         act += `<button class="btn be bs" onclick="cbClearSel()">選択解除</button>`;
@@ -2220,6 +2365,21 @@ function renderRankDist(elId, dist) {
         act += `<button class="btn be bs" onclick="cbClearSel()">選択解除</button>`;
       }
       actEl.innerHTML = act;
+    }
+
+    // AI推薦パネル
+    const aiRecEl = document.getElementById('cb-ai-rec');
+    if (aiRecEl) {
+      if (!CB.aiRecommendation) {
+        aiRecEl.innerHTML = '';
+        aiRecEl.style.display = 'none';
+      } else if (CB.aiRecommendation.loading) {
+        aiRecEl.style.display = 'block';
+        aiRecEl.innerHTML = `<div style="color:#7c3aed;font-size:.85em;padding:4px 0;">🤖 AI計算中… (数秒かかる場合があります)</div>`;
+      } else {
+        aiRecEl.style.display = 'block';
+        aiRecEl.innerHTML = renderAIRec(CB.aiRecommendation.board);
+      }
     }
 
     // Opp discards (face-down)
@@ -2387,7 +2547,7 @@ function renderRankDist(elId, dist) {
       self: {top:[false,false,false],mid:[false,false,false,false,false],bot:[false,false,false,false,false]},
       opp:  {top:[false,false,false],mid:[false,false,false,false,false],bot:[false,false,false,false,false]},
     };
-    CB.hand=[]; CB.selfDiscards=[]; CB.oppDiscardCount=0; CB.selected=null; CB.pickerPending=[]; CB.round=1; CB._drag=null;
+    CB.hand=[]; CB.selfDiscards=[]; CB.oppDiscardCount=0; CB.selected=null; CB.pickerPending=[]; CB.round=1; CB._drag=null; CB.aiRecommendation=null;
     cbRenderBoard();
   };
 
@@ -2409,6 +2569,7 @@ function renderRankDist(elId, dist) {
     });
     CB.round++;
     CB.selected = null;
+    CB.aiRecommendation = null;
     cbRenderBoard();
   };
 
@@ -2590,6 +2751,238 @@ function renderRankDist(elId, dist) {
     document.getElementById('cb-picker-modal').style.display='none';
     CB.pickerTarget = null; CB.pickerPending = [];
   };
+
+  // ===== AI推薦機能 =====
+
+  function cbToMCCard(c) {
+    if (!c) return null;
+    if (c.joker) return {rank: 0, suit: 'J'};
+    return c;
+  }
+
+  function cbRowToMCArr(arr) {
+    return arr.filter(c => c !== null).map(cbToMCCard);
+  }
+
+  // CBカードキー（ジョーカー対応）
+  function cbCKey(c) {
+    if (!c) return null;
+    return c.joker ? '0J' : (c.rank + c.suit);
+  }
+
+  // MCカードキー
+  function mcCKey(c) {
+    return c.suit === 'J' ? '0J' : (c.rank + c.suit);
+  }
+
+  // AIに推薦を問い合わせる
+  window.cbAskAI = function() {
+    if (!CB.hand.length) return;
+    if (!window.MC || !window.Poker) {
+      alert('MCエンジンが読み込まれていません'); return;
+    }
+    CB.aiRecommendation = {loading: true, board: null};
+    cbRenderBoard();
+
+    setTimeout(function() {
+      try {
+        const allCards = Poker.buildDeck();
+        const handMC = CB.hand.map(cbToMCCard);
+
+        let resultBoard;
+        if (CB.round === 1) {
+          resultBoard = MC.greedyPlaceRound1(handMC, allCards, 200);
+        } else {
+          const currentBoard = {
+            top:    cbRowToMCArr(CB.self.top),
+            middle: cbRowToMCArr(CB.self.mid),
+            bottom: cbRowToMCArr(CB.self.bot),
+          };
+          resultBoard = MC.greedyPlaceRound2to5WithLookahead(handMC, currentBoard, allCards, 200);
+        }
+        CB.aiRecommendation = {loading: false, board: resultBoard};
+      } catch(e) {
+        console.error('AI推薦エラー:', e);
+        CB.aiRecommendation = null;
+      }
+      cbRenderBoard();
+    }, 30);
+  };
+
+  // 推薦配置を適用する
+  window.cbApplyAI = function() {
+    const rec = CB.aiRecommendation;
+    if (!rec || !rec.board) return;
+
+    // 現在配置済みカードのマルチセット（MCキー形式）
+    const placed = {};
+    ['top','mid','bot'].forEach(function(r) {
+      CB.self[r].forEach(function(c) {
+        if (!c) return;
+        const k = cbCKey(c);
+        placed[k] = (placed[k] || 0) + 1;
+      });
+    });
+
+    // 各行でMC結果から「新規カード」を抽出してCBの空きスロットに配置
+    const rowMap = [{mc:'top', cb:'top'}, {mc:'middle', cb:'mid'}, {mc:'bottom', cb:'bot'}];
+    const usedFromHand = {}; // 手牌から使ったキー（マルチセット）
+
+    rowMap.forEach(function({mc, cb}) {
+      const placedCopy = Object.assign({}, placed);
+      const newCards = [];
+      rec.board[mc].forEach(function(mcCard) {
+        const k = mcCKey(mcCard);
+        if (placedCopy[k] && placedCopy[k] > 0) {
+          placedCopy[k]--;
+        } else {
+          newCards.push(mcCard);
+          usedFromHand[k] = (usedFromHand[k] || 0) + 1;
+        }
+      });
+
+      // 空きスロットに左から順に配置
+      let ni = 0;
+      for (let i = 0; i < CB.self[cb].length && ni < newCards.length; i++) {
+        if (CB.self[cb][i] === null) {
+          // MC→CB変換（ジョーカーのみ）
+          const mc2 = newCards[ni++];
+          CB.self[cb][i] = mc2.suit === 'J' ? {joker: true} : mc2;
+        }
+      }
+    });
+
+    // 配置済みカードを手牌から除去
+    const usedLeft = Object.assign({}, usedFromHand);
+    CB.hand = CB.hand.filter(function(c) {
+      const k = cbCKey(c);
+      if (usedLeft[k] && usedLeft[k] > 0) {
+        usedLeft[k]--;
+        return false; // 除去
+      }
+      return true;
+    });
+
+    // R2-R5: 残り手牌（捨て牌）を自分の捨て場へ
+    if (CB.round >= 2 && CB.hand.length > 0) {
+      while (CB.hand.length > 0) {
+        CB.selfDiscards.push(CB.hand.splice(0, 1)[0]);
+      }
+    }
+
+    CB.aiRecommendation = null;
+    CB.selected = null;
+    cbRenderBoard();
+  };
+
+  // 推薦をキャンセル
+  window.cbDismissAI = function() {
+    CB.aiRecommendation = null;
+    cbRenderBoard();
+  };
+
+  // 推薦パネルHTMLを生成
+  function renderAIRec(recBoard) {
+    // 現配置のマルチセット
+    const placed = {};
+    ['top','mid','bot'].forEach(function(r) {
+      CB.self[r].forEach(function(c) {
+        if (!c) return;
+        const k = cbCKey(c);
+        placed[k] = (placed[k] || 0) + 1;
+      });
+    });
+
+    // 各行カードを「既存」「新規」に分類
+    const rowLabels = {top:'上段', middle:'中段', bottom:'下段'};
+    const rowSlots  = {top:3, middle:5, bottom:5};
+    const placedCopy = Object.assign({}, placed);
+
+    function classifyRow(mcRow) {
+      return recBoard[mcRow].map(function(c) {
+        const k = mcCKey(c);
+        if (placedCopy[k] && placedCopy[k] > 0) {
+          placedCopy[k]--;
+          return {card: c, isNew: false};
+        }
+        return {card: c, isNew: true};
+      });
+    }
+
+    const rowResults = {
+      top:    classifyRow('top'),
+      middle: classifyRow('middle'),
+      bottom: classifyRow('bottom'),
+    };
+
+    // 捨て牌の特定
+    const usedFromHand = {};
+    ['top','middle','bottom'].forEach(function(r) {
+      rowResults[r].filter(function(x) { return x.isNew; }).forEach(function(x) {
+        const k = mcCKey(x.card);
+        usedFromHand[k] = (usedFromHand[k] || 0) + 1;
+      });
+    });
+    const usedLeft = Object.assign({}, usedFromHand);
+    const discarded = [];
+    CB.hand.forEach(function(c) {
+      const k = cbCKey(c);
+      if (usedLeft[k] && usedLeft[k] > 0) {
+        usedLeft[k]--;
+      } else {
+        discarded.push(c);
+      }
+    });
+
+    // 1枚カードHTML（ミニ）
+    function miniCardEl(c, isNew) {
+      const isJK = c.suit === 'J';
+      const rk = isJK ? '' : RSTR[c.rank];
+      const sy = isJK ? '🃏' : SSYM[c.suit];
+      const cl = isJK ? '#8b5cf6' : SCOL[c.suit];
+      const newStyle = isNew ? 'box-shadow:0 0 0 2.5px #7c3aed;background:#ede9fe;' : '';
+      return `<div class="cb-card" style="color:${cl};${newStyle}cursor:default;">
+        <div class="cb-ct">${rk}<div class="cb-cs">${isJK?'':sy}</div></div>
+        <div class="cb-cm">${sy}</div>
+        <div class="cb-cb">${rk}<div class="cb-cs">${isJK?'':sy}</div></div>
+      </div>`;
+    }
+
+    let html = `<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      <span style="font-weight:700;color:#7c3aed;font-size:.85em;">🤖 AI推薦配置 <span style="font-weight:400;font-size:.82em;color:#6d28d9;">（紫枠 = 手牌から配置）</span></span>
+      <button onclick="cbDismissAI()" style="background:none;border:none;cursor:pointer;font-size:1.1em;color:var(--mut);line-height:1;padding:0 2px;">✕</button>
+    </div>`;
+
+    ['top','middle','bottom'].forEach(function(mcRow) {
+      const cards  = rowResults[mcRow];
+      const empties = rowSlots[mcRow] - cards.length;
+      html += `<div class="cb-row"><div class="cb-rl">${rowLabels[mcRow]}</div>`;
+      cards.forEach(function(x) { html += miniCardEl(x.card, x.isNew); });
+      for (let i = 0; i < empties; i++) {
+        html += `<div class="cb-slot" style="cursor:default;">+</div>`;
+      }
+      html += `</div>`;
+    });
+
+    if (discarded.length > 0) {
+      html += `<div style="margin-top:5px;font-size:.74em;color:var(--mut);">捨て牌：`;
+      html += discarded.map(function(c) {
+        const isJK = c.joker;
+        const label = isJK ? '🃏' : (RSTR[c.rank] + SSYM[c.suit]);
+        const cl = isJK ? '#8b5cf6' : SCOL[c.suit];
+        return `<span style="color:${cl};font-weight:600;margin-right:4px;">${label}</span>`;
+      }).join('');
+      html += `</div>`;
+    }
+
+    html += `<div style="margin-top:10px;display:flex;gap:6px;">
+      <button class="btn bs" style="background:#7c3aed;border-color:#7c3aed;color:#fff;" onclick="cbApplyAI()">✅ この配置を適用</button>
+      <button class="btn be bs" onclick="cbDismissAI()">キャンセル</button>
+    </div>`;
+
+    return html;
+  }
+
 })();
 
 // ===== OFCゲームモード（試合機能） =====
