@@ -1,7 +1,7 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-07-01 21:47",
-  "today_label": "2026年7月1日",
-  "pred_date": "2026/07/01",
+  "updated": "2026-07-02 10:02",
+  "today_label": "2026年7月2日",
+  "pred_date": "2026/07/02",
   "pred_is_today": true,
   "ev_threshold": 1.3,
   "proven_params": {
@@ -194,67 +194,158 @@ window.KYOTEI_DATA = {
   ],
   "today_preds": [
     {
-      "venue_name": "三国",
+      "venue_name": "芦屋",
       "race_no": "5",
       "start_time": "10:18",
+      "combo": "1-3-2",
+      "actual_combo": "",
+      "ev": 1.83,
+      "odds": "16.4",
+      "prob_pct": "11.1",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
+    },
+    {
+      "venue_name": "唐津",
+      "race_no": "4",
+      "start_time": "10:02",
       "combo": "1-4-2",
-      "actual_combo": "1-4-3",
-      "ev": 1.85,
-      "odds": "31.2",
-      "prob_pct": "5.9",
-      "hit": "0",
-      "payout": "0",
-      "final_odds": "20.3",
-      "actual_ev": 1.202
+      "actual_combo": "",
+      "ev": 1.77,
+      "odds": "28.2",
+      "prob_pct": "6.3",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
     },
     {
       "venue_name": "唐津",
       "race_no": "3",
-      "start_time": "09:38",
-      "combo": "1-3-4",
-      "actual_combo": "1-4-3",
-      "ev": 1.82,
-      "odds": "37.9",
-      "prob_pct": "4.8",
-      "hit": "0",
-      "payout": "0",
-      "final_odds": "37.9",
-      "actual_ev": 1.827
-    },
-    {
-      "venue_name": "三国",
-      "race_no": "4",
-      "start_time": "09:50",
-      "combo": "1-5-2",
-      "actual_combo": "1-4-3",
-      "ev": 1.64,
-      "odds": "25.7",
-      "prob_pct": "6.4",
-      "hit": "0",
-      "payout": "0",
-      "final_odds": "25.7",
-      "actual_ev": 1.637
+      "start_time": "09:36",
+      "combo": "1-3-6",
+      "actual_combo": "",
+      "ev": 1.54,
+      "odds": "45.6",
+      "prob_pct": "3.4",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
     },
     {
       "venue_name": "唐津",
+      "race_no": "5",
+      "start_time": "10:30",
+      "combo": "3-1-6",
+      "actual_combo": "",
+      "ev": 1.54,
+      "odds": "47.3",
+      "prob_pct": "3.3",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
+    },
+    {
+      "venue_name": "芦屋",
       "race_no": "4",
-      "start_time": "10:04",
-      "combo": "1-4-6",
-      "actual_combo": "1-3-2",
-      "ev": 1.32,
-      "odds": "37.5",
-      "prob_pct": "3.5",
-      "hit": "0",
-      "payout": "0",
-      "final_odds": "34.4",
-      "actual_ev": 1.211
+      "start_time": "09:50",
+      "combo": "5-1-2",
+      "actual_combo": "",
+      "ev": 1.39,
+      "odds": "40.4",
+      "prob_pct": "3.4",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
     }
   ],
   "pred_days": [
     {
+      "date_str": "20260702",
+      "date_label": "2026/07/02",
+      "is_today": true,
+      "preds": [
+        {
+          "venue_name": "芦屋",
+          "race_no": "5",
+          "start_time": "10:18",
+          "combo": "1-3-2",
+          "actual_combo": "",
+          "ev": 1.83,
+          "odds": "16.4",
+          "prob_pct": "11.1",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "唐津",
+          "race_no": "4",
+          "start_time": "10:02",
+          "combo": "1-4-2",
+          "actual_combo": "",
+          "ev": 1.77,
+          "odds": "28.2",
+          "prob_pct": "6.3",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "唐津",
+          "race_no": "3",
+          "start_time": "09:36",
+          "combo": "1-3-6",
+          "actual_combo": "",
+          "ev": 1.54,
+          "odds": "45.6",
+          "prob_pct": "3.4",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "唐津",
+          "race_no": "5",
+          "start_time": "10:30",
+          "combo": "3-1-6",
+          "actual_combo": "",
+          "ev": 1.54,
+          "odds": "47.3",
+          "prob_pct": "3.3",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "4",
+          "start_time": "09:50",
+          "combo": "5-1-2",
+          "actual_combo": "",
+          "ev": 1.39,
+          "odds": "40.4",
+          "prob_pct": "3.4",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
+    },
+    {
       "date_str": "20260701",
       "date_label": "2026/07/01",
-      "is_today": true,
+      "is_today": false,
       "preds": [
         {
           "venue_name": "三国",
@@ -1272,27 +1363,6 @@ window.KYOTEI_DATA = {
           "actual_ev": 1.191
         }
       ]
-    },
-    {
-      "date_str": "20260625",
-      "date_label": "2026/06/25",
-      "is_today": false,
-      "preds": [
-        {
-          "venue_name": "徳山",
-          "race_no": "8",
-          "start_time": "12:02",
-          "combo": "5-2-3",
-          "actual_combo": "2-1-3",
-          "ev": 1.53,
-          "odds": "51.5",
-          "prob_pct": "3.0",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "63.4",
-          "actual_ev": 1.883
-        }
-      ]
     }
   ],
   "weekly_perfs": [
@@ -1303,28 +1373,28 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "1.15": {
-          "bets": 241,
+          "bets": 253,
           "hits": 6,
-          "hit_rate": 2.5,
-          "invested": 24100,
+          "hit_rate": 2.4,
+          "invested": 25300,
           "returned": 15830,
-          "roi": -34.3
+          "roi": -37.4
         },
         "1.2": {
-          "bets": 235,
+          "bets": 247,
           "hits": 6,
-          "hit_rate": 2.6,
-          "invested": 23500,
+          "hit_rate": 2.4,
+          "invested": 24700,
           "returned": 15830,
-          "roi": -32.6
+          "roi": -35.9
         },
         "1.3": {
-          "bets": 229,
+          "bets": 241,
           "hits": 5,
-          "hit_rate": 2.2,
-          "invested": 22900,
+          "hit_rate": 2.1,
+          "invested": 24100,
           "returned": 14010,
-          "roi": -38.8
+          "roi": -41.9
         }
       }
     },
@@ -1611,9 +1681,91 @@ window.KYOTEI_DATA = {
   ],
   "prob_pred_days": [
     {
+      "date_str": "20260702",
+      "date_label": "2026/07/02",
+      "is_today": true,
+      "preds": [
+        {
+          "venue_name": "唐津",
+          "race_no": "3",
+          "start_time": "09:36",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "ev": 0.98,
+          "has_ev": false,
+          "odds": "6.1",
+          "prob_pct": "16.1",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "4",
+          "start_time": "09:50",
+          "combo": "1-5-2",
+          "actual_combo": "",
+          "ev": 0.94,
+          "has_ev": false,
+          "odds": "8.4",
+          "prob_pct": "11.2",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "5",
+          "start_time": "10:18",
+          "combo": "1-3-2",
+          "actual_combo": "",
+          "ev": 1.83,
+          "has_ev": true,
+          "odds": "16.4",
+          "prob_pct": "11.1",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "唐津",
+          "race_no": "5",
+          "start_time": "10:30",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "ev": 1.49,
+          "has_ev": true,
+          "odds": "17.7",
+          "prob_pct": "8.4",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "唐津",
+          "race_no": "4",
+          "start_time": "10:02",
+          "combo": "1-2-5",
+          "actual_combo": "",
+          "ev": 1.5,
+          "has_ev": true,
+          "odds": "18.6",
+          "prob_pct": "8.1",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
+    },
+    {
       "date_str": "20260701",
       "date_label": "2026/07/01",
-      "is_today": true,
+      "is_today": false,
       "preds": [
         {
           "venue_name": "唐津",
@@ -3151,88 +3303,6 @@ window.KYOTEI_DATA = {
           "actual_ev": 6.103
         }
       ]
-    },
-    {
-      "date_str": "20260625",
-      "date_label": "2026/06/25",
-      "is_today": false,
-      "preds": [
-        {
-          "venue_name": "唐津",
-          "race_no": "4",
-          "start_time": "09:57",
-          "combo": "6-3-2",
-          "actual_combo": "3-2-6",
-          "ev": 2.44,
-          "has_ev": true,
-          "odds": "56.5",
-          "prob_pct": "4.3",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "56.5",
-          "actual_ev": 2.441
-        },
-        {
-          "venue_name": "徳山",
-          "race_no": "8",
-          "start_time": "12:02",
-          "combo": "5-3-2",
-          "actual_combo": "2-1-3",
-          "ev": 2.28,
-          "has_ev": true,
-          "odds": "76.6",
-          "prob_pct": "3.0",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "131.3",
-          "actual_ev": 3.913
-        },
-        {
-          "venue_name": "津",
-          "race_no": "4",
-          "start_time": "12:06",
-          "combo": "5-2-4",
-          "actual_combo": "4-6-5",
-          "ev": 6.4,
-          "has_ev": true,
-          "odds": "219.6",
-          "prob_pct": "2.9",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "426.3",
-          "actual_ev": 12.405
-        },
-        {
-          "venue_name": "平和島",
-          "race_no": "1",
-          "start_time": "11:55",
-          "combo": "6-4-5",
-          "actual_combo": "6-1-2",
-          "ev": 2.19,
-          "has_ev": true,
-          "odds": "81.7",
-          "prob_pct": "2.7",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "54.5",
-          "actual_ev": 1.466
-        },
-        {
-          "venue_name": "唐津",
-          "race_no": "7",
-          "start_time": "11:25",
-          "combo": "6-5-3",
-          "actual_combo": "1-5-4",
-          "ev": 4.86,
-          "has_ev": true,
-          "odds": "189.5",
-          "prob_pct": "2.6",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "437.4",
-          "actual_ev": 11.241
-        }
-      ]
     }
   ],
   "prob_weekly_perfs": [
@@ -3376,9 +3446,61 @@ window.KYOTEI_DATA = {
   ],
   "proven_pred_days": [
     {
+      "date_str": "20260702",
+      "date_label": "2026/07/02",
+      "is_today": true,
+      "preds": [
+        {
+          "venue_name": "唐津",
+          "race_no": "3",
+          "start_time": "09:36",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "prob_pct": "16.1",
+          "top1_pct": "76",
+          "ev": 0.98,
+          "odds": "6.1",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "4",
+          "start_time": "09:50",
+          "combo": "1-5-2",
+          "actual_combo": "",
+          "prob_pct": "11.2",
+          "top1_pct": "73",
+          "ev": 0.94,
+          "odds": "8.4",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "唐津",
+          "race_no": "5",
+          "start_time": "10:30",
+          "combo": "1-4-3",
+          "actual_combo": "",
+          "prob_pct": "8.2",
+          "top1_pct": "57",
+          "ev": 2.17,
+          "odds": "26.6",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
+    },
+    {
       "date_str": "20260701",
       "date_label": "2026/07/01",
-      "is_today": true,
+      "is_today": false,
       "preds": [
         {
           "venue_name": "唐津",
@@ -4794,88 +4916,6 @@ window.KYOTEI_DATA = {
           "payout": "0",
           "final_odds": "605.7",
           "actual_ev": 16.354
-        }
-      ]
-    },
-    {
-      "date_str": "20260625",
-      "date_label": "2026/06/25",
-      "is_today": false,
-      "preds": [
-        {
-          "venue_name": "唐津",
-          "race_no": "4",
-          "start_time": "09:57",
-          "combo": "6-2-3",
-          "actual_combo": "3-2-6",
-          "prob_pct": "4.2",
-          "top1_pct": "",
-          "ev": 2.57,
-          "odds": "61.7",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "61.7",
-          "actual_ev": 2.567
-        },
-        {
-          "venue_name": "津",
-          "race_no": "4",
-          "start_time": "12:06",
-          "combo": "2-5-4",
-          "actual_combo": "4-6-5",
-          "prob_pct": "2.9",
-          "top1_pct": "",
-          "ev": 7.82,
-          "odds": "274.5",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "192.2",
-          "actual_ev": 5.478
-        },
-        {
-          "venue_name": "徳山",
-          "race_no": "8",
-          "start_time": "12:02",
-          "combo": "3-5-2",
-          "actual_combo": "2-1-3",
-          "prob_pct": "2.8",
-          "top1_pct": "",
-          "ev": 2.46,
-          "odds": "88.6",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "74.9",
-          "actual_ev": 2.075
-        },
-        {
-          "venue_name": "平和島",
-          "race_no": "1",
-          "start_time": "11:55",
-          "combo": "6-4-5",
-          "actual_combo": "6-1-2",
-          "prob_pct": "2.7",
-          "top1_pct": "",
-          "ev": 2.19,
-          "odds": "81.7",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "54.5",
-          "actual_ev": 1.466
-        },
-        {
-          "venue_name": "唐津",
-          "race_no": "7",
-          "start_time": "11:25",
-          "combo": "6-5-3",
-          "actual_combo": "1-5-4",
-          "prob_pct": "2.6",
-          "top1_pct": "",
-          "ev": 4.86,
-          "odds": "189.5",
-          "hit": "0",
-          "payout": "0",
-          "final_odds": "437.4",
-          "actual_ev": 11.241
         }
       ]
     }
