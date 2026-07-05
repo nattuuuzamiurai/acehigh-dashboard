@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-07-05 07:32",
+  "updated": "2026-07-05 07:50",
   "today_label": "2026年7月5日",
   "pred_date": "2026/07/05",
   "pred_is_today": true,
@@ -500,12 +500,12 @@ window.KYOTEI_DATA = {
       "race_no": "2",
       "start_time": "15:59",
       "combo": "2-1-3",
-      "actual_combo": "",
+      "actual_combo": "2-6-4",
       "ev": 1.73,
       "odds": "55.9",
       "prob_pct": "3.1",
-      "hit": "",
-      "payout": "",
+      "hit": "0",
+      "payout": "0",
       "final_odds": "55.9",
       "actual_ev": 1.727
     },
@@ -604,8 +604,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.3",
       "hit": "",
       "payout": "",
-      "final_odds": "32.4",
-      "actual_ev": 1.387
+      "final_odds": "29.5",
+      "actual_ev": 1.263
     }
   ],
   "pred_days": [
@@ -857,12 +857,12 @@ window.KYOTEI_DATA = {
           "race_no": "2",
           "start_time": "15:59",
           "combo": "2-1-3",
-          "actual_combo": "",
+          "actual_combo": "2-6-4",
           "ev": 1.73,
           "odds": "55.9",
           "prob_pct": "3.1",
-          "hit": "",
-          "payout": "",
+          "hit": "0",
+          "payout": "0",
           "final_odds": "55.9",
           "actual_ev": 1.727
         },
@@ -961,8 +961,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.3",
           "hit": "",
           "payout": "",
-          "final_odds": "32.4",
-          "actual_ev": 1.387
+          "final_odds": "29.5",
+          "actual_ev": 1.263
         }
       ]
     },
@@ -3361,13 +3361,13 @@ window.KYOTEI_DATA = {
           "race_no": "9",
           "start_time": "16:08",
           "combo": "1-5-2",
-          "actual_combo": "",
+          "actual_combo": "6-2-3",
           "ev": 2.7,
           "has_ev": true,
           "odds": "17.5",
           "prob_pct": "15.4",
-          "hit": "",
-          "payout": "",
+          "hit": "0",
+          "payout": "0",
           "final_odds": "14.5",
           "actual_ev": 2.236
         },
@@ -3376,13 +3376,13 @@ window.KYOTEI_DATA = {
           "race_no": "2",
           "start_time": "16:02",
           "combo": "1-4-3",
-          "actual_combo": "",
+          "actual_combo": "1-3-2",
           "ev": 0.83,
           "has_ev": false,
           "odds": "5.4",
           "prob_pct": "15.3",
-          "hit": "",
-          "payout": "",
+          "hit": "0",
+          "payout": "0",
           "final_odds": "5.6",
           "actual_ev": 0.858
         },
@@ -3533,8 +3533,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "11.9",
           "hit": "",
           "payout": "",
-          "final_odds": "4.9",
-          "actual_ev": 0.581
+          "final_odds": "5.0",
+          "actual_ev": 0.593
         },
         {
           "venue_name": "平和島",
@@ -3586,13 +3586,13 @@ window.KYOTEI_DATA = {
           "race_no": "2",
           "start_time": "15:57",
           "combo": "1-2-3",
-          "actual_combo": "",
+          "actual_combo": "2-1-4",
           "ev": 0.77,
           "has_ev": false,
           "odds": "6.7",
           "prob_pct": "11.4",
-          "hit": "",
-          "payout": "",
+          "hit": "0",
+          "payout": "0",
           "final_odds": "6.7",
           "actual_ev": 0.766
         },
@@ -5795,21 +5795,21 @@ window.KYOTEI_DATA = {
       "perf": {
         "all": {
           "label": "全件（EV不問）",
-          "bets": 474,
+          "bets": 479,
           "hits": 37,
-          "hit_rate": 7.8,
-          "invested": 47400,
+          "hit_rate": 7.7,
+          "invested": 47900,
           "returned": 45400,
-          "roi": -4.2
+          "roi": -5.2
         },
         "ev": {
           "label": "EV≥1.3のみ",
-          "bets": 302,
+          "bets": 304,
           "hits": 17,
           "hit_rate": 5.6,
-          "invested": 30200,
+          "invested": 30400,
           "returned": 29090,
-          "roi": -3.7
+          "roi": -4.3
         }
       }
     },
@@ -6278,8 +6278,8 @@ window.KYOTEI_DATA = {
           "odds": "4.9",
           "hit": "",
           "payout": "",
-          "final_odds": "4.9",
-          "actual_ev": 0.581
+          "final_odds": "5.0",
+          "actual_ev": 0.593
         },
         {
           "venue_name": "平和島",
