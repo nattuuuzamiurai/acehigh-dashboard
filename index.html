@@ -266,6 +266,14 @@
     #cb-opp-hand-wrap{display:none;}
     .cb-opp-hand-sec{background:var(--sur);border:1px solid #fecaca;border-radius:var(--r);padding:10px 14px;margin-bottom:6px;}
     .cb-opp-hand-lbl{font-size:.67em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#e03030;margin-bottom:8px;}
+    #pw-gate{position:fixed;inset:0;z-index:999999;background:var(--sb);display:flex;align-items:center;justify-content:center;padding:20px;}
+    #pw-gate-box{background:var(--sur);border-radius:16px;padding:36px 32px;width:100%;max-width:340px;box-shadow:0 20px 60px rgba(0,0,0,.35);text-align:center;}
+    #pw-gate-box .pg-co{font-size:.68em;color:var(--mut);letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;}
+    #pw-gate-box h1{font-size:1.05em;color:var(--txt);margin-bottom:22px;font-weight:800;}
+    #pw-gate-box input{width:100%;padding:11px 13px;border:1px solid var(--bor);border-radius:8px;font-size:.95em;margin-bottom:12px;box-sizing:border-box;}
+    #pw-gate-box button{width:100%;padding:11px;border:none;border-radius:8px;background:var(--acc);color:#fff;font-weight:700;font-size:.95em;cursor:pointer;}
+    #pw-gate-box button:hover{opacity:.9;}
+    #pw-gate-err{color:var(--red);font-size:.8em;margin-top:10px;min-height:1.2em;}
   </style>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -273,6 +281,54 @@
 <script src="../チャイポ/poker.js"></script>
 <script src="../チャイポ/montecarlo.js"></script>
 <body>
+
+<div id="pw-gate">
+  <div id="pw-gate-box">
+    <div class="pg-co">エースハイ合同会社</div>
+    <h1>🔒 パスワードを入力してください</h1>
+    <form id="pw-gate-form" autocomplete="off">
+      <input type="password" id="pw-gate-input" placeholder="パスワード" autofocus>
+      <button type="submit">開く</button>
+      <div id="pw-gate-err"></div>
+    </form>
+  </div>
+</div>
+<script>
+(function(){
+  var HASH = "6bb9ae425893281eff98ca463db7f886d06ccc5780e35cd68cd1d66dd43eda5a";
+  var EXPIRY_MS = 30 * 24 * 60 * 60 * 1000; // 30日
+  var gate = document.getElementById('pw-gate');
+
+  function sha256hex(str){
+    var buf = new TextEncoder().encode(str);
+    return crypto.subtle.digest('SHA-256', buf).then(function(hashBuf){
+      return Array.from(new Uint8Array(hashBuf)).map(function(b){ return b.toString(16).padStart(2,'0'); }).join('');
+    });
+  }
+
+  var until = parseInt(localStorage.getItem('dash_auth_until') || '0', 10);
+  if (until && Date.now() < until) {
+    gate.style.display = 'none';
+  }
+
+  document.getElementById('pw-gate-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    var val = document.getElementById('pw-gate-input').value;
+    sha256hex(val).then(function(hex){
+      if (hex === HASH) {
+        localStorage.setItem('dash_auth_until', String(Date.now() + EXPIRY_MS));
+        gate.style.display = 'none';
+      } else {
+        document.getElementById('pw-gate-err').textContent = 'パスワードが違います';
+        document.getElementById('pw-gate-input').value = '';
+        document.getElementById('pw-gate-input').focus();
+      }
+    }).catch(function(){
+      document.getElementById('pw-gate-err').textContent = 'この環境では認証を実行できません(https経由で開いてください)';
+    });
+  });
+})();
+</script>
 
 <div id="sidebar">
   <div class="sb-logo">
