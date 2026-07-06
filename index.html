@@ -765,7 +765,32 @@
 const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t39','t2','t4','t7','t5','t32','t34','t35','t33','t41','t42'];
 
 // PROJECTS_DATA_START
-const PROJECTS_DATA = [];
+const PROJECTS_DATA = [
+  {
+    id: "digital-estate",
+    name: "デジタル遺品整理（つなぐデジタル）",
+    category: "新規事業",
+    description: "写真・動画・重要メール等のデータ整理を入口に、仮想通貨・FX・証券・オンラインカジノ等の資産調査を行うデジタル遺品整理サービス。生前相談プランも展開。",
+    status: "進行中",
+    addedAt: "2026-06-19",
+    updatedAt: "2026-07-06",
+    color: "#4f8ef7",
+    reports: [
+      {
+        id: "report_20260706_pricing",
+        title: "料金プラン適正性検証レポート",
+        date: "2026-07-06",
+        summary: "基本パッケージ(1住宅/PC1台3万円＋発見資産の成功報酬10%)は実在競合GOODREI社と同水準で妥当と判定。生前相談料1万円は妥当だが、死後の家族依頼料3万円は業務範囲次第で過小のリスクを指摘し、段階料金化と追加サービス10案を提案。",
+        tags: ["市場調査", "料金設計", "デジタル終活"]
+      }
+    ],
+    highlights: [
+      "成功報酬10%は実在競合(GOODREI社)と完全一致、業界標準と判定",
+      "死後の家族依頼料3万円は業務範囲次第で過小設定のリスクあり、段階制を提案",
+      "サブスク引き継ぎレポート・写真アルバム化等、追加サービス10案を提示"
+    ]
+  }
+];
 // PROJECTS_DATA_END
 const SC = ['s-todo','s-wip','s-done','s-hold'];
 const SO = {'s-wip':0,'s-todo':1,'s-hold':2,'s-done':3};
