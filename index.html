@@ -781,7 +781,64 @@ const PROJECTS_DATA = [
         title: "料金プラン適正性検証レポート",
         date: "2026-07-06",
         summary: "基本パッケージ(1住宅/PC1台3万円＋発見資産の成功報酬10%)は実在競合GOODREI社と同水準で妥当と判定。生前相談料1万円は妥当だが、死後の家族依頼料3万円は業務範囲次第で過小のリスクを指摘し、段階料金化と追加サービス10案を提案。",
-        tags: ["市場調査", "料金設計", "デジタル終活"]
+        tags: ["市場調査", "料金設計", "デジタル終活"],
+        path: "../デジタル遺品整理/料金プラン適正性検証レポート.html"
+      },
+      {
+        id: "report_20260706_roadmap2day",
+        title: "直近2日間実行プランとロードマップ",
+        date: "2026-07-06",
+        summary: "直近2日間で実施すべき具体的タスク(士業書類・SNS投稿・Webサイト制作・葬儀社アポ取り等)をチェックリスト形式で整理し、その後のフェーズ別ロードマップにつなげた実行計画。",
+        tags: ["実行計画", "ロードマップ", "タスク管理"],
+        path: "../デジタル遺品整理/直近2日間実行プランとロードマップ.html"
+      },
+      {
+        id: "report_20260705_shigyou",
+        title: "士業との住み分け表",
+        date: "2026-07-05",
+        summary: "自社(データ整理＋資産調査)と司法書士・弁護士・税理士の役割分担を整理。弁護士法・司法書士法に抵触する代理行為は行わない方針を明文化し、案件ごとの引き継ぎフローを定義したA4印刷用資料。",
+        tags: ["法務", "士業連携", "業務設計"],
+        path: "../デジタル遺品整理/士業との住み分け表(A4印刷用).html"
+      },
+      {
+        id: "report_20260705_templates",
+        title: "業務書類テンプレート6種",
+        date: "2026-07-05",
+        summary: "業務委任契約書・秘密保持契約書(NDA)・作業完了報告書など、顧客対応に必要な業務書類6種のテンプレート一式。印刷用A4フォーマットで即実務利用可能。",
+        tags: ["契約書", "テンプレート", "業務書類"],
+        path: "../デジタル遺品整理/業務書類テンプレート6種(A4印刷用).html"
+      },
+      {
+        id: "report_20260620_roadmap",
+        title: "デジタル遺品整理事業 全フェーズロードマップ",
+        date: "2026-06-20",
+        summary: "福岡県での土台づくり→ブランド確立→九州・全国展開→フランチャイズ化という4フェーズの事業成長ロードマップ。フェーズごとの目標と最初のアクションを整理。",
+        tags: ["ロードマップ", "事業計画", "スケールアップ"],
+        path: "../デジタル遺品整理/ロードマップ全フェーズ資料.html"
+      },
+      {
+        id: "report_20260620_phase1",
+        title: "Phase 1 詳細実行計画",
+        date: "2026-06-20",
+        summary: "事業立ち上げフェーズ1の詳細計画。士業との住み分け設計・必須書類テンプレの整備・久留米SEOを意識したWebサイト構築・葬儀社への営業アポイント・SNS運用等をステップ別に整理。",
+        tags: ["事業計画", "フェーズ1", "営業戦略"],
+        path: "../デジタル遺品整理/フェーズ1詳細計画.html"
+      },
+      {
+        id: "report_20260619_password",
+        title: "スマホ パスワード解除 調査レポート",
+        date: "2026-06-19",
+        summary: "スマホのパスワードロック解除に関する技術・市場調査。iPhone/Android機種別の解除難易度、フォレンジック専門業者の料金相場、既存解除ツールの比較などをまとめた調査レポート。",
+        tags: ["技術調査", "パスワード解除", "市場調査"],
+        path: "../デジタル遺品整理/スマホパスワード解除調査レポート.html"
+      },
+      {
+        id: "report_20260619_market",
+        title: "市場調査レポート(福岡県)",
+        date: "2026-06-19",
+        summary: "福岡県を拠点とするデジタル遺品整理事業の市場調査。地域密着型vs全国展開の比較、福岡県の市場規模試算、競合分析、法的フレームワーク、フランチャイズ化を見据えたスケールアップ戦略を網羅。",
+        tags: ["市場調査", "地域戦略", "競合分析"],
+        path: "../デジタル遺品整理/market-research-report.html"
       }
     ],
     highlights: [
@@ -1090,7 +1147,7 @@ function renderProjects() {
     const rptHtml = latestRpt ? `
       <div class="proj-sect">最新レポート</div>
       <div class="proj-rpt">
-        <div class="proj-rpt-title">${latestRpt.title}</div>
+        <div class="proj-rpt-title">${latestRpt.path ? `<a href="${latestRpt.path}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">${latestRpt.title} <span style="font-size:.85em;opacity:.6;">↗</span></a>` : latestRpt.title}</div>
         <div class="proj-rpt-sum">${latestRpt.summary ? latestRpt.summary.slice(0,120)+(latestRpt.summary.length>120?'…':'') : ''}</div>
         <div style="font-size:.72em;color:var(--mut);margin-top:5px;">
           ${latestRpt.date||''}
@@ -1112,7 +1169,7 @@ function renderProjects() {
     const pastRpts = p.reports && p.reports.length > 1 ? p.reports.slice(1) : [];
     const pastHtml = pastRpts.map(r => `
       <div class="proj-rpt" style="margin-bottom:7px;">
-        <div class="proj-rpt-title">${r.title}</div>
+        <div class="proj-rpt-title">${r.path ? `<a href="${r.path}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">${r.title} <span style="font-size:.85em;opacity:.6;">↗</span></a>` : r.title}</div>
         <div class="proj-rpt-sum">${r.summary ? r.summary.slice(0,100)+(r.summary.length>100?'…':'') : ''}</div>
         <div style="font-size:.72em;color:var(--mut);margin-top:3px;">${r.date||''} ${(r.tags||[]).map(t=>`<span class="rp-tag">${t}</span>`).join('')}</div>
       </div>`).join('');
