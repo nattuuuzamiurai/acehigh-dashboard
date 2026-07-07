@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-07-07 21:01",
+  "updated": "2026-07-07 21:31",
   "today_label": "2026年7月7日",
   "pred_date": "2026/07/07",
   "pred_is_today": true,
@@ -3162,28 +3162,28 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "1.15": {
-          "bets": 662,
+          "bets": 665,
           "hits": 19,
           "hit_rate": 2.9,
-          "invested": 66200,
+          "invested": 66500,
           "returned": 39390,
-          "roi": -40.5
+          "roi": -40.8
         },
         "1.2": {
-          "bets": 655,
+          "bets": 658,
           "hits": 19,
           "hit_rate": 2.9,
-          "invested": 65500,
+          "invested": 65800,
           "returned": 39390,
-          "roi": -39.9
+          "roi": -40.1
         },
         "1.3": {
-          "bets": 637,
+          "bets": 640,
           "hits": 18,
           "hit_rate": 2.8,
-          "invested": 63700,
+          "invested": 64000,
           "returned": 38240,
-          "roi": -40.0
+          "roi": -40.2
         }
       }
     },
