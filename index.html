@@ -736,6 +736,11 @@
         <h2>担当プロジェクト</h2>
       </div>
       <div id="aiorg-projects" class="mt12"></div>
+      <div class="sh mt28">
+        <h2>Claude Code 使用状況</h2>
+        <span style="font-size:.78em;color:var(--mut);" id="aiorg-usage-asof">概算値・15秒間隔で自動更新</span>
+      </div>
+      <div class="g3 mt12" id="aiorg-usage-stats"></div>
     </div>
 
     <!-- ===== 競艇予測 ===== -->
@@ -1323,10 +1328,30 @@ function toggleProjDetail(id) {
 }
 
 // ===== AI組織 =====
+// ai_status.json をポーリングして得たライブ状況(お手軽版・15秒間隔)。取得できるまではnull。
+let AI_LIVE_STATUS = null;
+
+function aiEsc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+
+async function pollAIStatus() {
+  try {
+    const res = await fetch('ai_status.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) return;
+    AI_LIVE_STATUS = await res.json();
+    renderAIOrg();
+  } catch (e) {
+    // 取得失敗時は既存の静的表示のまま(握りつぶす)
+  }
+}
+
 function renderAIOrg() {
   const D = AI_ORG_DATA;
   const totalEmp = D.departments.reduce((s,d) => s + d.employees, 0);
   const activeDept = D.departments.filter(d => d.current.length > 0).length;
+  const live = AI_LIVE_STATUS;
+  const liveDepts = (live && live.departments) || {};
 
   const statsEl = document.getElementById('aiorg-stats');
   if (statsEl) statsEl.innerHTML =
@@ -1345,21 +1370,58 @@ function renderAIOrg() {
             <div class="proj-rpt-sum">${c.note}</div>
           </div>`).join('')
         : `<div class="proj-rpt"><div class="proj-rpt-sum" style="color:var(--mut);">待機中 — 新しい指示待ちです</div></div>`;
+
+      const ld = liveDepts[d.agent];
+      let liveBadge = '';
+      let liveUpdated = '';
+      if (ld) {
+        const task = aiEsc(ld.task) || '(タスク内容なし)';
+        if (ld.status === 'running') {
+          liveBadge = `<span style="background:#16a34a;color:#fff;font-size:.72em;padding:2px 8px;border-radius:20px;font-weight:600;">🟢 稼働中: ${task}</span>`;
+        } else {
+          liveBadge = `<span style="background:rgba(255,255,255,.22);color:#fff;font-size:.72em;padding:2px 8px;border-radius:20px;font-weight:600;">⚪ 待機中(最終: ${task})</span>`;
+        }
+        const ts = ld.status === 'running' ? ld.startedAt : (ld.finishedAt || ld.startedAt);
+        if (ts) {
+          const dt = new Date(ts);
+          if (!isNaN(dt.getTime())) liveUpdated = `<div style="font-size:.72em;color:var(--mut);margin-top:8px;">最終更新: ${dt.toLocaleTimeString('ja-JP')}</div>`;
+        }
+      }
+
       return `<div class="proj-card">
         <div class="proj-hdr" style="background:linear-gradient(135deg,${d.color},${d.color}bb)">
           <div class="proj-name">${d.name}</div>
           <div class="proj-meta">
             <span style="background:rgba(255,255,255,.22);color:#fff;font-size:.72em;padding:2px 8px;border-radius:20px;font-weight:600;">AI社員 ${d.employees}名</span>
             <span style="color:rgba(255,255,255,.75)">${d.agent}</span>
+            ${liveBadge}
           </div>
         </div>
         <div class="proj-body">
           <p class="proj-desc">${d.role}</p>
           <div class="proj-sect">対応中</div>
           ${curHtml}
+          ${liveUpdated}
         </div>
       </div>`;
     }).join('');
+  }
+
+  const usageEl = document.getElementById('aiorg-usage-stats');
+  const asOfEl = document.getElementById('aiorg-usage-asof');
+  if (usageEl) {
+    const u = live && live.usage;
+    if (u) {
+      const inTok = (u.todayInputTokens || 0).toLocaleString('ja-JP');
+      const outTok = (u.todayOutputTokens || 0).toLocaleString('ja-JP');
+      usageEl.innerHTML =
+        `<div class="card"><div class="c-label">本日の入力トークン(概算)</div><div class="c-val">${inTok}</div><div class="c-sub">ローカル集計・全プロジェクト合算</div></div>` +
+        `<div class="card"><div class="c-label">本日の出力トークン(概算)</div><div class="c-val">${outTok}</div><div class="c-sub">ローカル集計・全プロジェクト合算</div></div>` +
+        `<div class="card"><div class="c-label">最終集計</div><div class="c-val" style="font-size:1.1em;">${u.asOf ? new Date(u.asOf).toLocaleTimeString('ja-JP') : '—'}</div><div class="c-sub">公式な使用率%は取得不可のため実数を表示</div></div>`;
+      if (asOfEl) asOfEl.textContent = '15秒間隔で自動更新・概算値(公式APIなし)';
+    } else {
+      usageEl.innerHTML = `<div class="empty">まだ使用量データを取得していません</div>`;
+    }
   }
 
   const projEl = document.getElementById('aiorg-projects');
@@ -2203,6 +2265,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   refreshOverview();
   renderProjectStats();
   renderProjects();
+
+  // AI組織ページのライブ表示(お手軽版ポーリング・15秒間隔)
+  pollAIStatus();
+  setInterval(pollAIStatus, 15000);
 
 });
 
