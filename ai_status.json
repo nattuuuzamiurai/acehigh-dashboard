@@ -1,9 +1,16 @@
 {
-  "departments": {},
-  "usage": {
-    "todayInputTokens": 197309,
-    "todayOutputTokens": 869077,
-    "asOf": "2026-07-09T18:56:25.899Z"
+  "departments": {
+    "qa-lead": {
+      "status": "idle",
+      "task": "つなぐデジタル資料の整合性チェック",
+      "startedAt": "2026-07-09T18:59:49.224Z",
+      "finishedAt": "2026-07-09T18:59:52.843Z"
+    }
   },
-  "updatedAt": "2026-07-09T18:56:25.899Z"
+  "usage": {
+    "todayInputTokens": 199574,
+    "todayOutputTokens": 931455,
+    "asOf": "2026-07-09T18:59:57.801Z"
+  },
+  "updatedAt": "2026-07-09T18:59:57.801Z"
 }
