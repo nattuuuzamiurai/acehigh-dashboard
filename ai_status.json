@@ -1,9 +1,16 @@
 {
-  "departments": {},
-  "usage": {
-    "todayInputTokens": 141193,
-    "todayOutputTokens": 622815,
-    "asOf": "2026-07-09T18:37:55.344Z"
+  "departments": {
+    "__hooktest__": {
+      "status": "idle",
+      "task": "パイプテスト",
+      "startedAt": "2026-07-09T18:42:22.786Z",
+      "finishedAt": "2026-07-09T18:42:22.824Z"
+    }
   },
-  "updatedAt": "2026-07-09T18:37:55.344Z"
+  "usage": {
+    "todayInputTokens": 144312,
+    "todayOutputTokens": 671473,
+    "asOf": "2026-07-09T18:42:22.900Z"
+  },
+  "updatedAt": "2026-07-09T18:42:22.900Z"
 }
