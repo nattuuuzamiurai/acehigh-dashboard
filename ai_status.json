@@ -1,9 +1,9 @@
 {
   "departments": {},
   "usage": {
-    "todayInputTokens": 195060,
-    "todayOutputTokens": 824263,
-    "asOf": "2026-07-09T18:50:44.809Z"
+    "todayInputTokens": 195412,
+    "todayOutputTokens": 839631,
+    "asOf": "2026-07-09T18:52:23.946Z"
   },
-  "updatedAt": "2026-07-09T18:50:44.809Z"
+  "updatedAt": "2026-07-09T18:52:23.946Z"
 }
