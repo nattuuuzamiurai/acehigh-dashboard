@@ -342,6 +342,7 @@
     <div class="ni" onclick="showPage('tasks')"><span class="ni-ic">✓</span>タスク管理</div>
     <div class="ni" onclick="showPage('revenue')"><span class="ni-ic">¥</span>収益管理</div>
     <div class="ni" onclick="showPage('projects')"><span class="ni-ic">◈</span>プロジェクト管理</div>
+    <div class="ni" onclick="showPage('aiorg')"><span class="ni-ic">🏢</span>AI組織</div>
     <div class="ng">ツール</div>
     <div class="ni" onclick="showPage('kyotei')"><span class="ni-ic">🚤</span>競艇予測</div>
     <div class="ni" onclick="showPage('chaipo')"><span class="ni-ic">🃏</span>チャイポ OFC</div>
@@ -488,6 +489,19 @@
               <div><label>概要・説明</label><textarea oninput="saveDetail('t39','desc',this.value)" id="t39-desc">1週間の結果をもとに予測レースの改善を行う</textarea></div>
               <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t39','tool',this.value)" id="t39-tool"></textarea></div>
               <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t39','next',this.value)" id="t39-next" placeholder="具体的な次の一手..."></div>
+            </div></td></tr>
+            <!-- t43 -->
+            <tr class="tr" data-id="t43" data-priority="2" data-cat="新規事業">
+              <td><div class="task-name" onclick="toggleDetail('t43')" ondblclick="editTaskName(event,'t43')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>Xアカウント運用（つなぐデジタル）</div></td>
+              <td><span class="cat-tag">新規事業</span></td><td><span class="badge mid">中</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t43')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t43')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t43-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t43')"></td>
+            </tr>
+            <tr class="dr" id="detail-t43"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t43','desc',this.value)" id="t43-desc">フェーズ1計画に基づき、Xアカウントを新規作成しプロフィール・固定ツイート・初投稿を設定する。将来的に投稿の自動化(X API従量課金 or GitHub Actions等)を検討。</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t43','tool',this.value)" id="t43-tool">X API（従量課金）／GitHub Actions／Playwright（検討中）</textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t43','next',this.value)" id="t43-next" placeholder="具体的な次の一手..." value="アカウント作成・プロフィール文（140字以内）設定・固定ツイート作成"></div>
             </div></td></tr>
             <!-- t2 -->
             <tr class="tr" data-id="t2" data-priority="3" data-cat="新規事業">
@@ -710,6 +724,20 @@
       <div class="proj-grid mt12" id="proj-grid"></div>
     </div>
 
+    <!-- ===== AI組織 ===== -->
+    <div class="page" id="page-aiorg">
+      <div class="g4" id="aiorg-stats" style="margin-bottom:18px;"></div>
+      <div class="sh">
+        <h2>部署・AI社員</h2>
+        <span style="font-size:.78em;color:var(--mut);">Claude Code サブエージェントが各部署を担当</span>
+      </div>
+      <div class="proj-grid mt12" id="aiorg-grid"></div>
+      <div class="sh mt28">
+        <h2>担当プロジェクト</h2>
+      </div>
+      <div id="aiorg-projects" class="mt12"></div>
+    </div>
+
     <!-- ===== 競艇予測 ===== -->
     <div class="page" id="page-kyotei">
       <div id="kyotei-root"></div>
@@ -818,7 +846,7 @@
 </div>
 
 <script>
-const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t39','t2','t4','t7','t5','t32','t34','t35','t33','t41','t42'];
+const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t39','t43','t2','t4','t7','t5','t32','t34','t35','t33','t41','t42'];
 
 // PROJECTS_DATA_START
 const PROJECTS_DATA = [
@@ -914,6 +942,32 @@ const PROJECTS_DATA = [
   }
 ];
 // PROJECTS_DATA_END
+
+// AI_ORG_DATA_START
+// cloude会社/.claude/agents/ の部署サブエージェントと連動する組織データ。
+// 部署・AI社員数・担当プロジェクトを手動更新する(cloude会社/projects/ の内容と合わせる)。
+const AI_ORG_DATA = {
+  updatedAt: "2026-07-09",
+  departments: [
+    { id:'planning', name:'企画部',           agent:'planning-lead',   color:'#4f8ef7', role:'新規事業・コンテンツの企画立案、市場/競合/キーワード調査、収益化戦略の設計', employees:1, current:[] },
+    { id:'content',  name:'コンテンツ制作部', agent:'content-writer',  color:'#1aaa80', role:'記事・LP・広告文・SNS投稿などの執筆', employees:1, current:[] },
+    { id:'dev',      name:'開発部',           agent:'dev-lead',        color:'#7c3aed', role:'自動化スクリプト・サイト構築・公開パイプライン開発', employees:1, current:[
+      { project:'競艇予測ツール', note:'スクレイパー・スコアリング・MLモデル・自動化パイプラインの保守' }
+    ] },
+    { id:'qa',       name:'品質管理部',       agent:'qa-lead',         color:'#d97706', role:'事実確認・品質チェック・テスト実行', employees:1, current:[
+      { project:'競艇予測ツール', note:'予測精度・バックテスト結果の検証' }
+    ] },
+    { id:'review',   name:'レビュー部',       agent:'review-lead',     color:'#e05050', role:'公開/デプロイ可否の最終判定', employees:1, current:[] },
+    { id:'marketing',name:'マーケティング部', agent:'marketing-lead',  color:'#ec4899', role:'SEO最適化・アクセス解析・収益最大化', employees:1, current:[
+      { project:'競艇予測ツール', note:'週次ROI・的中率トレンドの分析' }
+    ] }
+  ],
+  projects: [
+    { name:'競艇予測ツール', status:'運用中(自動実行)', departments:['開発部','品質管理部','マーケティング部'] }
+  ]
+};
+// AI_ORG_DATA_END
+
 const SC = ['s-todo','s-wip','s-done','s-hold'];
 const SO = {'s-wip':0,'s-todo':1,'s-hold':2,'s-done':3};
 const PO = {'1':0,'2':1,'3':2,'4':3};
@@ -925,13 +979,14 @@ function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
   if (name==='overview') refreshOverview();
   if (name==='revenue') { renderRevenues(); renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown(); }
   if (name==='projects') { renderProjectStats(); renderProjects(); }
+  if (name==='aiorg') renderAIOrg();
   if (name==='kyotei') renderKyotei();
   if (name==='chaipo-board') cbRenderBoard();
 }
@@ -1265,6 +1320,56 @@ function renderProjects() {
 function toggleProjDetail(id) {
   const el = document.getElementById('proj-detail-'+id);
   if (el) el.classList.toggle('open');
+}
+
+// ===== AI組織 =====
+function renderAIOrg() {
+  const D = AI_ORG_DATA;
+  const totalEmp = D.departments.reduce((s,d) => s + d.employees, 0);
+  const activeDept = D.departments.filter(d => d.current.length > 0).length;
+
+  const statsEl = document.getElementById('aiorg-stats');
+  if (statsEl) statsEl.innerHTML =
+    `<div class="chip"><div class="n" style="color:var(--txt)">${D.departments.length}</div><div class="l">部署</div></div>` +
+    `<div class="chip"><div class="n" style="color:var(--acc)">${totalEmp}</div><div class="l">AI社員</div></div>` +
+    `<div class="chip"><div class="n wip">${D.projects.length}</div><div class="l">担当プロジェクト</div></div>` +
+    `<div class="chip"><div class="n done">${activeDept}</div><div class="l">稼働中の部署</div></div>`;
+
+  const grid = document.getElementById('aiorg-grid');
+  if (grid) {
+    grid.innerHTML = D.departments.map(d => {
+      const curHtml = d.current.length
+        ? d.current.map(c => `
+          <div class="proj-rpt" style="margin-bottom:7px;">
+            <div class="proj-rpt-title">${c.project}</div>
+            <div class="proj-rpt-sum">${c.note}</div>
+          </div>`).join('')
+        : `<div class="proj-rpt"><div class="proj-rpt-sum" style="color:var(--mut);">待機中 — 新しい指示待ちです</div></div>`;
+      return `<div class="proj-card">
+        <div class="proj-hdr" style="background:linear-gradient(135deg,${d.color},${d.color}bb)">
+          <div class="proj-name">${d.name}</div>
+          <div class="proj-meta">
+            <span style="background:rgba(255,255,255,.22);color:#fff;font-size:.72em;padding:2px 8px;border-radius:20px;font-weight:600;">AI社員 ${d.employees}名</span>
+            <span style="color:rgba(255,255,255,.75)">${d.agent}</span>
+          </div>
+        </div>
+        <div class="proj-body">
+          <p class="proj-desc">${d.role}</p>
+          <div class="proj-sect">対応中</div>
+          ${curHtml}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  const projEl = document.getElementById('aiorg-projects');
+  if (projEl) {
+    projEl.innerHTML = D.projects.length
+      ? `<div class="pi-list">` + D.projects.map(p => `
+        <div class="pi"><span class="pi-name">${p.name}</span><span class="badge routine">${p.status}</span><span class="pi-cat">${p.departments.join(' / ')}</span></div>
+      `).join('') + `</div>`
+      : `<div class="empty">まだ担当プロジェクトはありません</div>`;
+  }
 }
 
 // ===== OVERVIEW =====
