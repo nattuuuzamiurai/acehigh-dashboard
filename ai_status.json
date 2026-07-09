@@ -5,12 +5,18 @@
       "task": "つなぐデジタル資料の整合性チェック",
       "startedAt": "2026-07-09T18:59:49.224Z",
       "finishedAt": "2026-07-09T18:59:52.843Z"
+    },
+    "dev-lead": {
+      "status": "idle",
+      "task": "つなぐデジタルWebサイト構築",
+      "startedAt": "2026-07-09T22:53:01.389Z",
+      "finishedAt": "2026-07-09T22:53:03.933Z"
     }
   },
   "usage": {
-    "todayInputTokens": 208077,
-    "todayOutputTokens": 1010732,
-    "asOf": "2026-07-09T19:07:56.840Z"
+    "todayInputTokens": 208784,
+    "todayOutputTokens": 1038853,
+    "asOf": "2026-07-09T22:53:20.435Z"
   },
-  "updatedAt": "2026-07-09T19:07:56.840Z"
+  "updatedAt": "2026-07-09T22:53:20.435Z"
 }
