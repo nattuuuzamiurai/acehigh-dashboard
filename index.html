@@ -205,6 +205,31 @@
     .proj-detail.open { display:block; }
     .proj-empty { color:var(--mut); font-size:.87em; text-align:center; padding:32px 20px; grid-column:1/-1; background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); }
 
+    /* AI組織: 部署ライブステータス */
+    .aiorg-live-row { display:flex; align-items:center; gap:8px; background:var(--sur2); border:1px solid var(--bor); border-radius:8px; padding:8px 11px; margin-bottom:11px; }
+    .aiorg-live-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; background:var(--mut); }
+    .aiorg-live-dot.run { background:#0ca30c; animation:aiorgPulse 1.6s ease-in-out infinite; }
+    @keyframes aiorgPulse {
+      0%, 100% { transform:scale(1); opacity:1; }
+      50% { transform:scale(1.35); opacity:.55; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .aiorg-live-dot.run { animation:none; }
+    }
+    .aiorg-live-label { font-size:.78em; font-weight:700; flex-shrink:0; color:var(--mut); }
+    .aiorg-live-label.run { color:#0ca30c; }
+    .aiorg-live-task { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:.81em; color:var(--mut); }
+    .aiorg-live-time { flex-shrink:0; font-size:.74em; color:var(--mut); }
+
+    /* AI組織: トークン使用量バー */
+    .aiorg-bar-row { display:flex; align-items:center; padding-right:112px; margin-bottom:18px; }
+    .aiorg-bar-row:last-of-type { margin-bottom:0; }
+    .aiorg-bar-track { position:relative; flex:1; height:22px; background:var(--sur2); border-radius:4px; }
+    .aiorg-bar-fill { position:relative; height:100%; min-width:3px; border-radius:0 4px 4px 0; transition:width .5s ease; }
+    .aiorg-bar-fill.aiorg-in  { background:var(--acc); }
+    .aiorg-bar-fill.aiorg-out { background:var(--grn); }
+    .aiorg-bar-val { position:absolute; left:100%; top:50%; transform:translate(9px,-50%); white-space:nowrap; font-size:.82em; font-weight:700; color:var(--txt); }
+
     /* SCROLL */
     ::-webkit-scrollbar { width:5px; }
     ::-webkit-scrollbar-track { background:transparent; }
@@ -802,7 +827,7 @@
         <h2>Claude Code 使用状況</h2>
         <span style="font-size:.78em;color:var(--mut);" id="aiorg-usage-asof">概算値・15秒間隔で自動更新</span>
       </div>
-      <div class="g3 mt12" id="aiorg-usage-stats"></div>
+      <div class="mt12" id="aiorg-usage-stats"></div>
     </div>
 
     <!-- ===== 競艇予測 ===== -->
@@ -1400,16 +1425,31 @@ function toggleProjDetail(id) {
 }
 
 // ===== AI組織 =====
-// ai_status.json をポーリングして得たライブ状況(お手軽版・15秒間隔)。取得できるまではnull。
+// ai_agent_status.json をポーリングして得たライブ状況(お手軽版・15秒間隔)。取得できるまではnull。
+// (人事部のセッション監視が使う ai_status.json とは別ファイル。衝突回避のため分離)
 let AI_LIVE_STATUS = null;
 
 function aiEsc(s) {
   return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 }
 
+// 相対時間表示(1分未満:たった今 / 60分未満:n分前 / 24時間未満:n時間前 / それ以上:日付)
+function aiRelTime(ts) {
+  if (!ts) return '';
+  const d = new Date(ts);
+  if (isNaN(d.getTime())) return '';
+  const diffSec = Math.floor((Date.now() - d.getTime()) / 1000);
+  if (diffSec < 60) return 'たった今';
+  const diffMin = Math.floor(diffSec / 60);
+  if (diffMin < 60) return diffMin + '分前';
+  const diffHour = Math.floor(diffMin / 60);
+  if (diffHour < 24) return diffHour + '時間前';
+  return d.toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
+}
+
 async function pollAIStatus() {
   try {
-    const res = await fetch('ai_status.json?t=' + Date.now(), { cache: 'no-store' });
+    const res = await fetch('ai_agent_status.json?t=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) return;
     AI_LIVE_STATUS = await res.json();
     renderAIOrg();
@@ -1444,20 +1484,18 @@ function renderAIOrg() {
         : `<div class="proj-rpt"><div class="proj-rpt-sum" style="color:var(--mut);">待機中 — 新しい指示待ちです</div></div>`;
 
       const ld = liveDepts[d.agent];
-      let liveBadge = '';
-      let liveUpdated = '';
+      let liveRow = '';
       if (ld) {
+        const running = ld.status === 'running';
         const task = aiEsc(ld.task) || '(タスク内容なし)';
-        if (ld.status === 'running') {
-          liveBadge = `<span style="background:#16a34a;color:#fff;font-size:.72em;padding:2px 8px;border-radius:20px;font-weight:600;">🟢 稼働中: ${task}</span>`;
-        } else {
-          liveBadge = `<span style="background:rgba(255,255,255,.22);color:#fff;font-size:.72em;padding:2px 8px;border-radius:20px;font-weight:600;">⚪ 待機中(最終: ${task})</span>`;
-        }
-        const ts = ld.status === 'running' ? ld.startedAt : (ld.finishedAt || ld.startedAt);
-        if (ts) {
-          const dt = new Date(ts);
-          if (!isNaN(dt.getTime())) liveUpdated = `<div style="font-size:.72em;color:var(--mut);margin-top:8px;">最終更新: ${dt.toLocaleTimeString('ja-JP')}</div>`;
-        }
+        const ts = running ? ld.startedAt : (ld.finishedAt || ld.startedAt);
+        const relTime = aiRelTime(ts);
+        liveRow = `<div class="aiorg-live-row">
+            <span class="aiorg-live-dot ${running ? 'run' : ''}"></span>
+            <span class="aiorg-live-label ${running ? 'run' : ''}">${running ? '稼働中' : '待機中'}</span>
+            <span class="aiorg-live-task" title="${task}">${task}</span>
+            ${relTime ? `<span class="aiorg-live-time">${relTime}</span>` : ''}
+          </div>`;
       }
 
       return `<div class="proj-card">
@@ -1466,14 +1504,13 @@ function renderAIOrg() {
           <div class="proj-meta">
             <span style="background:rgba(255,255,255,.22);color:#fff;font-size:.72em;padding:2px 8px;border-radius:20px;font-weight:600;">AI社員 ${d.employees}名</span>
             <span style="color:rgba(255,255,255,.75)">${d.agent}</span>
-            ${liveBadge}
           </div>
         </div>
         <div class="proj-body">
           <p class="proj-desc">${d.role}</p>
+          ${liveRow}
           <div class="proj-sect">対応中</div>
           ${curHtml}
-          ${liveUpdated}
         </div>
       </div>`;
     }).join('');
@@ -1484,12 +1521,23 @@ function renderAIOrg() {
   if (usageEl) {
     const u = live && live.usage;
     if (u) {
-      const inTok = (u.todayInputTokens || 0).toLocaleString('ja-JP');
-      const outTok = (u.todayOutputTokens || 0).toLocaleString('ja-JP');
-      usageEl.innerHTML =
-        `<div class="card"><div class="c-label">本日の入力トークン(概算)</div><div class="c-val">${inTok}</div><div class="c-sub">ローカル集計・全プロジェクト合算</div></div>` +
-        `<div class="card"><div class="c-label">本日の出力トークン(概算)</div><div class="c-val">${outTok}</div><div class="c-sub">ローカル集計・全プロジェクト合算</div></div>` +
-        `<div class="card"><div class="c-label">最終集計</div><div class="c-val" style="font-size:1.1em;">${u.asOf ? new Date(u.asOf).toLocaleTimeString('ja-JP') : '—'}</div><div class="c-sub">公式な使用率%は取得不可のため実数を表示</div></div>`;
+      const inTok = u.todayInputTokens || 0;
+      const outTok = u.todayOutputTokens || 0;
+      const maxTok = Math.max(inTok, outTok, 1);
+      const inPct = (inTok / maxTok * 100).toFixed(1);
+      const outPct = (outTok / maxTok * 100).toFixed(1);
+      usageEl.innerHTML = `<div class="card">
+          <div class="c-label">本日のトークン使用量(概算・ローカル集計・全プロジェクト合算)</div>
+          <div style="margin-top:12px;">
+            <div class="aiorg-bar-row">
+              <div class="aiorg-bar-track"><div class="aiorg-bar-fill aiorg-in" style="width:${inPct}%"><span class="aiorg-bar-val">入力 ${inTok.toLocaleString('ja-JP')}</span></div></div>
+            </div>
+            <div class="aiorg-bar-row">
+              <div class="aiorg-bar-track"><div class="aiorg-bar-fill aiorg-out" style="width:${outPct}%"><span class="aiorg-bar-val">出力 ${outTok.toLocaleString('ja-JP')}</span></div></div>
+            </div>
+          </div>
+          <div class="c-sub">最終集計: ${u.asOf ? aiRelTime(u.asOf) : '—'}(公式な使用率%は取得不可のため実数を表示)</div>
+        </div>`;
       if (asOfEl) asOfEl.textContent = '15秒間隔で自動更新・概算値(公式APIなし)';
     } else {
       usageEl.innerHTML = `<div class="empty">まだ使用量データを取得していません</div>`;
