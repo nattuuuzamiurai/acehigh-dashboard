@@ -18,5 +18,10 @@
     "todayOutputTokens": 1190806,
     "asOf": "2026-07-10T01:57:05.718Z"
   },
-  "updatedAt": "2026-07-10T01:57:05.718Z"
+  "updatedAt": "2026-07-10T02:26:54.810Z",
+  "sessionWatch": {
+    "stalled": false,
+    "count": 0,
+    "updatedAt": "2026-07-10T02:26:54.805Z"
+  }
 }
