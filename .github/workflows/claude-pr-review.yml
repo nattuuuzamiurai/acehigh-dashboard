@@ -1,0 +1,63 @@
+name: Claude PR Review
+
+# PR が作成・更新されたときに Claude が自動でコードレビューを行い、
+# 問題がなければ承認 (Approve)、問題があれば変更要求 (Request changes) として
+# 修正項目のコメントを投稿します。
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+# 同一 PR で新しい push があった場合は、進行中のレビューをキャンセルして最新版のみレビュー
+concurrency:
+  group: claude-pr-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  id-token: write
+
+jobs:
+  claude-review:
+    # ドラフト PR はレビュー対象外（ready_for_review になった時点でレビュー）
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Claude Code Review
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            あなたはこのリポジトリのコードレビュー担当者です。
+            このプルリクエスト (#${{ github.event.pull_request.number }}) の差分をレビューし、
+            GitHub 上で正式なレビュー (review) を1回だけ提出してください。
+
+            ## レビューの観点
+            - バグ・ロジックの誤り・エッジケースの考慮漏れ
+            - セキュリティ上の問題（機密情報の混入、XSS、インジェクション等）
+            - 明らかなパフォーマンス上の問題
+            - 可読性・保守性（命名、重複、過度な複雑さ）
+            - 既存コードのスタイル・規約との一貫性
+
+            このリポジトリは主に index.html / kyotei_data.js から成る
+            静的な競艇ダッシュボードです。過度に細かい指摘や好みの問題は避け、
+            本質的な問題に絞ってレビューしてください。
+
+            ## 判定と提出方法
+            - 重大な問題が見つからなければ、レビューを **APPROVE（承認）** として提出し、
+              本文に承認理由を簡潔に記載してください。
+            - 修正が必要な問題があれば、レビューを **REQUEST_CHANGES（変更要求）** として提出し、
+              本文に修正項目を箇条書きで具体的に記載してください。
+              可能な限り該当ファイル・行への行コメント（インラインコメント）も付けてください。
+            - 判断に迷う軽微な指摘は COMMENT として残しても構いません。
+
+            すべての指摘・コメント・本文は日本語で記述してください。
+          # レビュー提出とコメントに必要なツールを許可
+          claude_args: |
+            --allowedTools "Read,Grep,Glob,Bash(git diff:*),Bash(git log:*),mcp__github__get_pull_request,mcp__github__get_pull_request_diff,mcp__github__get_pull_request_files,mcp__github__pull_request_review_write,mcp__github__add_comment_to_pending_review,mcp__github__add_issue_comment,mcp__github__get_file_contents"
