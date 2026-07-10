@@ -11,12 +11,18 @@
       "task": "つなぐデジタルWebサイト構築",
       "startedAt": "2026-07-09T22:53:01.389Z",
       "finishedAt": "2026-07-09T22:53:03.933Z"
+    },
+    "content-writer": {
+      "status": "idle",
+      "task": "送金操作方針の全資料統一",
+      "startedAt": "2026-07-10T02:46:20.602Z",
+      "finishedAt": "2026-07-10T02:46:37.820Z"
     }
   },
   "usage": {
-    "todayInputTokens": 220728,
-    "todayOutputTokens": 1193997,
-    "asOf": "2026-07-10T02:27:23.073Z"
+    "todayInputTokens": 240124,
+    "todayOutputTokens": 1215805,
+    "asOf": "2026-07-10T02:47:32.051Z"
   },
-  "updatedAt": "2026-07-10T02:27:23.073Z"
+  "updatedAt": "2026-07-10T02:47:32.051Z"
 }
