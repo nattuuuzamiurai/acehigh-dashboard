@@ -2,9 +2,9 @@
   "departments": {
     "qa-lead": {
       "status": "idle",
-      "task": "つなぐデジタルWebサイト内容チェック",
-      "startedAt": "2026-07-09T23:03:34.277Z",
-      "finishedAt": "2026-07-09T23:03:36.976Z"
+      "task": "送金操作方針の最終整合性チェック",
+      "startedAt": "2026-07-10T02:56:03.413Z",
+      "finishedAt": "2026-07-10T02:56:29.132Z"
     },
     "dev-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 240124,
-    "todayOutputTokens": 1215805,
-    "asOf": "2026-07-10T02:47:32.051Z"
+    "todayInputTokens": 240234,
+    "todayOutputTokens": 1257131,
+    "asOf": "2026-07-10T02:56:33.296Z"
   },
-  "updatedAt": "2026-07-10T02:47:32.051Z"
+  "updatedAt": "2026-07-10T02:56:33.296Z"
 }
