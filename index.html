@@ -1737,17 +1737,23 @@ function renderDerivedPredTable(key) {
     `<button onclick="window.derivedDayNav('${key}',${dir})" ${enabled?'':'disabled'}
       style="padding:4px 12px;border-radius:6px;border:1px solid var(--bor);background:${enabled?'var(--sur)':'var(--sur2)'};
              color:${enabled?'var(--txt)':'var(--mut)'};cursor:${enabled?'pointer':'default'};font-size:.8em;font-family:inherit;">${label}</button>`;
+  // レース単位に何点かけているか集計（複数点買いを明示するため）
+  const raceBets = {};
+  preds.forEach(p => { const rk = p.venue_name + '|' + p.race_no; raceBets[rk] = (raceBets[rk] || 0) + 1; });
   const rows = preds.map(p => {
     const evBg = p.ev >= 2.0 ? '#e8f5e9;color:#1b5e20' : p.ev >= 1.5 ? '#fff9c4;color:#f57f17' : '#fce4ec;color:#880e4f';
     const actualHtml = p.actual_combo ? `<code style="color:#7b1fa2;font-size:.9em;font-weight:700;">${p.actual_combo}</code>` : `<span style="color:var(--mut);">—</span>`;
     const fo = p.final_odds ? p.final_odds + '倍' : (p.odds ? p.odds + '倍(予測)' : '—');
     const hitHtml = p.hit === '1' ? `<span style="color:var(--grn);font-weight:700;">✓ 的中</span>` : p.hit === '0' ? `<span style="color:var(--red);">✗</span>` : `<span style="color:var(--mut);">⏳</span>`;
     const payHtml = p.hit === '1' ? `<span style="font-weight:700;color:var(--grn);">${p.payout ? '¥'+p.payout.toLocaleString() : fo}</span>` : p.hit === '0' ? `<span style="color:var(--red);font-size:.85em;">外れ</span>` : `<span style="color:var(--mut);">⏳</span>`;
-    return `<tr>
+    const nb = raceBets[p.venue_name + '|' + p.race_no] || 1;
+    const betsBadge = nb > 1 ? `<span style="display:inline-block;margin-left:5px;background:#fff3e0;color:#e65100;border:1px solid #ffcc80;padding:1px 6px;border-radius:20px;font-size:.7em;font-weight:700;white-space:nowrap;">${nb}点買い</span>` : '';
+    const rowBg = nb > 1 ? ' style="background:#fffdf5;"' : '';
+    return `<tr${rowBg}>
       <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
       <td style="padding:8px 10px;">${p.race_no}R</td>
       <td style="padding:8px 10px;">${p.start_time}</td>
-      <td style="padding:8px 10px;"><code style="color:#1a237e;font-size:.9em;">${p.combo}</code></td>
+      <td style="padding:8px 10px;white-space:nowrap;"><code style="color:#1a237e;font-size:.9em;">${p.combo}</code>${betsBadge}</td>
       <td style="padding:8px 10px;">${actualHtml}</td>
       <td style="padding:8px 10px;"><span style="background:${evBg};padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">${p.ev}</span></td>
       <td style="padding:8px 10px;">${p.prob_pct}%</td>
