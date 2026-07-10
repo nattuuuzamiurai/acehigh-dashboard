@@ -1,12 +1,5 @@
 {
-  "departments": {
-    "dev-lead": {
-      "status": "idle",
-      "task": "テスト: ファイル分離作業",
-      "startedAt": "2026-07-10T06:02:48.636Z",
-      "finishedAt": "2026-07-10T06:03:01.784Z"
-    }
-  },
+  "departments": {},
   "updatedAt": "2026-07-10T06:03:11.697Z",
   "usage": {
     "todayInputTokens": 244576,
