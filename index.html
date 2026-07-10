@@ -1039,23 +1039,36 @@ const PROJECTS_DATA = [
 // cloude会社/.claude/agents/ の部署サブエージェントと連動する組織データ。
 // 部署・AI社員数・担当プロジェクトを手動更新する(cloude会社/projects/ の内容と合わせる)。
 const AI_ORG_DATA = {
-  updatedAt: "2026-07-09",
+  updatedAt: "2026-07-10",
   departments: [
-    { id:'planning', name:'企画部',           agent:'planning-lead',   color:'#4f8ef7', role:'新規事業・コンテンツの企画立案、市場/競合/キーワード調査、収益化戦略の設計', employees:1, current:[] },
-    { id:'content',  name:'コンテンツ制作部', agent:'content-writer',  color:'#1aaa80', role:'記事・LP・広告文・SNS投稿などの執筆', employees:1, current:[] },
+    { id:'planning', name:'企画部',           agent:'planning-lead',   color:'#4f8ef7', role:'新規事業・コンテンツの企画立案、市場/競合/キーワード調査、収益化戦略の設計', employees:1, current:[
+      { project:'つなぐデジタル', note:'Phase 1 進捗管理・KPI再設定' },
+      { project:'ポーカートナメ成績表', note:'追加機能の企画・競合ポーカーアプリ調査' }
+    ] },
+    { id:'content',  name:'コンテンツ制作部', agent:'content-writer',  color:'#1aaa80', role:'記事・LP・広告文・SNS投稿などの執筆', employees:1, current:[
+      { project:'つなぐデジタル', note:'契約書・業務書類・Webサイト文言・SNS投稿文案の執筆/修正' }
+    ] },
     { id:'dev',      name:'開発部',           agent:'dev-lead',        color:'#7c3aed', role:'自動化スクリプト・サイト構築・公開パイプライン開発', employees:1, current:[
-      { project:'競艇予測ツール', note:'スクレイパー・スコアリング・MLモデル・自動化パイプラインの保守' }
+      { project:'競艇予測ツール', note:'スクレイパー・スコアリング・MLモデル・自動化パイプラインの保守' },
+      { project:'つなぐデジタル', note:'Webサイト構築(7ページ、ローカル)' },
+      { project:'ポーカートナメ成績表', note:'機能実装・Firebase連携・EASビルド' }
     ] },
     { id:'qa',       name:'品質管理部',       agent:'qa-lead',         color:'#d97706', role:'事実確認・品質チェック・テスト実行', employees:1, current:[
-      { project:'競艇予測ツール', note:'予測精度・バックテスト結果の検証' }
+      { project:'競艇予測ツール', note:'予測精度・バックテスト結果の検証' },
+      { project:'つなぐデジタル', note:'契約書・料金表記・法的整合性チェック' },
+      { project:'ポーカートナメ成績表', note:'集計ロジック(収支・ITM率・成績スコア)の検証' }
     ] },
-    { id:'review',   name:'レビュー部',       agent:'review-lead',     color:'#e05050', role:'公開/デプロイ可否の最終判定', employees:1, current:[] },
+    { id:'review',   name:'レビュー部',       agent:'review-lead',     color:'#e05050', role:'公開/デプロイ可否の最終判定', employees:1, current:[
+      { project:'つなぐデジタル', note:'Webサイト本番公開の最終GO判定待ち' }
+    ] },
     { id:'marketing',name:'マーケティング部', agent:'marketing-lead',  color:'#ec4899', role:'SEO最適化・アクセス解析・収益最大化', employees:1, current:[
       { project:'競艇予測ツール', note:'週次ROI・的中率トレンドの分析' }
     ] }
   ],
   projects: [
-    { name:'競艇予測ツール', status:'運用中(自動実行)', departments:['開発部','品質管理部','マーケティング部'] }
+    { name:'競艇予測ツール', status:'運用中(自動実行)', departments:['開発部','品質管理部','マーケティング部'] },
+    { name:'つなぐデジタル', status:'立ち上げ中(Phase 1 Week 1終盤)', departments:['企画部','コンテンツ制作部','開発部','品質管理部','レビュー部'] },
+    { name:'ポーカートナメ成績表', status:'開発中(ストア未公開)', departments:['開発部','品質管理部','企画部'] }
   ]
 };
 // AI_ORG_DATA_END
