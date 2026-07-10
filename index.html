@@ -1560,7 +1560,7 @@ window._probPredDays    = [];
 
 function switchKyoteiTab(tab) {
   window._kyoteiTab = tab;
-  ['ev','prob','proven'].forEach(t => {
+  ['ev','prob','proven','newev','multi'].forEach(t => {
     const el  = document.getElementById('kyotei-tab-' + t);
     const btn = document.getElementById('kyotei-btn-' + t);
     if (el)  el.style.display     = tab === t ? '' : 'none';
@@ -1569,7 +1569,274 @@ function switchKyoteiTab(tab) {
   if (tab === 'ev')     { renderPredTable(); renderKyoteiWeekPerfSection(); }
   if (tab === 'prob')   { renderPredTableProb(); renderKyoteiWeekPerfSectionProb(); }
   if (tab === 'proven') { renderPredTableProven(); renderKyoteiWeekPerfSectionProven(); }
+  if (tab === 'newev' || tab === 'multi') { renderDerivedDemos(tab); renderDerivedPredTable(tab); renderDerivedWeekPerf(tab); }
 }
+
+/* ===================================================================
+   派生戦略（クライアント側バックテスト）
+   既存の各 *_pred_days が選んだ候補コンボをレース単位でプールし、
+   新しい賭け方ルールを適用して成績を導出する。VPS がデータを
+   再生成しても index.html 側で自動再計算されるため保守が容易。
+   - newev : 1レースで EV≥1.3 を満たす中の最高確率コンボを1点
+   - multi : 1レースで 確率≥8% かつ EV≥1.2 の候補をすべて（自然に1〜2点）
+   =================================================================== */
+window.KYOTEI_DERIVED_DEFS = {
+  newev: {
+    label: '新戦略（EVゲート・1点）',
+    note:  '各レースで <strong>EV≥1.3</strong> を満たす中から最高確率のコンボを <strong>1点</strong> だけ購入。マイナスEVの人気本命を除外して負けを止める堅実型。',
+    pick:  cands => { const x = [...cands].filter(v => v.ev >= 1.3).sort((a,b) => b.prob - a.prob)[0]; return x ? [x] : []; }
+  },
+  multi: {
+    label: '複数点（選抜）',
+    note:  '各レースで <strong>確率≥8% かつ EV≥1.2</strong> の候補を<strong>すべて</strong>購入（自然に1〜2点に収まる）。的中率とリターンのバランス型。',
+    pick:  cands => [...cands].filter(v => v.prob >= 8 && v.ev >= 1.2)
+  }
+};
+
+function _kyoteiWeekKey(dateStr) {
+  // dateStr: 'YYYYMMDD' -> 月曜起点の週。{key, label, monday}
+  const y = +dateStr.slice(0,4), m = +dateStr.slice(4,6), da = +dateStr.slice(6,8);
+  const d = new Date(y, m-1, da);
+  const dow = (d.getDay() + 6) % 7; // Mon=0
+  const mon = new Date(y, m-1, da - dow);
+  const sun = new Date(y, m-1, da - dow + 6);
+  const key = mon.getFullYear() + '-' + (mon.getMonth()+1) + '-' + mon.getDate();
+  const label = `${mon.getMonth()+1}/${mon.getDate()}（月）〜${sun.getMonth()+1}/${sun.getDate()}（日）`;
+  return { key, label, monday: mon, sunday: sun };
+}
+
+function buildKyoteiDerived(d) {
+  // 1) 全 *_pred_days から候補コンボをプール（date|venue|race|combo で重複排除）
+  const dayKeys = Object.keys(d).filter(k => k.endsWith('_pred_days'));
+  const pool = new Map();
+  const dayMeta = new Map(); // date_str -> {date_label, is_today}
+  for (const dk of dayKeys) {
+    for (const day of (d[dk] || [])) {
+      if (!dayMeta.has(day.date_str)) dayMeta.set(day.date_str, { date_label: day.date_label, is_today: day.is_today });
+      for (const p of (day.preds || [])) {
+        const key = [day.date_str, p.venue_name, p.race_no, p.combo].join('|');
+        if (!pool.has(key)) {
+          pool.set(key, {
+            date: day.date_str, venue_name: p.venue_name, race_no: p.race_no,
+            start_time: p.start_time, combo: p.combo, actual_combo: p.actual_combo,
+            prob: parseFloat(p.prob_pct), prob_pct: p.prob_pct,
+            ev: parseFloat(p.ev), odds: p.odds, final_odds: p.final_odds,
+            actual_ev: p.actual_ev,
+            hit: p.hit, payout: parseInt(p.payout) || 0
+          });
+        }
+      }
+    }
+  }
+  // 2) レース単位に束ねる
+  const races = new Map();
+  for (const c of pool.values()) {
+    const rk = [c.date, c.venue_name, c.race_no].join('|');
+    if (!races.has(rk)) races.set(rk, []);
+    races.get(rk).push(c);
+  }
+
+  const out = {};
+  for (const [sk, def] of Object.entries(window.KYOTEI_DERIVED_DEFS)) {
+    // レースごとに選択 → 日別 preds
+    const perDay = new Map(); // date_str -> preds[]
+    const weekAgg = new Map(); // weekKey -> {label, monday, is_current, dayMap}
+    for (const cands of races.values()) {
+      const sel = def.pick(cands);
+      if (!sel.length) continue;
+      const ds = cands[0].date;
+      if (!perDay.has(ds)) perDay.set(ds, []);
+      for (const c of sel) perDay.get(ds).push(c);
+      // 週次集計（結果確定分＝hit '0'/'1' のみ）
+      const wk = _kyoteiWeekKey(ds);
+      if (!weekAgg.has(wk.key)) weekAgg.set(wk.key, { label: wk.label, monday: wk.monday, sunday: wk.sunday, dayMap: new Map() });
+      const wa = weekAgg.get(wk.key);
+      for (const c of sel) {
+        const settled = (c.hit === '0' || c.hit === '1');
+        if (!settled) continue;
+        if (!wa.dayMap.has(ds)) wa.dayMap.set(ds, { bets:0, hits:0, invested:0, returned:0 });
+        const dm = wa.dayMap.get(ds);
+        dm.bets++; dm.invested += 100;
+        if (c.hit === '1') { dm.hits++; dm.returned += c.payout; }
+      }
+    }
+    // pred_days（新しい日付が先頭）
+    const pred_days = [...perDay.keys()].sort().reverse().map(ds => {
+      const meta = dayMeta.get(ds) || {};
+      return { date_str: ds, date_label: meta.date_label || ds, is_today: !!meta.is_today, preds: perDay.get(ds) };
+    });
+    // 週次パフォーマンス & デモ（新しい週が先頭）
+    const now = new Date();
+    const weeks = [...weekAgg.values()].sort((a,b) => b.monday - a.monday).map(wa => {
+      const days = [...wa.dayMap.keys()].sort();
+      let bets=0, hits=0, invested=0, returned=0;
+      const daily = days.map(ds => {
+        const dm = wa.dayMap.get(ds);
+        bets+=dm.bets; hits+=dm.hits; invested+=dm.invested; returned+=dm.returned;
+        return { date: (+ds.slice(4,6))+'/'+(+ds.slice(6,8)), bets:dm.bets, hits:dm.hits,
+                 invested:dm.invested, returned:dm.returned,
+                 roi: dm.invested ? +((dm.returned-dm.invested)/dm.invested*100).toFixed(1) : 0 };
+      });
+      const is_current = (now >= wa.monday && now <= new Date(wa.sunday.getFullYear(), wa.sunday.getMonth(), wa.sunday.getDate(), 23,59,59));
+      const roi = invested ? +((returned-invested)/invested*100).toFixed(1) : 0;
+      const hit_rate = bets ? +(hits/bets*100).toFixed(1) : 0;
+      return {
+        week_label: wa.label, is_current,
+        perf: { bets, hits, hit_rate, invested, returned, roi },
+        demo: { total_bets:bets, total_hits:hits, total_invested:invested, total_returned:returned, roi, daily, week_label: wa.label, is_current }
+      };
+    });
+    // 月間デモ（全期間集計・1枚）
+    let mb=0,mh=0,mi=0,mr=0;
+    weeks.forEach(w => { const p=w.perf; mb+=p.bets; mh+=p.hits; mi+=p.invested; mr+=p.returned; });
+    const monthDemo = { total_bets:mb, total_hits:mh, total_invested:mi, total_returned:mr,
+                        roi: mi ? +((mr-mi)/mi*100).toFixed(1) : 0,
+                        daily: [], month_label: '全期間（' + weeks.length + '週）' };
+    out[sk] = { pred_days, weeks, weekDemos: weeks.map(w => w.demo), monthDemos: [monthDemo], def };
+  }
+  return out;
+}
+
+// ── 派生戦略：デモカード描画 ──────────────────────────────
+function renderDerivedDemos(key) {
+  const D = (window._derived || {})[key];
+  if (!D) return;
+  const st = window._demoNavState = window._demoNavState || {};
+  const wKey = key + '-week', mKey = key + '-month';
+  // 既存の demoNavPrev/demoNavNext/renderDemoCard がそのまま使えるよう、
+  // label/demos/idx の完全な形で登録する（idx は既存があれば維持）
+  st[wKey] = { label: '週間デモ収益', demos: D.weekDemos,  idx: (st[wKey] && st[wKey].idx) || 0 };
+  st[mKey] = { label: '月間デモ収益', demos: D.monthDemos, idx: (st[mKey] && st[mKey].idx) || 0 };
+  const renderOne = (navKey, elId) => {
+    const el = document.getElementById(elId);
+    if (!el) return;
+    const s = st[navKey], demos = s.demos;
+    if (s.idx > demos.length - 1) s.idx = Math.max(0, demos.length - 1);
+    el.innerHTML = demos.length ? window.demoCardNavHtml(s.label, demos[s.idx], s.idx < demos.length - 1, s.idx > 0, navKey) : '';
+  };
+  renderOne(wKey, key + '-week-demo');
+  renderOne(mKey, key + '-month-demo');
+}
+
+// ── 派生戦略：予測レポート表 ──────────────────────────────
+function renderDerivedPredTable(key) {
+  const el = document.getElementById('pred-report-section-' + key);
+  if (!el) return;
+  const D = (window._derived || {})[key];
+  const days = (D && D.pred_days) || [];
+  window._derivedDayIdx = window._derivedDayIdx || {};
+  const idx = window._derivedDayIdx[key] || 0;
+  if (!days.length) {
+    el.innerHTML = `<div class="card" style="padding:16px;margin-bottom:22px;color:var(--mut);text-align:center;">対象データがありません</div>`;
+    return;
+  }
+  const day = days[idx];
+  const preds = day.preds || [];
+  const hasPrev = idx < days.length - 1, hasNext = idx > 0;
+  const navBtn = (dir, label, enabled) =>
+    `<button onclick="window.derivedDayNav('${key}',${dir})" ${enabled?'':'disabled'}
+      style="padding:4px 12px;border-radius:6px;border:1px solid var(--bor);background:${enabled?'var(--sur)':'var(--sur2)'};
+             color:${enabled?'var(--txt)':'var(--mut)'};cursor:${enabled?'pointer':'default'};font-size:.8em;font-family:inherit;">${label}</button>`;
+  const rows = preds.map(p => {
+    const evBg = p.ev >= 2.0 ? '#e8f5e9;color:#1b5e20' : p.ev >= 1.5 ? '#fff9c4;color:#f57f17' : '#fce4ec;color:#880e4f';
+    const actualHtml = p.actual_combo ? `<code style="color:#7b1fa2;font-size:.9em;font-weight:700;">${p.actual_combo}</code>` : `<span style="color:var(--mut);">—</span>`;
+    const fo = p.final_odds ? p.final_odds + '倍' : (p.odds ? p.odds + '倍(予測)' : '—');
+    const hitHtml = p.hit === '1' ? `<span style="color:var(--grn);font-weight:700;">✓ 的中</span>` : p.hit === '0' ? `<span style="color:var(--red);">✗</span>` : `<span style="color:var(--mut);">⏳</span>`;
+    const payHtml = p.hit === '1' ? `<span style="font-weight:700;color:var(--grn);">${p.payout ? '¥'+p.payout.toLocaleString() : fo}</span>` : p.hit === '0' ? `<span style="color:var(--red);font-size:.85em;">外れ</span>` : `<span style="color:var(--mut);">⏳</span>`;
+    return `<tr>
+      <td style="padding:8px 10px;font-weight:600;">${p.venue_name}</td>
+      <td style="padding:8px 10px;">${p.race_no}R</td>
+      <td style="padding:8px 10px;">${p.start_time}</td>
+      <td style="padding:8px 10px;"><code style="color:#1a237e;font-size:.9em;">${p.combo}</code></td>
+      <td style="padding:8px 10px;">${actualHtml}</td>
+      <td style="padding:8px 10px;"><span style="background:${evBg};padding:2px 7px;border-radius:5px;font-weight:700;font-size:.8em;">${p.ev}</span></td>
+      <td style="padding:8px 10px;">${p.prob_pct}%</td>
+      <td style="padding:8px 10px;">${hitHtml}</td>
+      <td style="padding:8px 10px;">${payHtml}</td>
+    </tr>`;
+  }).join('');
+  const dayLabel = day.date_label + (day.is_today ? ' <span style="font-size:.75em;color:var(--acc);">今日</span>' : '');
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      ${navBtn(1, '◀ 前日', hasPrev)}
+      <span style="font-size:.88em;font-weight:700;">${dayLabel}</span>
+      ${navBtn(-1, '翌日 ▶', hasNext)}
+    </div>
+    <div class="tw" style="margin-bottom:22px;overflow-x:auto;overflow-y:auto;max-height:420px;">
+      <table style="width:100%;font-size:.82em;">
+        <thead><tr style="background:var(--sur2);position:sticky;top:0;z-index:1;">
+          <th style="padding:8px 10px;">会場</th><th style="padding:8px 10px;">R</th>
+          <th style="padding:8px 10px;">発走</th><th style="padding:8px 10px;">予測</th>
+          <th style="padding:8px 10px;">当選</th><th style="padding:8px 10px;">EV</th>
+          <th style="padding:8px 10px;">確率</th><th style="padding:8px 10px;">結果</th><th style="padding:8px 10px;">払戻</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+window.derivedDayNav = function(key, dir) {
+  window._derivedDayIdx = window._derivedDayIdx || {};
+  const len = (((window._derived||{})[key]||{}).pred_days || []).length;
+  window._derivedDayIdx[key] = Math.max(0, Math.min(len-1, (window._derivedDayIdx[key]||0) + dir));
+  renderDerivedPredTable(key);
+};
+
+// ── 派生戦略：週次検証レポート ──────────────────────────────
+function renderDerivedWeekPerf(key) {
+  const el = document.getElementById('kyotei-week-perf-' + key);
+  if (!el) return;
+  const D = (window._derived || {})[key];
+  const weeks = (D && D.weeks) || [];
+  window._derivedWeekIdx = window._derivedWeekIdx || {};
+  const idx = window._derivedWeekIdx[key] || 0;
+  if (!weeks.length) { el.innerHTML = '<div class="card" style="text-align:center;color:var(--mut);padding:20px;">検証データがまだありません</div>'; return; }
+  const week = weeks[idx], perf = week.perf || {};
+  const hasPrev = idx < weeks.length - 1, hasNext = idx > 0;
+  const navBtn = (dir, label, enabled) =>
+    `<button onclick="window.derivedWeekNav('${key}',${dir})" ${enabled?'':'disabled'}
+      style="padding:4px 12px;border-radius:6px;border:1px solid var(--bor);background:${enabled?'var(--sur)':'var(--sur2)'};
+             color:${enabled?'var(--txt)':'var(--mut)'};cursor:${enabled?'pointer':'default'};font-size:.8em;font-family:inherit;">${label}</button>`;
+  const rc = perf.roi >= 0 ? 'var(--grn)' : perf.roi >= -25 ? 'var(--amb)' : 'var(--red)';
+  const row = perf.bets > 0 ? `<tr>
+    <td style="padding:8px 10px;font-weight:600;">${D.def.label}</td>
+    <td style="padding:8px 10px;text-align:right;">${perf.bets}件</td>
+    <td style="padding:8px 10px;text-align:right;">${perf.hits}件</td>
+    <td style="padding:8px 10px;text-align:right;">${perf.hit_rate}%</td>
+    <td style="padding:8px 10px;text-align:right;">¥${perf.invested.toLocaleString()}</td>
+    <td style="padding:8px 10px;text-align:right;">¥${perf.returned.toLocaleString()}</td>
+    <td style="padding:8px 10px;text-align:right;font-weight:700;color:${rc};">${perf.roi >= 0 ? '+' : ''}${perf.roi}%</td>
+  </tr>` : '<tr><td colspan="7" style="text-align:center;color:var(--mut);padding:16px;">この週のデータがありません</td></tr>';
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      ${navBtn(1, '◀ 前週', hasPrev)}
+      <span style="font-size:.88em;font-weight:700;">${week.week_label}${week.is_current ? ' <span style="font-size:.75em;color:var(--acc);">今週</span>' : ''}</span>
+      ${navBtn(-1, '次週 ▶', hasNext)}
+    </div>
+    <div class="tw" style="margin-bottom:8px;">
+      <table style="width:100%;font-size:.82em;">
+        <thead><tr style="background:#1e3a5f;color:#fff;">
+          <th style="padding:8px 10px;">戦略</th><th style="padding:8px 10px;text-align:right;">推奨数</th>
+          <th style="padding:8px 10px;text-align:right;">的中数</th><th style="padding:8px 10px;text-align:right;">的中率</th>
+          <th style="padding:8px 10px;text-align:right;">投資</th><th style="padding:8px 10px;text-align:right;">回収</th>
+          <th style="padding:8px 10px;text-align:right;">損益率</th>
+        </tr></thead>
+        <tbody>${row}</tbody>
+      </table>
+    </div>
+    <div style="font-size:.65em;color:var(--mut);">
+      ${D.def.note}<br>
+      ※ 既存戦略が抽出した候補コンボを再プールしたバックテスト（選択バイアスあり／実戦ROIは控除率−25%方向へ回帰）<br>
+      ※ 0%以上＝プラス収支 / −25%が競艇の理論平均（控除率25%）
+    </div>`;
+}
+
+window.derivedWeekNav = function(key, dir) {
+  window._derivedWeekIdx = window._derivedWeekIdx || {};
+  const len = (((window._derived||{})[key]||{}).weeks || []).length;
+  window._derivedWeekIdx[key] = Math.max(0, Math.min(len-1, (window._derivedWeekIdx[key]||0) + dir));
+  renderDerivedWeekPerf(key);
+};
 
 function renderPredTable() {
   const el = document.getElementById('pred-report-section');
@@ -2129,6 +2396,10 @@ function renderKyotei() {
       <div style="font-size:.63em;color:var(--mut);margin-top:6px;">※ デモ（仮想投票・1レース100円）。結果確定分のみ集計。</div>
     </div>`;
   }
+  window.demoCardNavHtml = demoCardNavHtml; // 派生戦略タブから再利用
+
+  // 派生戦略（新戦略EVゲート / 複数点）をクライアント側で導出
+  window._derived = buildKyoteiDerived(d);
 
   // デモカードナビ状態（グローバル）
   window._demoNavState = {
@@ -2205,6 +2476,8 @@ function renderKyotei() {
       <button id="kyotei-btn-ev"     onclick="switchKyoteiTab('ev')"     style="${tabBtnStyle(true)}">📊 最高EV戦略</button>
       <button id="kyotei-btn-prob"   onclick="switchKyoteiTab('prob')"   style="${tabBtnStyle(false)}">🎯 最高的中率戦略</button>
       <button id="kyotei-btn-proven" onclick="switchKyoteiTab('proven')" style="${tabBtnStyle(false)}">🔬 実証戦略</button>
+      <button id="kyotei-btn-newev"  onclick="switchKyoteiTab('newev')"  style="${tabBtnStyle(false)}">🚀 新戦略(EVゲート)</button>
+      <button id="kyotei-btn-multi"  onclick="switchKyoteiTab('multi')"  style="${tabBtnStyle(false)}">🧮 複数点</button>
     </div>
 
     <!-- ===== 最高EV タブ ===== -->
@@ -2253,11 +2526,45 @@ function renderKyotei() {
       <div id="kyotei-week-perf-proven" style="margin-bottom:22px;"></div>
     </div>
 
+    <!-- ===== 新戦略(EVゲート) タブ ===== -->
+    <div id="kyotei-tab-newev" style="display:none;">
+      <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 14px;margin-bottom:16px;font-size:.83em;color:#1e40af;line-height:1.6;">
+        <strong>新戦略：EVゲート（1点）</strong><br>
+        各レースで <strong>EV≥1.3</strong> を満たす中の最高確率コンボを <strong>1点</strong> 購入。現行「最高確率1点」がEV無視で人気本命を買い負けていた点を、EVフィルタで是正した堅実型。
+      </div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📈 デモ収益（仮想投票・1レース1点×100円）</div>
+      <div style="display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;">
+        <div id="newev-week-demo" style="flex:1;min-width:0;"></div>
+        <div id="newev-month-demo" style="flex:1;min-width:0;"></div>
+      </div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">🎯 予測レポート</div>
+      <div id="pred-report-section-newev" style="margin-bottom:22px;"></div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📊 週次検証レポート</div>
+      <div id="kyotei-week-perf-newev" style="margin-bottom:22px;"></div>
+    </div>
+
+    <!-- ===== 複数点 タブ ===== -->
+    <div id="kyotei-tab-multi" style="display:none;">
+      <div style="background:#fdf4ff;border:1px solid #f0abfc;border-radius:8px;padding:10px 14px;margin-bottom:16px;font-size:.83em;color:#86198f;line-height:1.6;">
+        <strong>新戦略：複数点（選抜）</strong><br>
+        各レースで <strong>確率≥8% かつ EV≥1.2</strong> の候補を<strong>すべて</strong>購入（自然に1〜2点に収まる）。的中率とリターンのバランス型。
+      </div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📈 デモ収益（仮想投票・条件クリア候補×各100円）</div>
+      <div style="display:flex;gap:14px;margin-bottom:22px;flex-wrap:wrap;">
+        <div id="multi-week-demo" style="flex:1;min-width:0;"></div>
+        <div id="multi-month-demo" style="flex:1;min-width:0;"></div>
+      </div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">🎯 予測レポート</div>
+      <div id="pred-report-section-multi" style="margin-bottom:22px;"></div>
+      <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">📊 週次検証レポート</div>
+      <div id="kyotei-week-perf-multi" style="margin-bottom:22px;"></div>
+    </div>
+
     <!-- 実装機能一覧 -->
     <div style="font-size:.72em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px;">⚙️ 実装済み機能</div>
     <div class="tw" style="margin-bottom:16px;">
       ${featHtml || '<div style="padding:16px;color:var(--mut);text-align:center;">—</div>'}
-      <div style="padding:9px 12px;font-size:.65em;color:var(--mut);">※ タブで最高EV戦略・最高的中率戦略・実証戦略を切り替えて比較できます。</div>
+      <div style="padding:9px 12px;font-size:.65em;color:var(--mut);">※ タブで最高EV戦略・最高的中率戦略・実証戦略・新戦略(EVゲート)・複数点を切り替えて比較できます。新戦略2種は既存の予測データからクライアント側で自動バックテストしています。</div>
     </div>
   `;
 
