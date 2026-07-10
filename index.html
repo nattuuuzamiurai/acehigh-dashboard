@@ -1600,7 +1600,6 @@ function _kyoteiWeekKey(dateStr) {
   const dow = (d.getDay() + 6) % 7; // Mon=0
   const mon = new Date(y, m-1, da - dow);
   const sun = new Date(y, m-1, da - dow + 6);
-  const wd = ['日','月','火','水','木','金','土'];
   const key = mon.getFullYear() + '-' + (mon.getMonth()+1) + '-' + mon.getDate();
   const label = `${mon.getMonth()+1}/${mon.getDate()}（月）〜${sun.getMonth()+1}/${sun.getDate()}（日）`;
   return { key, label, monday: mon, sunday: sun };
@@ -1702,20 +1701,21 @@ function buildKyoteiDerived(d) {
 function renderDerivedDemos(key) {
   const D = (window._derived || {})[key];
   if (!D) return;
-  const st = window._demoNavState || {};
-  const wEl = document.getElementById(key + '-week-demo');
-  const mEl = document.getElementById(key + '-month-demo');
+  const st = window._demoNavState = window._demoNavState || {};
   const wKey = key + '-week', mKey = key + '-month';
-  if (!st[wKey]) st[wKey] = { idx:0 };
-  if (!st[mKey]) st[mKey] = { idx:0 };
-  if (wEl) {
-    const demos = D.weekDemos, s = st[wKey];
-    wEl.innerHTML = demos.length ? window.demoCardNavHtml('週間デモ収益', demos[s.idx], s.idx < demos.length-1, s.idx > 0, wKey) : '';
-  }
-  if (mEl) {
-    const demos = D.monthDemos, s = st[mKey];
-    mEl.innerHTML = demos.length ? window.demoCardNavHtml('月間デモ収益', demos[s.idx], s.idx < demos.length-1, s.idx > 0, mKey) : '';
-  }
+  // 既存の demoNavPrev/demoNavNext/renderDemoCard がそのまま使えるよう、
+  // label/demos/idx の完全な形で登録する（idx は既存があれば維持）
+  st[wKey] = { label: '週間デモ収益', demos: D.weekDemos,  idx: (st[wKey] && st[wKey].idx) || 0 };
+  st[mKey] = { label: '月間デモ収益', demos: D.monthDemos, idx: (st[mKey] && st[mKey].idx) || 0 };
+  const renderOne = (navKey, elId) => {
+    const el = document.getElementById(elId);
+    if (!el) return;
+    const s = st[navKey], demos = s.demos;
+    if (s.idx > demos.length - 1) s.idx = Math.max(0, demos.length - 1);
+    el.innerHTML = demos.length ? window.demoCardNavHtml(s.label, demos[s.idx], s.idx < demos.length - 1, s.idx > 0, navKey) : '';
+  };
+  renderOne(wKey, key + '-week-demo');
+  renderOne(mKey, key + '-month-demo');
 }
 
 // ── 派生戦略：予測レポート表 ──────────────────────────────
