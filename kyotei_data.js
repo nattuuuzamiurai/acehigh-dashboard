@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-07-11 07:27",
+  "updated": "2026-07-11 07:54",
   "today_label": "2026年7月11日",
   "pred_date": "2026/07/11",
   "pred_is_today": true,
@@ -595,7 +595,7 @@ window.KYOTEI_DATA = {
       "race_no": "2",
       "start_time": "15:57",
       "combo": "1-5-3",
-      "actual_combo": "5-2-4",
+      "actual_combo": "3-1-6",
       "ev": 1.79,
       "odds": "95.3",
       "prob_pct": "1.9",
@@ -805,7 +805,7 @@ window.KYOTEI_DATA = {
       "race_no": "11",
       "start_time": "15:51",
       "combo": "1-5-4",
-      "actual_combo": "",
+      "actual_combo": "1-5-2",
       "ev": 1.72,
       "odds": "59.1",
       "prob_pct": "2.9",
@@ -1848,7 +1848,7 @@ window.KYOTEI_DATA = {
           "race_no": "2",
           "start_time": "15:57",
           "combo": "1-5-3",
-          "actual_combo": "5-2-4",
+          "actual_combo": "3-1-6",
           "ev": 1.79,
           "odds": "95.3",
           "prob_pct": "1.9",
@@ -2058,7 +2058,7 @@ window.KYOTEI_DATA = {
           "race_no": "11",
           "start_time": "15:51",
           "combo": "1-5-4",
-          "actual_combo": "",
+          "actual_combo": "1-5-2",
           "ev": 1.72,
           "odds": "59.1",
           "prob_pct": "2.9",
@@ -10955,27 +10955,27 @@ window.KYOTEI_DATA = {
       "perf": {
         "1.15": {
           "bets": 2034,
-          "hits": 66,
-          "hit_rate": 3.2,
+          "hits": 67,
+          "hit_rate": 3.3,
           "invested": 203400,
-          "returned": 163920,
-          "roi": -19.4
+          "returned": 170270,
+          "roi": -16.3
         },
         "1.2": {
           "bets": 1982,
-          "hits": 63,
+          "hits": 64,
           "hit_rate": 3.2,
           "invested": 198200,
-          "returned": 156320,
-          "roi": -21.1
+          "returned": 162670,
+          "roi": -17.9
         },
         "1.3": {
           "bets": 1887,
-          "hits": 59,
-          "hit_rate": 3.1,
+          "hits": 60,
+          "hit_rate": 3.2,
           "invested": 188700,
-          "returned": 152100,
-          "roi": -19.4
+          "returned": 158450,
+          "roi": -16.0
         }
       }
     },
@@ -12436,7 +12436,7 @@ window.KYOTEI_DATA = {
           "race_no": "11",
           "start_time": "15:53",
           "combo": "1-2-4",
-          "actual_combo": "5-2-4",
+          "actual_combo": "2-4-3",
           "ev": 1.08,
           "has_ev": false,
           "odds": "18.2",
@@ -13276,7 +13276,7 @@ window.KYOTEI_DATA = {
           "race_no": "2",
           "start_time": "15:57",
           "combo": "1-2-5",
-          "actual_combo": "5-2-4",
+          "actual_combo": "3-1-6",
           "ev": 1.66,
           "has_ev": true,
           "odds": "51.1",
@@ -13321,7 +13321,7 @@ window.KYOTEI_DATA = {
           "race_no": "11",
           "start_time": "15:51",
           "combo": "1-2-4",
-          "actual_combo": "",
+          "actual_combo": "1-5-2",
           "ev": 0.49,
           "has_ev": false,
           "odds": "16.9",
@@ -24373,7 +24373,7 @@ window.KYOTEI_DATA = {
           "race_no": "11",
           "start_time": "15:53",
           "combo": "1-2-4",
-          "actual_combo": "5-2-4",
+          "actual_combo": "2-4-3",
           "prob_pct": "5.9",
           "top1_pct": "55",
           "ev": 1.08,
@@ -30172,10 +30172,10 @@ window.KYOTEI_DATA = {
   "formation_weekly_demos": [
     {
       "total_bets": 1752,
-      "total_hits": 87,
+      "total_hits": 88,
       "total_invested": 175200,
-      "total_returned": 136620,
-      "roi": -22.0,
+      "total_returned": 142970,
+      "roi": -18.4,
       "daily": [
         {
           "date": "7/9",
@@ -30196,10 +30196,10 @@ window.KYOTEI_DATA = {
         {
           "date": "7/11",
           "bets": 840,
-          "hits": 37,
+          "hits": 38,
           "invested": 84000,
-          "returned": 54150,
-          "roi": -35.5
+          "returned": 60500,
+          "roi": -28.0
         }
       ],
       "week_label": "7/6（月）〜7/12（日）",
@@ -30209,10 +30209,10 @@ window.KYOTEI_DATA = {
   "formation_monthly_demos": [
     {
       "total_bets": 1752,
-      "total_hits": 87,
+      "total_hits": 88,
       "total_invested": 175200,
-      "total_returned": 136620,
-      "roi": -22.0,
+      "total_returned": 142970,
+      "roi": -18.4,
       "daily": [
         {
           "date": "7/9",
@@ -30233,10 +30233,10 @@ window.KYOTEI_DATA = {
         {
           "date": "7/11",
           "bets": 840,
-          "hits": 37,
+          "hits": 38,
           "invested": 84000,
-          "returned": 54150,
-          "roi": -35.5
+          "returned": 60500,
+          "roi": -28.0
         }
       ],
       "month_label": "2026年7月",
@@ -30285,12 +30285,12 @@ window.KYOTEI_DATA = {
           "start_time": "15:51",
           "combo": "1-2-4",
           "n_bets": 6,
-          "actual_combo": "",
+          "actual_combo": "1-5-2",
           "prob_pct": "2.9",
           "ev": 0.49,
           "odds": "16.9",
-          "hit": "0",
-          "payout": "0",
+          "hit": "1",
+          "payout": "6350",
           "final_odds": "15.8",
           "actual_ev": 0.461
         },
@@ -30450,7 +30450,7 @@ window.KYOTEI_DATA = {
           "start_time": "15:53",
           "combo": "1-2-4",
           "n_bets": 6,
-          "actual_combo": "5-2-4",
+          "actual_combo": "2-4-3",
           "prob_pct": "5.9",
           "ev": 1.08,
           "odds": "18.2",
@@ -31680,7 +31680,7 @@ window.KYOTEI_DATA = {
           "start_time": "15:57",
           "combo": "1-2-5",
           "n_bets": 6,
-          "actual_combo": "5-2-4",
+          "actual_combo": "3-1-6",
           "prob_pct": "3.3",
           "ev": 1.66,
           "odds": "51.1",
@@ -34247,11 +34247,11 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "bets": 1752,
-        "hits": 87,
+        "hits": 88,
         "hit_rate": 5.0,
         "invested": 175200,
-        "returned": 136620,
-        "roi": -22.0
+        "returned": 142970,
+        "roi": -18.4
       }
     }
   ],
