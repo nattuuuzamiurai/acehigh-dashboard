@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "ショート動画自動生成パイプラインの技術基盤構築",
-      "startedAt": "2026-07-13T16:54:55.102Z",
-      "finishedAt": "2026-07-13T16:55:09.391Z"
+      "status": "running",
+      "task": "fukuoka-poker-naviのLINE誘導導線を削除",
+      "startedAt": "2026-07-13T17:03:37.133Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T16:02:24.293Z"
     }
   },
-  "updatedAt": "2026-07-13T17:02:46.237Z",
+  "updatedAt": "2026-07-13T17:04:13.250Z",
   "usage": {
-    "todayInputTokens": 231182,
-    "todayOutputTokens": 1047871,
-    "asOf": "2026-07-13T17:02:46.237Z"
+    "todayInputTokens": 232018,
+    "todayOutputTokens": 1054118,
+    "asOf": "2026-07-13T17:04:13.250Z"
   }
 }
