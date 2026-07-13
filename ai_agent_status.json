@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "実証戦略に確率フロア追加の検証と実装",
-      "startedAt": "2026-07-13T15:22:01.316Z",
-      "finishedAt": "2026-07-13T15:22:27.682Z"
+      "task": "Astro雛形とデプロイ基盤の構築",
+      "startedAt": "2026-07-13T15:44:05.593Z",
+      "finishedAt": "2026-07-13T15:44:33.761Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -26,15 +26,15 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "プログラマティックSEO事業の叩き台作成",
-      "startedAt": "2026-07-13T15:30:49.067Z",
-      "finishedAt": "2026-07-13T15:39:54.851Z"
+      "task": "生成AIメディアのキーワードリサーチ",
+      "startedAt": "2026-07-13T15:43:46.824Z",
+      "finishedAt": "2026-07-13T15:44:03.941Z"
     }
   },
-  "updatedAt": "2026-07-13T15:40:44.668Z",
+  "updatedAt": "2026-07-13T15:45:27.418Z",
   "usage": {
-    "todayInputTokens": 44207,
-    "todayOutputTokens": 224901,
-    "asOf": "2026-07-13T15:40:44.668Z"
+    "todayInputTokens": 63365,
+    "todayOutputTokens": 273255,
+    "asOf": "2026-07-13T15:45:27.418Z"
   }
 }
