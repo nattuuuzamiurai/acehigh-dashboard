@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "TTS予算管理・実写素材PRの品質チェック",
-      "startedAt": "2026-07-13T20:19:15.641Z",
-      "finishedAt": "2026-07-13T20:19:20.292Z"
+      "task": "改訂記事の再ファクトチェック",
+      "startedAt": "2026-07-13T21:04:41.973Z",
+      "finishedAt": "2026-07-13T21:04:51.916Z"
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-13T20:42:51.948Z",
+  "updatedAt": "2026-07-13T21:05:00.814Z",
   "usage": {
-    "todayInputTokens": 381052,
-    "todayOutputTokens": 1886815,
-    "asOf": "2026-07-13T20:42:51.948Z"
+    "todayInputTokens": 383612,
+    "todayOutputTokens": 1943571,
+    "asOf": "2026-07-13T21:05:00.814Z"
   }
 }
