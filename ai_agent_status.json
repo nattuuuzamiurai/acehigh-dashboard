@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "修正反映後の再監査(品質管理部)",
-      "startedAt": "2026-07-13T20:10:49.528Z",
-      "finishedAt": "2026-07-13T20:11:00.098Z"
+      "task": "TTS予算管理・実写素材PRの品質チェック",
+      "startedAt": "2026-07-13T20:19:15.641Z",
+      "finishedAt": "2026-07-13T20:19:20.292Z"
     },
     "review-lead": {
       "status": "running",
@@ -25,10 +25,10 @@
       "finishedAt": "2026-07-13T09:23:35.771Z"
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "台本ストック追加と開示範囲ガイドライン草案作成",
-      "startedAt": "2026-07-13T19:59:53.963Z",
-      "finishedAt": "2026-07-13T19:59:56.642Z"
+      "status": "running",
+      "task": "訪問美容マッチング市場調査",
+      "startedAt": "2026-07-13T20:19:02.002Z",
+      "finishedAt": null
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T16:02:24.293Z"
     }
   },
-  "updatedAt": "2026-07-13T20:16:28.251Z",
+  "updatedAt": "2026-07-13T20:19:25.517Z",
   "usage": {
-    "todayInputTokens": 271252,
-    "todayOutputTokens": 1618723,
-    "asOf": "2026-07-13T20:16:28.251Z"
+    "todayInputTokens": 316964,
+    "todayOutputTokens": 1660908,
+    "asOf": "2026-07-13T20:19:25.517Z"
   }
 }
