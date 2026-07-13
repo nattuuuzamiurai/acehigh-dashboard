@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "場難易度・開催初日仮説の検証と実装",
-      "startedAt": "2026-07-13T07:02:30.890Z",
-      "finishedAt": "2026-07-13T07:02:34.707Z"
+      "task": "実証戦略に確率フロア追加の検証と実装",
+      "startedAt": "2026-07-13T15:22:01.316Z",
+      "finishedAt": "2026-07-13T15:22:27.682Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -25,10 +25,10 @@
       "finishedAt": "2026-07-13T09:23:35.771Z"
     }
   },
-  "updatedAt": "2026-07-13T15:19:16.087Z",
+  "updatedAt": "2026-07-13T15:22:51.844Z",
   "usage": {
-    "todayInputTokens": 3464,
-    "todayOutputTokens": 58149,
-    "asOf": "2026-07-13T15:19:16.087Z"
+    "todayInputTokens": 3942,
+    "todayOutputTokens": 71382,
+    "asOf": "2026-07-13T15:22:51.844Z"
   }
 }
