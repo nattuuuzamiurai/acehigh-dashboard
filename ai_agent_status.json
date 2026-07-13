@@ -5,12 +5,18 @@
       "task": "場難易度・開催初日仮説の検証と実装",
       "startedAt": "2026-07-13T07:02:30.890Z",
       "finishedAt": "2026-07-13T07:02:34.707Z"
+    },
+    "qa-lead": {
+      "status": "idle",
+      "task": "開催初日除外戦略の独立検証",
+      "startedAt": "2026-07-13T07:25:15.382Z",
+      "finishedAt": "2026-07-13T07:25:24.805Z"
     }
   },
-  "updatedAt": "2026-07-13T07:24:31.555Z",
+  "updatedAt": "2026-07-13T07:25:29.057Z",
   "usage": {
-    "todayInputTokens": 237577,
-    "todayOutputTokens": 1577657,
-    "asOf": "2026-07-13T07:24:31.555Z"
+    "todayInputTokens": 237593,
+    "todayOutputTokens": 1590710,
+    "asOf": "2026-07-13T07:25:29.057Z"
   }
 }
