@@ -23,12 +23,18 @@
       "task": "広告収益・SEO・誘導戦略の策定",
       "startedAt": "2026-07-13T09:23:32.942Z",
       "finishedAt": "2026-07-13T09:23:35.771Z"
+    },
+    "planning-lead": {
+      "status": "running",
+      "task": "プログラマティックSEO事業の叩き台作成",
+      "startedAt": "2026-07-13T15:30:49.067Z",
+      "finishedAt": null
     }
   },
-  "updatedAt": "2026-07-13T15:28:21.933Z",
+  "updatedAt": "2026-07-13T15:31:21.321Z",
   "usage": {
-    "todayInputTokens": 33329,
-    "todayOutputTokens": 98941,
-    "asOf": "2026-07-13T15:28:21.933Z"
+    "todayInputTokens": 33801,
+    "todayOutputTokens": 141263,
+    "asOf": "2026-07-13T15:31:21.321Z"
   }
 }
