@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "案件進行状況の可視化を実装",
-      "startedAt": "2026-07-13T05:40:06.454Z",
-      "finishedAt": "2026-07-13T06:13:39.814Z"
+      "task": "場難易度・開催初日仮説の検証と実装",
+      "startedAt": "2026-07-13T07:02:30.890Z",
+      "finishedAt": "2026-07-13T07:02:34.707Z"
     }
   },
-  "updatedAt": "2026-07-13T07:02:20.971Z",
+  "updatedAt": "2026-07-13T07:03:06.143Z",
   "usage": {
-    "todayInputTokens": 215893,
-    "todayOutputTokens": 1244228,
-    "asOf": "2026-07-13T07:02:20.971Z"
+    "todayInputTokens": 217343,
+    "todayOutputTokens": 1258501,
+    "asOf": "2026-07-13T07:03:06.143Z"
   }
 }
