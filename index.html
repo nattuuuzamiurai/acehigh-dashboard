@@ -1120,6 +1120,25 @@ const PROJECTS_DATA = [
       { text: "Firestoreセキュリティルールの本番反映", owner: "社内", note: "Firebase Console側への手動反映作業が必要（開発部）。これも公開実行時は社長の最終承認が必要" },
       { text: "Android版ネイティブGoogleログイン", owner: "社内", note: "別途OAuthクライアント設定・ネイティブビルドが必要" }
     ]
+  },
+  {
+    id: "fukuoka-poker-navi",
+    name: "ふくおかポーカーナビ",
+    category: "新規事業",
+    description: "福岡県内のアミューズメントポーカー店のトーナメント日程を一括表示する公開サイト。広告・店舗PR有料掲載枠・アフィリを収益源とする福岡ポーカートーナメント日程アグリゲーター。",
+    status: "進行中",
+    addedAt: "2026-07-13",
+    updatedAt: "2026-07-13",
+    color: "#e05050",
+    stage: "本番公開済み（https://nattuuuzamiurai.github.io/fukuoka-poker-navi/ 、独立リポジトリ nattuuuzamiurai/fukuoka-poker-navi）。29店舗・300件超のトーナメント日程を掲載。品質管理部の監査で致命的事項が1件見つかっており、一般周知に向けた最終GOは保留中。",
+    blockers: [
+      { text: "品質監査で判明した致命的事項：A&K（久留米）の2件でGTD（保証額）が200万円という桁違いの値になっている。他店舗の同名イベントは保証額なしの通常水準で、抽出ミスの疑いが強い", owner: "社長", note: "修正方針の判断待ち" },
+      { text: "基本SEOタグ（canonical / OGP / Twitter Card / robots.txt / sitemap.xml / favicon）の実装", owner: "社内", note: "開発部で対応予定" },
+      { text: "レビュー部による公開後の最終GO/NO-GO判定", owner: "社内", note: "致命的事項の解消待ちのため未実施" },
+      { text: "旧リポジトリ（acehigh-dashboard）側に残る deploy-fukuoka-pages.yml（社内ダッシュボード誤上書き事故の原因）を削除するか", owner: "社長", note: "環境保護ルールは元に戻し安全な状態にしているが、ファイル自体の削除可否は未決定" },
+      { text: "別セッションが旧リポジトリ（acehigh-dashboard、claude/fukuoka-poker-tournaments-o7md6nブランチ）でデータ登録作業を継続中。新リポジトリへの切替か、定期的な差分同期かの方針決定", owner: "社長", note: null },
+      { text: "お問い合わせフォーム（Googleフォーム連携）の回答をダッシュボードに表示する連携の実装", owner: "社内", note: "回答スプレッドシート取得済み。開発部で実装予定" }
+    ]
   }
 ];
 // PROJECTS_DATA_END
