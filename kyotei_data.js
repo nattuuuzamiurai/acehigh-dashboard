@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-07-13 02:05",
+  "updated": "2026-07-13 02:35",
   "today_label": "2026年7月13日",
   "pred_date": "2026/07/13",
   "pred_is_today": true,
@@ -10,17 +10,17 @@ window.KYOTEI_DATA = {
   },
   "ev_weekly_demos": [
     {
-      "total_bets": 4,
+      "total_bets": 7,
       "total_hits": 0,
-      "total_invested": 400,
+      "total_invested": 700,
       "total_returned": 0,
       "roi": -100.0,
       "daily": [
         {
           "date": "7/13",
-          "bets": 4,
+          "bets": 7,
           "hits": 0,
-          "invested": 400,
+          "invested": 700,
           "returned": 0,
           "roi": -100.0
         }
@@ -224,11 +224,11 @@ window.KYOTEI_DATA = {
   ],
   "ev_monthly_demos": [
     {
-      "total_bets": 1240,
+      "total_bets": 1243,
       "total_hits": 33,
-      "total_invested": 124000,
+      "total_invested": 124300,
       "total_returned": 75040,
-      "roi": -39.5,
+      "roi": -39.6,
       "daily": [
         {
           "date": "7/1",
@@ -328,9 +328,9 @@ window.KYOTEI_DATA = {
         },
         {
           "date": "7/13",
-          "bets": 4,
+          "bets": 7,
           "hits": 0,
-          "invested": 400,
+          "invested": 700,
           "returned": 0,
           "roi": -100.0
         }
@@ -412,6 +412,20 @@ window.KYOTEI_DATA = {
   ],
   "today_preds": [
     {
+      "venue_name": "尼崎",
+      "race_no": "3",
+      "start_time": "11:32",
+      "combo": "1-5-3",
+      "actual_combo": "",
+      "ev": 1.85,
+      "odds": "35.9",
+      "prob_pct": "5.1",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
+    },
+    {
       "venue_name": "唐津",
       "race_no": "4",
       "start_time": "09:50",
@@ -436,8 +450,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.2",
       "hit": "",
       "payout": "",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "84.1",
+      "actual_ev": 2.733
     },
     {
       "venue_name": "鳴門",
@@ -458,14 +472,28 @@ window.KYOTEI_DATA = {
       "race_no": "6",
       "start_time": "10:58",
       "combo": "1-4-3",
-      "actual_combo": "",
+      "actual_combo": "6-3-2",
       "ev": 1.59,
       "odds": "35.4",
       "prob_pct": "4.5",
+      "hit": "0",
+      "payout": "0",
+      "final_odds": "43.9",
+      "actual_ev": 1.971
+    },
+    {
+      "venue_name": "唐津",
+      "race_no": "8",
+      "start_time": "11:48",
+      "combo": "1-6-2",
+      "actual_combo": "",
+      "ev": 1.55,
+      "odds": "114.3",
+      "prob_pct": "1.4",
       "hit": "",
       "payout": "",
-      "final_odds": "38.6",
-      "actual_ev": 1.733
+      "final_odds": "",
+      "actual_ev": null
     },
     {
       "venue_name": "鳴門",
@@ -482,6 +510,34 @@ window.KYOTEI_DATA = {
       "actual_ev": 1.461
     },
     {
+      "venue_name": "多摩川",
+      "race_no": "1",
+      "start_time": "11:35",
+      "combo": "1-5-2",
+      "actual_combo": "",
+      "ev": 1.44,
+      "odds": "38.6",
+      "prob_pct": "3.7",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
+    },
+    {
+      "venue_name": "江戸川",
+      "race_no": "1",
+      "start_time": "11:14",
+      "combo": "1-4-2",
+      "actual_combo": "",
+      "ev": 1.41,
+      "odds": "27.7",
+      "prob_pct": "5.1",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
+    },
+    {
       "venue_name": "唐津",
       "race_no": "3",
       "start_time": "09:24",
@@ -496,60 +552,46 @@ window.KYOTEI_DATA = {
       "actual_ev": 1.516
     },
     {
-      "venue_name": "尼崎",
-      "race_no": "1",
-      "start_time": "10:40",
-      "combo": "1-4-3",
-      "actual_combo": "",
-      "ev": 1.37,
-      "odds": "37.7",
-      "prob_pct": "3.6",
-      "hit": "",
-      "payout": "",
-      "final_odds": "36.2",
-      "actual_ev": 1.31
-    },
-    {
       "venue_name": "鳴門",
       "race_no": "5",
       "start_time": "10:30",
       "combo": "1-3-2",
-      "actual_combo": "",
+      "actual_combo": "3-2-4",
       "ev": 1.33,
       "odds": "29.0",
       "prob_pct": "4.6",
-      "hit": "",
-      "payout": "",
+      "hit": "0",
+      "payout": "0",
       "final_odds": "17.1",
       "actual_ev": 0.785
+    },
+    {
+      "venue_name": "平和島",
+      "race_no": "1",
+      "start_time": "11:55",
+      "combo": "1-2-6",
+      "actual_combo": "",
+      "ev": 1.32,
+      "odds": "31.8",
+      "prob_pct": "4.2",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
     },
     {
       "venue_name": "唐津",
       "race_no": "6",
       "start_time": "10:47",
       "combo": "2-3-1",
-      "actual_combo": "",
+      "actual_combo": "2-1-4",
       "ev": 1.3,
       "odds": "50.9",
       "prob_pct": "2.6",
-      "hit": "",
-      "payout": "",
-      "final_odds": "39.3",
-      "actual_ev": 1.006
-    },
-    {
-      "venue_name": "江戸川",
-      "race_no": "1",
-      "start_time": "11:14",
-      "combo": "1-6-3",
-      "actual_combo": "",
-      "ev": 1.3,
-      "odds": "59.9",
-      "prob_pct": "2.2",
-      "hit": "",
-      "payout": "",
-      "final_odds": "",
-      "actual_ev": null
+      "hit": "0",
+      "payout": "0",
+      "final_odds": "38.7",
+      "actual_ev": 0.991
     }
   ],
   "pred_days": [
@@ -558,6 +600,20 @@ window.KYOTEI_DATA = {
       "date_label": "2026/07/13",
       "is_today": true,
       "preds": [
+        {
+          "venue_name": "尼崎",
+          "race_no": "3",
+          "start_time": "11:32",
+          "combo": "1-5-3",
+          "actual_combo": "",
+          "ev": 1.85,
+          "odds": "35.9",
+          "prob_pct": "5.1",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
         {
           "venue_name": "唐津",
           "race_no": "4",
@@ -583,8 +639,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.2",
           "hit": "",
           "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "84.1",
+          "actual_ev": 2.733
         },
         {
           "venue_name": "鳴門",
@@ -605,14 +661,28 @@ window.KYOTEI_DATA = {
           "race_no": "6",
           "start_time": "10:58",
           "combo": "1-4-3",
-          "actual_combo": "",
+          "actual_combo": "6-3-2",
           "ev": 1.59,
           "odds": "35.4",
           "prob_pct": "4.5",
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "43.9",
+          "actual_ev": 1.971
+        },
+        {
+          "venue_name": "唐津",
+          "race_no": "8",
+          "start_time": "11:48",
+          "combo": "1-6-2",
+          "actual_combo": "",
+          "ev": 1.55,
+          "odds": "114.3",
+          "prob_pct": "1.4",
           "hit": "",
           "payout": "",
-          "final_odds": "38.6",
-          "actual_ev": 1.733
+          "final_odds": "",
+          "actual_ev": null
         },
         {
           "venue_name": "鳴門",
@@ -629,6 +699,34 @@ window.KYOTEI_DATA = {
           "actual_ev": 1.461
         },
         {
+          "venue_name": "多摩川",
+          "race_no": "1",
+          "start_time": "11:35",
+          "combo": "1-5-2",
+          "actual_combo": "",
+          "ev": 1.44,
+          "odds": "38.6",
+          "prob_pct": "3.7",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "江戸川",
+          "race_no": "1",
+          "start_time": "11:14",
+          "combo": "1-4-2",
+          "actual_combo": "",
+          "ev": 1.41,
+          "odds": "27.7",
+          "prob_pct": "5.1",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
           "venue_name": "唐津",
           "race_no": "3",
           "start_time": "09:24",
@@ -643,60 +741,46 @@ window.KYOTEI_DATA = {
           "actual_ev": 1.516
         },
         {
-          "venue_name": "尼崎",
-          "race_no": "1",
-          "start_time": "10:40",
-          "combo": "1-4-3",
-          "actual_combo": "",
-          "ev": 1.37,
-          "odds": "37.7",
-          "prob_pct": "3.6",
-          "hit": "",
-          "payout": "",
-          "final_odds": "36.2",
-          "actual_ev": 1.31
-        },
-        {
           "venue_name": "鳴門",
           "race_no": "5",
           "start_time": "10:30",
           "combo": "1-3-2",
-          "actual_combo": "",
+          "actual_combo": "3-2-4",
           "ev": 1.33,
           "odds": "29.0",
           "prob_pct": "4.6",
-          "hit": "",
-          "payout": "",
+          "hit": "0",
+          "payout": "0",
           "final_odds": "17.1",
           "actual_ev": 0.785
+        },
+        {
+          "venue_name": "平和島",
+          "race_no": "1",
+          "start_time": "11:55",
+          "combo": "1-2-6",
+          "actual_combo": "",
+          "ev": 1.32,
+          "odds": "31.8",
+          "prob_pct": "4.2",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
         },
         {
           "venue_name": "唐津",
           "race_no": "6",
           "start_time": "10:47",
           "combo": "2-3-1",
-          "actual_combo": "",
+          "actual_combo": "2-1-4",
           "ev": 1.3,
           "odds": "50.9",
           "prob_pct": "2.6",
-          "hit": "",
-          "payout": "",
-          "final_odds": "39.3",
-          "actual_ev": 1.006
-        },
-        {
-          "venue_name": "江戸川",
-          "race_no": "1",
-          "start_time": "11:14",
-          "combo": "1-6-3",
-          "actual_combo": "",
-          "ev": 1.3,
-          "odds": "59.9",
-          "prob_pct": "2.2",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "38.7",
+          "actual_ev": 0.991
         }
       ]
     },
@@ -7919,28 +8003,28 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "1.15": {
-          "bets": 34,
+          "bets": 61,
           "hits": 1,
-          "hit_rate": 2.9,
-          "invested": 3400,
+          "hit_rate": 1.6,
+          "invested": 6100,
           "returned": 1750,
-          "roi": -48.5
+          "roi": -71.3
         },
         "1.2": {
-          "bets": 34,
+          "bets": 60,
           "hits": 1,
-          "hit_rate": 2.9,
-          "invested": 3400,
+          "hit_rate": 1.7,
+          "invested": 6000,
           "returned": 1750,
-          "roi": -48.5
+          "roi": -70.8
         },
         "1.3": {
-          "bets": 29,
+          "bets": 50,
           "hits": 1,
-          "hit_rate": 3.4,
-          "invested": 2900,
+          "hit_rate": 2.0,
+          "invested": 5000,
           "returned": 1750,
-          "roi": -39.7
+          "roi": -65.0
         }
       }
     },
@@ -8075,19 +8159,19 @@ window.KYOTEI_DATA = {
   ],
   "prob_weekly_demos": [
     {
-      "total_bets": 9,
-      "total_hits": 2,
-      "total_invested": 900,
-      "total_returned": 2090,
-      "roi": 132.2,
+      "total_bets": 14,
+      "total_hits": 4,
+      "total_invested": 1400,
+      "total_returned": 3900,
+      "roi": 178.6,
       "daily": [
         {
           "date": "7/13",
-          "bets": 9,
-          "hits": 2,
-          "invested": 900,
-          "returned": 2090,
-          "roi": 132.2
+          "bets": 14,
+          "hits": 4,
+          "invested": 1400,
+          "returned": 3900,
+          "roi": 178.6
         }
       ],
       "start_label": "7/13",
@@ -8305,11 +8389,11 @@ window.KYOTEI_DATA = {
   ],
   "prob_monthly_demos": [
     {
-      "total_bets": 1506,
-      "total_hits": 102,
-      "total_invested": 150600,
-      "total_returned": 111040,
-      "roi": -26.3,
+      "total_bets": 1511,
+      "total_hits": 104,
+      "total_invested": 151100,
+      "total_returned": 112850,
+      "roi": -25.3,
       "daily": [
         {
           "date": "7/1",
@@ -8409,11 +8493,11 @@ window.KYOTEI_DATA = {
         },
         {
           "date": "7/13",
-          "bets": 9,
-          "hits": 2,
-          "invested": 900,
-          "returned": 2090,
-          "roi": 132.2
+          "bets": 14,
+          "hits": 4,
+          "invested": 1400,
+          "returned": 3900,
+          "roi": 178.6
         }
       ],
       "start_label": "7/1",
@@ -8548,15 +8632,15 @@ window.KYOTEI_DATA = {
           "race_no": "6",
           "start_time": "10:58",
           "combo": "1-3-2",
-          "actual_combo": "",
+          "actual_combo": "6-3-2",
           "ev": 0.43,
           "has_ev": false,
           "odds": "4.8",
           "prob_pct": "8.9",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "4.8",
+          "actual_ev": 0.428
         },
         {
           "venue_name": "唐津",
@@ -8604,60 +8688,105 @@ window.KYOTEI_DATA = {
           "actual_ev": 0.615
         },
         {
+          "venue_name": "江戸川",
+          "race_no": "1",
+          "start_time": "11:14",
+          "combo": "1-2-3",
+          "actual_combo": "",
+          "ev": 0.46,
+          "has_ev": false,
+          "odds": "6.7",
+          "prob_pct": "6.8",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
           "venue_name": "尼崎",
           "race_no": "1",
           "start_time": "10:40",
           "combo": "1-2-4",
-          "actual_combo": "",
-          "ev": 0.65,
+          "actual_combo": "1-2-3",
+          "ev": 0.54,
           "has_ev": false,
-          "odds": "9.2",
-          "prob_pct": "7.1",
+          "odds": "8.4",
+          "prob_pct": "6.5",
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "8.4",
+          "actual_ev": 0.543
+        },
+        {
+          "venue_name": "鳴門",
+          "race_no": "7",
+          "start_time": "11:27",
+          "combo": "1-3-2",
+          "actual_combo": "",
+          "ev": 0.51,
+          "has_ev": false,
+          "odds": "7.9",
+          "prob_pct": "6.4",
           "hit": "",
           "payout": "",
-          "final_odds": "8.4",
-          "actual_ev": 0.593
+          "final_odds": "",
+          "actual_ev": null
         },
         {
           "venue_name": "津",
           "race_no": "1",
           "start_time": "10:38",
-          "combo": "1-4-2",
-          "actual_combo": "",
-          "ev": 0.73,
+          "combo": "1-4-3",
+          "actual_combo": "1-4-3",
+          "ev": 0.42,
           "has_ev": false,
-          "odds": "10.8",
-          "prob_pct": "6.8",
-          "hit": "",
-          "payout": "",
-          "final_odds": "10.4",
-          "actual_ev": 0.704
+          "odds": "6.9",
+          "prob_pct": "6.1",
+          "hit": "1",
+          "payout": "690",
+          "final_odds": "6.9",
+          "actual_ev": 0.423
         },
         {
           "venue_name": "唐津",
           "race_no": "6",
           "start_time": "10:47",
           "combo": "2-1-4",
-          "actual_combo": "",
+          "actual_combo": "2-1-4",
           "ev": 0.8,
           "has_ev": false,
           "odds": "13.1",
           "prob_pct": "6.1",
-          "hit": "",
-          "payout": "",
-          "final_odds": "10.1",
-          "actual_ev": 0.615
+          "hit": "1",
+          "payout": "1120",
+          "final_odds": "11.2",
+          "actual_ev": 0.682
         },
         {
-          "venue_name": "江戸川",
-          "race_no": "1",
-          "start_time": "11:14",
-          "combo": "1-2-3",
+          "venue_name": "唐津",
+          "race_no": "8",
+          "start_time": "11:48",
+          "combo": "1-3-6",
           "actual_combo": "",
-          "ev": 0.37,
+          "ev": 1.93,
+          "has_ev": true,
+          "odds": "33.8",
+          "prob_pct": "5.7",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "浜名湖",
+          "race_no": "1",
+          "start_time": "11:45",
+          "combo": "1-5-2",
+          "actual_combo": "",
+          "ev": 1.09,
           "has_ev": false,
-          "odds": "6.1",
-          "prob_pct": "6.1",
+          "odds": "20.3",
+          "prob_pct": "5.4",
           "hit": "",
           "payout": "",
           "final_odds": "",
@@ -8677,6 +8806,36 @@ window.KYOTEI_DATA = {
           "payout": "1750",
           "final_odds": "17.5",
           "actual_ev": 0.935
+        },
+        {
+          "venue_name": "尼崎",
+          "race_no": "3",
+          "start_time": "11:32",
+          "combo": "1-3-5",
+          "actual_combo": "",
+          "ev": 0.71,
+          "has_ev": false,
+          "odds": "13.6",
+          "prob_pct": "5.2",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "多摩川",
+          "race_no": "1",
+          "start_time": "11:35",
+          "combo": "1-5-3",
+          "actual_combo": "",
+          "ev": 0.87,
+          "has_ev": false,
+          "odds": "16.7",
+          "prob_pct": "5.2",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
         },
         {
           "venue_name": "唐津",
@@ -8705,8 +8864,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.9",
           "hit": "",
           "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.3",
+          "actual_ev": 0.454
         },
         {
           "venue_name": "鳴門",
@@ -8743,13 +8902,13 @@ window.KYOTEI_DATA = {
           "race_no": "5",
           "start_time": "10:30",
           "combo": "1-3-2",
-          "actual_combo": "",
+          "actual_combo": "3-2-4",
           "ev": 1.33,
           "has_ev": true,
           "odds": "29.0",
           "prob_pct": "4.6",
-          "hit": "",
-          "payout": "",
+          "hit": "0",
+          "payout": "0",
           "final_odds": "17.1",
           "actual_ev": 0.785
         },
@@ -8765,6 +8924,66 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.6",
           "hit": "",
           "payout": "",
+          "final_odds": "15.4",
+          "actual_ev": 0.702
+        },
+        {
+          "venue_name": "平和島",
+          "race_no": "1",
+          "start_time": "11:55",
+          "combo": "1-6-2",
+          "actual_combo": "",
+          "ev": 2.19,
+          "has_ev": true,
+          "odds": "49.3",
+          "prob_pct": "4.4",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "児島",
+          "race_no": "1",
+          "start_time": "11:52",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "ev": 0.41,
+          "has_ev": false,
+          "odds": "9.8",
+          "prob_pct": "4.2",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "津",
+          "race_no": "3",
+          "start_time": "11:37",
+          "combo": "1-2-3",
+          "actual_combo": "",
+          "ev": 0.51,
+          "has_ev": false,
+          "odds": "12.7",
+          "prob_pct": "4.0",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "江戸川",
+          "race_no": "2",
+          "start_time": "11:41",
+          "combo": "1-4-3",
+          "actual_combo": "",
+          "ev": 0.74,
+          "has_ev": false,
+          "odds": "19.1",
+          "prob_pct": "3.9",
+          "hit": "",
+          "payout": "",
           "final_odds": "",
           "actual_ev": null
         },
@@ -8778,6 +8997,21 @@ window.KYOTEI_DATA = {
           "has_ev": true,
           "odds": "40.7",
           "prob_pct": "3.8",
+          "hit": "",
+          "payout": "",
+          "final_odds": "58.3",
+          "actual_ev": 2.233
+        },
+        {
+          "venue_name": "鳴門",
+          "race_no": "8",
+          "start_time": "11:57",
+          "combo": "1-3-2",
+          "actual_combo": "",
+          "ev": 0.66,
+          "has_ev": false,
+          "odds": "17.8",
+          "prob_pct": "3.7",
           "hit": "",
           "payout": "",
           "final_odds": "",
@@ -18827,19 +19061,19 @@ window.KYOTEI_DATA = {
       "perf": {
         "all": {
           "label": "全件（EV不問）",
-          "bets": 9,
-          "hits": 2,
-          "hit_rate": 22.2,
-          "invested": 900,
-          "returned": 2090,
-          "roi": 132.2
+          "bets": 14,
+          "hits": 4,
+          "hit_rate": 28.6,
+          "invested": 1400,
+          "returned": 3900,
+          "roi": 178.6
         },
         "ev": {
           "label": "EV≥1.3のみ",
-          "bets": 1,
+          "bets": 2,
           "hits": 0,
           "hit_rate": 0.0,
-          "invested": 100,
+          "invested": 200,
           "returned": 0,
           "roi": -100.0
         }
@@ -18926,19 +19160,19 @@ window.KYOTEI_DATA = {
   ],
   "proven_weekly_demos": [
     {
-      "total_bets": 7,
-      "total_hits": 1,
-      "total_invested": 700,
-      "total_returned": 340,
-      "roi": -51.4,
+      "total_bets": 10,
+      "total_hits": 2,
+      "total_invested": 1000,
+      "total_returned": 1030,
+      "roi": 3.0,
       "daily": [
         {
           "date": "7/13",
-          "bets": 7,
-          "hits": 1,
-          "invested": 700,
-          "returned": 340,
-          "roi": -51.4
+          "bets": 10,
+          "hits": 2,
+          "invested": 1000,
+          "returned": 1030,
+          "roi": 3.0
         }
       ],
       "week_label": "7/13（月）〜7/19（日）",
@@ -19081,11 +19315,11 @@ window.KYOTEI_DATA = {
   ],
   "proven_monthly_demos": [
     {
-      "total_bets": 783,
-      "total_hits": 68,
-      "total_invested": 78300,
-      "total_returned": 63560,
-      "roi": -18.8,
+      "total_bets": 786,
+      "total_hits": 69,
+      "total_invested": 78600,
+      "total_returned": 64250,
+      "roi": -18.3,
       "daily": [
         {
           "date": "7/1",
@@ -19185,11 +19419,11 @@ window.KYOTEI_DATA = {
         },
         {
           "date": "7/13",
-          "bets": 7,
-          "hits": 1,
-          "invested": 700,
-          "returned": 340,
-          "roi": -51.4
+          "bets": 10,
+          "hits": 2,
+          "invested": 1000,
+          "returned": 1030,
+          "roi": 3.0
         }
       ],
       "month_label": "2026年7月",
@@ -19264,15 +19498,15 @@ window.KYOTEI_DATA = {
           "race_no": "6",
           "start_time": "10:58",
           "combo": "1-3-2",
-          "actual_combo": "",
+          "actual_combo": "6-3-2",
           "prob_pct": "8.9",
           "top1_pct": "70",
           "ev": 0.43,
           "odds": "4.8",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "4.8",
+          "actual_ev": 0.428
         },
         {
           "venue_name": "鳴門",
@@ -19305,34 +19539,34 @@ window.KYOTEI_DATA = {
           "actual_ev": 0.615
         },
         {
-          "venue_name": "津",
-          "race_no": "1",
-          "start_time": "10:38",
-          "combo": "1-4-2",
-          "actual_combo": "",
-          "prob_pct": "6.8",
-          "top1_pct": "66",
-          "ev": 0.73,
-          "odds": "10.8",
-          "hit": "",
-          "payout": "",
-          "final_odds": "10.4",
-          "actual_ev": 0.704
-        },
-        {
           "venue_name": "江戸川",
           "race_no": "1",
           "start_time": "11:14",
           "combo": "1-2-3",
           "actual_combo": "",
-          "prob_pct": "6.1",
-          "top1_pct": "60",
-          "ev": 0.37,
-          "odds": "6.1",
+          "prob_pct": "6.8",
+          "top1_pct": "62",
+          "ev": 0.46,
+          "odds": "6.7",
           "hit": "",
           "payout": "",
           "final_odds": "",
           "actual_ev": null
+        },
+        {
+          "venue_name": "津",
+          "race_no": "1",
+          "start_time": "10:38",
+          "combo": "1-4-3",
+          "actual_combo": "1-4-3",
+          "prob_pct": "6.1",
+          "top1_pct": "62",
+          "ev": 0.42,
+          "odds": "6.9",
+          "hit": "1",
+          "payout": "690",
+          "final_odds": "6.9",
+          "actual_ev": 0.423
         },
         {
           "venue_name": "唐津",
@@ -19384,15 +19618,30 @@ window.KYOTEI_DATA = {
           "race_no": "5",
           "start_time": "10:30",
           "combo": "1-5-3",
-          "actual_combo": "",
+          "actual_combo": "3-2-4",
           "prob_pct": "4.4",
           "top1_pct": "61",
           "ev": 0.78,
           "odds": "17.7",
-          "hit": "",
-          "payout": "",
+          "hit": "0",
+          "payout": "0",
           "final_odds": "17.7",
           "actual_ev": 0.775
+        },
+        {
+          "venue_name": "児島",
+          "race_no": "1",
+          "start_time": "11:52",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "prob_pct": "4.2",
+          "top1_pct": "67",
+          "ev": 0.41,
+          "odds": "9.8",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
         }
       ]
     },
@@ -23989,12 +24238,12 @@ window.KYOTEI_DATA = {
       "week_label": "7/13〜7/19",
       "is_current": true,
       "perf": {
-        "bets": 7,
-        "hits": 1,
-        "hit_rate": 14.3,
-        "invested": 700,
-        "returned": 340,
-        "roi": -51.4
+        "bets": 10,
+        "hits": 2,
+        "hit_rate": 20.0,
+        "invested": 1000,
+        "returned": 1030,
+        "roi": 3.0
       }
     },
     {
@@ -24024,19 +24273,19 @@ window.KYOTEI_DATA = {
   ],
   "formation_weekly_demos": [
     {
-      "total_bets": 60,
-      "total_hits": 6,
-      "total_invested": 6000,
-      "total_returned": 8850,
-      "roi": 47.5,
+      "total_bets": 96,
+      "total_hits": 9,
+      "total_invested": 9600,
+      "total_returned": 11280,
+      "roi": 17.5,
       "daily": [
         {
           "date": "7/13",
-          "bets": 60,
-          "hits": 6,
-          "invested": 6000,
-          "returned": 8850,
-          "roi": 47.5
+          "bets": 96,
+          "hits": 9,
+          "invested": 9600,
+          "returned": 11280,
+          "roi": 17.5
         }
       ],
       "week_label": "7/13（月）〜7/19（日）",
@@ -24088,11 +24337,11 @@ window.KYOTEI_DATA = {
   ],
   "formation_monthly_demos": [
     {
-      "total_bets": 2608,
-      "total_hits": 134,
-      "total_invested": 260800,
-      "total_returned": 204060,
-      "roi": -21.8,
+      "total_bets": 2644,
+      "total_hits": 137,
+      "total_invested": 264400,
+      "total_returned": 206490,
+      "roi": -21.9,
       "daily": [
         {
           "date": "7/9",
@@ -24128,11 +24377,11 @@ window.KYOTEI_DATA = {
         },
         {
           "date": "7/13",
-          "bets": 60,
-          "hits": 6,
-          "invested": 6000,
-          "returned": 8850,
-          "roi": 47.5
+          "bets": 96,
+          "hits": 9,
+          "invested": 9600,
+          "returned": 11280,
+          "roi": 17.5
         }
       ],
       "month_label": "2026年7月",
@@ -24150,11 +24399,71 @@ window.KYOTEI_DATA = {
           "race_no": "1",
           "start_time": "11:14",
           "combo": "1-2-3",
+          "n_bets": 12,
+          "actual_combo": "",
+          "prob_pct": "6.8",
+          "ev": 0.46,
+          "odds": "6.7",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "江戸川",
+          "race_no": "2",
+          "start_time": "11:41",
+          "combo": "1-4-3",
           "n_bets": 6,
           "actual_combo": "",
-          "prob_pct": "6.1",
-          "ev": 0.37,
-          "odds": "6.1",
+          "prob_pct": "3.9",
+          "ev": 0.74,
+          "odds": "19.1",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "平和島",
+          "race_no": "1",
+          "start_time": "11:55",
+          "combo": "1-6-2",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "4.4",
+          "ev": 2.19,
+          "odds": "49.3",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "多摩川",
+          "race_no": "1",
+          "start_time": "11:35",
+          "combo": "1-5-3",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "5.2",
+          "ev": 0.87,
+          "odds": "16.7",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "浜名湖",
+          "race_no": "1",
+          "start_time": "11:45",
+          "combo": "1-5-2",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "5.4",
+          "ev": 1.09,
+          "odds": "20.3",
           "hit": "",
           "payout": "0",
           "final_odds": "",
@@ -24164,27 +24473,42 @@ window.KYOTEI_DATA = {
           "venue_name": "津",
           "race_no": "1",
           "start_time": "10:38",
-          "combo": "1-4-2",
-          "n_bets": 12,
-          "actual_combo": "",
-          "prob_pct": "6.8",
-          "ev": 0.73,
-          "odds": "10.8",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "10.4",
-          "actual_ev": 0.704
+          "combo": "1-4-3",
+          "n_bets": 6,
+          "actual_combo": "1-4-3",
+          "prob_pct": "6.1",
+          "ev": 0.42,
+          "odds": "6.9",
+          "hit": "1",
+          "payout": "690",
+          "final_odds": "6.9",
+          "actual_ev": 0.423
         },
         {
           "venue_name": "津",
           "race_no": "2",
           "start_time": "11:08",
           "combo": "1-3-2",
-          "n_bets": 6,
+          "n_bets": 12,
           "actual_combo": "",
           "prob_pct": "4.6",
           "ev": 0.6,
           "odds": "13.2",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "15.4",
+          "actual_ev": 0.702
+        },
+        {
+          "venue_name": "津",
+          "race_no": "3",
+          "start_time": "11:37",
+          "combo": "1-2-3",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "4.0",
+          "ev": 0.51,
+          "odds": "12.7",
           "hit": "",
           "payout": "0",
           "final_odds": "",
@@ -24195,26 +24519,41 @@ window.KYOTEI_DATA = {
           "race_no": "1",
           "start_time": "10:40",
           "combo": "1-2-4",
-          "n_bets": 12,
-          "actual_combo": "",
-          "prob_pct": "7.1",
-          "ev": 0.65,
-          "odds": "9.2",
-          "hit": "",
-          "payout": "0",
+          "n_bets": 6,
+          "actual_combo": "1-2-3",
+          "prob_pct": "6.5",
+          "ev": 0.54,
+          "odds": "8.4",
+          "hit": "1",
+          "payout": "620",
           "final_odds": "8.4",
-          "actual_ev": 0.593
+          "actual_ev": 0.543
         },
         {
           "venue_name": "尼崎",
           "race_no": "2",
           "start_time": "11:05",
           "combo": "1-4-3",
-          "n_bets": 6,
+          "n_bets": 12,
           "actual_combo": "",
           "prob_pct": "4.9",
           "ev": 0.49,
           "odds": "10.1",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "9.3",
+          "actual_ev": 0.454
+        },
+        {
+          "venue_name": "尼崎",
+          "race_no": "3",
+          "start_time": "11:32",
+          "combo": "1-3-5",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "5.2",
+          "ev": 0.71,
+          "odds": "13.6",
           "hit": "",
           "payout": "0",
           "final_odds": "",
@@ -24286,11 +24625,11 @@ window.KYOTEI_DATA = {
           "start_time": "10:30",
           "combo": "1-5-3",
           "n_bets": 6,
-          "actual_combo": "",
+          "actual_combo": "3-2-4",
           "prob_pct": "4.4",
           "ev": 0.78,
           "odds": "17.7",
-          "hit": "",
+          "hit": "0",
           "payout": "0",
           "final_odds": "17.7",
           "actual_ev": 0.775
@@ -24300,11 +24639,56 @@ window.KYOTEI_DATA = {
           "race_no": "6",
           "start_time": "10:58",
           "combo": "1-3-2",
-          "n_bets": 12,
-          "actual_combo": "",
+          "n_bets": 6,
+          "actual_combo": "6-3-2",
           "prob_pct": "8.9",
           "ev": 0.43,
           "odds": "4.8",
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "4.8",
+          "actual_ev": 0.428
+        },
+        {
+          "venue_name": "鳴門",
+          "race_no": "7",
+          "start_time": "11:27",
+          "combo": "1-3-2",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "6.4",
+          "ev": 0.51,
+          "odds": "7.9",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "鳴門",
+          "race_no": "8",
+          "start_time": "11:57",
+          "combo": "1-3-2",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "3.7",
+          "ev": 0.66,
+          "odds": "17.8",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "児島",
+          "race_no": "1",
+          "start_time": "11:52",
+          "combo": "1-3-4",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "4.2",
+          "ev": 0.41,
+          "odds": "9.8",
           "hit": "",
           "payout": "0",
           "final_odds": "",
@@ -24391,25 +24775,40 @@ window.KYOTEI_DATA = {
           "start_time": "10:47",
           "combo": "2-1-4",
           "n_bets": 12,
-          "actual_combo": "",
+          "actual_combo": "2-1-4",
           "prob_pct": "6.1",
           "ev": 0.8,
           "odds": "13.1",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "10.1",
-          "actual_ev": 0.615
+          "hit": "1",
+          "payout": "1120",
+          "final_odds": "11.2",
+          "actual_ev": 0.682
         },
         {
           "venue_name": "唐津",
           "race_no": "7",
           "start_time": "11:17",
           "combo": "1-4-2",
-          "n_bets": 6,
+          "n_bets": 12,
           "actual_combo": "",
           "prob_pct": "3.8",
           "ev": 1.56,
           "odds": "40.7",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "58.3",
+          "actual_ev": 2.233
+        },
+        {
+          "venue_name": "唐津",
+          "race_no": "8",
+          "start_time": "11:48",
+          "combo": "1-3-6",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "5.7",
+          "ev": 1.93,
+          "odds": "33.8",
           "hit": "",
           "payout": "0",
           "final_odds": "",
@@ -30391,12 +30790,12 @@ window.KYOTEI_DATA = {
       "week_label": "7/13〜7/19",
       "is_current": true,
       "perf": {
-        "bets": 60,
-        "hits": 6,
-        "hit_rate": 10.0,
-        "invested": 6000,
-        "returned": 8850,
-        "roi": 47.5
+        "bets": 96,
+        "hits": 9,
+        "hit_rate": 9.4,
+        "invested": 9600,
+        "returned": 11280,
+        "roi": 17.5
       }
     },
     {
@@ -30414,19 +30813,19 @@ window.KYOTEI_DATA = {
   ],
   "multi_ev_weekly_demos": [
     {
-      "total_bets": 6,
+      "total_bets": 9,
       "total_hits": 1,
-      "total_invested": 600,
+      "total_invested": 900,
       "total_returned": 1750,
-      "roi": 191.7,
+      "roi": 94.4,
       "daily": [
         {
           "date": "7/13",
-          "bets": 6,
+          "bets": 9,
           "hits": 1,
-          "invested": 600,
+          "invested": 900,
           "returned": 1750,
-          "roi": 191.7
+          "roi": 94.4
         }
       ],
       "week_label": "7/13（月）〜7/19（日）",
@@ -30569,11 +30968,11 @@ window.KYOTEI_DATA = {
   ],
   "multi_ev_monthly_demos": [
     {
-      "total_bets": 2286,
+      "total_bets": 2289,
       "total_hits": 76,
-      "total_invested": 228600,
+      "total_invested": 228900,
       "total_returned": 176910,
-      "roi": -22.6,
+      "roi": -22.7,
       "daily": [
         {
           "date": "7/1",
@@ -30673,11 +31072,11 @@ window.KYOTEI_DATA = {
         },
         {
           "date": "7/13",
-          "bets": 6,
+          "bets": 9,
           "hits": 1,
-          "invested": 600,
+          "invested": 900,
           "returned": 1750,
-          "roi": 191.7
+          "roi": 94.4
         }
       ],
       "month_label": "2026年7月",
@@ -30718,6 +31117,51 @@ window.KYOTEI_DATA = {
       "is_today": true,
       "preds": [
         {
+          "venue_name": "江戸川",
+          "race_no": "1",
+          "start_time": "11:14",
+          "combo": "1-4-2",
+          "n_bets": 1,
+          "actual_combo": "",
+          "prob_pct": "5.1",
+          "ev": 1.41,
+          "odds": "27.7",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "平和島",
+          "race_no": "1",
+          "start_time": "11:55",
+          "combo": "1-2-6",
+          "n_bets": 1,
+          "actual_combo": "",
+          "prob_pct": "4.2",
+          "ev": 1.32,
+          "odds": "31.8",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "尼崎",
+          "race_no": "3",
+          "start_time": "11:32",
+          "combo": "1-5-3",
+          "n_bets": 1,
+          "actual_combo": "",
+          "prob_pct": "5.1",
+          "ev": 1.85,
+          "odds": "35.9",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
           "venue_name": "鳴門",
           "race_no": "2",
           "start_time": "09:10",
@@ -30753,11 +31197,11 @@ window.KYOTEI_DATA = {
           "start_time": "10:30",
           "combo": "1-3-2",
           "n_bets": 1,
-          "actual_combo": "",
+          "actual_combo": "3-2-4",
           "prob_pct": "4.6",
           "ev": 1.33,
           "odds": "29.0",
-          "hit": "",
+          "hit": "0",
           "payout": "0",
           "final_odds": "17.1",
           "actual_ev": 0.785
@@ -30768,14 +31212,14 @@ window.KYOTEI_DATA = {
           "start_time": "10:58",
           "combo": "1-4-3",
           "n_bets": 2,
-          "actual_combo": "",
+          "actual_combo": "6-3-2",
           "prob_pct": "4.5",
           "ev": 1.59,
           "odds": "35.4",
-          "hit": "",
+          "hit": "0",
           "payout": "0",
-          "final_odds": "38.6",
-          "actual_ev": 1.733
+          "final_odds": "43.9",
+          "actual_ev": 1.971
         },
         {
           "venue_name": "唐津",
@@ -37757,12 +38201,12 @@ window.KYOTEI_DATA = {
       "week_label": "7/13〜7/19",
       "is_current": true,
       "perf": {
-        "bets": 6,
+        "bets": 9,
         "hits": 1,
-        "hit_rate": 16.7,
-        "invested": 600,
+        "hit_rate": 11.1,
+        "invested": 900,
         "returned": 1750,
-        "roi": 191.7
+        "roi": 94.4
       }
     },
     {
