@@ -1,6 +1,6 @@
 {
-  "stalled": false,
-  "count": 0,
-  "updatedAt": "2026-07-13T18:00:15.838Z",
+  "stalled": true,
+  "count": 1,
+  "updatedAt": "2026-07-13T18:30:19.155Z",
   "generatedBy": "hr-watch-daemon.js (launchd, com.kaisha.hrwatch)"
 }
