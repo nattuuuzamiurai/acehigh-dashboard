@@ -1,9 +1,16 @@
 {
-  "departments": {},
-  "updatedAt": "2026-07-10T09:01:14.936Z",
+  "departments": {
+    "dev-lead": {
+      "status": "running",
+      "task": "案件進行状況の可視化を実装",
+      "startedAt": "2026-07-13T05:36:25.913Z",
+      "finishedAt": null
+    }
+  },
+  "updatedAt": "2026-07-13T05:37:49.259Z",
   "usage": {
-    "todayInputTokens": 256453,
-    "todayOutputTokens": 1472005,
-    "asOf": "2026-07-10T09:01:14.936Z"
+    "todayInputTokens": 48409,
+    "todayOutputTokens": 46721,
+    "asOf": "2026-07-13T05:37:49.259Z"
   }
 }
