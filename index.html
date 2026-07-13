@@ -242,6 +242,22 @@
     .aiorg-bar-fill.aiorg-out { background:var(--grn); }
     .aiorg-bar-val { position:absolute; left:100%; top:50%; transform:translate(9px,-50%); white-space:nowrap; font-size:.82em; font-weight:700; color:var(--txt); }
 
+    /* AI組織: 案件の進行状況(README自動抽出) */
+    .aiorg-pipe-phase { font-size:.85em; font-weight:600; background:var(--sur2); border:1px solid var(--bor); border-radius:7px; padding:8px 12px; margin-bottom:10px; line-height:1.5; color:var(--txt); }
+    .aiorg-pipe-list { margin-bottom:10px; }
+    .aiorg-pipe-item { padding:8px 10px; border-radius:7px; margin-bottom:6px; background:var(--sur2); border-left:3px solid var(--bor); font-size:.84em; line-height:1.5; }
+    .aiorg-pipe-item:last-child { margin-bottom:0; }
+    .aiorg-pipe-item.boss { border-left-color:#fab219; background:#fdf3e0; }
+    .aiorg-pipe-item.dept { border-left-color:var(--mut); background:var(--sur2); }
+    .aiorg-pipe-row { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+    .aiorg-pipe-text { font-size:.84em; color:var(--txt); line-height:1.5; }
+    .aiorg-pipe-tag { font-size:.68em; font-weight:700; padding:2px 9px; border-radius:20px; flex-shrink:0; white-space:nowrap; background:var(--sur); border:1px solid var(--bor); color:var(--mut); }
+    .aiorg-pipe-tag.boss { color:#a3690b; border-color:#fbdfa5; background:#fdf3e0; }
+    .aiorg-pipe-tag.dept { color:var(--mut); border-color:var(--bor); background:var(--sur); }
+    .aiorg-pipe-good { font-size:.83em; color:#0ca30c; background:#e8f7e8; border-radius:7px; padding:8px 12px; margin-bottom:10px; font-weight:600; }
+    .aiorg-pipe-decision { font-size:.78em; color:var(--mut); background:var(--sur2); border:1px solid var(--bor); border-radius:7px; padding:7px 11px; margin-top:4px; }
+    .aiorg-pipe-decision strong { color:var(--txt); font-weight:700; }
+
     /* SCROLL */
     ::-webkit-scrollbar { width:5px; }
     ::-webkit-scrollbar-track { background:transparent; }
@@ -836,6 +852,11 @@
       </div>
       <div id="aiorg-projects" class="mt12"></div>
       <div class="sh mt28">
+        <h2>案件の進行状況</h2>
+        <span style="font-size:.78em;color:var(--mut);">各プロジェクトのREADMEから自動抽出・15秒間隔で自動更新</span>
+      </div>
+      <div class="proj-grid mt12" id="aiorg-pipeline-grid"></div>
+      <div class="sh mt28">
         <h2>Claude Code 使用状況</h2>
         <span style="font-size:.78em;color:var(--mut);" id="aiorg-usage-asof">概算値・15秒間隔で自動更新</span>
       </div>
@@ -1169,7 +1190,7 @@ function showPage(name) {
   if (name==='overview') refreshOverview();
   if (name==='revenue') { renderRevenues(); renderFixedCosts(); refreshRevenueSummary(); renderMonthlyBreakdown(); }
   if (name==='projects') { renderProjectStats(); renderProjects(); }
-  if (name==='aiorg') renderAIOrg();
+  if (name==='aiorg') { renderAIOrg(); renderPipeline(); }
   if (name==='kyotei') renderKyotei();
   if (name==='chaipo-board') cbRenderBoard();
 }
@@ -1558,6 +1579,71 @@ async function pollAIStatus() {
   } catch (e) {
     // 取得失敗時は既存の静的表示のまま(握りつぶす)
   }
+}
+
+// ===== AI組織: 案件の進行状況(project_pipeline.json、README自動抽出) =====
+let PIPELINE_DATA = null;
+
+async function pollPipelineStatus() {
+  try {
+    const res = await fetch('project_pipeline.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) return;
+    PIPELINE_DATA = await res.json();
+    renderPipeline();
+  } catch (e) {
+    // 取得失敗時は既存の静的表示のまま(握りつぶす)
+  }
+}
+
+function aiorgPipeItemHtml(item) {
+  const text = aiEsc(item && item.text);
+  const waitingOn = item && item.waitingOn;
+  let cls = '', tagHtml = '';
+  if (waitingOn === '社長') {
+    cls = 'boss';
+    tagHtml = `<span class="aiorg-pipe-tag boss">⏸ 社長判断待ち</span>`;
+  } else if (waitingOn) {
+    cls = 'dept';
+    tagHtml = `<span class="aiorg-pipe-tag dept">🔧 ${aiEsc(waitingOn)} 対応中</span>`;
+  }
+  return `<div class="aiorg-pipe-item ${cls}">
+      <div class="aiorg-pipe-row">
+        <span class="aiorg-pipe-text">${text}</span>
+        ${tagHtml}
+      </div>
+    </div>`;
+}
+
+function renderPipeline() {
+  const grid = document.getElementById('aiorg-pipeline-grid');
+  if (!grid) return;
+  const projects = (PIPELINE_DATA && Array.isArray(PIPELINE_DATA.projects)) ? PIPELINE_DATA.projects : [];
+  if (!projects.length) {
+    grid.innerHTML = `<div class="proj-empty">まだ案件進行状況データがありません(README自動抽出待ち)</div>`;
+    return;
+  }
+
+  grid.innerHTML = projects.map(p => {
+    const pending = Array.isArray(p.pending) ? p.pending : [];
+    const phaseHtml = p.phase ? `<div class="aiorg-pipe-phase">${aiEsc(p.phase)}</div>` : '';
+    const pendingHtml = pending.length
+      ? `<div class="aiorg-pipe-list">${pending.map(aiorgPipeItemHtml).join('')}</div>`
+      : `<div class="aiorg-pipe-good">✅ ブロッカーなし</div>`;
+    const decision = p.lastDecision;
+    const decisionHtml = decision
+      ? `<div class="aiorg-pipe-decision" title="${aiEsc(decision.note || '')}">最近の決定: <strong>${aiEsc(decision.heading)}</strong></div>`
+      : '';
+
+    return `<div class="proj-card">
+        <div class="proj-body">
+          <div class="proj-name" style="margin-bottom:8px;">${aiEsc(p.name)}</div>
+          ${phaseHtml}
+          <div class="proj-sect">進行状況</div>
+          ${pendingHtml}
+          ${decisionHtml}
+        </div>
+      </div>`;
+  }).join('');
 }
 
 function renderAIOrg() {
@@ -2804,6 +2890,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   // AI組織ページのライブ表示(お手軽版ポーリング・15秒間隔)
   pollAIStatus();
   setInterval(pollAIStatus, 15000);
+
+  // AI組織ページ: 案件の進行状況(README自動抽出、15秒間隔)
+  pollPipelineStatus();
+  setInterval(pollPipelineStatus, 15000);
 
 });
 
