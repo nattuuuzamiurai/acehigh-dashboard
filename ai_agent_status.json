@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "実写素材収集ツールとTTS文字数予算対応の実装",
-      "startedAt": "2026-07-13T19:59:28.379Z",
-      "finishedAt": "2026-07-13T19:59:31.024Z"
+      "task": "サイトデザインの大幅改善",
+      "startedAt": "2026-07-13T20:19:57.498Z",
+      "finishedAt": "2026-07-13T20:20:28.722Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -32,15 +32,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "Week1記事7本の執筆",
-      "startedAt": "2026-07-13T16:02:19.280Z",
-      "finishedAt": "2026-07-13T16:02:24.293Z"
+      "task": "Week1記事のボリューム増強・平易化",
+      "startedAt": "2026-07-13T20:20:20.901Z",
+      "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-13T20:19:25.517Z",
+  "updatedAt": "2026-07-13T20:21:00.502Z",
   "usage": {
-    "todayInputTokens": 316964,
-    "todayOutputTokens": 1660908,
-    "asOf": "2026-07-13T20:19:25.517Z"
+    "todayInputTokens": 370550,
+    "todayOutputTokens": 1681631,
+    "asOf": "2026-07-13T20:21:00.502Z"
   }
 }
