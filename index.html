@@ -618,6 +618,19 @@
               <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t43','tool',this.value)" id="t43-tool">X API（従量課金）／GitHub Actions／Playwright（検討中）</textarea></div>
               <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t43','next',this.value)" id="t43-next" placeholder="具体的な次の一手..." value="アカウント作成・プロフィール文（140字以内）設定・固定ツイート作成"></div>
             </div></td></tr>
+            <!-- t44 -->
+            <tr class="tr" data-id="t44" data-priority="2" data-cat="新規事業">
+              <td><div class="task-name" onclick="toggleDetail('t44')" ondblclick="editTaskName(event,'t44')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>出張美容のマッチングサイトの競合市場調査</div></td>
+              <td><span class="cat-tag">新規事業</span></td><td><span class="badge mid">中</span></td>
+              <td><select class="ss s-todo" onchange="onStatus(this,'t44')"><option value="s-todo">未着手</option><option value="s-wip">進行中</option><option value="s-done">完了</option><option value="s-hold">保留</option></select></td>
+              <td><div class="pw"><select class="ps" onchange="onProgress(this,'t44')"><option>0%</option><option>10%</option><option>20%</option><option>30%</option><option>40%</option><option>50%</option><option>60%</option><option>70%</option><option>80%</option><option>90%</option><option>100%</option></select><div class="pb"><div class="pf" id="t44-bar" style="width:0%"></div></div></div></td>
+              <td><input type="date" class="di-date" onchange="onDate(this,'t44')"></td>
+            </tr>
+            <tr class="dr" id="detail-t44"><td colspan="6"><div class="di">
+              <div><label>概要・説明</label><textarea oninput="saveDetail('t44','desc',this.value)" id="t44-desc">出張(訪問)美容のマッチングプラットフォーム事業の検討にあたり、競合となる既存サービスを調査する。市場規模・主要プレイヤー・料金体系(手数料モデル)・対応メニュー(ヘア/ネイル/エステ等)・エリア・集客導線・差別化ポイントを整理し、参入余地を評価する。</textarea></div>
+              <div><label>使用ツール・方法</label><textarea oninput="saveDetail('t44','tool',this.value)" id="t44-tool">Web検索／各競合サービスサイトの調査／料金・機能比較表の作成</textarea></div>
+              <div class="df"><label>次のアクション</label><input type="text" oninput="saveDetail('t44','next',this.value)" id="t44-next" placeholder="具体的な次の一手..." value="主要競合サービスのリストアップと料金・機能比較表の作成"></div>
+            </div></td></tr>
             <!-- t2 -->
             <tr class="tr" data-id="t2" data-priority="3" data-cat="新規事業">
               <td><div class="task-name" onclick="toggleDetail('t2')" ondblclick="editTaskName(event,'t2')" title="ダブルクリックで名前を編集"><span class="ta">▶</span>警備会社</div></td>
