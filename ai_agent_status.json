@@ -29,12 +29,18 @@
       "task": "生成AIメディアのキーワードリサーチ",
       "startedAt": "2026-07-13T15:43:46.824Z",
       "finishedAt": "2026-07-13T15:44:03.941Z"
+    },
+    "content-writer": {
+      "status": "idle",
+      "task": "Week1記事7本の執筆",
+      "startedAt": "2026-07-13T16:02:19.280Z",
+      "finishedAt": "2026-07-13T16:02:24.293Z"
     }
   },
-  "updatedAt": "2026-07-13T16:01:06.769Z",
+  "updatedAt": "2026-07-13T16:02:41.452Z",
   "usage": {
-    "todayInputTokens": 115781,
-    "todayOutputTokens": 503682,
-    "asOf": "2026-07-13T16:01:06.769Z"
+    "todayInputTokens": 115815,
+    "todayOutputTokens": 538478,
+    "asOf": "2026-07-13T16:02:41.452Z"
   }
 }
