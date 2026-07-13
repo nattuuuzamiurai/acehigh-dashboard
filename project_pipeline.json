@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T05:49:21.690Z",
+  "generatedAt": "2026-07-13T15:26:37.000Z",
   "projects": [
     {
       "name": "つなぐデジタル(デジタル遺品整理事業/会社プロジェクト登録)",
@@ -59,6 +59,40 @@
         }
       ],
       "lastDecision": null
+    },
+    {
+      "name": "ふくおかポーカーナビ(福岡ポーカートーナメント日程アグリゲーター/会社プロジェクト登録)",
+      "phase": "本番公開済み(https://nattuuuzamiurai.github.io/fukuoka-poker-navi/、独立リポジトリ nattuuuzamiurai/fukuoka-poker-navi)。29店舗・300件超のトーナメントデータを登録済みだが、品質管理部監査で致命的事項が1件見つかっており一般周知の最終GOは保留中。",
+      "pending": [
+        {
+          "text": "品質監査で判明した致命的事項の対応: A&K(久留米)の2件でGTD(保証額)が200万円という桁違いの値になっている(他店舗の同名イベントは保証額なしの通常水準)。修正方針の判断が必要",
+          "waitingOn": "社長"
+        },
+        {
+          "text": "基本SEOタグ(canonical/OGP/Twitter Card/robots.txt/sitemap.xml/favicon)の実装",
+          "waitingOn": "開発部"
+        },
+        {
+          "text": "レビュー部による公開後の最終GO/NO-GO判定(致命的事項の解消待ちのため未実施)",
+          "waitingOn": "レビュー部"
+        },
+        {
+          "text": "旧リポジトリ(acehigh-dashboard)側に残る `.github/workflows/deploy-fukuoka-pages.yml`(社内ダッシュボード誤上書き事故の原因)を削除するか判断",
+          "waitingOn": "社長"
+        },
+        {
+          "text": "別セッションが旧リポジトリ(acehigh-dashboard, claude/fukuoka-poker-tournaments-o7md6nブランチ)でデータ登録作業を継続中。今後は新リポジトリ(fukuoka-poker-navi)側に作業を切り替えるか、定期的に差分を同期するかの方針決定",
+          "waitingOn": "社長"
+        },
+        {
+          "text": "お問い合わせフォーム(contact.html→Googleフォーム)の回答をダッシュボードに表示する連携の実装(回答スプレッドシート取得済み)",
+          "waitingOn": "開発部"
+        }
+      ],
+      "lastDecision": {
+        "heading": "GitHub Pagesを社内ダッシュボードから完全分離、独立リポジトリで公開(2026-07-13)",
+        "note": "当初、社内ダッシュボードと同一リポジトリ内の別ブランチからのPages公開を試みたところ、GitHub Pagesが1リポジトリ1サイトしか持てない仕様により社内ダッシュボードが一時的に上書きされる事故が発生。復旧の上、git subtree splitで履歴を保持したまま新規リポジトリ(fukuoka-poker-navi)へ分離し公開した。あわせてLINE公式アカウントの運用開始は、サイトのデータ品質・SEO基盤が整うまで後回しにする方針も確定。"
+      }
     }
   ]
 }
