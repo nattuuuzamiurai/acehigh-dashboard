@@ -452,7 +452,7 @@
     <div class="ng">管理</div>
     <div class="ni" onclick="showPage('tasks')"><span class="ni-ic">✓</span>タスク管理</div>
     <div class="ni" onclick="showPage('revenue')"><span class="ni-ic">¥</span>収益管理</div>
-    <div class="ni" onclick="showPage('projects')"><span class="ni-ic">◈</span>プロジェクト管理</div>
+    <div class="ni" onclick="showPage('projects')"><span class="ni-ic">◈</span>プロジェクト管理<span id="inquiry-badge" class="ai-badge" style="display:none"></span></div>
     <div class="ni" onclick="showPage('aiorg')"><span class="ni-ic">🏢</span>AI組織</div>
     <div class="ng">ツール</div>
     <div class="ni" onclick="showPage('kyotei')"><span class="ni-ic">🚤</span>競艇予測</div>
@@ -3089,7 +3089,31 @@ window.addEventListener('DOMContentLoaded', async () => {
   pollPipelineStatus();
   setInterval(pollPipelineStatus, 15000);
 
+  // ふくおかポーカーナビ: お問い合わせ通知(件数のみ。内容はプライバシー保護のためGoogleフォーム側で確認)
+  pollInquiryStatus();
+  setInterval(pollInquiryStatus, 15000);
+
 });
+
+async function pollInquiryStatus() {
+  const badge = document.getElementById('inquiry-badge');
+  if (!badge) return;
+  try {
+    const res = await fetch('fukuoka_poker_inquiry_status.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) { badge.style.display = 'none'; return; }
+    const d = await res.json();
+    const n = d.totalResponses || 0;
+    if (n > 0) {
+      badge.textContent = 'お問い合わせ ' + n + '件';
+      badge.title = '内容はGoogleフォームの回答画面でご確認ください（最終更新: ' + (d.lastResponseAt || '') + '）';
+      badge.style.display = 'inline-block';
+    } else {
+      badge.style.display = 'none';
+    }
+  } catch (e) {
+    badge.style.display = 'none';
+  }
+}
 
 let chaipoRunning = false;
 let chaipoStart   = 0;
