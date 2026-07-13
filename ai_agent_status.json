@@ -13,10 +13,10 @@
       "finishedAt": "2026-07-13T20:19:20.292Z"
     },
     "review-lead": {
-      "status": "running",
-      "task": "GTD修正PRの最終レビュー",
-      "startedAt": "2026-07-13T19:59:19.905Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "最終GO/NO-GO判定(レビュー部)",
+      "startedAt": "2026-07-13T20:21:51.338Z",
+      "finishedAt": "2026-07-13T20:22:02.423Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -25,10 +25,10 @@
       "finishedAt": "2026-07-13T09:23:35.771Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "訪問美容マッチング市場調査",
       "startedAt": "2026-07-13T20:19:02.002Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-13T20:24:22.891Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-13T20:21:00.502Z",
+  "updatedAt": "2026-07-13T20:24:24.707Z",
   "usage": {
-    "todayInputTokens": 370550,
-    "todayOutputTokens": 1681631,
-    "asOf": "2026-07-13T20:21:00.502Z"
+    "todayInputTokens": 375834,
+    "todayOutputTokens": 1713574,
+    "asOf": "2026-07-13T20:24:24.707Z"
   }
 }
