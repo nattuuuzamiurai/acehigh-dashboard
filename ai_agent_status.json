@@ -8,21 +8,27 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "開催初日除外戦略の独立検証",
-      "startedAt": "2026-07-13T07:25:15.382Z",
-      "finishedAt": "2026-07-13T07:25:24.805Z"
+      "task": "追加トーナメントデータの要確認点を洗い出し",
+      "startedAt": "2026-07-13T09:23:49.460Z",
+      "finishedAt": "2026-07-13T09:24:11.315Z"
     },
     "review-lead": {
       "status": "idle",
       "task": "開催初日除外戦略の最終GO/NO-GO判定",
       "startedAt": "2026-07-13T07:38:04.057Z",
       "finishedAt": "2026-07-13T07:38:17.608Z"
+    },
+    "marketing-lead": {
+      "status": "idle",
+      "task": "広告収益・SEO・誘導戦略の策定",
+      "startedAt": "2026-07-13T09:23:32.942Z",
+      "finishedAt": "2026-07-13T09:23:35.771Z"
     }
   },
-  "updatedAt": "2026-07-13T09:18:23.726Z",
+  "updatedAt": "2026-07-13T09:24:28.661Z",
   "usage": {
-    "todayInputTokens": 262405,
-    "todayOutputTokens": 2199883,
-    "asOf": "2026-07-13T09:18:23.726Z"
+    "todayInputTokens": 265746,
+    "todayOutputTokens": 2246692,
+    "asOf": "2026-07-13T09:24:28.661Z"
   }
 }
