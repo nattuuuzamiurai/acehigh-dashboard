@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "追加トーナメントデータの要確認点を洗い出し",
-      "startedAt": "2026-07-13T09:23:49.460Z",
-      "finishedAt": "2026-07-13T09:24:11.315Z"
+      "task": "Fukuoka poker branch quality audit",
+      "startedAt": "2026-07-13T15:50:24.788Z",
+      "finishedAt": "2026-07-13T15:50:28.116Z"
     },
     "review-lead": {
       "status": "idle",
@@ -31,10 +31,10 @@
       "finishedAt": "2026-07-13T15:44:03.941Z"
     }
   },
-  "updatedAt": "2026-07-13T15:49:00.575Z",
+  "updatedAt": "2026-07-13T15:51:28.085Z",
   "usage": {
-    "todayInputTokens": 69736,
-    "todayOutputTokens": 337545,
-    "asOf": "2026-07-13T15:49:00.575Z"
+    "todayInputTokens": 99351,
+    "todayOutputTokens": 382895,
+    "asOf": "2026-07-13T15:51:28.085Z"
   }
 }
