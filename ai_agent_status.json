@@ -7,10 +7,10 @@
       "finishedAt": null
     }
   },
-  "updatedAt": "2026-07-13T05:42:17.442Z",
+  "updatedAt": "2026-07-13T05:45:24.297Z",
   "usage": {
-    "todayInputTokens": 82317,
-    "todayOutputTokens": 123409,
-    "asOf": "2026-07-13T05:42:17.442Z"
+    "todayInputTokens": 105881,
+    "todayOutputTokens": 197575,
+    "asOf": "2026-07-13T05:45:24.297Z"
   }
 }
