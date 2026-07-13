@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Astro雛形とデプロイ基盤の構築",
-      "startedAt": "2026-07-13T15:44:05.593Z",
-      "finishedAt": "2026-07-13T15:44:33.761Z"
+      "task": "本番戦略タブをダッシュボードに追加",
+      "startedAt": "2026-07-13T16:12:59.536Z",
+      "finishedAt": "2026-07-13T16:13:43.775Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T16:02:24.293Z"
     }
   },
-  "updatedAt": "2026-07-13T16:11:48.061Z",
+  "updatedAt": "2026-07-13T16:13:53.413Z",
   "usage": {
-    "todayInputTokens": 158368,
-    "todayOutputTokens": 652783,
-    "asOf": "2026-07-13T16:11:48.061Z"
+    "todayInputTokens": 158412,
+    "todayOutputTokens": 674718,
+    "asOf": "2026-07-13T16:13:53.413Z"
   }
 }
