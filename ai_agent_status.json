@@ -25,16 +25,16 @@
       "finishedAt": "2026-07-13T09:23:35.771Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "プログラマティックSEO事業の叩き台作成",
       "startedAt": "2026-07-13T15:30:49.067Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-13T15:39:54.851Z"
     }
   },
-  "updatedAt": "2026-07-13T15:32:13.570Z",
+  "updatedAt": "2026-07-13T15:40:40.982Z",
   "usage": {
-    "todayInputTokens": 34479,
-    "todayOutputTokens": 145752,
-    "asOf": "2026-07-13T15:32:13.570Z"
+    "todayInputTokens": 44205,
+    "todayOutputTokens": 224284,
+    "asOf": "2026-07-13T15:40:40.982Z"
   }
 }
