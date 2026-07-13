@@ -204,6 +204,18 @@
     .proj-detail { display:none; padding:13px 18px; background:var(--sur2); border-top:1px solid var(--bor); }
     .proj-detail.open { display:block; }
     .proj-empty { color:var(--mut); font-size:.87em; text-align:center; padding:32px 20px; grid-column:1/-1; background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); }
+    .proj-stage { font-size:.85em; font-weight:600; background:var(--sur2); border:1px solid var(--bor); border-radius:7px; padding:8px 12px; margin-bottom:10px; line-height:1.5; }
+    .proj-block-list { margin-bottom:10px; }
+    .proj-block-item { padding:8px 10px; border-radius:7px; margin-bottom:6px; background:var(--sur2); border-left:3px solid var(--mut); font-size:.84em; line-height:1.5; }
+    .proj-block-item:last-child { margin-bottom:0; }
+    .proj-block-item.own-president { border-left-color:var(--red); background:#fdeeee; }
+    .proj-block-item.own-external { border-left-color:var(--amb); background:#fef8ec; }
+    .proj-block-row { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+    .proj-block-tag { font-size:.66em; font-weight:700; padding:1px 8px; border-radius:20px; flex-shrink:0; white-space:nowrap; background:var(--sur); border:1px solid var(--bor); color:var(--mut); }
+    .proj-block-tag.own-president { color:var(--red); border-color:#f3c9c9; }
+    .proj-block-tag.own-external { color:var(--amb); border-color:#f5deb0; }
+    .proj-block-note { font-size:.86em; color:var(--mut); margin-top:3px; }
+    .proj-noblock { font-size:.83em; color:var(--grn); background:#e8f7f1; border-radius:7px; padding:8px 12px; margin-bottom:10px; font-weight:600; }
 
     /* AI組織: 部署ライブステータス */
     .aiorg-live-row { display:flex; align-items:center; gap:8px; background:var(--sur2); border:1px solid var(--bor); border-radius:8px; padding:8px 11px; margin-bottom:11px; }
@@ -941,6 +953,9 @@
 const TASK_IDS = ['t6','t31','t36','t1','t37','t38','t39','t43','t2','t4','t7','t5','t32','t34','t35','t33','t41','t42'];
 
 // PROJECTS_DATA_START
+// stage: 現在の進捗ステージ(自由記述)。blockers: 止まっている点/承認待ち事項の配列。
+// 各 blocker は { text, owner, note } の形式で、owner は '社長'(社長本人の判断・対応・承認待ち) / '外部'(弁護士・ストア審査等の社外要因) / '社内'(各部署が対応中、承認不要) のいずれか。
+// cloude会社/projects/<プロジェクト名>/README.md の内容(現在のフェーズ・未解決の課題・社長判断待ち事項)と同期させて手動更新する。
 const PROJECTS_DATA = [
   {
     id: "digital-estate",
@@ -951,6 +966,15 @@ const PROJECTS_DATA = [
     addedAt: "2026-06-19",
     updatedAt: "2026-07-06",
     color: "#4f8ef7",
+    stage: "Phase 1「久留米起点・土台づくり」Week 1（2026-07-05〜07-11、全8週間中）。Week4末サイト公開・Week5アポ営業開始が目標",
+    blockers: [
+      { text: "Webサイトの本番公開（ドメイン取得・デプロイ）", owner: "社長", note: "レビュー部のGOを経て、経営管理オフィスが最終確認を取ってから実行" },
+      { text: "契約書2点（業務委任契約書・提携契約書）＋資産移転委任状の弁護士レビュー", owner: "社長", note: "送金操作方針が確定したため依頼可能な状態。社長側での弁護士手配待ち" },
+      { text: "事業用電話番号の方針決定", owner: "社長", note: "個人携帯を使うか050番号を別途取得するか未確定" },
+      { text: "LINE公式アカウント・Instagramアカウントの開設", owner: "社長", note: "Xアカウントは開設済み" },
+      { text: "Webサイトフッターのプレースホルダー（X公式アカウントの@ハンドル）確定・反映", owner: "社長", note: "確定後、開発部がサイトへ反映" },
+      { text: "legal.html（特定商取引法表記）の電話番号「準備中」表記の是正", owner: "社内", note: "品質管理部が法令上の表示義務の例外要件を確認中" }
+    ],
     reports: [
       {
         id: "report_20260706_goodrei",
@@ -1030,6 +1054,50 @@ const PROJECTS_DATA = [
       "死後の家族依頼料は「パスワード開封+操作サポート」の範囲で3万円に確定、名義変更等の実務対応は対象外と明確化",
       "自社(3万円)はGOODREI(着手金11万〜55万円)の4分の1〜18分の1の低価格帯で明確に差別化",
       "サブスク引き継ぎレポート・写真アルバム化等、追加サービス10案を提示"
+    ]
+  },
+  {
+    id: "kyotei-prediction",
+    name: "競艇予測ツール",
+    category: "運用中サービス",
+    description: "boatrace.jpからデータをスクレイピングし、期待値(EV)の高い3連単組み合わせをメール通知する自動予測ツール。scikit-learnのランダムフォレストで勝率を予測し、日々の結果を収集して再学習する。既にエースハイ合同会社の実運用システムとして稼働中。",
+    status: "進行中",
+    updatedAt: "2026-07-13",
+    color: "#1aaa80",
+    stage: "運用中・完全自動運転（スクレイピング→予測→メール通知→結果収集→再学習を日次実行）。2026-07-09〜社長指示によりスコアリング・戦略のR&D改善サイクルも人間承認なしの全自動運転に切替済み。2026-07-13〜はclaude.aiクラウドルーティンが毎週月曜にR&Dサイクルを引き継ぎ稼働中",
+    blockers: [
+      { text: "予測精度の改善（直近の週次ROIはマイナス基調、7/6〜7/12週で-13.8%まで改善・依然赤字）", owner: "社内", note: "開発部がバックテストゲート付きの戦略R&Dで継続改善中、品質管理部が検証・マーケティング部がトレンド分析。日々の運用・改善サイクルとも社長承認は不要（既存の自動運転方針）" }
+    ],
+    reports: [
+      {
+        id: "report_20260713_weekly_review",
+        title: "週次反省レポート(第2サイクル) — 先週(7/6〜7/12)実績集計",
+        date: "2026-07-13",
+        summary: "先週の実績(1,105件・的中37件・ROI-13.8%)を集計。第2サイクルで新戦略4種を検証したが本番昇格なし(EV連動ステーキングは有望だが金額換算の改善が345円/959件と僅少なため見送り)。フォーメーション戦略は396件のデータで正式に不採用確定。",
+        tags: ["週次レビュー", "バックテスト", "ROI"],
+        path: "../競艇予測ツール/docs/reports/週次反省レポート_2026-07-13.html"
+      }
+    ],
+    highlights: [
+      "先週ROI -13.8%(投資¥110,500→回収¥95,290、的中率3.3%)",
+      "本番戦略multi_ev3_p04は全期間959件でROI-8.3%を維持、前サイクルから大崩れなし",
+      "新戦略4種を検証も本番昇格なし、EV連動ステーキングのみ次サイクルで再評価",
+      "フォーメーション戦略は396件到達・両期間で明確に悪化し正式rejectedへ"
+    ]
+  },
+  {
+    id: "poker-tourney-log",
+    name: "ポーカートナメ成績表",
+    category: "開発中アプリ",
+    description: "日本のアミューズポーカー店を主戦場とする個人向けポーカートーナメント成績記録アプリ。React Native / Expoによるネイティブアプリ(iOS/Android)。記録項目を絞ったシンプルなUIが特徴。",
+    status: "進行中",
+    updatedAt: "2026-07-10",
+    color: "#d97706",
+    stage: "開発中（ストア未公開）。コア機能（記録CRUD・集計ロジック・フレンド機能・実績バッジ・フリーミアム課金・広告）はコードベース上は実装済み。GitHub(private)へpush済みでバックアップ確保済み",
+    blockers: [
+      { text: "ストアへの実際の提出・公開（App Store / Google Play）", owner: "社内", note: "提出実績は未確認。品質管理部の最終チェック後、公開実行時は対外行為のため社長の最終承認が必要" },
+      { text: "Firestoreセキュリティルールの本番反映", owner: "社内", note: "Firebase Console側への手動反映作業が必要（開発部）。これも公開実行時は社長の最終承認が必要" },
+      { text: "Android版ネイティブGoogleログイン", owner: "社内", note: "別途OAuthクライアント設定・ネイティブビルドが必要" }
     ]
   }
 ];
@@ -1354,14 +1422,14 @@ function renderProjectStats() {
   const total = PROJECTS_DATA.length;
   const active = PROJECTS_DATA.filter(p => p.status === '進行中').length;
   const done   = PROJECTS_DATA.filter(p => p.status === '完了').length;
-  const totalRev = PROJECTS_DATA.reduce((s, p) => s + (p.revenue ? parseFloat(p.revenue.total||0) : 0), 0);
+  const pendingPresident = PROJECTS_DATA.reduce((s, p) => s + (p.blockers ? p.blockers.filter(b => b.owner === '社長').length : 0), 0);
   const el = document.getElementById('proj-stats');
   if (!el) return;
   el.innerHTML =
     `<div class="chip"><div class="n" style="color:var(--txt)">${total}</div><div class="l">総プロジェクト</div></div>` +
     `<div class="chip"><div class="n wip">${active}</div><div class="l">進行中</div></div>` +
     `<div class="chip"><div class="n done">${done}</div><div class="l">完了</div></div>` +
-    `<div class="chip"><div class="n" style="color:var(--grn)">${totalRev > 0 ? '¥'+totalRev.toLocaleString() : '-'}</div><div class="l">累計収益</div></div>`;
+    `<div class="chip"><div class="n" style="color:${pendingPresident > 0 ? 'var(--red)' : 'var(--grn)'}">${pendingPresident}</div><div class="l">社長対応待ち</div></div>`;
 }
 
 function renderProjects() {
@@ -1378,6 +1446,25 @@ function renderProjects() {
     const revM = p.revenue && parseFloat(p.revenue.monthly||0) > 0 ? '¥'+parseFloat(p.revenue.monthly).toLocaleString() : '-';
     const revT = p.revenue && parseFloat(p.revenue.total||0)   > 0 ? '¥'+parseFloat(p.revenue.total).toLocaleString()   : '-';
     const hasRev = revM !== '-' || revT !== '-';
+
+    const stageHtml = p.stage ? `
+      <div class="proj-sect">進捗ステージ</div>
+      <div class="proj-stage">${p.stage}</div>` : '';
+
+    const ownerTag = { '社長':'🔴 社長対応待ち', '外部':'🔵 外部待ち', '社内':'⚪ 社内対応中' };
+    const ownerCls = { '社長':'own-president', '外部':'own-external', '社内':'' };
+    const blockHtml = (p.blockers && p.blockers.length) ? `
+      <div class="proj-sect">止まっている点・承認待ち</div>
+      <div class="proj-block-list">
+      ${p.blockers.map(b => `
+        <div class="proj-block-item ${ownerCls[b.owner]||''}">
+          <div class="proj-block-row">
+            <span>${b.text}</span>
+            <span class="proj-block-tag ${ownerCls[b.owner]||''}">${ownerTag[b.owner]||b.owner||''}</span>
+          </div>
+          ${b.note ? `<div class="proj-block-note">${b.note}</div>` : ''}
+        </div>`).join('')}
+      </div>` : `<div class="proj-noblock">✅ 現在ブロッカーなし</div>`;
 
     const rptHtml = latestRpt ? `
       <div class="proj-sect">最新レポート</div>
@@ -1419,6 +1506,8 @@ function renderProjects() {
       </div>
       <div class="proj-body">
         ${p.description ? `<p class="proj-desc">${p.description}</p>` : ''}
+        ${stageHtml}
+        ${blockHtml}
         ${rptHtml}
         ${revHtml}
         ${hlHtml}
