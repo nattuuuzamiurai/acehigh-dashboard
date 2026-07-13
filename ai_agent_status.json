@@ -11,12 +11,18 @@
       "task": "開催初日除外戦略の独立検証",
       "startedAt": "2026-07-13T07:25:15.382Z",
       "finishedAt": "2026-07-13T07:25:24.805Z"
+    },
+    "review-lead": {
+      "status": "idle",
+      "task": "開催初日除外戦略の最終GO/NO-GO判定",
+      "startedAt": "2026-07-13T07:38:04.057Z",
+      "finishedAt": "2026-07-13T07:38:17.608Z"
     }
   },
-  "updatedAt": "2026-07-13T07:30:55.295Z",
+  "updatedAt": "2026-07-13T07:38:21.048Z",
   "usage": {
-    "todayInputTokens": 240381,
-    "todayOutputTokens": 1616697,
-    "asOf": "2026-07-13T07:30:55.295Z"
+    "todayInputTokens": 240439,
+    "todayOutputTokens": 1657416,
+    "asOf": "2026-07-13T07:38:21.048Z"
   }
 }
