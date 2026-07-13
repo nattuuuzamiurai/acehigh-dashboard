@@ -7,16 +7,16 @@
       "finishedAt": "2026-07-13T17:09:38.054Z"
     },
     "qa-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "PR#1の品質チェック",
       "startedAt": "2026-07-13T17:10:42.134Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-13T17:16:44.996Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "Week1記事のGO/NO-GO最終判定",
-      "startedAt": "2026-07-13T16:23:16.010Z",
-      "finishedAt": "2026-07-13T16:23:18.289Z"
+      "task": "PR#1のGO/NO-GO最終判定",
+      "startedAt": "2026-07-13T17:17:24.291Z",
+      "finishedAt": "2026-07-13T17:21:18.519Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T16:02:24.293Z"
     }
   },
-  "updatedAt": "2026-07-13T17:15:15.426Z",
+  "updatedAt": "2026-07-13T17:25:04.407Z",
   "usage": {
-    "todayInputTokens": 241181,
-    "todayOutputTokens": 1136466,
-    "asOf": "2026-07-13T17:15:15.426Z"
+    "todayInputTokens": 242877,
+    "todayOutputTokens": 1181865,
+    "asOf": "2026-07-13T17:25:04.407Z"
   }
 }
