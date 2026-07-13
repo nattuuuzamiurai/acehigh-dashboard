@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-naviのLINE誘導導線を削除",
-      "startedAt": "2026-07-13T17:03:37.133Z",
-      "finishedAt": "2026-07-13T17:09:38.054Z"
+      "task": "実写素材収集ツールとTTS文字数予算対応の実装",
+      "startedAt": "2026-07-13T19:59:28.379Z",
+      "finishedAt": "2026-07-13T19:59:31.024Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -15,7 +15,7 @@
     "review-lead": {
       "status": "running",
       "task": "GTD修正PRの最終レビュー",
-      "startedAt": "2026-07-13T19:57:04.792Z",
+      "startedAt": "2026-07-13T19:59:19.905Z",
       "finishedAt": null
     },
     "marketing-lead": {
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "多言語・国際展開戦略の立案",
-      "startedAt": "2026-07-13T16:17:45.297Z",
-      "finishedAt": "2026-07-13T16:18:22.359Z"
+      "task": "台本ストック追加と開示範囲ガイドライン草案作成",
+      "startedAt": "2026-07-13T19:59:53.963Z",
+      "finishedAt": "2026-07-13T19:59:56.642Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T16:02:24.293Z"
     }
   },
-  "updatedAt": "2026-07-13T19:59:10.583Z",
+  "updatedAt": "2026-07-13T20:00:01.161Z",
   "usage": {
-    "todayInputTokens": 247871,
-    "todayOutputTokens": 1326904,
-    "asOf": "2026-07-13T19:59:10.583Z"
+    "todayInputTokens": 249989,
+    "todayOutputTokens": 1351655,
+    "asOf": "2026-07-13T20:00:01.161Z"
   }
 }
