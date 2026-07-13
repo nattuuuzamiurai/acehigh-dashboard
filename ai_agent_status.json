@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "GTD修正PRの品質確認",
-      "startedAt": "2026-07-13T19:55:16.959Z",
-      "finishedAt": "2026-07-13T19:56:47.474Z"
+      "task": "修正反映後の再監査(品質管理部)",
+      "startedAt": "2026-07-13T20:10:49.528Z",
+      "finishedAt": "2026-07-13T20:11:00.098Z"
     },
     "review-lead": {
       "status": "running",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T16:02:24.293Z"
     }
   },
-  "updatedAt": "2026-07-13T20:07:34.216Z",
+  "updatedAt": "2026-07-13T20:10:58.809Z",
   "usage": {
-    "todayInputTokens": 255167,
-    "todayOutputTokens": 1445161,
-    "asOf": "2026-07-13T20:07:34.216Z"
+    "todayInputTokens": 270627,
+    "todayOutputTokens": 1541417,
+    "asOf": "2026-07-13T20:10:58.809Z"
   }
 }
