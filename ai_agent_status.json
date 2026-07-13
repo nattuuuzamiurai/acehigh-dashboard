@@ -1,16 +1,16 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "fukuoka-poker-naviのLINE誘導導線を削除",
       "startedAt": "2026-07-13T17:03:37.133Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-13T17:09:38.054Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "Week1記事のファクトチェック・ビルド確認",
-      "startedAt": "2026-07-13T16:15:02.608Z",
-      "finishedAt": "2026-07-13T16:15:06.922Z"
+      "status": "running",
+      "task": "PR#1の品質チェック",
+      "startedAt": "2026-07-13T17:10:42.134Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T16:02:24.293Z"
     }
   },
-  "updatedAt": "2026-07-13T17:08:37.238Z",
+  "updatedAt": "2026-07-13T17:15:15.426Z",
   "usage": {
-    "todayInputTokens": 233527,
-    "todayOutputTokens": 1098824,
-    "asOf": "2026-07-13T17:08:37.238Z"
+    "todayInputTokens": 241181,
+    "todayOutputTokens": 1136466,
+    "asOf": "2026-07-13T17:15:15.426Z"
   }
 }
