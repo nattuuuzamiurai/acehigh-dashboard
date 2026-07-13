@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "生成AIメディアのキーワードリサーチ",
-      "startedAt": "2026-07-13T15:43:46.824Z",
-      "finishedAt": "2026-07-13T15:44:03.941Z"
+      "task": "ショート動画自動化事業の企画提案書作成",
+      "startedAt": "2026-07-13T16:10:01.265Z",
+      "finishedAt": "2026-07-13T16:10:03.162Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T16:02:24.293Z"
     }
   },
-  "updatedAt": "2026-07-13T16:05:06.033Z",
+  "updatedAt": "2026-07-13T16:10:10.084Z",
   "usage": {
-    "todayInputTokens": 116121,
-    "todayOutputTokens": 554282,
-    "asOf": "2026-07-13T16:05:06.033Z"
+    "todayInputTokens": 135460,
+    "todayOutputTokens": 600874,
+    "asOf": "2026-07-13T16:10:10.084Z"
   }
 }
