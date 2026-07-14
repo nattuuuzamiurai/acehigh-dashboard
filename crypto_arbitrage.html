@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>裁定機会モニター | エースハイ合同会社</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; margin: 24px; background: #0f1115; color: #e8e8ea; }
+  a.back { color: #7fb8ff; font-size: 13px; text-decoration: none; }
+  a.back:hover { text-decoration: underline; }
+  h1 { font-size: 20px; margin: 10px 0 4px; }
+  .meta { color: #9aa0a6; font-size: 13px; margin-bottom: 4px; }
+  .warn-banner { background: #10243a; border: 1px solid #2a5a7a; color: #9fd0ff; padding: 8px 12px; border-radius: 6px; font-size: 13px; margin: 12px 0 20px; line-height: 1.6; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { border: 1px solid #2a2d34; padding: 8px 10px; vertical-align: top; text-align: left; }
+  th { background: #1a1c22; position: sticky; top: 0; }
+  tr.row-go { background: #10240f; }
+  .side-cell { display: flex; flex-direction: column; gap: 3px; }
+  .side-chain { font-weight: 600; }
+  .side-price { color: #cfd3d8; font-variant-numeric: tabular-nums; }
+  .side-liq { color: #9aa0a6; font-size: 12px; }
+  .side-links { margin-top: 4px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 3px 8px; border-radius: 4px; background: #2b6cb0; color: white; text-decoration: none; font-size: 12px; }
+  .btn:hover { background: #3182ce; }
+  .btn-secondary { background: #3a3d45; }
+  .btn-secondary:hover { background: #4a4d55; }
+  .btn-disabled { background: #2a2d34; color: #6b7078; }
+  .badge { display: inline-block; margin-top: 4px; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+  .badge-go { background: #1e5c1e; color: #a8ffa8; }
+  .badge-watch { background: #333; color: #bbb; }
+  .asset-name { font-weight: 700; font-size: 14px; }
+  .pattern-label { color: #9aa0a6; font-size: 12px; }
+  .sub { color: #9aa0a6; font-size: 11px; }
+  .pool-signal { color: #e0b34a; font-size: 11px; margin-top: 4px; }
+  .route-ok { color: #9ad39a; }
+  .route-warn { color: #e0b34a; }
+  .empty { text-align: center; color: #888; padding: 24px; }
+  footer { margin-top: 20px; color: #777; font-size: 12px; }
+  a { color: #7fb8ff; }
+  #update-indicator { transition: opacity 0.3s; }
+</style>
+</head>
+<body>
+  <a class="back" href="index.html">← ダッシュボードに戻る</a>
+  <h1>暗号資産 裁定機会モニター</h1>
+  <div class="meta">直近サイクル時刻: <span id="meta-cycle">—</span>(JST) / ページ生成時刻: <span id="meta-generated">—</span>(JST) / <span id="update-indicator">最終更新: —</span></div>
+  <div class="meta">表示件数: <span id="meta-count">—</span>件(直近1サイクルのみ表示) / 累計ログ件数: <span id="meta-total">—</span>件・うち通知候補(閾値超過)累計: <span id="meta-flagged">—</span>件</div>
+  <div class="warn-banner">
+    DEX間・パブリックチェーン間の価格乖離を自動検知するPoCです(検知・記録のみ。自動売買・ウォレット操作は一切行いません)。<br>
+    「通知候補(閾値超過)」バッジは<b>「ネット」欄(手数料・スリッページ・ブリッジ費用等を差し引いた実質損益の目安)が<span id="meta-threshold">—</span>%以上</b>の場合にのみ付与されます。<br>
+    リンク先のDEX画面URLは自動生成のベストエフォートです。実際にスワップする前に、必ず通貨ペア・チェーン・数量が意図通りか目視確認してください。価格データは複数ソースでの突合検証を行っていますが、完全な正確性を保証するものではありません。
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>資産 / パターン</th>
+        <th>買い側(安い方)</th>
+        <th>売り側(高い方)</th>
+        <th>乖離率(ネット<span id="meta-threshold2">—</span>%以上で通知候補)</th>
+        <th>ブリッジルート目安</th>
+        <th>検知時刻(JST)</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr><td colspan="6" class="empty">読み込み中...</td></tr>
+    </tbody>
+  </table>
+  <footer>
+    このページは約20分おきの監視サイクルごとに、社内の <code>crypto-arbitrage-monitor</code> プロジェクトから自動更新されます。30秒ごとに最新データを再取得するため、開いたままでも自動的に反映されます。
+  </footer>
+  <script>
+    async function refreshDashboard() {
+      try {
+        const res = await fetch('crypto_arbitrage_status.json', { cache: 'no-store' });
+        if (!res.ok) return;
+        const data = await res.json();
+        document.getElementById('meta-cycle').textContent = data.cycleAtJst;
+        document.getElementById('meta-generated').textContent = data.generatedAtJst;
+        document.getElementById('meta-count').textContent = data.count;
+        document.getElementById('meta-total').textContent = data.totalAllTime;
+        document.getElementById('meta-flagged').textContent = data.flaggedAllTime;
+        document.getElementById('meta-threshold').textContent = data.minNetProfitPct;
+        document.getElementById('meta-threshold2').textContent = data.minNetProfitPct;
+        document.getElementById('tbody').innerHTML = data.rowsHtml;
+        const indicator = document.getElementById('update-indicator');
+        indicator.textContent = '最終更新: ' + new Date().toLocaleTimeString('ja-JP', { hour12: false });
+      } catch (err) {
+        // eslint-disable-next-line no-console
+        console.error('[dashboard] crypto_arbitrage_status.json の取得に失敗しました:', err);
+      }
+    }
+    refreshDashboard();
+    setInterval(refreshDashboard, 30000);
+  </script>
+</body>
+</html>
