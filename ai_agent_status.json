@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "暗号資産アービトラージ監視の実現可能性調査",
-      "startedAt": "2026-07-14T09:37:00.212Z",
-      "finishedAt": "2026-07-14T09:37:03.163Z"
+      "task": "Week2企画・戦略修正の立案",
+      "startedAt": "2026-07-14T10:33:59.939Z",
+      "finishedAt": "2026-07-14T10:34:28.255Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-14T10:33:57.735Z",
+  "updatedAt": "2026-07-14T10:34:46.127Z",
   "usage": {
-    "todayInputTokens": 665265,
-    "todayOutputTokens": 2655266,
-    "asOf": "2026-07-14T10:33:57.735Z"
+    "todayInputTokens": 665725,
+    "todayOutputTokens": 2670006,
+    "asOf": "2026-07-14T10:34:46.127Z"
   }
 }
