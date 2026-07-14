@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Week2記事のGO/NO-GO判定",
-      "startedAt": "2026-07-14T11:26:12.403Z",
-      "finishedAt": "2026-07-14T11:26:37.545Z"
+      "task": "修正後の最終GO/NO-GO判定",
+      "startedAt": "2026-07-14T16:25:27.894Z",
+      "finishedAt": "2026-07-14T16:25:51.946Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-14T13:20:52.094Z"
     }
   },
-  "updatedAt": "2026-07-14T16:25:20.326Z",
+  "updatedAt": "2026-07-14T16:27:45.593Z",
   "usage": {
-    "todayInputTokens": 12300,
-    "todayOutputTokens": 216017,
-    "asOf": "2026-07-14T16:25:20.326Z"
+    "todayInputTokens": 14558,
+    "todayOutputTokens": 227369,
+    "asOf": "2026-07-14T16:27:45.593Z"
   }
 }
