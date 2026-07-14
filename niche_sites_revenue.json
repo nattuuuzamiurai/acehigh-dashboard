@@ -1,6 +1,6 @@
 {
   "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。",
-  "generatedAt": "2026-07-14T00:00:00.000Z",
+  "generatedAt": "2026-07-14T12:55:00.000Z",
   "sites": [
     {
       "id": "ai-jitsumu-navi",
@@ -20,6 +20,20 @@
         "total": 0,
         "status": "収益発生前（ASP提携審査中）",
         "note": "A8.netにて3件のASP提携を申請中（Misoca、freee、マネーフォワード クラウド）、承認待ち。Google AdSenseは未申込。実収益はまだ発生していない。",
+        "updatedAt": "2026-07-14"
+      }
+    },
+    {
+      "id": "fukuoka-poker-navi",
+      "name": "ふくおかポーカーナビ",
+      "url": "https://nattuuuzamiurai.github.io/fukuoka-poker-navi/",
+      "genre": "福岡ポーカートーナメント情報アグリゲーター",
+      "status": "運用中",
+      "revenue": {
+        "monthly": 0,
+        "total": 0,
+        "status": "収益発生前（Google AdSense審査中）",
+        "note": "Google AdSense申請済み・審査結果待ち（6時間おきに自動確認し、結果が出次第プロジェクト管理側に反映）。店舗PR有料掲載枠は営業資料のみ準備済みで契約実績はまだ0件。アクセス解析（GA4等）は未導入のため、PV数値は現時点で計測できていない。",
         "updatedAt": "2026-07-14"
       }
     }
