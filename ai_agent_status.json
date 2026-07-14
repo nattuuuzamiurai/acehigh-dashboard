@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "非EVMチェーン追加と継続稼働開始",
-      "startedAt": "2026-07-14T10:25:12.081Z",
-      "finishedAt": "2026-07-14T10:25:55.018Z"
+      "task": "ダッシュボードにアフィリエイト欄を追加",
+      "startedAt": "2026-07-14T10:33:01.109Z",
+      "finishedAt": "2026-07-14T10:33:14.149Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-14T10:29:19.536Z",
+  "updatedAt": "2026-07-14T10:33:57.735Z",
   "usage": {
-    "todayInputTokens": 663882,
-    "todayOutputTokens": 2603048,
-    "asOf": "2026-07-14T10:29:19.536Z"
+    "todayInputTokens": 665265,
+    "todayOutputTokens": 2655266,
+    "asOf": "2026-07-14T10:33:57.735Z"
   }
 }
