@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "訪問美容マッチング市場調査",
-      "startedAt": "2026-07-13T20:19:02.002Z",
-      "finishedAt": "2026-07-13T20:24:22.891Z"
+      "task": "実際の広告主候補のリサーチ",
+      "startedAt": "2026-07-14T09:27:46.889Z",
+      "finishedAt": "2026-07-14T09:27:59.126Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-14T09:27:20.555Z",
+  "updatedAt": "2026-07-14T09:28:09.548Z",
   "usage": {
-    "todayInputTokens": 481414,
-    "todayOutputTokens": 2192713,
-    "asOf": "2026-07-14T09:27:20.555Z"
+    "todayInputTokens": 481436,
+    "todayOutputTokens": 2198992,
+    "asOf": "2026-07-14T09:28:09.548Z"
   }
 }
