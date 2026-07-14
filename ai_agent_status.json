@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "実際の広告主候補のリサーチ",
-      "startedAt": "2026-07-14T09:27:46.889Z",
-      "finishedAt": "2026-07-14T09:27:59.126Z"
+      "task": "暗号資産アービトラージ監視の実現可能性調査",
+      "startedAt": "2026-07-14T09:37:00.212Z",
+      "finishedAt": "2026-07-14T09:37:03.163Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-14T09:29:48.140Z",
+  "updatedAt": "2026-07-14T09:37:14.923Z",
   "usage": {
-    "todayInputTokens": 489960,
-    "todayOutputTokens": 2209999,
-    "asOf": "2026-07-14T09:29:48.140Z"
+    "todayInputTokens": 546528,
+    "todayOutputTokens": 2283892,
+    "asOf": "2026-07-14T09:37:14.923Z"
   }
 }
