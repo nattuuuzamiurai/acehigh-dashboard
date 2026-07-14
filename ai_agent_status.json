@@ -20,9 +20,9 @@
     },
     "marketing-lead": {
       "status": "idle",
-      "task": "広告収益・SEO・誘導戦略の策定",
-      "startedAt": "2026-07-13T09:23:32.942Z",
-      "finishedAt": "2026-07-13T09:23:35.771Z"
+      "task": "店舗PR有料掲載の営業資料作成",
+      "startedAt": "2026-07-14T09:22:47.846Z",
+      "finishedAt": "2026-07-14T09:23:03.362Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-14T09:22:10.245Z",
+  "updatedAt": "2026-07-14T09:24:37.293Z",
   "usage": {
-    "todayInputTokens": 477205,
-    "todayOutputTokens": 2160614,
-    "asOf": "2026-07-14T09:22:10.245Z"
+    "todayInputTokens": 480948,
+    "todayOutputTokens": 2179959,
+    "asOf": "2026-07-14T09:24:37.293Z"
   }
 }
