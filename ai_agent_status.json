@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "監視対象通貨・DEXの大幅拡張",
-      "startedAt": "2026-07-14T12:03:13.830Z",
-      "finishedAt": "2026-07-14T12:03:27.130Z"
+      "task": "サイトマップ・robots.txt整備",
+      "startedAt": "2026-07-14T17:47:35.899Z",
+      "finishedAt": "2026-07-14T17:47:52.853Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-14T13:20:52.094Z"
     }
   },
-  "updatedAt": "2026-07-14T17:46:11.628Z",
+  "updatedAt": "2026-07-14T17:48:25.365Z",
   "usage": {
-    "todayInputTokens": 127661,
-    "todayOutputTokens": 524914,
-    "asOf": "2026-07-14T17:46:11.628Z"
+    "todayInputTokens": 128843,
+    "todayOutputTokens": 543923,
+    "asOf": "2026-07-14T17:48:25.365Z"
   }
 }
