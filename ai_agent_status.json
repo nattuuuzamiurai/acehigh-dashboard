@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ダッシュボードにアフィリエイト欄を追加",
-      "startedAt": "2026-07-14T10:33:01.109Z",
-      "finishedAt": "2026-07-14T10:33:14.149Z"
+      "task": "ローカル専用の裁定機会ダッシュボード追加",
+      "startedAt": "2026-07-14T11:14:25.214Z",
+      "finishedAt": "2026-07-14T11:14:50.538Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-14T10:53:22.399Z"
     }
   },
-  "updatedAt": "2026-07-14T11:11:56.497Z",
+  "updatedAt": "2026-07-14T11:15:07.563Z",
   "usage": {
-    "todayInputTokens": 742689,
-    "todayOutputTokens": 2883784,
-    "asOf": "2026-07-14T11:11:56.497Z"
+    "todayInputTokens": 794339,
+    "todayOutputTokens": 2903472,
+    "asOf": "2026-07-14T11:15:07.563Z"
   }
 }
