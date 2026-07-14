@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-14T18:25:04.803Z"
     }
   },
-  "updatedAt": "2026-07-14T19:22:47.326Z",
+  "updatedAt": "2026-07-14T19:37:31.398Z",
   "usage": {
-    "todayInputTokens": 196342,
-    "todayOutputTokens": 987027,
-    "asOf": "2026-07-14T19:22:47.326Z"
+    "todayInputTokens": 209889,
+    "todayOutputTokens": 1020632,
+    "asOf": "2026-07-14T19:37:31.398Z"
   }
 }
