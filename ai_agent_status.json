@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ローカル専用の裁定機会ダッシュボード追加",
-      "startedAt": "2026-07-14T11:14:25.214Z",
-      "finishedAt": "2026-07-14T11:14:50.538Z"
+      "task": "監視対象通貨・DEXの大幅拡張",
+      "startedAt": "2026-07-14T12:03:13.830Z",
+      "finishedAt": "2026-07-14T12:03:27.130Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-14T10:53:22.399Z"
     }
   },
-  "updatedAt": "2026-07-14T12:00:32.550Z",
+  "updatedAt": "2026-07-14T12:04:07.013Z",
   "usage": {
-    "todayInputTokens": 844726,
-    "todayOutputTokens": 3038410,
-    "asOf": "2026-07-14T12:00:32.550Z"
+    "todayInputTokens": 846990,
+    "todayOutputTokens": 3076697,
+    "asOf": "2026-07-14T12:04:07.013Z"
   }
 }
