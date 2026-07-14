@@ -1,0 +1,27 @@
+{
+  "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。",
+  "generatedAt": "2026-07-14T00:00:00.000Z",
+  "sites": [
+    {
+      "id": "ai-jitsumu-navi",
+      "name": "AI実務ナビ",
+      "url": "https://aijitsumunavi.com",
+      "genre": "AI活用・業務効率化（日本語）",
+      "status": "運用中",
+      "articles": {
+        "total": 7,
+        "asOf": "2026-07-14",
+        "monthly": [
+          { "period": "2026-07 Week1", "count": 7 }
+        ]
+      },
+      "revenue": {
+        "monthly": 0,
+        "total": 0,
+        "status": "収益発生前（ASP提携審査中）",
+        "note": "A8.netにて3件のASP提携を申請中（Misoca、freee、マネーフォワード クラウド）、承認待ち。Google AdSenseは未申込。実収益はまだ発生していない。",
+        "updatedAt": "2026-07-14"
+      }
+    }
+  ]
+}

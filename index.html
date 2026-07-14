@@ -457,6 +457,7 @@
     <div class="ng">ツール</div>
     <div class="ni" onclick="showPage('kyotei')"><span class="ni-ic">🚤</span>競艇予測</div>
     <div class="ni" onclick="showPage('chaipo')"><span class="ni-ic">🃏</span>チャイポ OFC</div>
+    <div class="ni" onclick="showPage('affiliate')"><span class="ni-ic">🔗</span>アフィリエイト</div>
   </nav>
 </div>
 <div id="sb-overlay" onclick="closeSidebar()"></div>
@@ -967,6 +968,16 @@
       </div>
     </div>
 
+    <!-- ===== アフィリエイト事業 ===== -->
+    <div class="page" id="page-affiliate">
+      <div class="g4" id="aff-stats" style="margin-bottom:18px;"></div>
+      <div class="sh">
+        <h2>運用サイト一覧</h2>
+        <span style="font-size:.78em;color:var(--mut);">ニッチアフィリエイトサイト事業 / niche_sites_revenue.json から自動反映</span>
+      </div>
+      <div class="proj-grid mt12" id="aff-grid"></div>
+    </div>
+
   </div>
 </div>
 
@@ -1195,7 +1206,7 @@ function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
@@ -1205,6 +1216,7 @@ function showPage(name) {
   if (name==='aiorg') { renderAIOrg(); renderPipeline(); }
   if (name==='kyotei') renderKyotei();
   if (name==='chaipo-board') cbRenderBoard();
+  if (name==='affiliate') renderAffiliateSites();
 }
 
 // ===== TASKS =====
@@ -3086,6 +3098,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   pollInquiryStatus();
   setInterval(pollInquiryStatus, 15000);
 
+  // アフィリエイト事業: サイトごとの記事数・収益データ
+  pollAffiliateStatus();
+  setInterval(pollAffiliateStatus, 15000);
+
 });
 
 async function pollInquiryStatus() {
@@ -3106,6 +3122,88 @@ async function pollInquiryStatus() {
   } catch (e) {
     badge.style.display = 'none';
   }
+}
+
+// ===== アフィリエイト事業(ニッチアフィリエイトサイト) =====
+// niche_sites_revenue.json をポーリングして得たサイトごとの記事数・収益データ。取得できるまではnull。
+let AFFILIATE_DATA = null;
+
+async function pollAffiliateStatus() {
+  try {
+    const res = await fetch('niche_sites_revenue.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) return;
+    AFFILIATE_DATA = await res.json();
+    renderAffiliateSites();
+  } catch (e) {
+    // 取得失敗時は空表示のまま(握りつぶす)
+  }
+}
+
+function renderAffiliateSites() {
+  const statsEl = document.getElementById('aff-stats');
+  const gridEl = document.getElementById('aff-grid');
+  if (!statsEl || !gridEl) return;
+  const sites = (AFFILIATE_DATA && Array.isArray(AFFILIATE_DATA.sites)) ? AFFILIATE_DATA.sites : [];
+
+  const totalSites = sites.length;
+  const totalArticles = sites.reduce((s, x) => s + ((x.articles && x.articles.total) || 0), 0);
+  const latestMonthlyArticles = sites.reduce((s, x) => {
+    const arr = x.articles && Array.isArray(x.articles.monthly) ? x.articles.monthly : [];
+    const last = arr[arr.length - 1];
+    return s + (last ? (last.count || 0) : 0);
+  }, 0);
+  const totalMonthlyRevenue = sites.reduce((s, x) => s + parseFloat((x.revenue && x.revenue.monthly) || 0), 0);
+
+  statsEl.innerHTML =
+    `<div class="chip"><div class="n" style="color:var(--txt)">${totalSites}</div><div class="l">運用中サイト数</div></div>` +
+    `<div class="chip"><div class="n" style="color:var(--acc)">${totalArticles}</div><div class="l">累計公開記事数</div></div>` +
+    `<div class="chip"><div class="n" style="color:var(--acc)">${latestMonthlyArticles}</div><div class="l">直近月の公開記事数</div></div>` +
+    `<div class="chip"><div class="n" style="color:${totalMonthlyRevenue > 0 ? 'var(--grn)' : 'var(--mut)'}">¥${totalMonthlyRevenue.toLocaleString()}</div><div class="l">月次広告・ASP収益</div></div>`;
+
+  if (!sites.length) {
+    gridEl.innerHTML = '<div class="proj-empty">サイトデータがまだありません</div>';
+    return;
+  }
+
+  gridEl.innerHTML = sites.map(s => {
+    const articles = s.articles || {};
+    const monthlyArr = Array.isArray(articles.monthly) ? articles.monthly : [];
+    const latest = monthlyArr[monthlyArr.length - 1];
+    const rev = s.revenue || {};
+    const revAmt = parseFloat(rev.monthly || 0);
+    const revValHtml = revAmt > 0
+      ? `<div class="proj-rev-val">¥${revAmt.toLocaleString()}</div>`
+      : `<div class="proj-rev-val" style="color:var(--mut);font-size:.85em;">¥0${rev.status ? '（' + aiEsc(rev.status) + '）' : ''}</div>`;
+
+    return `<div class="proj-card">
+      <div class="proj-hdr" style="background:linear-gradient(135deg,var(--acc),#8b93f5)">
+        <div class="proj-name">${aiEsc(s.name)}</div>
+        <div class="proj-meta">
+          ${s.genre ? `<span style="background:rgba(255,255,255,.22);color:#fff;font-size:.72em;padding:2px 8px;border-radius:20px;font-weight:600;">${aiEsc(s.genre)}</span>` : ''}
+          <span>${aiEsc(s.status || '運用中')}</span>
+        </div>
+      </div>
+      <div class="proj-body">
+        ${s.url ? `<p class="proj-desc"><a href="${aiEsc(s.url)}" target="_blank" rel="noopener" style="color:var(--acc);text-decoration:none;">${aiEsc(s.url)} <span style="font-size:.85em;opacity:.6;">↗</span></a></p>` : ''}
+        <div class="proj-sect">公開記事数</div>
+        <div class="proj-rev">
+          <div class="proj-rev-item"><div class="proj-rev-val">${articles.total ?? '-'}</div><div class="proj-rev-lbl">累計${articles.asOf ? '（' + aiEsc(articles.asOf) + '時点）' : ''}</div></div>
+          <div class="proj-rev-item"><div class="proj-rev-val">${latest ? latest.count : '-'}</div><div class="proj-rev-lbl">${latest ? aiEsc(latest.period) : '直近月'}</div></div>
+        </div>
+        <div class="proj-sect">広告・アフィリエイト収益（月次）</div>
+        <div class="proj-rev">
+          <div class="proj-rev-item" style="flex:1;text-align:left;padding:8px 10px;">
+            ${revValHtml}
+            ${rev.note ? `<div style="font-size:.78em;color:var(--mut);line-height:1.5;margin-top:5px;">${aiEsc(rev.note)}</div>` : ''}
+          </div>
+        </div>
+      </div>
+      <div class="proj-footer">
+        <span>データ更新: ${aiEsc(rev.updatedAt || articles.asOf || '')}</span>
+        <span></span>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 let chaipoRunning = false;
