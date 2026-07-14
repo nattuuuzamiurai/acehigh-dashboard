@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "サイトデザインの大幅改善",
-      "startedAt": "2026-07-13T20:19:57.498Z",
-      "finishedAt": "2026-07-13T20:20:28.722Z"
+      "task": "クロスチェーン裁定監視PoCの実装",
+      "startedAt": "2026-07-14T09:47:05.644Z",
+      "finishedAt": "2026-07-14T09:47:08.238Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-14T09:44:27.185Z",
+  "updatedAt": "2026-07-14T09:47:15.635Z",
   "usage": {
-    "todayInputTokens": 604442,
-    "todayOutputTokens": 2388076,
-    "asOf": "2026-07-14T09:44:27.185Z"
+    "todayInputTokens": 604740,
+    "todayOutputTokens": 2409889,
+    "asOf": "2026-07-14T09:47:15.635Z"
   }
 }
