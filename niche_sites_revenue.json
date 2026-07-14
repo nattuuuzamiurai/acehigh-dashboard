@@ -9,17 +9,18 @@
       "genre": "AI活用・業務効率化（日本語）",
       "status": "運用中",
       "articles": {
-        "total": 7,
+        "total": 16,
         "asOf": "2026-07-14",
         "monthly": [
-          { "period": "2026-07 Week1", "count": 7 }
+          { "period": "2026-07 Week1", "count": 7 },
+          { "period": "2026-07 Week2", "count": 9 }
         ]
       },
       "revenue": {
         "monthly": 0,
         "total": 0,
-        "status": "収益発生前（ASP提携審査中）",
-        "note": "A8.netにて3件のASP提携を申請中（Misoca、freee、マネーフォワード クラウド）、承認待ち。Google AdSenseは未申込。実収益はまだ発生していない。",
+        "status": "実リンク稼働中・売上ゼロ（トラフィック未発生）",
+        "note": "A8.net提携3件が承認され実アフィリエイトリンクに差し替え済み（Misoca、freee会計、マネーフォワード クラウド請求書）。Google AdSenseは申込・サイト確認スクリプト設置済みで審査待ち（ウェルカムメール受信のみ、承認通知はまだ）。新規ドメインのため検索流入がまだなく、実際のクリック・成果は0件。",
         "updatedAt": "2026-07-14"
       }
     },
