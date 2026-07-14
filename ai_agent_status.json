@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "クロスチェーン裁定監視PoCの実装",
-      "startedAt": "2026-07-14T09:47:05.644Z",
-      "finishedAt": "2026-07-14T09:47:08.238Z"
+      "task": "非EVMチェーン追加と継続稼働開始",
+      "startedAt": "2026-07-14T10:25:12.081Z",
+      "finishedAt": "2026-07-14T10:25:55.018Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-13T20:20:46.523Z"
     }
   },
-  "updatedAt": "2026-07-14T10:22:05.696Z",
+  "updatedAt": "2026-07-14T10:26:58.854Z",
   "usage": {
-    "todayInputTokens": 622574,
-    "todayOutputTokens": 2553837,
-    "asOf": "2026-07-14T10:22:05.696Z"
+    "todayInputTokens": 663836,
+    "todayOutputTokens": 2594026,
+    "asOf": "2026-07-14T10:26:58.854Z"
   }
 }
