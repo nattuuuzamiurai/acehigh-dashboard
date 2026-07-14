@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "日本向けCEX裁定監視の実現可能性調査",
-      "startedAt": "2026-07-14T16:27:59.979Z",
-      "finishedAt": "2026-07-14T16:28:14.253Z"
+      "task": "Week3企画の確定",
+      "startedAt": "2026-07-14T18:12:36.759Z",
+      "finishedAt": "2026-07-14T18:12:49.540Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-14T13:20:52.094Z"
     }
   },
-  "updatedAt": "2026-07-14T18:08:14.556Z",
+  "updatedAt": "2026-07-14T18:13:55.139Z",
   "usage": {
-    "todayInputTokens": 132335,
-    "todayOutputTokens": 607532,
-    "asOf": "2026-07-14T18:08:14.556Z"
+    "todayInputTokens": 133725,
+    "todayOutputTokens": 639045,
+    "asOf": "2026-07-14T18:13:55.139Z"
   }
 }
