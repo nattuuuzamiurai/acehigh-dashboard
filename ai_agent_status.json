@@ -32,15 +32,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "Week3記事8本の執筆",
-      "startedAt": "2026-07-14T18:24:36.266Z",
-      "finishedAt": "2026-07-14T18:25:04.803Z"
+      "task": "Week4記事7本の執筆",
+      "startedAt": "2026-07-15T11:07:04.269Z",
+      "finishedAt": "2026-07-15T11:07:20.844Z"
     }
   },
-  "updatedAt": "2026-07-15T10:54:23.755Z",
+  "updatedAt": "2026-07-15T11:07:58.529Z",
   "usage": {
-    "todayInputTokens": 216420,
-    "todayOutputTokens": 1110490,
-    "asOf": "2026-07-15T10:54:23.755Z"
+    "todayInputTokens": 233040,
+    "todayOutputTokens": 1162788,
+    "asOf": "2026-07-15T11:07:58.529Z"
   }
 }
