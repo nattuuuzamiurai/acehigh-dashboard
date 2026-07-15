@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "Week4企画の確定",
-      "startedAt": "2026-07-15T10:53:40.523Z",
-      "finishedAt": "2026-07-15T10:53:45.841Z"
+      "task": "ポーカー配信解説記事メディアの企画立案",
+      "startedAt": "2026-07-15T12:49:45.271Z",
+      "finishedAt": "2026-07-15T12:49:48.745Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T11:57:01.955Z"
     }
   },
-  "updatedAt": "2026-07-15T12:47:58.178Z",
+  "updatedAt": "2026-07-15T12:49:52.584Z",
   "usage": {
-    "todayInputTokens": 467961,
-    "todayOutputTokens": 1472078,
-    "asOf": "2026-07-15T12:47:58.178Z"
+    "todayInputTokens": 478357,
+    "todayOutputTokens": 1503465,
+    "asOf": "2026-07-15T12:49:52.584Z"
   }
 }
