@@ -8,15 +8,15 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "poker-hand-media記事群の品質チェック",
-      "startedAt": "2026-07-15T15:58:01.403Z",
-      "finishedAt": "2026-07-15T16:06:36.146Z"
+      "task": "記事3修正版の再チェック",
+      "startedAt": "2026-07-15T16:30:19.425Z",
+      "finishedAt": "2026-07-15T16:30:23.828Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "poker-hand-media 6記事の最終GO/NO-GO判定",
-      "startedAt": "2026-07-15T16:15:26.649Z",
-      "finishedAt": "2026-07-15T16:21:04.928Z"
+      "task": "記事3の最終GO/NO-GO判定",
+      "startedAt": "2026-07-15T16:36:22.858Z",
+      "finishedAt": "2026-07-15T16:36:28.283Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T16:15:50.451Z"
     }
   },
-  "updatedAt": "2026-07-15T16:30:10.184Z",
+  "updatedAt": "2026-07-15T16:36:34.696Z",
   "usage": {
-    "todayInputTokens": 195934,
-    "todayOutputTokens": 607277,
-    "asOf": "2026-07-15T16:30:10.184Z"
+    "todayInputTokens": 197797,
+    "todayOutputTokens": 632386,
+    "asOf": "2026-07-15T16:36:34.696Z"
   }
 }
