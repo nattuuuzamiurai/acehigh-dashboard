@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "QA check: sticky ad bar change",
-      "startedAt": "2026-07-15T14:46:42.241Z",
-      "finishedAt": "2026-07-15T14:54:38.010Z"
+      "task": "poker-hand-media記事群の品質チェック",
+      "startedAt": "2026-07-15T15:58:01.403Z",
+      "finishedAt": "2026-07-15T15:58:06.172Z"
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T15:31:49.292Z"
     }
   },
-  "updatedAt": "2026-07-15T15:37:22.638Z",
+  "updatedAt": "2026-07-15T15:58:11.931Z",
   "usage": {
-    "todayInputTokens": 64937,
-    "todayOutputTokens": 203245,
-    "asOf": "2026-07-15T15:37:22.638Z"
+    "todayInputTokens": 68929,
+    "todayOutputTokens": 354240,
+    "asOf": "2026-07-15T15:58:11.931Z"
   }
 }
