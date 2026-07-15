@@ -16,7 +16,7 @@
       "status": "idle",
       "task": "poker-hand-media 6記事の最終GO/NO-GO判定",
       "startedAt": "2026-07-15T16:15:26.649Z",
-      "finishedAt": "2026-07-15T16:15:29.178Z"
+      "finishedAt": "2026-07-15T16:21:04.928Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T16:15:50.451Z"
     }
   },
-  "updatedAt": "2026-07-15T16:15:56.103Z",
+  "updatedAt": "2026-07-15T16:23:16.357Z",
   "usage": {
-    "todayInputTokens": 166215,
-    "todayOutputTokens": 514966,
-    "asOf": "2026-07-15T16:15:56.103Z"
+    "todayInputTokens": 168266,
+    "todayOutputTokens": 570890,
+    "asOf": "2026-07-15T16:23:16.357Z"
   }
 }
