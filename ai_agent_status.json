@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-15T14:25:45.638Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "Week4修正4本の再QAチェック",
-      "startedAt": "2026-07-15T12:02:43.797Z",
-      "finishedAt": "2026-07-15T12:02:47.813Z"
+      "status": "running",
+      "task": "QA check: sticky ad bar change",
+      "startedAt": "2026-07-15T14:46:42.241Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T11:57:01.955Z"
     }
   },
-  "updatedAt": "2026-07-15T14:40:34.985Z",
+  "updatedAt": "2026-07-15T14:46:59.981Z",
   "usage": {
-    "todayInputTokens": 573811,
-    "todayOutputTokens": 2007034,
-    "asOf": "2026-07-15T14:40:34.985Z"
+    "todayInputTokens": 575067,
+    "todayOutputTokens": 2040343,
+    "asOf": "2026-07-15T14:46:59.981Z"
   }
 }
