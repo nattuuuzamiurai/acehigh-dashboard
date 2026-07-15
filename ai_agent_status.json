@@ -13,10 +13,10 @@
       "finishedAt": "2026-07-15T16:06:36.146Z"
     },
     "review-lead": {
-      "status": "running",
-      "task": "Review-lead GO/NO-GO: date strip + ad expansion",
-      "startedAt": "2026-07-15T16:07:34.011Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "poker-hand-media 6記事の最終GO/NO-GO判定",
+      "startedAt": "2026-07-15T16:15:26.649Z",
+      "finishedAt": "2026-07-15T16:15:29.178Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -32,15 +32,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "poker-hand-media初期記事の執筆",
-      "startedAt": "2026-07-15T15:31:45.300Z",
-      "finishedAt": "2026-07-15T15:31:49.292Z"
+      "task": "記事3(WSOP Event#39)の事実確認差し戻し対応",
+      "startedAt": "2026-07-15T16:15:47.647Z",
+      "finishedAt": "2026-07-15T16:15:50.451Z"
     }
   },
-  "updatedAt": "2026-07-15T16:12:12.792Z",
+  "updatedAt": "2026-07-15T16:15:56.103Z",
   "usage": {
-    "todayInputTokens": 164966,
-    "todayOutputTokens": 487111,
-    "asOf": "2026-07-15T16:12:12.792Z"
+    "todayInputTokens": 166215,
+    "todayOutputTokens": 514966,
+    "asOf": "2026-07-15T16:15:56.103Z"
   }
 }
