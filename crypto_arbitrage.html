@@ -5,57 +5,40 @@
 <title>裁定機会モニター | エースハイ合同会社</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  :root {
-    --bg:      #f5f1eb;
-    --sur:     #ffffff;
-    --sur2:    #faf7f2;
-    --bor:     #e6dfd4;
-    --txt:     #2c2420;
-    --mut:     #9e9088;
-    --acc:     #6674f0;
-    --grn:     #1aaa80;
-    --amb:     #d97706;
-    --red:     #e05050;
-    --sha:     0 2px 10px rgba(40,25,10,.08);
-    --r:       10px;
-  }
-  * { box-sizing: border-box; }
-  body { font-family:"Hiragino Sans","Yu Gothic UI",sans-serif; background:var(--bg); color:var(--txt); font-size:14px; margin:0; padding:26px; }
-  a { color:var(--acc); }
-  a.back { display:inline-block; margin-bottom:10px; font-size:.85em; text-decoration:none; color:var(--mut); }
-  a.back:hover { color:var(--acc); }
-  h1 { font-size:1.4em; font-weight:700; margin:4px 0 10px; }
-  .meta { color:var(--mut); font-size:.82em; margin-bottom:4px; }
-  .warn-banner { background:#fef3c7; border:1px solid #fde3a7; color:#8a5a06; padding:10px 14px; border-radius:var(--r); font-size:.82em; margin:14px 0 20px; line-height:1.7; }
-  .tw { background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); overflow:hidden; box-shadow:var(--sha); overflow-x:auto; }
-  table { width:100%; border-collapse:collapse; min-width:760px; }
-  th { background:var(--sur2); color:var(--mut); padding:10px 13px; text-align:left; font-size:.76em; font-weight:600; letter-spacing:.04em; border-bottom:1px solid var(--bor); white-space:nowrap; }
-  td { padding:10px 13px; border-bottom:1px solid var(--bor); font-size:.87em; vertical-align:top; }
-  tr:last-child td { border-bottom:none; }
-  tr.row-go td { background:#f0faf6; }
-  .side-cell { display:flex; flex-direction:column; gap:3px; }
-  .side-chain { font-weight:700; }
-  .side-price { color:var(--txt); font-variant-numeric:tabular-nums; }
-  .side-liq { color:var(--mut); font-size:.85em; }
-  .side-links { margin-top:4px; display:flex; gap:6px; flex-wrap:wrap; }
-  .btn { display:inline-block; padding:4px 10px; border-radius:7px; font-size:.78em; font-weight:600; text-decoration:none; font-family:inherit; background:var(--acc); color:#fff; }
-  .btn:hover { opacity:.85; }
-  .btn.btn-secondary { background:var(--sur2); border:1px solid var(--bor); color:var(--txt); }
-  .btn.btn-secondary:hover { background:var(--bor); opacity:1; }
-  .btn.btn-disabled { background:var(--sur2); border:1px solid var(--bor); color:var(--mut); cursor:default; }
-  .btn.btn-disabled:hover { opacity:1; }
-  .badge { display:inline-block; margin-top:4px; padding:2px 9px; border-radius:20px; font-size:.72em; font-weight:700; }
-  .badge-go { background:#dcfce7; color:#16a34a; }
-  .badge-watch { background:var(--sur2); color:var(--mut); border:1px solid var(--bor); }
-  .asset-name { font-weight:700; font-size:1.02em; }
-  .pattern-label { color:var(--mut); font-size:.82em; }
-  .sub { color:var(--mut); font-size:.78em; }
-  .pool-signal { color:var(--amb); font-size:.78em; margin-top:4px; }
-  .route-ok { color:var(--grn); }
-  .route-warn { color:var(--amb); }
-  .empty { text-align:center; color:var(--mut); padding:24px; }
-  footer { margin-top:18px; color:var(--mut); font-size:.78em; }
-  #update-indicator { transition:opacity .3s; }
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; margin: 24px; background: #0f1115; color: #e8e8ea; }
+  a.back { color: #7fb8ff; font-size: 13px; text-decoration: none; }
+  a.back:hover { text-decoration: underline; }
+  h1 { font-size: 20px; margin: 10px 0 4px; }
+  .meta { color: #9aa0a6; font-size: 13px; margin-bottom: 4px; }
+  .warn-banner { background: #10243a; border: 1px solid #2a5a7a; color: #9fd0ff; padding: 8px 12px; border-radius: 6px; font-size: 13px; margin: 12px 0 20px; line-height: 1.6; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { border: 1px solid #2a2d34; padding: 8px 10px; vertical-align: top; text-align: left; }
+  th { background: #1a1c22; position: sticky; top: 0; }
+  tr.row-go { background: #10240f; }
+  .side-cell { display: flex; flex-direction: column; gap: 3px; }
+  .side-chain { font-weight: 600; }
+  .side-price { color: #cfd3d8; font-variant-numeric: tabular-nums; }
+  .side-liq { color: #9aa0a6; font-size: 12px; }
+  .side-links { margin-top: 4px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 3px 8px; border-radius: 4px; background: #2b6cb0; color: white; text-decoration: none; font-size: 12px; }
+  .btn:hover { background: #3182ce; }
+  .btn-secondary { background: #3a3d45; }
+  .btn-secondary:hover { background: #4a4d55; }
+  .btn-disabled { background: #2a2d34; color: #6b7078; }
+  .badge { display: inline-block; margin-top: 4px; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+  .badge-go { background: #1e5c1e; color: #a8ffa8; }
+  .badge-watch { background: #333; color: #bbb; }
+  .asset-name { font-weight: 700; font-size: 14px; }
+  .pattern-label { color: #9aa0a6; font-size: 12px; }
+  .sub { color: #9aa0a6; font-size: 11px; }
+  .pool-signal { color: #e0b34a; font-size: 11px; margin-top: 4px; }
+  .route-ok { color: #9ad39a; }
+  .route-warn { color: #e0b34a; }
+  .empty { text-align: center; color: #888; padding: 24px; }
+  footer { margin-top: 20px; color: #777; font-size: 12px; }
+  a { color: #7fb8ff; }
+  #update-indicator { transition: opacity 0.3s; }
 </style>
 </head>
 <body>
@@ -68,7 +51,6 @@
     「通知候補(閾値超過)」バッジは<b>「ネット」欄(手数料・スリッページ・ブリッジ費用等を差し引いた実質損益の目安)が<span id="meta-threshold">—</span>%以上</b>の場合にのみ付与されます。<br>
     リンク先のDEX画面URLは自動生成のベストエフォートです。実際にスワップする前に、必ず通貨ペア・チェーン・数量が意図通りか目視確認してください。価格データは複数ソースでの突合検証を行っていますが、完全な正確性を保証するものではありません。
   </div>
-  <div class="tw">
   <table>
     <thead>
       <tr>
@@ -84,7 +66,6 @@
       <tr><td colspan="6" class="empty">読み込み中...</td></tr>
     </tbody>
   </table>
-  </div>
   <footer>
     このページは約20分おきの監視サイクルごとに、社内の <code>crypto-arbitrage-monitor</code> プロジェクトから自動更新されます。30秒ごとに最新データを再取得するため、開いたままでも自動的に反映されます。
   </footer>
