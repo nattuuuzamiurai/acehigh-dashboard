@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "サイトマップ・robots.txt整備",
-      "startedAt": "2026-07-14T17:47:35.899Z",
-      "finishedAt": "2026-07-14T17:47:52.853Z"
+      "task": "poker-mediaサイト基盤の構築",
+      "startedAt": "2026-07-15T14:25:39.142Z",
+      "finishedAt": "2026-07-15T14:25:45.638Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T11:57:01.955Z"
     }
   },
-  "updatedAt": "2026-07-15T14:23:45.326Z",
+  "updatedAt": "2026-07-15T14:25:51.389Z",
   "usage": {
-    "todayInputTokens": 563747,
-    "todayOutputTokens": 1880222,
-    "asOf": "2026-07-15T14:23:45.326Z"
+    "todayInputTokens": 564451,
+    "todayOutputTokens": 1912734,
+    "asOf": "2026-07-15T14:25:51.389Z"
   }
 }
