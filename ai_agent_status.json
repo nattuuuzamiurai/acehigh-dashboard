@@ -13,10 +13,10 @@
       "finishedAt": "2026-07-15T14:54:38.010Z"
     },
     "review-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "Review-lead GO/NO-GO: sticky ad bar",
       "startedAt": "2026-07-15T15:00:25.635Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-15T15:10:47.640Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T11:57:01.955Z"
     }
   },
-  "updatedAt": "2026-07-15T15:10:16.998Z",
+  "updatedAt": "2026-07-15T15:15:30.976Z",
   "usage": {
-    "todayInputTokens": 1405,
-    "todayOutputTokens": 22930,
-    "asOf": "2026-07-15T15:10:16.998Z"
+    "todayInputTokens": 1889,
+    "todayOutputTokens": 42464,
+    "asOf": "2026-07-15T15:15:30.976Z"
   }
 }
