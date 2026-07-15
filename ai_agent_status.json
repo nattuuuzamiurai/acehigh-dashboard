@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "Week3企画の確定",
-      "startedAt": "2026-07-14T18:12:36.759Z",
-      "finishedAt": "2026-07-14T18:12:49.540Z"
+      "task": "Week4企画の確定",
+      "startedAt": "2026-07-15T10:53:40.523Z",
+      "finishedAt": "2026-07-15T10:53:45.841Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-14T18:25:04.803Z"
     }
   },
-  "updatedAt": "2026-07-15T10:45:21.874Z",
+  "updatedAt": "2026-07-15T10:54:23.755Z",
   "usage": {
-    "todayInputTokens": 215328,
-    "todayOutputTokens": 1102653,
-    "asOf": "2026-07-15T10:45:21.874Z"
+    "todayInputTokens": 216420,
+    "todayOutputTokens": 1110490,
+    "asOf": "2026-07-15T10:54:23.755Z"
   }
 }
