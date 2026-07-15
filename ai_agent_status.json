@@ -7,16 +7,16 @@
       "finishedAt": "2026-07-15T14:25:45.638Z"
     },
     "qa-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "QA check: sticky ad bar change",
       "startedAt": "2026-07-15T14:46:42.241Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-15T14:54:38.010Z"
     },
     "review-lead": {
-      "status": "idle",
-      "task": "Week4記事7本のGO/NO-GO判定",
-      "startedAt": "2026-07-15T12:09:02.751Z",
-      "finishedAt": "2026-07-15T12:09:05.813Z"
+      "status": "running",
+      "task": "Review-lead GO/NO-GO: sticky ad bar",
+      "startedAt": "2026-07-15T15:00:25.635Z",
+      "finishedAt": null
     },
     "marketing-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T11:57:01.955Z"
     }
   },
-  "updatedAt": "2026-07-15T14:47:59.605Z",
+  "updatedAt": "2026-07-15T15:10:16.998Z",
   "usage": {
-    "todayInputTokens": 576248,
-    "todayOutputTokens": 2047965,
-    "asOf": "2026-07-15T14:47:59.605Z"
+    "todayInputTokens": 1405,
+    "todayOutputTokens": 22930,
+    "asOf": "2026-07-15T15:10:16.998Z"
   }
 }
