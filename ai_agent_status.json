@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "久留米飲み屋ナビの技術設計",
       "startedAt": "2026-07-16T15:26:15.870Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-16T15:46:08.602Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-16T13:50:43.327Z"
     }
   },
-  "updatedAt": "2026-07-16T15:41:24.314Z",
+  "updatedAt": "2026-07-16T15:50:20.605Z",
   "usage": {
-    "todayInputTokens": 47880,
-    "todayOutputTokens": 225754,
-    "asOf": "2026-07-16T15:41:24.314Z"
+    "todayInputTokens": 59136,
+    "todayOutputTokens": 305376,
+    "asOf": "2026-07-16T15:50:20.605Z"
   }
 }
