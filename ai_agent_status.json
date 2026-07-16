@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "QA check: date strip month-only + unstick filters",
-      "startedAt": "2026-07-16T13:31:21.346Z",
-      "finishedAt": "2026-07-16T13:37:31.097Z"
+      "task": "書き直した6記事の品質チェック",
+      "startedAt": "2026-07-16T14:17:10.982Z",
+      "finishedAt": "2026-07-16T14:17:15.746Z"
     },
     "review-lead": {
       "status": "idle",
@@ -25,10 +25,10 @@
       "finishedAt": "2026-07-14T09:23:03.362Z"
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "ポーカー配信解説記事メディアの企画立案",
-      "startedAt": "2026-07-15T12:49:45.271Z",
-      "finishedAt": "2026-07-15T12:49:48.745Z"
+      "status": "running",
+      "task": "久留米ナイトライフサイトの戦略調査",
+      "startedAt": "2026-07-16T14:11:12.628Z",
+      "finishedAt": null
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-16T13:50:43.327Z"
     }
   },
-  "updatedAt": "2026-07-16T14:03:34.644Z",
+  "updatedAt": "2026-07-16T14:17:22.562Z",
   "usage": {
-    "todayInputTokens": 296472,
-    "todayOutputTokens": 1000073,
-    "asOf": "2026-07-16T14:03:34.644Z"
+    "todayInputTokens": 349365,
+    "todayOutputTokens": 1122722,
+    "asOf": "2026-07-16T14:17:22.562Z"
   }
 }
