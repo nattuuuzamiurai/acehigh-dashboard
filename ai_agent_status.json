@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Review-lead GO/NO-GO: month label, logo link, footer cleanup",
-      "startedAt": "2026-07-16T14:24:13.300Z",
-      "finishedAt": "2026-07-16T14:31:17.257Z"
+      "task": "詳細化した6記事の最終GO/NO-GO判定",
+      "startedAt": "2026-07-16T14:48:08.783Z",
+      "finishedAt": "2026-07-16T14:48:26.058Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-16T13:50:43.327Z"
     }
   },
-  "updatedAt": "2026-07-16T14:46:33.291Z",
+  "updatedAt": "2026-07-16T14:48:33.551Z",
   "usage": {
-    "todayInputTokens": 356665,
-    "todayOutputTokens": 1265514,
-    "asOf": "2026-07-16T14:46:33.291Z"
+    "todayInputTokens": 356683,
+    "todayOutputTokens": 1273481,
+    "asOf": "2026-07-16T14:48:33.551Z"
   }
 }
