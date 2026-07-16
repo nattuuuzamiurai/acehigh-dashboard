@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ハンド解説の視覚化部品を開発",
-      "startedAt": "2026-07-16T13:20:14.991Z",
-      "finishedAt": "2026-07-16T13:20:40.582Z"
+      "task": "オンチェーン直読み全資産拡張+流動性フィルタ",
+      "startedAt": "2026-07-16T14:02:31.886Z",
+      "finishedAt": "2026-07-16T14:02:42.037Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-16T13:50:43.327Z"
     }
   },
-  "updatedAt": "2026-07-16T13:57:42.034Z",
+  "updatedAt": "2026-07-16T14:03:34.644Z",
   "usage": {
-    "todayInputTokens": 249173,
-    "todayOutputTokens": 949526,
-    "asOf": "2026-07-16T13:57:42.034Z"
+    "todayInputTokens": 296472,
+    "todayOutputTokens": 1000073,
+    "asOf": "2026-07-16T14:03:34.644Z"
   }
 }
