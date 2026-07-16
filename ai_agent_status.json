@@ -25,10 +25,10 @@
       "finishedAt": "2026-07-14T09:23:03.362Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "久留米ナイトライフサイトの戦略調査",
       "startedAt": "2026-07-16T14:11:12.628Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-16T14:17:31.113Z"
     },
     "content-writer": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-16T13:50:43.327Z"
     }
   },
-  "updatedAt": "2026-07-16T14:17:22.562Z",
+  "updatedAt": "2026-07-16T14:18:15.025Z",
   "usage": {
-    "todayInputTokens": 349365,
-    "todayOutputTokens": 1122722,
-    "asOf": "2026-07-16T14:17:22.562Z"
+    "todayInputTokens": 351423,
+    "todayOutputTokens": 1150153,
+    "asOf": "2026-07-16T14:18:15.025Z"
   }
 }
