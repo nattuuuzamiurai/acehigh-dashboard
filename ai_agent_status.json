@@ -10,13 +10,13 @@
       "status": "idle",
       "task": "書き直した6記事の品質チェック",
       "startedAt": "2026-07-16T14:17:10.982Z",
-      "finishedAt": "2026-07-16T14:17:15.746Z"
+      "finishedAt": "2026-07-16T14:23:03.344Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "Review-lead GO/NO-GO: unstick filters + month-only date strip",
-      "startedAt": "2026-07-16T13:38:44.139Z",
-      "finishedAt": "2026-07-16T13:45:36.408Z"
+      "task": "Review-lead GO/NO-GO: month label, logo link, footer cleanup",
+      "startedAt": "2026-07-16T14:24:13.300Z",
+      "finishedAt": "2026-07-16T14:31:17.257Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-16T13:50:43.327Z"
     }
   },
-  "updatedAt": "2026-07-16T14:18:15.025Z",
+  "updatedAt": "2026-07-16T14:39:28.892Z",
   "usage": {
-    "todayInputTokens": 351423,
-    "todayOutputTokens": 1150153,
-    "asOf": "2026-07-16T14:18:15.025Z"
+    "todayInputTokens": 356549,
+    "todayOutputTokens": 1251693,
+    "asOf": "2026-07-16T14:39:28.892Z"
   }
 }
