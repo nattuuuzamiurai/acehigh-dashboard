@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "4件の変更の最終GO/NO-GO判定",
-      "startedAt": "2026-07-16T16:18:59.609Z",
-      "finishedAt": "2026-07-16T16:19:18.150Z"
+      "task": "記事8本の最終GO/NO-GO判定",
+      "startedAt": "2026-07-16T17:56:32.076Z",
+      "finishedAt": "2026-07-16T17:56:36.887Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -32,15 +32,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "大会識別の誤り修正と軽微な指摘対応",
-      "startedAt": "2026-07-16T17:28:26.900Z",
-      "finishedAt": "2026-07-16T17:28:30.984Z"
+      "task": "大会識別を諦め事実の範囲に絞る最終修正",
+      "startedAt": "2026-07-16T17:56:48.648Z",
+      "finishedAt": "2026-07-16T17:56:53.596Z"
     }
   },
-  "updatedAt": "2026-07-16T17:37:57.983Z",
+  "updatedAt": "2026-07-16T17:57:08.726Z",
   "usage": {
-    "todayInputTokens": 187154,
-    "todayOutputTokens": 703747,
-    "asOf": "2026-07-16T17:37:57.983Z"
+    "todayInputTokens": 198399,
+    "todayOutputTokens": 766401,
+    "asOf": "2026-07-16T17:57:08.726Z"
   }
 }
