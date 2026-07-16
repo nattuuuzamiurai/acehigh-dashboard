@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-16T13:20:40.582Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "オンチェーン直読みロジックの品質検証",
-      "startedAt": "2026-07-16T13:21:47.155Z",
-      "finishedAt": "2026-07-16T13:21:52.383Z"
+      "status": "running",
+      "task": "QA check: date strip month-only + unstick filters",
+      "startedAt": "2026-07-16T13:31:21.346Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T16:15:50.451Z"
     }
   },
-  "updatedAt": "2026-07-16T13:22:35.476Z",
+  "updatedAt": "2026-07-16T13:32:25.214Z",
   "usage": {
-    "todayInputTokens": 211941,
-    "todayOutputTokens": 747294,
-    "asOf": "2026-07-16T13:22:35.476Z"
+    "todayInputTokens": 213608,
+    "todayOutputTokens": 810789,
+    "asOf": "2026-07-16T13:32:25.214Z"
   }
 }
