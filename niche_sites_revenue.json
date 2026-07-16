@@ -29,12 +29,20 @@
       "url": "https://nattuuuzamiurai.github.io/fukuoka-poker-navi/",
       "genre": "福岡ポーカートーナメント情報アグリゲーター",
       "status": "運用中",
+      "traffic": {
+        "pageViews": 49,
+        "activeUsers": 13,
+        "sessions": 22,
+        "since": "2026-07-14",
+        "asOf": "2026-07-17",
+        "source": "GA4（measurement ID: G-L7091YHTFH）"
+      },
       "revenue": {
         "monthly": 0,
         "total": 0,
         "status": "収益発生前（Google AdSense審査中）",
-        "note": "Google AdSense申請済み・審査結果待ち（6時間おきに自動確認し、結果が出次第プロジェクト管理側に反映）。店舗PR有料掲載枠は営業資料のみ準備済みで契約実績はまだ0件。アクセス解析（GA4等）は未導入のため、PV数値は現時点で計測できていない。",
-        "updatedAt": "2026-07-14"
+        "note": "Google AdSense申請済み・審査結果待ち（6時間おきに自動確認し、結果が出次第プロジェクト管理側に反映）。店舗PR有料掲載枠は営業資料のみ準備済みで契約実績はまだ0件。GA4導入済みで公開後(2026-07-14〜)のPV等は取得できている(traffic参照、6時間おきに自動更新)。",
+        "updatedAt": "2026-07-17"
       }
     }
   ]

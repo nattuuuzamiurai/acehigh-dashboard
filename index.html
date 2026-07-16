@@ -3191,6 +3191,13 @@ function renderAffiliateSites() {
           <div class="proj-rev-item"><div class="proj-rev-val">${articles.total ?? '-'}</div><div class="proj-rev-lbl">累計${articles.asOf ? '（' + aiEsc(articles.asOf) + '時点）' : ''}</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${latest ? latest.count : '-'}</div><div class="proj-rev-lbl">${latest ? aiEsc(latest.period) : '直近月'}</div></div>
         </div>
+        ${s.traffic ? `
+        <div class="proj-sect">アクセス数（${aiEsc(s.traffic.source || 'GA4')}）</div>
+        <div class="proj-rev">
+          <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.pageViews ?? '-'}</div><div class="proj-rev-lbl">PV${s.traffic.since ? '（' + aiEsc(s.traffic.since) + '〜）' : ''}</div></div>
+          <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.activeUsers ?? '-'}</div><div class="proj-rev-lbl">ユーザー</div></div>
+          <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.sessions ?? '-'}</div><div class="proj-rev-lbl">セッション</div></div>
+        </div>` : ''}
         <div class="proj-sect">広告・アフィリエイト収益（月次）</div>
         <div class="proj-rev">
           <div class="proj-rev-item" style="flex:1;text-align:left;padding:8px 10px;">
