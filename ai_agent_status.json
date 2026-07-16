@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "選手紹介・新規2記事の品質チェック",
-      "startedAt": "2026-07-16T17:04:22.333Z",
-      "finishedAt": "2026-07-16T17:04:28.370Z"
+      "task": "大会識別修正版と軽微指摘対応の再チェック",
+      "startedAt": "2026-07-16T17:37:28.664Z",
+      "finishedAt": "2026-07-16T17:37:33.214Z"
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-16T17:28:30.984Z"
     }
   },
-  "updatedAt": "2026-07-16T17:28:45.628Z",
+  "updatedAt": "2026-07-16T17:37:57.983Z",
   "usage": {
-    "todayInputTokens": 183481,
-    "todayOutputTokens": 683683,
-    "asOf": "2026-07-16T17:28:45.628Z"
+    "todayInputTokens": 187154,
+    "todayOutputTokens": 703747,
+    "asOf": "2026-07-16T17:37:57.983Z"
   }
 }
