@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "プリフロップのハンド表示とタイトルの視覚化",
-      "startedAt": "2026-07-16T15:17:31.287Z",
-      "finishedAt": "2026-07-16T15:17:43.036Z"
+      "status": "running",
+      "task": "久留米飲み屋ナビの技術設計",
+      "startedAt": "2026-07-16T15:26:15.870Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-16T13:50:43.327Z"
     }
   },
-  "updatedAt": "2026-07-16T15:25:46.992Z",
+  "updatedAt": "2026-07-16T15:28:17.687Z",
   "usage": {
-    "todayInputTokens": 19358,
-    "todayOutputTokens": 114133,
-    "asOf": "2026-07-16T15:25:46.992Z"
+    "todayInputTokens": 20851,
+    "todayOutputTokens": 130310,
+    "asOf": "2026-07-16T15:28:17.687Z"
   }
 }
