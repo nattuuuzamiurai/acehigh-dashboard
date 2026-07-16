@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "オンチェーン直読み機能の実装",
-      "startedAt": "2026-07-15T15:36:59.807Z",
-      "finishedAt": "2026-07-15T15:37:17.246Z"
+      "task": "ハンド解説の視覚化部品を開発",
+      "startedAt": "2026-07-16T13:20:14.991Z",
+      "finishedAt": "2026-07-16T13:20:40.582Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T16:15:50.451Z"
     }
   },
-  "updatedAt": "2026-07-16T13:13:49.947Z",
+  "updatedAt": "2026-07-16T13:21:09.304Z",
   "usage": {
-    "todayInputTokens": 205316,
-    "todayOutputTokens": 685471,
-    "asOf": "2026-07-16T13:13:49.947Z"
+    "todayInputTokens": 206475,
+    "todayOutputTokens": 734665,
+    "asOf": "2026-07-16T13:21:09.304Z"
   }
 }
