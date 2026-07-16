@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "記事3修正版の再チェック",
-      "startedAt": "2026-07-15T16:30:19.425Z",
-      "finishedAt": "2026-07-15T16:30:23.828Z"
+      "task": "オンチェーン直読みロジックの品質検証",
+      "startedAt": "2026-07-16T13:21:47.155Z",
+      "finishedAt": "2026-07-16T13:21:52.383Z"
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-15T16:15:50.451Z"
     }
   },
-  "updatedAt": "2026-07-16T13:21:09.304Z",
+  "updatedAt": "2026-07-16T13:22:35.476Z",
   "usage": {
-    "todayInputTokens": 206475,
-    "todayOutputTokens": 734665,
-    "asOf": "2026-07-16T13:21:09.304Z"
+    "todayInputTokens": 211941,
+    "todayOutputTokens": 747294,
+    "asOf": "2026-07-16T13:22:35.476Z"
   }
 }
