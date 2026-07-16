@@ -32,15 +32,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "選手紹介の追加と大会別の追加記事執筆",
-      "startedAt": "2026-07-16T16:29:22.571Z",
-      "finishedAt": "2026-07-16T16:29:28.082Z"
+      "task": "大会識別の誤り修正と軽微な指摘対応",
+      "startedAt": "2026-07-16T17:28:26.900Z",
+      "finishedAt": "2026-07-16T17:28:30.984Z"
     }
   },
-  "updatedAt": "2026-07-16T17:06:49.267Z",
+  "updatedAt": "2026-07-16T17:28:45.628Z",
   "usage": {
-    "todayInputTokens": 155653,
-    "todayOutputTokens": 619691,
-    "asOf": "2026-07-16T17:06:49.267Z"
+    "todayInputTokens": 183481,
+    "todayOutputTokens": 683683,
+    "asOf": "2026-07-16T17:28:45.628Z"
   }
 }
