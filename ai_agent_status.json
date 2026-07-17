@@ -1,46 +1,9 @@
 {
-  "departments": {
-    "dev-lead": {
-      "status": "idle",
-      "task": "非EVMチェーンのオンチェーン直読み対応",
-      "startedAt": "2026-07-17T14:01:44.987Z",
-      "finishedAt": "2026-07-17T14:01:49.199Z"
-    },
-    "qa-lead": {
-      "status": "idle",
-      "task": "EVM全資産拡張と流動性フィルタの品質検証",
-      "startedAt": "2026-07-17T14:02:43.779Z",
-      "finishedAt": "2026-07-17T14:02:51.685Z"
-    },
-    "review-lead": {
-      "status": "idle",
-      "task": "久留米飲み屋ナビPRの最終GO/NO-GO判定",
-      "startedAt": "2026-07-17T02:33:29.214Z",
-      "finishedAt": "2026-07-17T02:37:56.397Z"
-    },
-    "marketing-lead": {
-      "status": "idle",
-      "task": "店舗PR有料掲載の営業資料作成",
-      "startedAt": "2026-07-14T09:22:47.846Z",
-      "finishedAt": "2026-07-14T09:23:03.362Z"
-    },
-    "planning-lead": {
-      "status": "idle",
-      "task": "久留米ナイトライフサイトの戦略調査",
-      "startedAt": "2026-07-16T14:11:12.628Z",
-      "finishedAt": "2026-07-16T14:17:31.113Z"
-    },
-    "content-writer": {
-      "status": "idle",
-      "task": "トリトンモンテネグロシリーズの記事を追加",
-      "startedAt": "2026-07-17T13:53:26.046Z",
-      "finishedAt": "2026-07-17T13:53:37.444Z"
-    }
-  },
-  "updatedAt": "2026-07-17T14:03:33.212Z",
+  "departments": {},
   "usage": {
-    "todayInputTokens": 341852,
-    "todayOutputTokens": 1719277,
-    "asOf": "2026-07-17T14:03:33.212Z"
-  }
+    "todayInputTokens": 392211,
+    "todayOutputTokens": 1794304,
+    "asOf": "2026-07-17T14:10:34.789Z"
+  },
+  "updatedAt": "2026-07-17T14:10:34.789Z"
 }
