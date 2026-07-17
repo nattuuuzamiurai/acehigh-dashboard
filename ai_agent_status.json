@@ -13,16 +13,16 @@
       "finishedAt": "2026-07-17T15:17:30.988Z"
     },
     "review-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "Voulgaris記事の再確認",
       "startedAt": "2026-07-17T15:40:34.091Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-17T15:40:39.276Z"
     }
   },
   "usage": {
-    "todayInputTokens": 46916,
-    "todayOutputTokens": 246531,
-    "asOf": "2026-07-17T15:40:35.768Z"
+    "todayInputTokens": 49466,
+    "todayOutputTokens": 257482,
+    "asOf": "2026-07-17T15:43:09.405Z"
   },
-  "updatedAt": "2026-07-17T15:40:35.768Z"
+  "updatedAt": "2026-07-17T15:43:09.405Z"
 }
