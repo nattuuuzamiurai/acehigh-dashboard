@@ -31,16 +31,16 @@
       "finishedAt": "2026-07-16T14:17:31.113Z"
     },
     "content-writer": {
-      "status": "idle",
-      "task": "大会識別を諦め事実の範囲に絞る最終修正",
-      "startedAt": "2026-07-16T17:56:48.648Z",
-      "finishedAt": "2026-07-16T17:56:53.596Z"
+      "status": "running",
+      "task": "WSOP 2026シリーズの記事を追加",
+      "startedAt": "2026-07-17T13:52:58.618Z",
+      "finishedAt": null
     }
   },
-  "updatedAt": "2026-07-17T13:27:54.384Z",
+  "updatedAt": "2026-07-17T13:52:57.969Z",
   "usage": {
-    "todayInputTokens": 253186,
-    "todayOutputTokens": 1480633,
-    "asOf": "2026-07-17T13:27:54.384Z"
+    "todayInputTokens": 253760,
+    "todayOutputTokens": 1486784,
+    "asOf": "2026-07-17T13:52:57.969Z"
   }
 }
