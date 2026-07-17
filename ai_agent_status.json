@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "大会の開催日付表示と日付順ソート",
-      "startedAt": "2026-07-17T14:15:32.341Z",
-      "finishedAt": "2026-07-17T14:15:49.171Z"
+      "task": "discoverOnchainPools.jsのPolygonバグ修正",
+      "startedAt": "2026-07-17T14:30:10.441Z",
+      "finishedAt": "2026-07-17T14:30:15.565Z"
     }
   },
   "usage": {
-    "todayInputTokens": 459654,
-    "todayOutputTokens": 2185591,
-    "asOf": "2026-07-17T14:29:32.115Z"
+    "todayInputTokens": 460706,
+    "todayOutputTokens": 2197609,
+    "asOf": "2026-07-17T14:30:25.099Z"
   },
-  "updatedAt": "2026-07-17T14:29:32.115Z"
+  "updatedAt": "2026-07-17T14:30:25.099Z"
 }
