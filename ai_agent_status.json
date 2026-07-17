@@ -5,12 +5,18 @@
       "task": "discoverOnchainPools.jsのPolygonバグ修正",
       "startedAt": "2026-07-17T14:30:10.441Z",
       "finishedAt": "2026-07-17T14:30:15.565Z"
+    },
+    "qa-lead": {
+      "status": "idle",
+      "task": "モンテネグロ新規記事4本の品質チェック",
+      "startedAt": "2026-07-17T14:43:50.086Z",
+      "finishedAt": "2026-07-17T14:44:07.928Z"
     }
   },
   "usage": {
-    "todayInputTokens": 493563,
-    "todayOutputTokens": 2370157,
-    "asOf": "2026-07-17T14:42:16.281Z"
+    "todayInputTokens": 501835,
+    "todayOutputTokens": 2408059,
+    "asOf": "2026-07-17T14:45:39.905Z"
   },
-  "updatedAt": "2026-07-17T14:42:16.281Z"
+  "updatedAt": "2026-07-17T14:45:39.905Z"
 }
