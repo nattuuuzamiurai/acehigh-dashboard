@@ -11,12 +11,18 @@
       "task": "非EVM(Solana/MegaETH/Monad)対応の品質検証",
       "startedAt": "2026-07-17T15:17:28.360Z",
       "finishedAt": "2026-07-17T15:17:30.988Z"
+    },
+    "review-lead": {
+      "status": "idle",
+      "task": "新規11記事の最終GO/NO-GO判定",
+      "startedAt": "2026-07-17T15:30:25.582Z",
+      "finishedAt": "2026-07-17T15:30:37.994Z"
     }
   },
   "usage": {
-    "todayInputTokens": 43712,
-    "todayOutputTokens": 201051,
-    "asOf": "2026-07-17T15:30:18.419Z"
+    "todayInputTokens": 44636,
+    "todayOutputTokens": 205407,
+    "asOf": "2026-07-17T15:30:52.308Z"
   },
-  "updatedAt": "2026-07-17T15:30:18.419Z"
+  "updatedAt": "2026-07-17T15:30:52.308Z"
 }
