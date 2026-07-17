@@ -1,9 +1,16 @@
 {
-  "departments": {},
-  "usage": {
-    "todayInputTokens": 412809,
-    "todayOutputTokens": 1852878,
-    "asOf": "2026-07-17T14:14:22.379Z"
+  "departments": {
+    "dev-lead": {
+      "status": "idle",
+      "task": "大会の開催日付表示と日付順ソート",
+      "startedAt": "2026-07-17T14:15:32.341Z",
+      "finishedAt": "2026-07-17T14:15:49.171Z"
+    }
   },
-  "updatedAt": "2026-07-17T14:14:22.379Z"
+  "usage": {
+    "todayInputTokens": 428872,
+    "todayOutputTokens": 1911918,
+    "asOf": "2026-07-17T14:16:40.353Z"
+  },
+  "updatedAt": "2026-07-17T14:16:40.353Z"
 }
