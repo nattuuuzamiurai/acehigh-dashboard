@@ -31,16 +31,16 @@
       "finishedAt": "2026-07-16T14:17:31.113Z"
     },
     "content-writer": {
-      "status": "running",
-      "task": "WSOP 2026シリーズの記事を追加",
-      "startedAt": "2026-07-17T13:52:58.618Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "トリトンモンテネグロシリーズの記事を追加",
+      "startedAt": "2026-07-17T13:53:26.046Z",
+      "finishedAt": "2026-07-17T13:53:37.444Z"
     }
   },
-  "updatedAt": "2026-07-17T13:52:57.969Z",
+  "updatedAt": "2026-07-17T13:53:49.505Z",
   "usage": {
-    "todayInputTokens": 253760,
-    "todayOutputTokens": 1486784,
-    "asOf": "2026-07-17T13:52:57.969Z"
+    "todayInputTokens": 258492,
+    "todayOutputTokens": 1543983,
+    "asOf": "2026-07-17T13:53:49.505Z"
   }
 }
