@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビの技術設計",
-      "startedAt": "2026-07-16T15:26:15.870Z",
-      "finishedAt": "2026-07-16T15:46:08.602Z"
+      "task": "非EVMチェーンのオンチェーン直読み対応",
+      "startedAt": "2026-07-17T14:01:44.987Z",
+      "finishedAt": "2026-07-17T14:01:49.199Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビPRの品質チェック",
-      "startedAt": "2026-07-17T02:00:12.369Z",
-      "finishedAt": "2026-07-17T02:07:29.832Z"
+      "task": "EVM全資産拡張と流動性フィルタの品質検証",
+      "startedAt": "2026-07-17T14:02:43.779Z",
+      "finishedAt": "2026-07-17T14:02:51.685Z"
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-07-17T13:53:37.444Z"
     }
   },
-  "updatedAt": "2026-07-17T13:57:56.531Z",
+  "updatedAt": "2026-07-17T14:03:33.212Z",
   "usage": {
-    "todayInputTokens": 299668,
-    "todayOutputTokens": 1621605,
-    "asOf": "2026-07-17T13:57:56.531Z"
+    "todayInputTokens": 341852,
+    "todayOutputTokens": 1719277,
+    "asOf": "2026-07-17T14:03:33.212Z"
   }
 }
