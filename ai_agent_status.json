@@ -8,15 +8,15 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "モンテネグロ新規記事4本の品質チェック",
-      "startedAt": "2026-07-17T14:43:50.086Z",
-      "finishedAt": "2026-07-17T14:44:07.928Z"
+      "task": "非EVM(Solana/MegaETH/Monad)対応の品質検証",
+      "startedAt": "2026-07-17T15:17:28.360Z",
+      "finishedAt": "2026-07-17T15:17:30.988Z"
     }
   },
   "usage": {
-    "todayInputTokens": 36602,
-    "todayOutputTokens": 83594,
-    "asOf": "2026-07-17T15:05:34.524Z"
+    "todayInputTokens": 38748,
+    "todayOutputTokens": 125761,
+    "asOf": "2026-07-17T15:17:41.020Z"
   },
-  "updatedAt": "2026-07-17T15:05:34.524Z"
+  "updatedAt": "2026-07-17T15:17:41.020Z"
 }
