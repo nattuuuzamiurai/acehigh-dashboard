@@ -25,16 +25,16 @@
       "finishedAt": "2026-07-19T15:47:40.485Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "SNS完全自動運用の調査",
       "startedAt": "2026-07-19T15:53:19.319Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-19T16:00:22.865Z"
     }
   },
   "usage": {
-    "todayInputTokens": 169966,
-    "todayOutputTokens": 167616,
-    "asOf": "2026-07-19T15:57:13.286Z"
+    "todayInputTokens": 274061,
+    "todayOutputTokens": 201348,
+    "asOf": "2026-07-19T16:01:27.028Z"
   },
-  "updatedAt": "2026-07-19T15:57:13.286Z"
+  "updatedAt": "2026-07-19T16:01:27.028Z"
 }
