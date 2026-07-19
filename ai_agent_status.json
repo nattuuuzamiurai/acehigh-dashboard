@@ -29,12 +29,18 @@
       "task": "SNS完全自動運用の調査",
       "startedAt": "2026-07-19T15:53:19.319Z",
       "finishedAt": "2026-07-19T16:00:22.865Z"
+    },
+    "marketing-lead": {
+      "status": "idle",
+      "task": "週次分析レポート生成(競艇)",
+      "startedAt": "2026-07-19T18:50:46.884Z",
+      "finishedAt": "2026-07-19T18:50:50.234Z"
     }
   },
   "usage": {
-    "todayInputTokens": 468081,
-    "todayOutputTokens": 895356,
-    "asOf": "2026-07-19T18:49:36.504Z"
+    "todayInputTokens": 468147,
+    "todayOutputTokens": 917497,
+    "asOf": "2026-07-19T18:50:56.777Z"
   },
-  "updatedAt": "2026-07-19T18:49:36.504Z"
+  "updatedAt": "2026-07-19T18:50:56.777Z"
 }
