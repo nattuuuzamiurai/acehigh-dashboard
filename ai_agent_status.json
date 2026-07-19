@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Week5記事7本のQAチェック",
-      "startedAt": "2026-07-19T10:30:00.961Z",
-      "finishedAt": "2026-07-19T10:30:05.786Z"
+      "task": "Sui・Aptosオンチェーン直読みの品質検証",
+      "startedAt": "2026-07-19T10:50:53.361Z",
+      "finishedAt": "2026-07-19T10:50:58.584Z"
     },
     "review-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 93788,
-    "todayOutputTokens": 660405,
-    "asOf": "2026-07-19T10:46:57.976Z"
+    "todayInputTokens": 94008,
+    "todayOutputTokens": 688361,
+    "asOf": "2026-07-19T10:51:15.007Z"
   },
-  "updatedAt": "2026-07-19T10:46:57.976Z"
+  "updatedAt": "2026-07-19T10:51:15.007Z"
 }
