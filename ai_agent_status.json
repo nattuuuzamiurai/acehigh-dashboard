@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Sui・Aptosのオンチェーン直読み実装",
-      "startedAt": "2026-07-19T09:32:35.701Z",
-      "finishedAt": "2026-07-19T09:32:43.776Z"
+      "task": "流動性チェックへのオンチェーン配線+多数決ロジック",
+      "startedAt": "2026-07-19T15:56:40.124Z",
+      "finishedAt": "2026-07-19T15:56:46.844Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 128319,
-    "todayOutputTokens": 146106,
-    "asOf": "2026-07-19T15:54:03.277Z"
+    "todayInputTokens": 169966,
+    "todayOutputTokens": 167616,
+    "asOf": "2026-07-19T15:57:13.286Z"
   },
-  "updatedAt": "2026-07-19T15:54:03.277Z"
+  "updatedAt": "2026-07-19T15:57:13.286Z"
 }
