@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "スリッページ計算のソース混在を修正",
-      "startedAt": "2026-07-19T18:42:13.884Z",
-      "finishedAt": "2026-07-19T18:42:21.834Z"
+      "status": "running",
+      "task": "スリッページ計算のソース混在を修正(再依頼)",
+      "startedAt": "2026-07-19T18:45:56.911Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 467890,
-    "todayOutputTokens": 831263,
-    "asOf": "2026-07-19T18:45:11.328Z"
+    "todayInputTokens": 467906,
+    "todayOutputTokens": 841728,
+    "asOf": "2026-07-19T18:45:57.521Z"
   },
-  "updatedAt": "2026-07-19T18:45:11.328Z"
+  "updatedAt": "2026-07-19T18:45:57.521Z"
 }
