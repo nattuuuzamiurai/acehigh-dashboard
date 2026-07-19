@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "非EVM(Solana/MegaETH/Monad)対応の品質検証",
-      "startedAt": "2026-07-17T15:17:28.360Z",
-      "finishedAt": "2026-07-17T15:17:30.988Z"
+      "task": "WSOPメインイベント新規4記事の品質チェック",
+      "startedAt": "2026-07-19T10:09:08.359Z",
+      "finishedAt": "2026-07-19T10:09:23.856Z"
     },
     "review-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 37258,
-    "todayOutputTokens": 296226,
-    "asOf": "2026-07-19T10:06:54.222Z"
+    "todayInputTokens": 38553,
+    "todayOutputTokens": 315577,
+    "asOf": "2026-07-19T10:09:43.378Z"
   },
-  "updatedAt": "2026-07-19T10:06:54.222Z"
+  "updatedAt": "2026-07-19T10:09:43.378Z"
 }
