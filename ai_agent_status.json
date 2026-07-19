@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Sui・Aptos対応の最終GO/NO-GO判定",
-      "startedAt": "2026-07-19T11:11:20.350Z",
-      "finishedAt": "2026-07-19T11:11:23.124Z"
+      "task": "動画埋め込み全体の最終GO/NO-GO判定",
+      "startedAt": "2026-07-19T16:59:06.027Z",
+      "finishedAt": "2026-07-19T16:59:52.084Z"
     },
     "content-writer": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 404758,
-    "todayOutputTokens": 485372,
-    "asOf": "2026-07-19T16:47:08.873Z"
+    "todayInputTokens": 409112,
+    "todayOutputTokens": 526819,
+    "asOf": "2026-07-19T17:00:19.229Z"
   },
-  "updatedAt": "2026-07-19T16:47:08.873Z"
+  "updatedAt": "2026-07-19T17:00:19.229Z"
 }
