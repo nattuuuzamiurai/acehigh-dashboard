@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "流動性配線・多数決・byreal対応の品質検証",
-      "startedAt": "2026-07-19T17:35:17.010Z",
-      "finishedAt": "2026-07-19T17:35:20.526Z"
+      "task": "スリッページ計算修正の品質検証",
+      "startedAt": "2026-07-19T19:18:17.327Z",
+      "finishedAt": "2026-07-19T19:18:20.722Z"
     },
     "review-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 468549,
-    "todayOutputTokens": 1044366,
-    "asOf": "2026-07-19T19:09:29.955Z"
+    "todayInputTokens": 468663,
+    "todayOutputTokens": 1075403,
+    "asOf": "2026-07-19T19:18:36.222Z"
   },
-  "updatedAt": "2026-07-19T19:09:29.955Z"
+  "updatedAt": "2026-07-19T19:18:36.222Z"
 }
