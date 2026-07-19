@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "流動性チェックへのオンチェーン配線+多数決ロジック",
-      "startedAt": "2026-07-19T15:56:40.124Z",
-      "finishedAt": "2026-07-19T15:56:46.844Z"
+      "task": "スリッページ計算のソース混在を修正",
+      "startedAt": "2026-07-19T18:42:13.884Z",
+      "finishedAt": "2026-07-19T18:42:21.834Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 462667,
-    "todayOutputTokens": 807934,
-    "asOf": "2026-07-19T18:39:58.086Z"
+    "todayInputTokens": 467832,
+    "todayOutputTokens": 813711,
+    "asOf": "2026-07-19T18:42:33.024Z"
   },
-  "updatedAt": "2026-07-19T18:39:58.086Z"
+  "updatedAt": "2026-07-19T18:42:33.024Z"
 }
