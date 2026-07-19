@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Sui・Aptosオンチェーン直読みの品質検証",
-      "startedAt": "2026-07-19T10:50:53.361Z",
-      "finishedAt": "2026-07-19T10:50:58.584Z"
+      "task": "トリトン記事の動画埋め込み検証",
+      "startedAt": "2026-07-19T16:38:00.545Z",
+      "finishedAt": "2026-07-19T16:38:41.946Z"
     },
     "review-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 334501,
-    "todayOutputTokens": 365783,
-    "asOf": "2026-07-19T16:25:24.815Z"
+    "todayInputTokens": 396383,
+    "todayOutputTokens": 447990,
+    "asOf": "2026-07-19T16:39:45.715Z"
   },
-  "updatedAt": "2026-07-19T16:25:24.815Z"
+  "updatedAt": "2026-07-19T16:39:45.715Z"
 }
