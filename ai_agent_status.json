@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "WSOP 2026メインイベントに絞って記事追加",
-      "startedAt": "2026-07-19T09:32:00.966Z",
-      "finishedAt": "2026-07-19T09:32:06.148Z"
+      "task": "Week5記事7本の執筆",
+      "startedAt": "2026-07-19T10:06:29.891Z",
+      "finishedAt": "2026-07-19T10:06:34.289Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 35414,
-    "todayOutputTokens": 245873,
-    "asOf": "2026-07-19T10:01:57.869Z"
+    "todayInputTokens": 37258,
+    "todayOutputTokens": 296226,
+    "asOf": "2026-07-19T10:06:54.222Z"
   },
-  "updatedAt": "2026-07-19T10:01:57.869Z"
+  "updatedAt": "2026-07-19T10:06:54.222Z"
 }
