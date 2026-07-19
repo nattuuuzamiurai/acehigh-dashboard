@@ -25,16 +25,16 @@
       "finishedAt": "2026-07-19T15:47:40.485Z"
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "Week5記事企画の確定",
-      "startedAt": "2026-07-19T09:44:46.800Z",
-      "finishedAt": "2026-07-19T09:44:51.715Z"
+      "status": "running",
+      "task": "SNS完全自動運用の調査",
+      "startedAt": "2026-07-19T15:53:19.319Z",
+      "finishedAt": null
     }
   },
   "usage": {
-    "todayInputTokens": 83172,
-    "todayOutputTokens": 128759,
-    "asOf": "2026-07-19T15:53:10.055Z"
+    "todayInputTokens": 128319,
+    "todayOutputTokens": 146106,
+    "asOf": "2026-07-19T15:54:03.277Z"
   },
-  "updatedAt": "2026-07-19T15:53:10.055Z"
+  "updatedAt": "2026-07-19T15:54:03.277Z"
 }
