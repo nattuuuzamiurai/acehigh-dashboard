@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "トリトンモンテネグロ・キプロス記事に参考動画を埋め込み",
-      "startedAt": "2026-07-19T15:44:48.454Z",
-      "finishedAt": "2026-07-19T15:46:08.904Z"
+      "task": "WSOP記事に参考動画を埋め込み",
+      "startedAt": "2026-07-19T15:47:17.653Z",
+      "finishedAt": "2026-07-19T15:47:40.485Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4732,
-    "todayOutputTokens": 78207,
-    "asOf": "2026-07-19T15:47:12.790Z"
+    "todayInputTokens": 37576,
+    "todayOutputTokens": 95690,
+    "asOf": "2026-07-19T15:48:04.128Z"
   },
-  "updatedAt": "2026-07-19T15:47:12.790Z"
+  "updatedAt": "2026-07-19T15:48:04.128Z"
 }
