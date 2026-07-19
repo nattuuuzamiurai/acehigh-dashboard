@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Week5記事7本のGO/NO-GO判定",
-      "startedAt": "2026-07-19T10:46:34.389Z",
-      "finishedAt": "2026-07-19T10:46:37.614Z"
+      "task": "Sui・Aptos対応の最終GO/NO-GO判定",
+      "startedAt": "2026-07-19T11:11:20.350Z",
+      "finishedAt": "2026-07-19T11:11:23.124Z"
     },
     "content-writer": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 106624,
-    "todayOutputTokens": 775351,
-    "asOf": "2026-07-19T11:00:55.630Z"
+    "todayInputTokens": 108016,
+    "todayOutputTokens": 803917,
+    "asOf": "2026-07-19T11:11:27.754Z"
   },
-  "updatedAt": "2026-07-19T11:00:55.630Z"
+  "updatedAt": "2026-07-19T11:11:27.754Z"
 }
