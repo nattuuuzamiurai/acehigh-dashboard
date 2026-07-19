@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Voulgaris記事の再確認",
-      "startedAt": "2026-07-17T15:40:34.091Z",
-      "finishedAt": "2026-07-17T15:40:39.276Z"
+      "task": "WSOPメインイベント4記事の最終GO/NO-GO判定",
+      "startedAt": "2026-07-19T10:34:34.878Z",
+      "finishedAt": "2026-07-19T10:34:46.406Z"
     },
     "content-writer": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 79286,
-    "todayOutputTokens": 545644,
-    "asOf": "2026-07-19T10:34:29.119Z"
+    "todayInputTokens": 81818,
+    "todayOutputTokens": 553257,
+    "asOf": "2026-07-19T10:35:10.504Z"
   },
-  "updatedAt": "2026-07-19T10:34:29.119Z"
+  "updatedAt": "2026-07-19T10:35:10.504Z"
 }
