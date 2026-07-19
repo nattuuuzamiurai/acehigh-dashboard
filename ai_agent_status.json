@@ -7,16 +7,16 @@
       "finishedAt": "2026-07-19T15:56:46.844Z"
     },
     "qa-lead": {
-      "status": "running",
-      "task": "QA check: WJPT event feature",
-      "startedAt": "2026-07-19T17:11:49.655Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "流動性配線・多数決・byreal対応の品質検証",
+      "startedAt": "2026-07-19T17:35:17.010Z",
+      "finishedAt": "2026-07-19T17:35:20.526Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "動画埋め込み全体の最終GO/NO-GO判定",
-      "startedAt": "2026-07-19T16:59:06.027Z",
-      "finishedAt": "2026-07-19T16:59:52.084Z"
+      "task": "Review GO/NO-GO: WJPT event feature",
+      "startedAt": "2026-07-19T17:24:14.491Z",
+      "finishedAt": "2026-07-19T17:29:32.151Z"
     },
     "content-writer": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 412794,
-    "todayOutputTokens": 629754,
-    "asOf": "2026-07-19T17:18:16.861Z"
+    "todayInputTokens": 414283,
+    "todayOutputTokens": 694935,
+    "asOf": "2026-07-19T17:35:33.924Z"
   },
-  "updatedAt": "2026-07-19T17:18:16.861Z"
+  "updatedAt": "2026-07-19T17:35:33.924Z"
 }
