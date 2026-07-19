@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Review GO/NO-GO: WJPT event feature",
-      "startedAt": "2026-07-19T17:24:14.491Z",
-      "finishedAt": "2026-07-19T17:29:32.151Z"
+      "task": "流動性救済・多数決・byreal対応の最終GO判定",
+      "startedAt": "2026-07-19T17:58:42.844Z",
+      "finishedAt": "2026-07-19T17:58:45.736Z"
     },
     "content-writer": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 414283,
-    "todayOutputTokens": 694935,
-    "asOf": "2026-07-19T17:35:33.924Z"
+    "todayInputTokens": 425539,
+    "todayOutputTokens": 748324,
+    "asOf": "2026-07-19T17:58:51.131Z"
   },
-  "updatedAt": "2026-07-19T17:35:33.924Z"
+  "updatedAt": "2026-07-19T17:58:51.131Z"
 }
