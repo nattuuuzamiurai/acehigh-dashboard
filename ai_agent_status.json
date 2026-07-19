@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "discoverOnchainPools.jsのPolygonバグ修正",
-      "startedAt": "2026-07-17T14:30:10.441Z",
-      "finishedAt": "2026-07-17T14:30:15.565Z"
+      "task": "Sui・Aptosのオンチェーン直読み実装",
+      "startedAt": "2026-07-19T09:32:35.701Z",
+      "finishedAt": "2026-07-19T09:32:43.776Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3849,
-    "todayOutputTokens": 34726,
-    "asOf": "2026-07-19T09:32:18.406Z"
+    "todayInputTokens": 3877,
+    "todayOutputTokens": 39276,
+    "asOf": "2026-07-19T09:32:53.328Z"
   },
-  "updatedAt": "2026-07-19T09:32:18.406Z"
+  "updatedAt": "2026-07-19T09:32:53.328Z"
 }
