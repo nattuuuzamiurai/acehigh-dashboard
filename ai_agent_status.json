@@ -17,12 +17,18 @@
       "task": "Voulgaris記事の再確認",
       "startedAt": "2026-07-17T15:40:34.091Z",
       "finishedAt": "2026-07-17T15:40:39.276Z"
+    },
+    "content-writer": {
+      "status": "idle",
+      "task": "WSOP 2026メインイベントに絞って記事追加",
+      "startedAt": "2026-07-19T09:32:00.966Z",
+      "finishedAt": "2026-07-19T09:32:06.148Z"
     }
   },
   "usage": {
-    "todayInputTokens": 2344,
-    "todayOutputTokens": 25247,
-    "asOf": "2026-07-19T09:30:42.430Z"
+    "todayInputTokens": 3849,
+    "todayOutputTokens": 34726,
+    "asOf": "2026-07-19T09:32:18.406Z"
   },
-  "updatedAt": "2026-07-19T09:30:42.430Z"
+  "updatedAt": "2026-07-19T09:32:18.406Z"
 }
