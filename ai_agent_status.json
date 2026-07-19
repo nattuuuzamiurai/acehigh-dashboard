@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-19T15:56:46.844Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "トリトン記事の動画埋め込み検証",
-      "startedAt": "2026-07-19T16:38:00.545Z",
-      "finishedAt": "2026-07-19T16:38:41.946Z"
+      "status": "running",
+      "task": "QA check: WJPT event feature",
+      "startedAt": "2026-07-19T17:11:49.655Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 409112,
-    "todayOutputTokens": 526819,
-    "asOf": "2026-07-19T17:00:19.229Z"
+    "todayInputTokens": 412386,
+    "todayOutputTokens": 600032,
+    "asOf": "2026-07-19T17:13:05.301Z"
   },
-  "updatedAt": "2026-07-19T17:00:19.229Z"
+  "updatedAt": "2026-07-19T17:13:05.301Z"
 }
