@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "新特徴量R&D(グレード/節間位置/潮汐)",
-      "startedAt": "2026-07-20T05:48:22.619Z",
-      "finishedAt": "2026-07-20T05:48:27.989Z"
+      "task": "流動性の門を格下げ+自前ふるい分けに変更",
+      "startedAt": "2026-07-20T07:03:42.971Z",
+      "finishedAt": "2026-07-20T07:03:47.676Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 470931,
-    "todayOutputTokens": 2120623,
-    "asOf": "2026-07-20T07:01:22.533Z"
+    "todayInputTokens": 471012,
+    "todayOutputTokens": 2167419,
+    "asOf": "2026-07-20T07:04:14.655Z"
   },
-  "updatedAt": "2026-07-20T07:01:22.533Z"
+  "updatedAt": "2026-07-20T07:04:14.655Z"
 }
