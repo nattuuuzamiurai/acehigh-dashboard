@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "額面差水増し修正(2ソース中央値)の検証",
-      "startedAt": "2026-07-20T05:50:38.655Z",
-      "finishedAt": "2026-07-20T05:50:42.780Z"
+      "task": "metrics変更の品質検証",
+      "startedAt": "2026-07-20T05:57:19.291Z",
+      "finishedAt": "2026-07-20T05:57:21.940Z"
     },
     "review-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 470298,
-    "todayOutputTokens": 1688438,
-    "asOf": "2026-07-20T05:55:19.756Z"
+    "todayInputTokens": 470358,
+    "todayOutputTokens": 1710691,
+    "asOf": "2026-07-20T05:57:28.731Z"
   },
-  "updatedAt": "2026-07-20T05:55:19.756Z"
+  "updatedAt": "2026-07-20T05:57:28.731Z"
 }
