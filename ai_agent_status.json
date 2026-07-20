@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "metrics変更の品質検証",
-      "startedAt": "2026-07-20T05:57:19.291Z",
-      "finishedAt": "2026-07-20T05:57:21.940Z"
+      "task": "最終日戦略の過学習検査",
+      "startedAt": "2026-07-20T07:06:14.747Z",
+      "finishedAt": "2026-07-20T07:06:20.502Z"
     },
     "review-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 471012,
-    "todayOutputTokens": 2167419,
-    "asOf": "2026-07-20T07:04:14.655Z"
+    "todayInputTokens": 471126,
+    "todayOutputTokens": 2215843,
+    "asOf": "2026-07-20T07:06:37.785Z"
   },
-  "updatedAt": "2026-07-20T07:04:14.655Z"
+  "updatedAt": "2026-07-20T07:06:37.785Z"
 }
