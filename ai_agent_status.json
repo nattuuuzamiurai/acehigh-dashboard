@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "閾値スイープのバックテスト",
-      "startedAt": "2026-07-20T05:03:06.530Z",
-      "finishedAt": "2026-07-20T05:03:33.618Z"
+      "task": "額面差の水増し(2ソース素通り)を修正",
+      "startedAt": "2026-07-20T05:12:28.332Z",
+      "finishedAt": "2026-07-20T05:12:34.820Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 469251,
-    "todayOutputTokens": 1266811,
-    "asOf": "2026-07-20T05:04:05.684Z"
+    "todayInputTokens": 469383,
+    "todayOutputTokens": 1316189,
+    "asOf": "2026-07-20T05:12:48.867Z"
   },
-  "updatedAt": "2026-07-20T05:04:05.684Z"
+  "updatedAt": "2026-07-20T05:12:48.867Z"
 }
