@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "モデル健康診断(時系列hold-out)",
-      "startedAt": "2026-07-20T05:15:23.267Z",
-      "finishedAt": "2026-07-20T05:15:31.942Z"
+      "task": "新特徴量R&D(グレード/節間位置/潮汐)",
+      "startedAt": "2026-07-20T05:48:22.619Z",
+      "finishedAt": "2026-07-20T05:48:27.989Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 469853,
-    "todayOutputTokens": 1506278,
-    "asOf": "2026-07-20T05:41:42.419Z"
+    "todayInputTokens": 469967,
+    "todayOutputTokens": 1578639,
+    "asOf": "2026-07-20T05:48:29.897Z"
   },
-  "updatedAt": "2026-07-20T05:41:42.419Z"
+  "updatedAt": "2026-07-20T05:48:29.897Z"
 }
