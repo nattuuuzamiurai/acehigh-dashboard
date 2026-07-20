@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "額面差の水増し(2ソース素通り)を修正",
-      "startedAt": "2026-07-20T05:12:28.332Z",
-      "finishedAt": "2026-07-20T05:12:34.820Z"
+      "task": "モデル健康診断(時系列hold-out)",
+      "startedAt": "2026-07-20T05:15:23.267Z",
+      "finishedAt": "2026-07-20T05:15:31.942Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 469395,
-    "todayOutputTokens": 1322343,
-    "asOf": "2026-07-20T05:13:34.050Z"
+    "todayInputTokens": 469457,
+    "todayOutputTokens": 1375005,
+    "asOf": "2026-07-20T05:15:41.554Z"
   },
-  "updatedAt": "2026-07-20T05:13:34.050Z"
+  "updatedAt": "2026-07-20T05:15:41.554Z"
 }
