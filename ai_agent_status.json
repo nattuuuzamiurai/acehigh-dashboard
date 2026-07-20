@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "スリッページ再修正($10基準+0クリップ)の再検証",
-      "startedAt": "2026-07-19T20:08:40.488Z",
-      "finishedAt": "2026-07-19T20:08:43.847Z"
+      "task": "額面差水増し修正(2ソース中央値)の検証",
+      "startedAt": "2026-07-20T05:50:38.655Z",
+      "finishedAt": "2026-07-20T05:50:42.780Z"
     },
     "review-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 470052,
-    "todayOutputTokens": 1590056,
-    "asOf": "2026-07-20T05:49:29.718Z"
+    "todayInputTokens": 470086,
+    "todayOutputTokens": 1597656,
+    "asOf": "2026-07-20T05:50:56.475Z"
   },
-  "updatedAt": "2026-07-20T05:49:29.718Z"
+  "updatedAt": "2026-07-20T05:50:56.475Z"
 }
