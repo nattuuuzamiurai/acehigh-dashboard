@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "閾値スイープのバックテスト",
       "startedAt": "2026-07-20T05:03:06.530Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-20T05:03:33.618Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 469229,
-    "todayOutputTokens": 1263506,
-    "asOf": "2026-07-20T05:03:09.123Z"
+    "todayInputTokens": 469251,
+    "todayOutputTokens": 1266811,
+    "asOf": "2026-07-20T05:04:05.684Z"
   },
-  "updatedAt": "2026-07-20T05:03:09.123Z"
+  "updatedAt": "2026-07-20T05:04:05.684Z"
 }
