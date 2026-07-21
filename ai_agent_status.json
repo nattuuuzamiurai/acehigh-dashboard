@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-21T19:50:45.213Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "流動性2段構え再設計の品質検証",
-      "startedAt": "2026-07-21T20:04:18.746Z",
-      "finishedAt": "2026-07-21T20:04:30.852Z"
+      "status": "running",
+      "task": "QA check: JOPT event feature",
+      "startedAt": "2026-07-21T20:39:15.634Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 21533,
-    "todayOutputTokens": 716570,
-    "asOf": "2026-07-21T20:35:04.280Z"
+    "todayInputTokens": 25670,
+    "todayOutputTokens": 748548,
+    "asOf": "2026-07-21T20:40:22.639Z"
   },
-  "updatedAt": "2026-07-21T20:35:04.280Z"
+  "updatedAt": "2026-07-21T20:40:22.639Z"
 }
