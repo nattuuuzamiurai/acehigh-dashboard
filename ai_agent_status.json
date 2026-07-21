@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "額面差水増し修正の最終GO/NO-GO判定",
-      "startedAt": "2026-07-20T06:10:31.052Z",
-      "finishedAt": "2026-07-20T06:10:35.488Z"
+      "task": "流動性2段構え再設計の最終GO/NO-GO判定",
+      "startedAt": "2026-07-21T20:21:14.242Z",
+      "finishedAt": "2026-07-21T20:21:52.368Z"
     },
     "content-writer": {
       "status": "idle",
@@ -35,12 +35,18 @@
       "task": "週次分析レポート生成(競艇)",
       "startedAt": "2026-07-19T18:50:46.884Z",
       "finishedAt": "2026-07-19T18:50:50.234Z"
+    },
+    "Explore": {
+      "status": "idle",
+      "task": "公式サイトを持つ店舗を数える",
+      "startedAt": "2026-07-21T20:17:48.763Z",
+      "finishedAt": "2026-07-21T20:21:50.733Z"
     }
   },
   "usage": {
-    "todayInputTokens": 1186,
-    "todayOutputTokens": 545794,
-    "asOf": "2026-07-21T20:04:55.005Z"
+    "todayInputTokens": 1386,
+    "todayOutputTokens": 620929,
+    "asOf": "2026-07-21T20:22:23.318Z"
   },
-  "updatedAt": "2026-07-21T20:04:55.005Z"
+  "updatedAt": "2026-07-21T20:22:23.318Z"
 }
