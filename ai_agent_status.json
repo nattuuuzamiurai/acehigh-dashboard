@@ -1,16 +1,16 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "SEO・ファビコン整備とGA4連携準備",
-      "startedAt": "2026-07-21T19:38:47.838Z",
-      "finishedAt": null
+      "startedAt": "2026-07-21T19:50:25.711Z",
+      "finishedAt": "2026-07-21T19:50:45.213Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "最終日戦略の過学習検査",
-      "startedAt": "2026-07-20T07:06:14.747Z",
-      "finishedAt": "2026-07-20T07:06:20.502Z"
+      "task": "流動性2段構え再設計の品質検証",
+      "startedAt": "2026-07-21T20:04:18.746Z",
+      "finishedAt": "2026-07-21T20:04:30.852Z"
     },
     "review-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 711,
-    "todayOutputTokens": 371836,
-    "asOf": "2026-07-21T19:46:01.457Z"
+    "todayInputTokens": 1186,
+    "todayOutputTokens": 545794,
+    "asOf": "2026-07-21T20:04:55.005Z"
   },
-  "updatedAt": "2026-07-21T19:46:01.457Z"
+  "updatedAt": "2026-07-21T20:04:55.005Z"
 }
