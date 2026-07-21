@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-21T19:50:45.213Z"
     },
     "qa-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "QA check: JOPT event feature",
       "startedAt": "2026-07-21T20:39:15.634Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-21T21:03:30.116Z"
     },
     "review-lead": {
       "status": "idle",
@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "コンカフェ他15店の公式サイト・ロゴ調査",
-      "startedAt": "2026-07-21T20:45:36.986Z",
-      "finishedAt": "2026-07-21T20:54:50.658Z"
+      "task": "居酒屋56-66の公式サイト・ロゴ調査",
+      "startedAt": "2026-07-21T21:06:15.795Z",
+      "finishedAt": "2026-07-21T21:06:20.175Z"
     }
   },
   "usage": {
-    "todayInputTokens": 244577,
-    "todayOutputTokens": 908078,
-    "asOf": "2026-07-21T20:58:30.006Z"
+    "todayInputTokens": 255377,
+    "todayOutputTokens": 950974,
+    "asOf": "2026-07-21T21:06:33.772Z"
   },
-  "updatedAt": "2026-07-21T20:58:30.006Z"
+  "updatedAt": "2026-07-21T21:06:33.772Z"
 }
