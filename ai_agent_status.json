@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "流動性の門を格下げ+自前ふるい分けに変更",
-      "startedAt": "2026-07-20T07:03:42.971Z",
-      "finishedAt": "2026-07-20T07:03:47.676Z"
+      "task": "店舗ロゴをカードに実装",
+      "startedAt": "2026-07-21T19:32:16.475Z",
+      "finishedAt": "2026-07-21T19:32:30.948Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 479,
-    "todayOutputTokens": 281221,
-    "asOf": "2026-07-21T19:28:26.700Z"
+    "todayInputTokens": 555,
+    "todayOutputTokens": 313034,
+    "asOf": "2026-07-21T19:32:47.804Z"
   },
-  "updatedAt": "2026-07-21T19:28:26.700Z"
+  "updatedAt": "2026-07-21T19:32:47.804Z"
 }
