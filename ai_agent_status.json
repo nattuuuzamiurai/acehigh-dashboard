@@ -41,12 +41,18 @@
       "task": "公式サイトを持つ店舗を数える",
       "startedAt": "2026-07-21T20:17:48.763Z",
       "finishedAt": "2026-07-21T20:21:50.733Z"
+    },
+    "general-purpose": {
+      "status": "running",
+      "task": "Bar logo research group 4",
+      "startedAt": "2026-07-21T20:26:20.345Z",
+      "finishedAt": null
     }
   },
   "usage": {
-    "todayInputTokens": 1386,
-    "todayOutputTokens": 620929,
-    "asOf": "2026-07-21T20:22:23.318Z"
+    "todayInputTokens": 5807,
+    "todayOutputTokens": 685127,
+    "asOf": "2026-07-21T20:27:46.074Z"
   },
-  "updatedAt": "2026-07-21T20:22:23.318Z"
+  "updatedAt": "2026-07-21T20:27:46.074Z"
 }
