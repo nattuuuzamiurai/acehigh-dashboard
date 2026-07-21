@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "店舗ロゴをカードに実装",
-      "startedAt": "2026-07-21T19:32:16.475Z",
-      "finishedAt": "2026-07-21T19:32:30.948Z"
+      "status": "running",
+      "task": "SEO・ファビコン整備とGA4連携準備",
+      "startedAt": "2026-07-21T19:38:47.838Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 597,
-    "todayOutputTokens": 326282,
-    "asOf": "2026-07-21T19:35:54.806Z"
+    "todayInputTokens": 711,
+    "todayOutputTokens": 371836,
+    "asOf": "2026-07-21T19:46:01.457Z"
   },
-  "updatedAt": "2026-07-21T19:35:54.806Z"
+  "updatedAt": "2026-07-21T19:46:01.457Z"
 }
