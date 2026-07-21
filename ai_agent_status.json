@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "流動性2段構え再設計の最終GO/NO-GO判定",
-      "startedAt": "2026-07-21T20:21:14.242Z",
-      "finishedAt": "2026-07-21T20:21:52.368Z"
+      "task": "Review-lead GO/NO-GO: JOPT feature",
+      "startedAt": "2026-07-21T22:01:00.970Z",
+      "finishedAt": "2026-07-21T22:08:08.749Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 267148,
-    "todayOutputTokens": 1228002,
-    "asOf": "2026-07-21T21:53:42.755Z"
+    "todayInputTokens": 267565,
+    "todayOutputTokens": 1435118,
+    "asOf": "2026-07-21T22:18:16.317Z"
   },
-  "updatedAt": "2026-07-21T21:53:42.755Z"
+  "updatedAt": "2026-07-21T22:18:16.317Z"
 }
