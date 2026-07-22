@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "抽出データの反映と検索強化",
-      "startedAt": "2026-07-22T05:08:15.235Z",
-      "finishedAt": "2026-07-22T05:08:24.155Z"
+      "task": "ダッシュボードのバッジ表記修正と記述訂正",
+      "startedAt": "2026-07-22T06:17:57.072Z",
+      "finishedAt": "2026-07-22T06:18:01.564Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 563340,
-    "todayOutputTokens": 2473727,
-    "asOf": "2026-07-22T06:13:33.062Z"
+    "todayInputTokens": 563386,
+    "todayOutputTokens": 2492356,
+    "asOf": "2026-07-22T06:18:31.058Z"
   },
-  "updatedAt": "2026-07-22T06:13:33.062Z"
+  "updatedAt": "2026-07-22T06:18:31.058Z"
 }
