@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-22T05:08:24.155Z"
     },
     "qa-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "QA: lazy load, archive, privacy policy",
       "startedAt": "2026-07-22T04:54:32.966Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-22T05:11:57.773Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 562481,
-    "todayOutputTokens": 2206792,
-    "asOf": "2026-07-22T05:10:03.500Z"
+    "todayInputTokens": 562760,
+    "todayOutputTokens": 2321979,
+    "asOf": "2026-07-22T05:29:30.801Z"
   },
-  "updatedAt": "2026-07-22T05:10:03.500Z"
+  "updatedAt": "2026-07-22T05:29:30.801Z"
 }
