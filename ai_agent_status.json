@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "SNS完全自動運用の調査",
-      "startedAt": "2026-07-19T15:53:19.319Z",
-      "finishedAt": "2026-07-19T16:00:22.865Z"
+      "task": "編集コンテンツの企画立案",
+      "startedAt": "2026-07-22T04:22:05.651Z",
+      "finishedAt": "2026-07-22T04:22:45.792Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "エージェント疎通テスト",
-      "startedAt": "2026-07-22T04:13:01.468Z",
-      "finishedAt": "2026-07-22T04:13:13.825Z"
+      "task": "バー後半の詳細情報抽出",
+      "startedAt": "2026-07-22T04:21:22.707Z",
+      "finishedAt": "2026-07-22T04:21:27.925Z"
     }
   },
   "usage": {
-    "todayInputTokens": 272367,
-    "todayOutputTokens": 1624558,
-    "asOf": "2026-07-22T04:14:39.418Z"
+    "todayInputTokens": 278871,
+    "todayOutputTokens": 1712577,
+    "asOf": "2026-07-22T04:24:31.101Z"
   },
-  "updatedAt": "2026-07-22T04:14:39.418Z"
+  "updatedAt": "2026-07-22T04:24:31.101Z"
 }
