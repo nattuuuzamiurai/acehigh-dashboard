@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ロゴ表示の実装とデータ修正",
-      "startedAt": "2026-07-21T21:20:19.305Z",
-      "finishedAt": "2026-07-21T21:20:25.385Z"
+      "task": "品質管理部の指摘B/C/G/A/D/F/Hを修正",
+      "startedAt": "2026-07-22T04:59:21.525Z",
+      "finishedAt": "2026-07-22T04:59:25.115Z"
     },
     "qa-lead": {
       "status": "running",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 495253,
-    "todayOutputTokens": 2075320,
-    "asOf": "2026-07-22T04:58:13.553Z"
+    "todayInputTokens": 501783,
+    "todayOutputTokens": 2095944,
+    "asOf": "2026-07-22T04:59:56.270Z"
   },
-  "updatedAt": "2026-07-22T04:58:13.553Z"
+  "updatedAt": "2026-07-22T04:59:56.270Z"
 }
