@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "QA check: JOPT event feature",
-      "startedAt": "2026-07-21T20:39:15.634Z",
-      "finishedAt": "2026-07-21T21:03:30.116Z"
+      "task": "依頼D・Eの品質検証(積み残し)",
+      "startedAt": "2026-07-22T04:14:23.351Z",
+      "finishedAt": "2026-07-22T04:14:26.868Z"
     },
     "review-lead": {
       "status": "idle",
@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "居酒屋56-66の公式サイト・ロゴ調査",
-      "startedAt": "2026-07-21T21:06:15.795Z",
-      "finishedAt": "2026-07-21T21:06:20.175Z"
+      "task": "エージェント疎通テスト",
+      "startedAt": "2026-07-22T04:13:01.468Z",
+      "finishedAt": "2026-07-22T04:13:13.825Z"
     }
   },
   "usage": {
-    "todayInputTokens": 272333,
-    "todayOutputTokens": 1617047,
-    "asOf": "2026-07-22T02:49:50.494Z"
+    "todayInputTokens": 272367,
+    "todayOutputTokens": 1624558,
+    "asOf": "2026-07-22T04:14:39.418Z"
   },
-  "updatedAt": "2026-07-22T02:49:50.494Z"
+  "updatedAt": "2026-07-22T04:14:39.418Z"
 }
