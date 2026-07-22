@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "品質管理部の指摘B/C/G/A/D/F/Hを修正",
-      "startedAt": "2026-07-22T04:59:21.525Z",
-      "finishedAt": "2026-07-22T04:59:25.115Z"
+      "task": "抽出データの反映と検索強化",
+      "startedAt": "2026-07-22T05:08:15.235Z",
+      "finishedAt": "2026-07-22T05:08:24.155Z"
     },
     "qa-lead": {
       "status": "running",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 515118,
-    "todayOutputTokens": 2132542,
-    "asOf": "2026-07-22T05:01:37.897Z"
+    "todayInputTokens": 562481,
+    "todayOutputTokens": 2206792,
+    "asOf": "2026-07-22T05:10:03.500Z"
   },
-  "updatedAt": "2026-07-22T05:01:37.897Z"
+  "updatedAt": "2026-07-22T05:10:03.500Z"
 }
