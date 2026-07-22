@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Review-lead GO/NO-GO: JOPT feature",
-      "startedAt": "2026-07-21T22:01:00.970Z",
-      "finishedAt": "2026-07-21T22:08:08.749Z"
+      "task": "Review GO/NO-GO: lazy load, archive, privacy",
+      "startedAt": "2026-07-22T05:43:19.815Z",
+      "finishedAt": "2026-07-22T05:48:34.351Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 562760,
-    "todayOutputTokens": 2321979,
-    "asOf": "2026-07-22T05:29:30.801Z"
+    "todayInputTokens": 563128,
+    "todayOutputTokens": 2404021,
+    "asOf": "2026-07-22T05:56:10.822Z"
   },
-  "updatedAt": "2026-07-22T05:29:30.801Z"
+  "updatedAt": "2026-07-22T05:56:10.822Z"
 }
