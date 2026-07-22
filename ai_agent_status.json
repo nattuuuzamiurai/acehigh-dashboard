@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-21T21:20:25.385Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "依頼D・Eの品質検証(積み残し)",
-      "startedAt": "2026-07-22T04:14:23.351Z",
-      "finishedAt": "2026-07-22T04:14:26.868Z"
+      "status": "running",
+      "task": "QA: lazy load, archive, privacy policy",
+      "startedAt": "2026-07-22T04:54:32.966Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "居酒屋64-84の詳細情報抽出",
-      "startedAt": "2026-07-22T04:39:06.602Z",
-      "finishedAt": "2026-07-22T04:39:24.276Z"
+      "task": "コンカフェ他15店の詳細情報抽出",
+      "startedAt": "2026-07-22T04:57:10.637Z",
+      "finishedAt": "2026-07-22T04:57:16.365Z"
     }
   },
   "usage": {
-    "todayInputTokens": 493337,
-    "todayOutputTokens": 2024510,
-    "asOf": "2026-07-22T04:54:11.472Z"
+    "todayInputTokens": 495253,
+    "todayOutputTokens": 2075320,
+    "asOf": "2026-07-22T04:58:13.553Z"
   },
-  "updatedAt": "2026-07-22T04:54:11.472Z"
+  "updatedAt": "2026-07-22T04:58:13.553Z"
 }
