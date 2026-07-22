@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Review GO/NO-GO: lazy load, archive, privacy",
-      "startedAt": "2026-07-22T05:43:19.815Z",
-      "finishedAt": "2026-07-22T05:48:34.351Z"
+      "task": "依頼D・E一連の最終GO/NO-GO判定",
+      "startedAt": "2026-07-22T06:35:53.250Z",
+      "finishedAt": "2026-07-22T06:35:57.976Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 563386,
-    "todayOutputTokens": 2492356,
-    "asOf": "2026-07-22T06:18:31.058Z"
+    "todayInputTokens": 563648,
+    "todayOutputTokens": 2545357,
+    "asOf": "2026-07-22T06:36:22.524Z"
   },
-  "updatedAt": "2026-07-22T06:18:31.058Z"
+  "updatedAt": "2026-07-22T06:36:22.524Z"
 }
