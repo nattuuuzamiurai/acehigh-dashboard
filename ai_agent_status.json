@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "指摘7項目の修正を再確認",
-      "startedAt": "2026-07-22T06:00:24.274Z",
-      "finishedAt": "2026-07-22T06:00:30.581Z"
+      "task": "QA: WJPT archive + shared helper",
+      "startedAt": "2026-07-22T12:56:37.519Z",
+      "finishedAt": "2026-07-22T13:07:20.086Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 563835,
-    "todayOutputTokens": 2623005,
-    "asOf": "2026-07-22T12:21:15.479Z"
+    "todayInputTokens": 564013,
+    "todayOutputTokens": 2675090,
+    "asOf": "2026-07-22T13:31:46.800Z"
   },
-  "updatedAt": "2026-07-22T12:21:15.479Z"
+  "updatedAt": "2026-07-22T13:31:46.800Z"
 }
