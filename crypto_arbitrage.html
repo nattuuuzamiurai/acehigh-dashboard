@@ -29,6 +29,13 @@
   .badge { display: inline-block; margin-top: 4px; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
   .badge-go { background: #1e5c1e; color: #a8ffa8; }
   .badge-watch { background: #333; color: #bbb; }
+  /* 2026-07-22追加: crypto-arbitrage-monitor 側(src/dashboard/generate.js)が生成する
+     rowsHtml に含まれるバッジ・注記のスタイル。未定義だと素の文字として表示されるため追加。
+     .badge-reject = アグリゲータが実測した上で確定的に取引不成立と判定した行。
+     .badge-liquidity = 段1(流動性の粗い足切り)で除外された行。 */
+  .badge-reject { background: #4a1414; color: #ff9a9a; }
+  .badge-liquidity { background: #4a2a10; color: #ffb066; }
+  .note-line { color: #ff9d6c; font-size: 11px; margin-top: 4px; }
   .asset-name { font-weight: 700; font-size: 14px; }
   .pattern-label { color: #9aa0a6; font-size: 12px; }
   .sub { color: #9aa0a6; font-size: 11px; }
