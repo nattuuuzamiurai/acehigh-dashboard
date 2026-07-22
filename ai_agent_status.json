@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "QA: lazy load, archive, privacy policy",
-      "startedAt": "2026-07-22T04:54:32.966Z",
-      "finishedAt": "2026-07-22T05:11:57.773Z"
+      "task": "指摘7項目の修正を再確認",
+      "startedAt": "2026-07-22T06:00:24.274Z",
+      "finishedAt": "2026-07-22T06:00:30.581Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 563128,
-    "todayOutputTokens": 2404021,
-    "asOf": "2026-07-22T05:56:10.822Z"
+    "todayInputTokens": 563186,
+    "todayOutputTokens": 2418558,
+    "asOf": "2026-07-22T06:00:52.410Z"
   },
-  "updatedAt": "2026-07-22T05:56:10.822Z"
+  "updatedAt": "2026-07-22T06:00:52.410Z"
 }
