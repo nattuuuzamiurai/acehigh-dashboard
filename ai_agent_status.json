@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "依頼D・E一連の最終GO/NO-GO判定",
-      "startedAt": "2026-07-22T06:35:53.250Z",
-      "finishedAt": "2026-07-22T06:35:57.976Z"
+      "task": "Review GO/NO-GO: WJPT archive",
+      "startedAt": "2026-07-22T13:40:09.390Z",
+      "finishedAt": "2026-07-22T13:43:51.579Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 564013,
-    "todayOutputTokens": 2675090,
-    "asOf": "2026-07-22T13:31:46.800Z"
+    "todayInputTokens": 564110,
+    "todayOutputTokens": 2701756,
+    "asOf": "2026-07-22T14:08:18.122Z"
   },
-  "updatedAt": "2026-07-22T13:31:46.800Z"
+  "updatedAt": "2026-07-22T14:08:18.122Z"
 }
