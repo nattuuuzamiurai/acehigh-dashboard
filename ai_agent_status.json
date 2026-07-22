@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "バー後半の詳細情報抽出",
-      "startedAt": "2026-07-22T04:21:22.707Z",
-      "finishedAt": "2026-07-22T04:21:27.925Z"
+      "task": "居酒屋64-84の詳細情報抽出",
+      "startedAt": "2026-07-22T04:39:06.602Z",
+      "finishedAt": "2026-07-22T04:39:24.276Z"
     }
   },
   "usage": {
-    "todayInputTokens": 278871,
-    "todayOutputTokens": 1712577,
-    "asOf": "2026-07-22T04:24:31.101Z"
+    "todayInputTokens": 358118,
+    "todayOutputTokens": 1893334,
+    "asOf": "2026-07-22T04:42:06.114Z"
   },
-  "updatedAt": "2026-07-22T04:24:31.101Z"
+  "updatedAt": "2026-07-22T04:42:06.114Z"
 }
