@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-07-22 12:34",
+  "updated": "2026-07-22 13:03",
   "today_label": "2026年7月22日",
   "pred_date": "2026/07/22",
   "pred_is_today": true,
@@ -923,7 +923,7 @@ window.KYOTEI_DATA = {
       "race_no": "8",
       "start_time": "20:59",
       "combo": "1-3-2",
-      "actual_combo": "5-4-1",
+      "actual_combo": "1-2-4",
       "ev": 1.7,
       "odds": "39.5",
       "prob_pct": "4.3",
@@ -1966,7 +1966,7 @@ window.KYOTEI_DATA = {
           "race_no": "8",
           "start_time": "20:59",
           "combo": "1-3-2",
-          "actual_combo": "5-4-1",
+          "actual_combo": "1-2-4",
           "ev": 1.7,
           "odds": "39.5",
           "prob_pct": "4.3",
@@ -9669,7 +9669,7 @@ window.KYOTEI_DATA = {
           "race_no": "8",
           "start_time": "20:59",
           "combo": "1-2-6",
-          "actual_combo": "5-4-1",
+          "actual_combo": "1-2-4",
           "ev": 1.18,
           "has_ev": false,
           "odds": "14.0",
@@ -24301,7 +24301,7 @@ window.KYOTEI_DATA = {
           "race_no": "8",
           "start_time": "20:59",
           "combo": "1-2-6",
-          "actual_combo": "5-4-1",
+          "actual_combo": "1-2-4",
           "prob_pct": "8.5",
           "top1_pct": "62",
           "ev": 1.18,
@@ -27829,10 +27829,10 @@ window.KYOTEI_DATA = {
   "formation_weekly_demos": [
     {
       "total_bets": 2626,
-      "total_hits": 128,
+      "total_hits": 129,
       "total_invested": 262600,
-      "total_returned": 187590,
-      "roi": -28.6,
+      "total_returned": 188800,
+      "roi": -28.1,
       "daily": [
         {
           "date": "7/20",
@@ -27853,10 +27853,10 @@ window.KYOTEI_DATA = {
         {
           "date": "7/22",
           "bets": 898,
-          "hits": 42,
+          "hits": 43,
           "invested": 89800,
-          "returned": 63080,
-          "roi": -29.8
+          "returned": 64290,
+          "roi": -28.4
         }
       ],
       "week_label": "7/20（月）〜7/26（日）",
@@ -27976,10 +27976,10 @@ window.KYOTEI_DATA = {
   "formation_monthly_demos": [
     {
       "total_bets": 11120,
-      "total_hits": 543,
+      "total_hits": 544,
       "total_invested": 1112000,
-      "total_returned": 842150,
-      "roi": -24.3,
+      "total_returned": 843360,
+      "roi": -24.2,
       "daily": [
         {
           "date": "7/9",
@@ -28088,10 +28088,10 @@ window.KYOTEI_DATA = {
         {
           "date": "7/22",
           "bets": 898,
-          "hits": 42,
+          "hits": 43,
           "invested": 89800,
-          "returned": 63080,
-          "roi": -29.8
+          "returned": 64290,
+          "roi": -28.4
         }
       ],
       "month_label": "2026年7月",
@@ -30180,12 +30180,12 @@ window.KYOTEI_DATA = {
           "start_time": "20:59",
           "combo": "1-2-6",
           "n_bets": 6,
-          "actual_combo": "5-4-1",
+          "actual_combo": "1-2-4",
           "prob_pct": "8.5",
           "ev": 1.18,
           "odds": "14.0",
-          "hit": "0",
-          "payout": "0",
+          "hit": "1",
+          "payout": "1210",
           "final_odds": "14.0",
           "actual_ev": 1.183
         }
@@ -42165,11 +42165,11 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "bets": 2626,
-        "hits": 128,
+        "hits": 129,
         "hit_rate": 4.9,
         "invested": 262600,
-        "returned": 187590,
-        "roi": -28.6
+        "returned": 188800,
+        "roi": -28.1
       }
     },
     {
@@ -43293,7 +43293,7 @@ window.KYOTEI_DATA = {
           "start_time": "20:59",
           "combo": "1-3-2",
           "n_bets": 1,
-          "actual_combo": "5-4-1",
+          "actual_combo": "1-2-4",
           "prob_pct": "4.3",
           "ev": 1.7,
           "odds": "39.5",
@@ -48123,7 +48123,7 @@ window.KYOTEI_DATA = {
           "start_time": "20:59",
           "combo": "1-3-2",
           "n_bets": 1,
-          "actual_combo": "5-4-1",
+          "actual_combo": "1-2-4",
           "prob_pct": "4.3",
           "ev": 1.7,
           "odds": "39.5",
