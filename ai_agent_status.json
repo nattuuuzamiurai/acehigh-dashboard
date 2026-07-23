@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Review GO/NO-GO: disclaimer + scroll removal",
-      "startedAt": "2026-07-23T04:20:50.347Z",
-      "finishedAt": "2026-07-23T04:23:54.721Z"
+      "task": "ブリッジ経路フィルタの最終GO/NO-GO",
+      "startedAt": "2026-07-23T05:57:09.706Z",
+      "finishedAt": "2026-07-23T05:57:14.761Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 29990,
-    "todayOutputTokens": 651503,
-    "asOf": "2026-07-23T05:39:47.047Z"
+    "todayInputTokens": 30140,
+    "todayOutputTokens": 681072,
+    "asOf": "2026-07-23T05:57:29.358Z"
   },
-  "updatedAt": "2026-07-23T05:39:47.047Z"
+  "updatedAt": "2026-07-23T05:57:29.358Z"
 }
