@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
-      "task": "プロセス構造の是正(ガード+稼働コピー分離)",
-      "startedAt": "2026-07-23T03:48:35.173Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "ブリッジ経路フィルタの実装",
+      "startedAt": "2026-07-23T05:16:55.279Z",
+      "finishedAt": "2026-07-23T05:17:06.608Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 22893,
-    "todayOutputTokens": 543349,
-    "asOf": "2026-07-23T05:08:11.776Z"
+    "todayInputTokens": 29792,
+    "todayOutputTokens": 594655,
+    "asOf": "2026-07-23T05:17:24.374Z"
   },
-  "updatedAt": "2026-07-23T05:08:11.776Z"
+  "updatedAt": "2026-07-23T05:17:24.374Z"
 }
