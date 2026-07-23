@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "ダッシュボードのバッジ表記修正と記述訂正",
-      "startedAt": "2026-07-22T06:17:57.072Z",
-      "finishedAt": "2026-07-22T06:18:01.564Z"
+      "status": "running",
+      "task": "プロセス構造の是正(ガード+稼働コピー分離)",
+      "startedAt": "2026-07-23T03:48:35.173Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "編集コンテンツの企画立案",
-      "startedAt": "2026-07-22T04:22:05.651Z",
-      "finishedAt": "2026-07-22T04:22:45.792Z"
+      "task": "OHM 8日間閉じない乖離の真偽検証",
+      "startedAt": "2026-07-23T03:51:25.717Z",
+      "finishedAt": "2026-07-23T03:51:51.207Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 187,
-    "todayOutputTokens": 114595,
-    "asOf": "2026-07-23T03:47:59.317Z"
+    "todayInputTokens": 13945,
+    "todayOutputTokens": 159459,
+    "asOf": "2026-07-23T03:55:14.928Z"
   },
-  "updatedAt": "2026-07-23T03:47:59.317Z"
+  "updatedAt": "2026-07-23T03:55:14.928Z"
 }
