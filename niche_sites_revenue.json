@@ -1,6 +1,6 @@
 {
   "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。articles.monthly は「実際に公開(draft:false化)した暦月」ごとに1エントリを集計すること(記事フロントマターのpubDateではなく、実際にpushして公開した日で判断する。記事執筆時に将来日付のpubDateを仮設定している場合があるため)。バッチ単位(Week1/Week2等)で分けず、同じ暦月なら合算する。",
-  "generatedAt": "2026-07-23T04:04:42.421Z",
+  "generatedAt": "2026-07-23T04:31:58.172Z",
   "sites": [
     {
       "id": "ai-jitsumu-navi",
@@ -41,9 +41,9 @@
       "genre": "福岡ポーカートーナメント情報アグリゲーター",
       "status": "運用中",
       "traffic": {
-        "pageViews": 81,
+        "pageViews": 83,
         "activeUsers": 21,
-        "sessions": 42,
+        "sessions": 43,
         "since": "2026-07-14",
         "asOf": "2026-07-23",
         "source": "GA4（measurement ID: G-L7091YHTFH）"
