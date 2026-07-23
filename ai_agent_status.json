@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "ブリッジ経路フィルタの最終GO/NO-GO",
-      "startedAt": "2026-07-23T05:57:09.706Z",
-      "finishedAt": "2026-07-23T05:57:14.761Z"
+      "task": "表示フィルタの最終GO/NO-GO",
+      "startedAt": "2026-07-23T14:58:57.308Z",
+      "finishedAt": "2026-07-23T14:59:03.648Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 30832,
-    "todayOutputTokens": 960905,
-    "asOf": "2026-07-23T14:51:37.264Z"
+    "todayInputTokens": 30956,
+    "todayOutputTokens": 979199,
+    "asOf": "2026-07-23T14:59:21.537Z"
   },
-  "updatedAt": "2026-07-23T14:51:37.264Z"
+  "updatedAt": "2026-07-23T14:59:21.537Z"
 }
