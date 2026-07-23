@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ブリッジ経路フィルタの実装",
-      "startedAt": "2026-07-23T05:16:55.279Z",
-      "finishedAt": "2026-07-23T05:17:06.608Z"
+      "task": "ダッシュボード表示フィルタ2件を追加",
+      "startedAt": "2026-07-23T14:24:59.349Z",
+      "finishedAt": "2026-07-23T14:25:04.924Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 30376,
-    "todayOutputTokens": 830597,
-    "asOf": "2026-07-23T14:24:55.133Z"
+    "todayInputTokens": 30390,
+    "todayOutputTokens": 836048,
+    "asOf": "2026-07-23T14:25:22.059Z"
   },
-  "updatedAt": "2026-07-23T14:24:55.133Z"
+  "updatedAt": "2026-07-23T14:25:22.059Z"
 }
