@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ブリッジ経路フィルタの品質検証",
-      "startedAt": "2026-07-23T05:39:23.008Z",
-      "finishedAt": "2026-07-23T05:39:27.889Z"
+      "task": "ダッシュボード表示フィルタの品質検証",
+      "startedAt": "2026-07-23T14:46:48.407Z",
+      "finishedAt": "2026-07-23T14:47:09.490Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 30674,
-    "todayOutputTokens": 889181,
-    "asOf": "2026-07-23T14:39:59.365Z"
+    "todayInputTokens": 30770,
+    "todayOutputTokens": 936665,
+    "asOf": "2026-07-23T14:48:17.976Z"
   },
-  "updatedAt": "2026-07-23T14:39:59.365Z"
+  "updatedAt": "2026-07-23T14:48:17.976Z"
 }
