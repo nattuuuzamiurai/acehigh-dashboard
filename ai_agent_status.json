@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "AIデザインPODアパレル事業の市場調査",
-      "startedAt": "2026-07-24T17:58:52.514Z",
-      "finishedAt": "2026-07-24T18:08:22.501Z"
+      "task": "AIデザインPODアパレル事業計画書の作成",
+      "startedAt": "2026-07-24T18:11:35.538Z",
+      "finishedAt": "2026-07-24T18:20:14.296Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 160127,
-    "todayOutputTokens": 1003737,
-    "asOf": "2026-07-24T18:08:43.538Z"
+    "todayInputTokens": 168149,
+    "todayOutputTokens": 1123736,
+    "asOf": "2026-07-24T18:21:15.945Z"
   },
-  "updatedAt": "2026-07-24T18:08:43.538Z"
+  "updatedAt": "2026-07-24T18:21:15.945Z"
 }
