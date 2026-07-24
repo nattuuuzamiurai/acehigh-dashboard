@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "Week6記事企画(検索需要重視)",
-      "startedAt": "2026-07-24T16:01:41.131Z",
-      "finishedAt": "2026-07-24T16:01:46.447Z"
+      "task": "クロスチェーンスワップ/CEX経由の再調査",
+      "startedAt": "2026-07-24T17:38:23.766Z",
+      "finishedAt": "2026-07-24T17:38:29.297Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 14371,
-    "todayOutputTokens": 557745,
-    "asOf": "2026-07-24T17:31:50.025Z"
+    "todayInputTokens": 14527,
+    "todayOutputTokens": 677715,
+    "asOf": "2026-07-24T17:38:51.416Z"
   },
-  "updatedAt": "2026-07-24T17:31:50.025Z"
+  "updatedAt": "2026-07-24T17:38:51.416Z"
 }
