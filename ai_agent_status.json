@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "WSOP記事に参考動画を埋め込み",
-      "startedAt": "2026-07-19T15:47:17.653Z",
-      "finishedAt": "2026-07-19T15:47:40.485Z"
+      "task": "Week6記事7本の執筆",
+      "startedAt": "2026-07-24T16:38:46.056Z",
+      "finishedAt": "2026-07-24T16:38:49.966Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6075,
-    "todayOutputTokens": 345558,
-    "asOf": "2026-07-24T16:35:13.243Z"
+    "todayInputTokens": 6097,
+    "todayOutputTokens": 349924,
+    "asOf": "2026-07-24T16:39:17.811Z"
   },
-  "updatedAt": "2026-07-24T16:35:13.243Z"
+  "updatedAt": "2026-07-24T16:39:17.811Z"
 }
