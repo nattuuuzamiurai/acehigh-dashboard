@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR #16のGO/NO-GO判定",
-      "startedAt": "2026-07-24T18:39:12.458Z",
-      "finishedAt": "2026-07-24T18:39:14.507Z"
+      "task": "ブリッジ撤廃+出来高フィルタの最終GO判定",
+      "startedAt": "2026-07-24T19:15:21.029Z",
+      "finishedAt": "2026-07-24T19:15:25.368Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 195501,
-    "todayOutputTokens": 1384564,
-    "asOf": "2026-07-24T18:57:29.212Z"
+    "todayInputTokens": 195653,
+    "todayOutputTokens": 1414716,
+    "asOf": "2026-07-24T19:15:43.436Z"
   },
-  "updatedAt": "2026-07-24T18:57:29.212Z"
+  "updatedAt": "2026-07-24T19:15:43.436Z"
 }
