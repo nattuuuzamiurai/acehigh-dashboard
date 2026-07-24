@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "未掲載24店を追加",
-      "startedAt": "2026-07-24T18:07:29.100Z",
-      "finishedAt": "2026-07-24T18:07:34.364Z"
+      "task": "出来高フィルタの実装(A完成)",
+      "startedAt": "2026-07-24T18:25:20.537Z",
+      "finishedAt": "2026-07-24T18:25:25.526Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 168149,
-    "todayOutputTokens": 1123736,
-    "asOf": "2026-07-24T18:21:15.945Z"
+    "todayInputTokens": 168235,
+    "todayOutputTokens": 1169040,
+    "asOf": "2026-07-24T18:25:50.524Z"
   },
-  "updatedAt": "2026-07-24T18:21:15.945Z"
+  "updatedAt": "2026-07-24T18:25:50.524Z"
 }
