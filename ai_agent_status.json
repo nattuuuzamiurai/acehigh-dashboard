@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Week6記事7本のQAチェック",
-      "startedAt": "2026-07-24T16:56:28.762Z",
-      "finishedAt": "2026-07-24T16:56:32.372Z"
+      "task": "ブリッジ撤廃+出来高フィルタの品質検証",
+      "startedAt": "2026-07-24T18:57:02.363Z",
+      "finishedAt": "2026-07-24T18:57:07.566Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 195421,
-    "todayOutputTokens": 1366492,
-    "asOf": "2026-07-24T18:46:49.055Z"
+    "todayInputTokens": 195501,
+    "todayOutputTokens": 1384564,
+    "asOf": "2026-07-24T18:57:29.212Z"
   },
-  "updatedAt": "2026-07-24T18:46:49.055Z"
+  "updatedAt": "2026-07-24T18:57:29.212Z"
 }
