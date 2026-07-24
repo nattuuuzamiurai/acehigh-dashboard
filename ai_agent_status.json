@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "ダッシュボード表示フィルタ2件を追加",
-      "startedAt": "2026-07-23T14:24:59.349Z",
-      "finishedAt": "2026-07-23T14:25:04.924Z"
+      "status": "running",
+      "task": "閉店したACESを削除",
+      "startedAt": "2026-07-24T14:04:01.849Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 305,
-    "todayOutputTokens": 143357,
-    "asOf": "2026-07-24T14:02:00.873Z"
+    "todayInputTokens": 329,
+    "todayOutputTokens": 151848,
+    "asOf": "2026-07-24T14:04:21.872Z"
   },
-  "updatedAt": "2026-07-24T14:02:00.873Z"
+  "updatedAt": "2026-07-24T14:04:21.872Z"
 }
