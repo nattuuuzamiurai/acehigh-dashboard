@@ -55,6 +55,30 @@
         "note": "Google AdSense申請済み・審査結果待ち（6時間おきに自動確認し、結果が出次第プロジェクト管理側に反映）。店舗PR有料掲載枠は営業資料のみ準備済みで契約実績はまだ0件。GA4導入済みで公開後(2026-07-14〜)のPV等は取得できている(traffic参照、6時間おきに自動更新)。",
         "updatedAt": "2026-07-17"
       }
+    },
+    {
+      "id": "poker-hand-media",
+      "name": "ポーカーハンドメディア",
+      "url": "https://nattuuuzamiurai.github.io/poker-hand-media/",
+      "genre": "WSOP・トリトンポーカー ハンド解説メディア",
+      "status": "運用中",
+      "articles": {
+        "total": 24,
+        "asOf": "2026-07-24",
+        "monthly": [
+          {
+            "period": "2026-07",
+            "count": 24
+          }
+        ]
+      },
+      "revenue": {
+        "monthly": 0,
+        "total": 0,
+        "status": "収益発生前（GA4測定ID未設定・AdSense未申請）",
+        "note": "2026-07-21にGitHub Pagesで本番公開(独立リポジトリ nattuuuzamiurai/poker-hand-media、GitHub Actionsで自動デプロイ)。品質管理部・レビュー部の監査を経て社長最終判断によりGO。実マネーのオンラインポーカー/カジノアフィリエイトは非採用の方針。週次の大会自動監視ルーティンで新規記事を継続追加予定。GA4・AdSenseは未設定のためアクセス数・収益とも未計測(trafficは意図的に省略、架空値は記載しない)。",
+        "updatedAt": "2026-07-24"
+      }
     }
   ]
 }
