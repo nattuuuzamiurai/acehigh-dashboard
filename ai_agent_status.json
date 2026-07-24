@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "閉店有無の狙い撃ち再確認",
-      "startedAt": "2026-07-24T14:11:38.247Z",
-      "finishedAt": "2026-07-24T14:11:44.818Z"
+      "task": "未掲載の居酒屋・バーを洗い出す",
+      "startedAt": "2026-07-24T17:40:52.032Z",
+      "finishedAt": "2026-07-24T17:40:57.755Z"
     }
   },
   "usage": {
-    "todayInputTokens": 20385,
-    "todayOutputTokens": 701872,
-    "asOf": "2026-07-24T17:40:45.307Z"
+    "todayInputTokens": 20433,
+    "todayOutputTokens": 715336,
+    "asOf": "2026-07-24T17:42:07.619Z"
   },
-  "updatedAt": "2026-07-24T17:40:45.307Z"
+  "updatedAt": "2026-07-24T17:42:07.619Z"
 }
