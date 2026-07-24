@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ブリッジフィルタ撤廃・流動性一本化",
-      "startedAt": "2026-07-24T17:52:08.282Z",
-      "finishedAt": "2026-07-24T17:52:13.608Z"
+      "task": "未掲載24店を追加",
+      "startedAt": "2026-07-24T18:07:29.100Z",
+      "finishedAt": "2026-07-24T18:07:34.364Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -25,10 +25,10 @@
       "finishedAt": "2026-07-24T16:38:49.966Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "AIデザインPODアパレル事業の市場調査",
       "startedAt": "2026-07-24T17:58:52.514Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-24T18:08:22.501Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 160029,
-    "todayOutputTokens": 971686,
-    "asOf": "2026-07-24T18:06:49.442Z"
+    "todayInputTokens": 160127,
+    "todayOutputTokens": 1003737,
+    "asOf": "2026-07-24T18:08:43.538Z"
   },
-  "updatedAt": "2026-07-24T18:06:49.442Z"
+  "updatedAt": "2026-07-24T18:08:43.538Z"
 }
