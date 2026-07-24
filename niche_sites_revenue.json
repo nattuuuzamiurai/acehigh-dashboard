@@ -75,9 +75,9 @@
       "revenue": {
         "monthly": 0,
         "total": 0,
-        "status": "収益発生前（GA4測定ID未設定・AdSense未申請）",
-        "note": "2026-07-21にGitHub Pagesで本番公開(独立リポジトリ nattuuuzamiurai/poker-hand-media、GitHub Actionsで自動デプロイ)。品質管理部・レビュー部の監査を経て社長最終判断によりGO。実マネーのオンラインポーカー/カジノアフィリエイトは非採用の方針。週次の大会自動監視ルーティンで新規記事を継続追加予定。GA4・AdSenseは未設定のためアクセス数・収益とも未計測(trafficは意図的に省略、架空値は記載しない)。",
-        "updatedAt": "2026-07-24"
+        "status": "収益発生前（GA4導入済み・AdSense未申請）",
+        "note": "2026-07-21にGitHub Pagesで本番公開(独立リポジトリ nattuuuzamiurai/poker-hand-media、GitHub Actionsで自動デプロイ)。品質管理部・レビュー部の監査を経て社長最終判断によりGO。実マネーのオンラインポーカー/カジノアフィリエイトは非採用の方針。週次の大会自動監視ルーティンで新規記事を継続追加予定。2026-07-25、GA4導入(measurement ID: G-W6Y7FK5HSM)。導入直後のためtrafficはまだ蓄積データなし(架空値は記載しない、次回更新時にGA4実測値を反映)。AdSenseは未申請。",
+        "updatedAt": "2026-07-25"
       }
     },
     {
