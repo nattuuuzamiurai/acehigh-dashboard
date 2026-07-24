@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "ブリッジ可能性の分類とフィルタ設計",
-      "startedAt": "2026-07-23T05:01:35.582Z",
-      "finishedAt": "2026-07-23T05:01:45.588Z"
+      "task": "Week6記事企画(検索需要重視)",
+      "startedAt": "2026-07-24T16:01:41.131Z",
+      "finishedAt": "2026-07-24T16:01:46.447Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 480,
-    "todayOutputTokens": 192602,
-    "asOf": "2026-07-24T15:43:32.731Z"
+    "todayInputTokens": 506,
+    "todayOutputTokens": 204137,
+    "asOf": "2026-07-24T16:02:10.392Z"
   },
-  "updatedAt": "2026-07-24T15:43:32.731Z"
+  "updatedAt": "2026-07-24T16:02:10.392Z"
 }
