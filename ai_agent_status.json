@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "閉店したACESを削除",
       "startedAt": "2026-07-24T14:04:01.849Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-24T14:04:35.284Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 329,
-    "todayOutputTokens": 151848,
-    "asOf": "2026-07-24T14:04:21.872Z"
+    "todayInputTokens": 339,
+    "todayOutputTokens": 152166,
+    "asOf": "2026-07-24T14:04:46.549Z"
   },
-  "updatedAt": "2026-07-24T14:04:21.872Z"
+  "updatedAt": "2026-07-24T14:04:46.549Z"
 }
