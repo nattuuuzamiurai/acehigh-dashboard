@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "店舗ページに公式SNS/サイトを表示",
-      "startedAt": "2026-07-24T15:02:55.454Z",
-      "finishedAt": "2026-07-24T15:03:03.815Z"
+      "task": "ブリッジフィルタ撤廃・流動性一本化",
+      "startedAt": "2026-07-24T17:52:08.282Z",
+      "finishedAt": "2026-07-24T17:52:13.608Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 93548,
-    "todayOutputTokens": 791676,
-    "asOf": "2026-07-24T17:52:01.710Z"
+    "todayInputTokens": 102806,
+    "todayOutputTokens": 796003,
+    "asOf": "2026-07-24T17:52:36.805Z"
   },
-  "updatedAt": "2026-07-24T17:52:01.710Z"
+  "updatedAt": "2026-07-24T17:52:36.805Z"
 }
