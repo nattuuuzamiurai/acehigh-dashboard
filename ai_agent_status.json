@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "コンカフェ他15店の詳細情報抽出",
-      "startedAt": "2026-07-22T04:57:10.637Z",
-      "finishedAt": "2026-07-22T04:57:16.365Z"
+      "task": "閉店有無の狙い撃ち再確認",
+      "startedAt": "2026-07-24T14:11:38.247Z",
+      "finishedAt": "2026-07-24T14:11:44.818Z"
     }
   },
   "usage": {
-    "todayInputTokens": 369,
-    "todayOutputTokens": 156052,
-    "asOf": "2026-07-24T14:06:11.106Z"
+    "todayInputTokens": 387,
+    "todayOutputTokens": 168741,
+    "asOf": "2026-07-24T14:11:47.895Z"
   },
-  "updatedAt": "2026-07-24T14:06:11.106Z"
+  "updatedAt": "2026-07-24T14:11:47.895Z"
 }
