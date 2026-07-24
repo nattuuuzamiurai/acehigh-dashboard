@@ -79,6 +79,20 @@
         "note": "2026-07-21にGitHub Pagesで本番公開(独立リポジトリ nattuuuzamiurai/poker-hand-media、GitHub Actionsで自動デプロイ)。品質管理部・レビュー部の監査を経て社長最終判断によりGO。実マネーのオンラインポーカー/カジノアフィリエイトは非採用の方針。週次の大会自動監視ルーティンで新規記事を継続追加予定。GA4・AdSenseは未設定のためアクセス数・収益とも未計測(trafficは意図的に省略、架空値は記載しない)。",
         "updatedAt": "2026-07-24"
       }
+    },
+    {
+      "id": "kurume-bar-navi",
+      "name": "久留米飲み屋ナビ",
+      "url": "https://nattuuuzamiurai.github.io/kurume-bar-navi/",
+      "genre": "久留米市(西鉄久留米駅周辺)の飲み屋総合ディレクトリ",
+      "status": "運用中",
+      "revenue": {
+        "monthly": 0,
+        "total": 0,
+        "status": "収益発生前（GA4測定ID未設定・AdSense未申請）",
+        "note": "西鉄久留米駅周辺(一番街・二番街・文化街)の飲み屋137店を掲載する公開サイト(GitHub Pages、独立リポジトリ nattuuuzamiurai/kurume-bar-navi)。エリア×業態×タグ×予算×支払い×喫煙×「今営業中」の組み合わせ検索、店舗詳細(営業時間・チャージ/お通し代等)・店舗ロゴ30件・公式写真・Instagram公式埋め込み・Googleマップ埋め込み・公式SNS/サイトリンクを実装。品質管理部・レビュー部の監査を経て段階公開。収益は将来のPR掲載枠・求人枠を想定するが契約実績0件。GA4・AdSenseは未設定のためアクセス数・収益とも未計測(架空値は記載しない)。削除依頼窓口(Googleフォーム)の本設定が最優先の残課題。",
+        "updatedAt": "2026-07-24"
+      }
     }
   ]
 }
