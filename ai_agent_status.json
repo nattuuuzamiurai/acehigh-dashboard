@@ -25,10 +25,10 @@
       "finishedAt": "2026-07-24T16:38:49.966Z"
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "クロスチェーンスワップ/CEX経由の再調査",
-      "startedAt": "2026-07-24T17:38:23.766Z",
-      "finishedAt": "2026-07-24T17:38:29.297Z"
+      "status": "running",
+      "task": "AIデザインPODアパレル事業の市場調査",
+      "startedAt": "2026-07-24T17:58:52.514Z",
+      "finishedAt": null
     },
     "marketing-lead": {
       "status": "idle",
@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "未掲載の居酒屋・バーを洗い出す",
-      "startedAt": "2026-07-24T17:40:52.032Z",
-      "finishedAt": "2026-07-24T17:40:57.755Z"
+      "task": "未掲載店の詳細データ取得(後半)",
+      "startedAt": "2026-07-24T17:58:33.684Z",
+      "finishedAt": "2026-07-24T17:58:47.278Z"
     }
   },
   "usage": {
-    "todayInputTokens": 102866,
-    "todayOutputTokens": 830794,
-    "asOf": "2026-07-24T17:55:38.894Z"
+    "todayInputTokens": 102948,
+    "todayOutputTokens": 862774,
+    "asOf": "2026-07-24T17:58:47.123Z"
   },
-  "updatedAt": "2026-07-24T17:55:38.894Z"
+  "updatedAt": "2026-07-24T17:58:47.123Z"
 }
