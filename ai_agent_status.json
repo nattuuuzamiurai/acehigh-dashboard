@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ダッシュボード表示フィルタの品質検証",
-      "startedAt": "2026-07-23T14:46:48.407Z",
-      "finishedAt": "2026-07-23T14:47:09.490Z"
+      "task": "Week6記事7本のQAチェック",
+      "startedAt": "2026-07-24T16:56:28.762Z",
+      "finishedAt": "2026-07-24T16:56:32.372Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6097,
-    "todayOutputTokens": 349924,
-    "asOf": "2026-07-24T16:39:17.811Z"
+    "todayInputTokens": 6185,
+    "todayOutputTokens": 395885,
+    "asOf": "2026-07-24T16:56:49.890Z"
   },
-  "updatedAt": "2026-07-24T16:39:17.811Z"
+  "updatedAt": "2026-07-24T16:56:49.890Z"
 }
