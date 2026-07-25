@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "出来高フィルタの実装(A完成)",
-      "startedAt": "2026-07-24T18:25:20.537Z",
-      "finishedAt": "2026-07-24T18:25:25.526Z"
+      "task": "文言修正＋DefiLlama第3ソース追加",
+      "startedAt": "2026-07-25T19:28:47.144Z",
+      "finishedAt": "2026-07-25T19:29:14.169Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -25,10 +25,10 @@
       "finishedAt": "2026-07-24T16:38:49.966Z"
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "写真・レビュー埋め込みの規約検証",
-      "startedAt": "2026-07-25T19:06:36.498Z",
-      "finishedAt": "2026-07-25T19:06:47.107Z"
+      "status": "running",
+      "task": "事業計画書を新方針で改訂",
+      "startedAt": "2026-07-25T19:22:27.460Z",
+      "finishedAt": null
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2262,
-    "todayOutputTokens": 203535,
-    "asOf": "2026-07-25T19:19:41.025Z"
+    "todayInputTokens": 7247,
+    "todayOutputTokens": 299661,
+    "asOf": "2026-07-25T19:29:41.512Z"
   },
-  "updatedAt": "2026-07-25T19:19:41.025Z"
+  "updatedAt": "2026-07-25T19:29:41.512Z"
 }
