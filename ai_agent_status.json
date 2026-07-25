@@ -4,7 +4,7 @@
       "status": "idle",
       "task": "文言修正＋DefiLlama第3ソース追加",
       "startedAt": "2026-07-25T19:28:47.144Z",
-      "finishedAt": "2026-07-25T19:29:14.169Z"
+      "finishedAt": "2026-07-25T19:31:46.598Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7247,
-    "todayOutputTokens": 299661,
-    "asOf": "2026-07-25T19:29:41.512Z"
+    "todayInputTokens": 13067,
+    "todayOutputTokens": 328244,
+    "asOf": "2026-07-25T19:33:45.386Z"
   },
-  "updatedAt": "2026-07-25T19:29:41.512Z"
+  "updatedAt": "2026-07-25T19:33:45.386Z"
 }
