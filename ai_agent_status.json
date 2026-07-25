@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "ブリッジ撤廃+出来高フィルタの最終GO判定",
-      "startedAt": "2026-07-24T19:15:21.029Z",
-      "finishedAt": "2026-07-24T19:15:25.368Z"
+      "task": "DefiLlama決着役の最終GO/NO-GO",
+      "startedAt": "2026-07-25T20:21:55.420Z",
+      "finishedAt": "2026-07-25T20:22:00.528Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 18530,
-    "todayOutputTokens": 532117,
-    "asOf": "2026-07-25T20:05:05.727Z"
+    "todayInputTokens": 18692,
+    "todayOutputTokens": 568781,
+    "asOf": "2026-07-25T20:22:23.149Z"
   },
-  "updatedAt": "2026-07-25T20:05:05.727Z"
+  "updatedAt": "2026-07-25T20:22:23.149Z"
 }
