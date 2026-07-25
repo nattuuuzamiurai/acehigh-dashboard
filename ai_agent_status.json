@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "AIデザインPODアパレル事業計画書の作成",
-      "startedAt": "2026-07-24T18:11:35.538Z",
-      "finishedAt": "2026-07-24T18:20:14.296Z"
+      "task": "写真・レビュー埋め込みの規約検証",
+      "startedAt": "2026-07-25T19:06:36.498Z",
+      "finishedAt": "2026-07-25T19:06:47.107Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 199311,
-    "todayOutputTokens": 1460116,
-    "asOf": "2026-07-25T01:36:45.955Z"
+    "todayInputTokens": 2120,
+    "todayOutputTokens": 74424,
+    "asOf": "2026-07-25T19:07:05.185Z"
   },
-  "updatedAt": "2026-07-25T01:36:45.955Z"
+  "updatedAt": "2026-07-25T19:07:05.185Z"
 }
