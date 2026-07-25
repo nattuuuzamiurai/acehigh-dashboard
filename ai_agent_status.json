@@ -25,10 +25,10 @@
       "finishedAt": "2026-07-24T16:38:49.966Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "事業計画書を新方針で改訂",
       "startedAt": "2026-07-25T19:22:27.460Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-25T19:39:18.747Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 13067,
-    "todayOutputTokens": 328244,
-    "asOf": "2026-07-25T19:33:45.386Z"
+    "todayInputTokens": 13954,
+    "todayOutputTokens": 389874,
+    "asOf": "2026-07-25T19:41:10.825Z"
   },
-  "updatedAt": "2026-07-25T19:33:45.386Z"
+  "updatedAt": "2026-07-25T19:41:10.825Z"
 }
