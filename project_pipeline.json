@@ -62,7 +62,7 @@
     },
     {
       "name": "ふくおかポーカーナビ(福岡ポーカートーナメント日程アグリゲーター/会社プロジェクト登録)",
-      "phase": "本番公開・運用中(https://nattuuuzamiurai.github.io/fukuoka-poker-navi/、独立リポジトリ nattuuuzamiurai/fukuoka-poker-navi)。29店舗・300件超のトーナメントデータを掲載。品質管理部・レビュー部の監査を経て、社長最終判断によりGO。GA4導入済みでアクセス数を6時間おきに自動反映(niche_sites_revenue.json参照)。ブロッカーなし。",
+      "phase": "本番公開・運用中(https://fukuokapoker.com/、独立リポジトリ nattuuuzamiurai/fukuoka-poker-navi)。29店舗・300件超のトーナメントデータを掲載。品質管理部・レビュー部の監査を経て、社長最終判断によりGO。GA4導入済みでアクセス数を6時間おきに自動反映(niche_sites_revenue.json参照)。ブロッカーなし。",
       "pending": [
         {
           "text": "Google AdSense審査結果待ち — 2026-07-16に「審査に送られました」通知あり(申請直後の案内メールとは別の、審査プロセス開始の通知)。GA4上で2026-07-16〜17にかけて直接アクセスの増加が見られ、審査担当による確認アクセスの可能性がある(確証はなし)。承認/却下はまだ未確定。",
