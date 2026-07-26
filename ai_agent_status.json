@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "写真PR #17のGO/NO-GO判定",
-      "startedAt": "2026-07-26T11:10:33.101Z",
-      "finishedAt": "2026-07-26T11:11:25.578Z"
+      "task": "Phase0の最終GO/NO-GO判定",
+      "startedAt": "2026-07-26T11:54:35.100Z",
+      "finishedAt": "2026-07-26T11:54:42.705Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 124578,
-    "todayOutputTokens": 2008978,
-    "asOf": "2026-07-26T11:44:56.472Z"
+    "todayInputTokens": 124692,
+    "todayOutputTokens": 2043920,
+    "asOf": "2026-07-26T11:55:09.017Z"
   },
-  "updatedAt": "2026-07-26T11:44:56.472Z"
+  "updatedAt": "2026-07-26T11:55:09.017Z"
 }
