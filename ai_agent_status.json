@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
-      "task": "フェーズ0手順書とコード雛形",
-      "startedAt": "2026-07-26T06:48:23.552Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "ネット乖離の内訳をダッシュボードに表示",
+      "startedAt": "2026-07-26T07:02:49.611Z",
+      "finishedAt": "2026-07-26T07:03:03.385Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -19,16 +19,16 @@
       "finishedAt": "2026-07-25T20:22:00.528Z"
     },
     "content-writer": {
-      "status": "running",
+      "status": "idle",
       "task": "デザインブリーフとブランドコピー",
       "startedAt": "2026-07-26T06:48:42.891Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-26T06:59:47.247Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "ブランド名とアイデンティティ策定",
       "startedAt": "2026-07-26T06:48:02.803Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-26T07:04:17.610Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 74189,
-    "todayOutputTokens": 754514,
-    "asOf": "2026-07-26T06:56:26.037Z"
+    "todayInputTokens": 87433,
+    "todayOutputTokens": 882795,
+    "asOf": "2026-07-26T07:05:48.675Z"
   },
-  "updatedAt": "2026-07-26T06:56:26.037Z"
+  "updatedAt": "2026-07-26T07:05:48.675Z"
 }
