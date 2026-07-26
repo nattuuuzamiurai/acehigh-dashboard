@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Phase1(HyperEVM)の最終GO/NO-GO判定",
-      "startedAt": "2026-07-26T12:49:37.727Z",
-      "finishedAt": "2026-07-26T12:49:45.804Z"
+      "task": "Plasma追加の最終GO/NO-GO判定",
+      "startedAt": "2026-07-26T19:27:08.034Z",
+      "finishedAt": "2026-07-26T19:27:16.851Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 22240,
-    "todayOutputTokens": 429025,
-    "asOf": "2026-07-26T19:26:34.314Z"
+    "todayInputTokens": 22268,
+    "todayOutputTokens": 436386,
+    "asOf": "2026-07-26T19:27:24.375Z"
   },
-  "updatedAt": "2026-07-26T19:26:34.314Z"
+  "updatedAt": "2026-07-26T19:27:24.375Z"
 }
