@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "地図をEmbed API placeモードに切替え★表示",
       "startedAt": "2026-07-26T19:25:00.721Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-26T19:25:36.135Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 22174,
-    "todayOutputTokens": 395837,
-    "asOf": "2026-07-26T19:25:15.402Z"
+    "todayInputTokens": 22240,
+    "todayOutputTokens": 429025,
+    "asOf": "2026-07-26T19:26:34.314Z"
   },
-  "updatedAt": "2026-07-26T19:25:15.402Z"
+  "updatedAt": "2026-07-26T19:26:34.314Z"
 }
