@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Phase1: HyperEVMを新規チェーン追加",
-      "startedAt": "2026-07-26T12:13:06.273Z",
-      "finishedAt": "2026-07-26T12:13:12.916Z"
+      "task": "Phase2: 出来高基準で通貨拡大＋Plasma",
+      "startedAt": "2026-07-26T13:21:15.011Z",
+      "finishedAt": "2026-07-26T13:21:22.771Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 139831,
-    "todayOutputTokens": 2360091,
-    "asOf": "2026-07-26T13:13:46.407Z"
+    "todayInputTokens": 139873,
+    "todayOutputTokens": 2372406,
+    "asOf": "2026-07-26T13:21:53.600Z"
   },
-  "updatedAt": "2026-07-26T13:13:46.407Z"
+  "updatedAt": "2026-07-26T13:21:53.600Z"
 }
