@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Phase0(KyberSwap格上げ)の品質検証",
-      "startedAt": "2026-07-26T11:26:51.863Z",
-      "finishedAt": "2026-07-26T11:27:42.286Z"
+      "task": "Phase0 MegaETH配線修正の再検証",
+      "startedAt": "2026-07-26T11:44:20.047Z",
+      "finishedAt": "2026-07-26T11:44:26.727Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 124492,
-    "todayOutputTokens": 1972570,
-    "asOf": "2026-07-26T11:36:14.449Z"
+    "todayInputTokens": 124578,
+    "todayOutputTokens": 2008978,
+    "asOf": "2026-07-26T11:44:56.472Z"
   },
-  "updatedAt": "2026-07-26T11:36:14.449Z"
+  "updatedAt": "2026-07-26T11:44:56.472Z"
 }
