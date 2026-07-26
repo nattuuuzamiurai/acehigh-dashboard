@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Week7記事7本のQAチェック",
-      "startedAt": "2026-07-26T08:25:30.927Z",
-      "finishedAt": "2026-07-26T08:26:15.521Z"
+      "task": "Phase0(KyberSwap格上げ)の品質検証",
+      "startedAt": "2026-07-26T11:26:51.863Z",
+      "finishedAt": "2026-07-26T11:27:42.286Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 123762,
-    "todayOutputTokens": 1837126,
-    "asOf": "2026-07-26T11:20:53.678Z"
+    "todayInputTokens": 124354,
+    "todayOutputTokens": 1896142,
+    "asOf": "2026-07-26T11:28:31.910Z"
   },
-  "updatedAt": "2026-07-26T11:20:53.678Z"
+  "updatedAt": "2026-07-26T11:28:31.910Z"
 }
