@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "deevid.ai用デザインプロンプト集",
-      "startedAt": "2026-07-26T13:03:42.968Z",
-      "finishedAt": "2026-07-26T13:12:35.767Z"
+      "task": "Poker media cycle1 writing",
+      "startedAt": "2026-07-26T20:43:42.911Z",
+      "finishedAt": "2026-07-26T20:43:46.169Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 22917,
-    "todayOutputTokens": 775561,
-    "asOf": "2026-07-26T20:33:42.883Z"
+    "todayInputTokens": 31248,
+    "todayOutputTokens": 798856,
+    "asOf": "2026-07-26T20:44:14.124Z"
   },
-  "updatedAt": "2026-07-26T20:33:42.883Z"
+  "updatedAt": "2026-07-26T20:44:14.124Z"
 }
