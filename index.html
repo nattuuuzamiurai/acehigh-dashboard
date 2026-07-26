@@ -453,7 +453,7 @@
     <div class="ng">管理</div>
     <div class="ni" onclick="showPage('tasks')"><span class="ni-ic">✓</span>タスク管理</div>
     <div class="ni" onclick="showPage('revenue')"><span class="ni-ic">¥</span>収益管理</div>
-    <div class="ni" onclick="showPage('projects')"><span class="ni-ic">◈</span>プロジェクト管理<span id="inquiry-badge" class="ai-badge" style="display:none"></span></div>
+    <div class="ni" onclick="showPage('projects')"><span class="ni-ic">◈</span>プロジェクト管理</div>
     <div class="ni" onclick="showPage('aiorg')"><span class="ni-ic">🏢</span>AI組織</div>
     <div class="ng">ツール</div>
     <div class="ni" onclick="showPage('kyotei')"><span class="ni-ic">🚤</span>競艇予測</div>
@@ -3215,23 +3215,17 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 });
 
+// ふくおかポーカーナビのお問い合わせ状況(件数のみ)。アフィリ欄の運用サイトカード内に表示する。
+let INQUIRY_DATA = null;
 async function pollInquiryStatus() {
-  const badge = document.getElementById('inquiry-badge');
-  if (!badge) return;
   try {
     const res = await fetch('fukuoka_poker_inquiry_status.json?t=' + Date.now(), { cache: 'no-store' });
-    if (!res.ok) { badge.style.display = 'none'; return; }
-    const d = await res.json();
-    const n = d.totalResponses || 0;
-    if (n > 0) {
-      badge.textContent = 'お問い合わせ ' + n + '件';
-      badge.title = '内容はGoogleフォームの回答画面でご確認ください（最終更新: ' + (d.lastResponseAt || '') + '）';
-      badge.style.display = 'inline-block';
-    } else {
-      badge.style.display = 'none';
-    }
+    if (!res.ok) return;
+    INQUIRY_DATA = await res.json();
+    // アフィリカードを描画済みなら、最新の件数で再描画する
+    if (AFFILIATE_DATA) renderAffiliateSites();
   } catch (e) {
-    badge.style.display = 'none';
+    // 取得失敗時は前回値のまま(握りつぶす)
   }
 }
 
@@ -3286,6 +3280,11 @@ function renderAffiliateSites() {
       ? `<div class="proj-rev-val">¥${revAmt.toLocaleString()}</div>`
       : `<div class="proj-rev-val" style="color:var(--mut);font-size:.85em;">¥0${rev.status ? '（' + aiEsc(rev.status) + '）' : ''}</div>`;
 
+    // お問い合わせ(inquiry設定があるサイトのみ)。件数は fukuoka_poker_inquiry_status.json 由来(INQUIRY_DATA)。
+    // 現状フォームを持つのは fukuoka-poker-navi のみで、INQUIRY_DATA はそのサイトの件数。
+    const inqCount = (s.inquiry && INQUIRY_DATA) ? (INQUIRY_DATA.totalResponses || 0) : 0;
+    const inqLastAt = (s.inquiry && INQUIRY_DATA) ? (INQUIRY_DATA.lastResponseAt || '') : '';
+
     return `<div class="proj-card">
       <div class="proj-hdr" style="background:linear-gradient(135deg,var(--acc),#8b93f5)">
         <div class="proj-name">${aiEsc(s.name)}</div>
@@ -3307,6 +3306,18 @@ function renderAffiliateSites() {
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.pageViews ?? '-'}</div><div class="proj-rev-lbl">PV${s.traffic.since ? '（' + aiEsc(s.traffic.since) + '〜）' : ''}</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.activeUsers ?? '-'}</div><div class="proj-rev-lbl">ユーザー</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.sessions ?? '-'}</div><div class="proj-rev-lbl">セッション</div></div>
+        </div>` : ''}
+        ${s.inquiry ? `
+        <div class="proj-sect">お問い合わせ</div>
+        <div class="proj-rev">
+          <div class="proj-rev-item" style="flex:1;text-align:left;padding:8px 10px;">
+            <div class="proj-rev-val" style="${inqCount > 0 ? 'color:var(--acc);' : 'color:var(--mut);font-size:.85em;'}">${inqCount}件</div>
+            <div style="font-size:.76em;color:var(--mut);line-height:1.6;margin-top:4px;">
+              ${inqLastAt ? '最終受信: ' + aiEsc(inqLastAt) + '<br>' : ''}
+              <a href="${aiEsc(s.inquiry.responsesUrl)}" target="_blank" rel="noopener" style="color:var(--acc);font-weight:600;text-decoration:none;">回答を確認 ↗</a>
+              ${s.inquiry.formUrl ? ` ｜ <a href="${aiEsc(s.inquiry.formUrl)}" target="_blank" rel="noopener" style="color:var(--mut);text-decoration:none;">フォームを開く ↗</a>` : ''}
+            </div>
+          </div>
         </div>` : ''}
         <div class="proj-sect">広告・アフィリエイト収益（月次）</div>
         <div class="proj-rev">
