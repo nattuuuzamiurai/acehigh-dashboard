@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "文言修正＋DefiLlama第3ソース追加",
-      "startedAt": "2026-07-25T19:28:47.144Z",
-      "finishedAt": "2026-07-25T19:31:46.598Z"
+      "status": "running",
+      "task": "フェーズ0手順書とコード雛形",
+      "startedAt": "2026-07-26T06:48:23.552Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -19,16 +19,16 @@
       "finishedAt": "2026-07-25T20:22:00.528Z"
     },
     "content-writer": {
-      "status": "idle",
-      "task": "Week6記事7本の執筆",
-      "startedAt": "2026-07-24T16:38:46.056Z",
-      "finishedAt": "2026-07-24T16:38:49.966Z"
+      "status": "running",
+      "task": "デザインブリーフとブランドコピー",
+      "startedAt": "2026-07-26T06:48:42.891Z",
+      "finishedAt": null
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "事業計画書を新方針で改訂",
-      "startedAt": "2026-07-25T19:22:27.460Z",
-      "finishedAt": "2026-07-25T19:39:18.747Z"
+      "status": "running",
+      "task": "ブランド名とアイデンティティ策定",
+      "startedAt": "2026-07-26T06:48:02.803Z",
+      "finishedAt": null
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 18808,
-    "todayOutputTokens": 643351,
-    "asOf": "2026-07-26T06:46:51.745Z"
+    "todayInputTokens": 74189,
+    "todayOutputTokens": 754514,
+    "asOf": "2026-07-26T06:56:26.037Z"
   },
-  "updatedAt": "2026-07-26T06:46:51.745Z"
+  "updatedAt": "2026-07-26T06:56:26.037Z"
 }
