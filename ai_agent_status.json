@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "poker-hand-media向けGA4アクセスの調査と自動連携",
-      "startedAt": "2026-07-26T08:57:20.423Z",
-      "finishedAt": "2026-07-26T08:57:33.074Z"
+      "task": "Phase1: HyperEVMを新規チェーン追加",
+      "startedAt": "2026-07-26T12:13:06.273Z",
+      "finishedAt": "2026-07-26T12:13:12.916Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 124758,
-    "todayOutputTokens": 2062461,
-    "asOf": "2026-07-26T12:01:57.485Z"
+    "todayInputTokens": 124820,
+    "todayOutputTokens": 2093862,
+    "asOf": "2026-07-26T12:13:44.867Z"
   },
-  "updatedAt": "2026-07-26T12:01:57.485Z"
+  "updatedAt": "2026-07-26T12:13:44.867Z"
 }
