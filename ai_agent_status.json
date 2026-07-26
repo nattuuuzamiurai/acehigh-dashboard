@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "店舗写真+★カード実装",
-      "startedAt": "2026-07-26T07:18:43.476Z",
-      "finishedAt": null
+      "startedAt": "2026-07-26T07:26:33.620Z",
+      "finishedAt": "2026-07-26T07:26:37.205Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 87749,
-    "todayOutputTokens": 1075175,
-    "asOf": "2026-07-26T07:22:05.952Z"
+    "todayInputTokens": 87863,
+    "todayOutputTokens": 1130033,
+    "asOf": "2026-07-26T07:27:13.785Z"
   },
-  "updatedAt": "2026-07-26T07:22:05.952Z"
+  "updatedAt": "2026-07-26T07:27:13.785Z"
 }
