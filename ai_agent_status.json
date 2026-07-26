@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "Week7企画(自動運用・分析駆動)",
-      "startedAt": "2026-07-26T07:16:03.866Z",
-      "finishedAt": "2026-07-26T07:16:28.569Z"
+      "task": "Google★表示の実現手段を一次情報で確定",
+      "startedAt": "2026-07-26T18:54:04.734Z",
+      "finishedAt": "2026-07-26T18:54:11.193Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4,
-    "todayOutputTokens": 3018,
-    "asOf": "2026-07-26T18:52:18.253Z"
+    "todayInputTokens": 2378,
+    "todayOutputTokens": 32609,
+    "asOf": "2026-07-26T18:54:50.704Z"
   },
-  "updatedAt": "2026-07-26T18:52:18.253Z"
+  "updatedAt": "2026-07-26T18:54:50.704Z"
 }
