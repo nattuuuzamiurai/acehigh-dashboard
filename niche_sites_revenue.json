@@ -1,6 +1,6 @@
 {
   "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。articles.monthly は「実際に公開(draft:false化)した暦月」ごとに1エントリを集計すること(記事フロントマターのpubDateではなく、実際にpushして公開した日で判断する。記事執筆時に将来日付のpubDateを仮設定している場合があるため)。バッチ単位(Week1/Week2等)で分けず、同じ暦月なら合算する。",
-  "generatedAt": "2026-07-26T11:31:50.052058+00:00",
+  "generatedAt": "2026-07-26T16:33:27.156Z",
   "sites": [
     {
       "id": "ai-jitsumu-navi",
@@ -19,11 +19,11 @@
         ]
       },
       "traffic": {
-        "pageViews": 38,
+        "pageViews": 39,
         "activeUsers": 35,
-        "sessions": 36,
+        "sessions": 37,
         "since": "2026-07-17",
-        "asOf": "2026-07-26",
+        "asOf": "2026-07-27",
         "source": "GA4（measurement ID: G-QSW29CYYNP）"
       },
       "revenue": {
@@ -31,7 +31,7 @@
         "total": 0,
         "status": "AdSense承認済み・広告配信の設定中（売上ゼロ）",
         "note": "Google AdSenseが承認された(2026-07-23確認)。広告配信の有効化(自動広告のON、掲載量は中程度)を設定する段階。A8.net提携3件は実アフィリエイトリンク稼働中(Misoca、freee会計、マネーフォワード クラウド請求書)。Search Console登録・サイトマップ送信済みだが新規ドメインのため検索流入はまだ少ない。GA4導入済み(2026-07-17〜、traffic参照)。実際のクリック・成果は0件。",
-        "updatedAt": "2026-07-26 20:31"
+        "updatedAt": "2026-07-27 01:33"
       }
     },
     {
@@ -41,11 +41,11 @@
       "genre": "福岡ポーカートーナメント情報アグリゲーター",
       "status": "運用中",
       "traffic": {
-        "pageViews": 111,
-        "activeUsers": 39,
-        "sessions": 63,
+        "pageViews": 112,
+        "activeUsers": 40,
+        "sessions": 64,
         "since": "2026-07-14",
-        "asOf": "2026-07-26",
+        "asOf": "2026-07-27",
         "source": "GA4（measurement ID: G-L7091YHTFH）"
       },
       "revenue": {
@@ -53,7 +53,7 @@
         "total": 0,
         "status": "収益発生前（Google AdSense審査中）",
         "note": "Google AdSense申請済み・審査結果待ち（6時間おきに自動確認し、結果が出次第プロジェクト管理側に反映）。店舗PR有料掲載枠は営業資料のみ準備済みで契約実績はまだ0件。GA4導入済みで公開後(2026-07-14〜)のPV等は取得できている(traffic参照、6時間おきに自動更新)。",
-        "updatedAt": "2026-07-26 19:33"
+        "updatedAt": "2026-07-27 01:33"
       }
     },
     {
@@ -77,14 +77,14 @@
         "total": 0,
         "status": "収益発生前（GA4導入済み・AdSense未申請）",
         "note": "2026-07-21にGitHub Pagesで本番公開(独立リポジトリ nattuuuzamiurai/poker-hand-media、GitHub Actionsで自動デプロイ)。品質管理部・レビュー部の監査を経て社長最終判断によりGO。実マネーのオンラインポーカー/カジノアフィリエイトは非採用の方針。2026-07-26、社長指示により完全自動運用モードへ移行(週次クラウドルーティンで大会監視・執筆・公開まで無人実行)。カスタムドメイン・AdSenseはアクセス実績がついてから改めて判断する方針で、当面見送り(GitHub Pages無料ドメインのまま運用)。GA4導入済み(2026-07-25〜)、ga4-watch-daemon.jsに追加し6時間おきに自動反映(traffic参照)。Google Search Console確認・サイトマップ送信済み。",
-        "updatedAt": "2026-07-26 20:27"
+        "updatedAt": "2026-07-27 01:33"
       },
       "traffic": {
         "pageViews": 1,
         "activeUsers": 1,
         "sessions": 1,
         "since": "2026-07-25",
-        "asOf": "2026-07-26",
+        "asOf": "2026-07-27",
         "source": "GA4（measurement ID: G-W6Y7FK5HSM）"
       }
     },
