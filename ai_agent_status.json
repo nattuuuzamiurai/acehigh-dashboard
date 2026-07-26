@@ -38,9 +38,9 @@
     },
     "Explore": {
       "status": "idle",
-      "task": "公式サイトを持つ店舗を数える",
-      "startedAt": "2026-07-21T20:17:48.763Z",
-      "finishedAt": "2026-07-21T20:21:50.733Z"
+      "task": "既存の自動運用とダッシュボード仕組みを調査",
+      "startedAt": "2026-07-26T08:38:53.338Z",
+      "finishedAt": "2026-07-26T08:39:01.766Z"
     },
     "general-purpose": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 97592,
-    "todayOutputTokens": 1491649,
-    "asOf": "2026-07-26T08:37:01.617Z"
+    "todayInputTokens": 97628,
+    "todayOutputTokens": 1503596,
+    "asOf": "2026-07-26T08:40:07.159Z"
   },
-  "updatedAt": "2026-07-26T08:37:01.617Z"
+  "updatedAt": "2026-07-26T08:40:07.159Z"
 }
