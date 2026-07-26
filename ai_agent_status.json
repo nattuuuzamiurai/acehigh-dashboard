@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "店舗写真+★カード実装",
-      "startedAt": "2026-07-26T07:26:33.620Z",
-      "finishedAt": "2026-07-26T07:30:04.817Z"
+      "task": "Phase0: 観測のみ3チェーンをquote対応に格上げ",
+      "startedAt": "2026-07-26T08:17:03.243Z",
+      "finishedAt": "2026-07-26T08:17:27.423Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "DefiLlama決着役の品質検証",
-      "startedAt": "2026-07-25T20:04:38.356Z",
-      "finishedAt": "2026-07-25T20:04:43.736Z"
+      "status": "running",
+      "task": "QA: event static pages + sitemap + SEO",
+      "startedAt": "2026-07-26T08:18:14.511Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 97092,
-    "todayOutputTokens": 1352905,
-    "asOf": "2026-07-26T08:10:33.249Z"
+    "todayInputTokens": 97194,
+    "todayOutputTokens": 1384695,
+    "asOf": "2026-07-26T08:18:13.805Z"
   },
-  "updatedAt": "2026-07-26T08:10:33.249Z"
+  "updatedAt": "2026-07-26T08:18:13.805Z"
 }
