@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "ネット乖離の内訳をダッシュボードに表示",
-      "startedAt": "2026-07-26T07:02:49.611Z",
-      "finishedAt": "2026-07-26T07:03:03.385Z"
+      "status": "running",
+      "task": "店舗写真+★カード実装",
+      "startedAt": "2026-07-26T07:18:43.476Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "ブランド名とアイデンティティ策定",
-      "startedAt": "2026-07-26T06:48:02.803Z",
-      "finishedAt": "2026-07-26T07:04:17.610Z"
+      "task": "Week7企画(自動運用・分析駆動)",
+      "startedAt": "2026-07-26T07:16:03.866Z",
+      "finishedAt": "2026-07-26T07:16:28.569Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 87549,
-    "todayOutputTokens": 959010,
-    "asOf": "2026-07-26T07:12:35.198Z"
+    "todayInputTokens": 87749,
+    "todayOutputTokens": 1075175,
+    "asOf": "2026-07-26T07:22:05.952Z"
   },
-  "updatedAt": "2026-07-26T07:12:35.198Z"
+  "updatedAt": "2026-07-26T07:22:05.952Z"
 }
