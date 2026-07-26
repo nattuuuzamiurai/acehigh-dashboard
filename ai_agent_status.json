@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Phase0: 観測のみ3チェーンをquote対応に格上げ",
-      "startedAt": "2026-07-26T08:17:03.243Z",
-      "finishedAt": "2026-07-26T08:17:27.423Z"
+      "task": "poker-hand-media向けGA4アクセスの調査と自動連携",
+      "startedAt": "2026-07-26T08:57:20.423Z",
+      "finishedAt": "2026-07-26T08:57:33.074Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "DefiLlama決着役の最終GO/NO-GO",
-      "startedAt": "2026-07-25T20:21:55.420Z",
-      "finishedAt": "2026-07-25T20:22:00.528Z"
+      "task": "Week7記事7本のGO/NO-GO判定",
+      "startedAt": "2026-07-26T11:04:34.285Z",
+      "finishedAt": "2026-07-26T11:04:57.949Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 101754,
-    "todayOutputTokens": 1590126,
-    "asOf": "2026-07-26T08:48:55.269Z"
+    "todayInputTokens": 102340,
+    "todayOutputTokens": 1784032,
+    "asOf": "2026-07-26T11:08:29.290Z"
   },
-  "updatedAt": "2026-07-26T08:48:55.269Z"
+  "updatedAt": "2026-07-26T11:08:29.290Z"
 }
