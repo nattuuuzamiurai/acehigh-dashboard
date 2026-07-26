@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Plasmaチェーン追加の品質検証",
-      "startedAt": "2026-07-26T19:11:54.977Z",
-      "finishedAt": "2026-07-26T19:12:01.077Z"
+      "task": "Poker media cycle1 QA",
+      "startedAt": "2026-07-26T21:06:05.256Z",
+      "finishedAt": "2026-07-26T21:06:08.871Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 31248,
-    "todayOutputTokens": 798856,
-    "asOf": "2026-07-26T20:44:14.124Z"
+    "todayInputTokens": 52743,
+    "todayOutputTokens": 885073,
+    "asOf": "2026-07-26T21:06:31.029Z"
   },
-  "updatedAt": "2026-07-26T20:44:14.124Z"
+  "updatedAt": "2026-07-26T21:06:31.029Z"
 }
