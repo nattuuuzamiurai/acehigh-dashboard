@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Phase0 MegaETH配線修正の再検証",
-      "startedAt": "2026-07-26T11:44:20.047Z",
-      "finishedAt": "2026-07-26T11:44:26.727Z"
+      "task": "Phase1(HyperEVM追加)の品質検証",
+      "startedAt": "2026-07-26T12:37:14.207Z",
+      "finishedAt": "2026-07-26T12:37:21.258Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 124820,
-    "todayOutputTokens": 2093862,
-    "asOf": "2026-07-26T12:13:44.867Z"
+    "todayInputTokens": 133922,
+    "todayOutputTokens": 2158765,
+    "asOf": "2026-07-26T12:37:48.201Z"
   },
-  "updatedAt": "2026-07-26T12:13:44.867Z"
+  "updatedAt": "2026-07-26T12:37:48.201Z"
 }
