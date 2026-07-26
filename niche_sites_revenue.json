@@ -1,6 +1,6 @@
 {
   "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。articles.monthly は「実際に公開(draft:false化)した暦月」ごとに1エントリを集計すること(記事フロントマターのpubDateではなく、実際にpushして公開した日で判断する。記事執筆時に将来日付のpubDateを仮設定している場合があるため)。バッチ単位(Week1/Week2等)で分けず、同じ暦月なら合算する。",
-  "generatedAt": "2026-07-26T10:33:13.644Z",
+  "generatedAt": "2026-07-26T11:27:37.751Z",
   "sites": [
     {
       "id": "ai-jitsumu-navi",
@@ -77,7 +77,15 @@
         "total": 0,
         "status": "収益発生前（GA4導入済み・AdSense未申請）",
         "note": "2026-07-21にGitHub Pagesで本番公開(独立リポジトリ nattuuuzamiurai/poker-hand-media、GitHub Actionsで自動デプロイ)。品質管理部・レビュー部の監査を経て社長最終判断によりGO。実マネーのオンラインポーカー/カジノアフィリエイトは非採用の方針。週次の大会自動監視ルーティンで新規記事を継続追加予定。2026-07-25、GA4導入(measurement ID: G-W6Y7FK5HSM)。導入直後のためtrafficはまだ蓄積データなし(架空値は記載しない、次回更新時にGA4実測値を反映)。AdSenseは未申請。",
-        "updatedAt": "2026-07-25"
+        "updatedAt": "2026-07-26 20:27"
+      },
+      "traffic": {
+        "pageViews": 1,
+        "activeUsers": 1,
+        "sessions": 1,
+        "since": "2026-07-25",
+        "asOf": "2026-07-26",
+        "source": "GA4（measurement ID: G-W6Y7FK5HSM）"
       }
     },
     {
