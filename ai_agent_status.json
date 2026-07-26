@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "Phase2: 出来高基準で通貨拡大＋Plasma",
-      "startedAt": "2026-07-26T13:21:15.011Z",
-      "finishedAt": "2026-07-26T13:21:22.771Z"
+      "status": "running",
+      "task": "Phase2診断: なぜ35→20に減ったか",
+      "startedAt": "2026-07-26T19:00:50.046Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 19753,
-    "todayOutputTokens": 82037,
-    "asOf": "2026-07-26T18:59:39.623Z"
+    "todayInputTokens": 21833,
+    "todayOutputTokens": 184609,
+    "asOf": "2026-07-26T19:07:22.148Z"
   },
-  "updatedAt": "2026-07-26T18:59:39.623Z"
+  "updatedAt": "2026-07-26T19:07:22.148Z"
 }
