@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-26T08:17:27.423Z"
     },
     "qa-lead": {
-      "status": "running",
-      "task": "QA: event static pages + sitemap + SEO",
-      "startedAt": "2026-07-26T08:18:14.511Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "Week7記事7本のQAチェック",
+      "startedAt": "2026-07-26T08:25:30.927Z",
+      "finishedAt": "2026-07-26T08:26:15.521Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 97234,
-    "todayOutputTokens": 1390149,
-    "asOf": "2026-07-26T08:18:53.516Z"
+    "todayInputTokens": 97482,
+    "todayOutputTokens": 1477095,
+    "asOf": "2026-07-26T08:26:39.238Z"
   },
-  "updatedAt": "2026-07-26T08:18:53.516Z"
+  "updatedAt": "2026-07-26T08:26:39.238Z"
 }
