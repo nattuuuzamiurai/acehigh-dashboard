@@ -19,10 +19,10 @@
       "finishedAt": "2026-07-27T08:15:48.084Z"
     },
     "content-writer": {
-      "status": "running",
+      "status": "idle",
       "task": "墨/インクラインの深掘りプロンプト",
       "startedAt": "2026-07-27T08:35:45.333Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-27T08:43:35.060Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 93544,
-    "todayOutputTokens": 2260210,
-    "asOf": "2026-07-27T08:42:48.788Z"
+    "todayInputTokens": 93618,
+    "todayOutputTokens": 2308101,
+    "asOf": "2026-07-27T08:45:25.543Z"
   },
-  "updatedAt": "2026-07-27T08:42:48.788Z"
+  "updatedAt": "2026-07-27T08:45:25.543Z"
 }
