@@ -19,16 +19,16 @@
       "finishedAt": "2026-07-26T21:24:25.307Z"
     },
     "content-writer": {
-      "status": "running",
+      "status": "idle",
       "task": "OVERBETをアングラに振り切る",
       "startedAt": "2026-07-27T07:02:00.578Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-27T07:09:04.364Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "ポップ系サブブランドの新設",
       "startedAt": "2026-07-27T07:02:24.396Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-27T07:10:51.071Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 85065,
-    "todayOutputTokens": 1607064,
-    "asOf": "2026-07-27T07:04:21.641Z"
+    "todayInputTokens": 87810,
+    "todayOutputTokens": 1713584,
+    "asOf": "2026-07-27T07:12:55.918Z"
   },
-  "updatedAt": "2026-07-27T07:04:21.641Z"
+  "updatedAt": "2026-07-27T07:12:55.918Z"
 }
