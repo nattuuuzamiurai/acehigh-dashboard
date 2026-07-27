@@ -19,16 +19,16 @@
       "finishedAt": "2026-07-26T21:24:25.307Z"
     },
     "content-writer": {
-      "status": "idle",
-      "task": "競合を踏まえた差別化デザイン指示テキスト",
-      "startedAt": "2026-07-27T06:28:06.118Z",
-      "finishedAt": "2026-07-27T06:34:15.485Z"
+      "status": "running",
+      "task": "OVERBETをアングラに振り切る",
+      "startedAt": "2026-07-27T07:02:00.578Z",
+      "finishedAt": null
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "Places APIの料金・無料枠・表示規約を確定",
-      "startedAt": "2026-07-27T06:26:52.827Z",
-      "finishedAt": "2026-07-27T06:26:56.999Z"
+      "status": "running",
+      "task": "ポップ系サブブランドの新設",
+      "startedAt": "2026-07-27T07:02:24.396Z",
+      "finishedAt": null
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 76760,
-    "todayOutputTokens": 1520831,
-    "asOf": "2026-07-27T06:58:27.760Z"
+    "todayInputTokens": 85065,
+    "todayOutputTokens": 1607064,
+    "asOf": "2026-07-27T07:04:21.641Z"
   },
-  "updatedAt": "2026-07-27T06:58:27.760Z"
+  "updatedAt": "2026-07-27T07:04:21.641Z"
 }
