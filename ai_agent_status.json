@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "情報不足レコードの解決(Case1/Case2)",
-      "startedAt": "2026-07-27T06:36:00.882Z",
-      "finishedAt": "2026-07-27T06:36:07.370Z"
+      "task": "大きな★表示をPlaces APIで実装",
+      "startedAt": "2026-07-27T06:57:32.590Z",
+      "finishedAt": "2026-07-27T06:57:37.417Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 73394,
-    "todayOutputTokens": 1445443,
-    "asOf": "2026-07-27T06:51:49.932Z"
+    "todayInputTokens": 76760,
+    "todayOutputTokens": 1520831,
+    "asOf": "2026-07-27T06:58:27.760Z"
   },
-  "updatedAt": "2026-07-27T06:51:49.932Z"
+  "updatedAt": "2026-07-27T06:58:27.760Z"
 }
