@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "134店の公式サイトロゴを探索",
-      "startedAt": "2026-07-27T13:33:24.331Z",
-      "finishedAt": "2026-07-27T13:33:28.229Z"
+      "task": "Logo research batch E",
+      "startedAt": "2026-07-27T13:35:45.103Z",
+      "finishedAt": "2026-07-27T13:35:49.866Z"
     }
   },
   "usage": {
-    "todayInputTokens": 94065,
-    "todayOutputTokens": 2609149,
-    "asOf": "2026-07-27T13:34:33.133Z"
+    "todayInputTokens": 151395,
+    "todayOutputTokens": 2637836,
+    "asOf": "2026-07-27T13:37:58.318Z"
   },
-  "updatedAt": "2026-07-27T13:34:33.133Z"
+  "updatedAt": "2026-07-27T13:37:58.318Z"
 }
