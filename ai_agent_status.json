@@ -19,10 +19,10 @@
       "finishedAt": "2026-07-26T21:24:25.307Z"
     },
     "content-writer": {
-      "status": "idle",
-      "task": "OVERBETをアングラに振り切る",
-      "startedAt": "2026-07-27T07:02:00.578Z",
-      "finishedAt": "2026-07-27T07:09:04.364Z"
+      "status": "running",
+      "task": "Suitmatesマスコットの可愛いプロンプト集",
+      "startedAt": "2026-07-27T07:14:18.012Z",
+      "finishedAt": null
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 87810,
-    "todayOutputTokens": 1713584,
-    "asOf": "2026-07-27T07:12:55.918Z"
+    "todayInputTokens": 87882,
+    "todayOutputTokens": 1739734,
+    "asOf": "2026-07-27T07:14:52.320Z"
   },
-  "updatedAt": "2026-07-27T07:12:55.918Z"
+  "updatedAt": "2026-07-27T07:14:52.320Z"
 }
