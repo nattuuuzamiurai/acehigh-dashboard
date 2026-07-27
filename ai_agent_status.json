@@ -19,10 +19,10 @@
       "finishedAt": "2026-07-26T21:24:25.307Z"
     },
     "content-writer": {
-      "status": "running",
+      "status": "idle",
       "task": "競合を踏まえた差別化デザイン指示テキスト",
       "startedAt": "2026-07-27T06:28:06.118Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-27T06:34:15.485Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 58093,
-    "todayOutputTokens": 1114944,
-    "asOf": "2026-07-27T06:28:06.379Z"
+    "todayInputTokens": 71125,
+    "todayOutputTokens": 1228968,
+    "asOf": "2026-07-27T06:35:04.102Z"
   },
-  "updatedAt": "2026-07-27T06:28:06.379Z"
+  "updatedAt": "2026-07-27T06:35:04.102Z"
 }
