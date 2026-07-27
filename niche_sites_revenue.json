@@ -42,8 +42,8 @@
       "status": "運用中",
       "inquiry": {
         "responsesUrl": "https://docs.google.com/spreadsheets/d/1yvuhMxl1ZoRsKODUNi85vmy4i-x830Amzu1l9m57qLE/edit",
-        "formUrl": "https://fukuokapoker.com/contact.html",
-        "note": "件数は fukuoka_poker_inquiry_status.json 由来(個人情報は含めず件数のみ)。内容確認は responsesUrl の回答スプレッドシート(Googleログイン必須)で行う。formUrl は訪問者が入力する公開フォーム。「対応済み」はブラウザのlocalStorageに保持(端末ごと)し、新着が来たら自動で再表示。"
+        "formUrl": "https://docs.google.com/forms/d/1zGqaNbXhgwJT93dLnax78U6IEK5CxPzEAlvwaGAmE_Q/edit#responses",
+        "note": "件数は fukuoka_poker_inquiry_status.json 由来(個人情報は含めず件数のみ)。内容確認は responsesUrl の回答スプレッドシート、または formUrl(Googleフォーム編集画面の「回答」タブ)で行う。いずれもGoogleログイン必須。「対応済み」はブラウザのlocalStorageに保持(端末ごと)し、新着が来たら自動で再表示。"
       },
       "traffic": {
         "pageViews": 134,
