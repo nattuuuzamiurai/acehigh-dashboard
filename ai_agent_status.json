@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "未掲載店の詳細データ取得(後半)",
-      "startedAt": "2026-07-24T17:58:33.684Z",
-      "finishedAt": "2026-07-24T17:58:47.278Z"
+      "task": "134店の公式サイトロゴを探索",
+      "startedAt": "2026-07-27T13:33:24.331Z",
+      "finishedAt": "2026-07-27T13:33:28.229Z"
     }
   },
   "usage": {
-    "todayInputTokens": 94005,
-    "todayOutputTokens": 2546321,
-    "asOf": "2026-07-27T13:28:46.296Z"
+    "todayInputTokens": 94065,
+    "todayOutputTokens": 2609149,
+    "asOf": "2026-07-27T13:34:33.133Z"
   },
-  "updatedAt": "2026-07-27T13:28:46.296Z"
+  "updatedAt": "2026-07-27T13:34:33.133Z"
 }
