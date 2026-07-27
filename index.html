@@ -3251,6 +3251,22 @@ async function pollAffiliateStatus() {
   }
 }
 
+// 日間ビュー(traffic.daily)の表示。当日分はGA4取得時点までの途中経過、前日分は確定値。
+// daily を持たない(まだ日間取得前の)サイトは何も出さない。
+function nicheDailyHtml(traffic) {
+  const d = traffic && traffic.daily;
+  if (!d) return '';
+  const md = (s) => {
+    const m = /^\d{4}-(\d{2})-(\d{2})$/.exec(s || '');
+    return m ? `${parseInt(m[1], 10)}/${parseInt(m[2], 10)}` : aiEsc(s || '');
+  };
+  // 当日分は途中経過(前日は確定値)なので、前日比の増減バッジは出さない(日中は必ずマイナスに見えるため)。
+  return `<div class="proj-rev">
+    <div class="proj-rev-item"><div class="proj-rev-val">${d.pageViews ?? '-'}</div><div class="proj-rev-lbl">本日PV${d.date ? '（' + md(d.date) + '・途中経過）' : ''}</div></div>
+    <div class="proj-rev-item"><div class="proj-rev-val" style="color:var(--mut);">${d.prevPageViews ?? '-'}</div><div class="proj-rev-lbl">前日PV${d.prevDate ? '（' + md(d.prevDate) + '）' : ''}</div></div>
+  </div>`;
+}
+
 function renderAffiliateSites() {
   const statsEl = document.getElementById('aff-stats');
   const gridEl = document.getElementById('aff-grid');
@@ -3318,7 +3334,8 @@ function renderAffiliateSites() {
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.pageViews ?? '-'}</div><div class="proj-rev-lbl">PV${s.traffic.since ? '（' + aiEsc(s.traffic.since) + '〜）' : ''}</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.activeUsers ?? '-'}</div><div class="proj-rev-lbl">ユーザー</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.sessions ?? '-'}</div><div class="proj-rev-lbl">セッション</div></div>
-        </div>` : ''}
+        </div>
+        ${nicheDailyHtml(s.traffic)}` : ''}
         ${s.inquiry ? `
         <div class="proj-sect">お問い合わせ</div>
         <div class="proj-rev">
