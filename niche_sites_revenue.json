@@ -1,5 +1,5 @@
 {
-  "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。articles.monthly は「実際に公開(draft:false化)した暦月」ごとに1エントリを集計すること(記事フロントマターのpubDateではなく、実際にpushして公開した日で判断する。記事執筆時に将来日付のpubDateを仮設定している場合があるため)。バッチ単位(Week1/Week2等)で分けず、同じ暦月なら合算する。",
+  "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。articles.monthly は「実際に公開(draft:false化)した暦月」ごとに1エントリを集計すること(記事フロントマターのpubDateではなく、実際にpushして公開した日で判断する。記事執筆時に将来日付のpubDateを仮設定している場合があるため)。バッチ単位(Week1/Week2等)で分けず、同じ暦月なら合算する。analytics.propertyId はダッシュボードのカードから当該サイトのGA4レポートへ直接飛ぶためのGoogleアナリティクスのプロパティID(測定IDではない)。traffic は ga4-watch-daemon.js が丸ごと上書きするため、GA4リンク用の情報は traffic の外(analytics)に置くこと。",
   "generatedAt": "2026-07-27T07:11:29.593Z",
   "sites": [
     {
@@ -8,6 +8,10 @@
       "url": "https://aijitsumunavi.com",
       "genre": "AI活用・業務効率化（日本語）",
       "status": "運用中",
+      "analytics": {
+        "propertyId": "546001751",
+        "measurementId": "G-QSW29CYYNP"
+      },
       "articles": {
         "total": 52,
         "asOf": "2026-07-26",
@@ -48,6 +52,10 @@
       "url": "https://fukuokapoker.com/",
       "genre": "福岡ポーカートーナメント情報アグリゲーター",
       "status": "運用中",
+      "analytics": {
+        "propertyId": "545522856",
+        "measurementId": "G-L7091YHTFH"
+      },
       "inquiry": {
         "responsesUrl": "https://docs.google.com/spreadsheets/d/1yvuhMxl1ZoRsKODUNi85vmy4i-x830Amzu1l9m57qLE/edit",
         "formUrl": "https://docs.google.com/forms/d/1zGqaNbXhgwJT93dLnax78U6IEK5CxPzEAlvwaGAmE_Q/edit#responses",
@@ -83,6 +91,10 @@
       "url": "https://nattuuuzamiurai.github.io/poker-hand-media/",
       "genre": "WSOP・トリトンポーカー ハンド解説メディア",
       "status": "運用中",
+      "analytics": {
+        "propertyId": "546969958",
+        "measurementId": "G-W6Y7FK5HSM"
+      },
       "articles": {
         "total": 29,
         "asOf": "2026-07-27",

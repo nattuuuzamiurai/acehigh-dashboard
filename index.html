@@ -3313,6 +3313,13 @@ function renderAffiliateSites() {
     try { inqHandled = parseInt(localStorage.getItem('inqHandled_' + s.id) || '0', 10) || 0; } catch (e) {}
     const inqUnhandled = Math.max(0, inqTotal - inqHandled);
 
+    // GA4レポートへの直リンク(analytics.propertyId を持つサイトのみ)。
+    // propertyId は測定ID(G-xxxx)ではなくGA4のプロパティID(数字)。閲覧にはGoogleログインが必要。
+    const gaPropId = (s.analytics && s.analytics.propertyId) ? String(s.analytics.propertyId) : '';
+    const gaLink = /^\d+$/.test(gaPropId)
+      ? `<a href="https://analytics.google.com/analytics/web/#/p${gaPropId}/reports/intelligenthome" target="_blank" rel="noopener" style="text-transform:none;letter-spacing:0;font-size:1.05em;color:var(--acc);text-decoration:none;font-weight:700;">Googleアナリティクス ↗</a>`
+      : '';
+
     return `<div class="proj-card">
       <div class="proj-hdr" style="background:linear-gradient(135deg,var(--acc),#8b93f5)">
         <div class="proj-name">${aiEsc(s.name)}</div>
@@ -3329,13 +3336,18 @@ function renderAffiliateSites() {
           <div class="proj-rev-item"><div class="proj-rev-val">${latest ? latest.count : '-'}</div><div class="proj-rev-lbl">${latest ? aiEsc(latest.period) : '直近月'}</div></div>
         </div>
         ${s.traffic ? `
-        <div class="proj-sect">アクセス数（${aiEsc(s.traffic.source || 'GA4')}）</div>
+        <div class="proj-sect" style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+          <span>アクセス数（${aiEsc(s.traffic.source || 'GA4')}）</span>${gaLink}
+        </div>
         <div class="proj-rev">
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.pageViews ?? '-'}</div><div class="proj-rev-lbl">PV${s.traffic.since ? '（' + aiEsc(s.traffic.since) + '〜）' : ''}</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.activeUsers ?? '-'}</div><div class="proj-rev-lbl">ユーザー</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.sessions ?? '-'}</div><div class="proj-rev-lbl">セッション</div></div>
         </div>
-        ${nicheDailyHtml(s.traffic)}` : ''}
+        ${nicheDailyHtml(s.traffic)}` : (gaLink ? `
+        <div class="proj-sect" style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
+          <span>アクセス解析</span>${gaLink}
+        </div>` : '')}
         ${s.inquiry ? `
         <div class="proj-sect">お問い合わせ</div>
         <div class="proj-rev">
