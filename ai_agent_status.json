@@ -19,10 +19,10 @@
       "finishedAt": "2026-07-27T07:27:40.354Z"
     },
     "content-writer": {
-      "status": "running",
+      "status": "idle",
       "task": "幅広い多系統のデザイン生成プロンプト",
       "startedAt": "2026-07-27T07:28:27.421Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-27T07:36:26.708Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 88408,
-    "todayOutputTokens": 1929205,
-    "asOf": "2026-07-27T07:33:28.940Z"
+    "todayInputTokens": 88430,
+    "todayOutputTokens": 1963605,
+    "asOf": "2026-07-27T07:37:23.427Z"
   },
-  "updatedAt": "2026-07-27T07:33:28.940Z"
+  "updatedAt": "2026-07-27T07:37:23.427Z"
 }
