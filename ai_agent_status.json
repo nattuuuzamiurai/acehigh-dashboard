@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Poker media cycle1 QA",
-      "startedAt": "2026-07-26T21:06:05.256Z",
-      "finishedAt": "2026-07-26T21:06:08.871Z"
+      "task": "情報不足レコード解決の品質検証",
+      "startedAt": "2026-07-27T07:14:57.517Z",
+      "finishedAt": "2026-07-27T07:15:01.365Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 87882,
-    "todayOutputTokens": 1739734,
-    "asOf": "2026-07-27T07:14:52.320Z"
+    "todayInputTokens": 87908,
+    "todayOutputTokens": 1744781,
+    "asOf": "2026-07-27T07:15:20.981Z"
   },
-  "updatedAt": "2026-07-27T07:14:52.320Z"
+  "updatedAt": "2026-07-27T07:15:20.981Z"
 }
