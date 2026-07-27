@@ -19,16 +19,16 @@
       "finishedAt": "2026-07-26T21:24:25.307Z"
     },
     "content-writer": {
-      "status": "idle",
-      "task": "Poker media cycle1 writing",
-      "startedAt": "2026-07-26T20:43:42.911Z",
-      "finishedAt": "2026-07-26T20:43:46.169Z"
+      "status": "running",
+      "task": "競合を踏まえた差別化デザイン指示テキスト",
+      "startedAt": "2026-07-27T06:28:06.118Z",
+      "finishedAt": null
     },
     "planning-lead": {
       "status": "idle",
-      "task": "Poker media cycle1 planning",
-      "startedAt": "2026-07-26T20:32:32.894Z",
-      "finishedAt": "2026-07-26T20:32:36.387Z"
+      "task": "Places APIの料金・無料枠・表示規約を確定",
+      "startedAt": "2026-07-27T06:26:52.827Z",
+      "finishedAt": "2026-07-27T06:26:56.999Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 57928,
-    "todayOutputTokens": 946183,
-    "asOf": "2026-07-26T21:24:48.926Z"
+    "todayInputTokens": 58093,
+    "todayOutputTokens": 1114944,
+    "asOf": "2026-07-27T06:28:06.379Z"
   },
-  "updatedAt": "2026-07-26T21:24:48.926Z"
+  "updatedAt": "2026-07-27T06:28:06.379Z"
 }
