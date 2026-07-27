@@ -3251,19 +3251,19 @@ async function pollAffiliateStatus() {
   }
 }
 
-// 日間ビュー(traffic.daily)の表示。当日分はGA4取得時点までの途中経過、前日分は確定値。
+// 日間ビュー(traffic.daily)の表示。表示するのは丸1日分が確定している「前日PV」のみ。
+// 当日分(daily.pageViews)もJSONには入っているが、更新が1日1回・深夜帯のため
+// ほぼ0の途中経過にしかならず誤解を招くので出さない(社長判断・2026-07-27)。
 // daily を持たない(まだ日間取得前の)サイトは何も出さない。
 function nicheDailyHtml(traffic) {
   const d = traffic && traffic.daily;
-  if (!d) return '';
+  if (!d || d.prevPageViews == null) return '';
   const md = (s) => {
     const m = /^\d{4}-(\d{2})-(\d{2})$/.exec(s || '');
     return m ? `${parseInt(m[1], 10)}/${parseInt(m[2], 10)}` : aiEsc(s || '');
   };
-  // 当日分は途中経過(前日は確定値)なので、前日比の増減バッジは出さない(日中は必ずマイナスに見えるため)。
   return `<div class="proj-rev">
-    <div class="proj-rev-item"><div class="proj-rev-val">${d.pageViews ?? '-'}</div><div class="proj-rev-lbl">本日PV${d.date ? '（' + md(d.date) + '・途中経過）' : ''}</div></div>
-    <div class="proj-rev-item"><div class="proj-rev-val" style="color:var(--mut);">${d.prevPageViews ?? '-'}</div><div class="proj-rev-lbl">前日PV${d.prevDate ? '（' + md(d.prevDate) + '）' : ''}</div></div>
+    <div class="proj-rev-item"><div class="proj-rev-val">${d.prevPageViews}</div><div class="proj-rev-lbl">前日PV${d.prevDate ? '（' + md(d.prevDate) + '）' : ''}</div></div>
   </div>`;
 }
 
