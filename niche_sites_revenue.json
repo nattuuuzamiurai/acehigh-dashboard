@@ -42,7 +42,8 @@
       "status": "運用中",
       "inquiry": {
         "responsesUrl": "https://docs.google.com/spreadsheets/d/1yvuhMxl1ZoRsKODUNi85vmy4i-x830Amzu1l9m57qLE/edit",
-        "note": "件数は fukuoka_poker_inquiry_status.json 由来(個人情報は含めず件数のみ)。内容確認は上記の回答スプレッドシート(Googleログイン必須)で行う。"
+        "formUrl": "https://fukuokapoker.com/contact.html",
+        "note": "件数は fukuoka_poker_inquiry_status.json 由来(個人情報は含めず件数のみ)。内容確認は responsesUrl の回答スプレッドシート(Googleログイン必須)で行う。formUrl は訪問者が入力する公開フォーム。「対応済み」はブラウザのlocalStorageに保持(端末ごと)し、新着が来たら自動で再表示。"
       },
       "traffic": {
         "pageViews": 124,
@@ -67,12 +68,12 @@
       "genre": "WSOP・トリトンポーカー ハンド解説メディア",
       "status": "運用中",
       "articles": {
-        "total": 24,
-        "asOf": "2026-07-24",
+        "total": 29,
+        "asOf": "2026-07-27",
         "monthly": [
           {
             "period": "2026-07",
-            "count": 24
+            "count": 29
           }
         ]
       },
@@ -80,8 +81,8 @@
         "monthly": 0,
         "total": 0,
         "status": "収益発生前（GA4導入済み・AdSense未申請）",
-        "note": "2026-07-21にGitHub Pagesで本番公開(独立リポジトリ nattuuuzamiurai/poker-hand-media、GitHub Actionsで自動デプロイ)。品質管理部・レビュー部の監査を経て社長最終判断によりGO。実マネーのオンラインポーカー/カジノアフィリエイトは非採用の方針。2026-07-26、社長指示により完全自動運用モードへ移行(週次クラウドルーティンで大会監視・執筆・公開まで無人実行)。カスタムドメイン・AdSenseはアクセス実績がついてから改めて判断する方針で、当面見送り(GitHub Pages無料ドメインのまま運用)。GA4導入済み(2026-07-25〜)、ga4-watch-daemon.jsに追加し6時間おきに自動反映(traffic参照)。Google Search Console確認・サイトマップ送信済み。",
-        "updatedAt": "2026-07-27 01:33"
+        "note": "2026-07-21にGitHub Pagesで本番公開(独立リポジトリ nattuuuzamiurai/poker-hand-media、GitHub Actionsで自動デプロイ)。品質管理部・レビュー部の監査を経て社長最終判断によりGO。実マネーのオンラインポーカー/カジノアフィリエイトは非採用の方針。2026-07-27、運用を『自動運用の司令塔』セッションに一本化(旧クラウドルーティンは停止済み)。司令塔の第1サイクルとして、ポーカー史のエバーグリーン名ハンド5記事(マネーメーカーの世紀のブラフ/チャン対サイデル=ラウンダーズの原点/ゴールド対ワシッカ/エンサンのKK即コール/アイヴィー対ジャクソンのブラフ合戦)を企画→執筆→QA(build成功・事実独立検証)→レビューGOを経て公開し、累計29記事に。カスタムドメイン・AdSenseはアクセス実績がついてから改めて判断する方針で、当面見送り(GitHub Pages無料ドメインのまま運用)。GA4導入済み(2026-07-25〜)、ga4-watch-daemon.jsに追加し6時間おきに自動反映(traffic参照)。Google Search Console確認・サイトマップ送信済み。",
+        "updatedAt": "2026-07-27"
       },
       "traffic": {
         "pageViews": 1,
