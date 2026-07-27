@@ -19,10 +19,10 @@
       "finishedAt": "2026-07-27T08:15:48.084Z"
     },
     "content-writer": {
-      "status": "running",
+      "status": "idle",
       "task": "U3ハイファッションゴスの深掘り",
       "startedAt": "2026-07-27T08:50:45.422Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-27T08:57:52.599Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 93774,
-    "todayOutputTokens": 2347699,
-    "asOf": "2026-07-27T08:52:54.887Z"
+    "todayInputTokens": 93834,
+    "todayOutputTokens": 2375895,
+    "asOf": "2026-07-27T13:16:10.096Z"
   },
-  "updatedAt": "2026-07-27T08:52:54.887Z"
+  "updatedAt": "2026-07-27T13:16:10.096Z"
 }
