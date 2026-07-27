@@ -19,10 +19,10 @@
       "finishedAt": "2026-07-26T21:24:25.307Z"
     },
     "content-writer": {
-      "status": "running",
+      "status": "idle",
       "task": "Suitmatesマスコットの可愛いプロンプト集",
       "startedAt": "2026-07-27T07:14:18.012Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-27T07:21:06.877Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 88111,
-    "todayOutputTokens": 1784761,
-    "asOf": "2026-07-27T07:19:31.593Z"
+    "todayInputTokens": 88177,
+    "todayOutputTokens": 1806135,
+    "asOf": "2026-07-27T07:21:57.973Z"
   },
-  "updatedAt": "2026-07-27T07:19:31.593Z"
+  "updatedAt": "2026-07-27T07:21:57.973Z"
 }
