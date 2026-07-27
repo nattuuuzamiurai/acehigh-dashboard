@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Poker media cycle1 review",
-      "startedAt": "2026-07-26T21:24:21.668Z",
-      "finishedAt": "2026-07-26T21:24:25.307Z"
+      "task": "情報不足解決2修正の最終GO判定",
+      "startedAt": "2026-07-27T07:27:29.573Z",
+      "finishedAt": "2026-07-27T07:27:40.354Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 88203,
-    "todayOutputTokens": 1818632,
-    "asOf": "2026-07-27T07:23:54.529Z"
+    "todayInputTokens": 88275,
+    "todayOutputTokens": 1856499,
+    "asOf": "2026-07-27T07:27:48.824Z"
   },
-  "updatedAt": "2026-07-27T07:23:54.529Z"
+  "updatedAt": "2026-07-27T07:27:48.824Z"
 }
