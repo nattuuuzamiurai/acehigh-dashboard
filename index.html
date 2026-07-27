@@ -3217,6 +3217,13 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 // ふくおかポーカーナビのお問い合わせ状況(件数のみ)。アフィリ欄の運用サイトカード内に表示する。
 let INQUIRY_DATA = null;
+
+// 「対応済みにする」= その時点の累計件数を localStorage に記録し、未対応表示を消す。
+// 新着(累計が増える)が来ると未対応数がまた1以上になり、自動で再表示される(端末ごとの記録)。
+function markInquiryHandled(siteId, total) {
+  try { localStorage.setItem('inqHandled_' + siteId, String(total)); } catch (e) {}
+  if (AFFILIATE_DATA) renderAffiliateSites();
+}
 async function pollInquiryStatus() {
   try {
     const res = await fetch('fukuoka_poker_inquiry_status.json?t=' + Date.now(), { cache: 'no-store' });
@@ -3282,8 +3289,13 @@ function renderAffiliateSites() {
 
     // お問い合わせ(inquiry設定があるサイトのみ)。件数は fukuoka_poker_inquiry_status.json 由来(INQUIRY_DATA)。
     // 現状フォームを持つのは fukuoka-poker-navi のみで、INQUIRY_DATA はそのサイトの件数。
-    const inqCount = (s.inquiry && INQUIRY_DATA) ? (INQUIRY_DATA.totalResponses || 0) : 0;
+    // 「対応済み」はブラウザのlocalStorageに「対応済みにした時点の累計件数」を保持し、
+    // 未対応数 = 累計 - 対応済み累計。新着が来る(累計が増える)と自動で再び未対応が出る。
+    const inqTotal = (s.inquiry && INQUIRY_DATA) ? (INQUIRY_DATA.totalResponses || 0) : 0;
     const inqLastAt = (s.inquiry && INQUIRY_DATA) ? (INQUIRY_DATA.lastResponseAt || '') : '';
+    let inqHandled = 0;
+    try { inqHandled = parseInt(localStorage.getItem('inqHandled_' + s.id) || '0', 10) || 0; } catch (e) {}
+    const inqUnhandled = Math.max(0, inqTotal - inqHandled);
 
     return `<div class="proj-card">
       <div class="proj-hdr" style="background:linear-gradient(135deg,var(--acc),#8b93f5)">
@@ -3311,11 +3323,16 @@ function renderAffiliateSites() {
         <div class="proj-sect">お問い合わせ</div>
         <div class="proj-rev">
           <div class="proj-rev-item" style="flex:1;text-align:left;padding:8px 10px;">
-            <div class="proj-rev-val" style="${inqCount > 0 ? 'color:var(--acc);' : 'color:var(--mut);font-size:.85em;'}">${inqCount}件</div>
-            <div style="font-size:.76em;color:var(--mut);line-height:1.6;margin-top:4px;">
-              ${inqLastAt ? '最終受信: ' + aiEsc(inqLastAt) + '<br>' : ''}
+            ${inqUnhandled > 0 ? `
+              <div class="proj-rev-val" style="color:var(--acc);">${inqUnhandled}件<span style="font-size:.5em;font-weight:700;color:#fff;background:var(--red);border-radius:10px;padding:2px 7px;margin-left:8px;vertical-align:middle;">未対応</span></div>
+              ${inqLastAt ? `<div style="font-size:.74em;color:var(--mut);margin-top:3px;">最終受信: ${aiEsc(inqLastAt)}</div>` : ''}
+              <button onclick="markInquiryHandled('${aiEsc(s.id)}', ${inqTotal})" style="margin-top:7px;font-size:.74em;padding:4px 12px;border:1px solid var(--bor);border-radius:6px;background:var(--sur);color:var(--mut);cursor:pointer;">対応済みにする</button>
+            ` : `
+              <div style="font-size:.85em;color:var(--mut);">新着なし（累計${inqTotal}件）</div>
+            `}
+            <div style="font-size:.76em;line-height:1.7;margin-top:9px;">
               <a href="${aiEsc(s.inquiry.responsesUrl)}" target="_blank" rel="noopener" style="color:var(--acc);font-weight:600;text-decoration:none;">回答を確認 ↗</a>
-              ${s.inquiry.formUrl ? ` ｜ <a href="${aiEsc(s.inquiry.formUrl)}" target="_blank" rel="noopener" style="color:var(--mut);text-decoration:none;">フォームを開く ↗</a>` : ''}
+              ${s.inquiry.formUrl ? ` ｜ <a href="${aiEsc(s.inquiry.formUrl)}" target="_blank" rel="noopener" style="color:var(--acc);font-weight:600;text-decoration:none;">フォームを開く ↗</a>` : ''}
             </div>
           </div>
         </div>` : ''}
