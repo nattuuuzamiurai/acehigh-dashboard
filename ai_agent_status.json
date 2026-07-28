@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "Logo research batch E",
-      "startedAt": "2026-07-27T13:35:45.103Z",
-      "finishedAt": "2026-07-27T13:35:49.866Z"
+      "task": "134店の公式サイトロゴを探索(直接処理)",
+      "startedAt": "2026-07-28T08:38:34.903Z",
+      "finishedAt": "2026-07-28T08:38:38.598Z"
     }
   },
   "usage": {
-    "todayInputTokens": 168653,
-    "todayOutputTokens": 2666456,
-    "asOf": "2026-07-27T13:39:00.352Z"
+    "todayInputTokens": 56,
+    "todayOutputTokens": 40883,
+    "asOf": "2026-07-28T08:39:39.332Z"
   },
-  "updatedAt": "2026-07-27T13:39:00.352Z"
+  "updatedAt": "2026-07-28T08:39:39.332Z"
 }
