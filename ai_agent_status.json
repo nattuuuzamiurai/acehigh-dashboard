@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ホットペッパーlogo_imageをロゴに活用",
-      "startedAt": "2026-07-28T10:57:04.228Z",
-      "finishedAt": "2026-07-28T10:57:07.964Z"
+      "task": "案Bネームタイルをロゴ代替に実装",
+      "startedAt": "2026-07-28T13:18:47.239Z",
+      "finishedAt": "2026-07-28T13:18:51.244Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "ポップ系サブブランドの新設",
-      "startedAt": "2026-07-27T07:02:24.396Z",
-      "finishedAt": "2026-07-27T07:10:51.071Z"
+      "task": "Google Place Photosの費用・無料枠を確定",
+      "startedAt": "2026-07-28T13:18:17.270Z",
+      "finishedAt": "2026-07-28T13:18:21.325Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 151390,
-    "todayOutputTokens": 303396,
-    "asOf": "2026-07-28T13:15:11.432Z"
+    "todayInputTokens": 151474,
+    "todayOutputTokens": 330730,
+    "asOf": "2026-07-28T13:19:39.456Z"
   },
-  "updatedAt": "2026-07-28T13:15:11.432Z"
+  "updatedAt": "2026-07-28T13:19:39.456Z"
 }
