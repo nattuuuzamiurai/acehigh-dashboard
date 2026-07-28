@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "連絡先をフォームに差替えPR #27を仕上げ",
-      "startedAt": "2026-07-28T16:33:05.915Z",
-      "finishedAt": "2026-07-28T16:33:10.573Z"
+      "task": "ダッシュボードに久留米の問合せ枠を追加",
+      "startedAt": "2026-07-28T17:43:43.757Z",
+      "finishedAt": "2026-07-28T17:43:49.080Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "残り9店のインスタ画像を抽出",
-      "startedAt": "2026-07-28T17:38:34.091Z",
-      "finishedAt": "2026-07-28T17:38:39.151Z"
+      "task": "最後の6店のインスタ画像を抽出",
+      "startedAt": "2026-07-28T17:49:56.153Z",
+      "finishedAt": "2026-07-28T17:50:03.772Z"
     }
   },
   "usage": {
-    "todayInputTokens": 82411,
-    "todayOutputTokens": 709729,
-    "asOf": "2026-07-28T17:39:42.755Z"
+    "todayInputTokens": 82851,
+    "todayOutputTokens": 870407,
+    "asOf": "2026-07-28T17:50:10.907Z"
   },
-  "updatedAt": "2026-07-28T17:39:42.755Z"
+  "updatedAt": "2026-07-28T17:50:10.907Z"
 }
