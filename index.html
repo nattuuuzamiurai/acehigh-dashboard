@@ -3317,12 +3317,13 @@ function renderAffiliateSites() {
       ? `<div class="proj-rev-val">¥${revAmt.toLocaleString()}</div>`
       : `<div class="proj-rev-val" style="color:var(--mut);font-size:.85em;">¥0${rev.status ? '（' + aiEsc(rev.status) + '）' : ''}</div>`;
 
-    // お問い合わせ(inquiry設定があるサイトのみ)。件数は fukuoka_poker_inquiry_status.json 由来(INQUIRY_DATA)。
-    // 現状フォームを持つのは fukuoka-poker-navi のみで、INQUIRY_DATA はそのサイトの件数。
+    // お問い合わせ(inquiry設定があるサイトのみ)。件数は各サイトの inquiry.statusFile 由来。
+    // INQUIRY_DATA はサイトidをキーにしたマップ(INQUIRY_DATA[s.id] = そのサイトの件数JSON)。
     // 「対応済み」はブラウザのlocalStorageに「対応済みにした時点の累計件数」を保持し、
     // 未対応数 = 累計 - 対応済み累計。新着が来る(累計が増える)と自動で再び未対応が出る。
-    const inqTotal = (s.inquiry && INQUIRY_DATA) ? (INQUIRY_DATA.totalResponses || 0) : 0;
-    const inqLastAt = (s.inquiry && INQUIRY_DATA) ? (INQUIRY_DATA.lastResponseAt || '') : '';
+    const inqData = (s.inquiry && INQUIRY_DATA) ? INQUIRY_DATA[s.id] : null;
+    const inqTotal = inqData ? (inqData.totalResponses || 0) : 0;
+    const inqLastAt = inqData ? (inqData.lastResponseAt || '') : '';
     let inqHandled = 0;
     try { inqHandled = parseInt(localStorage.getItem('inqHandled_' + s.id) || '0', 10) || 0; } catch (e) {}
     const inqUnhandled = Math.max(0, inqTotal - inqHandled);
@@ -3381,8 +3382,8 @@ function renderAffiliateSites() {
               <div style="font-size:.85em;color:var(--mut);">新着なし（累計${inqTotal}件）</div>
             `}
             <div style="font-size:.76em;line-height:1.7;margin-top:9px;">
-              <a href="${aiEsc(s.inquiry.responsesUrl)}" target="_blank" rel="noopener" style="color:var(--acc);font-weight:600;text-decoration:none;">回答を確認 ↗</a>
-              ${s.inquiry.formUrl ? ` ｜ <a href="${aiEsc(s.inquiry.formUrl)}" target="_blank" rel="noopener" style="color:var(--acc);font-weight:600;text-decoration:none;">フォームを開く ↗</a>` : ''}
+              ${s.inquiry.responsesUrl ? `<a href="${aiEsc(s.inquiry.responsesUrl)}" target="_blank" rel="noopener" style="color:var(--acc);font-weight:600;text-decoration:none;">回答を確認 ↗</a>` : ''}
+              ${s.inquiry.formUrl ? `${s.inquiry.responsesUrl ? ' ｜ ' : ''}<a href="${aiEsc(s.inquiry.formUrl)}" target="_blank" rel="noopener" style="color:var(--acc);font-weight:600;text-decoration:none;">フォームを開く ↗</a>` : ''}
             </div>
           </div>
         </div>` : ''}

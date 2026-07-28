@@ -65,6 +65,7 @@
         "measurementId": "G-L7091YHTFH"
       },
       "inquiry": {
+        "statusFile": "fukuoka_poker_inquiry_status.json",
         "responsesUrl": "https://docs.google.com/spreadsheets/d/1yvuhMxl1ZoRsKODUNi85vmy4i-x830Amzu1l9m57qLE/edit",
         "formUrl": "https://docs.google.com/forms/d/1zGqaNbXhgwJT93dLnax78U6IEK5CxPzEAlvwaGAmE_Q/edit#responses",
         "note": "件数は fukuoka_poker_inquiry_status.json 由来(個人情報は含めず件数のみ)。内容確認は responsesUrl の回答スプレッドシート、または formUrl(Googleフォーム編集画面の「回答」タブ)で行う。いずれもGoogleログイン必須。「対応済み」はブラウザのlocalStorageに保持(端末ごと)し、新着が来たら自動で再表示。"
@@ -145,6 +146,12 @@
       "url": "https://nattuuuzamiurai.github.io/kurume-bar-navi/",
       "genre": "久留米市(西鉄久留米駅周辺)の飲み屋総合ディレクトリ",
       "status": "運用中",
+      "inquiry": {
+        "statusFile": "kurume_bar_inquiry_status.json",
+        "responsesUrl": "",
+        "formUrl": "https://docs.google.com/forms/d/1lH6enWrURcRr9SdC1QTukiZp25MPJkX_TrIA85RaNm4/edit#responses",
+        "note": "件数は kurume_bar_inquiry_status.json 由来(個人情報は含めず件数のみ)。回答はフォームの回答タブ、または responsesUrl 設定後は回答スプレッドシートで確認。"
+      },
       "revenue": {
         "monthly": 0,
         "total": 0,
