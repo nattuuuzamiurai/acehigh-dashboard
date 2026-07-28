@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "FST掲載と大型イベント掲載ルール共通化",
-      "startedAt": "2026-07-28T17:52:36.605Z",
-      "finishedAt": "2026-07-28T17:52:39.059Z"
+      "task": "旬亭住所・タグ表記の修正PR",
+      "startedAt": "2026-07-28T19:10:11.010Z",
+      "finishedAt": "2026-07-28T19:10:55.917Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Verify Fukuoka poker venues group C",
-      "startedAt": "2026-07-28T18:41:29.645Z",
-      "finishedAt": "2026-07-28T18:41:32.567Z"
+      "task": "未確認店の実在確認と閉店チェック",
+      "startedAt": "2026-07-28T19:10:35.950Z",
+      "finishedAt": "2026-07-28T19:10:59.646Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 121387,
-    "todayOutputTokens": 1454842,
-    "asOf": "2026-07-28T18:59:27.011Z"
+    "todayInputTokens": 129268,
+    "todayOutputTokens": 1552894,
+    "asOf": "2026-07-28T19:14:25.390Z"
   },
-  "updatedAt": "2026-07-28T18:59:27.011Z"
+  "updatedAt": "2026-07-28T19:14:25.390Z"
 }
