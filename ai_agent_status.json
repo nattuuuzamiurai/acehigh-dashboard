@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "インスタロゴ14店をサイトに組み込み",
-      "startedAt": "2026-07-28T15:27:17.641Z",
-      "finishedAt": "2026-07-28T15:27:56.722Z"
+      "task": "連絡先をフォームに差替えPR #27を仕上げ",
+      "startedAt": "2026-07-28T16:33:05.915Z",
+      "finishedAt": "2026-07-28T16:33:10.573Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 620,
-    "todayOutputTokens": 226729,
-    "asOf": "2026-07-28T16:28:57.479Z"
+    "todayInputTokens": 646,
+    "todayOutputTokens": 244426,
+    "asOf": "2026-07-28T16:33:20.189Z"
   },
-  "updatedAt": "2026-07-28T16:28:57.479Z"
+  "updatedAt": "2026-07-28T16:33:20.189Z"
 }
