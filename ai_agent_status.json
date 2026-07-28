@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "46店のインスタを検索し画像抽出",
-      "startedAt": "2026-07-28T17:05:37.770Z",
-      "finishedAt": "2026-07-28T17:05:42.611Z"
+      "task": "残り9店のインスタ画像を抽出",
+      "startedAt": "2026-07-28T17:38:34.091Z",
+      "finishedAt": "2026-07-28T17:38:39.151Z"
     }
   },
   "usage": {
-    "todayInputTokens": 82373,
-    "todayOutputTokens": 689799,
-    "asOf": "2026-07-28T17:35:06.836Z"
+    "todayInputTokens": 82411,
+    "todayOutputTokens": 709729,
+    "asOf": "2026-07-28T17:39:42.755Z"
   },
-  "updatedAt": "2026-07-28T17:35:06.836Z"
+  "updatedAt": "2026-07-28T17:39:42.755Z"
 }
