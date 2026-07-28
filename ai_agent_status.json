@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "コンカフェ・シーシャの閉店確認",
-      "startedAt": "2026-07-28T20:13:05.070Z",
-      "finishedAt": "2026-07-28T20:13:10.324Z"
+      "task": "PR31の品質チェック",
+      "startedAt": "2026-07-28T20:18:48.979Z",
+      "finishedAt": "2026-07-28T20:18:52.897Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 172953,
-    "todayOutputTokens": 2047744,
-    "asOf": "2026-07-28T20:17:34.811Z"
+    "todayInputTokens": 181355,
+    "todayOutputTokens": 2093671,
+    "asOf": "2026-07-28T20:21:52.444Z"
   },
-  "updatedAt": "2026-07-28T20:17:34.811Z"
+  "updatedAt": "2026-07-28T20:21:52.444Z"
 }
