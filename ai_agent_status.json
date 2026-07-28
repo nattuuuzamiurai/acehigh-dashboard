@@ -8,15 +8,15 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "QA check PR #4 fukuoka-poker-navi",
-      "startedAt": "2026-07-28T20:22:53.139Z",
-      "finishedAt": "2026-07-28T20:22:56.182Z"
+      "task": "PR #3 の品質検証",
+      "startedAt": "2026-07-28T20:45:42.837Z",
+      "finishedAt": "2026-07-28T20:45:46.002Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR31のGO/NO-GO判定",
-      "startedAt": "2026-07-28T20:36:41.724Z",
-      "finishedAt": "2026-07-28T20:36:46.518Z"
+      "task": "GO/NO-GO for PR #4",
+      "startedAt": "2026-07-28T20:45:47.239Z",
+      "finishedAt": "2026-07-28T20:45:52.303Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 185599,
-    "todayOutputTokens": 2225244,
-    "asOf": "2026-07-28T20:39:57.951Z"
+    "todayInputTokens": 185731,
+    "todayOutputTokens": 2278078,
+    "asOf": "2026-07-28T20:46:20.531Z"
   },
-  "updatedAt": "2026-07-28T20:39:57.951Z"
+  "updatedAt": "2026-07-28T20:46:20.531Z"
 }
