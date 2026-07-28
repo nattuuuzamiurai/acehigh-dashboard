@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "旬亭住所・タグ表記の修正PR",
-      "startedAt": "2026-07-28T19:10:11.010Z",
-      "finishedAt": "2026-07-28T19:10:55.917Z"
+      "task": "Add 6 new venues to fukuoka-poker-navi",
+      "startedAt": "2026-07-28T20:02:49.373Z",
+      "finishedAt": "2026-07-28T20:02:53.064Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "インスタロゴPR #27のGO/NO-GO(方針例外)",
-      "startedAt": "2026-07-28T15:48:24.703Z",
-      "finishedAt": "2026-07-28T15:48:28.803Z"
+      "task": "PR30のGO/NO-GO判定",
+      "startedAt": "2026-07-28T19:43:07.401Z",
+      "finishedAt": "2026-07-28T19:43:39.554Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 153721,
-    "todayOutputTokens": 1766179,
-    "asOf": "2026-07-28T19:41:06.819Z"
+    "todayInputTokens": 154326,
+    "todayOutputTokens": 1914311,
+    "asOf": "2026-07-28T20:03:55.985Z"
   },
-  "updatedAt": "2026-07-28T19:41:06.819Z"
+  "updatedAt": "2026-07-28T20:03:55.985Z"
 }
