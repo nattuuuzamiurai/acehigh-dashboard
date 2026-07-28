@@ -51,6 +51,13 @@
       "id": "fukuoka-poker-navi",
       "name": "ふくおかポーカーナビ",
       "url": "https://fukuokapoker.com/",
+      "adminConsole": {
+        "icon": "🗂️",
+        "label": "掲載管理コンソールを開く",
+        "url": "http://localhost:8787/",
+        "local": true,
+        "note": "トーナメント日程の入力進捗を店舗ごとに管理する画面。Macの「cloude code/fukuoka-poker-admin/起動.command」をダブルクリックしてから開く（この端末のローカルサーバー専用。スマホからは開けません）"
+      },
       "genre": "福岡ポーカートーナメント情報アグリゲーター",
       "status": "運用中",
       "analytics": {

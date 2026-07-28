@@ -3215,8 +3215,10 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 });
 
-// ふくおかポーカーナビのお問い合わせ状況(件数のみ)。アフィリ欄の運用サイトカード内に表示する。
-let INQUIRY_DATA = null;
+// お問い合わせ状況(件数のみ)。アフィリ欄の運用サイトカード内に表示する。
+// サイトidをキーにしたマップ。各サイトの inquiry.statusFile を個別にfetchして格納する。
+// 例: INQUIRY_DATA['fukuoka-poker-navi'] = { totalResponses, lastResponseAt, ... }
+let INQUIRY_DATA = {};
 
 // 「対応済みにする」= その時点の累計件数を localStorage に記録し、未対応表示を消す。
 // 新着(累計が増える)が来ると未対応数がまた1以上になり、自動で再表示される(端末ごとの記録)。
@@ -3225,15 +3227,25 @@ function markInquiryHandled(siteId, total) {
   if (AFFILIATE_DATA) renderAffiliateSites();
 }
 async function pollInquiryStatus() {
-  try {
-    const res = await fetch('fukuoka_poker_inquiry_status.json?t=' + Date.now(), { cache: 'no-store' });
-    if (!res.ok) return;
-    INQUIRY_DATA = await res.json();
-    // アフィリカードを描画済みなら、最新の件数で再描画する
-    if (AFFILIATE_DATA) renderAffiliateSites();
-  } catch (e) {
-    // 取得失敗時は前回値のまま(握りつぶす)
-  }
+  // どのサイトがお問い合わせ枠を持つかは niche_sites_revenue.json(AFFILIATE_DATA)から取得する。
+  // 各サイトの inquiry.statusFile(件数のみのJSON)をfetchし、サイトidをキーにマップへ格納。
+  // AFFILIATE_DATA が未ロードの場合は次の15秒間隔で拾う。
+  const sites = (AFFILIATE_DATA && Array.isArray(AFFILIATE_DATA.sites)) ? AFFILIATE_DATA.sites : [];
+  const targets = sites.filter(s => s.inquiry && s.inquiry.statusFile);
+  if (!targets.length) return;
+  let changed = false;
+  await Promise.all(targets.map(async (s) => {
+    try {
+      const res = await fetch(s.inquiry.statusFile + '?t=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) return;
+      INQUIRY_DATA[s.id] = await res.json();
+      changed = true;
+    } catch (e) {
+      // 取得失敗時は前回値のまま(握りつぶす)
+    }
+  }));
+  // アフィリカードを描画済みなら、最新の件数で再描画する
+  if (changed && AFFILIATE_DATA) renderAffiliateSites();
 }
 
 // ===== アフィリエイト事業(ニッチアフィリエイトサイト) =====
@@ -3246,6 +3258,8 @@ async function pollAffiliateStatus() {
     if (!res.ok) return;
     AFFILIATE_DATA = await res.json();
     renderAffiliateSites();
+    // 初回ロード直後はまだ件数マップが空なので、お問い合わせ件数を即時取得する
+    if (Object.keys(INQUIRY_DATA).length === 0) pollInquiryStatus();
   } catch (e) {
     // 取得失敗時は空表示のまま(握りつぶす)
   }
@@ -3330,6 +3344,12 @@ function renderAffiliateSites() {
       </div>
       <div class="proj-body">
         ${s.url ? `<p class="proj-desc"><a href="${aiEsc(s.url)}" target="_blank" rel="noopener" style="color:var(--acc);text-decoration:none;">${aiEsc(s.url)} <span style="font-size:.85em;opacity:.6;">↗</span></a></p>` : ''}
+        ${s.adminConsole ? `
+        <div class="proj-sect">管理ツール</div>
+        <div style="margin-bottom:12px;">
+          <a href="${aiEsc(s.adminConsole.url)}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:.84em;font-weight:700;color:var(--acc);text-decoration:none;border:1px solid var(--bor);border-radius:8px;padding:7px 13px;background:var(--sur);">${aiEsc(s.adminConsole.icon || '🗂️')} ${aiEsc(s.adminConsole.label || '管理コンソール')} <span style="opacity:.6;">↗</span></a>${s.adminConsole.local ? `<span style="display:inline-block;font-size:.68em;font-weight:700;color:var(--mut);border:1px solid var(--bor);border-radius:20px;padding:2px 9px;margin-left:8px;vertical-align:middle;">ローカル専用</span>` : ''}
+          ${s.adminConsole.note ? `<div style="font-size:.75em;color:var(--mut);margin-top:6px;line-height:1.6;">${aiEsc(s.adminConsole.note)}</div>` : ''}
+        </div>` : ''}
         <div class="proj-sect">公開記事数</div>
         <div class="proj-rev">
           <div class="proj-rev-item"><div class="proj-rev-val">${articles.total ?? '-'}</div><div class="proj-rev-lbl">累計${articles.asOf ? '（' + aiEsc(articles.asOf) + '時点）' : ''}</div></div>
