@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "インスタのプロフィール画像を抽出保存",
-      "startedAt": "2026-07-28T15:07:07.245Z",
-      "finishedAt": "2026-07-28T15:07:51.797Z"
+      "task": "46店のインスタを検索し画像抽出",
+      "startedAt": "2026-07-28T17:05:37.770Z",
+      "finishedAt": "2026-07-28T17:05:42.611Z"
     }
   },
   "usage": {
-    "todayInputTokens": 1110,
-    "todayOutputTokens": 478142,
-    "asOf": "2026-07-28T17:02:41.570Z"
+    "todayInputTokens": 1174,
+    "todayOutputTokens": 512393,
+    "asOf": "2026-07-28T17:06:48.735Z"
   },
-  "updatedAt": "2026-07-28T17:02:41.570Z"
+  "updatedAt": "2026-07-28T17:06:48.735Z"
 }
