@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "タグUI改善と基地の追加",
-      "startedAt": "2026-07-27T08:41:23.244Z",
-      "finishedAt": "2026-07-27T08:41:27.819Z"
+      "task": "ホットペッパーlogo_imageをロゴに活用",
+      "startedAt": "2026-07-28T10:57:04.228Z",
+      "finishedAt": "2026-07-28T10:57:07.964Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 120102,
-    "todayOutputTokens": 117858,
-    "asOf": "2026-07-28T10:49:55.833Z"
+    "todayInputTokens": 120166,
+    "todayOutputTokens": 162222,
+    "asOf": "2026-07-28T10:58:05.810Z"
   },
-  "updatedAt": "2026-07-28T10:49:55.833Z"
+  "updatedAt": "2026-07-28T10:58:05.810Z"
 }
