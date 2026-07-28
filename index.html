@@ -3343,6 +3343,7 @@ function renderAffiliateSites() {
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.pageViews ?? '-'}</div><div class="proj-rev-lbl">PV${s.traffic.since ? '（' + aiEsc(s.traffic.since) + '〜）' : ''}</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.activeUsers ?? '-'}</div><div class="proj-rev-lbl">ユーザー</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${s.traffic.sessions ?? '-'}</div><div class="proj-rev-lbl">セッション</div></div>
+          ${s.traffic.engagedSessions != null ? `<div class="proj-rev-item" title="10秒以上の滞在・2ページ以上の閲覧などを満たしたセッション。海外データセンターからのクローラーはここに乗らないため、実際の読者数に近い。"><div class="proj-rev-val" style="color:var(--grn);">${s.traffic.engagedSessions}</div><div class="proj-rev-lbl">実質訪問<span style="opacity:.6;">(エンゲージ)</span></div></div>` : ''}
         </div>
         ${nicheDailyHtml(s.traffic)}` : (gaLink ? `
         <div class="proj-sect" style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
