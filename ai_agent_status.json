@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Add 6 new venues to fukuoka-poker-navi",
-      "startedAt": "2026-07-28T20:02:49.373Z",
-      "finishedAt": "2026-07-28T20:02:53.064Z"
+      "task": "Grill PartyのIGロゴ追加PR",
+      "startedAt": "2026-07-28T20:11:11.379Z",
+      "finishedAt": "2026-07-28T20:11:14.638Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR30の品質チェック",
-      "startedAt": "2026-07-28T19:20:21.932Z",
-      "finishedAt": "2026-07-28T19:20:38.265Z"
+      "task": "コンカフェ・シーシャの閉店確認",
+      "startedAt": "2026-07-28T20:13:05.070Z",
+      "finishedAt": "2026-07-28T20:13:10.324Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 154436,
-    "todayOutputTokens": 1963902,
-    "asOf": "2026-07-28T20:10:14.323Z"
+    "todayInputTokens": 172953,
+    "todayOutputTokens": 2047744,
+    "asOf": "2026-07-28T20:17:34.811Z"
   },
-  "updatedAt": "2026-07-28T20:10:14.323Z"
+  "updatedAt": "2026-07-28T20:17:34.811Z"
 }
