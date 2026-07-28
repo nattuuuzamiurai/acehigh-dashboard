@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "未確認店の実在確認と閉店チェック",
-      "startedAt": "2026-07-28T19:10:35.950Z",
-      "finishedAt": "2026-07-28T19:10:59.646Z"
+      "task": "PR30の品質チェック",
+      "startedAt": "2026-07-28T19:20:21.932Z",
+      "finishedAt": "2026-07-28T19:20:38.265Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 133601,
-    "todayOutputTokens": 1584199,
-    "asOf": "2026-07-28T19:17:35.000Z"
+    "todayInputTokens": 148134,
+    "todayOutputTokens": 1658317,
+    "asOf": "2026-07-28T19:26:51.606Z"
   },
-  "updatedAt": "2026-07-28T19:17:35.000Z"
+  "updatedAt": "2026-07-28T19:26:51.606Z"
 }
