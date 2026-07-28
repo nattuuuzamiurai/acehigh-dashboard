@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Google写真をロゴなし店に$0で実装",
-      "startedAt": "2026-07-28T13:40:34.292Z",
-      "finishedAt": "2026-07-28T13:40:39.470Z"
+      "task": "インスタロゴ14店をサイトに組み込み",
+      "startedAt": "2026-07-28T15:27:17.641Z",
+      "finishedAt": "2026-07-28T15:27:56.722Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 58,
-    "todayOutputTokens": 47946,
-    "asOf": "2026-07-28T15:08:59.859Z"
+    "todayInputTokens": 270,
+    "todayOutputTokens": 123287,
+    "asOf": "2026-07-28T15:29:03.946Z"
   },
-  "updatedAt": "2026-07-28T15:08:59.859Z"
+  "updatedAt": "2026-07-28T15:29:03.946Z"
 }
