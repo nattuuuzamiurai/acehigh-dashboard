@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "134店の公式サイトロゴを探索(直接処理)",
-      "startedAt": "2026-07-28T08:38:34.903Z",
-      "finishedAt": "2026-07-28T08:38:38.598Z"
+      "task": "ロゴなし70店のFacebookロゴを探索",
+      "startedAt": "2026-07-28T14:26:14.833Z",
+      "finishedAt": "2026-07-28T14:26:19.219Z"
     }
   },
   "usage": {
-    "todayInputTokens": 152542,
-    "todayOutputTokens": 495497,
-    "asOf": "2026-07-28T14:11:51.515Z"
+    "todayInputTokens": 152954,
+    "todayOutputTokens": 566562,
+    "asOf": "2026-07-28T14:27:11.143Z"
   },
-  "updatedAt": "2026-07-28T14:11:51.515Z"
+  "updatedAt": "2026-07-28T14:27:11.143Z"
 }
