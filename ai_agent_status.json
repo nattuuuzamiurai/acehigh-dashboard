@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Google写真PR #25のGO/NO-GO(規約重点)",
-      "startedAt": "2026-07-28T14:10:51.365Z",
-      "finishedAt": "2026-07-28T14:10:57.212Z"
+      "task": "インスタロゴPR #27のGO/NO-GO(方針例外)",
+      "startedAt": "2026-07-28T15:48:24.703Z",
+      "finishedAt": "2026-07-28T15:48:28.803Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 482,
-    "todayOutputTokens": 158305,
-    "asOf": "2026-07-28T15:43:19.510Z"
+    "todayInputTokens": 540,
+    "todayOutputTokens": 170931,
+    "asOf": "2026-07-28T15:49:26.111Z"
   },
-  "updatedAt": "2026-07-28T15:43:19.510Z"
+  "updatedAt": "2026-07-28T15:49:26.111Z"
 }
