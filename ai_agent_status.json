@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "案Bネームタイルをロゴ代替に実装",
-      "startedAt": "2026-07-28T13:18:47.239Z",
-      "finishedAt": "2026-07-28T13:18:51.244Z"
+      "task": "Google写真をロゴなし店に$0で実装",
+      "startedAt": "2026-07-28T13:40:34.292Z",
+      "finishedAt": "2026-07-28T13:40:39.470Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 152138,
-    "todayOutputTokens": 400776,
-    "asOf": "2026-07-28T13:32:36.453Z"
+    "todayInputTokens": 152236,
+    "todayOutputTokens": 426569,
+    "asOf": "2026-07-28T13:41:26.656Z"
   },
-  "updatedAt": "2026-07-28T13:32:36.453Z"
+  "updatedAt": "2026-07-28T13:41:26.656Z"
 }
