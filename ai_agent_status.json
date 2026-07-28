@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "情報不足レコード解決の品質検証",
-      "startedAt": "2026-07-27T07:14:57.517Z",
-      "finishedAt": "2026-07-27T07:15:01.365Z"
+      "task": "Verify Fukuoka poker venues group C",
+      "startedAt": "2026-07-28T18:41:29.645Z",
+      "finishedAt": "2026-07-28T18:41:32.567Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 90685,
-    "todayOutputTokens": 1308640,
-    "asOf": "2026-07-28T18:39:55.938Z"
+    "todayInputTokens": 93412,
+    "todayOutputTokens": 1338828,
+    "asOf": "2026-07-28T18:41:56.462Z"
   },
-  "updatedAt": "2026-07-28T18:39:55.938Z"
+  "updatedAt": "2026-07-28T18:41:56.462Z"
 }
