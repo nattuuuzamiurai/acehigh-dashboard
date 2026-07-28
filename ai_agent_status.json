@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "大きな★表示PR #20のGO/NO-GO判定",
-      "startedAt": "2026-07-27T08:15:39.983Z",
-      "finishedAt": "2026-07-27T08:15:48.084Z"
+      "task": "ホットペッパーロゴPR #23のGO/NO-GO",
+      "startedAt": "2026-07-28T11:18:59.482Z",
+      "finishedAt": "2026-07-28T11:19:03.029Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 120334,
-    "todayOutputTokens": 209732,
-    "asOf": "2026-07-28T11:11:56.549Z"
+    "todayInputTokens": 120428,
+    "todayOutputTokens": 221625,
+    "asOf": "2026-07-28T11:20:01.022Z"
   },
-  "updatedAt": "2026-07-28T11:11:56.549Z"
+  "updatedAt": "2026-07-28T11:20:01.022Z"
 }
