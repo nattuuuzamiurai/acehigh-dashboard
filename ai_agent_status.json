@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "GO/NO-GO for PR #4",
-      "startedAt": "2026-07-28T20:45:47.239Z",
-      "finishedAt": "2026-07-28T20:45:52.303Z"
+      "task": "Re-judge PR #4 after fixes",
+      "startedAt": "2026-07-29T00:28:38.170Z",
+      "finishedAt": "2026-07-29T00:28:42.275Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 191045,
-    "todayOutputTokens": 2526573,
-    "asOf": "2026-07-29T00:28:05.087Z"
+    "todayInputTokens": 191109,
+    "todayOutputTokens": 2542176,
+    "asOf": "2026-07-29T00:29:06.883Z"
   },
-  "updatedAt": "2026-07-29T00:28:05.087Z"
+  "updatedAt": "2026-07-29T00:29:06.883Z"
 }
