@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "FST 5.0追記と申し送り4件の対応",
-      "startedAt": "2026-07-29T05:27:46.609Z",
-      "finishedAt": "2026-07-29T05:27:51.332Z"
+      "task": "フェーズ2の新カテゴリと134店の取り込み",
+      "startedAt": "2026-07-29T12:01:51.157Z",
+      "finishedAt": "2026-07-29T12:01:58.118Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR #5 の品質検証",
-      "startedAt": "2026-07-29T06:18:44.625Z",
-      "finishedAt": "2026-07-29T06:18:49.227Z"
+      "task": "PR35の品質チェック",
+      "startedAt": "2026-07-29T11:59:57.758Z",
+      "finishedAt": "2026-07-29T12:00:05.461Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 351206,
-    "todayOutputTokens": 3846912,
-    "asOf": "2026-07-29T11:09:08.212Z"
+    "todayInputTokens": 352143,
+    "todayOutputTokens": 3877921,
+    "asOf": "2026-07-29T12:02:35.202Z"
   },
-  "updatedAt": "2026-07-29T11:09:08.212Z"
+  "updatedAt": "2026-07-29T12:02:35.202Z"
 }
