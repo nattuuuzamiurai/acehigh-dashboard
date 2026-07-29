@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "月選択機能とFST静的ページ",
-      "startedAt": "2026-07-29T19:09:10.070Z",
-      "finishedAt": "2026-07-29T19:09:14.691Z"
+      "task": "Generate static venue pages for SEO",
+      "startedAt": "2026-07-29T19:34:03.295Z",
+      "finishedAt": "2026-07-29T19:34:29.917Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 145301,
-    "todayOutputTokens": 346981,
-    "asOf": "2026-07-29T19:12:07.563Z"
+    "todayInputTokens": 288495,
+    "todayOutputTokens": 588604,
+    "asOf": "2026-07-29T19:35:59.782Z"
   },
-  "updatedAt": "2026-07-29T19:12:07.563Z"
+  "updatedAt": "2026-07-29T19:35:59.782Z"
 }
