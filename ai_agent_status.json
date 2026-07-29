@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "スナック64店のロゴ探索",
-      "startedAt": "2026-07-29T15:51:02.974Z",
-      "finishedAt": "2026-07-29T15:51:29.610Z"
+      "task": "スナック54店のロゴ探索(再開)",
+      "startedAt": "2026-07-29T19:09:41.123Z",
+      "finishedAt": "2026-07-29T19:10:09.291Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 145190,
-    "todayOutputTokens": 334278,
-    "asOf": "2026-07-29T19:09:31.720Z"
+    "todayInputTokens": 145301,
+    "todayOutputTokens": 346981,
+    "asOf": "2026-07-29T19:12:07.563Z"
   },
-  "updatedAt": "2026-07-29T19:09:31.720Z"
+  "updatedAt": "2026-07-29T19:12:07.563Z"
 }
