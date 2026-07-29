@@ -1188,6 +1188,20 @@ window.KYOTEI_DATA = {
       "actual_ev": null
     },
     {
+      "venue_name": "三国",
+      "race_no": "9",
+      "start_time": "12:14",
+      "combo": "2-6-1",
+      "actual_combo": "2-4-1",
+      "ev": 1.34,
+      "odds": "96.0",
+      "prob_pct": "1.4",
+      "hit": "0",
+      "payout": "0",
+      "final_odds": "69.4",
+      "actual_ev": 0.965
+    },
+    {
       "venue_name": "徳山",
       "race_no": "7",
       "start_time": "11:31",
@@ -1949,6 +1963,20 @@ window.KYOTEI_DATA = {
           "payout": "",
           "final_odds": "",
           "actual_ev": null
+        },
+        {
+          "venue_name": "三国",
+          "race_no": "9",
+          "start_time": "12:14",
+          "combo": "2-6-1",
+          "actual_combo": "2-4-1",
+          "ev": 1.34,
+          "odds": "96.0",
+          "prob_pct": "1.4",
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "69.4",
+          "actual_ev": 0.965
         },
         {
           "venue_name": "徳山",
@@ -4361,6 +4389,21 @@ window.KYOTEI_DATA = {
           "actual_ev": null
         },
         {
+          "venue_name": "徳山",
+          "race_no": "8",
+          "start_time": "12:03",
+          "combo": "1-4-5",
+          "actual_combo": "1-2-3",
+          "ev": 0.52,
+          "has_ev": false,
+          "odds": "7.2",
+          "prob_pct": "7.2",
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "8.1",
+          "actual_ev": 0.583
+        },
+        {
           "venue_name": "平和島",
           "race_no": "6",
           "start_time": "14:25",
@@ -5589,6 +5632,21 @@ window.KYOTEI_DATA = {
           "payout": "",
           "final_odds": "",
           "actual_ev": null
+        },
+        {
+          "venue_name": "琵琶湖",
+          "race_no": "4",
+          "start_time": "12:11",
+          "combo": "1-3-2",
+          "actual_combo": "3-1-5",
+          "ev": 0.7,
+          "has_ev": false,
+          "odds": "21.5",
+          "prob_pct": "3.3",
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "14.9",
+          "actual_ev": 0.489
         },
         {
           "venue_name": "三国",
@@ -14877,7 +14935,7 @@ window.KYOTEI_DATA = {
           "race_no": "4",
           "start_time": "12:05",
           "combo": "1-5-3",
-          "n_bets": 6,
+          "n_bets": 12,
           "actual_combo": "",
           "prob_pct": "2.2",
           "ev": "",
