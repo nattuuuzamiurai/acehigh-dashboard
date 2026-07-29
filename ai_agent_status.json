@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Fix PR #4 per review feedback",
-      "startedAt": "2026-07-28T20:57:48.635Z",
-      "finishedAt": "2026-07-28T20:57:51.907Z"
+      "task": "大型バナーの横スライド化と広告の薄型化",
+      "startedAt": "2026-07-29T00:27:26.029Z",
+      "finishedAt": "2026-07-29T00:27:28.989Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 190739,
-    "todayOutputTokens": 2455774,
-    "asOf": "2026-07-28T21:02:00.971Z"
+    "todayInputTokens": 191045,
+    "todayOutputTokens": 2526573,
+    "asOf": "2026-07-29T00:28:05.087Z"
   },
-  "updatedAt": "2026-07-28T21:02:00.971Z"
+  "updatedAt": "2026-07-29T00:28:05.087Z"
 }
