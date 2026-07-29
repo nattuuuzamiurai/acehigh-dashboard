@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR33のGO/NO-GO判定",
-      "startedAt": "2026-07-29T00:53:10.873Z",
-      "finishedAt": "2026-07-29T00:53:15.144Z"
+      "task": "PR34のGO/NO-GO判定",
+      "startedAt": "2026-07-29T01:44:22.011Z",
+      "finishedAt": "2026-07-29T01:44:25.465Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 208729,
-    "todayOutputTokens": 3038295,
-    "asOf": "2026-07-29T01:43:11.810Z"
+    "todayInputTokens": 208763,
+    "todayOutputTokens": 3050149,
+    "asOf": "2026-07-29T01:44:56.487Z"
   },
-  "updatedAt": "2026-07-29T01:43:11.810Z"
+  "updatedAt": "2026-07-29T01:44:56.487Z"
 }
