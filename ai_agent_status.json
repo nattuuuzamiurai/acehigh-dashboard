@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "フェーズ2の新カテゴリと134店の取り込み",
-      "startedAt": "2026-07-29T12:01:51.157Z",
-      "finishedAt": "2026-07-29T12:01:58.118Z"
+      "task": "フェーズ2の公開実装",
+      "startedAt": "2026-07-29T15:56:53.848Z",
+      "finishedAt": "2026-07-29T15:57:00.264Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "メンズバー・ホスト等の調査",
-      "startedAt": "2026-07-29T10:41:35.648Z",
-      "finishedAt": "2026-07-29T10:41:41.220Z"
+      "task": "スナック64店のロゴ探索",
+      "startedAt": "2026-07-29T15:51:02.974Z",
+      "finishedAt": "2026-07-29T15:51:29.610Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 24,
-    "todayOutputTokens": 12477,
-    "asOf": "2026-07-29T15:27:47.109Z"
+    "todayInputTokens": 87319,
+    "todayOutputTokens": 94558,
+    "asOf": "2026-07-29T15:57:33.384Z"
   },
-  "updatedAt": "2026-07-29T15:27:47.109Z"
+  "updatedAt": "2026-07-29T15:57:33.384Z"
 }
