@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "フェーズ2の公開実装",
-      "startedAt": "2026-07-29T15:56:53.848Z",
-      "finishedAt": "2026-07-29T15:57:00.264Z"
+      "task": "月選択機能とFST静的ページ",
+      "startedAt": "2026-07-29T19:09:10.070Z",
+      "finishedAt": "2026-07-29T19:09:14.691Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR36のGO/NO-GO判定",
-      "startedAt": "2026-07-29T13:05:56.815Z",
-      "finishedAt": "2026-07-29T13:06:04.244Z"
+      "task": "PR37のGO/NO-GO判定",
+      "startedAt": "2026-07-29T19:06:36.675Z",
+      "finishedAt": "2026-07-29T19:08:18.849Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 145138,
-    "todayOutputTokens": 306299,
-    "asOf": "2026-07-29T16:56:42.664Z"
+    "todayInputTokens": 145190,
+    "todayOutputTokens": 334278,
+    "asOf": "2026-07-29T19:09:31.720Z"
   },
-  "updatedAt": "2026-07-29T16:56:42.664Z"
+  "updatedAt": "2026-07-29T19:09:31.720Z"
 }
