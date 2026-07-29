@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "Google Place Photosの費用・無料枠を確定",
-      "startedAt": "2026-07-28T13:18:17.270Z",
-      "finishedAt": "2026-07-28T13:18:21.325Z"
+      "task": "メンズバー・ホスト等の調査",
+      "startedAt": "2026-07-29T10:41:35.648Z",
+      "finishedAt": "2026-07-29T10:41:41.220Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 211961,
-    "todayOutputTokens": 3685170,
-    "asOf": "2026-07-29T10:37:17.657Z"
+    "todayInputTokens": 224935,
+    "todayOutputTokens": 3735419,
+    "asOf": "2026-07-29T10:42:53.478Z"
   },
-  "updatedAt": "2026-07-29T10:37:17.657Z"
+  "updatedAt": "2026-07-29T10:42:53.478Z"
 }
