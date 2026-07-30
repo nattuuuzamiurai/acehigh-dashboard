@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "QA check PR 14 venue image intake tool",
-      "startedAt": "2026-07-30T17:00:15.488Z",
-      "finishedAt": "2026-07-30T17:00:27.055Z"
+      "task": "Re-verify PR14 tournament-merge fix",
+      "startedAt": "2026-07-30T17:38:26.591Z",
+      "finishedAt": "2026-07-30T17:38:45.090Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 32633,
-    "todayOutputTokens": 1192749,
-    "asOf": "2026-07-30T17:32:30.698Z"
+    "todayInputTokens": 32691,
+    "todayOutputTokens": 1202914,
+    "asOf": "2026-07-30T17:39:37.960Z"
   },
-  "updatedAt": "2026-07-30T17:32:30.698Z"
+  "updatedAt": "2026-07-30T17:39:37.960Z"
 }
