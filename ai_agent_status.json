@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "組合名簿由来16店の業態再確認",
-      "startedAt": "2026-07-30T11:50:28.026Z",
-      "finishedAt": "2026-07-30T11:50:34.586Z"
+      "task": "Re-check PR #7 after fixes and merge",
+      "startedAt": "2026-07-30T12:36:00.549Z",
+      "finishedAt": "2026-07-30T12:36:07.505Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 323743,
-    "todayOutputTokens": 1904910,
-    "asOf": "2026-07-30T12:25:08.897Z"
+    "todayInputTokens": 323799,
+    "todayOutputTokens": 1925596,
+    "asOf": "2026-07-30T12:36:57.452Z"
   },
-  "updatedAt": "2026-07-30T12:25:08.897Z"
+  "updatedAt": "2026-07-30T12:36:57.452Z"
 }
