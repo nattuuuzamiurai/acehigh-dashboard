@@ -1,16 +1,16 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "ふくおかポーカーナビ 申し送り5件修正",
       "startedAt": "2026-07-30T14:50:13.913Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-30T15:20:05.299Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "Waitinglist取り込みの品質チェック",
-      "startedAt": "2026-07-30T13:51:45.470Z",
-      "finishedAt": "2026-07-30T14:07:35.640Z"
+      "status": "running",
+      "task": "PR#12 品質チェック",
+      "startedAt": "2026-07-30T15:20:40.106Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 280,
-    "todayOutputTokens": 120252,
-    "asOf": "2026-07-30T15:12:38.009Z"
+    "todayInputTokens": 548,
+    "todayOutputTokens": 187439,
+    "asOf": "2026-07-30T15:24:18.056Z"
   },
-  "updatedAt": "2026-07-30T15:12:38.009Z"
+  "updatedAt": "2026-07-30T15:24:18.056Z"
 }
