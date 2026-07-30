@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR #8 の品質検証",
-      "startedAt": "2026-07-30T02:38:50.686Z",
-      "finishedAt": "2026-07-30T02:38:55.913Z"
+      "task": "PR37の条件解除確認",
+      "startedAt": "2026-07-30T09:44:54.165Z",
+      "finishedAt": "2026-07-30T09:45:06.931Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 307719,
-    "todayOutputTokens": 1499933,
-    "asOf": "2026-07-30T09:44:35.848Z"
+    "todayInputTokens": 307741,
+    "todayOutputTokens": 1510230,
+    "asOf": "2026-07-30T09:45:49.718Z"
   },
-  "updatedAt": "2026-07-30T09:44:35.848Z"
+  "updatedAt": "2026-07-30T09:45:49.718Z"
 }
