@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-30T18:27:35.121Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "4店の自動取得データ突き合わせ",
-      "startedAt": "2026-07-30T18:13:12.318Z",
-      "finishedAt": "2026-07-30T18:13:28.056Z"
+      "status": "running",
+      "task": "PR #15の品質チェック",
+      "startedAt": "2026-07-30T18:50:29.246Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 33545,
-    "todayOutputTokens": 1472136,
-    "asOf": "2026-07-30T18:37:38.111Z"
+    "todayInputTokens": 33735,
+    "todayOutputTokens": 1523579,
+    "asOf": "2026-07-30T18:50:26.181Z"
   },
-  "updatedAt": "2026-07-30T18:37:38.111Z"
+  "updatedAt": "2026-07-30T18:50:26.181Z"
 }
