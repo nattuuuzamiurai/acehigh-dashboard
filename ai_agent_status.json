@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Fix past-date sort bug in tournament-merge.js",
-      "startedAt": "2026-07-30T17:19:01.484Z",
-      "finishedAt": "2026-07-30T17:19:13.133Z"
+      "task": "Resolve PR14 README merge conflict",
+      "startedAt": "2026-07-30T17:57:35.256Z",
+      "finishedAt": "2026-07-30T17:57:45.460Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 32836,
-    "todayOutputTokens": 1235973,
-    "asOf": "2026-07-30T17:53:44.107Z"
+    "todayInputTokens": 32868,
+    "todayOutputTokens": 1244031,
+    "asOf": "2026-07-30T17:58:13.724Z"
   },
-  "updatedAt": "2026-07-30T17:53:44.107Z"
+  "updatedAt": "2026-07-30T17:58:13.724Z"
 }
