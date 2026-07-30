@@ -1,16 +1,16 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "Waitinglist自動取り込みの実装",
       "startedAt": "2026-07-30T13:30:00.884Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-30T13:51:10.464Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "PR38の品質チェック",
-      "startedAt": "2026-07-30T13:04:58.768Z",
-      "finishedAt": "2026-07-30T13:05:21.330Z"
+      "status": "running",
+      "task": "Waitinglist取り込みの品質チェック",
+      "startedAt": "2026-07-30T13:51:45.470Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 324748,
-    "todayOutputTokens": 2200760,
-    "asOf": "2026-07-30T13:40:39.636Z"
+    "todayInputTokens": 324988,
+    "todayOutputTokens": 2286450,
+    "asOf": "2026-07-30T13:57:10.338Z"
   },
-  "updatedAt": "2026-07-30T13:40:39.636Z"
+  "updatedAt": "2026-07-30T13:57:10.338Z"
 }
