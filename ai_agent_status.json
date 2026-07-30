@@ -1,22 +1,22 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "閉店検知と未確認チップの実装",
-      "startedAt": "2026-07-30T11:49:56.354Z",
-      "finishedAt": "2026-07-30T11:50:05.045Z"
+      "status": "running",
+      "task": "Waitinglist自動取り込みの実装",
+      "startedAt": "2026-07-30T13:30:00.884Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Re-check PR #7 after fixes and merge",
-      "startedAt": "2026-07-30T12:36:00.549Z",
-      "finishedAt": "2026-07-30T12:36:07.505Z"
+      "task": "PR38の品質チェック",
+      "startedAt": "2026-07-30T13:04:58.768Z",
+      "finishedAt": "2026-07-30T13:05:21.330Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR #8 の公開GO/NO-GO判定(再実行)",
-      "startedAt": "2026-07-30T08:28:54.780Z",
-      "finishedAt": "2026-07-30T08:29:03.489Z"
+      "task": "Final GO/NO-GO for PR #7",
+      "startedAt": "2026-07-30T13:32:51.208Z",
+      "finishedAt": "2026-07-30T13:32:57.474Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 323891,
-    "todayOutputTokens": 1947676,
-    "asOf": "2026-07-30T12:43:33.170Z"
+    "todayInputTokens": 324748,
+    "todayOutputTokens": 2200760,
+    "asOf": "2026-07-30T13:40:39.636Z"
   },
-  "updatedAt": "2026-07-30T12:43:33.170Z"
+  "updatedAt": "2026-07-30T13:40:39.636Z"
 }
