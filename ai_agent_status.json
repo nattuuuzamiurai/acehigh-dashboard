@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "層2バリデーションと軽微修正",
-      "startedAt": "2026-07-30T21:14:18.884Z",
-      "finishedAt": "2026-07-30T21:14:24.986Z"
+      "task": "CASINO Arrows小倉の有効化",
+      "startedAt": "2026-07-30T22:27:33.573Z",
+      "finishedAt": "2026-07-30T22:27:39.650Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 36213,
-    "todayOutputTokens": 2315954,
-    "asOf": "2026-07-30T22:21:14.834Z"
+    "todayInputTokens": 36302,
+    "todayOutputTokens": 2364077,
+    "asOf": "2026-07-30T22:28:13.083Z"
   },
-  "updatedAt": "2026-07-30T22:21:14.834Z"
+  "updatedAt": "2026-07-30T22:28:13.083Z"
 }
