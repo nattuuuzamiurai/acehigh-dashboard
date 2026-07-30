@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Build Apify-based Instagram post fetcher",
-      "startedAt": "2026-07-30T18:27:29.488Z",
-      "finishedAt": "2026-07-30T18:27:35.121Z"
+      "task": "管理コンソールの自動取得対応",
+      "startedAt": "2026-07-30T18:51:11.399Z",
+      "finishedAt": "2026-07-30T18:51:19.650Z"
     },
     "qa-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "PR #15の品質チェック",
       "startedAt": "2026-07-30T18:50:29.246Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-30T18:50:34.072Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 33735,
-    "todayOutputTokens": 1523579,
-    "asOf": "2026-07-30T18:50:26.181Z"
+    "todayInputTokens": 33833,
+    "todayOutputTokens": 1552810,
+    "asOf": "2026-07-30T18:51:43.554Z"
   },
-  "updatedAt": "2026-07-30T18:50:26.181Z"
+  "updatedAt": "2026-07-30T18:51:43.554Z"
 }
