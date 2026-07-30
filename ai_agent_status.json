@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "管理コンソールの自動取得対応",
-      "startedAt": "2026-07-30T18:51:11.399Z",
-      "finishedAt": "2026-07-30T18:51:19.650Z"
+      "task": "Fix source:auto data-loss bug in PR16",
+      "startedAt": "2026-07-30T18:59:41.118Z",
+      "finishedAt": "2026-07-30T18:59:44.850Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 33833,
-    "todayOutputTokens": 1552810,
-    "asOf": "2026-07-30T18:51:43.554Z"
+    "todayInputTokens": 34109,
+    "todayOutputTokens": 1629369,
+    "asOf": "2026-07-30T18:59:54.905Z"
   },
-  "updatedAt": "2026-07-30T18:51:43.554Z"
+  "updatedAt": "2026-07-30T18:59:54.905Z"
 }
