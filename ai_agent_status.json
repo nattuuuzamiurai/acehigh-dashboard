@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Implement Instagram SNS monitor for 6 poker venues",
-      "startedAt": "2026-07-30T15:35:48.534Z",
-      "finishedAt": "2026-07-30T15:36:25.049Z"
+      "task": "Repurpose PR13 into venue-submitted image intake tool",
+      "startedAt": "2026-07-30T16:32:28.931Z",
+      "finishedAt": "2026-07-30T16:32:35.474Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 31655,
-    "todayOutputTokens": 841577,
-    "asOf": "2026-07-30T16:30:05.753Z"
+    "todayInputTokens": 31765,
+    "todayOutputTokens": 893034,
+    "asOf": "2026-07-30T16:34:18.574Z"
   },
-  "updatedAt": "2026-07-30T16:30:05.753Z"
+  "updatedAt": "2026-07-30T16:34:18.574Z"
 }
