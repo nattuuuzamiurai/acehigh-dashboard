@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "「今日」ボタンの追加と申し送り3件",
-      "startedAt": "2026-07-30T09:44:12.054Z",
-      "finishedAt": null
+      "startedAt": "2026-07-30T09:46:40.992Z",
+      "finishedAt": "2026-07-30T09:46:51.135Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 307741,
-    "todayOutputTokens": 1510230,
-    "asOf": "2026-07-30T09:45:49.718Z"
+    "todayInputTokens": 307786,
+    "todayOutputTokens": 1526848,
+    "asOf": "2026-07-30T09:48:44.602Z"
   },
-  "updatedAt": "2026-07-30T09:45:49.718Z"
+  "updatedAt": "2026-07-30T09:48:44.602Z"
 }
