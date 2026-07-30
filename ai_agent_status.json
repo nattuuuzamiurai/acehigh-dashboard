@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-30T13:51:10.464Z"
     },
     "qa-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "Waitinglist取り込みの品質チェック",
       "startedAt": "2026-07-30T13:51:45.470Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-30T14:07:35.640Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 325119,
-    "todayOutputTokens": 2332438,
-    "asOf": "2026-07-30T14:05:48.965Z"
+    "todayInputTokens": 325155,
+    "todayOutputTokens": 2338346,
+    "asOf": "2026-07-30T14:08:45.799Z"
   },
-  "updatedAt": "2026-07-30T14:05:48.965Z"
+  "updatedAt": "2026-07-30T14:08:45.799Z"
 }
