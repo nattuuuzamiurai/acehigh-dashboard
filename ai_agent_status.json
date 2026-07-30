@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Resolve PR14 README merge conflict",
-      "startedAt": "2026-07-30T17:57:35.256Z",
-      "finishedAt": "2026-07-30T17:57:45.460Z"
+      "task": "dataRange店舗別化と日次再生成",
+      "startedAt": "2026-07-30T18:12:38.245Z",
+      "finishedAt": "2026-07-30T18:13:09.553Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Re-verify PR14 tournament-merge fix",
-      "startedAt": "2026-07-30T17:38:26.591Z",
-      "finishedAt": "2026-07-30T17:38:45.090Z"
+      "task": "4店の自動取得データ突き合わせ",
+      "startedAt": "2026-07-30T18:13:12.318Z",
+      "finishedAt": "2026-07-30T18:13:28.056Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 32977,
-    "todayOutputTokens": 1265534,
-    "asOf": "2026-07-30T18:12:17.538Z"
+    "todayInputTokens": 32997,
+    "todayOutputTokens": 1297576,
+    "asOf": "2026-07-30T18:13:39.481Z"
   },
-  "updatedAt": "2026-07-30T18:12:17.538Z"
+  "updatedAt": "2026-07-30T18:13:39.481Z"
 }
