@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "「今日」ボタンの追加と申し送り3件",
-      "startedAt": "2026-07-30T10:23:40.482Z",
-      "finishedAt": "2026-07-30T10:23:49.890Z"
+      "task": "閉店検知と未確認チップの実装",
+      "startedAt": "2026-07-30T11:49:56.354Z",
+      "finishedAt": "2026-07-30T11:50:05.045Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR #9 の検証(逐次記録方式)",
-      "startedAt": "2026-07-30T11:37:33.685Z",
-      "finishedAt": "2026-07-30T11:37:41.059Z"
+      "task": "組合名簿由来16店の業態再確認",
+      "startedAt": "2026-07-30T11:50:28.026Z",
+      "finishedAt": "2026-07-30T11:50:34.586Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 308478,
-    "todayOutputTokens": 1778610,
-    "asOf": "2026-07-30T11:46:43.834Z"
+    "todayInputTokens": 308602,
+    "todayOutputTokens": 1820681,
+    "asOf": "2026-07-30T11:51:32.101Z"
   },
-  "updatedAt": "2026-07-30T11:46:43.834Z"
+  "updatedAt": "2026-07-30T11:51:32.101Z"
 }
