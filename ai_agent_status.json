@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビ 申し送り5件修正",
-      "startedAt": "2026-07-30T14:50:13.913Z",
-      "finishedAt": "2026-07-30T15:20:05.299Z"
+      "task": "スナックTier B/C の取り込み判断",
+      "startedAt": "2026-07-30T15:28:28.850Z",
+      "finishedAt": "2026-07-30T15:28:56.668Z"
     },
     "qa-lead": {
       "status": "running",
@@ -20,15 +20,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "U3ハイファッションゴスの深掘り",
-      "startedAt": "2026-07-27T08:50:45.422Z",
-      "finishedAt": "2026-07-27T08:57:52.599Z"
+      "task": "地元編集コンテンツの執筆",
+      "startedAt": "2026-07-30T15:29:15.051Z",
+      "finishedAt": "2026-07-30T15:29:34.268Z"
     },
     "planning-lead": {
       "status": "idle",
-      "task": "スナック54店のロゴ探索(再開)",
-      "startedAt": "2026-07-29T19:09:41.123Z",
-      "finishedAt": "2026-07-29T19:10:09.291Z"
+      "task": "保留27店の出典探し",
+      "startedAt": "2026-07-30T15:28:51.484Z",
+      "finishedAt": "2026-07-30T15:29:00.950Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 548,
-    "todayOutputTokens": 187439,
-    "asOf": "2026-07-30T15:24:18.056Z"
+    "todayInputTokens": 768,
+    "todayOutputTokens": 268576,
+    "asOf": "2026-07-30T15:30:05.572Z"
   },
-  "updatedAt": "2026-07-30T15:24:18.056Z"
+  "updatedAt": "2026-07-30T15:30:05.572Z"
 }
