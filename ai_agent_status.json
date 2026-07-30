@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "CASINO Arrows小倉の有効化",
-      "startedAt": "2026-07-30T22:27:33.573Z",
-      "finishedAt": "2026-07-30T22:27:39.650Z"
+      "task": "定期開催と自動取込の重複排除",
+      "startedAt": "2026-07-30T23:10:42.841Z",
+      "finishedAt": "2026-07-30T23:10:49.880Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 37139,
-    "todayOutputTokens": 2657239,
-    "asOf": "2026-07-30T23:06:28.326Z"
+    "todayInputTokens": 37273,
+    "todayOutputTokens": 2719568,
+    "asOf": "2026-07-30T23:11:14.525Z"
   },
-  "updatedAt": "2026-07-30T23:06:28.326Z"
+  "updatedAt": "2026-07-30T23:11:14.525Z"
 }
