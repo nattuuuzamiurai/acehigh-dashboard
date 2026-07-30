@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "QA check PR #7 venue static pages",
-      "startedAt": "2026-07-30T02:18:35.988Z",
-      "finishedAt": "2026-07-30T02:18:39.191Z"
+      "task": "PR #8 の品質検証",
+      "startedAt": "2026-07-30T02:38:50.686Z",
+      "finishedAt": "2026-07-30T02:38:55.913Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 305975,
-    "todayOutputTokens": 872744,
-    "asOf": "2026-07-30T02:19:06.947Z"
+    "todayInputTokens": 306365,
+    "todayOutputTokens": 967472,
+    "asOf": "2026-07-30T02:39:20.101Z"
   },
-  "updatedAt": "2026-07-30T02:19:06.947Z"
+  "updatedAt": "2026-07-30T02:39:20.101Z"
 }
