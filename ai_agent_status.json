@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Generate static venue pages for SEO",
-      "startedAt": "2026-07-29T19:34:03.295Z",
-      "finishedAt": "2026-07-29T19:34:29.917Z"
+      "task": "中断した作業の引き継ぎとPR作成",
+      "startedAt": "2026-07-30T02:07:55.991Z",
+      "finishedAt": "2026-07-30T02:08:00.248Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 305629,
-    "todayOutputTokens": 791048,
-    "asOf": "2026-07-30T02:04:13.189Z"
+    "todayInputTokens": 305721,
+    "todayOutputTokens": 812535,
+    "asOf": "2026-07-30T02:08:43.243Z"
   },
-  "updatedAt": "2026-07-30T02:04:13.189Z"
+  "updatedAt": "2026-07-30T02:08:43.243Z"
 }
