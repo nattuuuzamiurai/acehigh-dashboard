@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "Waitinglist自動取り込みの実装",
-      "startedAt": "2026-07-30T13:30:00.884Z",
-      "finishedAt": "2026-07-30T13:51:10.464Z"
+      "status": "running",
+      "task": "ふくおかポーカーナビ 申し送り5件修正",
+      "startedAt": "2026-07-30T14:50:13.913Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 325946,
-    "todayOutputTokens": 2484504,
-    "asOf": "2026-07-30T14:46:57.463Z"
+    "todayInputTokens": 328413,
+    "todayOutputTokens": 2576965,
+    "asOf": "2026-07-30T14:56:17.596Z"
   },
-  "updatedAt": "2026-07-30T14:46:57.463Z"
+  "updatedAt": "2026-07-30T14:56:17.596Z"
 }
