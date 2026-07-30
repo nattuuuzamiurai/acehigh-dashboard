@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Repurpose PR13 into venue-submitted image intake tool",
-      "startedAt": "2026-07-30T16:32:28.931Z",
-      "finishedAt": "2026-07-30T16:32:35.474Z"
+      "task": "Fix past-date sort bug in tournament-merge.js",
+      "startedAt": "2026-07-30T17:19:01.484Z",
+      "finishedAt": "2026-07-30T17:19:13.133Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 32451,
-    "todayOutputTokens": 1141910,
-    "asOf": "2026-07-30T17:18:40.668Z"
+    "todayInputTokens": 32465,
+    "todayOutputTokens": 1147484,
+    "asOf": "2026-07-30T17:20:13.521Z"
   },
-  "updatedAt": "2026-07-30T17:18:40.668Z"
+  "updatedAt": "2026-07-30T17:20:13.521Z"
 }
