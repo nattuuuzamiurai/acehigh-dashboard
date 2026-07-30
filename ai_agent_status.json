@@ -7,10 +7,10 @@
       "finishedAt": "2026-07-30T15:36:25.049Z"
     },
     "qa-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "PR42の品質チェック",
       "startedAt": "2026-07-30T16:21:37.227Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-30T16:21:46.102Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 31469,
-    "todayOutputTokens": 786850,
-    "asOf": "2026-07-30T16:21:41.771Z"
+    "todayInputTokens": 31481,
+    "todayOutputTokens": 787812,
+    "asOf": "2026-07-30T16:22:14.287Z"
   },
-  "updatedAt": "2026-07-30T16:21:41.771Z"
+  "updatedAt": "2026-07-30T16:22:14.287Z"
 }
