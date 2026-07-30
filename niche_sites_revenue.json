@@ -148,7 +148,7 @@
       "status": "運用中",
       "inquiry": {
         "statusFile": "kurume_bar_inquiry_status.json",
-        "responsesUrl": "",
+        "responsesUrl": "https://docs.google.com/spreadsheets/d/1rqCb8OORAz59zgrYa_sEgdN66dIWMKaHOJJ45ghjI70/edit",
         "formUrl": "https://docs.google.com/forms/d/1lH6enWrURcRr9SdC1QTukiZp25MPJkX_TrIA85RaNm4/edit#responses",
         "note": "件数は kurume_bar_inquiry_status.json 由来(個人情報は含めず件数のみ)。回答はフォームの回答タブ、または responsesUrl 設定後は回答スプレッドシートで確認。"
       },
