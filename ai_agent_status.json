@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Fix source:auto data-loss bug in PR16",
-      "startedAt": "2026-07-30T18:59:41.118Z",
-      "finishedAt": "2026-07-30T18:59:44.850Z"
+      "task": "日付検査とInstagram側再生成",
+      "startedAt": "2026-07-30T20:15:49.634Z",
+      "finishedAt": "2026-07-30T20:16:08.464Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 35011,
-    "todayOutputTokens": 1888183,
-    "asOf": "2026-07-30T20:12:26.689Z"
+    "todayInputTokens": 35064,
+    "todayOutputTokens": 1914533,
+    "asOf": "2026-07-30T20:19:12.975Z"
   },
-  "updatedAt": "2026-07-30T20:12:26.689Z"
+  "updatedAt": "2026-07-30T20:19:12.975Z"
 }
