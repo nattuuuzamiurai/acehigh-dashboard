@@ -13,10 +13,10 @@
       "finishedAt": "2026-07-30T15:33:25.406Z"
     },
     "review-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "PR#12 最終GO/NO-GO判定",
       "startedAt": "2026-07-30T15:33:59.093Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-30T15:40:06.052Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 28936,
-    "todayOutputTokens": 417488,
-    "asOf": "2026-07-30T15:38:11.877Z"
+    "todayInputTokens": 30758,
+    "todayOutputTokens": 528126,
+    "asOf": "2026-07-30T15:45:50.151Z"
   },
-  "updatedAt": "2026-07-30T15:38:11.877Z"
+  "updatedAt": "2026-07-30T15:45:50.151Z"
 }
