@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Re-verify PR16 source:semi fix",
-      "startedAt": "2026-07-30T19:05:29.650Z",
-      "finishedAt": "2026-07-30T19:05:37.723Z"
+      "task": "PR #20の品質チェック",
+      "startedAt": "2026-07-30T22:43:03.251Z",
+      "finishedAt": "2026-07-30T22:43:09.673Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 36302,
-    "todayOutputTokens": 2364077,
-    "asOf": "2026-07-30T22:28:13.083Z"
+    "todayInputTokens": 36877,
+    "todayOutputTokens": 2546669,
+    "asOf": "2026-07-30T22:52:21.497Z"
   },
-  "updatedAt": "2026-07-30T22:28:13.083Z"
+  "updatedAt": "2026-07-30T22:52:21.497Z"
 }
