@@ -8,15 +8,15 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR42の品質チェック",
-      "startedAt": "2026-07-30T16:21:37.227Z",
-      "finishedAt": "2026-07-30T16:21:46.102Z"
+      "task": "QA check PR 14 venue image intake tool",
+      "startedAt": "2026-07-30T17:00:15.488Z",
+      "finishedAt": "2026-07-30T17:00:27.055Z"
     },
     "review-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "PR #11のGO/NO-GO判定",
       "startedAt": "2026-07-30T16:45:18.415Z",
-      "finishedAt": null
+      "finishedAt": "2026-07-30T17:00:36.901Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 32106,
-    "todayOutputTokens": 1041883,
-    "asOf": "2026-07-30T16:50:25.825Z"
+    "todayInputTokens": 32230,
+    "todayOutputTokens": 1081123,
+    "asOf": "2026-07-30T17:01:17.300Z"
   },
-  "updatedAt": "2026-07-30T16:50:25.825Z"
+  "updatedAt": "2026-07-30T17:01:17.300Z"
 }
