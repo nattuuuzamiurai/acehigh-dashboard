@@ -3,8 +3,8 @@
     "dev-lead": {
       "status": "idle",
       "task": "「今日」ボタンの追加と申し送り3件",
-      "startedAt": "2026-07-30T09:46:40.992Z",
-      "finishedAt": "2026-07-30T09:46:51.135Z"
+      "startedAt": "2026-07-30T10:23:40.482Z",
+      "finishedAt": "2026-07-30T10:23:49.890Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 307907,
-    "todayOutputTokens": 1573860,
-    "asOf": "2026-07-30T10:22:51.846Z"
+    "todayInputTokens": 307925,
+    "todayOutputTokens": 1582965,
+    "asOf": "2026-07-30T10:24:09.463Z"
   },
-  "updatedAt": "2026-07-30T10:22:51.846Z"
+  "updatedAt": "2026-07-30T10:24:09.463Z"
 }
