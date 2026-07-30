@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "Fix PR #7 title/desc hedging and sitemap",
-      "startedAt": "2026-07-30T07:48:18.443Z",
-      "finishedAt": "2026-07-30T07:48:24.362Z"
+      "status": "running",
+      "task": "「今日」ボタンの追加と申し送り3件",
+      "startedAt": "2026-07-30T09:44:12.054Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 307697,
-    "todayOutputTokens": 1475016,
-    "asOf": "2026-07-30T08:41:59.308Z"
+    "todayInputTokens": 307719,
+    "todayOutputTokens": 1499933,
+    "asOf": "2026-07-30T09:44:35.848Z"
   },
-  "updatedAt": "2026-07-30T08:41:59.308Z"
+  "updatedAt": "2026-07-30T09:44:35.848Z"
 }
