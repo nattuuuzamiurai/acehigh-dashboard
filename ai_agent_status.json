@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "dataRange店舗別化と日次再生成",
-      "startedAt": "2026-07-30T18:12:38.245Z",
-      "finishedAt": "2026-07-30T18:13:09.553Z"
+      "task": "Build Apify-based Instagram post fetcher",
+      "startedAt": "2026-07-30T18:27:29.488Z",
+      "finishedAt": "2026-07-30T18:27:35.121Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 33147,
-    "todayOutputTokens": 1332447,
-    "asOf": "2026-07-30T18:21:20.654Z"
+    "todayInputTokens": 33303,
+    "todayOutputTokens": 1374329,
+    "asOf": "2026-07-30T18:27:54.263Z"
   },
-  "updatedAt": "2026-07-30T18:21:20.654Z"
+  "updatedAt": "2026-07-30T18:27:54.263Z"
 }
