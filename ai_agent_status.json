@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "dry-run入力の追加",
-      "startedAt": "2026-07-31T11:47:29.586Z",
-      "finishedAt": "2026-07-31T11:47:39.114Z"
+      "task": "Vision出力の切り捨て対策",
+      "startedAt": "2026-07-31T14:09:48.582Z",
+      "finishedAt": "2026-07-31T14:09:57.480Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 40436,
-    "todayOutputTokens": 3619643,
-    "asOf": "2026-07-31T13:48:46.145Z"
+    "todayInputTokens": 40530,
+    "todayOutputTokens": 3661728,
+    "asOf": "2026-07-31T14:10:34.815Z"
   },
-  "updatedAt": "2026-07-31T13:48:46.145Z"
+  "updatedAt": "2026-07-31T14:10:34.815Z"
 }
