@@ -1,7 +1,7 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-07-31 20:39",
-  "today_label": "2026年7月31日",
-  "pred_date": "2026/07/31",
+  "updated": "2026-08-01 20:39",
+  "today_label": "2026年8月1日",
+  "pred_date": "2026/08/01",
   "pred_is_today": true,
   "ev_threshold": 1.3,
   "proven_params": {
@@ -354,6 +354,18 @@ window.KYOTEI_DATA = {
   ],
   "ev_monthly_demos": [
     {
+      "total_bets": 0,
+      "total_hits": 0,
+      "total_invested": 0,
+      "total_returned": 0,
+      "roi": -100.0,
+      "daily": [],
+      "start_label": "8/1",
+      "end_label": "8/31",
+      "month_label": "2026年8月",
+      "is_current": true
+    },
+    {
       "total_bets": 2163,
       "total_hits": 57,
       "total_invested": 216300,
@@ -572,7 +584,7 @@ window.KYOTEI_DATA = {
       "start_label": "7/1",
       "end_label": "7/31",
       "month_label": "2026年7月",
-      "is_current": true
+      "is_current": false
     },
     {
       "total_bets": 136,
@@ -647,8 +659,8 @@ window.KYOTEI_DATA = {
   "today_preds": [],
   "pred_days": [
     {
-      "date_str": "20260731",
-      "date_label": "2026/07/31",
+      "date_str": "20260801",
+      "date_label": "2026/08/01",
       "is_today": true,
       "preds": []
     },
@@ -3789,6 +3801,18 @@ window.KYOTEI_DATA = {
   ],
   "prob_monthly_demos": [
     {
+      "total_bets": 0,
+      "total_hits": 0,
+      "total_invested": 0,
+      "total_returned": 0,
+      "roi": -100.0,
+      "daily": [],
+      "start_label": "8/1",
+      "end_label": "8/31",
+      "month_label": "2026年8月",
+      "is_current": true
+    },
+    {
       "total_bets": 3274,
       "total_hits": 233,
       "total_invested": 327400,
@@ -4007,7 +4031,7 @@ window.KYOTEI_DATA = {
       "start_label": "7/1",
       "end_label": "7/31",
       "month_label": "2026年7月",
-      "is_current": true
+      "is_current": false
     },
     {
       "total_bets": 227,
@@ -4097,8 +4121,8 @@ window.KYOTEI_DATA = {
   ],
   "prob_pred_days": [
     {
-      "date_str": "20260731",
-      "date_label": "2026/07/31",
+      "date_str": "20260801",
+      "date_label": "2026/08/01",
       "is_today": true,
       "preds": []
     },
@@ -11854,6 +11878,16 @@ window.KYOTEI_DATA = {
   ],
   "proven_monthly_demos": [
     {
+      "total_bets": 0,
+      "total_hits": 0,
+      "total_invested": 0,
+      "total_returned": 0,
+      "roi": -100.0,
+      "daily": [],
+      "month_label": "2026年8月",
+      "is_current": true
+    },
+    {
       "total_bets": 1234,
       "total_hits": 111,
       "total_invested": 123400,
@@ -12062,7 +12096,7 @@ window.KYOTEI_DATA = {
         }
       ],
       "month_label": "2026年7月",
-      "is_current": true
+      "is_current": false
     },
     {
       "total_bets": 69,
@@ -12094,8 +12128,8 @@ window.KYOTEI_DATA = {
   ],
   "proven_pred_days": [
     {
-      "date_str": "20260731",
-      "date_label": "2026/07/31",
+      "date_str": "20260801",
+      "date_label": "2026/08/01",
       "is_today": true,
       "preds": []
     },
@@ -16042,6 +16076,16 @@ window.KYOTEI_DATA = {
   ],
   "formation_monthly_demos": [
     {
+      "total_bets": 0,
+      "total_hits": 0,
+      "total_invested": 0,
+      "total_returned": 0,
+      "roi": -100.0,
+      "daily": [],
+      "month_label": "2026年8月",
+      "is_current": true
+    },
+    {
       "total_bets": 13992,
       "total_hits": 683,
       "total_invested": 1399200,
@@ -16194,13 +16238,13 @@ window.KYOTEI_DATA = {
         }
       ],
       "month_label": "2026年7月",
-      "is_current": true
+      "is_current": false
     }
   ],
   "formation_pred_days": [
     {
-      "date_str": "20260731",
-      "date_label": "2026/07/31",
+      "date_str": "20260801",
+      "date_label": "2026/08/01",
       "is_today": true,
       "preds": []
     },
@@ -23848,6 +23892,16 @@ window.KYOTEI_DATA = {
   ],
   "multi_ev_monthly_demos": [
     {
+      "total_bets": 0,
+      "total_hits": 0,
+      "total_invested": 0,
+      "total_returned": 0,
+      "roi": -100.0,
+      "daily": [],
+      "month_label": "2026年8月",
+      "is_current": true
+    },
+    {
       "total_bets": 3071,
       "total_hits": 103,
       "total_invested": 307100,
@@ -24056,7 +24110,7 @@ window.KYOTEI_DATA = {
         }
       ],
       "month_label": "2026年7月",
-      "is_current": true
+      "is_current": false
     },
     {
       "total_bets": 163,
@@ -24088,8 +24142,8 @@ window.KYOTEI_DATA = {
   ],
   "multi_ev_pred_days": [
     {
-      "date_str": "20260731",
-      "date_label": "2026/07/31",
+      "date_str": "20260801",
+      "date_label": "2026/08/01",
       "is_today": true,
       "preds": []
     },
@@ -26102,6 +26156,16 @@ window.KYOTEI_DATA = {
   ],
   "cap_monthly_demos": [
     {
+      "total_bets": 0,
+      "total_hits": 0,
+      "total_invested": 0,
+      "total_returned": 0,
+      "roi": -100.0,
+      "daily": [],
+      "month_label": "2026年8月",
+      "is_current": true
+    },
+    {
       "total_bets": 2533,
       "total_hits": 99,
       "total_invested": 253300,
@@ -26310,7 +26374,7 @@ window.KYOTEI_DATA = {
         }
       ],
       "month_label": "2026年7月",
-      "is_current": true
+      "is_current": false
     },
     {
       "total_bets": 120,
@@ -26342,8 +26406,8 @@ window.KYOTEI_DATA = {
   ],
   "cap_pred_days": [
     {
-      "date_str": "20260731",
-      "date_label": "2026/07/31",
+      "date_str": "20260801",
+      "date_label": "2026/08/01",
       "is_today": true,
       "preds": []
     },
@@ -28266,6 +28330,16 @@ window.KYOTEI_DATA = {
   ],
   "dark_horse_monthly_demos": [
     {
+      "total_bets": 0,
+      "total_hits": 0,
+      "total_invested": 0,
+      "total_returned": 0,
+      "roi": -100.0,
+      "daily": [],
+      "month_label": "2026年8月",
+      "is_current": true
+    },
+    {
       "total_bets": 663,
       "total_hits": 12,
       "total_invested": 66300,
@@ -28474,7 +28548,7 @@ window.KYOTEI_DATA = {
         }
       ],
       "month_label": "2026年7月",
-      "is_current": true
+      "is_current": false
     },
     {
       "total_bets": 42,
@@ -28506,8 +28580,8 @@ window.KYOTEI_DATA = {
   ],
   "dark_horse_pred_days": [
     {
-      "date_str": "20260731",
-      "date_label": "2026/07/31",
+      "date_str": "20260801",
+      "date_label": "2026/08/01",
       "is_today": true,
       "preds": []
     },
