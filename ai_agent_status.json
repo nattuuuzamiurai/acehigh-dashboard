@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "テストfixtureの新仕様移行",
-      "startedAt": "2026-08-04T09:06:32.161Z",
-      "finishedAt": "2026-08-04T09:06:35.497Z"
+      "task": "PR32のNO-GO指摘を修正",
+      "startedAt": "2026-08-04T09:12:59.797Z",
+      "finishedAt": "2026-08-04T09:13:05.449Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 289,
-    "todayOutputTokens": 154016,
-    "asOf": "2026-08-04T09:07:02.731Z"
+    "todayInputTokens": 413,
+    "todayOutputTokens": 210024,
+    "asOf": "2026-08-04T09:13:38.721Z"
   },
-  "updatedAt": "2026-08-04T09:07:02.731Z"
+  "updatedAt": "2026-08-04T09:13:38.721Z"
 }
