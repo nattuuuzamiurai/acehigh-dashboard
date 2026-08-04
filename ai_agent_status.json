@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "人の手入力を機械が壊さない設計",
-      "startedAt": "2026-08-04T12:22:35.385Z",
-      "finishedAt": "2026-08-04T12:22:40.822Z"
+      "task": "過去日変化バグの原因特定",
+      "startedAt": "2026-08-04T15:41:16.018Z",
+      "finishedAt": "2026-08-04T15:41:23.721Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 219,
-    "todayOutputTokens": 117450,
-    "asOf": "2026-08-04T15:31:38.667Z"
+    "todayInputTokens": 332,
+    "todayOutputTokens": 165188,
+    "asOf": "2026-08-04T15:41:50.051Z"
   },
-  "updatedAt": "2026-08-04T15:31:38.667Z"
+  "updatedAt": "2026-08-04T15:41:50.051Z"
 }
