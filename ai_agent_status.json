@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "PR32のNO-GO指摘を修正",
-      "startedAt": "2026-08-04T09:12:59.797Z",
-      "finishedAt": "2026-08-04T09:13:05.449Z"
+      "task": "THE DOJOの自動取得を有効化",
+      "startedAt": "2026-08-04T10:36:09.491Z",
+      "finishedAt": "2026-08-04T10:36:15.291Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1603,
-    "todayOutputTokens": 583020,
-    "asOf": "2026-08-04T10:30:41.399Z"
+    "todayInputTokens": 1714,
+    "todayOutputTokens": 620710,
+    "asOf": "2026-08-04T10:36:43.119Z"
   },
-  "updatedAt": "2026-08-04T10:30:41.399Z"
+  "updatedAt": "2026-08-04T10:36:43.119Z"
 }
