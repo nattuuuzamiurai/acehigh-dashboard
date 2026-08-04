@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "過去日変化バグの原因特定",
-      "startedAt": "2026-08-04T15:41:16.018Z",
-      "finishedAt": "2026-08-04T15:41:23.721Z"
+      "task": "書き込み前検査の回復可能性監査",
+      "startedAt": "2026-08-04T17:08:22.591Z",
+      "finishedAt": "2026-08-04T17:08:28.208Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1036,
-    "todayOutputTokens": 389034,
-    "asOf": "2026-08-04T17:00:59.190Z"
+    "todayInputTokens": 1097,
+    "todayOutputTokens": 414798,
+    "asOf": "2026-08-04T17:08:49.931Z"
   },
-  "updatedAt": "2026-08-04T17:00:59.190Z"
+  "updatedAt": "2026-08-04T17:08:49.931Z"
 }
