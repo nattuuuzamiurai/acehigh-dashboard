@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "⚠の設計変更と#13起票",
-      "startedAt": "2026-08-04T11:30:00.939Z",
-      "finishedAt": "2026-08-04T11:30:07.381Z"
+      "task": "人の手入力を機械が壊さない設計",
+      "startedAt": "2026-08-04T12:22:35.385Z",
+      "finishedAt": "2026-08-04T12:22:40.822Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2658,
-    "todayOutputTokens": 935179,
-    "asOf": "2026-08-04T12:14:54.163Z"
+    "todayInputTokens": 2715,
+    "todayOutputTokens": 975433,
+    "asOf": "2026-08-04T12:23:01.774Z"
   },
-  "updatedAt": "2026-08-04T12:14:54.163Z"
+  "updatedAt": "2026-08-04T12:23:01.774Z"
 }
