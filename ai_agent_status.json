@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Vision出力の切り捨て対策",
-      "startedAt": "2026-07-31T14:09:48.582Z",
-      "finishedAt": "2026-07-31T14:09:57.480Z"
+      "task": "テストfixtureの新仕様移行",
+      "startedAt": "2026-08-04T09:06:32.161Z",
+      "finishedAt": "2026-08-04T09:06:35.497Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 165,
-    "todayOutputTokens": 125164,
-    "asOf": "2026-08-04T09:01:37.260Z"
+    "todayInputTokens": 289,
+    "todayOutputTokens": 154016,
+    "asOf": "2026-08-04T09:07:02.731Z"
   },
-  "updatedAt": "2026-08-04T09:01:37.260Z"
+  "updatedAt": "2026-08-04T09:07:02.731Z"
 }
