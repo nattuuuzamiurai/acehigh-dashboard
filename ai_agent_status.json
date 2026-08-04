@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "THE DOJOの自動取得を有効化",
-      "startedAt": "2026-08-04T10:36:09.491Z",
-      "finishedAt": "2026-08-04T10:36:15.291Z"
+      "task": "⚠の設計変更と#13起票",
+      "startedAt": "2026-08-04T11:30:00.939Z",
+      "finishedAt": "2026-08-04T11:30:07.381Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2135,
-    "todayOutputTokens": 767818,
-    "asOf": "2026-08-04T11:20:43.189Z"
+    "todayInputTokens": 2215,
+    "todayOutputTokens": 812872,
+    "asOf": "2026-08-04T11:30:30.875Z"
   },
-  "updatedAt": "2026-08-04T11:20:43.189Z"
+  "updatedAt": "2026-08-04T11:30:30.875Z"
 }
