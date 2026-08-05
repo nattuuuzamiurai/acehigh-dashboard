@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "#19実装と#12・#13の設計",
-      "startedAt": "2026-08-04T19:05:35.474Z",
-      "finishedAt": "2026-08-04T19:05:42.440Z"
+      "task": "残り3件の対応",
+      "startedAt": "2026-08-05T02:32:48.713Z",
+      "finishedAt": "2026-08-05T02:32:55.879Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4513,
-    "todayOutputTokens": 1606519,
-    "asOf": "2026-08-05T02:09:12.780Z"
+    "todayInputTokens": 4533,
+    "todayOutputTokens": 1617558,
+    "asOf": "2026-08-05T02:33:19.742Z"
   },
-  "updatedAt": "2026-08-05T02:09:12.780Z"
+  "updatedAt": "2026-08-05T02:33:19.742Z"
 }
