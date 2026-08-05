@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "残り3件の対応",
-      "startedAt": "2026-08-05T02:32:48.713Z",
-      "finishedAt": "2026-08-05T02:32:55.879Z"
+      "task": "社長指示3件の実装",
+      "startedAt": "2026-08-05T06:00:35.209Z",
+      "finishedAt": "2026-08-05T06:00:43.180Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5320,
-    "todayOutputTokens": 1883715,
-    "asOf": "2026-08-05T05:58:20.905Z"
+    "todayInputTokens": 5340,
+    "todayOutputTokens": 1889098,
+    "asOf": "2026-08-05T06:01:12.286Z"
   },
-  "updatedAt": "2026-08-05T05:58:20.905Z"
+  "updatedAt": "2026-08-05T06:01:12.286Z"
 }
