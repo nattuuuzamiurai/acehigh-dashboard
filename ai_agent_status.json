@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "社長指示3件の実装",
-      "startedAt": "2026-08-05T06:00:35.209Z",
-      "finishedAt": "2026-08-05T06:00:43.180Z"
+      "task": "Vision呼び出しを月1回/店に削減",
+      "startedAt": "2026-08-05T11:22:16.215Z",
+      "finishedAt": "2026-08-05T11:22:19.488Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5933,
-    "todayOutputTokens": 2055456,
-    "asOf": "2026-08-05T11:13:45.830Z"
+    "todayInputTokens": 5962,
+    "todayOutputTokens": 2075642,
+    "asOf": "2026-08-05T11:22:47.300Z"
   },
-  "updatedAt": "2026-08-05T11:13:45.830Z"
+  "updatedAt": "2026-08-05T11:22:47.300Z"
 }
