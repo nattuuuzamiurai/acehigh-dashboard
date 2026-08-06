@@ -22673,10 +22673,10 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.9",
           "ev": 0.31,
           "odds": "7.9",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "hit": "1",
+          "payout": "790",
+          "final_odds": "7.9",
+          "actual_ev": 0.274
         },
         {
           "venue_name": "大村",
