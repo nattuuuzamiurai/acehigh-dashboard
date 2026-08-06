@@ -1,10 +1,10 @@
 {
-  "generatedAtJst": "2026/8/6 17:51:58",
-  "cycleAtJst": "2026/8/6 17:51:56",
-  "count": 0,
-  "totalAllTime": 68103,
+  "generatedAtJst": "2026/8/6 18:19:15",
+  "cycleAtJst": "2026/8/6 18:19:13",
+  "count": 1,
+  "totalAllTime": 68156,
   "flaggedAllTime": 142,
   "minNetProfitPct": 3,
   "testNotionalUsd": 1000,
-  "rowsHtml": "<tr><td colspan=\"6\" class=\"empty\">まだ検知記録がありません(data/opportunities.jsonlが空か、直近サイクルの記録がまだありません、または全件が表示フィルタ〈流動性・額面差・インパクト〉で非表示になっています)</td></tr>"
+  "rowsHtml": "\n    <tr class=\"\">\n      <td>\n        <div class=\"asset-name\">USDT</div>\n        <div class=\"pattern-label\">ブリッジ裁定</div>\n        <div class=\"badge badge-watch\">quote未対応チェーン(アグリゲータ非対応・観測のみ)</div>\n      </td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Aptos</div>\n      <div class=\"side-price\">$0.997138</div>\n      <div class=\"side-liq\">流動性(全プール合算): $2.40M</div>\n      <div class=\"side-liq\">24h出来高: $8.75M</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://app.panora.exchange/swap/aptos\" target=\"_blank\" rel=\"noopener noreferrer\">Panoraで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/aptos/tokens/0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Plasma</div>\n      <div class=\"side-price\">$1.00899</div>\n      <div class=\"side-liq\">流動性(全プール合算): $46.86M</div>\n      <div class=\"side-liq\">24h出来高: $1.58M</div>\n      <div class=\"side-links\"><span class=\"btn btn-disabled\" title=\"deep link未対応。GeckoTerminalで確認してください\">(不明)</span> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/plasma/tokens/0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n        <div>額面: 1.19%</div>\n        <div class=\"sub breakdown-none\">(quote未取得のため内訳なし)</div>\n        <div class=\"\">ネット: —</div>\n        <div class=\"sub\">(— / 建玉1000 USD換算)</div>\n        <div class=\"pool-signal\">小規模DEX等の価格差を検知: Aptos hyperion $0.977393</div>\n        <div class=\"note-line\">アグリゲータquote未対応チェーンを含むため観測ログのみ(通知候補フラグは立てない。価格検証〈プール/DexScreener〉は未実施)。aptos: オンチェーン$0.999023(集計価格差0.19%, 一致)</div>\n      </td>\n      <td class=\"route-warn\">直接ブリッジ未確認の新興チェーンを含む。ethereumを経由チェーン候補として検討(簡易ヒューリスティック・要個別確認): Aptos → ethereum → Plasma</td>\n      <td>2026/8/6 18:15:34</td>\n    </tr>"
 }
