@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-08-06 21:30",
+  "updated": "2026-08-06 21:41",
   "today_label": "2026年8月6日",
   "pred_date": "2026/08/06",
   "pred_is_today": true,
@@ -22673,10 +22673,10 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.9",
           "ev": 0.31,
           "odds": "7.9",
-          "hit": "1",
-          "payout": "790",
-          "final_odds": "7.9",
-          "actual_ev": 0.274
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
         },
         {
           "venue_name": "大村",
