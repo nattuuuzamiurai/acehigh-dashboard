@@ -1,10 +1,10 @@
 {
-  "generatedAtJst": "2026/8/10 9:00:42",
-  "cycleAtJst": "2026/8/10 9:00:40",
-  "count": 1,
-  "totalAllTime": 77736,
+  "generatedAtJst": "2026/8/10 9:28:53",
+  "cycleAtJst": "2026/8/10 9:28:52",
+  "count": 0,
+  "totalAllTime": 77796,
   "flaggedAllTime": 142,
   "minNetProfitPct": 3,
   "testNotionalUsd": 1000,
-  "rowsHtml": "\n    <tr class=\"\">\n      <td>\n        <div class=\"asset-name\">FRAX</div>\n        <div class=\"pattern-label\">ブリッジ裁定</div>\n        <div class=\"badge badge-watch\">観測中(段2判定: ネット乖離が閾値未満)</div>\n      </td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Polygon</div>\n      <div class=\"side-price\">$0.984319</div>\n      <div class=\"side-liq\">流動性(全プール合算): $65.1K</div>\n      <div class=\"side-liq\">24h出来高: $2.6K</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://app.uniswap.org/swap?chain=polygon&amp;inputCurrency=0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359&amp;outputCurrency=0x45c32fa6df82ead1e2ef74d17b76547eddfaff89\" target=\"_blank\" rel=\"noopener noreferrer\">Uniswapで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/polygon_pos/tokens/0x45c32fa6df82ead1e2ef74d17b76547eddfaff89\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Avalanche</div>\n      <div class=\"side-price\">$1.00006</div>\n      <div class=\"side-liq\">流動性(全プール合算): $103.4K</div>\n      <div class=\"side-liq\">24h出来高: $3.4K</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://lfj.gg/avalanche/trade?inputCurrency=0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E&amp;outputCurrency=0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64\" target=\"_blank\" rel=\"noopener noreferrer\">LFJ(旧Trader Joe)で開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/avax/tokens/0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n        <div>額面: 1.60%</div>\n        <div class=\"breakdown\"><div class=\"bd-line\">− ブリッジ手数料: 0.50%</div><div class=\"bd-line bd-max\">− 往復スリッページ: 0.55% <span class=\"bd-tag\">(最大の控除)</span></div><div class=\"bd-line\">− 往復ガス代: 0.01%</div><div class=\"bd-line\">− 価格変動バッファ: 0.50%</div></div>\n        <div class=\"net-pos\">ネット: 0.04%</div>\n        <div class=\"sub\">($0.3738 / 建玉1000 USD換算)</div>\n        \n        \n      </td>\n      <td class=\"route-ok\">汎用ブリッジ(Wormhole等)で直接対応している可能性が高い(簡易判定・要個別確認)</td>\n      <td>2026/8/10 9:00:40</td>\n    </tr>"
+  "rowsHtml": "<tr><td colspan=\"6\" class=\"empty\">まだ検知記録がありません(data/opportunities.jsonlが空か、直近サイクルの記録がまだありません、または全件が表示フィルタ〈流動性・額面差・インパクト〉で非表示になっています)</td></tr>"
 }
