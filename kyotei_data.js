@@ -37263,7 +37263,7 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.3",
           "ev": 0.9,
           "odds": "10.8",
-          "hit": "",
+          "hit": "0",
           "payout": "0",
           "final_odds": "",
           "actual_ev": null
@@ -55570,7 +55570,7 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.0",
           "ev": 1.57,
           "odds": "31.2",
-          "hit": "",
+          "hit": "0",
           "payout": "0",
           "final_odds": "",
           "actual_ev": null
@@ -65204,7 +65204,7 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.0",
           "ev": 1.57,
           "odds": "31.2",
-          "hit": "",
+          "hit": "0",
           "payout": "0",
           "final_odds": "",
           "actual_ev": null
