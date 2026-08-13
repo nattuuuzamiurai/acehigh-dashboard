@@ -1,10 +1,10 @@
 {
-  "generatedAtJst": "2026/8/13 13:01:20",
-  "cycleAtJst": "2026/8/13 13:01:17",
-  "count": 1,
-  "totalAllTime": 86832,
+  "generatedAtJst": "2026/8/13 13:29:37",
+  "cycleAtJst": "2026/8/13 13:29:35",
+  "count": 0,
+  "totalAllTime": 86888,
   "flaggedAllTime": 142,
   "minNetProfitPct": 3,
   "testNotionalUsd": 1000,
-  "rowsHtml": "\n    <tr class=\"\">\n      <td>\n        <div class=\"asset-name\">USDE</div>\n        <div class=\"pattern-label\">ブリッジ裁定</div>\n        <div class=\"badge badge-watch\">観測中(段2判定: ネット乖離が閾値未満)</div>\n      </td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Solana</div>\n      <div class=\"side-price\">$0.996508</div>\n      <div class=\"side-liq\">流動性(全プール合算): $4.69M</div>\n      <div class=\"side-liq\">24h出来高: $701.0K</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://jup.ag/swap/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v-DEkqHyPN7GMRJ5cArtQFAWefqbZb33Hyf6s5iCwjEonT\" target=\"_blank\" rel=\"noopener noreferrer\">Jupiterで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/solana/tokens/DEkqHyPN7GMRJ5cArtQFAWefqbZb33Hyf6s5iCwjEonT\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">BSC</div>\n      <div class=\"side-price\">$1.00808</div>\n      <div class=\"side-liq\">流動性(全プール合算): $93.0K</div>\n      <div class=\"side-liq\">24h出来高: $185.7K</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://pancakeswap.finance/swap?inputCurrency=0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d&amp;outputCurrency=0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34\" target=\"_blank\" rel=\"noopener noreferrer\">PancakeSwapで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/bsc/tokens/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n        <div>額面: 1.16%</div>\n        <div class=\"breakdown\"><div class=\"bd-line bd-max\">− ブリッジ手数料: 0.60% <span class=\"bd-tag\">(最大の控除)</span></div><div class=\"bd-line\">− 往復スリッページ: 0.00%</div><div class=\"bd-line\">− 往復ガス代: 0.02%</div><div class=\"bd-line\">− 価格変動バッファ: 0.50%</div></div>\n        <div class=\"net-pos\">ネット: 0.04%</div>\n        <div class=\"sub\">($0.3717 / 建玉1000 USD換算)</div>\n        \n        \n      </td>\n      <td class=\"route-ok\">汎用ブリッジ(Wormhole等)で直接対応している可能性が高い(簡易判定・要個別確認)</td>\n      <td>2026/8/13 12:58:04</td>\n    </tr>"
+  "rowsHtml": "<tr><td colspan=\"6\" class=\"empty\">まだ検知記録がありません(data/opportunities.jsonlが空か、直近サイクルの記録がまだありません、または全件が表示フィルタ〈流動性・額面差・インパクト〉で非表示になっています)</td></tr>"
 }
