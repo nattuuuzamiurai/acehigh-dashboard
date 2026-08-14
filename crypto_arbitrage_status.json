@@ -1,10 +1,10 @@
 {
-  "generatedAtJst": "2026/8/14 21:49:17",
-  "cycleAtJst": "2026/8/14 21:49:14",
-  "count": 0,
-  "totalAllTime": 90336,
+  "generatedAtJst": "2026/8/14 22:17:37",
+  "cycleAtJst": "2026/8/14 22:17:35",
+  "count": 1,
+  "totalAllTime": 90392,
   "flaggedAllTime": 144,
   "minNetProfitPct": 3,
   "testNotionalUsd": 1000,
-  "rowsHtml": "<tr><td colspan=\"6\" class=\"empty\">まだ検知記録がありません(data/opportunities.jsonlが空か、直近サイクルの記録がまだありません、または全件が表示フィルタ〈流動性・額面差・インパクト〉で非表示になっています)</td></tr>"
+  "rowsHtml": "\n    <tr class=\"\">\n      <td>\n        <div class=\"asset-name\">USDC</div>\n        <div class=\"pattern-label\">ブリッジ裁定</div>\n        <div class=\"badge badge-watch\">quote未対応チェーン(アグリゲータ非対応・観測のみ)</div>\n      </td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Aptos</div>\n      <div class=\"side-price\">$0.997794</div>\n      <div class=\"side-liq\">流動性(全プール合算): $2.47M</div>\n      <div class=\"side-liq\">24h出来高: $15.32M</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://app.panora.exchange/swap/aptos\" target=\"_blank\" rel=\"noopener noreferrer\">Panoraで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/aptos/tokens/0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Sui</div>\n      <div class=\"side-price\">$1.01182</div>\n      <div class=\"side-liq\">流動性(全プール合算): $13.35M</div>\n      <div class=\"side-liq\">24h出来高: $13.34M</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://app.cetus.zone/swap\" target=\"_blank\" rel=\"noopener noreferrer\">Cetusで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/sui-network/tokens/0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7%3A%3Ausdc%3A%3AUSDC\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n        <div>額面: 1.41%</div>\n        <div class=\"sub breakdown-none\">(quote未取得のため内訳なし)</div>\n        <div class=\"\">ネット: —</div>\n        <div class=\"sub\">(— / 建玉1000 USD換算)</div>\n        \n        <div class=\"note-line\">アグリゲータquote未対応チェーンを含むため観測ログのみ(通知候補フラグは立てない。価格検証〈プール/DexScreener〉は未実施)。aptos: オンチェーン$1.00098(集計価格差0.32%, 一致)</div>\n      </td>\n      <td class=\"route-ok\">汎用ブリッジ(Wormhole等)で直接対応している可能性が高い(簡易判定・要個別確認)</td>\n      <td>2026/8/14 22:13:19</td>\n    </tr>"
 }
