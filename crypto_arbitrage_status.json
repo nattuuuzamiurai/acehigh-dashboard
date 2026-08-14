@@ -1,10 +1,10 @@
 {
-  "generatedAtJst": "2026/8/14 16:13:25",
-  "cycleAtJst": "2026/8/14 16:13:23",
-  "count": 0,
-  "totalAllTime": 89810,
+  "generatedAtJst": "2026/8/14 16:41:38",
+  "cycleAtJst": "2026/8/14 16:41:36",
+  "count": 1,
+  "totalAllTime": 89860,
   "flaggedAllTime": 142,
   "minNetProfitPct": 3,
   "testNotionalUsd": 1000,
-  "rowsHtml": "<tr><td colspan=\"6\" class=\"empty\">まだ検知記録がありません(data/opportunities.jsonlが空か、直近サイクルの記録がまだありません、または全件が表示フィルタ〈流動性・額面差・インパクト〉で非表示になっています)</td></tr>"
+  "rowsHtml": "\n    <tr class=\"\">\n      <td>\n        <div class=\"asset-name\">CRV</div>\n        <div class=\"pattern-label\">ブリッジ裁定</div>\n        <div class=\"badge badge-liquidity\">価格検証で不合格: 価格が信頼できず対象外(quote未取得)</div>\n      </td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Polygon</div>\n      <div class=\"side-price\">$0.250355</div>\n      <div class=\"side-liq\">流動性(全プール合算): $171.2K</div>\n      <div class=\"side-liq\">24h出来高: $12.9K</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://app.uniswap.org/swap?chain=polygon&amp;inputCurrency=0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359&amp;outputCurrency=0x172370d5cd63279efa6d502dab29171933a610af\" target=\"_blank\" rel=\"noopener noreferrer\">Uniswapで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/polygon_pos/tokens/0x172370d5cd63279efa6d502dab29171933a610af\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Optimism</div>\n      <div class=\"side-price\">$0.253176</div>\n      <div class=\"side-liq\">流動性(全プール合算): $59.4K</div>\n      <div class=\"side-liq\">24h出来高: $13.2K</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://app.uniswap.org/swap?chain=optimism&amp;inputCurrency=0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85&amp;outputCurrency=0x0994206dfe8de6ec6920ff4d779b0d950605fb53\" target=\"_blank\" rel=\"noopener noreferrer\">Uniswapで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/optimism/tokens/0x0994206dfe8de6ec6920ff4d779b0d950605fb53\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n        <div>額面: 1.13%</div>\n        <div class=\"sub breakdown-none\">(quote未取得のため内訳なし)</div>\n        <div class=\"\">ネット: —</div>\n        <div class=\"sub\">(— / 建玉1000 USD換算)</div>\n        \n        <div class=\"note-line\">価格検証の結果、信頼できないデータのため観測ログのみ(optimism側: プールベース信頼価格($1.00217)とDexScreener($0.252600)が74.79%乖離。決着役のDefiLlama($0.251766)はDexScreener側を裏付け、プールベース信頼価格が外れ値と判明したため安全側で除外(誤った一次価格では通さない))</div>\n      </td>\n      <td class=\"route-ok\">汎用ブリッジ(Wormhole等)で直接対応している可能性が高い(簡易判定・要個別確認)</td>\n      <td>2026/8/14 16:39:32</td>\n    </tr>"
 }
