@@ -1,10 +1,10 @@
 {
-  "generatedAtJst": "2026/8/14 18:34:16",
-  "cycleAtJst": "2026/8/14 18:34:13",
-  "count": 0,
-  "totalAllTime": 90050,
-  "flaggedAllTime": 143,
+  "generatedAtJst": "2026/8/14 19:02:21",
+  "cycleAtJst": "2026/8/14 19:02:19",
+  "count": 1,
+  "totalAllTime": 90092,
+  "flaggedAllTime": 144,
   "minNetProfitPct": 3,
   "testNotionalUsd": 1000,
-  "rowsHtml": "<tr><td colspan=\"6\" class=\"empty\">まだ検知記録がありません(data/opportunities.jsonlが空か、直近サイクルの記録がまだありません、または全件が表示フィルタ〈流動性・額面差・インパクト〉で非表示になっています)</td></tr>"
+  "rowsHtml": "\n    <tr class=\"row-go\">\n      <td>\n        <div class=\"asset-name\">USDY</div>\n        <div class=\"pattern-label\">ブリッジ裁定</div>\n        <div class=\"badge badge-go\">通知候補(閾値超過)</div>\n      </td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Sui</div>\n      <div class=\"side-price\">$1.08300</div>\n      <div class=\"side-liq\">流動性(全プール合算): $908.3K</div>\n      <div class=\"side-liq\">24h出来高: $4.9K</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://app.cetus.zone/swap\" target=\"_blank\" rel=\"noopener noreferrer\">Cetusで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/sui-network/tokens/0x960b531667636f39e85867775f52f6b1f220a058c4de786905bdf761e06a56bb%3A%3Ausdy%3A%3AUSDY\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n    <div class=\"side-cell\">\n      <div class=\"side-chain\">Solana</div>\n      <div class=\"side-price\">$1.14167</div>\n      <div class=\"side-liq\">流動性(全プール合算): $661.4K</div>\n      <div class=\"side-liq\">24h出来高: $1.8K</div>\n      <div class=\"side-links\"><a class=\"btn\" href=\"https://jup.ag/swap/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v-A1KLoBrKBde8Ty9qtNQUtq3C2ortoC3u7twggz7sEto6\" target=\"_blank\" rel=\"noopener noreferrer\">Jupiterで開く</a> <a class=\"btn btn-secondary\" href=\"https://www.geckoterminal.com/solana/tokens/A1KLoBrKBde8Ty9qtNQUtq3C2ortoC3u7twggz7sEto6\" target=\"_blank\" rel=\"noopener noreferrer\">GeckoTerminal</a></div>\n    </div></td>\n      <td>\n        <div>額面: 5.42%</div>\n        <div class=\"breakdown\"><div class=\"bd-line bd-max\">− ブリッジ手数料: 0.60% <span class=\"bd-tag\">(最大の控除)</span></div><div class=\"bd-line\">− 往復スリッページ: 0.00%</div><div class=\"bd-line\">− 往復ガス代: 0.00%</div><div class=\"bd-line\">− 価格変動バッファ: 0.50%</div></div>\n        <div class=\"net-pos\">ネット: 4.31%</div>\n        <div class=\"sub\">($43.14 / 建玉1000 USD換算)</div>\n        \n        \n      </td>\n      <td class=\"route-ok\">汎用ブリッジ(Wormhole等)で直接対応している可能性が高い(簡易判定・要個別確認)</td>\n      <td>2026/8/14 18:59:25</td>\n    </tr>"
 }
