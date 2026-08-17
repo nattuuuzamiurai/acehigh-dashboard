@@ -2,21 +2,21 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Vision呼び出しを月1回/店に削減",
-      "startedAt": "2026-08-05T11:22:16.215Z",
-      "finishedAt": "2026-08-05T11:22:19.488Z"
+      "task": "ふくおかポーカーナビ8月分一括更新",
+      "startedAt": "2026-08-17T16:01:15.646Z",
+      "finishedAt": "2026-08-17T16:01:18.089Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR32追加コミットの再検証",
-      "startedAt": "2026-08-04T09:26:00.486Z",
-      "finishedAt": "2026-08-04T09:26:04.904Z"
+      "task": "ふくおかポーカーナビPR#45の品質チェック",
+      "startedAt": "2026-08-17T16:22:52.124Z",
+      "finishedAt": "2026-08-17T16:22:55.235Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR #32のGO/NO-GO判定",
-      "startedAt": "2026-08-04T09:00:35.375Z",
-      "finishedAt": "2026-08-04T09:00:41.856Z"
+      "task": "ふくおかポーカーナビPR#45のGO/NO-GO判定",
+      "startedAt": "2026-08-17T16:49:59.171Z",
+      "finishedAt": "2026-08-17T16:50:03.683Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 102,
-    "todayOutputTokens": 49782,
-    "asOf": "2026-08-06T06:10:06.290Z"
+    "todayInputTokens": 1604,
+    "todayOutputTokens": 666983,
+    "asOf": "2026-08-17T18:12:04.335Z"
   },
-  "updatedAt": "2026-08-06T06:10:06.290Z"
+  "updatedAt": "2026-08-17T18:12:04.335Z"
 }
