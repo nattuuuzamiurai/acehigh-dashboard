@@ -102,8 +102,12 @@
     },
     {
       "name": "ふくおかポーカーナビ(福岡ポーカートーナメント日程アグリゲーター/会社プロジェクト登録)",
-      "phase": "本番公開・運用中(https://fukuokapoker.com/)。【2026-08-17】社長からKKPOKER FUKUOKA・RAISE BLUE天神・RAFTEL CASINO・CasinoX・Poker room SKY・KING&QUEEN SUITED黒崎店・FUXK福岡天神店・PokerBar NUWLAND・72-SevenTwo・CRownCLownの10店ぶん8月カレンダー画像を受領し、経営管理オフィスが目視で書き起こし→開発部が実装(TOURNAMENTS 190件追加・既存3件更新・RECURRING1件新規、PR #45)→品質管理部(1回目「要修正」2点指摘→開発部修正→2回目「合格」)→レビュー部「GO」の自動レビューを経て、経営管理オフィスがマージ・本番デプロイ完了。8月分の空白は主要10店ぶん解消。m HOLD'EM 中洲・CASINO Arrows小倉店は引き続きWaitinglist公開APIで全自動取得中(毎日06:23 JST)。",
+      "phase": "本番公開・運用中(https://fukuokapoker.com/)。35店舗・8月分504件のトーナメントデータを掲載。【2026-08-18】検索の受け皿を拡張: エリア別ページ(/areas/<slug>/)を7エリアぶん新設し本番反映(PR #46)。店舗ページ35枚と合わせ、sitemap掲載URLは28→34。「天神 ポーカー」「小倉 ポーカー」のような地名だけの検索を受ける導線ができた。【GA4・8/1〜8/18】検索流入96セッション(エンゲージ61)・日本126セッション。7月(検索14セッション)から大きく改善し、福岡28・北九州5など地元からの流入が中心になっている。残る打ち手はSearch Consoleの登録確認(所要1分・社長の承認クリックのみ)。",
       "pending": [
+        {
+          "text": "【所要1分・承認クリックのみ】Google Search Console の登録確認とサイトマップ送信。7/26の独自ドメイン移行後、GSCが旧URL(github.io)のままかどうかは外部から判定できない(サイト側に所有権確認の痕跡が無く、GA4連携で確認した場合は何も残らないため)。ターミナルで `cd '/Users/watanabeken/cloude会社/.claude/scripts/gmail-check' && ./venv/bin/python check_search_console.py --add --submit-sitemap` を実行し、ブラウザが開いたら ukenthe@gmail.com で承認するだけ。以後は登録状況・サイトマップの取得状況・検索クエリ(どの語で何位に出て何回クリックされたか)をこちらで随時確認できるようになる。手動でやる場合は search.google.com/search-console →「プロパティを追加」→ URLプレフィックス `https://fukuokapoker.com/` → 確認方法「Googleアナリティクス」→ サイトマップに `sitemap.xml` を送信。",
+          "waitingOn": "社長"
+        },
         {
           "text": "【2026-08-17完了・報告】8月分トーナメント日程、主要10店ぶんの投入完了。PR #45(https://github.com/nattuuuzamiurai/fukuoka-poker-navi/pull/45)としてマージ・本番反映済み。品質管理部の指摘(FUXKの確度フラグ不統一、KING&QUEEN黒崎店の静的ページ重複)は開発部が修正済みで、最終的に品質管理部「合格」・レビュー部「GO」。あわせてKING&QUEEN SUITED黒崎店は毎週の定期開催パターンそのものが変わっていたため個別日程でなくRECURRING側を更新、RAFTEL CASINOは告知媒体をX→Instagram優先に変更(いずれも社長指示・チラシ内容に基づく)。",
           "waitingOn": null
