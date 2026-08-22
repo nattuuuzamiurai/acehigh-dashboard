@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "クラウドソース地図アプリの技術難易度・工数見積",
-      "startedAt": "2026-08-22T15:18:12.815Z",
-      "finishedAt": "2026-08-22T15:20:59.377Z"
+      "task": "配達員向け地図アプリMVP要件定義",
+      "startedAt": "2026-08-22T18:17:22.339Z",
+      "finishedAt": "2026-08-22T18:23:59.481Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 29924,
-    "todayOutputTokens": 348454,
-    "asOf": "2026-08-22T18:14:15.221Z"
+    "todayInputTokens": 30000,
+    "todayOutputTokens": 429172,
+    "asOf": "2026-08-22T18:25:21.954Z"
   },
-  "updatedAt": "2026-08-22T18:14:15.221Z"
+  "updatedAt": "2026-08-22T18:25:21.954Z"
 }
