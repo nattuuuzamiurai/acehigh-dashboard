@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビ8月分一括更新",
-      "startedAt": "2026-08-17T16:01:15.646Z",
-      "finishedAt": "2026-08-17T16:01:18.089Z"
+      "task": "久留米飲み屋ナビ 中身の質を底上げ",
+      "startedAt": "2026-08-22T09:13:05.925Z",
+      "finishedAt": "2026-08-22T09:13:08.738Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 50161,
-    "todayOutputTokens": 502731,
-    "asOf": "2026-08-22T09:09:58.992Z"
+    "todayInputTokens": 76143,
+    "todayOutputTokens": 524907,
+    "asOf": "2026-08-22T09:13:25.048Z"
   },
-  "updatedAt": "2026-08-22T09:09:58.992Z"
+  "updatedAt": "2026-08-22T09:13:25.048Z"
 }
