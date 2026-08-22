@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ 中身の質を底上げ(再実行)",
-      "startedAt": "2026-08-22T09:30:37.942Z",
-      "finishedAt": "2026-08-22T09:30:40.739Z"
+      "task": "PR #44 の軽微修正(閉店疑い店の注記漏れ)",
+      "startedAt": "2026-08-22T11:52:48.860Z",
+      "finishedAt": "2026-08-22T11:52:51.684Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 148798,
-    "todayOutputTokens": 1830258,
-    "asOf": "2026-08-22T11:51:04.566Z"
+    "todayInputTokens": 148842,
+    "todayOutputTokens": 1840382,
+    "asOf": "2026-08-22T11:53:15.157Z"
   },
-  "updatedAt": "2026-08-22T11:51:04.566Z"
+  "updatedAt": "2026-08-22T11:53:15.157Z"
 }
