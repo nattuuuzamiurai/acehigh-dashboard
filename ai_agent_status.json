@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "保留27店の出典探し",
-      "startedAt": "2026-07-30T15:28:51.484Z",
-      "finishedAt": "2026-07-30T15:29:00.950Z"
+      "task": "AI実務ナビ Week8企画",
+      "startedAt": "2026-08-22T08:12:33.589Z",
+      "finishedAt": "2026-08-22T08:12:36.098Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 22,
-    "todayOutputTokens": 23949,
-    "asOf": "2026-08-22T08:12:11.005Z"
+    "todayInputTokens": 419,
+    "todayOutputTokens": 37414,
+    "asOf": "2026-08-22T08:13:24.089Z"
   },
-  "updatedAt": "2026-08-22T08:12:11.005Z"
+  "updatedAt": "2026-08-22T08:13:24.089Z"
 }
