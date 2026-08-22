@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビPR#45のGO/NO-GO判定",
-      "startedAt": "2026-08-17T16:49:59.171Z",
-      "finishedAt": "2026-08-17T16:50:03.683Z"
+      "task": "AI実務ナビ Week8 公開可否判定",
+      "startedAt": "2026-08-22T09:41:12.705Z",
+      "finishedAt": "2026-08-22T09:41:18.329Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 83581,
-    "todayOutputTokens": 850897,
-    "asOf": "2026-08-22T09:40:47.104Z"
+    "todayInputTokens": 93031,
+    "todayOutputTokens": 874365,
+    "asOf": "2026-08-22T09:41:38.159Z"
   },
-  "updatedAt": "2026-08-22T09:40:47.104Z"
+  "updatedAt": "2026-08-22T09:41:38.159Z"
 }
