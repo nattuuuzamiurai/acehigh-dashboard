@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "AI実務ナビ Week8執筆7本",
-      "startedAt": "2026-08-22T08:26:57.015Z",
-      "finishedAt": "2026-08-22T08:27:06.267Z"
+      "task": "note記事執筆:パチンコ・スロット攻略",
+      "startedAt": "2026-08-22T09:40:11.909Z",
+      "finishedAt": "2026-08-22T09:40:28.062Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 79457,
-    "todayOutputTokens": 731489,
-    "asOf": "2026-08-22T09:38:01.760Z"
+    "todayInputTokens": 83581,
+    "todayOutputTokens": 850897,
+    "asOf": "2026-08-22T09:40:47.104Z"
   },
-  "updatedAt": "2026-08-22T09:38:01.760Z"
+  "updatedAt": "2026-08-22T09:40:47.104Z"
 }
