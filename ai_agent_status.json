@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "品質管理:グループB3ジャンル(法務要件重点)",
-      "startedAt": "2026-08-22T10:34:49.265Z",
-      "finishedAt": "2026-08-22T10:34:52.544Z"
+      "task": "久留米飲み屋ナビ PR3件の品質チェック",
+      "startedAt": "2026-08-22T11:30:08.799Z",
+      "finishedAt": "2026-08-22T11:30:10.885Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 147846,
-    "todayOutputTokens": 1706380,
-    "asOf": "2026-08-22T11:10:44.321Z"
+    "todayInputTokens": 148086,
+    "todayOutputTokens": 1748821,
+    "asOf": "2026-08-22T11:30:19.677Z"
   },
-  "updatedAt": "2026-08-22T11:10:44.321Z"
+  "updatedAt": "2026-08-22T11:30:19.677Z"
 }
