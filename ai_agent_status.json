@@ -20,15 +20,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "地元編集コンテンツの執筆",
-      "startedAt": "2026-07-30T15:29:15.051Z",
-      "finishedAt": "2026-07-30T15:29:34.268Z"
+      "task": "AI実務ナビ Week8執筆7本",
+      "startedAt": "2026-08-22T08:26:57.015Z",
+      "finishedAt": "2026-08-22T08:27:06.267Z"
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "note売れ筋ジャンル・価格帯調査",
-      "startedAt": "2026-08-22T08:13:44.888Z",
-      "finishedAt": "2026-08-22T08:19:05.753Z"
+      "status": "running",
+      "task": "noteパチンコ・スロット系市場調査",
+      "startedAt": "2026-08-22T08:21:26.513Z",
+      "finishedAt": null
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 21984,
-    "todayOutputTokens": 124119,
-    "asOf": "2026-08-22T08:20:49.088Z"
+    "todayInputTokens": 30407,
+    "todayOutputTokens": 204746,
+    "asOf": "2026-08-22T08:28:25.396Z"
   },
-  "updatedAt": "2026-08-22T08:20:49.088Z"
+  "updatedAt": "2026-08-22T08:28:25.396Z"
 }
