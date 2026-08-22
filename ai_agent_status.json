@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "レビュー:グループB3ジャンルGO/NO-GO判定",
-      "startedAt": "2026-08-22T10:43:27.192Z",
-      "finishedAt": "2026-08-22T10:43:37.202Z"
+      "task": "久留米飲み屋ナビ PR3件のGO/NO-GO判定",
+      "startedAt": "2026-08-22T11:46:59.826Z",
+      "finishedAt": "2026-08-22T11:47:02.680Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 148086,
-    "todayOutputTokens": 1748821,
-    "asOf": "2026-08-22T11:30:19.677Z"
+    "todayInputTokens": 148656,
+    "todayOutputTokens": 1802691,
+    "asOf": "2026-08-22T11:47:15.545Z"
   },
-  "updatedAt": "2026-08-22T11:30:19.677Z"
+  "updatedAt": "2026-08-22T11:47:15.545Z"
 }
