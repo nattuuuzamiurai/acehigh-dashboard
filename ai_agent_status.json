@@ -3,7 +3,7 @@
     "dev-lead": {
       "status": "running",
       "task": "MVP要件定義書のOCR方式への更新",
-      "startedAt": "2026-08-22T19:48:26.149Z",
+      "startedAt": "2026-08-22T20:12:44.516Z",
       "finishedAt": null
     },
     "qa-lead": {
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 30290,
-    "todayOutputTokens": 668227,
-    "asOf": "2026-08-22T20:02:14.389Z"
+    "todayInputTokens": 30354,
+    "todayOutputTokens": 701517,
+    "asOf": "2026-08-22T20:17:46.582Z"
   },
-  "updatedAt": "2026-08-22T20:02:14.389Z"
+  "updatedAt": "2026-08-22T20:17:46.582Z"
 }
