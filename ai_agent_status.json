@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビPR#45の品質チェック",
-      "startedAt": "2026-08-17T16:22:52.124Z",
-      "finishedAt": "2026-08-17T16:22:55.235Z"
+      "task": "AI実務ナビ Week8 QA",
+      "startedAt": "2026-08-22T08:57:56.979Z",
+      "finishedAt": "2026-08-22T08:57:59.852Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 36507,
-    "todayOutputTokens": 376333,
-    "asOf": "2026-08-22T08:55:26.921Z"
+    "todayInputTokens": 36531,
+    "todayOutputTokens": 391553,
+    "asOf": "2026-08-22T08:58:06.664Z"
   },
-  "updatedAt": "2026-08-22T08:55:26.921Z"
+  "updatedAt": "2026-08-22T08:58:06.664Z"
 }
