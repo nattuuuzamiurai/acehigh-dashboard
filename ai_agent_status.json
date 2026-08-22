@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "note記事執筆:パチンコ・スロット有料記事のみ",
-      "startedAt": "2026-08-22T10:31:35.553Z",
-      "finishedAt": "2026-08-22T10:31:38.270Z"
+      "task": "note記事書き直し:パチンコ・スロット(一般パターン例化)",
+      "startedAt": "2026-08-22T10:53:58.552Z",
+      "finishedAt": "2026-08-22T10:54:02.368Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 147522,
-    "todayOutputTokens": 1617664,
-    "asOf": "2026-08-22T10:52:35.737Z"
+    "todayInputTokens": 147584,
+    "todayOutputTokens": 1635837,
+    "asOf": "2026-08-22T10:54:37.657Z"
   },
-  "updatedAt": "2026-08-22T10:52:35.737Z"
+  "updatedAt": "2026-08-22T10:54:37.657Z"
 }
