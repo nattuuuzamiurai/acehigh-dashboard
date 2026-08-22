@@ -26,8 +26,8 @@
     },
     "planning-lead": {
       "status": "running",
-      "task": "noteパチンコ・スロット系市場調査",
-      "startedAt": "2026-08-22T08:21:26.513Z",
+      "task": "note売れ筋ジャンルTOPをフラットに調査",
+      "startedAt": "2026-08-22T08:40:51.729Z",
       "finishedAt": null
     },
     "marketing-lead": {
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 30407,
-    "todayOutputTokens": 204746,
-    "asOf": "2026-08-22T08:28:25.396Z"
+    "todayInputTokens": 36443,
+    "todayOutputTokens": 325187,
+    "asOf": "2026-08-22T08:51:42.442Z"
   },
-  "updatedAt": "2026-08-22T08:28:25.396Z"
+  "updatedAt": "2026-08-22T08:51:42.442Z"
 }
