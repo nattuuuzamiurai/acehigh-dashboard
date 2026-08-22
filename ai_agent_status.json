@@ -25,10 +25,10 @@
       "finishedAt": "2026-08-22T10:54:02.368Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "パチスロnote市場規模調査",
       "startedAt": "2026-08-22T12:16:26.509Z",
-      "finishedAt": null
+      "finishedAt": "2026-08-22T12:27:59.947Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 178566,
-    "todayOutputTokens": 2004952,
-    "asOf": "2026-08-22T12:24:09.925Z"
+    "todayInputTokens": 178604,
+    "todayOutputTokens": 2018538,
+    "asOf": "2026-08-22T12:28:21.874Z"
   },
-  "updatedAt": "2026-08-22T12:24:09.925Z"
+  "updatedAt": "2026-08-22T12:28:21.874Z"
 }
