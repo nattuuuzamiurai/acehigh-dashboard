@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "AI実務ナビ Week8 QA",
-      "startedAt": "2026-08-22T08:57:56.979Z",
-      "finishedAt": "2026-08-22T08:57:59.852Z"
+      "task": "品質管理:グループB3ジャンル(法務要件重点)",
+      "startedAt": "2026-08-22T10:34:49.265Z",
+      "finishedAt": "2026-08-22T10:34:52.544Z"
     },
     "review-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "note記事執筆:パチンコ・スロット攻略(再実行)",
-      "startedAt": "2026-08-22T10:07:03.421Z",
-      "finishedAt": "2026-08-22T10:07:08.333Z"
+      "task": "note記事執筆:パチンコ・スロット有料記事のみ",
+      "startedAt": "2026-08-22T10:31:35.553Z",
+      "finishedAt": "2026-08-22T10:31:38.270Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 100919,
-    "todayOutputTokens": 1266371,
-    "asOf": "2026-08-22T10:31:28.198Z"
+    "todayInputTokens": 130822,
+    "todayOutputTokens": 1340332,
+    "asOf": "2026-08-22T10:34:59.315Z"
   },
-  "updatedAt": "2026-08-22T10:31:28.198Z"
+  "updatedAt": "2026-08-22T10:34:59.315Z"
 }
