@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "note売れ筋ジャンル裏取り調査",
-      "startedAt": "2026-08-22T09:06:33.612Z",
-      "finishedAt": "2026-08-22T09:14:53.049Z"
+      "task": "note全ジャンル記事テーマ案作成",
+      "startedAt": "2026-08-22T09:31:14.806Z",
+      "finishedAt": "2026-08-22T09:36:39.165Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 76393,
-    "todayOutputTokens": 620092,
-    "asOf": "2026-08-22T09:30:52.153Z"
+    "todayInputTokens": 79457,
+    "todayOutputTokens": 731489,
+    "asOf": "2026-08-22T09:38:01.760Z"
   },
-  "updatedAt": "2026-08-22T09:30:52.153Z"
+  "updatedAt": "2026-08-22T09:38:01.760Z"
 }
