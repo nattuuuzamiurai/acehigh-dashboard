@@ -26,8 +26,8 @@
     },
     "planning-lead": {
       "status": "running",
-      "task": "note売れ筋ジャンルTOPをフラットに調査",
-      "startedAt": "2026-08-22T08:40:51.729Z",
+      "task": "note売れ筋ジャンル裏取り調査",
+      "startedAt": "2026-08-22T09:06:33.612Z",
       "finishedAt": null
     },
     "marketing-lead": {
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 36621,
-    "todayOutputTokens": 410270,
-    "asOf": "2026-08-22T09:01:50.236Z"
+    "todayInputTokens": 50161,
+    "todayOutputTokens": 502731,
+    "asOf": "2026-08-22T09:09:58.992Z"
   },
-  "updatedAt": "2026-08-22T09:01:50.236Z"
+  "updatedAt": "2026-08-22T09:09:58.992Z"
 }
