@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "AI実務ナビ Week8企画",
-      "startedAt": "2026-08-22T08:12:33.589Z",
-      "finishedAt": "2026-08-22T08:12:36.098Z"
+      "task": "note売れ筋ジャンル・価格帯調査",
+      "startedAt": "2026-08-22T08:13:44.888Z",
+      "finishedAt": "2026-08-22T08:19:05.753Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 419,
-    "todayOutputTokens": 37414,
-    "asOf": "2026-08-22T08:13:24.089Z"
+    "todayInputTokens": 21976,
+    "todayOutputTokens": 103211,
+    "asOf": "2026-08-22T08:19:21.633Z"
   },
-  "updatedAt": "2026-08-22T08:13:24.089Z"
+  "updatedAt": "2026-08-22T08:19:21.633Z"
 }
