@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "PR #44 の軽微修正(閉店疑い店の注記漏れ)",
-      "startedAt": "2026-08-22T11:52:48.860Z",
-      "finishedAt": "2026-08-22T11:52:51.684Z"
+      "task": "クラウドソース地図アプリの技術難易度・工数見積",
+      "startedAt": "2026-08-22T15:18:12.815Z",
+      "finishedAt": "2026-08-22T15:20:59.377Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "パチスロnote市場規模調査",
-      "startedAt": "2026-08-22T12:16:26.509Z",
-      "finishedAt": "2026-08-22T12:27:59.947Z"
+      "task": "ゼンリン代替サービスの市場性調査",
+      "startedAt": "2026-08-22T15:17:59.083Z",
+      "finishedAt": "2026-08-22T15:24:15.526Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 10,
-    "todayOutputTokens": 3427,
-    "asOf": "2026-08-22T15:17:40.983Z"
+    "todayInputTokens": 29716,
+    "todayOutputTokens": 69472,
+    "asOf": "2026-08-22T15:24:39.945Z"
   },
-  "updatedAt": "2026-08-22T15:17:40.983Z"
+  "updatedAt": "2026-08-22T15:24:39.945Z"
 }
