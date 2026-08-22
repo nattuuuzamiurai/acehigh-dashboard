@@ -25,10 +25,10 @@
       "finishedAt": "2026-08-22T08:27:06.267Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "note売れ筋ジャンル裏取り調査",
       "startedAt": "2026-08-22T09:06:33.612Z",
-      "finishedAt": null
+      "finishedAt": "2026-08-22T09:14:53.049Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 76195,
-    "todayOutputTokens": 532482,
-    "asOf": "2026-08-22T09:14:32.500Z"
+    "todayInputTokens": 76229,
+    "todayOutputTokens": 548196,
+    "asOf": "2026-08-22T09:15:14.806Z"
   },
-  "updatedAt": "2026-08-22T09:14:32.500Z"
+  "updatedAt": "2026-08-22T09:15:14.806Z"
 }
