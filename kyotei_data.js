@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-08-24 08:00",
+  "updated": "2026-08-24 08:31",
   "today_label": "2026年8月24日",
   "pred_date": "2026/08/24",
   "pred_is_today": true,
@@ -938,13 +938,43 @@ window.KYOTEI_DATA = {
       "is_current": false
     }
   ],
-  "today_preds": [],
+  "today_preds": [
+    {
+      "venue_name": "芦屋",
+      "race_no": "1",
+      "start_time": "08:32",
+      "combo": "1-4-2",
+      "actual_combo": "",
+      "ev": 1.59,
+      "odds": "34.0",
+      "prob_pct": "4.7",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
+    }
+  ],
   "pred_days": [
     {
       "date_str": "20260824",
       "date_label": "2026/08/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "芦屋",
+          "race_no": "1",
+          "start_time": "08:32",
+          "combo": "1-4-2",
+          "actual_combo": "",
+          "ev": 1.59,
+          "odds": "34.0",
+          "prob_pct": "4.7",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20260823",
@@ -10251,26 +10281,26 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "1.15": {
-          "bets": 0,
+          "bets": 9,
           "hits": 0,
           "hit_rate": 0.0,
-          "invested": 0,
+          "invested": 900,
           "returned": 0,
           "roi": -100.0
         },
         "1.2": {
-          "bets": 0,
+          "bets": 7,
           "hits": 0,
           "hit_rate": 0.0,
-          "invested": 0,
+          "invested": 700,
           "returned": 0,
           "roi": -100.0
         },
         "1.3": {
-          "bets": 0,
+          "bets": 5,
           "hits": 0,
           "hit_rate": 0.0,
-          "invested": 0,
+          "invested": 500,
           "returned": 0,
           "roi": -100.0
         }
@@ -11452,7 +11482,68 @@ window.KYOTEI_DATA = {
       "date_str": "20260824",
       "date_label": "2026/08/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "芦屋",
+          "race_no": "2",
+          "start_time": "08:58",
+          "combo": "1-4-3",
+          "actual_combo": "",
+          "ev": 0.63,
+          "has_ev": false,
+          "odds": "4.9",
+          "prob_pct": "12.8",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:48",
+          "combo": "1-2-5",
+          "actual_combo": "",
+          "ev": 0.52,
+          "has_ev": false,
+          "odds": "4.3",
+          "prob_pct": "12.0",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "徳山",
+          "race_no": "1",
+          "start_time": "08:40",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "ev": 1.18,
+          "has_ev": false,
+          "odds": "12.0",
+          "prob_pct": "9.9",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "1",
+          "start_time": "08:32",
+          "combo": "1-2-3",
+          "actual_combo": "",
+          "ev": 0.64,
+          "has_ev": false,
+          "odds": "13.0",
+          "prob_pct": "4.9",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20260823",
@@ -26064,7 +26155,68 @@ window.KYOTEI_DATA = {
       "date_str": "20260824",
       "date_label": "2026/08/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "芦屋",
+          "race_no": "2",
+          "start_time": "08:58",
+          "combo": "1-4-3",
+          "actual_combo": "",
+          "prob_pct": "12.8",
+          "top1_pct": "65",
+          "ev": 0.63,
+          "odds": "4.9",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:48",
+          "combo": "1-2-5",
+          "actual_combo": "",
+          "prob_pct": "12.0",
+          "top1_pct": "69",
+          "ev": 0.52,
+          "odds": "4.3",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "徳山",
+          "race_no": "1",
+          "start_time": "08:40",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "prob_pct": "9.9",
+          "top1_pct": "70",
+          "ev": 1.18,
+          "odds": "12.0",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "1",
+          "start_time": "08:32",
+          "combo": "1-2-3",
+          "actual_combo": "",
+          "prob_pct": "4.9",
+          "top1_pct": "62",
+          "ev": 0.64,
+          "odds": "13.0",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20260823",
@@ -32125,7 +32277,68 @@ window.KYOTEI_DATA = {
       "date_str": "20260824",
       "date_label": "2026/08/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:48",
+          "combo": "1-2-5",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "12.0",
+          "ev": 0.52,
+          "odds": "4.3",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "徳山",
+          "race_no": "1",
+          "start_time": "08:40",
+          "combo": "1-3-4",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "9.9",
+          "ev": 1.18,
+          "odds": "12.0",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "1",
+          "start_time": "08:32",
+          "combo": "1-2-3",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "4.9",
+          "ev": 0.64,
+          "odds": "13.0",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "2",
+          "start_time": "08:58",
+          "combo": "1-4-3",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "12.8",
+          "ev": 0.63,
+          "odds": "4.9",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20260823",
@@ -46610,7 +46823,23 @@ window.KYOTEI_DATA = {
       "date_str": "20260824",
       "date_label": "2026/08/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "芦屋",
+          "race_no": "1",
+          "start_time": "08:32",
+          "combo": "1-4-2",
+          "n_bets": 1,
+          "actual_combo": "",
+          "prob_pct": "4.7",
+          "ev": 1.59,
+          "odds": "34.0",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20260823",
@@ -55830,7 +56059,23 @@ window.KYOTEI_DATA = {
       "date_str": "20260824",
       "date_label": "2026/08/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "芦屋",
+          "race_no": "1",
+          "start_time": "08:32",
+          "combo": "1-4-2",
+          "n_bets": 1,
+          "actual_combo": "",
+          "prob_pct": "4.7",
+          "ev": 1.59,
+          "odds": "34.0",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20260823",
