@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "最後の6店のインスタ画像を抽出",
-      "startedAt": "2026-07-28T17:49:56.153Z",
-      "finishedAt": "2026-07-28T17:50:03.772Z"
+      "task": "EVO37スロット動画から本日データ文字起こし",
+      "startedAt": "2026-08-23T11:51:40.908Z",
+      "finishedAt": "2026-08-23T11:51:43.796Z"
     }
   },
   "usage": {
-    "todayInputTokens": 38160,
-    "todayOutputTokens": 1238694,
-    "asOf": "2026-08-23T11:01:18.080Z"
+    "todayInputTokens": 38214,
+    "todayOutputTokens": 1263713,
+    "asOf": "2026-08-23T11:51:51.782Z"
   },
-  "updatedAt": "2026-08-23T11:01:18.080Z"
+  "updatedAt": "2026-08-23T11:51:51.782Z"
 }
