@@ -1,6 +1,6 @@
 {
   "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。articles.monthly は「実際に公開(draft:false化)した暦月」ごとに1エントリを集計すること(記事フロントマターのpubDateではなく、実際にpushして公開した日で判断する。記事執筆時に将来日付のpubDateを仮設定している場合があるため)。バッチ単位(Week1/Week2等)で分けず、同じ暦月なら合算する。analytics.propertyId はダッシュボードのカードから当該サイトのGA4レポートへ直接飛ぶためのGoogleアナリティクスのプロパティID(測定IDではない)。traffic は ga4-watch-daemon.js が丸ごと上書きするため、GA4リンク用の情報は traffic の外(analytics)に置くこと。",
-  "generatedAt": "2026-08-24T19:12:20.707Z",
+  "generatedAt": "2026-08-25T19:18:21.921Z",
   "sites": [
     {
       "id": "ai-jitsumu-navi",
@@ -27,20 +27,20 @@
         ]
       },
       "traffic": {
-        "pageViews": 80,
-        "activeUsers": 71,
-        "sessions": 75,
-        "engagedSessions": 15,
+        "pageViews": 82,
+        "activeUsers": 72,
+        "sessions": 76,
+        "engagedSessions": 17,
         "since": "2026-07-17",
-        "asOf": "2026-08-25",
+        "asOf": "2026-08-26",
         "source": "GA4（measurement ID: G-QSW29CYYNP）",
         "daily": {
-          "date": "2026-08-25",
+          "date": "2026-08-26",
           "pageViews": 0,
           "activeUsers": 0,
           "sessions": 0,
-          "prevDate": "2026-08-24",
-          "prevPageViews": 1
+          "prevDate": "2026-08-25",
+          "prevPageViews": 0
         }
       },
       "revenue": {
@@ -48,7 +48,7 @@
         "total": 0,
         "status": "AdSense承認済み・広告配信の設定中（売上ゼロ）",
         "note": "Google AdSenseが承認された(2026-07-23確認)。広告配信の有効化(自動広告のON、掲載量は中程度)を設定する段階。A8.net提携3件は実アフィリエイトリンク稼働中(Misoca、freee会計、マネーフォワード クラウド請求書)。Search Console登録・サイトマップ送信済みだが新規ドメインのため検索流入はまだ少ない。GA4導入済み(2026-07-17〜、traffic参照)。実際のクリック・成果は0件。",
-        "updatedAt": "2026-08-25 04:12"
+        "updatedAt": "2026-08-26 04:18"
       }
     },
     {
@@ -124,7 +124,7 @@
         "total": 0,
         "status": "収益発生前（GA4導入済み・AdSense未申請）",
         "note": "2026-07-21にGitHub Pagesで本番公開(独立リポジトリ nattuuuzamiurai/poker-hand-media、GitHub Actionsで自動デプロイ)。品質管理部・レビュー部の監査を経て社長最終判断によりGO。実マネーのオンラインポーカー/カジノアフィリエイトは非採用の方針。2026-07-27、運用を『自動運用の司令塔』セッションに一本化(旧クラウドルーティンは停止済み)。司令塔の第1サイクルとして、ポーカー史のエバーグリーン名ハンド5記事(マネーメーカーの世紀のブラフ/チャン対サイデル=ラウンダーズの原点/ゴールド対ワシッカ/エンサンのKK即コール/アイヴィー対ジャクソンのブラフ合戦)を企画→執筆→QA(build成功・事実独立検証)→レビューGOを経て公開し、累計29記事に。カスタムドメイン・AdSenseはアクセス実績がついてから改めて判断する方針で、当面見送り(GitHub Pages無料ドメインのまま運用)。GA4導入済み(2026-07-25〜)、ga4-watch-daemon.jsに追加し6時間おきに自動反映(traffic参照)。Google Search Console確認・サイトマップ送信済み。",
-        "updatedAt": "2026-08-25 04:12"
+        "updatedAt": "2026-08-26 04:18"
       },
       "traffic": {
         "pageViews": 1,
@@ -132,14 +132,14 @@
         "sessions": 1,
         "engagedSessions": 0,
         "since": "2026-07-25",
-        "asOf": "2026-08-25",
+        "asOf": "2026-08-26",
         "source": "GA4（measurement ID: G-W6Y7FK5HSM）",
         "daily": {
-          "date": "2026-08-25",
+          "date": "2026-08-26",
           "pageViews": 0,
           "activeUsers": 0,
           "sessions": 0,
-          "prevDate": "2026-08-24",
+          "prevDate": "2026-08-25",
           "prevPageViews": 0
         }
       }
