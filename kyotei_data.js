@@ -957,9 +957,9 @@ window.KYOTEI_DATA = {
   ],
   "today_preds": [
     {
-      "venue_name": "三国",
-      "race_no": "1",
-      "start_time": "08:48",
+      "venue_name": "尼崎",
+      "race_no": "3",
+      "start_time": "11:26",
       "combo": "1-4-3",
       "actual_combo": "",
       "ev": 1.84,
