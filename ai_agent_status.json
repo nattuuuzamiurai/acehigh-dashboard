@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR #44 修正差分の再確認",
-      "startedAt": "2026-08-22T11:55:02.159Z",
-      "finishedAt": "2026-08-22T11:55:04.805Z"
+      "task": "みやま市版配達地図アプリの品質確認",
+      "startedAt": "2026-08-25T21:27:03.143Z",
+      "finishedAt": "2026-08-25T21:27:20.818Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2023,
-    "todayOutputTokens": 511287,
-    "asOf": "2026-08-25T19:34:41.679Z"
+    "todayInputTokens": 2689,
+    "todayOutputTokens": 628103,
+    "asOf": "2026-08-25T21:27:32.631Z"
   },
-  "updatedAt": "2026-08-25T19:34:41.679Z"
+  "updatedAt": "2026-08-25T21:27:32.631Z"
 }
