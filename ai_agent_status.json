@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "みやま市版配達地図アプリの実装",
-      "startedAt": "2026-08-25T18:41:02.001Z",
-      "finishedAt": "2026-08-25T18:41:04.778Z"
+      "task": "みやま市版配達地図アプリのXSS修正等",
+      "startedAt": "2026-08-25T22:15:08.946Z",
+      "finishedAt": "2026-08-25T22:15:14.641Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2689,
-    "todayOutputTokens": 628103,
-    "asOf": "2026-08-25T21:27:32.631Z"
+    "todayInputTokens": 3067,
+    "todayOutputTokens": 733517,
+    "asOf": "2026-08-25T22:16:57.125Z"
   },
-  "updatedAt": "2026-08-25T21:27:32.631Z"
+  "updatedAt": "2026-08-25T22:16:57.125Z"
 }
