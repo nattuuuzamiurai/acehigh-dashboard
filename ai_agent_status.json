@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
-      "task": "MVP要件定義書のOCR方式への更新",
-      "startedAt": "2026-08-22T20:12:44.516Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "みやま市版配達地図アプリの実装",
+      "startedAt": "2026-08-25T18:41:02.001Z",
+      "finishedAt": "2026-08-25T18:41:04.778Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 726,
-    "todayOutputTokens": 271594,
-    "asOf": "2026-08-24T04:12:05.612Z"
+    "todayInputTokens": 18,
+    "todayOutputTokens": 19097,
+    "asOf": "2026-08-25T18:41:16.118Z"
   },
-  "updatedAt": "2026-08-24T04:12:05.612Z"
+  "updatedAt": "2026-08-25T18:41:16.118Z"
 }
