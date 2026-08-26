@@ -1,6 +1,6 @@
 {
   "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。articles.monthly は「実際に公開(draft:false化)した暦月」ごとに1エントリを集計すること(記事フロントマターのpubDateではなく、実際にpushして公開した日で判断する。記事執筆時に将来日付のpubDateを仮設定している場合があるため)。バッチ単位(Week1/Week2等)で分けず、同じ暦月なら合算する。analytics.propertyId はダッシュボードのカードから当該サイトのGA4レポートへ直接飛ぶためのGoogleアナリティクスのプロパティID(測定IDではない)。traffic は ga4-watch-daemon.js が丸ごと上書きするため、GA4リンク用の情報は traffic の外(analytics)に置くこと。",
-  "generatedAt": "2026-08-25T19:18:21.921Z",
+  "generatedAt": "2026-08-26T01:18:34.887Z",
   "sites": [
     {
       "id": "ai-jitsumu-navi",
@@ -75,20 +75,20 @@
         "note": "件数は fukuoka_poker_inquiry_status.json 由来(個人情報は含めず件数のみ)。内容確認は responsesUrl の回答スプレッドシート、または formUrl(Googleフォーム編集画面の「回答」タブ)で行う。いずれもGoogleログイン必須。「対応済み」はブラウザのlocalStorageに保持(端末ごと)し、新着が来たら自動で再表示。"
       },
       "traffic": {
-        "pageViews": 758,
-        "activeUsers": 285,
-        "sessions": 357,
-        "engagedSessions": 165,
+        "pageViews": 779,
+        "activeUsers": 295,
+        "sessions": 370,
+        "engagedSessions": 183,
         "since": "2026-07-14",
-        "asOf": "2026-08-25",
+        "asOf": "2026-08-26",
         "source": "GA4（measurement ID: G-L7091YHTFH）",
         "daily": {
-          "date": "2026-08-25",
-          "pageViews": 2,
-          "activeUsers": 2,
-          "sessions": 2,
-          "prevDate": "2026-08-24",
-          "prevPageViews": 35
+          "date": "2026-08-26",
+          "pageViews": 0,
+          "activeUsers": 0,
+          "sessions": 0,
+          "prevDate": "2026-08-25",
+          "prevPageViews": 20
         }
       },
       "revenue": {
@@ -96,7 +96,7 @@
         "total": 0,
         "status": "収益発生前（Google AdSense審査中）",
         "note": "Google AdSense申請済み・審査結果待ち（6時間おきに自動確認し、結果が出次第プロジェクト管理側に反映）。店舗PR有料掲載枠は営業資料のみ準備済みで契約実績はまだ0件。GA4導入済みで公開後(2026-07-14〜)のPV等は取得できている(traffic参照、6時間おきに自動更新)。",
-        "updatedAt": "2026-08-25 04:12"
+        "updatedAt": "2026-08-26 10:18"
       }
     },
     {
