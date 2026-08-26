@@ -385,10 +385,222 @@
       .demo-sum { font-size:.7em !important; line-height:1.5; }
       .demo-row { flex-direction:column; gap:10px; }
     }
+
+    /* ============ SLOT PAGE (沖ドキ島モニター EVO37久留米・埋め込み版) ============ */
+    #page-slot {
+      --slot-ink-dim: #5c5344;
+      --slot-ink-faint: #8a8070;
+      --slot-inset: #efe8d8;
+      --slot-hair-strong: #c7b997;
+      --slot-amber: #9c6a12;
+      --slot-amber-dim: #b8862c;
+      --slot-amber-glow: rgba(156, 106, 18, .12);
+      --slot-big: #c73223;
+      --slot-big-dim: rgba(199, 50, 35, .10);
+      --slot-reg: #0a8e9f;
+      --slot-reg-dim: rgba(10, 142, 159, .10);
+      --slot-gorgeous: #96690f;
+      --slot-black-ep: #265f95;
+      --slot-setting-1: #4a3818; --slot-setting-2: #5f481f; --slot-setting-3: #755925;
+      --slot-setting-4: #8e6d2c; --slot-setting-5: #a98232; --slot-setting-6: #c39a3a;
+      --slot-mono: ui-monospace, "SF Mono", "Cascadia Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+      --slot-r: 6px;
+    }
+    #page-slot ::selection { background: var(--slot-amber-glow); }
+    #page-slot .tnum { font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; }
+    #page-slot a { color: inherit; }
+    #page-slot .slot-wrap { max-width: 1180px; }
+
+    /* ---------- header ---------- */
+    #page-slot .slot-top {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 16px; flex-wrap: wrap; margin-bottom: 18px;
+    }
+    #page-slot .slot-sub { color: var(--mut); font-size: .82em; margin-top: 3px; }
+    #page-slot .slot-controls-top { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    #page-slot .slot-select-group { display: flex; align-items: center; gap: 7px; }
+    #page-slot .slot-select-group label {
+      font-family: var(--slot-mono); font-size: .72em; color: var(--mut); letter-spacing: .04em;
+    }
+    #page-slot .slot-select-group select {
+      font-family: var(--slot-mono); font-size: .85em; font-weight: 700; color: var(--txt);
+      background: #fff; border: 1px solid var(--bor); border-radius: var(--slot-r);
+      padding: 6px 10px; cursor: pointer;
+    }
+    #page-slot .slot-select-group select:hover { border-color: var(--slot-amber-dim); }
+
+    /* ---------- model totals ---------- */
+    #page-slot .slot-model-totals { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+    #page-slot .slot-model-total-card {
+      flex: 1; min-width: 220px; display: flex; align-items: center; gap: 12px;
+    }
+    #page-slot .slot-model-total-card .sw { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    #page-slot .slot-model-total-card .mt-label { font-size: .82em; color: var(--mut); }
+    #page-slot .slot-model-total-card .mt-val {
+      font-family: var(--slot-mono); font-size: 1.35em; font-weight: 700; color: var(--txt); line-height: 1.15;
+    }
+    #page-slot .slot-model-total-card .mt-val small { font-size: .55em; color: var(--slot-ink-faint); font-weight: 500; }
+    #page-slot .slot-model-total-card .mt-sub { font-size: .75em; color: var(--slot-ink-faint); margin-top: 1px; }
+
+    /* ---------- caveat / findings (details) ---------- */
+    #page-slot details.slot-caveat { margin-bottom: 16px; }
+    #page-slot details.slot-caveat summary {
+      cursor: pointer; padding: 11px 14px; font-size: .88em; color: var(--slot-amber);
+      display: flex; align-items: center; gap: 8px; list-style: none; font-weight: 600;
+    }
+    #page-slot details.slot-caveat summary::-webkit-details-marker { display: none; }
+    #page-slot details.slot-caveat summary::before { content: "▸"; transition: transform .15s ease; font-size: .7em; }
+    #page-slot details.slot-caveat[open] summary::before { transform: rotate(90deg); }
+    #page-slot .slot-caveat-body {
+      padding: 2px 16px 16px; color: var(--slot-ink-dim); font-size: .88em; border-top: 1px solid var(--bor);
+    }
+    #page-slot .slot-caveat-body h4 { color: var(--txt); font-size: .92em; margin: 12px 0 4px; }
+    #page-slot .slot-caveat-body p { margin: 4px 0; line-height: 1.6; }
+    #page-slot .slot-caveat-body .no { color: var(--red); font-weight: 600; }
+    #page-slot .slot-caveat-body code {
+      font-family: var(--slot-mono); background: var(--slot-inset); padding: 1px 4px; border-radius: 3px; font-size: .85em;
+    }
+
+    /* ---------- bank summary ---------- */
+    #page-slot .slot-bank {
+      display: grid; grid-template-columns: minmax(180px, 260px) 1fr; gap: 22px; margin-bottom: 18px;
+    }
+    #page-slot .slot-bank-headline .eyebrow {
+      font-family: var(--slot-mono); font-size: .74em; letter-spacing: .07em; text-transform: uppercase; color: var(--mut);
+    }
+    #page-slot .slot-bank-headline .value {
+      font-family: var(--slot-mono); font-size: 2.5em; font-weight: 700; color: var(--slot-amber); line-height: 1.1; margin: 6px 0 2px;
+    }
+    #page-slot .slot-bank-headline .value small { font-size: .4em; color: var(--slot-ink-faint); font-weight: 500; }
+    #page-slot .slot-bank-headline .read { font-size: .88em; color: var(--slot-ink-dim); max-width: 34ch; line-height: 1.55; }
+    #page-slot .slot-bank-bars { display: flex; flex-direction: column; gap: 7px; justify-content: center; }
+    #page-slot .slot-bank-bar-row { display: grid; grid-template-columns: 58px 1fr 42px; align-items: center; gap: 10px; }
+    #page-slot .slot-bank-bar-row .lbl { font-family: var(--slot-mono); font-size: .82em; color: var(--slot-ink-dim); }
+    #page-slot .slot-bank-bar-row .lbl.approx { color: var(--slot-ink-faint); }
+    #page-slot .slot-bank-bar-track { height: 9px; background: var(--slot-inset); border-radius: 5px; overflow: hidden; }
+    #page-slot .slot-bank-bar-fill { height: 100%; border-radius: 5px; background: var(--slot-amber-dim); }
+    #page-slot .slot-bank-bar-row .pct { font-family: var(--slot-mono); font-size: .82em; text-align: right; color: var(--slot-ink-dim); }
+
+    /* ---------- yuuri kukan ---------- */
+    #page-slot .slot-yuuri { margin-bottom: 18px; }
+    #page-slot .slot-yuuri h2 { font-size: .95em; margin: 0 0 3px; display: flex; align-items: baseline; gap: 8px; }
+    #page-slot .slot-yuuri-sub { font-size: .85em; color: var(--slot-ink-dim); margin-bottom: 14px; line-height: 1.6; }
+    #page-slot .slot-yuuri-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }
+    #page-slot .slot-yuuri-row {
+      display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; gap: 8px;
+      font-family: var(--slot-mono); font-size: .82em;
+    }
+    #page-slot .slot-yuuri-row .mno { color: var(--slot-ink-dim); }
+    #page-slot .slot-yuuri-track { height: 10px; background: var(--slot-inset); border-radius: 5px; overflow: hidden; position: relative; }
+    #page-slot .slot-yuuri-fill { height: 100%; border-radius: 5px; }
+    #page-slot .slot-yuuri-row .pct { text-align: right; }
+    #page-slot .slot-yuuri-note { font-size: .78em; color: var(--slot-ink-faint); margin-top: 12px; }
+
+    /* ---------- model filter chip ---------- */
+    #page-slot .slot-filter-chip {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--slot-amber-glow); border: 1px solid var(--slot-amber-dim); border-radius: 20px;
+      padding: 5px 8px 5px 12px; font-size: .85em; color: var(--txt); margin-bottom: 12px;
+    }
+    #page-slot .slot-filter-chip button {
+      font-family: var(--slot-mono); font-size: .78em; color: var(--mut);
+      background: #fff; border: 1px solid var(--bor); border-radius: 50%;
+      width: 18px; height: 18px; line-height: 1; cursor: pointer; display: inline-flex;
+      align-items: center; justify-content: center;
+    }
+    #page-slot .slot-filter-chip button:hover { color: var(--txt); border-color: var(--slot-amber-dim); }
+
+    /* ---------- controls ---------- */
+    #page-slot .slot-controls {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      margin-bottom: 10px; flex-wrap: wrap;
+    }
+    #page-slot .slot-legend { display: flex; gap: 14px; font-size: .82em; color: var(--slot-ink-dim); flex-wrap: wrap; }
+    #page-slot .slot-legend .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; }
+    #page-slot .slot-sort-hint { font-size: .78em; color: var(--slot-ink-faint); font-family: var(--slot-mono); }
+
+    /* ---------- machines table ---------- */
+    #page-slot table.slot-machines { width: 100%; border-collapse: collapse; min-width: 880px; }
+    #page-slot table.slot-machines thead th {
+      position: sticky; top: 0; background: var(--sur2); z-index: 1;
+      text-align: left; font-size: .74em; letter-spacing: .05em; text-transform: uppercase;
+      color: var(--mut); font-weight: 600; padding: 9px 12px; border-bottom: 1px solid var(--bor);
+      cursor: pointer; white-space: nowrap; user-select: none;
+    }
+    #page-slot table.slot-machines thead th.sorted { color: var(--slot-amber); }
+    #page-slot table.slot-machines thead th .arrow { font-size: .8em; margin-left: 3px; opacity: .8; }
+    #page-slot table.slot-machines thead th.num, #page-slot table.slot-machines td.num { text-align: right; }
+    #page-slot table.slot-machines tbody tr.slot-mrow { cursor: pointer; border-bottom: 1px solid var(--bor); }
+    #page-slot table.slot-machines tbody tr.slot-mrow:hover { background: var(--sur2); }
+    #page-slot table.slot-machines tbody tr.slot-mrow.expanded { background: var(--sur2); }
+    #page-slot table.slot-machines td { padding: 9px 12px; vertical-align: middle; }
+    #page-slot td.slot-mno { font-family: var(--slot-mono); font-weight: 700; }
+    #page-slot .slot-model-chip {
+      display: inline-flex; align-items: center; gap: 5px; font-size: .78em;
+      padding: 2px 7px; border-radius: 20px; border: 1px solid var(--bor);
+      white-space: nowrap; color: var(--slot-ink-dim);
+    }
+    #page-slot .slot-model-chip .sw { width: 6px; height: 6px; border-radius: 50%; }
+    #page-slot td.slot-bigreg { font-family: var(--slot-mono); }
+    #page-slot td.slot-bigreg .b { color: var(--slot-big); }
+    #page-slot td.slot-bigreg .r { color: var(--slot-reg); }
+    #page-slot td.slot-bigreg .sep { color: var(--slot-ink-faint); }
+    #page-slot .slot-setting-cell { display: flex; align-items: center; gap: 8px; min-width: 150px; }
+    #page-slot .slot-setting-bar { flex: 1; height: 14px; background: var(--slot-inset); border-radius: 3px; overflow: hidden; display: flex; }
+    #page-slot .slot-setting-bar .seg { height: 100%; }
+    #page-slot .slot-setting-chip { font-family: var(--slot-mono); font-size: .82em; font-weight: 700; width: 30px; text-align: center; flex-shrink: 0; }
+    #page-slot .slot-conf-note { font-size: .7em; color: var(--slot-ink-faint); }
+    #page-slot tr.slot-mrow .chev { color: var(--slot-ink-faint); font-size: .7em; transition: transform .15s ease; display: inline-block; }
+    #page-slot tr.slot-mrow.expanded .chev { transform: rotate(90deg); color: var(--slot-amber); }
+
+    /* ---------- detail panel ---------- */
+    #page-slot tr.slot-detail-row td { padding: 0; border-bottom: 1px solid var(--bor); }
+    #page-slot .slot-detail {
+      background: var(--slot-inset); padding: 18px 20px 22px;
+      display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px;
+    }
+    @media (max-width: 820px) { #page-slot .slot-detail { grid-template-columns: 1fr; } }
+    #page-slot .slot-detail h3 {
+      font-size: .78em; text-transform: uppercase; letter-spacing: .06em; color: var(--mut); margin: 0 0 10px;
+    }
+    #page-slot .slot-hitlog-scroll { max-height: 320px; overflow-y: auto; border: 1px solid var(--bor); border-radius: var(--slot-r); background: #fff; }
+    #page-slot table.slot-hitlog { width: 100%; border-collapse: collapse; font-family: var(--slot-mono); font-size: .84em; }
+    #page-slot table.slot-hitlog th {
+      position: sticky; top: 0; background: var(--sur2);
+      text-align: right; padding: 6px 10px; color: var(--mut); font-weight: 500; font-size: .74em;
+      border-bottom: 1px solid var(--bor);
+    }
+    #page-slot table.slot-hitlog th:first-child, #page-slot table.slot-hitlog td:first-child { text-align: left; }
+    #page-slot table.slot-hitlog td { padding: 5px 10px; text-align: right; border-bottom: 1px solid var(--bor); }
+    #page-slot table.slot-hitlog tr:last-child td { border-bottom: none; }
+    #page-slot .slot-status-pill { display: inline-block; font-size: .74em; font-weight: 700; padding: 1px 6px; border-radius: 3px; }
+    #page-slot .slot-status-pill.BIG { color: var(--slot-big); background: var(--slot-big-dim); }
+    #page-slot .slot-status-pill.REG { color: var(--slot-reg); background: var(--slot-reg-dim); }
+    #page-slot .slot-interval-bar-cell { display: flex; align-items: center; gap: 6px; justify-content: flex-end; }
+    #page-slot .slot-interval-bar { height: 6px; border-radius: 3px; background: var(--slot-hair-strong); }
+
+    #page-slot .slot-trend-empty { color: var(--slot-ink-faint); font-size: .85em; padding: 10px 0; }
+    #page-slot .slot-daytrend { display: flex; gap: 8px; margin-bottom: 16px; }
+    #page-slot .slot-day-tile { flex: 1; background: #fff; border: 1px solid var(--bor); border-radius: var(--slot-r); padding: 9px 10px; }
+    #page-slot .slot-day-tile .d { font-size: .7em; color: var(--slot-ink-faint); font-family: var(--slot-mono); }
+    #page-slot .slot-day-tile .es { font-family: var(--slot-mono); font-size: 1.15em; font-weight: 700; color: var(--slot-amber); margin-top: 2px; }
+    #page-slot .slot-day-tile .bb { font-family: var(--slot-mono); font-size: .75em; color: var(--slot-ink-dim); margin-top: 3px; }
+
+    #page-slot svg.slot-historychart { width: 100%; height: 130px; display: block; }
+    #page-slot .slot-history-note { font-size: .78em; color: var(--slot-ink-faint); margin-top: 6px; }
+
+    #page-slot .slot-footer {
+      margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--bor);
+      font-size: .76em; color: var(--slot-ink-faint); font-family: var(--slot-mono);
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+    }
+
+    @media (max-width: 640px) { #page-slot .slot-bank { grid-template-columns: 1fr; } }
   </style>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="kyotei_data.js" onerror="window.KYOTEI_DATA=null"></script>
+<script src="evo37_slot_data.js" onerror="window.EVO37_DATA=null"></script>
 <script src="../チャイポ/poker.js"></script>
 <script src="../チャイポ/montecarlo.js"></script>
 <body>
@@ -460,9 +672,7 @@
     <div class="ni" onclick="showPage('chaipo')"><span class="ni-ic">🃏</span>チャイポ OFC</div>
     <div class="ni" onclick="showPage('affiliate')"><span class="ni-ic">🔗</span>アフィリエイト</div>
     <a class="ni" href="crypto_arbitrage.html" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">⇄</span>裁定機会モニター</a>
-    <div class="ng">パチスロ</div>
-    <a class="ni" href="https://claude.ai/code/artifact/62fe53e7-6f2e-4c95-a062-7178d2366b2a?model=gorgeous" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">🎰</span>沖ドキ！ゴージャス</a>
-    <a class="ni" href="https://claude.ai/code/artifact/62fe53e7-6f2e-4c95-a062-7178d2366b2a?model=black" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">🎰</span>沖ドキ！BLACK</a>
+    <div class="ni" onclick="showPage('slot')"><span class="ni-ic">🎰</span>スロット</div>
   </nav>
 </div>
 <div id="sb-overlay" onclick="closeSidebar()"></div>
@@ -874,6 +1084,11 @@
       <div id="kyotei-root"></div>
     </div>
 
+    <!-- ===== スロット(沖ドキ島モニター EVO37久留米) ===== -->
+    <div class="page" id="page-slot">
+      <div id="slot-root"></div>
+    </div>
+
     <!-- ===== 配置アシスト ===== -->
     <div class="page" id="page-chaipo-board">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:6px;">
@@ -1221,12 +1436,701 @@ function closeSidebar() {
   document.getElementById('sb-overlay').classList.remove('show');
 }
 
+
+// ===== SLOT (沖ドキ島モニター EVO37久留米) =====
+(function () {
+  "use strict";
+  var DATA = null;
+  var built = false;
+  var currentDate = null;
+  var modelFilter = "all"; // "all" | "gorgeous" | "black"
+  var sortKey = "expected_setting";
+  var sortDir = -1;
+  var expandedRow = null;
+  var SETTING_COLORS = null;
+
+  function fmt(n, d) {
+    if (n === null || n === undefined || isNaN(n)) return "—";
+    return Number(n).toLocaleString("ja-JP", { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 });
+  }
+  function pct(n) { return (n * 100).toFixed(0) + "%"; }
+  function modelInfo(name) {
+    if (name.indexOf("BLACK") >= 0) return { color: "var(--slot-black-ep)", short: "BLACK EP" };
+    return { color: "var(--slot-gorgeous)", short: "ゴージャス-30" };
+  }
+  function matchesModelFilter(machineName) {
+    if (modelFilter === "all") return true;
+    var isBlack = machineName.indexOf("BLACK") >= 0;
+    return modelFilter === "black" ? isBlack : !isBlack;
+  }
+  function settingColors() {
+    var cs = getComputedStyle(document.getElementById("page-slot"));
+    var c = {};
+    for (var s = 1; s <= 6; s++) c[s] = cs.getPropertyValue("--slot-setting-" + s).trim();
+    return c;
+  }
+  function machinesForDate(date) {
+    var dayData = DATA.by_date[date];
+    var byNo = {};
+    (dayData ? dayData.machines : []).forEach(function (m) { byNo[m.machine_no] = m; });
+    return DATA.machines_meta.map(function (meta) {
+      var day = byNo[meta.machine_no];
+      if (!day) return null;
+      return {
+        machine_no: meta.machine_no,
+        machine_name: meta.machine_name,
+        days: meta.days,
+        history_monthly: meta.history_monthly,
+        hit_log: day.hit_log || [],
+        v2: day.v2,
+        yuuri: day.yuuri,
+      };
+    }).filter(Boolean);
+  }
+
+  function buildSkeleton() {
+    var root = document.getElementById("slot-root");
+    root.innerHTML =
+      '<div class="slot-wrap">' +
+        '<div class="slot-top">' +
+          '<div>' +
+            '<div style="font-size:1.15em;font-weight:800;">🎰 沖ドキ島モニター <span style="font-weight:500;color:var(--mut);font-size:.75em;">EVO37久留米</span></div>' +
+            '<div class="slot-sub" id="slot-header-sub"></div>' +
+          '</div>' +
+          '<div class="slot-controls-top">' +
+            '<div class="slot-select-group">' +
+              '<label for="slot-model-select">機種</label>' +
+              '<select id="slot-model-select">' +
+                '<option value="all">すべて</option>' +
+                '<option value="gorgeous">沖ドキ！ゴージャス−30 XA</option>' +
+                '<option value="black">沖ドキ！BLACK EP</option>' +
+              '</select>' +
+            '</div>' +
+            '<div class="slot-select-group">' +
+              '<label for="slot-date-select">表示日</label>' +
+              '<select id="slot-date-select"></select>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="slot-model-totals" id="slot-model-totals"></div>' +
+
+        '<details class="slot-caveat card" id="slot-caveat-box">' +
+          '<summary>分析手法 v2 — 前提・修正点・限界(必ず開いて読んでください)</summary>' +
+          '<div class="slot-caveat-body">' +
+            '<h4>v1からの修正(初版の誤りを反映)</h4>' +
+            '<p>初版は本日のBIG+REG合計をそのまま「合成確率」として設定差表と比較していたが、沖ドキ系には' +
+            '<b>「ボーナス後32G以内の当選で天国ループ継続、最大継続率90%」</b>という公式仕様があり' +
+            '(<a href="https://pachiseven.jp/machines/7047/cutout/8" target="_blank" rel="noopener">出典</a>)、' +
+            '連チャン中の当選が混ざった数字を通常時の設定差と比較してしまっていた。v2では前回当選から<b>32G以内の当選をチェイン(連チャン継続)として分離</b>し、' +
+            '各チェインの先頭(=独立した初当りとみなせる当選)だけを設定判別に使っている。</p>' +
+            '<h4>差枚の近似復元</h4>' +
+            '<p>獲得枚数は直接取得できないが、公開スペック(BIG平均<span id="slot-c-big-coin"></span>枚/REG平均<span id="slot-c-reg-coin"></span>枚、' +
+            '通常時消化速度 約<span id="slot-c-base-cost"></span>枚/G)から、大当たり履歴と経過G数だけで台ごとの差枚推移を近似復元している' +
+            '(詳細セクション内のグラフ)。台の個体差までは反映できない近似値。</p>' +
+            '<h4>依然としてできないこと</h4>' +
+            '<p><span class="no">有利区間の厳密な区切り</span> — 32G以内チェイン検出は有利区間"らしき"塊の近似でしかない。下記「チェイン長分布の検証」の通り、実データは公称90%継続モデルと合致しておらず、検出したチェインの一部は本物の天国ではなく偶然の短間隔である可能性が高い。</p>' +
+            '<p><span class="no">2連の点読み</span> — 実戦画面の演出パターンをリアルタイムで見る技術であり、事後ログからの再現は不可能。</p>' +
+            '<p><span class="no">前日ヒート持ち越しの断定</span> — 前日の最終ゲームが32G以内(=ヒート継続中に閉店)だった台があれば当日朝イチと突き合わせて検証できる仕組みは実装済み。</p>' +
+            '<h4>設定4・BLACK EPについて</h4>' +
+            '<p>設定4は2サイトとも非掲載のため設定3・5の対数線形補間による参考値。沖ドキ！BLACK EPは専用データが見つからず無印「沖ドキ！BLACK」の値を代用している。</p>' +
+          '</div>' +
+        '</details>' +
+
+        '<details class="slot-caveat card" id="slot-findings-box">' +
+          '<summary>検証結果 — 島全体の朝イチ統計検定・連チャン長分布</summary>' +
+          '<div class="slot-caveat-body" id="slot-findings-body"></div>' +
+        '</details>' +
+
+        '<section class="slot-bank card" id="slot-bank-section"></section>' +
+
+        '<section class="slot-yuuri card" id="slot-yuuri-section"></section>' +
+
+        '<div id="slot-filter-chip"></div>' +
+
+        '<div class="slot-controls">' +
+          '<div class="slot-legend">' +
+            '<span><span class="dot" style="background:var(--slot-gorgeous)"></span>ゴージャス−30 XA</span>' +
+            '<span><span class="dot" style="background:var(--slot-black-ep)"></span>BLACK EP</span>' +
+            '<span><span class="dot" style="background:var(--slot-big)"></span>BIG</span>' +
+            '<span><span class="dot" style="background:var(--slot-reg)"></span>REG</span>' +
+          '</div>' +
+          '<div class="slot-sort-hint">列見出しクリックで並び替え・行クリックで大当たり履歴を展開</div>' +
+        '</div>' +
+
+        '<div class="tw" style="overflow-x:auto;">' +
+          '<table class="slot-machines" id="slot-machines-table">' +
+            '<thead><tr>' +
+              '<th data-key="machine_no">台番号</th>' +
+              '<th data-key="machine_name">機種</th>' +
+              '<th data-key="games" class="num">G数</th>' +
+              '<th data-key="bigreg" class="num">全当選 BIG/REG</th>' +
+              '<th data-key="n_isolated" class="num">独立初当り</th>' +
+              '<th data-key="diff_estimate" class="num">推定差枚</th>' +
+              '<th data-key="expected_setting">設定期待値(分布・チェイン除去後)</th>' +
+            '</tr></thead>' +
+            '<tbody id="slot-machines-body"></tbody>' +
+          '</table>' +
+        '</div>' +
+
+        '<div class="slot-footer">' +
+          '<span>データ出所: DMMぱちタウン(P\'s CUBE提供)を社長操作の画面録画から読み取り。data_confidence=official</span>' +
+          '<span id="slot-gen-footer"></span>' +
+        '</div>' +
+      '</div>';
+
+    document.getElementById("slot-model-select").addEventListener("change", function (e) {
+      modelFilter = e.target.value;
+      expandedRow = null;
+      renderDynamic();
+    });
+    document.querySelectorAll("#slot-machines-table thead th").forEach(function (th) {
+      th.addEventListener("click", function () {
+        var key = th.dataset.key;
+        var mapKey = key === "bigreg" ? "big" : key;
+        if (sortKey === mapKey) sortDir *= -1; else { sortKey = mapKey; sortDir = key === "machine_no" ? 1 : -1; }
+        document.querySelectorAll("#slot-machines-table thead th").forEach(function (t) { t.classList.remove("sorted"); var a = t.querySelector(".arrow"); if (a) a.remove(); });
+        th.classList.add("sorted");
+        var arrow = document.createElement("span");
+        arrow.className = "arrow";
+        arrow.textContent = sortDir === 1 ? "▲" : "▼";
+        th.appendChild(arrow);
+        expandedRow = null;
+        renderTable();
+      });
+    });
+  }
+
+  function updateHeaderSub() {
+    var isLatest = currentDate === DATA.dates[DATA.dates.length - 1];
+    document.getElementById("slot-header-sub").textContent =
+      "台番号406〜427(全22台) / 表示日 " + currentDate + (isLatest ? "(最新)" : "");
+  }
+
+  function renderDateSelect() {
+    var select = document.getElementById("slot-date-select");
+    select.innerHTML = "";
+    var latest = DATA.dates[DATA.dates.length - 1];
+    DATA.dates.forEach(function (d) {
+      var opt = document.createElement("option");
+      opt.value = d;
+      opt.textContent = d + (d === latest ? "(最新)" : "");
+      if (d === currentDate) opt.selected = true;
+      select.appendChild(opt);
+    });
+    select.onchange = function () {
+      currentDate = select.value;
+      expandedRow = null;
+      renderDynamic();
+    };
+  }
+
+  function renderModelTotals() {
+    var el = document.getElementById("slot-model-totals");
+    el.innerHTML = "";
+    var mt = DATA.model_totals || {};
+    var order = ["ゴージャス-30 XA", "BLACK EP"];
+    var colors = { "ゴージャス-30 XA": "var(--slot-gorgeous)", "BLACK EP": "var(--slot-black-ep)" };
+    order.forEach(function (model) {
+      var m = mt[model];
+      if (!m) return;
+      var card = document.createElement("div");
+      card.className = "card slot-model-total-card";
+      card.innerHTML =
+        '<span class="sw" style="background:' + colors[model] + '"></span>' +
+        '<div>' +
+          '<div class="mt-label">S 沖ドキ！' + model + '</div>' +
+          '<div class="mt-val">' + fmt(m.total_games_sum) + '<small> G</small></div>' +
+          '<div class="mt-sub">' + m.n_machines + '台 × 記録' + m.n_days + '日分の累計</div>' +
+        '</div>';
+      el.appendChild(card);
+    });
+  }
+
+  function renderModelFilterChip() {
+    var el = document.getElementById("slot-filter-chip");
+    el.innerHTML = "";
+    if (modelFilter === "all") return;
+    var label = modelFilter === "black" ? "沖ドキ！BLACK EP" : "沖ドキ！ゴージャス−30 XA";
+    var chip = document.createElement("div");
+    chip.className = "slot-filter-chip";
+    var span = document.createElement("span");
+    span.textContent = label + "のみ表示中";
+    chip.appendChild(span);
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = "✕";
+    btn.title = "絞り込みを解除してすべて表示";
+    btn.addEventListener("click", function () {
+      modelFilter = "all";
+      document.getElementById("slot-model-select").value = "all";
+      expandedRow = null;
+      renderDynamic();
+    });
+    chip.appendChild(btn);
+    el.appendChild(chip);
+  }
+
+  function renderBank() {
+    var s = DATA.by_date[currentDate].bank_summary_v2;
+    var el = document.getElementById("slot-bank-section");
+    el.innerHTML = "";
+    var headline = document.createElement("div");
+    headline.className = "slot-bank-headline";
+    var read;
+    if (s.expected_setting >= 4.2) read = "設定5〜6寄りの示唆。ただし1日分のデータのみでの参考値です。";
+    else if (s.expected_setting <= 2.8) read = "設定1〜2寄りの示唆。全台リセットの強い兆候は見られません。";
+    else read = "設定分布はほぼフラット。全台リセットを示す強い統計的根拠は見られません(検証結果を参照)。";
+    var rl = s.reset_likelihood;
+    var lrLabel = rl.likelihood_ratio >= 10 ? "強い" : rl.likelihood_ratio >= 3 ? "中程度の" : rl.likelihood_ratio >= 1 ? "弱い" : "";
+    var resetVerdict = rl.likelihood_ratio > 1
+      ? '尤度比(H1/H0)=' + rl.likelihood_ratio.toFixed(2) + '倍 → リセットありの方が' + lrLabel + '示唆(基準率の仮定次第で結論は変わる。下記参照)'
+      : '尤度比(H1/H0)=' + rl.likelihood_ratio.toFixed(2) + '倍 → リセットなしの方が尤もらしい';
+    headline.innerHTML =
+      '<div class="eyebrow">島全体(' + s.machine_count + '台)の期待設定値 <span style="color:var(--mut)">— v2・チェイン除去後</span></div>' +
+      '<div class="value">' + s.expected_setting.toFixed(2) + '<small> / 6</small></div>' +
+      '<div class="read">' + read + '</div>' +
+      '<div class="read" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--bor)"><b>リセット判定(モード別確率の尤度比検定):</b> ' + resetVerdict + '</div>';
+    el.appendChild(headline);
+
+    var bars = document.createElement("div");
+    bars.className = "slot-bank-bars";
+    for (var st = 1; st <= 6; st++) {
+      var p = s.avg_posterior[String(st)] || 0;
+      var row = document.createElement("div");
+      row.className = "slot-bank-bar-row";
+      row.innerHTML =
+        '<span class="lbl' + (st === 4 ? ' approx' : '') + '">設定' + st + (st === 4 ? '※' : '') + '</span>' +
+        '<span class="slot-bank-bar-track"><span class="slot-bank-bar-fill" style="width:' + (p * 100).toFixed(1) + '%;background:' + SETTING_COLORS[st] + '"></span></span>' +
+        '<span class="pct tnum">' + pct(p) + '</span>';
+      bars.appendChild(row);
+    }
+    el.appendChild(bars);
+  }
+
+  function renderFindings() {
+    var s = DATA.by_date[currentDate].bank_summary_v2;
+    var rl = s.reset_likelihood;
+    var body = document.getElementById("slot-findings-body");
+    var html = "";
+
+    html += '<h4>リセット尤度分析(モード別ボーナス確率を使った尤度比検定)</h4>';
+    html += '<p>単純な「◯G以内かどうか」の二値しきい値ではなく、沖ドキ！ゴージャス設定1のモード別ボーナス確率' +
+      '(通常A=1/' + (1 / rl.p_normal_a).toFixed(1) + '、通常B=1/' + (1 / rl.p_normal_b).toFixed(1) + '、チャンス/引き戻し=1/' + (1 / rl.p_chance).toFixed(1) +
+      '、<a href="https://nana-press.com/kaiseki/machine/856/25731/" target="_blank" rel="noopener">出典</a>)を使い、' +
+      '各台の朝イチ間隔がどのモードから生成された可能性が高いかを尤度で評価。' +
+      'H0(リセットなし=通常A/B半々からスタート)とH1(リセットあり=' + pct(rl.chance_entry_rate) + 'がチャンスモードからスタート、実測値)を、' +
+      '全' + rl.machines.length + '台分の対数尤度を合計して比較した。</p>' +
+      '<p><b>尤度比(H1/H0) = ' + rl.likelihood_ratio.toFixed(2) + '倍</b> ' +
+      '(Jeffreysの目安では1〜3倍は「言及する程度」、3〜10倍で「そこそこの証拠」とされる基準に照らすと、今回の' + rl.likelihood_ratio.toFixed(2) + '倍は' + (rl.likelihood_ratio >= 3 ? '後者' : '前者') + '寄り)。' +
+      '朝イチがチャンスモード最尤と判定された台は' + rl.n_chance_first + '/' + rl.machines.length + '台、' +
+      'そのうち2回目の当選間隔も高確率状態(チャンス/通常B)が続いていた台は' + rl.n_sustained + '/' + rl.n_chance_first + '台。</p>' +
+      '<p><span class="no">尤度比から「本日リセットされていた確率は何%」に変換するには、この店が実際にどのくらいの頻度でリセットを行うかという事前確率(基準率)が必要だが、そのデータは無い。' +
+      '事前確率50%を仮定すれば事後確率は約' + (rl.likelihood_ratio / (rl.likelihood_ratio + 1) * 100).toFixed(0) + '%になるが、' +
+      'この店の実際のリセット頻度が(例えば)10日に1回程度だと仮定すると事後確率は10%台まで下がる。仮定次第で結論が変わる点に注意。</span></p>';
+
+    html += '<h4>事前確率を仮定に頼らず、記録日を重ねて実データから逆算する</h4>';
+    html += '<p>沖ドキ系にはリセット確定演出が存在しないため、この店が実際どのくらいの頻度で全台リセットしているかは公式には分からない。' +
+      'そこで上記の尤度比検定を録画・分析のたびに実行して<code>machine_reset_likelihood_daily</code>テーブルに積み上げ、' +
+      '複数日分たまった時点で「尤度比が高い(=リセット示唆が強い)日が何日に1回くらいあるか」を実データから逆算する方針にした。' +
+      '事前確率を仮定で持ち込むのではなく、記録を重ねるほど基準率そのものの精度が上がっていく設計。</p>';
+    var hist = rl.history || [];
+    var histRowsHtml = hist.map(function (h) {
+      var mark = h.likelihood_ratio >= 3 ? '● 高' : h.likelihood_ratio >= 1 ? '△ 中間' : '　';
+      return '<tr><td style="text-align:left">' + h.date + '</td><td class="tnum">' + h.likelihood_ratio.toFixed(2) + '倍</td>' +
+        '<td class="tnum">' + h.n_chance_first + '/' + h.machine_count + '</td><td>' + mark + '</td></tr>';
+    }).join('');
+    html += '<div class="slot-hitlog-scroll" style="margin:8px 0;max-height:none;"><table class="slot-hitlog" style="min-width:360px"><thead><tr><th style="text-align:left">記録日</th><th>尤度比</th><th>チャンス最尤台数</th><th>判定</th></tr></thead><tbody>' + histRowsHtml + '</tbody></table></div>';
+    if (hist.length < 5) {
+      var histDatesLabel = hist.map(function (h) { return h.date; }).join('、');
+      html += '<p class="no">現時点で記録済みは' + hist.length + '日分(' + histDatesLabel + ')のみ。' +
+        'LR≥3(そこそこの証拠)の日が全体の何割かという経験的な基準率を出すには、あと最低4〜5日分の記録が欲しいところ。</p>';
+    } else {
+      html += '<p><b>LR≥3の日: ' + rl.n_days_lr_gt3 + '/' + hist.length + '日</b>(' + pct(rl.n_days_lr_gt3 / hist.length) +
+        ') — この店の経験的なリセット頻度の目安として使える水準に達した。</p>';
+    }
+
+    var modeRowsHtml = rl.machines.map(function (mm) {
+      return '<tr><td style="text-align:left">台' + mm.machine_no + '</td><td class="tnum">' + mm.asaichi_games + 'G</td>' +
+        '<td>' + mm.first_hit_mode + '</td><td>' + (mm.second_hit_mode || '—') + '</td></tr>';
+    }).join('');
+    html += '<div class="slot-hitlog-scroll" style="margin:8px 0;max-height:260px;"><table class="slot-hitlog" style="min-width:320px"><thead><tr><th style="text-align:left">台</th><th>朝イチ</th><th>1回目最尤</th><th>2回目最尤</th></tr></thead><tbody>' + modeRowsHtml + '</tbody></table></div>';
+
+    html += '<h4>連チャン(チェイン)長の分布 — 「32G以内90%継続」説の検証</h4>';
+    var dist = s.streak_length_distribution;
+    var totalChains = Object.keys(dist).reduce(function (sum, k) { return sum + dist[k]; }, 0);
+    var maxLen = Math.max.apply(null, Object.keys(dist).map(Number));
+    var rowsHtml = "";
+    for (var L = 1; L <= Math.min(maxLen, 10); L++) {
+      var nAtLeastL = 0;
+      Object.keys(dist).forEach(function (k) { if (Number(k) >= L) nAtLeastL += dist[k]; });
+      var empirical = nAtLeastL / totalChains;
+      var theoretical = Math.pow(0.9, L - 1);
+      rowsHtml += '<tr><td>長さ≥' + L + '</td><td class="tnum">' + nAtLeastL + '/' + totalChains + ' (' + pct(empirical) + ')</td><td class="tnum">' + pct(theoretical) + '</td></tr>';
+    }
+    html += '<div class="slot-hitlog-scroll" style="margin:8px 0;max-height:none;"><table class="slot-hitlog" style="min-width:360px"><thead><tr><th style="text-align:left">継続長</th><th>実データ</th><th>理論値(90%継続説)</th></tr></thead><tbody>' + rowsHtml + '</tbody></table></div>';
+    html += '<p>実データは長さ2以降、理論値より大幅に速く減衰している(全' + totalChains + 'チェイン中)。' +
+      'これは「32G以内=即天国」という単純な検出ルールが、<b>本物の天国ループ</b>と<b>通常時のたまたま短い間隔</b>の混合を拾っているためと考えられる。' +
+      '「32G以内なら90%で継続する」という言説は、少なくとも今回のサンプルでは単純な形では確認できなかった。</p>';
+
+    if (s.two_streak_finding) {
+      var tf = s.two_streak_finding;
+      html += '<h4>「2連は有利区間継続を示唆する」説の検証</h4>';
+      html += '<p>各チェインが有利区間の何%地点(0%=区切り直後、100%=上限直前)で発生したかを見た。' +
+        '2連チェイン(n=' + tf.n_two_streak + ')の平均発生位置=' + (tf.mean_progress_two !== null ? pct(tf.mean_progress_two) : '—') +
+        '、4連以上のチェイン(n=' + tf.n_long_streak + ')の平均発生位置=' + (tf.mean_progress_long !== null ? pct(tf.mean_progress_long) : '—') + '。' +
+        '一様分布なら平均50%になるはずだが両者とも50%を下回り、かつ2連と4連以上で明確な差は見られなかった。' +
+        '<span class="no">サンプル数が少なく、この説を支持する明確な根拠も否定する根拠も今回のデータからは得られなかった。</span></p>';
+    }
+
+    html += '<h4>前日ヒート継続中閉店 → 持ち越し検証</h4>';
+    if (s.carryover_candidates && s.carryover_candidates.length) {
+      html += '<ul>' + s.carryover_candidates.map(function (c) {
+        return '<li>台' + c.machine_no + ': 前日最終ゲーム=' + c.prev_last_game + 'G、本日朝イチ=' + c.today_asaichi + 'G → ' + c.verdict + '</li>';
+      }).join('') + '</ul>';
+    } else {
+      html += '<p>該当台なし(前日、32G以内=ヒート継続中で閉店した台が今回のデータに存在しなかった)。</p>';
+    }
+
+    body.innerHTML = html;
+    document.getElementById("slot-c-big-coin").textContent = s.payout_coins.BIG;
+    document.getElementById("slot-c-reg-coin").textContent = s.payout_coins.REG;
+    document.getElementById("slot-c-base-cost").textContent = s.base_cost_per_game.toFixed(2);
+  }
+
+  function renderYuuri() {
+    var el = document.getElementById("slot-yuuri-section");
+    el.innerHTML = "";
+    var s = DATA.by_date[currentDate].bank_summary_v2;
+    var rows = machinesForDate(currentDate)
+      .filter(function (m) { return matchesModelFilter(m.machine_name); })
+      .map(function (m) { return m.yuuri; })
+      .filter(Boolean)
+      .sort(function (a, b) { return b.current_segment_progress_pct - a.current_segment_progress_pct; });
+
+    var heading = document.createElement("h2");
+    heading.innerHTML = '有利区間 消化状況(' + currentDate + '時点の推定) <span style="color:var(--mut);font-weight:400">— 大当たり履歴から逆算(BIG+59G/REG+24Gを加算し、上限到達で区切りとみなす)</span>';
+    el.appendChild(heading);
+
+    var sub = document.createElement("div");
+    sub.className = "slot-yuuri-sub";
+    sub.innerHTML = '上限の70%以上まで消化している台: <b style="color:var(--slot-amber)">' + s.yuuri_near_limit_count + ' / ' + s.yuuri_machine_count + '台</b>' +
+      ' — 近いうちに有利区間切れ(強制リセット)が来やすく、ハイエナ・見切りの判断材料になる。' +
+      '<span class="no">その日の開店(0G)を起点と仮定した推定であり、前日からの持ち越しは未反映。</span>';
+    el.appendChild(sub);
+
+    var grid = document.createElement("div");
+    grid.className = "slot-yuuri-grid";
+    rows.forEach(function (y) {
+      var color = y.current_segment_progress_pct >= 90 ? "var(--red)" : y.current_segment_progress_pct >= 70 ? "var(--amb)" : "var(--slot-amber-dim)";
+      var row = document.createElement("div");
+      row.className = "slot-yuuri-row";
+      row.innerHTML =
+        '<span class="mno">台' + y.machine_no + '</span>' +
+        '<span class="slot-yuuri-track" title="' + fmt(y.current_segment_games) + 'G / ' + y.limit + 'G(クリア' + y.n_clears_today + '回)"><span class="slot-yuuri-fill" style="width:' + y.current_segment_progress_pct + '%;background:' + color + '"></span></span>' +
+        '<span class="pct tnum">' + y.current_segment_progress_pct.toFixed(0) + '%</span>';
+      grid.appendChild(row);
+    });
+    el.appendChild(grid);
+
+    var note = document.createElement("div");
+    note.className = "slot-yuuri-note";
+    note.textContent = "上限: ゴージャス-30 XA=6000G / BLACK EP=2000G(コミュニティで広く使われる計算式による推定値、メーカー公式値の確認は取れていません)";
+    el.appendChild(note);
+  }
+
+  function rowData(m) {
+    var today = m.days.find(function (d) { return d.date === currentDate; }) || m.days[0] || {};
+    var v2 = m.v2 || {};
+    return {
+      machine_no: m.machine_no,
+      machine_name: m.machine_name,
+      games: today.total_games || 0,
+      big: today.bb_count || 0,
+      reg: today.rb_count || 0,
+      n_isolated: v2.n_isolated || 0,
+      n_streaks: v2.n_streaks || 0,
+      diff_estimate: v2.diff_estimate_final || 0,
+      expected_setting: v2.expected_setting || 0,
+      posterior: v2.posterior || {},
+      best_setting: v2.best_setting,
+      best_setting_prob: v2.best_setting_prob || 0,
+    };
+  }
+
+  function renderTable() {
+    var tbody = document.getElementById("slot-machines-body");
+    var rows = machinesForDate(currentDate)
+      .filter(function (m) { return matchesModelFilter(m.machine_name); })
+      .map(rowData);
+    rows.sort(function (a, b) {
+      var av = a[sortKey], bv = b[sortKey];
+      if (typeof av === "string") return sortDir * av.localeCompare(bv);
+      return sortDir * ((av || 0) - (bv || 0));
+    });
+
+    tbody.innerHTML = "";
+    rows.forEach(function (r) {
+      var mi = modelInfo(r.machine_name);
+      var tr = document.createElement("tr");
+      tr.className = "slot-mrow";
+      tr.tabIndex = 0;
+      tr.dataset.mno = r.machine_no;
+
+      var settingBar = "";
+      for (var st = 1; st <= 6; st++) {
+        var p = r.posterior[String(st)] || 0;
+        settingBar += '<span class="seg" style="width:' + (p * 100).toFixed(1) + '%;background:' + SETTING_COLORS[st] + '" title="設定' + st + ': ' + pct(p) + '"></span>';
+      }
+
+      tr.innerHTML =
+        '<td class="slot-mno"><span class="chev">▸</span> ' + r.machine_no + '</td>' +
+        '<td><span class="slot-model-chip"><span class="sw" style="background:' + mi.color + '"></span>' + mi.short + '</span></td>' +
+        '<td class="num tnum">' + fmt(r.games) + 'G</td>' +
+        '<td class="num slot-bigreg tnum"><span class="b">' + r.big + 'B</span><span class="sep"> / </span><span class="r">' + r.reg + 'R</span></td>' +
+        '<td class="num tnum">' + r.n_isolated + '<span class="slot-conf-note">(' + r.n_streaks + 'チェイン)</span></td>' +
+        '<td class="num tnum" style="color:' + (r.diff_estimate >= 0 ? "var(--grn)" : "var(--red)") + '">' + (r.diff_estimate >= 0 ? "+" : "") + fmt(r.diff_estimate) + '</td>' +
+        '<td><div class="slot-setting-cell">' +
+          '<span class="slot-setting-chip" style="color:' + SETTING_COLORS[r.best_setting] + '">' + r.expected_setting.toFixed(2) + '</span>' +
+          '<span class="slot-setting-bar">' + settingBar + '</span>' +
+        '</div></td>';
+
+      tr.addEventListener("click", function () { toggleRowDetail(r.machine_no, tr); });
+      tr.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleRowDetail(r.machine_no, tr); } });
+      tbody.appendChild(tr);
+    });
+
+    updateFooter();
+  }
+
+  function toggleRowDetail(mno, tr) {
+    if (expandedRow && expandedRow.tr) {
+      expandedRow.tr.classList.remove("expanded");
+      if (expandedRow.detailTr) expandedRow.detailTr.remove();
+    }
+    if (expandedRow && expandedRow.mno === mno) { expandedRow = null; return; }
+
+    tr.classList.add("expanded");
+    var detailTr = document.createElement("tr");
+    detailTr.className = "slot-detail-row";
+    var td = document.createElement("td");
+    td.colSpan = 7;
+    td.appendChild(buildDetail(machinesForDate(currentDate).find(function (m) { return m.machine_no === mno; })));
+    detailTr.appendChild(td);
+    tr.parentNode.insertBefore(detailTr, tr.nextSibling);
+    expandedRow = { mno: mno, tr: tr, detailTr: detailTr };
+  }
+
+  function buildDetail(m) {
+    var wrap = document.createElement("div");
+    wrap.className = "slot-detail";
+
+    var left = document.createElement("div");
+    var dayTrend = document.createElement("div");
+    dayTrend.className = "slot-daytrend";
+    m.days.slice(0, 4).forEach(function (d, i) {
+      var tile = document.createElement("div");
+      tile.className = "slot-day-tile";
+      var label = i === 0 ? "本日" : i + "日前";
+      tile.innerHTML =
+        '<div class="d">' + label + ' ' + d.date.slice(5) + '</div>' +
+        '<div class="es tnum">' + (d.expected_setting ? d.expected_setting.toFixed(2) : "—") + '</div>' +
+        '<div class="bb tnum"><span style="color:var(--slot-big)">' + (d.bb_count ?? "—") + 'B</span> <span style="color:var(--slot-reg)">' + (d.rb_count ?? "—") + 'R</span> / ' + fmt(d.total_games) + 'G</div>';
+      dayTrend.appendChild(tile);
+    });
+    left.appendChild(dayTrend);
+
+    var v2 = m.v2 || {};
+    var coins = DATA.by_date[currentDate].bank_summary_v2.payout_coins;
+    var h3diff = document.createElement("h3");
+    h3diff.textContent = currentDate + "の推定差枚推移(近似復元・BIG" + coins.BIG + "枚/REG" + coins.REG + "枚換算)";
+    left.appendChild(h3diff);
+    if (v2.diff_timeline && v2.diff_timeline.length > 1) {
+      left.appendChild(buildLineChart(v2.diff_timeline.map(function (p) { return { x: p[0], y: p[1] }; }), {
+        color: "var(--slot-amber)", fillColor: "var(--slot-amber-glow)", xLabel: "G", yLabel: "枚", zeroLine: true,
+      }));
+    } else {
+      var diffEmpty = document.createElement("div");
+      diffEmpty.className = "slot-trend-empty";
+      diffEmpty.textContent = "この日の大当たり履歴がないため復元できません。";
+      left.appendChild(diffEmpty);
+    }
+
+    var h3a = document.createElement("h3");
+    h3a.style.marginTop = "16px";
+    h3a.textContent = currentDate + "の大当たり履歴(" + m.hit_log.length + "件、新しい順・薄字=チェイン継続とみなした当選)";
+    left.appendChild(h3a);
+
+    var scrollWrap = document.createElement("div");
+    scrollWrap.className = "slot-hitlog-scroll";
+    var table = document.createElement("table");
+    table.className = "slot-hitlog";
+    var maxG = Math.max.apply(null, m.hit_log.map(function (h) { return h.games_since_prev || 0; }).concat([1]));
+    var rowsHtml = m.hit_log.map(function (h) {
+      var w = Math.min(100, ((h.games_since_prev || 0) / maxG) * 100);
+      var chainMark = h.is_isolated ? "" : '<span title="前回当選から32G以内=チェイン継続とみなした当選" style="opacity:.55">⛓ </span>';
+      var rowStyle = h.is_isolated ? "" : ' style="opacity:.6"';
+      return "<tr" + rowStyle + "><td>#" + h.hit_seq + "</td><td>" + chainMark + (h.hit_time || "—") + "</td>" +
+        '<td><div class="slot-interval-bar-cell"><span class="slot-interval-bar" style="width:' + w.toFixed(0) + '%;background:' + (h.status === "BIG" ? "var(--slot-big)" : "var(--slot-reg)") + '"></span><span class="tnum">' + h.games_since_prev + "G</span></div></td>" +
+        '<td><span class="slot-status-pill ' + h.status + '">' + h.status + "</span></td></tr>";
+    }).join("");
+    table.innerHTML =
+      "<thead><tr><th>回数</th><th>時刻</th><th>前回からのG数</th><th>結果</th></tr></thead><tbody>" +
+      (rowsHtml || '<tr><td colspan="4" style="text-align:center;color:var(--mut)">履歴なし</td></tr>') +
+      "</tbody>";
+    scrollWrap.appendChild(table);
+    left.appendChild(scrollWrap);
+    wrap.appendChild(left);
+
+    var right = document.createElement("div");
+    var h3s = document.createElement("h3");
+    h3s.textContent = "設定判別の内訳(独立初当り" + (v2.n_isolated || 0) + "回・有効G" + fmt(v2.effective_games || 0) + ")";
+    right.appendChild(h3s);
+    var settingTable = document.createElement("table");
+    settingTable.className = "slot-hitlog";
+    settingTable.style.marginBottom = "18px";
+    var setRows = "";
+    for (var st = 1; st <= 6; st++) {
+      var p = (v2.posterior && v2.posterior[String(st)]) || 0;
+      setRows += '<tr><td style="text-align:left">設定' + st + (st === 4 ? '<span class="slot-conf-note">(補間)</span>' : '') + '</td><td class="tnum">' + pct(p) + '</td>' +
+        '<td><span class="slot-setting-bar" style="display:inline-flex;width:80px"><span class="seg" style="width:' + (p * 100).toFixed(0) + '%;background:' + SETTING_COLORS[st] + '"></span></span></td></tr>';
+    }
+    settingTable.innerHTML = '<thead><tr><th style="text-align:left">設定</th><th>事後確率</th><th></th></tr></thead><tbody>' + setRows + '</tbody>';
+    right.appendChild(settingTable);
+
+    var h3b = document.createElement("h3");
+    h3b.textContent = "過去の傾向(第三者サイト集計・台番号ベース、機種変更またぐ場合あり)";
+    right.appendChild(h3b);
+    if (m.history_monthly && m.history_monthly.length > 0) {
+      right.appendChild(buildLineChart(m.history_monthly.map(function (r) { return { x: r.ym, y: r.total_diff }; }), {
+        color: "var(--slot-amber)", fillColor: "var(--slot-amber-glow)", zeroLine: true,
+      }));
+      var note = document.createElement("div");
+      note.className = "slot-history-note";
+      note.textContent = "月間差枚合計の推移(オシホール集計、aggregated)。同じ台番号でも過去に別機種が設置されていた期間を含みます。";
+      right.appendChild(note);
+    } else {
+      var empty = document.createElement("div");
+      empty.className = "slot-trend-empty";
+      empty.textContent = "この台番号の過去集計データはありません。";
+      right.appendChild(empty);
+    }
+    wrap.appendChild(right);
+
+    return wrap;
+  }
+
+  function buildLineChart(points, opts) {
+    opts = opts || {};
+    var color = opts.color || "var(--slot-amber)";
+    var fillColor = opts.fillColor || "var(--slot-amber-glow)";
+    var w = 480, h = 130, pad = 24;
+    var vals = points.map(function (p) { return p.y; });
+    var maxV = Math.max.apply(null, vals.concat(opts.zeroLine ? [0] : []));
+    var minV = Math.min.apply(null, vals.concat(opts.zeroLine ? [0] : []));
+    var range = (maxV - minV) || 1;
+    var xStep = (w - pad * 2) / Math.max(1, points.length - 1);
+    var toY = function (v) { return pad + (h - pad * 2) * (1 - (v - minV) / range); };
+    var zeroY = toY(0);
+
+    var coords = points.map(function (p, i) { return [pad + i * xStep, toY(p.y)]; });
+    var pathD = coords.map(function (c, i) { return (i === 0 ? "M" : "L") + c[0].toFixed(1) + " " + c[1].toFixed(1); }).join(" ");
+    var baseline = opts.zeroLine ? zeroY : coords[0][1];
+    var areaD = pathD + " L " + coords[coords.length - 1][0].toFixed(1) + " " + baseline.toFixed(1) + " L " + coords[0][0].toFixed(1) + " " + baseline.toFixed(1) + " Z";
+
+    var svgns = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(svgns, "svg");
+    svg.setAttribute("viewBox", "0 0 " + w + " " + h);
+    svg.setAttribute("class", "slot-historychart");
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "推移チャート");
+
+    if (opts.zeroLine) {
+      var gridline = document.createElementNS(svgns, "line");
+      gridline.setAttribute("x1", pad); gridline.setAttribute("x2", w - pad);
+      gridline.setAttribute("y1", zeroY); gridline.setAttribute("y2", zeroY);
+      gridline.setAttribute("stroke", "var(--slot-hair-strong)"); gridline.setAttribute("stroke-width", "1");
+      gridline.setAttribute("stroke-dasharray", "2,3");
+      svg.appendChild(gridline);
+    }
+
+    var area = document.createElementNS(svgns, "path");
+    area.setAttribute("d", areaD);
+    area.setAttribute("fill", fillColor);
+    svg.appendChild(area);
+
+    var path = document.createElementNS(svgns, "path");
+    path.setAttribute("d", pathD);
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", color);
+    path.setAttribute("stroke-width", "1.6");
+    path.setAttribute("stroke-linejoin", "round");
+    svg.appendChild(path);
+
+    var last = coords[coords.length - 1];
+    var dot = document.createElementNS(svgns, "circle");
+    dot.setAttribute("cx", last[0]); dot.setAttribute("cy", last[1]); dot.setAttribute("r", 3);
+    dot.setAttribute("fill", color);
+    svg.appendChild(dot);
+
+    var firstLabel = document.createElementNS(svgns, "text");
+    firstLabel.setAttribute("x", pad); firstLabel.setAttribute("y", h - 4);
+    firstLabel.setAttribute("fill", "var(--mut)"); firstLabel.setAttribute("font-size", "9");
+    firstLabel.setAttribute("font-family", "var(--slot-mono)");
+    firstLabel.textContent = String(points[0].x);
+    svg.appendChild(firstLabel);
+
+    var lastLabel = document.createElementNS(svgns, "text");
+    lastLabel.setAttribute("x", w - pad); lastLabel.setAttribute("y", h - 4);
+    lastLabel.setAttribute("fill", "var(--mut)"); lastLabel.setAttribute("font-size", "9");
+    lastLabel.setAttribute("font-family", "var(--slot-mono)"); lastLabel.setAttribute("text-anchor", "end");
+    lastLabel.textContent = String(points[points.length - 1].x) + (opts.yLabel ? " (" + Math.round(points[points.length - 1].y) + opts.yLabel + ")" : "");
+    svg.appendChild(lastLabel);
+
+    return svg;
+  }
+
+  function updateFooter() {
+    var ms = machinesForDate(currentDate).filter(function (m) { return matchesModelFilter(m.machine_name); });
+    document.getElementById("slot-gen-footer").textContent = "表示日: " + currentDate + " / 台数: " + ms.length + " / 大当たり履歴合計: " +
+      ms.reduce(function (s, m) { return s + m.hit_log.length; }, 0) + "件";
+  }
+
+  function renderDynamic() {
+    updateHeaderSub();
+    renderModelTotals();
+    renderModelFilterChip();
+    renderBank();
+    renderFindings();
+    renderYuuri();
+    renderTable();
+  }
+
+  window.renderSlot = function () {
+    DATA = window.EVO37_DATA;
+    var root = document.getElementById("slot-root");
+    if (!DATA || !DATA.dates || !DATA.dates.length) {
+      root.innerHTML = '<div class="empty">スロットデータを読み込めませんでした(evo37_slot_data.js)。</div>';
+      return;
+    }
+    if (!built) {
+      buildSkeleton();
+      SETTING_COLORS = settingColors();
+      currentDate = DATA.today;
+      built = true;
+    }
+    renderDateSelect();
+    document.getElementById("slot-model-select").value = modelFilter;
+    renderDynamic();
+  };
+})();
+
 function showPage(name) {
   closeSidebar();
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業',slot:'スロット'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
@@ -1235,6 +2139,7 @@ function showPage(name) {
   if (name==='projects') { renderProjectStats(); renderProjects(); }
   if (name==='aiorg') { renderAIOrg(); renderPipeline(); }
   if (name==='kyotei') renderKyotei();
+  if (name==='slot') renderSlot();
   if (name==='chaipo-board') cbRenderBoard();
   if (name==='affiliate') renderAffiliateSites();
 }
