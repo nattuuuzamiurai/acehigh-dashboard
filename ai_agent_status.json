@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ PR3件のGO/NO-GO判定",
-      "startedAt": "2026-08-22T11:46:59.826Z",
-      "finishedAt": "2026-08-22T11:47:02.680Z"
+      "task": "みやま市版配達地図アプリのレビュー",
+      "startedAt": "2026-08-26T01:50:02.988Z",
+      "finishedAt": "2026-08-26T01:50:17.131Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3277,
-    "todayOutputTokens": 776853,
-    "asOf": "2026-08-26T01:47:17.075Z"
+    "todayInputTokens": 3315,
+    "todayOutputTokens": 788300,
+    "asOf": "2026-08-26T01:50:24.742Z"
   },
-  "updatedAt": "2026-08-26T01:47:17.075Z"
+  "updatedAt": "2026-08-26T01:50:24.742Z"
 }
