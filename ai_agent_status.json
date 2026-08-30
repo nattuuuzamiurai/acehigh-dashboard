@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ラベルサイズ動的化と番地-建物マッチング精度の調査",
-      "startedAt": "2026-08-30T12:37:31.946Z",
-      "finishedAt": "2026-08-30T12:38:17.789Z"
+      "task": "PR #58 の軽微な修正3件",
+      "startedAt": "2026-08-30T14:42:39.054Z",
+      "finishedAt": "2026-08-30T14:42:50.352Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5808,
-    "todayOutputTokens": 1133923,
-    "asOf": "2026-08-30T14:35:00.368Z"
+    "todayInputTokens": 5860,
+    "todayOutputTokens": 1168588,
+    "asOf": "2026-08-30T14:43:05.064Z"
   },
-  "updatedAt": "2026-08-30T14:35:00.368Z"
+  "updatedAt": "2026-08-30T14:43:05.064Z"
 }
