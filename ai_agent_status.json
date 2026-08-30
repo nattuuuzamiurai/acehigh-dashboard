@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "筆界ベース番地マッチングの品質確認",
-      "startedAt": "2026-08-30T16:30:48.995Z",
-      "finishedAt": "2026-08-30T16:31:01.668Z"
+      "task": "筆界ベース番地マッチング+重複防止・位置調整の品質確認",
+      "startedAt": "2026-08-30T17:03:41.842Z",
+      "finishedAt": "2026-08-30T17:03:53.624Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 858,
-    "todayOutputTokens": 145121,
-    "asOf": "2026-08-30T16:42:55.642Z"
+    "todayInputTokens": 1084,
+    "todayOutputTokens": 169444,
+    "asOf": "2026-08-30T17:05:05.050Z"
   },
-  "updatedAt": "2026-08-30T16:42:55.642Z"
+  "updatedAt": "2026-08-30T17:05:05.050Z"
 }
