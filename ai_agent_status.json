@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR #58(写真カバレッジ拡大)の品質チェック",
-      "startedAt": "2026-08-30T14:12:01.313Z",
-      "finishedAt": "2026-08-30T14:12:03.613Z"
+      "task": "ラベル動的サイズ・番地重複除去の品質確認",
+      "startedAt": "2026-08-30T14:17:54.946Z",
+      "finishedAt": "2026-08-30T14:17:57.174Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5222,
-    "todayOutputTokens": 1025002,
-    "asOf": "2026-08-30T14:12:10.115Z"
+    "todayInputTokens": 5442,
+    "todayOutputTokens": 1038171,
+    "asOf": "2026-08-30T14:18:03.445Z"
   },
-  "updatedAt": "2026-08-30T14:12:10.115Z"
+  "updatedAt": "2026-08-30T14:18:03.445Z"
 }
