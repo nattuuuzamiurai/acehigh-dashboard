@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "番地ラベルの重複修正と表示位置の統一",
-      "startedAt": "2026-08-30T16:41:43.140Z",
-      "finishedAt": "2026-08-30T16:41:51.867Z"
+      "task": "緊急: 建物重心計算の桁落ちバグ修正",
+      "startedAt": "2026-08-30T18:01:24.095Z",
+      "finishedAt": "2026-08-30T18:01:33.866Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1320,
-    "todayOutputTokens": 219593,
-    "asOf": "2026-08-30T17:54:37.889Z"
+    "todayInputTokens": 1366,
+    "todayOutputTokens": 234981,
+    "asOf": "2026-08-30T18:01:45.187Z"
   },
-  "updatedAt": "2026-08-30T17:54:37.889Z"
+  "updatedAt": "2026-08-30T18:01:45.187Z"
 }
