@@ -1,9 +1,9 @@
 {
-  "generatedAtJst": "2026/8/31 1:08:20",
-  "cycleAtJst": "2026/8/31 1:08:16",
+  "generatedAtJst": "2026/8/31 1:45:04",
+  "cycleAtJst": "2026/8/31 1:45:01",
   "count": 0,
-  "totalAllTime": 137081,
-  "flaggedAllTime": 362,
+  "totalAllTime": 137152,
+  "flaggedAllTime": 371,
   "minNetProfitPct": 3,
   "testNotionalUsd": 1000,
   "rowsHtml": "<tr><td colspan=\"6\" class=\"empty\">まだ検知記録がありません(data/opportunities.jsonlが空か、直近サイクルの記録がまだありません、または全件が表示フィルタ〈流動性・額面差・インパクト〉で非表示になっています)</td></tr>"
