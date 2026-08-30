@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ラベル動的サイズ・番地重複除去の品質確認",
-      "startedAt": "2026-08-30T14:17:54.946Z",
-      "finishedAt": "2026-08-30T14:17:57.174Z"
+      "task": "PR #58 修正差分の再確認",
+      "startedAt": "2026-08-30T14:57:44.598Z",
+      "finishedAt": "2026-08-30T14:57:47.969Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5950,
-    "todayOutputTokens": 1193744,
-    "asOf": "2026-08-30T14:50:21.973Z"
+    "todayInputTokens": 6042,
+    "todayOutputTokens": 1200067,
+    "asOf": "2026-08-30T14:58:15.293Z"
   },
-  "updatedAt": "2026-08-30T14:50:21.973Z"
+  "updatedAt": "2026-08-30T14:58:15.293Z"
 }
