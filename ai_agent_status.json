@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Week9公開準備(draft解除+逆リンク)",
-      "startedAt": "2026-08-30T11:52:43.912Z",
-      "finishedAt": "2026-08-30T11:53:10.992Z"
+      "task": "ラベルサイズ動的化と番地-建物マッチング精度の調査",
+      "startedAt": "2026-08-30T12:37:31.946Z",
+      "finishedAt": "2026-08-30T12:38:17.789Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4064,
-    "todayOutputTokens": 771867,
-    "asOf": "2026-08-30T12:26:06.836Z"
+    "todayInputTokens": 4254,
+    "todayOutputTokens": 817323,
+    "asOf": "2026-08-30T12:43:30.621Z"
   },
-  "updatedAt": "2026-08-30T12:26:06.836Z"
+  "updatedAt": "2026-08-30T12:43:30.621Z"
 }
