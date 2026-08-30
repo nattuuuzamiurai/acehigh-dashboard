@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "筆界ポリゴンデータの再調査と番地マッチングの精度改善",
-      "startedAt": "2026-08-30T14:49:53.988Z",
-      "finishedAt": "2026-08-30T14:50:10.319Z"
+      "task": "番地ラベルの重複修正と表示位置の統一",
+      "startedAt": "2026-08-30T16:41:43.140Z",
+      "finishedAt": "2026-08-30T16:41:51.867Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 806,
-    "todayOutputTokens": 127021,
-    "asOf": "2026-08-30T16:35:52.609Z"
+    "todayInputTokens": 858,
+    "todayOutputTokens": 145121,
+    "asOf": "2026-08-30T16:42:55.642Z"
   },
-  "updatedAt": "2026-08-30T16:35:52.609Z"
+  "updatedAt": "2026-08-30T16:42:55.642Z"
 }
