@@ -2,39 +2,39 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "みやま市版配達地図アプリのXSS修正等",
-      "startedAt": "2026-08-25T22:15:08.946Z",
-      "finishedAt": "2026-08-25T22:15:14.641Z"
+      "task": "沖ドキゴージャス深掘り分析(天国期待値/朝イチ/有利区間/スルー×ゲーム数バックテスト)",
+      "startedAt": "2026-08-30T10:48:59.445Z",
+      "finishedAt": "2026-08-30T10:49:05.584Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "みやま市版配達地図アプリの品質確認",
-      "startedAt": "2026-08-25T21:27:03.143Z",
-      "finishedAt": "2026-08-25T21:27:20.818Z"
+      "task": "PR #55(フェーズ2編集部コメント)の品質チェック",
+      "startedAt": "2026-08-30T10:43:03.728Z",
+      "finishedAt": "2026-08-30T10:43:07.015Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "みやま市版配達地図アプリのレビュー",
-      "startedAt": "2026-08-26T01:50:02.988Z",
-      "finishedAt": "2026-08-26T01:50:17.131Z"
+      "task": "ラウンジ・クラブへのパイロット展開スコープ確認",
+      "startedAt": "2026-08-30T10:30:12.161Z",
+      "finishedAt": "2026-08-30T10:30:18.063Z"
     },
     "content-writer": {
       "status": "idle",
-      "task": "note記事書き直し:パチンコ・スロット(一般パターン例化)",
-      "startedAt": "2026-08-22T10:53:58.552Z",
-      "finishedAt": "2026-08-22T10:54:02.368Z"
+      "task": "フェーズ2業態への編集部コメント追加",
+      "startedAt": "2026-08-30T10:30:59.722Z",
+      "finishedAt": "2026-08-30T10:31:01.744Z"
     },
     "planning-lead": {
       "status": "idle",
-      "task": "ゼンリン代替サービスの市場性調査",
-      "startedAt": "2026-08-22T15:17:59.083Z",
-      "finishedAt": "2026-08-22T15:24:15.526Z"
+      "task": "Week9企画立案",
+      "startedAt": "2026-08-30T10:46:23.269Z",
+      "finishedAt": "2026-08-30T10:46:32.285Z"
     },
     "marketing-lead": {
       "status": "idle",
-      "task": "週次分析レポート生成(競艇)",
-      "startedAt": "2026-07-19T18:50:46.884Z",
-      "finishedAt": "2026-07-19T18:50:50.234Z"
+      "task": "マネタイズ可否の現実的な試算",
+      "startedAt": "2026-08-28T12:14:17.473Z",
+      "finishedAt": "2026-08-28T12:14:19.749Z"
     },
     "Explore": {
       "status": "idle",
@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "EVO37 8/23データ文字起こし chunk D(421-427)",
-      "startedAt": "2026-08-23T12:59:31.273Z",
-      "finishedAt": "2026-08-23T12:59:34.322Z"
+      "task": "ゼンリン操作動画のフレーム分析",
+      "startedAt": "2026-08-27T12:19:44.304Z",
+      "finishedAt": "2026-08-27T12:19:49.621Z"
     }
   },
   "usage": {
-    "todayInputTokens": 3363,
-    "todayOutputTokens": 816371,
-    "asOf": "2026-08-26T02:05:30.504Z"
+    "todayInputTokens": 2010,
+    "todayOutputTokens": 455432,
+    "asOf": "2026-08-30T10:53:46.154Z"
   },
-  "updatedAt": "2026-08-26T02:05:30.504Z"
+  "updatedAt": "2026-08-30T10:53:46.154Z"
 }
