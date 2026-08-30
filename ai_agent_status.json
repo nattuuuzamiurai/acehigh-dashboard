@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "PR #58 の軽微な修正3件",
-      "startedAt": "2026-08-30T14:42:39.054Z",
-      "finishedAt": "2026-08-30T14:42:50.352Z"
+      "task": "筆界ポリゴンデータの再調査と番地マッチングの精度改善",
+      "startedAt": "2026-08-30T14:49:53.988Z",
+      "finishedAt": "2026-08-30T14:50:10.319Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5892,
-    "todayOutputTokens": 1177042,
-    "asOf": "2026-08-30T14:46:08.212Z"
+    "todayInputTokens": 5950,
+    "todayOutputTokens": 1193744,
+    "asOf": "2026-08-30T14:50:21.973Z"
   },
-  "updatedAt": "2026-08-30T14:46:08.212Z"
+  "updatedAt": "2026-08-30T14:50:21.973Z"
 }
