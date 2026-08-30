@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR #55 の最終GO/NO-GO判定",
-      "startedAt": "2026-08-30T10:58:08.305Z",
-      "finishedAt": "2026-08-30T10:58:30.605Z"
+      "task": "Week9記事の最終レビュー",
+      "startedAt": "2026-08-30T11:37:51.770Z",
+      "finishedAt": "2026-08-30T11:38:04.665Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3312,
-    "todayOutputTokens": 637623,
-    "asOf": "2026-08-30T11:34:44.927Z"
+    "todayInputTokens": 3382,
+    "todayOutputTokens": 658656,
+    "asOf": "2026-08-30T11:38:33.735Z"
   },
-  "updatedAt": "2026-08-30T11:34:44.927Z"
+  "updatedAt": "2026-08-30T11:38:33.735Z"
 }
