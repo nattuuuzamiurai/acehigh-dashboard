@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "フェーズ2業態への編集部コメント追加",
-      "startedAt": "2026-08-30T10:30:59.722Z",
-      "finishedAt": "2026-08-30T10:31:01.744Z"
+      "task": "Week9記事7本執筆",
+      "startedAt": "2026-08-30T11:04:47.470Z",
+      "finishedAt": "2026-08-30T11:05:09.031Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2442,
-    "todayOutputTokens": 525556,
-    "asOf": "2026-08-30T11:01:39.479Z"
+    "todayInputTokens": 2620,
+    "todayOutputTokens": 566494,
+    "asOf": "2026-08-30T11:06:02.674Z"
   },
-  "updatedAt": "2026-08-30T11:01:39.479Z"
+  "updatedAt": "2026-08-30T11:06:02.674Z"
 }
