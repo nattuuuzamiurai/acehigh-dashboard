@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR #56確認+snack-takefuji電話番号の疑義調査",
-      "startedAt": "2026-08-30T11:17:11.774Z",
-      "finishedAt": "2026-08-30T11:17:57.536Z"
+      "task": "Week9記事のQA",
+      "startedAt": "2026-08-30T11:25:13.612Z",
+      "finishedAt": "2026-08-30T11:25:24.577Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2932,
-    "todayOutputTokens": 602293,
-    "asOf": "2026-08-30T11:18:13.802Z"
+    "todayInputTokens": 3120,
+    "todayOutputTokens": 617779,
+    "asOf": "2026-08-30T11:26:34.649Z"
   },
-  "updatedAt": "2026-08-30T11:18:13.802Z"
+  "updatedAt": "2026-08-30T11:26:34.649Z"
 }
