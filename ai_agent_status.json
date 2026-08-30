@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "沖ドキゴージャス深掘り分析(天国期待値/朝イチ/有利区間/スルー×ゲーム数バックテスト)",
-      "startedAt": "2026-08-30T10:48:59.445Z",
-      "finishedAt": "2026-08-30T10:49:05.584Z"
+      "task": "Week9公開準備(draft解除+逆リンク)",
+      "startedAt": "2026-08-30T11:52:43.912Z",
+      "finishedAt": "2026-08-30T11:53:10.992Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3556,
-    "todayOutputTokens": 711924,
-    "asOf": "2026-08-30T11:51:07.454Z"
+    "todayInputTokens": 3622,
+    "todayOutputTokens": 720367,
+    "asOf": "2026-08-30T11:55:56.196Z"
   },
-  "updatedAt": "2026-08-30T11:51:07.454Z"
+  "updatedAt": "2026-08-30T11:55:56.196Z"
 }
