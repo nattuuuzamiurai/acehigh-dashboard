@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "DreaMグランドオープン宣伝バナー実装",
-      "startedAt": "2026-09-01T15:47:25.554Z",
-      "finishedAt": "2026-09-01T15:47:28.605Z"
+      "task": "沖ドキ実データの集計・試算・グラフ用データ準備",
+      "startedAt": "2026-09-01T16:03:18.749Z",
+      "finishedAt": "2026-09-01T16:03:20.508Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "Week9企画立案",
-      "startedAt": "2026-08-30T10:46:23.269Z",
-      "finishedAt": "2026-08-30T10:46:32.285Z"
+      "task": "沖ドキnote記事の構成案作成",
+      "startedAt": "2026-09-01T16:02:57.819Z",
+      "finishedAt": "2026-09-01T16:02:59.644Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 582,
-    "todayOutputTokens": 161844,
-    "asOf": "2026-09-01T15:53:21.634Z"
+    "todayInputTokens": 972,
+    "todayOutputTokens": 293253,
+    "asOf": "2026-09-01T16:03:37.752Z"
   },
-  "updatedAt": "2026-09-01T15:53:21.634Z"
+  "updatedAt": "2026-09-01T16:03:37.752Z"
 }
