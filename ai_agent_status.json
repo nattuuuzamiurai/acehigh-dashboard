@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "クラスタ復元の検証と橋渡し併合パターンの全体監査",
-      "startedAt": "2026-09-01T17:18:25.421Z",
-      "finishedAt": "2026-09-01T17:18:27.932Z"
+      "task": "統合版note記事の品質管理再チェック",
+      "startedAt": "2026-09-01T17:39:42.293Z",
+      "finishedAt": "2026-09-01T17:39:48.465Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4070,
-    "todayOutputTokens": 1060585,
-    "asOf": "2026-09-01T17:38:45.301Z"
+    "todayInputTokens": 4106,
+    "todayOutputTokens": 1065904,
+    "asOf": "2026-09-01T17:39:52.999Z"
   },
-  "updatedAt": "2026-09-01T17:38:45.301Z"
+  "updatedAt": "2026-09-01T17:39:52.999Z"
 }
