@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "温室除外修正の品質確認",
-      "startedAt": "2026-09-01T14:38:39.809Z",
-      "finishedAt": "2026-09-01T14:38:43.269Z"
+      "task": "DreaMバナーPRの品質チェック",
+      "startedAt": "2026-09-01T16:08:36.191Z",
+      "finishedAt": "2026-09-01T16:08:40.281Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 972,
-    "todayOutputTokens": 293253,
-    "asOf": "2026-09-01T16:03:37.752Z"
+    "todayInputTokens": 1140,
+    "todayOutputTokens": 324430,
+    "asOf": "2026-09-01T16:09:23.093Z"
   },
-  "updatedAt": "2026-09-01T16:03:37.752Z"
+  "updatedAt": "2026-09-01T16:09:23.093Z"
 }
