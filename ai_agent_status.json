@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "v34をInstagram自動監視の対象から除外",
-      "startedAt": "2026-09-01T13:35:23.781Z",
-      "finishedAt": "2026-09-01T13:35:29.835Z"
+      "task": "温室等非居住建物の主要建物候補からの除外",
+      "startedAt": "2026-09-01T14:15:45.705Z",
+      "finishedAt": "2026-09-01T14:15:48.822Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 18689,
-    "todayOutputTokens": 3332902,
-    "asOf": "2026-09-01T14:14:27.339Z"
+    "todayInputTokens": 18709,
+    "todayOutputTokens": 3338358,
+    "asOf": "2026-09-01T14:16:07.052Z"
   },
-  "updatedAt": "2026-09-01T14:14:27.339Z"
+  "updatedAt": "2026-09-01T14:16:07.052Z"
 }
