@@ -1,0 +1,11 @@
+# サービスアカウント鍵・OAuthトークン類は絶対にコミットしない。
+# (通常はこのPCの .claude会社/.claude/scripts/gmail-check/ 配下、または
+#  GitHub Secrets 経由の環境変数として渡され、このリポジトリには置かれない想定。
+#  誤って手元でコピーした場合の保険としてここでも除外する)
+*service_account*.json
+*credentials*.json
+token*.json
+.env
+.DS_Store
+__pycache__/
+*.pyc

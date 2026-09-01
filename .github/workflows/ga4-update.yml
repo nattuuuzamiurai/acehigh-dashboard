@@ -1,0 +1,64 @@
+name: GA4アクセス数を自動更新
+
+# 【2026-09-01】GA4アクセス数更新をGitHub Actionsに移行。
+# 従来はこのPC(launchd, com.kaisha.ga4watch.plist)が6時間おきに実行していたが、
+# ローカルgitの放置(rebase未完了)等でこのPC側の更新が33時間止まった事故があり、
+# 「このPC頼み」を解消するために追加した。このPC側のdaemonは当面並行稼働させる。
+#
+# 【重要・前提条件(未完了)】このワークフローが実際に成功するには、以下2つの
+# 手動セットアップが別途必要(実装時点では未実施。経営管理オフィス/社長側の作業):
+#   1. GA4 Admin (analytics.google.com) で、サービスアカウント
+#      ga4-dashboard-reader@cloude-kaisha-gmail-check.iam.gserviceaccount.com を
+#      対象3プロパティ(545522856 / 546001751 / 546969958)の「閲覧者」として追加する
+#   2. `gh secret set GA4_SERVICE_ACCOUNT_KEY --repo nattuuuzamiurai/acehigh-dashboard
+#      < ga4_service_account.json` でサービスアカウント鍵をSecretsに登録する
+# 上記が終わるまでは、このワークフローを実行してもGA4 API呼び出しが403で失敗する。
+
+on:
+  schedule:
+    # 毎日 UTC 15:00 (JST 24:00 / 翌日0:00 ごろ)に1回実行。
+    # このPC側daemon(6時間おき、1日1回制御あり)と並行稼働させる想定。
+    - cron: '0 15 * * *'
+  workflow_dispatch: {} # 動作確認用の手動実行
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ga4-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r .github/scripts/ga4/requirements.txt
+
+      - name: Fetch GA4 stats and update niche_sites_revenue.json
+        id: ga4
+        env:
+          GA4_SERVICE_ACCOUNT_KEY: ${{ secrets.GA4_SERVICE_ACCOUNT_KEY }}
+        run: python .github/scripts/ga4/update_ga4_traffic.py
+
+      - name: Commit and push if changed
+        if: steps.ga4.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add niche_sites_revenue.json
+          git diff --cached --quiet && echo "差分なし(スキップ)" && exit 0
+          git commit -m "${{ steps.ga4.outputs.commit_message }}"
+          # 他の自動化(競艇データ更新等)が数十分おきにmainへpushしているため、
+          # job実行中に割り込まれてnon-fast-forwardになりpushが失敗しうる。
+          # ga4-watch-daemon.js と同様にpush前にrebase追従する(品質管理部指摘・2026-09-01対応)。
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
