@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "建物重複除去・番地ラベル左上配置の品質確認",
-      "startedAt": "2026-09-01T16:14:46.475Z",
-      "finishedAt": "2026-09-01T16:14:51.482Z"
+      "task": "沖ドキnote記事の品質管理チェック",
+      "startedAt": "2026-09-01T16:33:39.780Z",
+      "finishedAt": "2026-09-01T16:33:43.431Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2034,
-    "todayOutputTokens": 532008,
-    "asOf": "2026-09-01T16:32:06.788Z"
+    "todayInputTokens": 2102,
+    "todayOutputTokens": 539034,
+    "asOf": "2026-09-01T16:33:46.923Z"
   },
-  "updatedAt": "2026-09-01T16:32:06.788Z"
+  "updatedAt": "2026-09-01T16:33:46.923Z"
 }
