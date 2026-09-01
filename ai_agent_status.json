@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Pages公開範囲整理PRの品質チェック",
-      "startedAt": "2026-09-01T12:22:35.088Z",
-      "finishedAt": "2026-09-01T12:22:37.257Z"
+      "task": "BAR BETTY削除PR#71の品質チェック",
+      "startedAt": "2026-09-01T12:28:19.917Z",
+      "finishedAt": "2026-09-01T12:28:31.829Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 15847,
-    "todayOutputTokens": 2526999,
-    "asOf": "2026-09-01T12:27:39.129Z"
+    "todayInputTokens": 15903,
+    "todayOutputTokens": 2538756,
+    "asOf": "2026-09-01T12:28:58.266Z"
   },
-  "updatedAt": "2026-09-01T12:27:39.129Z"
+  "updatedAt": "2026-09-01T12:28:58.266Z"
 }
