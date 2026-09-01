@@ -23,13 +23,22 @@ rebase放置でGA4更新が約33時間止まった件の再発防止)。
   - 実際のgit commit/pushはこのスクリプトの外側(ワークフローのシェル手順)で行う。
     このスクリプトは「更新したら0、更新対象なしなら0」を返し、変更の有無は
     `git status --porcelain` 側で判定する(daemon.js方式を踏襲)
+
+【2026-09-01 品質管理部指摘・修正】「今日」の判定は元のdaemon.js(ローカルMac、
+JST)に合わせてAsia/Tokyoで明示的に計算する。GitHub Actions(ubuntu-latest)の
+デフォルトTZはUTCで、何も指定しないとcron発火時刻(UTC 15:00 = JST 24:00頃)
+付近でUTC日付とJST日付がズレ、asOf/daily.dateがJST基準の他データと食い違う
+ため、date.today()/datetime.now()は使わずZoneInfo("Asia/Tokyo")を明示する。
 """
 
 import json
 import os
 import subprocess
 import sys
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
+
+JST = ZoneInfo("Asia/Tokyo")
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # このスクリプトは <repo>/.github/scripts/ga4/ に置かれている前提。
@@ -64,15 +73,15 @@ SITES = [
 
 
 def today_str():
-    return date.today().strftime("%Y-%m-%d")
+    return datetime.now(JST).strftime("%Y-%m-%d")
 
 
 def yesterday_str():
-    return (date.today() - timedelta(days=1)).strftime("%Y-%m-%d")
+    return (datetime.now(JST) - timedelta(days=1)).strftime("%Y-%m-%d")
 
 
 def now_str():
-    return datetime.now().strftime("%Y-%m-%d %H:%M")
+    return datetime.now(JST).strftime("%Y-%m-%d %H:%M")
 
 
 def fetch_stats(cfg):
