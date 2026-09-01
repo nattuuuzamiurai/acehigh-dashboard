@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "温室等非居住建物の主要建物候補からの除外",
-      "startedAt": "2026-09-01T14:15:45.705Z",
-      "finishedAt": "2026-09-01T14:15:48.822Z"
+      "task": "建物二重表示の再調査と番地ラベルの左上配置(住人名スペース確保)",
+      "startedAt": "2026-09-01T14:55:03.662Z",
+      "finishedAt": "2026-09-01T14:55:06.806Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 19251,
-    "todayOutputTokens": 3428069,
-    "asOf": "2026-09-01T14:52:49.621Z"
+    "todayInputTokens": 19273,
+    "todayOutputTokens": 3439018,
+    "asOf": "2026-09-01T14:55:25.931Z"
   },
-  "updatedAt": "2026-09-01T14:52:49.621Z"
+  "updatedAt": "2026-09-01T14:55:25.931Z"
 }
