@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "番地ラベル重心方式・主要建物絞り込みの品質確認",
-      "startedAt": "2026-09-01T13:18:55.035Z",
-      "finishedAt": "2026-09-01T13:18:59.398Z"
+      "task": "v34除外PRの品質チェック",
+      "startedAt": "2026-09-01T13:54:08.848Z",
+      "finishedAt": "2026-09-01T13:55:32.280Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 18225,
-    "todayOutputTokens": 3216129,
-    "asOf": "2026-09-01T13:52:58.631Z"
+    "todayInputTokens": 18277,
+    "todayOutputTokens": 3231436,
+    "asOf": "2026-09-01T13:56:27.541Z"
   },
-  "updatedAt": "2026-09-01T13:52:58.631Z"
+  "updatedAt": "2026-09-01T13:56:27.541Z"
 }
