@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "疑わしい建物クラスタの追加調査(高解像度画像・地籍境界での裏取り)",
-      "startedAt": "2026-09-01T16:45:07.403Z",
-      "finishedAt": "2026-09-01T16:45:10.292Z"
+      "task": "朝イチ分類ロジックの確率定数を検証",
+      "startedAt": "2026-09-01T16:46:40.281Z",
+      "finishedAt": "2026-09-01T16:46:42.225Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2342,
-    "todayOutputTokens": 586492,
-    "asOf": "2026-09-01T16:45:27.685Z"
+    "todayInputTokens": 2378,
+    "todayOutputTokens": 608783,
+    "asOf": "2026-09-01T16:46:52.068Z"
   },
-  "updatedAt": "2026-09-01T16:45:27.685Z"
+  "updatedAt": "2026-09-01T16:46:52.068Z"
 }
