@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "DreaMバナーPRの最終GO/NO-GO判定",
-      "startedAt": "2026-09-01T16:21:16.034Z",
-      "finishedAt": "2026-09-01T16:21:18.063Z"
+      "task": "緊急修正PR#75の最終GO/NO-GO判定",
+      "startedAt": "2026-09-01T17:21:35.585Z",
+      "finishedAt": "2026-09-01T17:21:37.828Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3680,
-    "todayOutputTokens": 937732,
-    "asOf": "2026-09-01T17:18:43.211Z"
+    "todayInputTokens": 3776,
+    "todayOutputTokens": 951509,
+    "asOf": "2026-09-01T17:22:19.189Z"
   },
-  "updatedAt": "2026-09-01T17:18:43.211Z"
+  "updatedAt": "2026-09-01T17:22:19.189Z"
 }
