@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "BAR BETTY削除PR#71の最終GO/NO-GO判定",
-      "startedAt": "2026-09-01T12:46:19.474Z",
-      "finishedAt": "2026-09-01T12:46:23.869Z"
+      "task": "GA4 PRの最終GO/NO-GO判定",
+      "startedAt": "2026-09-01T13:06:22.451Z",
+      "finishedAt": "2026-09-01T13:06:24.702Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 17022,
-    "todayOutputTokens": 2878736,
-    "asOf": "2026-09-01T12:57:05.530Z"
+    "todayInputTokens": 17251,
+    "todayOutputTokens": 2907251,
+    "asOf": "2026-09-01T13:06:29.085Z"
   },
-  "updatedAt": "2026-09-01T12:57:05.530Z"
+  "updatedAt": "2026-09-01T13:06:29.085Z"
 }
