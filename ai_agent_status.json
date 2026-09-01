@@ -2,21 +2,21 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "緊急: 建物重心計算の桁落ちバグ修正",
-      "startedAt": "2026-08-30T18:01:24.095Z",
-      "finishedAt": "2026-08-30T18:01:33.866Z"
+      "task": "GitHub Pages公開範囲の整理",
+      "startedAt": "2026-09-01T12:06:27.855Z",
+      "finishedAt": "2026-09-01T12:06:47.322Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "重心計算バグ修正の再検証",
-      "startedAt": "2026-08-30T18:35:04.496Z",
-      "finishedAt": "2026-08-30T18:35:11.997Z"
+      "task": "PR#69の生成漏れ修正を再検証",
+      "startedAt": "2026-09-01T05:59:32.537Z",
+      "finishedAt": "2026-09-01T05:59:54.155Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "番地マッチング精度修正の最終レビュー",
-      "startedAt": "2026-08-30T19:24:49.629Z",
-      "finishedAt": "2026-08-30T19:24:58.249Z"
+      "task": "PR#69の最終GO/NO-GO判定",
+      "startedAt": "2026-09-01T06:10:19.001Z",
+      "finishedAt": "2026-09-01T06:10:43.831Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1882,
-    "todayOutputTokens": 316979,
-    "asOf": "2026-08-30T19:33:37.438Z"
+    "todayInputTokens": 14918,
+    "todayOutputTokens": 2258386,
+    "asOf": "2026-09-01T12:07:16.269Z"
   },
-  "updatedAt": "2026-08-30T19:33:37.438Z"
+  "updatedAt": "2026-09-01T12:07:16.269Z"
 }
