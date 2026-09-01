@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "GA4取得のGitHub Actions移行",
-      "startedAt": "2026-09-01T12:10:03.397Z",
-      "finishedAt": "2026-09-01T12:10:42.423Z"
+      "task": "BAR BETTY閉店に伴う削除対応",
+      "startedAt": "2026-09-01T12:15:09.824Z",
+      "finishedAt": "2026-09-01T12:15:14.319Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 15008,
-    "todayOutputTokens": 2304135,
-    "asOf": "2026-09-01T12:11:01.816Z"
+    "todayInputTokens": 15179,
+    "todayOutputTokens": 2365680,
+    "asOf": "2026-09-01T12:15:54.281Z"
   },
-  "updatedAt": "2026-09-01T12:11:01.816Z"
+  "updatedAt": "2026-09-01T12:15:54.281Z"
 }
