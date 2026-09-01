@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "沖ドキ実データの集計・試算・グラフ用データ準備",
-      "startedAt": "2026-09-01T16:03:18.749Z",
-      "finishedAt": "2026-09-01T16:03:20.508Z"
+      "task": "疑わしい建物クラスタの追加調査(高解像度画像・地籍境界での裏取り)",
+      "startedAt": "2026-09-01T16:45:07.403Z",
+      "finishedAt": "2026-09-01T16:45:10.292Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2102,
-    "todayOutputTokens": 539034,
-    "asOf": "2026-09-01T16:33:46.923Z"
+    "todayInputTokens": 2342,
+    "todayOutputTokens": 586492,
+    "asOf": "2026-09-01T16:45:27.685Z"
   },
-  "updatedAt": "2026-09-01T16:33:46.923Z"
+  "updatedAt": "2026-09-01T16:45:27.685Z"
 }
