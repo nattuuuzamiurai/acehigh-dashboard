@@ -1,0 +1,5 @@
+# GA4アクセス数自動更新(GitHub Actions)用の依存関係。
+# 対話的OAuth認証(google-auth-oauthlib)はGitHub Actions版では使わないため含めない。
+google-api-python-client>=2.198.0
+google-auth>=2.56.0
+google-auth-httplib2>=0.4.0
