@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "緊急修正PR#75の最終GO/NO-GO判定",
-      "startedAt": "2026-09-01T17:21:35.585Z",
-      "finishedAt": "2026-09-01T17:21:37.828Z"
+      "task": "沖ドキnote記事の最終レビュー判定",
+      "startedAt": "2026-09-01T17:45:51.488Z",
+      "finishedAt": "2026-09-01T17:46:14.787Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4238,
-    "todayOutputTokens": 1089616,
-    "asOf": "2026-09-01T17:45:22.864Z"
+    "todayInputTokens": 4266,
+    "todayOutputTokens": 1096133,
+    "asOf": "2026-09-01T17:46:21.855Z"
   },
-  "updatedAt": "2026-09-01T17:45:22.864Z"
+  "updatedAt": "2026-09-01T17:46:21.855Z"
 }
