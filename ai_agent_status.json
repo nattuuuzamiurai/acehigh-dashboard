@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "DreaMバナーPRの品質チェック",
-      "startedAt": "2026-09-01T16:08:36.191Z",
-      "finishedAt": "2026-09-01T16:08:40.281Z"
+      "task": "建物重複除去・番地ラベル左上配置の品質確認",
+      "startedAt": "2026-09-01T16:14:46.475Z",
+      "finishedAt": "2026-09-01T16:14:51.482Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1204,
-    "todayOutputTokens": 339193,
-    "asOf": "2026-09-01T16:10:02.220Z"
+    "todayInputTokens": 1534,
+    "todayOutputTokens": 384152,
+    "asOf": "2026-09-01T16:15:06.165Z"
   },
-  "updatedAt": "2026-09-01T16:10:02.220Z"
+  "updatedAt": "2026-09-01T16:15:06.165Z"
 }
