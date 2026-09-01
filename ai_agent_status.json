@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "GA4 PRの最終GO/NO-GO判定",
-      "startedAt": "2026-09-01T13:06:22.451Z",
-      "finishedAt": "2026-09-01T13:06:24.702Z"
+      "task": "番地ラベル重心方式・主要建物絞り込みの最終レビュー",
+      "startedAt": "2026-09-01T14:00:40.601Z",
+      "finishedAt": "2026-09-01T14:00:58.568Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 18307,
-    "todayOutputTokens": 3239437,
-    "asOf": "2026-09-01T13:57:31.670Z"
+    "todayInputTokens": 18405,
+    "todayOutputTokens": 3270538,
+    "asOf": "2026-09-01T14:01:42.519Z"
   },
-  "updatedAt": "2026-09-01T13:57:31.670Z"
+  "updatedAt": "2026-09-01T14:01:42.519Z"
 }
