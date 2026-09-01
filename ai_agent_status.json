@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "v34除外PRの最終GO/NO-GO判定",
-      "startedAt": "2026-09-01T14:09:32.718Z",
-      "finishedAt": "2026-09-01T14:09:35.006Z"
+      "task": "温室除外修正の最終レビュー",
+      "startedAt": "2026-09-01T14:49:37.806Z",
+      "finishedAt": "2026-09-01T14:49:41.187Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 19093,
-    "todayOutputTokens": 3410359,
-    "asOf": "2026-09-01T14:43:06.112Z"
+    "todayInputTokens": 19225,
+    "todayOutputTokens": 3425214,
+    "asOf": "2026-09-01T14:49:58.232Z"
   },
-  "updatedAt": "2026-09-01T14:43:06.112Z"
+  "updatedAt": "2026-09-01T14:49:58.232Z"
 }
