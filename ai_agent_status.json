@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "Week9記事7本執筆",
-      "startedAt": "2026-08-30T11:04:47.470Z",
-      "finishedAt": "2026-08-30T11:05:09.031Z"
+      "task": "沖ドキ実データnote記事の執筆",
+      "startedAt": "2026-09-01T16:21:00.535Z",
+      "finishedAt": "2026-09-01T16:21:02.279Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1640,
-    "todayOutputTokens": 460384,
-    "asOf": "2026-09-01T16:18:23.871Z"
+    "todayInputTokens": 1746,
+    "todayOutputTokens": 489567,
+    "asOf": "2026-09-01T16:21:06.581Z"
   },
-  "updatedAt": "2026-09-01T16:18:23.871Z"
+  "updatedAt": "2026-09-01T16:21:06.581Z"
 }
