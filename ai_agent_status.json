@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "BAR BETTY閉店に伴う削除対応",
-      "startedAt": "2026-09-01T12:15:09.824Z",
-      "finishedAt": "2026-09-01T12:15:14.319Z"
+      "task": "v34をInstagram自動監視の対象から除外",
+      "startedAt": "2026-09-01T13:35:23.781Z",
+      "finishedAt": "2026-09-01T13:35:29.835Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 17697,
-    "todayOutputTokens": 3022566,
-    "asOf": "2026-09-01T13:34:15.637Z"
+    "todayInputTokens": 17751,
+    "todayOutputTokens": 3063532,
+    "asOf": "2026-09-01T13:35:52.790Z"
   },
-  "updatedAt": "2026-09-01T13:34:15.637Z"
+  "updatedAt": "2026-09-01T13:35:52.790Z"
 }
