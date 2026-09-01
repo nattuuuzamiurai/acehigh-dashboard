@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "建物二重表示の再調査と番地ラベルの左上配置(住人名スペース確保)",
-      "startedAt": "2026-09-01T14:55:03.662Z",
-      "finishedAt": "2026-09-01T14:55:06.806Z"
+      "task": "DreaMグランドオープン宣伝バナー実装",
+      "startedAt": "2026-09-01T15:47:25.554Z",
+      "finishedAt": "2026-09-01T15:47:28.605Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 356,
-    "todayOutputTokens": 111720,
-    "asOf": "2026-09-01T15:44:18.908Z"
+    "todayInputTokens": 420,
+    "todayOutputTokens": 128972,
+    "asOf": "2026-09-01T15:48:04.944Z"
   },
-  "updatedAt": "2026-09-01T15:44:18.908Z"
+  "updatedAt": "2026-09-01T15:48:04.944Z"
 }
