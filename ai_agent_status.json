@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "GitHub Pages公開範囲の整理",
-      "startedAt": "2026-09-01T12:06:27.855Z",
-      "finishedAt": "2026-09-01T12:06:47.322Z"
+      "task": "GA4取得のGitHub Actions移行",
+      "startedAt": "2026-09-01T12:10:03.397Z",
+      "finishedAt": "2026-09-01T12:10:42.423Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 14950,
-    "todayOutputTokens": 2268553,
-    "asOf": "2026-09-01T12:08:49.812Z"
+    "todayInputTokens": 15008,
+    "todayOutputTokens": 2304135,
+    "asOf": "2026-09-01T12:10:58.851Z"
   },
-  "updatedAt": "2026-09-01T12:08:49.812Z"
+  "updatedAt": "2026-09-01T12:10:58.851Z"
 }
