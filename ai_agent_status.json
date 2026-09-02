@@ -32,9 +32,9 @@
     },
     "marketing-lead": {
       "status": "idle",
-      "task": "マネタイズ可否の現実的な試算",
-      "startedAt": "2026-08-28T12:14:17.473Z",
-      "finishedAt": "2026-08-28T12:14:19.749Z"
+      "task": "fukuoka-poker-navi GEO技術監査",
+      "startedAt": "2026-09-02T16:41:20.318Z",
+      "finishedAt": "2026-09-02T16:41:22.044Z"
     },
     "Explore": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 158,
-    "todayOutputTokens": 116904,
-    "asOf": "2026-09-02T16:36:48.847Z"
+    "todayInputTokens": 352,
+    "todayOutputTokens": 206218,
+    "asOf": "2026-09-02T16:43:00.607Z"
   },
-  "updatedAt": "2026-09-02T16:36:48.847Z"
+  "updatedAt": "2026-09-02T16:43:00.607Z"
 }
