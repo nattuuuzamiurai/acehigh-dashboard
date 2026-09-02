@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "みやま市データ抜け調査・筑後市追加・目印施設の網羅性強化",
-      "startedAt": "2026-09-02T16:28:58.793Z",
-      "finishedAt": "2026-09-02T16:29:04.780Z"
+      "task": "理論値データを階層別に修正",
+      "startedAt": "2026-09-02T16:54:15.948Z",
+      "finishedAt": "2026-09-02T16:54:18.426Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "FAQ文言とabout.html原稿の作成",
-      "startedAt": "2026-09-02T16:49:02.675Z",
-      "finishedAt": "2026-09-02T16:49:04.613Z"
+      "task": "通説比較セクションを階層別に書き直し",
+      "startedAt": "2026-09-02T16:54:31.991Z",
+      "finishedAt": "2026-09-02T16:54:34.467Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 586,
-    "todayOutputTokens": 281009,
-    "asOf": "2026-09-02T16:49:09.002Z"
+    "todayInputTokens": 826,
+    "todayOutputTokens": 322264,
+    "asOf": "2026-09-02T16:54:40.194Z"
   },
-  "updatedAt": "2026-09-02T16:49:09.002Z"
+  "updatedAt": "2026-09-02T16:54:40.194Z"
 }
