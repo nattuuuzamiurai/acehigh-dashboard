@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "残り9クラスタの橋渡し併合調査",
-      "startedAt": "2026-09-01T17:45:01.837Z",
-      "finishedAt": "2026-09-01T17:45:04.853Z"
+      "task": "クラスタCの復元と判断基準の明文化",
+      "startedAt": "2026-09-02T00:49:49.022Z",
+      "finishedAt": "2026-09-02T00:49:54.839Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4814,
-    "todayOutputTokens": 1183089,
-    "asOf": "2026-09-02T00:49:24.319Z"
+    "todayInputTokens": 4832,
+    "todayOutputTokens": 1186771,
+    "asOf": "2026-09-02T00:50:06.698Z"
   },
-  "updatedAt": "2026-09-02T00:49:24.319Z"
+  "updatedAt": "2026-09-02T00:50:06.698Z"
 }
