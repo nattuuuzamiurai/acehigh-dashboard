@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "建物重複除去・番地ラベル一連対応の最終レビュー",
-      "startedAt": "2026-09-02T01:20:57.962Z",
-      "finishedAt": "2026-09-02T01:21:00.416Z"
+      "task": "修正後note記事の最終レビュー判定",
+      "startedAt": "2026-09-02T17:06:20.423Z",
+      "finishedAt": "2026-09-02T17:06:22.863Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1366,
-    "todayOutputTokens": 375616,
-    "asOf": "2026-09-02T17:01:41.473Z"
+    "todayInputTokens": 1616,
+    "todayOutputTokens": 398676,
+    "asOf": "2026-09-02T17:06:35.981Z"
   },
-  "updatedAt": "2026-09-02T17:01:41.473Z"
+  "updatedAt": "2026-09-02T17:06:35.981Z"
 }
