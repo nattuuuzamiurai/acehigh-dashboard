@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "クラスタCの復元と判断基準の明文化",
-      "startedAt": "2026-09-02T00:49:49.022Z",
-      "finishedAt": "2026-09-02T00:49:54.839Z"
+      "task": "重複除去スクリプトへの低確度建物の保護ガード追加",
+      "startedAt": "2026-09-02T01:10:52.056Z",
+      "finishedAt": "2026-09-02T01:10:54.443Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5172,
-    "todayOutputTokens": 1235752,
-    "asOf": "2026-09-02T01:01:38.689Z"
+    "todayInputTokens": 5340,
+    "todayOutputTokens": 1252828,
+    "asOf": "2026-09-02T01:11:03.608Z"
   },
-  "updatedAt": "2026-09-02T01:01:38.689Z"
+  "updatedAt": "2026-09-02T01:11:03.608Z"
 }
