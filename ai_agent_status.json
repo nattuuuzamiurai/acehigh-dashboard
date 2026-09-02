@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "沖ドキnote記事の最終レビュー判定",
-      "startedAt": "2026-09-01T17:45:51.488Z",
-      "finishedAt": "2026-09-01T17:46:14.787Z"
+      "task": "建物重複除去・番地ラベル一連対応の最終レビュー",
+      "startedAt": "2026-09-02T01:20:57.962Z",
+      "finishedAt": "2026-09-02T01:21:00.416Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5478,
-    "todayOutputTokens": 1268263,
-    "asOf": "2026-09-02T01:17:04.848Z"
+    "todayInputTokens": 5568,
+    "todayOutputTokens": 1280016,
+    "asOf": "2026-09-02T01:21:09.548Z"
   },
-  "updatedAt": "2026-09-02T01:17:04.848Z"
+  "updatedAt": "2026-09-02T01:21:09.548Z"
 }
