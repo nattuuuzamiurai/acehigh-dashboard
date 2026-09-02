@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "「32G以内90%継続」の出典と根拠を精査",
-      "startedAt": "2026-09-02T16:43:41.533Z",
-      "finishedAt": "2026-09-02T16:43:43.882Z"
+      "task": "通説比較修正後の最終品質チェック",
+      "startedAt": "2026-09-02T17:01:31.129Z",
+      "finishedAt": "2026-09-02T17:01:33.520Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1092,
-    "todayOutputTokens": 355198,
-    "asOf": "2026-09-02T16:57:35.856Z"
+    "todayInputTokens": 1366,
+    "todayOutputTokens": 375616,
+    "asOf": "2026-09-02T17:01:41.473Z"
   },
-  "updatedAt": "2026-09-02T16:57:35.856Z"
+  "updatedAt": "2026-09-02T17:01:41.473Z"
 }
