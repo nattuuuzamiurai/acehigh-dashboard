@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "修正後note記事の最終レビュー判定",
-      "startedAt": "2026-09-02T17:06:20.423Z",
-      "finishedAt": "2026-09-02T17:06:22.863Z"
+      "task": "fukuoka-poker-navi PR#76 最終GO/NO-GO判定",
+      "startedAt": "2026-09-02T17:28:13.119Z",
+      "finishedAt": "2026-09-02T17:28:15.048Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2192,
-    "todayOutputTokens": 468590,
-    "asOf": "2026-09-02T17:22:00.245Z"
+    "todayInputTokens": 2470,
+    "todayOutputTokens": 493125,
+    "asOf": "2026-09-02T17:28:18.920Z"
   },
-  "updatedAt": "2026-09-02T17:22:00.245Z"
+  "updatedAt": "2026-09-02T17:28:18.920Z"
 }
