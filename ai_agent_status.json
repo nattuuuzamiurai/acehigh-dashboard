@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "理論値データを階層別に修正",
-      "startedAt": "2026-09-02T16:54:15.948Z",
-      "finishedAt": "2026-09-02T16:54:18.426Z"
+      "task": "fukuoka-poker-navi GEO schema実装",
+      "startedAt": "2026-09-02T16:56:32.728Z",
+      "finishedAt": "2026-09-02T16:56:34.574Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 826,
-    "todayOutputTokens": 322264,
-    "asOf": "2026-09-02T16:54:40.194Z"
+    "todayInputTokens": 1016,
+    "todayOutputTokens": 353239,
+    "asOf": "2026-09-02T16:56:43.818Z"
   },
-  "updatedAt": "2026-09-02T16:54:40.194Z"
+  "updatedAt": "2026-09-02T16:56:43.818Z"
 }
