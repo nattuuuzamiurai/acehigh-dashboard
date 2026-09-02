@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "クラスタC復元・低確度マーキングの品質確認",
-      "startedAt": "2026-09-02T01:01:22.935Z",
-      "finishedAt": "2026-09-02T01:01:25.392Z"
+      "task": "保護ガード追加の品質確認",
+      "startedAt": "2026-09-02T01:16:51.662Z",
+      "finishedAt": "2026-09-02T01:16:54.658Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5340,
-    "todayOutputTokens": 1252828,
-    "asOf": "2026-09-02T01:11:03.608Z"
+    "todayInputTokens": 5478,
+    "todayOutputTokens": 1268263,
+    "asOf": "2026-09-02T01:17:04.848Z"
   },
-  "updatedAt": "2026-09-02T01:11:03.608Z"
+  "updatedAt": "2026-09-02T01:17:04.848Z"
 }
