@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "通説比較修正後の最終品質チェック",
-      "startedAt": "2026-09-02T17:01:31.129Z",
-      "finishedAt": "2026-09-02T17:01:33.520Z"
+      "task": "筑後市追加分の品質確認と重複除去クラスタの機械監査",
+      "startedAt": "2026-09-02T17:21:11.995Z",
+      "finishedAt": "2026-09-02T17:21:17.232Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2018,
-    "todayOutputTokens": 443094,
-    "asOf": "2026-09-02T17:15:04.196Z"
+    "todayInputTokens": 2174,
+    "todayOutputTokens": 463007,
+    "asOf": "2026-09-02T17:21:30.275Z"
   },
-  "updatedAt": "2026-09-02T17:15:04.196Z"
+  "updatedAt": "2026-09-02T17:21:30.275Z"
 }
