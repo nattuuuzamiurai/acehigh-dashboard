@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-09-02 12:34",
+  "updated": "2026-09-02 13:03",
   "today_label": "2026年9月2日",
   "pred_date": "2026/09/02",
   "pred_is_today": true,
@@ -1406,7 +1406,7 @@ window.KYOTEI_DATA = {
       "race_no": "8",
       "start_time": "20:59",
       "combo": "1-6-2",
-      "actual_combo": "1-3-6",
+      "actual_combo": "1-2-3",
       "ev": 1.62,
       "odds": "34.9",
       "prob_pct": "4.7",
@@ -2239,7 +2239,7 @@ window.KYOTEI_DATA = {
           "race_no": "8",
           "start_time": "20:59",
           "combo": "1-6-2",
-          "actual_combo": "1-3-6",
+          "actual_combo": "1-2-3",
           "ev": 1.62,
           "odds": "34.9",
           "prob_pct": "4.7",
@@ -8574,10 +8574,10 @@ window.KYOTEI_DATA = {
   "prob_weekly_demos": [
     {
       "total_bets": 406,
-      "total_hits": 22,
+      "total_hits": 23,
       "total_invested": 40600,
-      "total_returned": 19670,
-      "roi": -51.6,
+      "total_returned": 20260,
+      "roi": -50.1,
       "daily": [
         {
           "date": "8/31",
@@ -8598,10 +8598,10 @@ window.KYOTEI_DATA = {
         {
           "date": "9/2",
           "bets": 127,
-          "hits": 7,
+          "hits": 8,
           "invested": 12700,
-          "returned": 6630,
-          "roi": -47.8
+          "returned": 7220,
+          "roi": -43.1
         }
       ],
       "start_label": "8/31",
@@ -9080,10 +9080,10 @@ window.KYOTEI_DATA = {
   "prob_monthly_demos": [
     {
       "total_bets": 268,
-      "total_hits": 15,
+      "total_hits": 16,
       "total_invested": 26800,
-      "total_returned": 13550,
-      "roi": -49.4,
+      "total_returned": 14140,
+      "roi": -47.2,
       "daily": [
         {
           "date": "9/1",
@@ -9096,10 +9096,10 @@ window.KYOTEI_DATA = {
         {
           "date": "9/2",
           "bets": 127,
-          "hits": 7,
+          "hits": 8,
           "invested": 12700,
-          "returned": 6630,
-          "roi": -47.8
+          "returned": 7220,
+          "roi": -43.1
         }
       ],
       "start_label": "9/1",
@@ -10055,13 +10055,13 @@ window.KYOTEI_DATA = {
           "race_no": "8",
           "start_time": "20:59",
           "combo": "1-2-3",
-          "actual_combo": "1-3-6",
+          "actual_combo": "1-2-3",
           "ev": 0.38,
           "has_ev": false,
           "odds": "5.9",
           "prob_pct": "6.5",
-          "hit": "0",
-          "payout": "0",
+          "hit": "1",
+          "payout": "590",
           "final_odds": "5.9",
           "actual_ev": 0.381
         },
@@ -23665,11 +23665,11 @@ window.KYOTEI_DATA = {
         "all": {
           "label": "全件（EV不問）",
           "bets": 406,
-          "hits": 22,
-          "hit_rate": 5.4,
+          "hits": 23,
+          "hit_rate": 5.7,
           "invested": 40600,
-          "returned": 19670,
-          "roi": -51.6
+          "returned": 20260,
+          "roi": -50.1
         },
         "ev": {
           "label": "EV≥1.3のみ",
@@ -23868,10 +23868,10 @@ window.KYOTEI_DATA = {
   "proven_weekly_demos": [
     {
       "total_bets": 63,
-      "total_hits": 2,
+      "total_hits": 3,
       "total_invested": 6300,
-      "total_returned": 1170,
-      "roi": -81.4,
+      "total_returned": 1760,
+      "roi": -72.1,
       "daily": [
         {
           "date": "8/31",
@@ -23892,10 +23892,10 @@ window.KYOTEI_DATA = {
         {
           "date": "9/2",
           "bets": 18,
-          "hits": 1,
+          "hits": 2,
           "invested": 1800,
-          "returned": 560,
-          "roi": -68.9
+          "returned": 1150,
+          "roi": -36.1
         }
       ],
       "week_label": "8/31（月）〜9/6（日）",
@@ -24358,10 +24358,10 @@ window.KYOTEI_DATA = {
   "proven_monthly_demos": [
     {
       "total_bets": 42,
-      "total_hits": 2,
+      "total_hits": 3,
       "total_invested": 4200,
-      "total_returned": 1170,
-      "roi": -72.1,
+      "total_returned": 1760,
+      "roi": -58.1,
       "daily": [
         {
           "date": "9/1",
@@ -24374,10 +24374,10 @@ window.KYOTEI_DATA = {
         {
           "date": "9/2",
           "bets": 18,
-          "hits": 1,
+          "hits": 2,
           "invested": 1800,
-          "returned": 560,
-          "roi": -68.9
+          "returned": 1150,
+          "roi": -36.1
         }
       ],
       "month_label": "2026年9月",
@@ -25044,13 +25044,13 @@ window.KYOTEI_DATA = {
           "race_no": "8",
           "start_time": "20:59",
           "combo": "1-2-3",
-          "actual_combo": "1-3-6",
+          "actual_combo": "1-2-3",
           "prob_pct": "6.5",
           "top1_pct": "58",
           "ev": 0.38,
           "odds": "5.9",
-          "hit": "0",
-          "payout": "0",
+          "hit": "1",
+          "payout": "590",
           "final_odds": "5.9",
           "actual_ev": 0.381
         },
@@ -26980,11 +26980,11 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "bets": 63,
-        "hits": 2,
-        "hit_rate": 3.2,
+        "hits": 3,
+        "hit_rate": 4.8,
         "invested": 6300,
-        "returned": 1170,
-        "roi": -81.4
+        "returned": 1760,
+        "roi": -72.1
       }
     },
     {
@@ -29931,7 +29931,7 @@ window.KYOTEI_DATA = {
           "start_time": "20:59",
           "combo": "1-2-3",
           "n_bets": 6,
-          "actual_combo": "1-3-6",
+          "actual_combo": "1-2-3",
           "prob_pct": "6.5",
           "ev": 0.38,
           "odds": "5.9",
@@ -43398,7 +43398,7 @@ window.KYOTEI_DATA = {
           "start_time": "20:59",
           "combo": "1-6-2",
           "n_bets": 1,
-          "actual_combo": "1-3-6",
+          "actual_combo": "1-2-3",
           "prob_pct": "4.7",
           "ev": 1.62,
           "odds": "34.9",
@@ -46845,7 +46845,7 @@ window.KYOTEI_DATA = {
           "start_time": "20:59",
           "combo": "1-6-2",
           "n_bets": 1,
-          "actual_combo": "1-3-6",
+          "actual_combo": "1-2-3",
           "prob_pct": "4.7",
           "ev": 1.62,
           "odds": "34.9",
