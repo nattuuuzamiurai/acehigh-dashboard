@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "重複除去スクリプトへの低確度建物の保護ガード追加",
-      "startedAt": "2026-09-02T01:10:52.056Z",
-      "finishedAt": "2026-09-02T01:10:54.443Z"
+      "task": "みやま市データ抜け調査・筑後市追加・目印施設の網羅性強化",
+      "startedAt": "2026-09-02T16:28:58.793Z",
+      "finishedAt": "2026-09-02T16:29:04.780Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5786,
-    "todayOutputTokens": 1396660,
-    "asOf": "2026-09-02T08:51:43.651Z"
+    "todayInputTokens": 14,
+    "todayOutputTokens": 12072,
+    "asOf": "2026-09-02T16:29:20.895Z"
   },
-  "updatedAt": "2026-09-02T08:51:43.651Z"
+  "updatedAt": "2026-09-02T16:29:20.895Z"
 }
