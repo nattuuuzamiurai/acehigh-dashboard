@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "筑後市追加分の品質確認と重複除去クラスタの機械監査",
-      "startedAt": "2026-09-02T17:21:11.995Z",
-      "finishedAt": "2026-09-02T17:21:17.232Z"
+      "task": "fukuoka-poker-navi PR#76 品質チェック",
+      "startedAt": "2026-09-02T17:21:53.386Z",
+      "finishedAt": "2026-09-02T17:21:55.174Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2174,
-    "todayOutputTokens": 463007,
-    "asOf": "2026-09-02T17:21:30.275Z"
+    "todayInputTokens": 2192,
+    "todayOutputTokens": 468590,
+    "asOf": "2026-09-02T17:22:00.245Z"
   },
-  "updatedAt": "2026-09-02T17:21:30.275Z"
+  "updatedAt": "2026-09-02T17:22:00.245Z"
 }
