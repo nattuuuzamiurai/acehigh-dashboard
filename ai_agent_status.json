@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "保護ガード追加の品質確認",
-      "startedAt": "2026-09-02T01:16:51.662Z",
-      "finishedAt": "2026-09-02T01:16:54.658Z"
+      "task": "「32G以内90%継続」の出典と根拠を精査",
+      "startedAt": "2026-09-02T16:43:41.533Z",
+      "finishedAt": "2026-09-02T16:43:43.882Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 352,
-    "todayOutputTokens": 206218,
-    "asOf": "2026-09-02T16:43:00.607Z"
+    "todayInputTokens": 410,
+    "todayOutputTokens": 229723,
+    "asOf": "2026-09-02T16:43:52.820Z"
   },
-  "updatedAt": "2026-09-02T16:43:00.607Z"
+  "updatedAt": "2026-09-02T16:43:52.820Z"
 }
