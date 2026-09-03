@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "建物ID修正・筑後市8クラスタ調査の最終品質確認",
-      "startedAt": "2026-09-03T01:57:15.245Z",
-      "finishedAt": "2026-09-03T01:57:17.746Z"
+      "task": "修正3点の最終品質確認",
+      "startedAt": "2026-09-03T02:32:50.874Z",
+      "finishedAt": "2026-09-03T02:32:53.639Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3578,
-    "todayOutputTokens": 693869,
-    "asOf": "2026-09-03T02:18:59.097Z"
+    "todayInputTokens": 3802,
+    "todayOutputTokens": 711736,
+    "asOf": "2026-09-03T02:33:04.293Z"
   },
-  "updatedAt": "2026-09-03T02:18:59.097Z"
+  "updatedAt": "2026-09-03T02:33:04.293Z"
 }
