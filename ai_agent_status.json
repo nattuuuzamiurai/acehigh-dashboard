@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
-      "task": "本郷エリアの再調査(現状の実データを直接確認)",
-      "startedAt": "2026-09-03T16:20:12.032Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "実測データから継続率(ハザード率)カーブを算出",
+      "startedAt": "2026-09-03T16:21:13.415Z",
+      "finishedAt": "2026-09-03T16:21:15.273Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 760,
-    "todayOutputTokens": 252263,
-    "asOf": "2026-09-03T16:20:10.378Z"
+    "todayInputTokens": 880,
+    "todayOutputTokens": 287487,
+    "asOf": "2026-09-03T16:21:47.924Z"
   },
-  "updatedAt": "2026-09-03T16:20:10.378Z"
+  "updatedAt": "2026-09-03T16:21:47.924Z"
 }
