@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "通説比較セクションを階層別に書き直し",
-      "startedAt": "2026-09-02T16:54:31.991Z",
-      "finishedAt": "2026-09-02T16:54:34.467Z"
+      "task": "通説比較・朝イチ関連の記事本文を最終書き直し",
+      "startedAt": "2026-09-03T16:30:06.126Z",
+      "finishedAt": "2026-09-03T16:30:08.582Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1114,
-    "todayOutputTokens": 323963,
-    "asOf": "2026-09-03T16:26:31.504Z"
+    "todayInputTokens": 1416,
+    "todayOutputTokens": 353540,
+    "asOf": "2026-09-03T16:30:24.557Z"
   },
-  "updatedAt": "2026-09-03T16:26:31.504Z"
+  "updatedAt": "2026-09-03T16:30:24.557Z"
 }
