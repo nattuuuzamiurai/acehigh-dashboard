@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "筑後市クラスタ記述の訂正と温室confidence付与",
-      "startedAt": "2026-09-03T02:18:44.869Z",
-      "finishedAt": "2026-09-03T02:18:48.056Z"
+      "task": "地図のスカスカなエリアの原因調査",
+      "startedAt": "2026-09-03T15:38:51.238Z",
+      "finishedAt": "2026-09-03T15:39:13.852Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "修正3点の最終品質確認",
-      "startedAt": "2026-09-03T02:32:50.874Z",
-      "finishedAt": "2026-09-03T02:32:53.639Z"
+      "status": "running",
+      "task": "階層間の昇格確率と理論値比較の妥当性を検証",
+      "startedAt": "2026-09-03T15:42:29.366Z",
+      "finishedAt": null
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 94,
-    "todayOutputTokens": 45428,
-    "asOf": "2026-09-03T15:38:31.813Z"
+    "todayInputTokens": 136,
+    "todayOutputTokens": 90076,
+    "asOf": "2026-09-03T15:42:28.485Z"
   },
-  "updatedAt": "2026-09-03T15:38:31.813Z"
+  "updatedAt": "2026-09-03T15:42:28.485Z"
 }
