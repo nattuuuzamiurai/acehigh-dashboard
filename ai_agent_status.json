@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "地図のスカスカなエリアの原因調査",
-      "startedAt": "2026-09-03T15:38:51.238Z",
-      "finishedAt": "2026-09-03T15:39:13.852Z"
+      "task": "ふくおかポーカーナビの表示速度・重さを調査し改善",
+      "startedAt": "2026-09-03T15:53:56.462Z",
+      "finishedAt": "2026-09-03T15:54:37.821Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 238,
-    "todayOutputTokens": 138317,
-    "asOf": "2026-09-03T15:50:45.849Z"
+    "todayInputTokens": 326,
+    "todayOutputTokens": 161137,
+    "asOf": "2026-09-03T15:55:16.403Z"
   },
-  "updatedAt": "2026-09-03T15:50:45.849Z"
+  "updatedAt": "2026-09-03T15:55:16.403Z"
 }
