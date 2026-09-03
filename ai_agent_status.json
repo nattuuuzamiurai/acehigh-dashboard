@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "天国突入時の獲得枚数期待値のネット情報を調査",
-      "startedAt": "2026-09-03T01:18:28.117Z",
-      "finishedAt": "2026-09-03T01:18:31.204Z"
+      "task": "建物ID修正・筑後市8クラスタ調査の最終品質確認",
+      "startedAt": "2026-09-03T01:57:15.245Z",
+      "finishedAt": "2026-09-03T01:57:17.746Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3014,
-    "todayOutputTokens": 621415,
-    "asOf": "2026-09-03T01:27:02.269Z"
+    "todayInputTokens": 3298,
+    "todayOutputTokens": 651349,
+    "asOf": "2026-09-03T01:57:30.613Z"
   },
-  "updatedAt": "2026-09-03T01:27:02.269Z"
+  "updatedAt": "2026-09-03T01:57:30.613Z"
 }
