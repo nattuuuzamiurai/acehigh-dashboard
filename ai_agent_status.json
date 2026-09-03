@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi GEO schema実装",
-      "startedAt": "2026-09-02T16:56:32.728Z",
-      "finishedAt": "2026-09-02T16:56:34.574Z"
+      "task": "建物ID重複修正と筑後市8クラスタの個別調査",
+      "startedAt": "2026-09-03T01:17:31.866Z",
+      "finishedAt": "2026-09-03T01:17:37.658Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2668,
-    "todayOutputTokens": 529127,
-    "asOf": "2026-09-02T17:34:25.885Z"
+    "todayInputTokens": 2708,
+    "todayOutputTokens": 542727,
+    "asOf": "2026-09-03T01:17:50.413Z"
   },
-  "updatedAt": "2026-09-02T17:34:25.885Z"
+  "updatedAt": "2026-09-03T01:17:50.413Z"
 }
