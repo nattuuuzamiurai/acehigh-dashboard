@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "実測データから継続率(ハザード率)カーブを算出",
-      "startedAt": "2026-09-03T16:21:13.415Z",
-      "finishedAt": "2026-09-03T16:21:15.273Z"
+      "task": "Search Console API定期取得スクリプト実装",
+      "startedAt": "2026-09-03T16:26:12.056Z",
+      "finishedAt": "2026-09-03T16:26:16.759Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 952,
-    "todayOutputTokens": 297838,
-    "asOf": "2026-09-03T16:23:18.567Z"
+    "todayInputTokens": 1114,
+    "todayOutputTokens": 323963,
+    "asOf": "2026-09-03T16:26:31.504Z"
   },
-  "updatedAt": "2026-09-03T16:23:18.567Z"
+  "updatedAt": "2026-09-03T16:26:31.504Z"
 }
