@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "ふくおかポーカーナビの表示速度・重さを調査し改善",
-      "startedAt": "2026-09-03T15:53:56.462Z",
-      "finishedAt": "2026-09-03T15:54:37.821Z"
+      "status": "running",
+      "task": "本郷エリアの再調査(現状の実データを直接確認)",
+      "startedAt": "2026-09-03T16:20:12.032Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 690,
-    "todayOutputTokens": 229578,
-    "asOf": "2026-09-03T16:17:35.384Z"
+    "todayInputTokens": 760,
+    "todayOutputTokens": 252263,
+    "asOf": "2026-09-03T16:20:10.378Z"
   },
-  "updatedAt": "2026-09-03T16:17:35.384Z"
+  "updatedAt": "2026-09-03T16:20:10.378Z"
 }
