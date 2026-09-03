@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビ PR#78の最終GO/NO-GO判定",
-      "startedAt": "2026-09-03T16:58:57.221Z",
-      "finishedAt": "2026-09-03T16:59:00.805Z"
+      "task": "ハザード率カーブ反映後の最終レビュー判定",
+      "startedAt": "2026-09-03T16:59:15.869Z",
+      "finishedAt": "2026-09-03T16:59:17.959Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2743,
-    "todayOutputTokens": 593404,
-    "asOf": "2026-09-03T16:59:04.280Z"
+    "todayInputTokens": 2775,
+    "todayOutputTokens": 598093,
+    "asOf": "2026-09-03T16:59:25.950Z"
   },
-  "updatedAt": "2026-09-03T16:59:04.280Z"
+  "updatedAt": "2026-09-03T16:59:25.950Z"
 }
