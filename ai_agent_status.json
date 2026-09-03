@@ -7,10 +7,10 @@
       "finishedAt": "2026-09-03T15:39:13.852Z"
     },
     "qa-lead": {
-      "status": "running",
-      "task": "階層間の昇格確率と理論値比較の妥当性を検証",
-      "startedAt": "2026-09-03T15:42:29.366Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "チャンスモード振り分け率と朝イチ天国継続通説を調査",
+      "startedAt": "2026-09-03T15:49:10.040Z",
+      "finishedAt": "2026-09-03T15:49:58.825Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 136,
-    "todayOutputTokens": 90076,
-    "asOf": "2026-09-03T15:42:28.485Z"
+    "todayInputTokens": 238,
+    "todayOutputTokens": 138317,
+    "asOf": "2026-09-03T15:50:45.849Z"
   },
-  "updatedAt": "2026-09-03T15:42:28.485Z"
+  "updatedAt": "2026-09-03T15:50:45.849Z"
 }
