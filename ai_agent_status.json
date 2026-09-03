@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi PR#77 品質チェック",
-      "startedAt": "2026-09-03T16:36:08.215Z",
-      "finishedAt": "2026-09-03T16:36:10.183Z"
+      "task": "ふくおかポーカーナビ PR#78の動作確認",
+      "startedAt": "2026-09-03T16:44:37.742Z",
+      "finishedAt": "2026-09-03T16:44:39.447Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1880,
-    "todayOutputTokens": 427392,
-    "asOf": "2026-09-03T16:41:57.969Z"
+    "todayInputTokens": 1965,
+    "todayOutputTokens": 440309,
+    "asOf": "2026-09-03T16:44:48.547Z"
   },
-  "updatedAt": "2026-09-03T16:41:57.969Z"
+  "updatedAt": "2026-09-03T16:44:48.547Z"
 }
