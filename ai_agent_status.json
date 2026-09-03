@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビ PR#78の動作確認",
-      "startedAt": "2026-09-03T16:44:37.742Z",
-      "finishedAt": "2026-09-03T16:44:39.447Z"
+      "task": "ハザード率カーブ反映後の最終品質チェック",
+      "startedAt": "2026-09-03T16:51:01.772Z",
+      "finishedAt": "2026-09-03T16:51:04.192Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2195,
-    "todayOutputTokens": 509357,
-    "asOf": "2026-09-03T16:48:19.151Z"
+    "todayInputTokens": 2401,
+    "todayOutputTokens": 535712,
+    "asOf": "2026-09-03T16:51:13.977Z"
   },
-  "updatedAt": "2026-09-03T16:48:19.151Z"
+  "updatedAt": "2026-09-03T16:51:13.977Z"
 }
