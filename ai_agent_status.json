@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi PR#76 品質チェック",
-      "startedAt": "2026-09-02T17:21:53.386Z",
-      "finishedAt": "2026-09-02T17:21:55.174Z"
+      "task": "天国突入時の獲得枚数期待値のネット情報を調査",
+      "startedAt": "2026-09-03T01:18:28.117Z",
+      "finishedAt": "2026-09-03T01:18:31.204Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2708,
-    "todayOutputTokens": 542727,
-    "asOf": "2026-09-03T01:17:50.413Z"
+    "todayInputTokens": 2758,
+    "todayOutputTokens": 550941,
+    "asOf": "2026-09-03T01:18:35.365Z"
   },
-  "updatedAt": "2026-09-03T01:17:50.413Z"
+  "updatedAt": "2026-09-03T01:18:35.365Z"
 }
