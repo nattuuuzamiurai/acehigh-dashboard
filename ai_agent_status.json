@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "基盤地図情報サービスへの利用者登録",
-      "startedAt": "2026-09-05T03:58:57.654Z",
-      "finishedAt": "2026-09-05T03:59:07.753Z"
+      "task": "BAR BETTY閉店データ削除の実装",
+      "startedAt": "2026-09-05T04:02:01.617Z",
+      "finishedAt": "2026-09-05T04:02:05.809Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ハザード率カーブ反映後の最終品質チェック",
-      "startedAt": "2026-09-03T16:51:01.772Z",
-      "finishedAt": "2026-09-03T16:51:04.192Z"
+      "task": "「32G以内90%継続」通説の実在性を検証",
+      "startedAt": "2026-09-05T04:02:03.244Z",
+      "finishedAt": "2026-09-05T04:02:08.658Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 78,
-    "todayOutputTokens": 28729,
-    "asOf": "2026-09-05T03:59:41.327Z"
+    "todayInputTokens": 203,
+    "todayOutputTokens": 67551,
+    "asOf": "2026-09-05T04:02:09.964Z"
   },
-  "updatedAt": "2026-09-05T03:59:41.327Z"
+  "updatedAt": "2026-09-05T04:02:09.964Z"
 }
