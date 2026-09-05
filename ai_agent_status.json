@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "「32G以内90%継続」通説の実在性を検証",
-      "startedAt": "2026-09-05T04:02:03.244Z",
-      "finishedAt": "2026-09-05T04:02:08.658Z"
+      "task": "1章冒頭の表現修正を確認",
+      "startedAt": "2026-09-05T04:09:52.644Z",
+      "finishedAt": "2026-09-05T04:09:55.133Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 401,
-    "todayOutputTokens": 104591,
-    "asOf": "2026-09-05T04:07:10.099Z"
+    "todayInputTokens": 505,
+    "todayOutputTokens": 125105,
+    "asOf": "2026-09-05T04:10:00.264Z"
   },
-  "updatedAt": "2026-09-05T04:07:10.099Z"
+  "updatedAt": "2026-09-05T04:10:00.264Z"
 }
