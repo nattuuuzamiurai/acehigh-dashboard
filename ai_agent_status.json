@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "BAR BETTY閉店データ削除の実装",
-      "startedAt": "2026-09-05T04:02:01.617Z",
-      "finishedAt": "2026-09-05T04:02:05.809Z"
+      "task": "基盤地図情報ログインと本郷データの取得・検証",
+      "startedAt": "2026-09-05T04:05:48.685Z",
+      "finishedAt": "2026-09-05T04:05:51.761Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 317,
-    "todayOutputTokens": 86495,
-    "asOf": "2026-09-05T04:04:02.664Z"
+    "todayInputTokens": 361,
+    "todayOutputTokens": 94437,
+    "asOf": "2026-09-05T04:06:11.006Z"
   },
-  "updatedAt": "2026-09-05T04:04:02.664Z"
+  "updatedAt": "2026-09-05T04:06:11.006Z"
 }
