@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "過去シリーズの天国期待値と憶測を調査",
-      "startedAt": "2026-09-05T04:31:58.918Z",
-      "finishedAt": "2026-09-05T04:32:01.400Z"
+      "task": "新規追加コンテンツの品質チェック",
+      "startedAt": "2026-09-05T04:49:41.818Z",
+      "finishedAt": "2026-09-05T04:49:44.233Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1003,
-    "todayOutputTokens": 238995,
-    "asOf": "2026-09-05T04:41:31.307Z"
+    "todayInputTokens": 1107,
+    "todayOutputTokens": 276277,
+    "asOf": "2026-09-05T04:49:49.883Z"
   },
-  "updatedAt": "2026-09-05T04:41:31.307Z"
+  "updatedAt": "2026-09-05T04:49:49.883Z"
 }
