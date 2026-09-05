@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "基盤地図情報ログインと本郷データの取得・検証",
-      "startedAt": "2026-09-05T04:05:48.685Z",
-      "finishedAt": "2026-09-05T04:05:51.761Z"
+      "task": "階層混合モデルの推定と系列相関・200G天井の検証",
+      "startedAt": "2026-09-05T04:31:43.722Z",
+      "finishedAt": "2026-09-05T04:31:45.771Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "1章冒頭の表現修正を確認",
-      "startedAt": "2026-09-05T04:09:52.644Z",
-      "finishedAt": "2026-09-05T04:09:55.133Z"
+      "task": "過去シリーズの天国期待値と憶測を調査",
+      "startedAt": "2026-09-05T04:31:58.918Z",
+      "finishedAt": "2026-09-05T04:32:01.400Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 789,
-    "todayOutputTokens": 172852,
-    "asOf": "2026-09-05T04:27:59.490Z"
+    "todayInputTokens": 817,
+    "todayOutputTokens": 203305,
+    "asOf": "2026-09-05T04:32:08.076Z"
   },
-  "updatedAt": "2026-09-05T04:27:59.490Z"
+  "updatedAt": "2026-09-05T04:32:08.076Z"
 }
