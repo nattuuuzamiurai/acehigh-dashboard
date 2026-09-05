@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "「90%」表現修正の全文チェック",
-      "startedAt": "2026-09-05T05:09:05.372Z",
-      "finishedAt": "2026-09-05T05:09:07.886Z"
+      "task": "基盤地図情報統合の品質確認",
+      "startedAt": "2026-09-05T20:06:35.279Z",
+      "finishedAt": "2026-09-05T20:06:43.780Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 20,
-    "todayOutputTokens": 4359,
-    "asOf": "2026-09-05T19:11:25.428Z"
+    "todayInputTokens": 556,
+    "todayOutputTokens": 81875,
+    "asOf": "2026-09-05T20:06:55.057Z"
   },
-  "updatedAt": "2026-09-05T19:11:25.428Z"
+  "updatedAt": "2026-09-05T20:06:55.057Z"
 }
