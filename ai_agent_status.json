@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "1章修正後の再最終レビュー判定",
-      "startedAt": "2026-09-05T04:15:46.255Z",
-      "finishedAt": "2026-09-05T04:15:48.560Z"
+      "task": "追加コンテンツ反映後の最終レビュー判定",
+      "startedAt": "2026-09-05T04:56:17.831Z",
+      "finishedAt": "2026-09-05T04:56:19.739Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1107,
-    "todayOutputTokens": 276277,
-    "asOf": "2026-09-05T04:49:49.883Z"
+    "todayInputTokens": 1177,
+    "todayOutputTokens": 291001,
+    "asOf": "2026-09-05T04:56:25.263Z"
   },
-  "updatedAt": "2026-09-05T04:49:49.883Z"
+  "updatedAt": "2026-09-05T04:56:25.263Z"
 }
