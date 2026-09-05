@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "階層混合モデルの推定と系列相関・200G天井の検証",
-      "startedAt": "2026-09-05T04:31:43.722Z",
-      "finishedAt": "2026-09-05T04:31:45.771Z"
+      "task": "ログインID使用による基盤地図情報の取得再開",
+      "startedAt": "2026-09-05T19:11:05.750Z",
+      "finishedAt": "2026-09-05T19:11:15.085Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1487,
-    "todayOutputTokens": 403897,
-    "asOf": "2026-09-05T05:23:05.949Z"
+    "todayInputTokens": 20,
+    "todayOutputTokens": 4359,
+    "asOf": "2026-09-05T19:11:25.428Z"
   },
-  "updatedAt": "2026-09-05T05:23:05.949Z"
+  "updatedAt": "2026-09-05T19:11:25.428Z"
 }
