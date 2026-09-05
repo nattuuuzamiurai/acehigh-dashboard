@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "ハザード率カーブ反映後の最終レビュー判定",
-      "startedAt": "2026-09-03T16:59:15.869Z",
-      "finishedAt": "2026-09-03T16:59:17.959Z"
+      "task": "1章修正後の再最終レビュー判定",
+      "startedAt": "2026-09-05T04:15:46.255Z",
+      "finishedAt": "2026-09-05T04:15:48.560Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 505,
-    "todayOutputTokens": 125105,
-    "asOf": "2026-09-05T04:10:00.264Z"
+    "todayInputTokens": 601,
+    "todayOutputTokens": 137258,
+    "asOf": "2026-09-05T04:15:57.612Z"
   },
-  "updatedAt": "2026-09-05T04:10:00.264Z"
+  "updatedAt": "2026-09-05T04:15:57.612Z"
 }
