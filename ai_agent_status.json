@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "基盤地図情報の本郷での小規模検証",
-      "startedAt": "2026-09-03T16:47:25.504Z",
-      "finishedAt": "2026-09-03T16:47:27.910Z"
+      "task": "基盤地図情報サービスへの利用者登録",
+      "startedAt": "2026-09-05T03:58:57.654Z",
+      "finishedAt": "2026-09-05T03:59:07.753Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3063,
-    "todayOutputTokens": 703756,
-    "asOf": "2026-09-03T17:10:40.579Z"
+    "todayInputTokens": 50,
+    "todayOutputTokens": 22497,
+    "asOf": "2026-09-05T03:59:24.350Z"
   },
-  "updatedAt": "2026-09-03T17:10:40.579Z"
+  "updatedAt": "2026-09-05T03:59:24.350Z"
 }
