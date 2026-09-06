@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "チャンスモード→通常B経由の2段階分析と投資回収の整理",
-      "startedAt": "2026-09-06T08:56:40.184Z",
-      "finishedAt": "2026-09-06T08:56:43.033Z"
+      "task": "confidence消失バグの修正",
+      "startedAt": "2026-09-06T09:40:59.924Z",
+      "finishedAt": "2026-09-06T09:41:10.105Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3977,
-    "todayOutputTokens": 854015,
-    "asOf": "2026-09-06T09:31:37.827Z"
+    "todayInputTokens": 4105,
+    "todayOutputTokens": 888517,
+    "asOf": "2026-09-06T09:41:38.545Z"
   },
-  "updatedAt": "2026-09-06T09:31:37.827Z"
+  "updatedAt": "2026-09-06T09:41:38.545Z"
 }
