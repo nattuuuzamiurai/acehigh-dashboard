@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビ PR#79の動作確認",
-      "startedAt": "2026-09-06T07:24:45.186Z",
-      "finishedAt": "2026-09-06T07:24:47.198Z"
+      "task": "OSM-GSI重複修正の品質確認",
+      "startedAt": "2026-09-06T07:32:44.720Z",
+      "finishedAt": "2026-09-06T07:32:54.502Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1893,
-    "todayOutputTokens": 374528,
-    "asOf": "2026-09-06T07:30:14.071Z"
+    "todayInputTokens": 2005,
+    "todayOutputTokens": 398096,
+    "asOf": "2026-09-06T07:33:14.463Z"
   },
-  "updatedAt": "2026-09-06T07:30:14.071Z"
+  "updatedAt": "2026-09-06T07:33:14.463Z"
 }
