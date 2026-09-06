@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "基盤地図情報統合の品質確認",
-      "startedAt": "2026-09-05T20:06:35.279Z",
-      "finishedAt": "2026-09-05T20:06:43.780Z"
+      "task": "朝イチ戦略シミュレーション追加分の品質チェック",
+      "startedAt": "2026-09-06T07:23:28.478Z",
+      "finishedAt": "2026-09-06T07:23:40.436Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1263,
-    "todayOutputTokens": 263674,
-    "asOf": "2026-09-06T07:14:18.973Z"
+    "todayInputTokens": 1607,
+    "todayOutputTokens": 328768,
+    "asOf": "2026-09-06T07:23:52.693Z"
   },
-  "updatedAt": "2026-09-06T07:14:18.973Z"
+  "updatedAt": "2026-09-06T07:23:52.693Z"
 }
