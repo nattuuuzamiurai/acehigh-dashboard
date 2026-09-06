@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "誤復元是正の最終品質確認",
-      "startedAt": "2026-09-06T08:32:38.342Z",
-      "finishedAt": "2026-09-06T08:32:42.378Z"
+      "task": "チャンスモード→モードB移行の仕組みを検証",
+      "startedAt": "2026-09-06T08:49:53.422Z",
+      "finishedAt": "2026-09-06T08:49:58.980Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2915,
-    "todayOutputTokens": 569579,
-    "asOf": "2026-09-06T08:32:56.506Z"
+    "todayInputTokens": 3073,
+    "todayOutputTokens": 636549,
+    "asOf": "2026-09-06T08:50:10.162Z"
   },
-  "updatedAt": "2026-09-06T08:32:56.506Z"
+  "updatedAt": "2026-09-06T08:50:10.162Z"
 }
