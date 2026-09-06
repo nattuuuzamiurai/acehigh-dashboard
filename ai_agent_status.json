@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "confidence消失バグの修正",
-      "startedAt": "2026-09-06T09:40:59.924Z",
-      "finishedAt": "2026-09-06T09:41:10.105Z"
+      "task": "筑後市番地非表示の調査と道路の見やすさ改善",
+      "startedAt": "2026-09-06T15:17:34.036Z",
+      "finishedAt": "2026-09-06T15:17:36.832Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 16,
-    "todayOutputTokens": 2846,
-    "asOf": "2026-09-06T15:13:47.680Z"
+    "todayInputTokens": 28,
+    "todayOutputTokens": 11004,
+    "asOf": "2026-09-06T15:17:53.122Z"
   },
-  "updatedAt": "2026-09-06T15:13:47.680Z"
+  "updatedAt": "2026-09-06T15:17:53.122Z"
 }
