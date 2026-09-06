@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "OSM-GSI重複修正の品質確認",
-      "startedAt": "2026-09-06T07:32:44.720Z",
-      "finishedAt": "2026-09-06T07:32:54.502Z"
+      "task": "重心バグ修正の最終品質確認",
+      "startedAt": "2026-09-06T08:07:45.665Z",
+      "finishedAt": "2026-09-06T08:07:48.688Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2333,
-    "todayOutputTokens": 461150,
-    "asOf": "2026-09-06T07:54:00.400Z"
+    "todayInputTokens": 2521,
+    "todayOutputTokens": 490258,
+    "asOf": "2026-09-06T08:08:06.303Z"
   },
-  "updatedAt": "2026-09-06T07:54:00.400Z"
+  "updatedAt": "2026-09-06T08:08:06.303Z"
 }
