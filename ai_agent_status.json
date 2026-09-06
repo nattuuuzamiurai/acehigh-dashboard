@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "2段階構造分析の品質チェック",
-      "startedAt": "2026-09-06T09:12:14.848Z",
-      "finishedAt": "2026-09-06T09:12:17.570Z"
+      "task": "12章反映後の最終品質チェック",
+      "startedAt": "2026-09-06T09:19:14.296Z",
+      "finishedAt": "2026-09-06T09:19:17.042Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3565,
-    "todayOutputTokens": 746485,
-    "asOf": "2026-09-06T09:12:23.903Z"
+    "todayInputTokens": 3701,
+    "todayOutputTokens": 773881,
+    "asOf": "2026-09-06T09:19:29.388Z"
   },
-  "updatedAt": "2026-09-06T09:12:23.903Z"
+  "updatedAt": "2026-09-06T09:19:29.388Z"
 }
