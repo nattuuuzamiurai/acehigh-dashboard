@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ログインID使用による基盤地図情報の取得再開",
-      "startedAt": "2026-09-05T19:11:05.750Z",
-      "finishedAt": "2026-09-05T19:11:15.085Z"
+      "task": "測量法使用承認申請の調査",
+      "startedAt": "2026-09-06T07:04:13.037Z",
+      "finishedAt": "2026-09-06T07:04:31.677Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 556,
-    "todayOutputTokens": 81875,
-    "asOf": "2026-09-05T20:06:55.057Z"
+    "todayInputTokens": 866,
+    "todayOutputTokens": 144242,
+    "asOf": "2026-09-06T07:04:40.180Z"
   },
-  "updatedAt": "2026-09-05T20:06:55.057Z"
+  "updatedAt": "2026-09-06T07:04:40.180Z"
 }
