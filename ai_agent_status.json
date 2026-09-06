@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "番地表示バグ修正・道路視認性改善の品質確認",
-      "startedAt": "2026-09-06T15:47:50.292Z",
-      "finishedAt": "2026-09-06T15:47:53.081Z"
+      "task": "最終修正の品質チェック",
+      "startedAt": "2026-09-06T15:52:41.594Z",
+      "finishedAt": "2026-09-06T15:52:44.247Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 668,
-    "todayOutputTokens": 149971,
-    "asOf": "2026-09-06T15:48:10.645Z"
+    "todayInputTokens": 814,
+    "todayOutputTokens": 170424,
+    "asOf": "2026-09-06T15:52:50.923Z"
   },
-  "updatedAt": "2026-09-06T15:48:10.645Z"
+  "updatedAt": "2026-09-06T15:52:50.923Z"
 }
