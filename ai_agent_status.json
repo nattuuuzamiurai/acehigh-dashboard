@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "誤復元(283+27件)の是正",
-      "startedAt": "2026-09-06T08:22:55.853Z",
-      "finishedAt": "2026-09-06T08:22:59.337Z"
+      "task": "グリッド索引バグの修正と2件の再確認",
+      "startedAt": "2026-09-06T08:56:02.943Z",
+      "finishedAt": "2026-09-06T08:56:13.445Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3073,
-    "todayOutputTokens": 636549,
-    "asOf": "2026-09-06T08:50:10.162Z"
+    "todayInputTokens": 3177,
+    "todayOutputTokens": 663399,
+    "asOf": "2026-09-06T08:56:29.642Z"
   },
-  "updatedAt": "2026-09-06T08:50:10.162Z"
+  "updatedAt": "2026-09-06T08:56:29.642Z"
 }
