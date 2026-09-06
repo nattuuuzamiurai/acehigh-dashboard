@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "バナー掲載終了ロジックを翌朝6時カットオフに変更",
-      "startedAt": "2026-09-06T07:10:29.970Z",
-      "finishedAt": "2026-09-06T07:10:31.730Z"
+      "task": "重心計算バグの修正(OSM-GSI重複判定)",
+      "startedAt": "2026-09-06T07:53:35.865Z",
+      "finishedAt": "2026-09-06T07:53:43.861Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2165,
-    "todayOutputTokens": 434490,
-    "asOf": "2026-09-06T07:39:09.082Z"
+    "todayInputTokens": 2333,
+    "todayOutputTokens": 461150,
+    "asOf": "2026-09-06T07:54:00.400Z"
   },
-  "updatedAt": "2026-09-06T07:39:09.082Z"
+  "updatedAt": "2026-09-06T07:54:00.400Z"
 }
