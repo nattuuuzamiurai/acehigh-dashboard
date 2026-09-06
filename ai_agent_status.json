@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "チャンスモード→モードB移行の仕組みを検証",
-      "startedAt": "2026-09-06T08:49:53.422Z",
-      "finishedAt": "2026-09-06T08:49:58.980Z"
+      "task": "2段階構造分析の品質チェック",
+      "startedAt": "2026-09-06T09:12:14.848Z",
+      "finishedAt": "2026-09-06T09:12:17.570Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3201,
-    "todayOutputTokens": 676102,
-    "asOf": "2026-09-06T08:56:49.961Z"
+    "todayInputTokens": 3565,
+    "todayOutputTokens": 746485,
+    "asOf": "2026-09-06T09:12:23.903Z"
   },
-  "updatedAt": "2026-09-06T08:56:49.961Z"
+  "updatedAt": "2026-09-06T09:12:23.903Z"
 }
