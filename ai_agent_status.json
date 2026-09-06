@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "測量法使用承認申請の調査",
-      "startedAt": "2026-09-06T07:04:13.037Z",
-      "finishedAt": "2026-09-06T07:04:31.677Z"
+      "task": "朝イチ戦略の具体化と実戦収支シミュレーション",
+      "startedAt": "2026-09-06T07:09:44.763Z",
+      "finishedAt": "2026-09-06T07:09:49.821Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 866,
-    "todayOutputTokens": 144242,
-    "asOf": "2026-09-06T07:04:40.180Z"
+    "todayInputTokens": 1090,
+    "todayOutputTokens": 205015,
+    "asOf": "2026-09-06T07:09:58.124Z"
   },
-  "updatedAt": "2026-09-06T07:04:40.180Z"
+  "updatedAt": "2026-09-06T07:09:58.124Z"
 }
