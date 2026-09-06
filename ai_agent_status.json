@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "7-3節組み直し・7-4節解説追加の品質チェック",
-      "startedAt": "2026-09-06T15:43:51.455Z",
-      "finishedAt": "2026-09-06T15:43:54.112Z"
+      "task": "番地表示バグ修正・道路視認性改善の品質確認",
+      "startedAt": "2026-09-06T15:47:50.292Z",
+      "finishedAt": "2026-09-06T15:47:53.081Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 602,
-    "todayOutputTokens": 141010,
-    "asOf": "2026-09-06T15:44:07.736Z"
+    "todayInputTokens": 668,
+    "todayOutputTokens": 149971,
+    "asOf": "2026-09-06T15:48:10.645Z"
   },
-  "updatedAt": "2026-09-06T15:44:07.736Z"
+  "updatedAt": "2026-09-06T15:48:10.645Z"
 }
