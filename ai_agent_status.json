@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "朝イチ戦略の具体化と実戦収支シミュレーション",
-      "startedAt": "2026-09-06T07:09:44.763Z",
-      "finishedAt": "2026-09-06T07:09:49.821Z"
+      "task": "バナー掲載終了ロジックを翌朝6時カットオフに変更",
+      "startedAt": "2026-09-06T07:10:29.970Z",
+      "finishedAt": "2026-09-06T07:10:31.730Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1090,
-    "todayOutputTokens": 205015,
-    "asOf": "2026-09-06T07:09:58.124Z"
+    "todayInputTokens": 1149,
+    "todayOutputTokens": 232411,
+    "asOf": "2026-09-06T07:10:39.021Z"
   },
-  "updatedAt": "2026-09-06T07:09:58.124Z"
+  "updatedAt": "2026-09-06T07:10:39.021Z"
 }
