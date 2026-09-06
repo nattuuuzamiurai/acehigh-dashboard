@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "朝イチ戦略シミュレーション追加分の品質チェック",
-      "startedAt": "2026-09-06T07:23:28.478Z",
-      "finishedAt": "2026-09-06T07:23:40.436Z"
+      "task": "ふくおかポーカーナビ PR#79の動作確認",
+      "startedAt": "2026-09-06T07:24:45.186Z",
+      "finishedAt": "2026-09-06T07:24:47.198Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1607,
-    "todayOutputTokens": 328768,
-    "asOf": "2026-09-06T07:23:52.693Z"
+    "todayInputTokens": 1640,
+    "todayOutputTokens": 340075,
+    "asOf": "2026-09-06T07:24:51.642Z"
   },
-  "updatedAt": "2026-09-06T07:23:52.693Z"
+  "updatedAt": "2026-09-06T07:24:51.642Z"
 }
