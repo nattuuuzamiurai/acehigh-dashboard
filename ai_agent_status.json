@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "グリッド索引バグの修正と2件の再確認",
-      "startedAt": "2026-09-06T08:56:02.943Z",
-      "finishedAt": "2026-09-06T08:56:13.445Z"
+      "task": "チャンスモード→通常B経由の2段階分析と投資回収の整理",
+      "startedAt": "2026-09-06T08:56:40.184Z",
+      "finishedAt": "2026-09-06T08:56:43.033Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3177,
-    "todayOutputTokens": 663399,
-    "asOf": "2026-09-06T08:56:29.642Z"
+    "todayInputTokens": 3201,
+    "todayOutputTokens": 676102,
+    "asOf": "2026-09-06T08:56:49.961Z"
   },
-  "updatedAt": "2026-09-06T08:56:29.642Z"
+  "updatedAt": "2026-09-06T08:56:49.961Z"
 }
