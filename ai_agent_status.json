@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "「90%」表現修正の最終レビュー判定",
-      "startedAt": "2026-09-05T05:17:36.944Z",
-      "finishedAt": "2026-09-05T05:17:39.048Z"
+      "task": "ふくおかポーカーナビ PR#79の最終GO/NO-GO判定",
+      "startedAt": "2026-09-06T07:30:06.858Z",
+      "finishedAt": "2026-09-06T07:30:08.638Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1640,
-    "todayOutputTokens": 340075,
-    "asOf": "2026-09-06T07:24:51.642Z"
+    "todayInputTokens": 1893,
+    "todayOutputTokens": 374528,
+    "asOf": "2026-09-06T07:30:14.071Z"
   },
-  "updatedAt": "2026-09-06T07:24:51.642Z"
+  "updatedAt": "2026-09-06T07:30:14.071Z"
 }
