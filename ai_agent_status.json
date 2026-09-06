@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "筑後市番地非表示の調査と道路の見やすさ改善",
-      "startedAt": "2026-09-06T15:17:34.036Z",
-      "finishedAt": "2026-09-06T15:17:36.832Z"
+      "task": "天国後の連チャン比較とN=150-200Gピークの解説を作成",
+      "startedAt": "2026-09-06T15:29:18.192Z",
+      "finishedAt": "2026-09-06T15:29:23.729Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 28,
-    "todayOutputTokens": 11004,
-    "asOf": "2026-09-06T15:17:53.122Z"
+    "todayInputTokens": 268,
+    "todayOutputTokens": 69955,
+    "asOf": "2026-09-06T15:29:29.971Z"
   },
-  "updatedAt": "2026-09-06T15:17:53.122Z"
+  "updatedAt": "2026-09-06T15:29:29.971Z"
 }
