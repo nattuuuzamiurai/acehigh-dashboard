@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "基盤地図情報統合対応の最終レビュー",
-      "startedAt": "2026-09-06T09:46:55.504Z",
-      "finishedAt": "2026-09-06T09:46:59.406Z"
+      "task": "7-3/7-4組み直し後の最終レビュー判定",
+      "startedAt": "2026-09-06T15:57:01.225Z",
+      "finishedAt": "2026-09-06T15:57:04.181Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 814,
-    "todayOutputTokens": 170424,
-    "asOf": "2026-09-06T15:52:50.923Z"
+    "todayInputTokens": 968,
+    "todayOutputTokens": 185105,
+    "asOf": "2026-09-06T15:57:11.454Z"
   },
-  "updatedAt": "2026-09-06T15:52:50.923Z"
+  "updatedAt": "2026-09-06T15:57:11.454Z"
 }
