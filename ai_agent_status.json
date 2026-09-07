@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "改訂版11章をArtifactへ反映",
-      "startedAt": "2026-09-07T15:19:34.858Z",
-      "finishedAt": "2026-09-07T15:19:36.888Z"
+      "task": "住所検索の階層ドリルダウン化(県市町→番地→号)",
+      "startedAt": "2026-09-07T15:42:56.821Z",
+      "finishedAt": "2026-09-07T15:43:00.279Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 280,
-    "todayOutputTokens": 50409,
-    "asOf": "2026-09-07T15:19:49.890Z"
+    "todayInputTokens": 586,
+    "todayOutputTokens": 101157,
+    "asOf": "2026-09-07T15:43:25.713Z"
   },
-  "updatedAt": "2026-09-07T15:19:49.890Z"
+  "updatedAt": "2026-09-07T15:43:25.713Z"
 }
