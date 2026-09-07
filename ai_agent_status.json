@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "住所検索の階層ドリルダウン化(県市町→番地→号)",
-      "startedAt": "2026-09-07T15:42:56.821Z",
-      "finishedAt": "2026-09-07T15:43:00.279Z"
+      "task": "スルー回数別しきい値の理論値算出",
+      "startedAt": "2026-09-07T16:38:50.671Z",
+      "finishedAt": "2026-09-07T16:38:52.735Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1386,
-    "todayOutputTokens": 274772,
-    "asOf": "2026-09-07T16:23:15.732Z"
+    "todayInputTokens": 1510,
+    "todayOutputTokens": 350438,
+    "asOf": "2026-09-07T16:39:03.809Z"
   },
-  "updatedAt": "2026-09-07T16:23:15.732Z"
+  "updatedAt": "2026-09-07T16:39:03.809Z"
 }
