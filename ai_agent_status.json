@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "理論モデルでシミュレーションを再計算",
-      "startedAt": "2026-09-07T17:04:39.493Z",
-      "finishedAt": "2026-09-07T17:04:41.514Z"
+      "task": "理論値ベースでグラフ4枚を再生成",
+      "startedAt": "2026-09-07T17:30:56.632Z",
+      "finishedAt": "2026-09-07T17:30:59.021Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "理論値分析を11章へ統合",
-      "startedAt": "2026-09-07T17:01:50.707Z",
-      "finishedAt": "2026-09-07T17:01:52.742Z"
+      "task": "理論値を主役に11章を全面書き換え",
+      "startedAt": "2026-09-07T17:31:40.725Z",
+      "finishedAt": "2026-09-07T17:31:42.423Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2254,
-    "todayOutputTokens": 602828,
-    "asOf": "2026-09-07T17:10:34.810Z"
+    "todayInputTokens": 2812,
+    "todayOutputTokens": 747624,
+    "asOf": "2026-09-07T17:31:59.541Z"
   },
-  "updatedAt": "2026-09-07T17:10:34.810Z"
+  "updatedAt": "2026-09-07T17:31:59.541Z"
 }
