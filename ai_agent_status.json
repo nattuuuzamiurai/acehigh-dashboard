@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "戦略A/B分離の最終レビュー判定",
-      "startedAt": "2026-09-07T06:38:36.368Z",
-      "finishedAt": "2026-09-07T06:38:40.918Z"
+      "task": "朝イチ天国比較追加分の最終レビュー判定",
+      "startedAt": "2026-09-07T10:47:33.186Z",
+      "finishedAt": "2026-09-07T10:47:35.850Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2176,
-    "todayOutputTokens": 446365,
-    "asOf": "2026-09-07T10:41:42.496Z"
+    "todayInputTokens": 2266,
+    "todayOutputTokens": 461420,
+    "asOf": "2026-09-07T10:47:43.328Z"
   },
-  "updatedAt": "2026-09-07T10:41:42.496Z"
+  "updatedAt": "2026-09-07T10:47:43.328Z"
 }
