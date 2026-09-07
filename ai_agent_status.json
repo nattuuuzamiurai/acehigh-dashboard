@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "住所検索強化・2段階フローの品質確認",
-      "startedAt": "2026-09-07T14:19:20.636Z",
-      "finishedAt": "2026-09-07T14:19:24.957Z"
+      "task": "ふくおかポーカーナビPR#80の品質チェック",
+      "startedAt": "2026-09-07T14:28:07.203Z",
+      "finishedAt": "2026-09-07T14:28:09.134Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5986,
-    "todayOutputTokens": 1113059,
-    "asOf": "2026-09-07T14:19:56.963Z"
+    "todayInputTokens": 6408,
+    "todayOutputTokens": 1170122,
+    "asOf": "2026-09-07T14:28:17.924Z"
   },
-  "updatedAt": "2026-09-07T14:19:56.963Z"
+  "updatedAt": "2026-09-07T14:28:17.924Z"
 }
