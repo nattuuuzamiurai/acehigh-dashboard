@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ArtifactプレビューHTMLへの全面反映",
-      "startedAt": "2026-09-07T12:50:42.470Z",
-      "finishedAt": "2026-09-07T12:50:44.628Z"
+      "task": "Artifactの表組みを見やすく改善",
+      "startedAt": "2026-09-07T13:43:17.977Z",
+      "finishedAt": "2026-09-07T13:43:22.708Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "ゼンリン操作動画のフレーム分析",
-      "startedAt": "2026-08-27T12:19:44.304Z",
-      "finishedAt": "2026-08-27T12:19:49.621Z"
+      "task": "住所検索・登録フローの動画分析",
+      "startedAt": "2026-09-07T13:44:13.143Z",
+      "finishedAt": "2026-09-07T13:44:17.301Z"
     }
   },
   "usage": {
-    "todayInputTokens": 4452,
-    "todayOutputTokens": 812792,
-    "asOf": "2026-09-07T13:04:52.967Z"
+    "todayInputTokens": 4536,
+    "todayOutputTokens": 835885,
+    "asOf": "2026-09-07T13:44:17.937Z"
   },
-  "updatedAt": "2026-09-07T13:04:52.967Z"
+  "updatedAt": "2026-09-07T13:44:17.937Z"
 }
