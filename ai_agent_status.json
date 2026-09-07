@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビPR#80の品質チェック",
-      "startedAt": "2026-09-07T14:28:07.203Z",
-      "finishedAt": "2026-09-07T14:28:09.134Z"
+      "task": "改訂版11章の最終ファクトチェック",
+      "startedAt": "2026-09-07T14:53:24.114Z",
+      "finishedAt": "2026-09-07T14:53:26.637Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6750,
-    "todayOutputTokens": 1284303,
-    "asOf": "2026-09-07T14:42:02.107Z"
+    "todayInputTokens": 6906,
+    "todayOutputTokens": 1335673,
+    "asOf": "2026-09-07T14:53:38.916Z"
   },
-  "updatedAt": "2026-09-07T14:42:02.107Z"
+  "updatedAt": "2026-09-07T14:53:38.916Z"
 }
