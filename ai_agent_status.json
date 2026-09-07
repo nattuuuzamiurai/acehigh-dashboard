@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "番地漏れの網羅調査・マンション名表示強化・POIアイコン化",
-      "startedAt": "2026-09-07T16:44:28.534Z",
-      "finishedAt": "2026-09-07T16:44:31.025Z"
+      "task": "理論モデルでシミュレーションを再計算",
+      "startedAt": "2026-09-07T17:04:39.493Z",
+      "finishedAt": "2026-09-07T17:04:41.514Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2064,
-    "todayOutputTokens": 562028,
-    "asOf": "2026-09-07T17:02:06.043Z"
+    "todayInputTokens": 2162,
+    "todayOutputTokens": 588506,
+    "asOf": "2026-09-07T17:05:06.946Z"
   },
-  "updatedAt": "2026-09-07T17:02:06.043Z"
+  "updatedAt": "2026-09-07T17:05:06.946Z"
 }
