@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "11章のボーダーライン・継続判定ロジックを再構築",
-      "startedAt": "2026-09-07T13:55:02.726Z",
-      "finishedAt": "2026-09-07T13:55:06.320Z"
+      "task": "ふくおかポーカーナビのPV向上施策を実装",
+      "startedAt": "2026-09-07T14:05:36.388Z",
+      "finishedAt": "2026-09-07T14:05:40.250Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "article.mdへの夜章統合と画像埋め込み",
-      "startedAt": "2026-09-07T12:08:05.771Z",
-      "finishedAt": "2026-09-07T12:08:08.017Z"
+      "task": "ふくおかポーカーナビの店舗PR営業資料を改訂",
+      "startedAt": "2026-09-07T14:05:54.532Z",
+      "finishedAt": "2026-09-07T14:05:56.375Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4932,
-    "todayOutputTokens": 954219,
-    "asOf": "2026-09-07T13:57:57.743Z"
+    "todayInputTokens": 5312,
+    "todayOutputTokens": 1003414,
+    "asOf": "2026-09-07T14:06:04.826Z"
   },
-  "updatedAt": "2026-09-07T13:57:57.743Z"
+  "updatedAt": "2026-09-07T14:06:04.826Z"
 }
