@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "朝イチ天国比較追加分の最終レビュー判定",
-      "startedAt": "2026-09-07T10:47:33.186Z",
-      "finishedAt": "2026-09-07T10:47:35.850Z"
+      "task": "記事全体の最終GO/NO-GO判定",
+      "startedAt": "2026-09-07T12:44:31.227Z",
+      "finishedAt": "2026-09-07T12:44:33.539Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3816,
-    "todayOutputTokens": 698684,
-    "asOf": "2026-09-07T12:29:06.892Z"
+    "todayInputTokens": 4018,
+    "todayOutputTokens": 730628,
+    "asOf": "2026-09-07T12:44:46.653Z"
   },
-  "updatedAt": "2026-09-07T12:29:06.892Z"
+  "updatedAt": "2026-09-07T12:44:46.653Z"
 }
