@@ -32,9 +32,9 @@
     },
     "marketing-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi GEO技術監査",
-      "startedAt": "2026-09-02T16:41:20.318Z",
-      "finishedAt": "2026-09-02T16:41:22.044Z"
+      "task": "ふくおかポーカーナビのGA4分析と収益化施策立案",
+      "startedAt": "2026-09-07T13:57:44.147Z",
+      "finishedAt": "2026-09-07T13:57:45.935Z"
     },
     "Explore": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4832,
-    "todayOutputTokens": 921616,
-    "asOf": "2026-09-07T13:55:20.898Z"
+    "todayInputTokens": 4932,
+    "todayOutputTokens": 954219,
+    "asOf": "2026-09-07T13:57:57.743Z"
   },
-  "updatedAt": "2026-09-07T13:55:20.898Z"
+  "updatedAt": "2026-09-07T13:57:57.743Z"
 }
