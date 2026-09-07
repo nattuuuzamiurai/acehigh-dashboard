@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "夜の立ち回り分析のファクトチェック",
-      "startedAt": "2026-09-07T11:50:13.004Z",
-      "finishedAt": "2026-09-07T11:50:14.858Z"
+      "task": "統合後article.mdの最終QA",
+      "startedAt": "2026-09-07T12:28:53.936Z",
+      "finishedAt": "2026-09-07T12:28:56.403Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3780,
-    "todayOutputTokens": 692586,
-    "asOf": "2026-09-07T12:27:20.078Z"
+    "todayInputTokens": 3816,
+    "todayOutputTokens": 698684,
+    "asOf": "2026-09-07T12:29:06.892Z"
   },
-  "updatedAt": "2026-09-07T12:27:20.078Z"
+  "updatedAt": "2026-09-07T12:29:06.892Z"
 }
