@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "朝イチ最初の天国とそれ以降の天国の枚数比較",
-      "startedAt": "2026-09-07T10:29:21.873Z",
-      "finishedAt": "2026-09-07T10:29:27.920Z"
+      "task": "記事グラフの実画像化",
+      "startedAt": "2026-09-07T11:33:35.667Z",
+      "finishedAt": "2026-09-07T11:33:37.646Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2310,
-    "todayOutputTokens": 481781,
-    "asOf": "2026-09-07T10:51:49.582Z"
+    "todayInputTokens": 2388,
+    "todayOutputTokens": 523322,
+    "asOf": "2026-09-07T11:33:44.797Z"
   },
-  "updatedAt": "2026-09-07T10:51:49.582Z"
+  "updatedAt": "2026-09-07T11:33:44.797Z"
 }
