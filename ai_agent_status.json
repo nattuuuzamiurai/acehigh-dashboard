@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "朝イチ天国比較追加分の品質チェック",
-      "startedAt": "2026-09-07T10:41:29.610Z",
-      "finishedAt": "2026-09-07T10:41:33.064Z"
+      "task": "生成グラフの数値照合チェック",
+      "startedAt": "2026-09-07T11:49:21.791Z",
+      "finishedAt": "2026-09-07T11:49:23.636Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2388,
-    "todayOutputTokens": 523322,
-    "asOf": "2026-09-07T11:33:44.797Z"
+    "todayInputTokens": 2808,
+    "todayOutputTokens": 559483,
+    "asOf": "2026-09-07T11:49:33.471Z"
   },
-  "updatedAt": "2026-09-07T11:33:44.797Z"
+  "updatedAt": "2026-09-07T11:49:33.471Z"
 }
