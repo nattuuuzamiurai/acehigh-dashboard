@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "README数値訂正と稀な競合バグの解消",
-      "startedAt": "2026-09-07T17:57:57.205Z",
-      "finishedAt": "2026-09-07T17:58:00.663Z"
+      "task": "グラフ12cのキャプション数値誤りを修正",
+      "startedAt": "2026-09-07T18:14:10.898Z",
+      "finishedAt": "2026-09-07T18:14:12.957Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3928,
-    "todayOutputTokens": 939700,
-    "asOf": "2026-09-07T18:11:04.095Z"
+    "todayInputTokens": 4064,
+    "todayOutputTokens": 960812,
+    "asOf": "2026-09-07T18:14:28.096Z"
   },
-  "updatedAt": "2026-09-07T18:11:04.095Z"
+  "updatedAt": "2026-09-07T18:14:28.096Z"
 }
