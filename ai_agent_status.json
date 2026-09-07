@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "スルー回数別しきい値の理論値算出",
-      "startedAt": "2026-09-07T16:38:50.671Z",
-      "finishedAt": "2026-09-07T16:38:52.735Z"
+      "task": "番地漏れの網羅調査・マンション名表示強化・POIアイコン化",
+      "startedAt": "2026-09-07T16:44:28.534Z",
+      "finishedAt": "2026-09-07T16:44:31.025Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1608,
-    "todayOutputTokens": 371574,
-    "asOf": "2026-09-07T16:41:10.792Z"
+    "todayInputTokens": 1690,
+    "todayOutputTokens": 404265,
+    "asOf": "2026-09-07T16:44:47.459Z"
   },
-  "updatedAt": "2026-09-07T16:41:10.792Z"
+  "updatedAt": "2026-09-07T16:44:47.459Z"
 }
