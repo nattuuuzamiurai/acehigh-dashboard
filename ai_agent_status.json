@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "住所階層ドリルダウンの品質確認",
-      "startedAt": "2026-09-07T16:14:49.980Z",
-      "finishedAt": "2026-09-07T16:14:52.950Z"
+      "task": "番地漏れ調査・マンション名・POIアイコン・検索UX改善の品質確認",
+      "startedAt": "2026-09-07T17:36:46.400Z",
+      "finishedAt": "2026-09-07T17:36:49.135Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2812,
-    "todayOutputTokens": 747624,
-    "asOf": "2026-09-07T17:31:59.541Z"
+    "todayInputTokens": 2902,
+    "todayOutputTokens": 791631,
+    "asOf": "2026-09-07T17:37:13.514Z"
   },
-  "updatedAt": "2026-09-07T17:31:59.541Z"
+  "updatedAt": "2026-09-07T17:37:13.514Z"
 }
