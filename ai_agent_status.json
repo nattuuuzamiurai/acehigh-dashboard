@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "夜章用グラフ4枚を新規生成",
-      "startedAt": "2026-09-07T12:07:45.209Z",
-      "finishedAt": "2026-09-07T12:07:47.212Z"
+      "task": "グラフ12aの内部呼称を修正",
+      "startedAt": "2026-09-07T12:25:24.557Z",
+      "finishedAt": "2026-09-07T12:25:26.934Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3680,
-    "todayOutputTokens": 679765,
-    "asOf": "2026-09-07T12:24:31.003Z"
+    "todayInputTokens": 3780,
+    "todayOutputTokens": 692586,
+    "asOf": "2026-09-07T12:27:20.078Z"
   },
-  "updatedAt": "2026-09-07T12:24:31.003Z"
+  "updatedAt": "2026-09-07T12:27:20.078Z"
 }
