@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "グラフ12cのキャプション数値誤りを修正",
-      "startedAt": "2026-09-07T18:14:10.898Z",
-      "finishedAt": "2026-09-07T18:14:12.957Z"
+      "task": "理論値版11章をArtifactへ反映",
+      "startedAt": "2026-09-07T18:29:27.552Z",
+      "finishedAt": "2026-09-07T18:29:29.658Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4356,
-    "todayOutputTokens": 1007480,
-    "asOf": "2026-09-07T18:25:27.659Z"
+    "todayInputTokens": 4410,
+    "todayOutputTokens": 1021202,
+    "asOf": "2026-09-07T18:29:42.750Z"
   },
-  "updatedAt": "2026-09-07T18:25:27.659Z"
+  "updatedAt": "2026-09-07T18:29:42.750Z"
 }
