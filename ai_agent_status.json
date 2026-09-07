@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "改訂版11章の最終ファクトチェック",
-      "startedAt": "2026-09-07T14:53:24.114Z",
-      "finishedAt": "2026-09-07T14:53:26.637Z"
+      "task": "11章修正の再確認QA",
+      "startedAt": "2026-09-07T15:12:14.890Z",
+      "finishedAt": "2026-09-07T15:12:17.078Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6906,
-    "todayOutputTokens": 1335673,
-    "asOf": "2026-09-07T14:53:38.916Z"
+    "todayInputTokens": 148,
+    "todayOutputTokens": 27533,
+    "asOf": "2026-09-07T15:12:31.868Z"
   },
-  "updatedAt": "2026-09-07T14:53:38.916Z"
+  "updatedAt": "2026-09-07T15:12:31.868Z"
 }
