@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "理論値ベースでグラフ4枚を再生成",
-      "startedAt": "2026-09-07T17:30:56.632Z",
-      "finishedAt": "2026-09-07T17:30:59.021Z"
+      "task": "README数値訂正と稀な競合バグの解消",
+      "startedAt": "2026-09-07T17:57:57.205Z",
+      "finishedAt": "2026-09-07T17:58:00.663Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "番地漏れ調査・マンション名・POIアイコン・検索UX改善の品質確認",
-      "startedAt": "2026-09-07T17:36:46.400Z",
-      "finishedAt": "2026-09-07T17:36:49.135Z"
+      "task": "理論値全面置き換え版の最終ファクトチェック",
+      "startedAt": "2026-09-07T17:58:41.594Z",
+      "finishedAt": "2026-09-07T17:58:58.127Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3260,
-    "todayOutputTokens": 856357,
-    "asOf": "2026-09-07T17:47:31.073Z"
+    "todayInputTokens": 3494,
+    "todayOutputTokens": 887193,
+    "asOf": "2026-09-07T17:59:01.520Z"
   },
-  "updatedAt": "2026-09-07T17:47:31.073Z"
+  "updatedAt": "2026-09-07T17:59:01.520Z"
 }
