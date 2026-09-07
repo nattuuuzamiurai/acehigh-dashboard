@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "生成グラフの数値照合チェック",
-      "startedAt": "2026-09-07T11:49:21.791Z",
-      "finishedAt": "2026-09-07T11:49:23.636Z"
+      "task": "夜の立ち回り分析のファクトチェック",
+      "startedAt": "2026-09-07T11:50:13.004Z",
+      "finishedAt": "2026-09-07T11:50:14.858Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2808,
-    "todayOutputTokens": 559483,
-    "asOf": "2026-09-07T11:49:33.471Z"
+    "todayInputTokens": 2896,
+    "todayOutputTokens": 568182,
+    "asOf": "2026-09-07T11:50:30.404Z"
   },
-  "updatedAt": "2026-09-07T11:49:33.471Z"
+  "updatedAt": "2026-09-07T11:50:30.404Z"
 }
