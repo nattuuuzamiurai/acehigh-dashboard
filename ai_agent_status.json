@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビ店舗PR営業資料の事実確認",
-      "startedAt": "2026-09-07T16:11:22.939Z",
-      "finishedAt": "2026-09-07T16:11:25.245Z"
+      "task": "住所階層ドリルダウンの品質確認",
+      "startedAt": "2026-09-07T16:14:49.980Z",
+      "finishedAt": "2026-09-07T16:14:52.950Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 986,
-    "todayOutputTokens": 222263,
-    "asOf": "2026-09-07T16:11:30.998Z"
+    "todayInputTokens": 1146,
+    "todayOutputTokens": 233070,
+    "asOf": "2026-09-07T16:15:38.092Z"
   },
-  "updatedAt": "2026-09-07T16:11:30.998Z"
+  "updatedAt": "2026-09-07T16:15:38.092Z"
 }
