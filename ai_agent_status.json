@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "理論値版11章をArtifactへ反映",
-      "startedAt": "2026-09-07T18:29:27.552Z",
-      "finishedAt": "2026-09-07T18:29:29.658Z"
+      "task": "理論値版11章をArtifactへ反映(再依頼)",
+      "startedAt": "2026-09-07T18:33:48.206Z",
+      "finishedAt": "2026-09-07T18:33:50.181Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4410,
-    "todayOutputTokens": 1021202,
-    "asOf": "2026-09-07T18:29:42.750Z"
+    "todayInputTokens": 4476,
+    "todayOutputTokens": 1030548,
+    "asOf": "2026-09-07T18:34:05.369Z"
   },
-  "updatedAt": "2026-09-07T18:29:42.750Z"
+  "updatedAt": "2026-09-07T18:34:05.369Z"
 }
