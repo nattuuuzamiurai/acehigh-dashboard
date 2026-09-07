@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "グラフの誤表記・レイアウト修正",
-      "startedAt": "2026-09-07T12:01:59.392Z",
-      "finishedAt": "2026-09-07T12:02:01.618Z"
+      "task": "夜章用グラフ4枚を新規生成",
+      "startedAt": "2026-09-07T12:07:45.209Z",
+      "finishedAt": "2026-09-07T12:07:47.212Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "通説比較・朝イチ関連の記事本文を最終書き直し",
-      "startedAt": "2026-09-03T16:30:06.126Z",
-      "finishedAt": "2026-09-03T16:30:08.582Z"
+      "task": "article.mdへの夜章統合と画像埋め込み",
+      "startedAt": "2026-09-07T12:08:05.771Z",
+      "finishedAt": "2026-09-07T12:08:08.017Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3160,
-    "todayOutputTokens": 605467,
-    "asOf": "2026-09-07T12:02:12.930Z"
+    "todayInputTokens": 3312,
+    "todayOutputTokens": 637162,
+    "asOf": "2026-09-07T12:08:21.191Z"
   },
-  "updatedAt": "2026-09-07T12:02:12.930Z"
+  "updatedAt": "2026-09-07T12:08:21.191Z"
 }
