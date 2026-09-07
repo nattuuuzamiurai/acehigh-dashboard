@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "「朝イチの天国は弱い」通説の実在性を調査",
-      "startedAt": "2026-09-07T10:29:29.194Z",
-      "finishedAt": "2026-09-07T10:29:31.852Z"
+      "task": "朝イチ天国比較追加分の品質チェック",
+      "startedAt": "2026-09-07T10:41:29.610Z",
+      "finishedAt": "2026-09-07T10:41:33.064Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2138,
-    "todayOutputTokens": 432919,
-    "asOf": "2026-09-07T10:39:40.078Z"
+    "todayInputTokens": 2176,
+    "todayOutputTokens": 446365,
+    "asOf": "2026-09-07T10:41:42.496Z"
   },
-  "updatedAt": "2026-09-07T10:39:40.078Z"
+  "updatedAt": "2026-09-07T10:41:42.496Z"
 }
