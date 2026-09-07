@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "住所検索の強化と2段階登録フロー化",
-      "startedAt": "2026-09-07T13:51:38.282Z",
-      "finishedAt": "2026-09-07T13:51:42.081Z"
+      "task": "11章のボーダーライン・継続判定ロジックを再構築",
+      "startedAt": "2026-09-07T13:55:02.726Z",
+      "finishedAt": "2026-09-07T13:55:06.320Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4654,
-    "todayOutputTokens": 876382,
-    "asOf": "2026-09-07T13:52:04.029Z"
+    "todayInputTokens": 4832,
+    "todayOutputTokens": 921616,
+    "asOf": "2026-09-07T13:55:20.898Z"
   },
-  "updatedAt": "2026-09-07T13:52:04.029Z"
+  "updatedAt": "2026-09-07T13:55:20.898Z"
 }
