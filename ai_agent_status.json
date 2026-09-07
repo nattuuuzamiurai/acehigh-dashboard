@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Artifactの表組みを見やすく改善",
-      "startedAt": "2026-09-07T13:43:17.977Z",
-      "finishedAt": "2026-09-07T13:43:22.708Z"
+      "task": "住所検索の強化と2段階登録フロー化",
+      "startedAt": "2026-09-07T13:51:38.282Z",
+      "finishedAt": "2026-09-07T13:51:42.081Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4540,
-    "todayOutputTokens": 835920,
-    "asOf": "2026-09-07T13:44:36.347Z"
+    "todayInputTokens": 4654,
+    "todayOutputTokens": 876382,
+    "asOf": "2026-09-07T13:52:04.029Z"
   },
-  "updatedAt": "2026-09-07T13:44:36.347Z"
+  "updatedAt": "2026-09-07T13:52:04.029Z"
 }
