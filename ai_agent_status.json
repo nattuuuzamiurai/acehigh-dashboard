@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "朝イチ戦略を「即やめ」と「天国まで粘る」で明確に分離",
-      "startedAt": "2026-09-07T06:06:54.793Z",
-      "finishedAt": "2026-09-07T06:07:00.612Z"
+      "task": "朝イチ最初の天国とそれ以降の天国の枚数比較",
+      "startedAt": "2026-09-07T10:29:21.873Z",
+      "finishedAt": "2026-09-07T10:29:27.920Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "戦略A/B分離の品質チェック",
-      "startedAt": "2026-09-07T06:27:47.419Z",
-      "finishedAt": "2026-09-07T06:27:49.571Z"
+      "task": "「朝イチの天国は弱い」通説の実在性を調査",
+      "startedAt": "2026-09-07T10:29:29.194Z",
+      "finishedAt": "2026-09-07T10:29:31.852Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1754,
-    "todayOutputTokens": 373660,
-    "asOf": "2026-09-07T06:44:20.166Z"
+    "todayInputTokens": 1896,
+    "todayOutputTokens": 411726,
+    "asOf": "2026-09-07T10:30:40.500Z"
   },
-  "updatedAt": "2026-09-07T06:44:20.166Z"
+  "updatedAt": "2026-09-07T10:30:40.500Z"
 }
