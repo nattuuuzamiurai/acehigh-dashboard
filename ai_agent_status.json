@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビのPV向上施策を実装",
-      "startedAt": "2026-09-07T14:05:36.388Z",
-      "finishedAt": "2026-09-07T14:05:40.250Z"
+      "task": "11章改訂版グラフ4枚を生成",
+      "startedAt": "2026-09-07T14:17:43.538Z",
+      "finishedAt": "2026-09-07T14:17:47.699Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "ふくおかポーカーナビの店舗PR営業資料を改訂",
-      "startedAt": "2026-09-07T14:05:54.532Z",
-      "finishedAt": "2026-09-07T14:05:56.375Z"
+      "task": "改訂版11章をarticle.mdへ統合",
+      "startedAt": "2026-09-07T14:18:14.911Z",
+      "finishedAt": "2026-09-07T14:18:17.651Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5618,
-    "todayOutputTokens": 1047805,
-    "asOf": "2026-09-07T14:10:47.271Z"
+    "todayInputTokens": 5926,
+    "todayOutputTokens": 1101151,
+    "asOf": "2026-09-07T14:18:41.302Z"
   },
-  "updatedAt": "2026-09-07T14:10:47.271Z"
+  "updatedAt": "2026-09-07T14:18:41.302Z"
 }
