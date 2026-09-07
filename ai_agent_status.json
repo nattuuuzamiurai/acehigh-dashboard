@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "7-3/7-4組み直し後の最終レビュー判定",
-      "startedAt": "2026-09-06T15:57:01.225Z",
-      "finishedAt": "2026-09-06T15:57:04.181Z"
+      "task": "戦略A/B分離の最終レビュー判定",
+      "startedAt": "2026-09-07T06:38:36.368Z",
+      "finishedAt": "2026-09-07T06:38:40.918Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1526,
-    "todayOutputTokens": 311853,
-    "asOf": "2026-09-07T06:27:57.398Z"
+    "todayInputTokens": 1672,
+    "todayOutputTokens": 352433,
+    "asOf": "2026-09-07T06:38:47.305Z"
   },
-  "updatedAt": "2026-09-07T06:27:57.398Z"
+  "updatedAt": "2026-09-07T06:38:47.305Z"
 }
