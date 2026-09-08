@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "11章を実測主役版に統合",
-      "startedAt": "2026-09-08T14:25:58.907Z",
-      "finishedAt": "2026-09-08T14:26:01.292Z"
+      "task": "7章に朝イチ最終結論を統合",
+      "startedAt": "2026-09-08T14:44:00.240Z",
+      "finishedAt": "2026-09-08T14:44:03.015Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8200,
-    "todayOutputTokens": 1711035,
-    "asOf": "2026-09-08T14:40:58.794Z"
+    "todayInputTokens": 8306,
+    "todayOutputTokens": 1725046,
+    "asOf": "2026-09-08T14:43:59.499Z"
   },
-  "updatedAt": "2026-09-08T14:40:58.794Z"
+  "updatedAt": "2026-09-08T14:43:59.499Z"
 }
