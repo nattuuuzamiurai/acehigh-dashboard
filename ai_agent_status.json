@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "新規グラフ2枚と11章グラフ4枚を更新",
-      "startedAt": "2026-09-08T18:38:02.584Z",
-      "finishedAt": "2026-09-08T18:38:04.650Z"
+      "task": "任意座標系シートの位置補正・小規模検証",
+      "startedAt": "2026-09-08T18:39:56.428Z",
+      "finishedAt": "2026-09-08T18:39:59.159Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4994,
-    "todayOutputTokens": 1492786,
-    "asOf": "2026-09-08T18:38:43.228Z"
+    "todayInputTokens": 5114,
+    "todayOutputTokens": 1525311,
+    "asOf": "2026-09-08T18:40:04.305Z"
   },
-  "updatedAt": "2026-09-08T18:38:43.228Z"
+  "updatedAt": "2026-09-08T18:40:04.305Z"
 }
