@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "推定番地表示の設計・実装",
-      "startedAt": "2026-09-08T15:51:51.293Z",
-      "finishedAt": "2026-09-08T15:51:53.252Z"
+      "task": "7章9章11章の変更をArtifactへ反映",
+      "startedAt": "2026-09-08T15:59:44.963Z",
+      "finishedAt": "2026-09-08T15:59:48.339Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1354,
-    "todayOutputTokens": 213727,
-    "asOf": "2026-09-08T15:53:54.383Z"
+    "todayInputTokens": 1588,
+    "todayOutputTokens": 263027,
+    "asOf": "2026-09-08T16:00:08.882Z"
   },
-  "updatedAt": "2026-09-08T15:53:54.383Z"
+  "updatedAt": "2026-09-08T16:00:08.882Z"
 }
