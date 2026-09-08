@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "推定番地表示の軽微指摘4件の修正",
-      "startedAt": "2026-09-08T17:13:13.249Z",
-      "finishedAt": "2026-09-08T17:13:14.955Z"
+      "task": "理論値のM依存性を複数点で検証し表示を改善",
+      "startedAt": "2026-09-08T17:16:20.432Z",
+      "finishedAt": "2026-09-08T17:16:22.869Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3180,
-    "todayOutputTokens": 727666,
-    "asOf": "2026-09-08T17:14:14.073Z"
+    "todayInputTokens": 3308,
+    "todayOutputTokens": 766486,
+    "asOf": "2026-09-08T17:16:44.399Z"
   },
-  "updatedAt": "2026-09-08T17:14:14.073Z"
+  "updatedAt": "2026-09-08T17:16:44.399Z"
 }
