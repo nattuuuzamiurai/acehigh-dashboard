@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "理論値版11章をArtifactへ反映(再依頼)",
-      "startedAt": "2026-09-07T18:33:48.206Z",
-      "finishedAt": "2026-09-07T18:33:50.181Z"
+      "task": "Waitinglist自動取込み候補3店舗を有効化",
+      "startedAt": "2026-09-08T09:12:24.453Z",
+      "finishedAt": "2026-09-08T09:12:26.282Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "理論値を主役に11章を全面書き換え",
-      "startedAt": "2026-09-07T17:31:40.725Z",
-      "finishedAt": "2026-09-07T17:31:42.423Z"
+      "task": "SPADIE FUKUOKA 1st特集ページの原稿作成",
+      "startedAt": "2026-09-08T09:12:44.851Z",
+      "finishedAt": "2026-09-08T09:12:46.714Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4940,
-    "todayOutputTokens": 1125528,
-    "asOf": "2026-09-08T09:10:44.860Z"
+    "todayInputTokens": 5066,
+    "todayOutputTokens": 1163678,
+    "asOf": "2026-09-08T09:14:02.073Z"
   },
-  "updatedAt": "2026-09-08T09:10:44.860Z"
+  "updatedAt": "2026-09-08T09:14:02.073Z"
 }
