@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "2スルー安定プラスの真偽を検証",
-      "startedAt": "2026-09-08T17:18:04.440Z",
-      "finishedAt": "2026-09-08T17:18:06.562Z"
+      "task": "天井込み理論値を既存M閾値で完全網羅",
+      "startedAt": "2026-09-08T17:36:03.334Z",
+      "finishedAt": "2026-09-08T17:36:06.333Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3710,
-    "todayOutputTokens": 863784,
-    "asOf": "2026-09-08T17:27:30.541Z"
+    "todayInputTokens": 3800,
+    "todayOutputTokens": 916547,
+    "asOf": "2026-09-08T17:36:25.192Z"
   },
-  "updatedAt": "2026-09-08T17:27:30.541Z"
+  "updatedAt": "2026-09-08T17:36:25.192Z"
 }
