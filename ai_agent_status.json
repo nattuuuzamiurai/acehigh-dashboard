@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "SPADIE FUKUOKA 1st特集ページを実装",
-      "startedAt": "2026-09-08T09:21:34.721Z",
-      "finishedAt": "2026-09-08T09:21:36.714Z"
+      "task": "PR#82の軽微な指摘2点を修正",
+      "startedAt": "2026-09-08T10:01:51.694Z",
+      "finishedAt": "2026-09-08T10:01:54.454Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5938,
-    "todayOutputTokens": 1282753,
-    "asOf": "2026-09-08T09:51:19.034Z"
+    "todayInputTokens": 6156,
+    "todayOutputTokens": 1304038,
+    "asOf": "2026-09-08T10:01:59.736Z"
   },
-  "updatedAt": "2026-09-08T09:51:19.034Z"
+  "updatedAt": "2026-09-08T10:01:59.736Z"
 }
