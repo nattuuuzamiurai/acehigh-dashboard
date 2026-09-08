@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "7章新設部分と11章再構築版の統合ファクトチェック",
-      "startedAt": "2026-09-08T15:28:53.228Z",
-      "finishedAt": "2026-09-08T15:28:55.657Z"
+      "task": "2件の修正内容を再確認",
+      "startedAt": "2026-09-08T15:49:35.205Z",
+      "finishedAt": "2026-09-08T15:49:37.433Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 708,
-    "todayOutputTokens": 102614,
-    "asOf": "2026-09-08T15:29:15.987Z"
+    "todayInputTokens": 1192,
+    "todayOutputTokens": 171765,
+    "asOf": "2026-09-08T15:50:05.199Z"
   },
-  "updatedAt": "2026-09-08T15:29:15.987Z"
+  "updatedAt": "2026-09-08T15:50:05.199Z"
 }
