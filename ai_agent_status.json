@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "POIアイコンの表示形状・ズーム範囲調整と尾島・野町の番地漏れ調査",
-      "startedAt": "2026-09-08T14:47:05.372Z",
-      "finishedAt": "2026-09-08T14:47:20.214Z"
+      "task": "7章・9章の新規グラフ3枚を生成",
+      "startedAt": "2026-09-08T15:00:52.876Z",
+      "finishedAt": "2026-09-08T15:01:10.689Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 0,
-    "todayOutputTokens": 0,
-    "asOf": "2026-09-08T15:00:04.777Z"
+    "todayInputTokens": 56,
+    "todayOutputTokens": 7096,
+    "asOf": "2026-09-08T15:01:32.564Z"
   },
-  "updatedAt": "2026-09-08T15:00:04.777Z"
+  "updatedAt": "2026-09-08T15:01:32.564Z"
 }
