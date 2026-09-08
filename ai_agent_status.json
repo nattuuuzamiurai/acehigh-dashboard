@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "見切り+粘りの組み合わせ戦略を新規シミュレーション",
-      "startedAt": "2026-09-08T17:04:42.818Z",
-      "finishedAt": "2026-09-08T17:04:46.232Z"
+      "task": "9章推奨戦略の理論的補完と2スルーの妥当性検証",
+      "startedAt": "2026-09-08T17:07:32.131Z",
+      "finishedAt": "2026-09-08T17:07:34.383Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2758,
-    "todayOutputTokens": 618082,
-    "asOf": "2026-09-08T17:05:12.619Z"
+    "todayInputTokens": 2884,
+    "todayOutputTokens": 666007,
+    "asOf": "2026-09-08T17:08:25.504Z"
   },
-  "updatedAt": "2026-09-08T17:05:12.619Z"
+  "updatedAt": "2026-09-08T17:08:25.504Z"
 }
