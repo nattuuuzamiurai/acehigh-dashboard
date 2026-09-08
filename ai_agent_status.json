@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Waitinglist自動取込み候補3店舗を有効化",
-      "startedAt": "2026-09-08T09:12:24.453Z",
-      "finishedAt": "2026-09-08T09:12:26.282Z"
+      "task": "SPADIE FUKUOKA 1st特集ページを実装",
+      "startedAt": "2026-09-08T09:21:34.721Z",
+      "finishedAt": "2026-09-08T09:21:36.714Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5066,
-    "todayOutputTokens": 1163678,
-    "asOf": "2026-09-08T09:14:02.073Z"
+    "todayInputTokens": 5314,
+    "todayOutputTokens": 1203982,
+    "asOf": "2026-09-08T09:21:42.184Z"
   },
-  "updatedAt": "2026-09-08T09:14:02.073Z"
+  "updatedAt": "2026-09-08T09:21:42.184Z"
 }
