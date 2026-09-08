@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#85(FST誤情報修正)のデプロイ可否判定",
-      "startedAt": "2026-09-08T19:21:10.499Z",
-      "finishedAt": "2026-09-08T19:21:12.554Z"
+      "task": "メガ統合版の最終GO/NO-GO判定",
+      "startedAt": "2026-09-08T19:47:13.109Z",
+      "finishedAt": "2026-09-08T19:47:15.499Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7914,
-    "todayOutputTokens": 2066295,
-    "asOf": "2026-09-08T19:43:08.175Z"
+    "todayInputTokens": 7970,
+    "todayOutputTokens": 2089569,
+    "asOf": "2026-09-08T19:47:11.917Z"
   },
-  "updatedAt": "2026-09-08T19:43:08.175Z"
+  "updatedAt": "2026-09-08T19:47:11.917Z"
 }
