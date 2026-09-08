@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "delivery-mapのPOIアイコンをブランドロゴ化・絞り込み",
-      "startedAt": "2026-09-08T18:43:45.962Z",
-      "finishedAt": "2026-09-08T18:43:47.857Z"
+      "task": "FST 5.0の誤情報修正とITM情報追記",
+      "startedAt": "2026-09-08T18:48:15.183Z",
+      "finishedAt": "2026-09-08T18:48:17.066Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5674,
-    "todayOutputTokens": 1647380,
-    "asOf": "2026-09-08T18:46:33.144Z"
+    "todayInputTokens": 5842,
+    "todayOutputTokens": 1697477,
+    "asOf": "2026-09-08T18:48:28.518Z"
   },
-  "updatedAt": "2026-09-08T18:46:33.144Z"
+  "updatedAt": "2026-09-08T18:48:28.518Z"
 }
