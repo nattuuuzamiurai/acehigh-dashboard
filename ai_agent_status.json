@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "尾島・野町の地番データ欠落の真因調査",
-      "startedAt": "2026-09-08T18:19:41.700Z",
-      "finishedAt": "2026-09-08T18:19:43.641Z"
+      "task": "新規グラフ2枚と11章グラフ4枚を更新",
+      "startedAt": "2026-09-08T18:38:02.584Z",
+      "finishedAt": "2026-09-08T18:38:04.650Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "11章に天井込み理論値と2スルー訂正を統合",
-      "startedAt": "2026-09-08T18:18:51.375Z",
-      "finishedAt": "2026-09-08T18:18:53.664Z"
+      "task": "運営主体表記を「当サイト運営者」に修正",
+      "startedAt": "2026-09-08T18:33:46.658Z",
+      "finishedAt": "2026-09-08T18:33:48.465Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4262,
-    "todayOutputTokens": 1110888,
-    "asOf": "2026-09-08T18:19:51.054Z"
+    "todayInputTokens": 4930,
+    "todayOutputTokens": 1462571,
+    "asOf": "2026-09-08T18:38:20.148Z"
   },
-  "updatedAt": "2026-09-08T18:19:51.054Z"
+  "updatedAt": "2026-09-08T18:38:20.148Z"
 }
