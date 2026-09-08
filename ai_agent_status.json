@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "番地欠落調査・アイコン上限・道路配色の品質確認",
-      "startedAt": "2026-09-08T14:24:35.670Z",
-      "finishedAt": "2026-09-08T14:24:39.665Z"
+      "task": "PR#83(エリアページ紹介文)の品質チェック",
+      "startedAt": "2026-09-08T14:34:10.197Z",
+      "finishedAt": "2026-09-08T14:34:12.986Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7690,
-    "todayOutputTokens": 1642324,
-    "asOf": "2026-09-08T14:29:30.329Z"
+    "todayInputTokens": 7904,
+    "todayOutputTokens": 1676054,
+    "asOf": "2026-09-08T14:34:19.999Z"
   },
-  "updatedAt": "2026-09-08T14:29:30.329Z"
+  "updatedAt": "2026-09-08T14:34:19.999Z"
 }
