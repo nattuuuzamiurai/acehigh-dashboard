@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#84(運営主体表記修正)のデプロイ可否判定",
-      "startedAt": "2026-09-08T18:53:34.325Z",
-      "finishedAt": "2026-09-08T18:53:37.037Z"
+      "task": "PR#85(FST誤情報修正)のデプロイ可否判定",
+      "startedAt": "2026-09-08T19:21:10.499Z",
+      "finishedAt": "2026-09-08T19:21:12.554Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7384,
-    "todayOutputTokens": 1952386,
-    "asOf": "2026-09-08T19:19:11.230Z"
+    "todayInputTokens": 7430,
+    "todayOutputTokens": 1961938,
+    "asOf": "2026-09-08T19:21:17.410Z"
   },
-  "updatedAt": "2026-09-08T19:19:11.230Z"
+  "updatedAt": "2026-09-08T19:21:17.410Z"
 }
