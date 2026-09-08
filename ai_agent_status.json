@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#82(SPADIEページ)の品質チェック",
-      "startedAt": "2026-09-08T09:51:11.502Z",
-      "finishedAt": "2026-09-08T09:51:13.647Z"
+      "task": "番地欠落調査・アイコン上限・道路配色の品質確認",
+      "startedAt": "2026-09-08T14:24:35.670Z",
+      "finishedAt": "2026-09-08T14:24:39.665Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7242,
-    "todayOutputTokens": 1544862,
-    "asOf": "2026-09-08T14:20:07.989Z"
+    "todayInputTokens": 7392,
+    "todayOutputTokens": 1606630,
+    "asOf": "2026-09-08T14:25:08.926Z"
   },
-  "updatedAt": "2026-09-08T14:20:07.989Z"
+  "updatedAt": "2026-09-08T14:25:08.926Z"
 }
