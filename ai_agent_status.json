@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "番地全欠落エリアの調査・POIアイコンサイズ調整・道路の色合い変更",
-      "startedAt": "2026-09-08T13:51:35.847Z",
-      "finishedAt": "2026-09-08T13:51:44.571Z"
+      "task": "朝イチ戦略の天国化率全展開と累積収支の再検証",
+      "startedAt": "2026-09-08T14:01:56.061Z",
+      "finishedAt": "2026-09-08T14:02:01.489Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6442,
-    "todayOutputTokens": 1347567,
-    "asOf": "2026-09-08T13:52:13.761Z"
+    "todayInputTokens": 6616,
+    "todayOutputTokens": 1398199,
+    "asOf": "2026-09-08T14:02:22.401Z"
   },
-  "updatedAt": "2026-09-08T13:52:13.761Z"
+  "updatedAt": "2026-09-08T14:02:22.401Z"
 }
