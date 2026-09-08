@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "7章9章11章の変更をArtifactへ反映",
-      "startedAt": "2026-09-08T15:59:44.963Z",
-      "finishedAt": "2026-09-08T15:59:48.339Z"
+      "task": "生命表を各回数ごとに完全展開",
+      "startedAt": "2026-09-08T16:59:49.503Z",
+      "finishedAt": "2026-09-08T16:59:52.213Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2448,
-    "todayOutputTokens": 511541,
-    "asOf": "2026-09-08T16:50:13.994Z"
+    "todayInputTokens": 2642,
+    "todayOutputTokens": 580911,
+    "asOf": "2026-09-08T17:00:37.445Z"
   },
-  "updatedAt": "2026-09-08T16:50:13.994Z"
+  "updatedAt": "2026-09-08T17:00:37.445Z"
 }
