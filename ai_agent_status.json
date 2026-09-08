@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "有利区間チェックポイント仮説の検証",
-      "startedAt": "2026-09-08T17:12:14.387Z",
-      "finishedAt": "2026-09-08T17:12:18.810Z"
+      "task": "推定番地表示の軽微指摘4件の修正",
+      "startedAt": "2026-09-08T17:13:13.249Z",
+      "finishedAt": "2026-09-08T17:13:14.955Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "7章新設・11章再構築版の最終GO/NO-GO判定",
-      "startedAt": "2026-09-08T15:53:33.735Z",
-      "finishedAt": "2026-09-08T15:53:35.919Z"
+      "task": "推定番地表示のレビュー部最終判定",
+      "startedAt": "2026-09-08T17:13:02.427Z",
+      "finishedAt": "2026-09-08T17:13:04.480Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3010,
-    "todayOutputTokens": 700956,
-    "asOf": "2026-09-08T17:12:43.825Z"
+    "todayInputTokens": 3124,
+    "todayOutputTokens": 723160,
+    "asOf": "2026-09-08T17:13:21.159Z"
   },
-  "updatedAt": "2026-09-08T17:12:43.825Z"
+  "updatedAt": "2026-09-08T17:13:21.159Z"
 }
