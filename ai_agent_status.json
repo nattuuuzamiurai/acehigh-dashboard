@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "SPADIE FUKUOKA 1st特集ページの原稿作成",
-      "startedAt": "2026-09-08T09:12:44.851Z",
-      "finishedAt": "2026-09-08T09:12:46.714Z"
+      "task": "エリアページのコンテンツ強化原稿作成",
+      "startedAt": "2026-09-08T14:12:56.907Z",
+      "finishedAt": "2026-09-08T14:12:59.067Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6678,
-    "todayOutputTokens": 1412548,
-    "asOf": "2026-09-08T14:04:16.286Z"
+    "todayInputTokens": 6938,
+    "todayOutputTokens": 1497080,
+    "asOf": "2026-09-08T14:13:06.435Z"
   },
-  "updatedAt": "2026-09-08T14:04:16.286Z"
+  "updatedAt": "2026-09-08T14:13:06.435Z"
 }
