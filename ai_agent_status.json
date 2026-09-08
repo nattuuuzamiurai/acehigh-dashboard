@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#81(自動取込み店舗有効化)の品質チェック",
-      "startedAt": "2026-09-08T09:24:03.832Z",
-      "finishedAt": "2026-09-08T09:24:05.826Z"
+      "task": "PR#82(SPADIEページ)の品質チェック",
+      "startedAt": "2026-09-08T09:51:11.502Z",
+      "finishedAt": "2026-09-08T09:51:13.647Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5690,
-    "todayOutputTokens": 1250771,
-    "asOf": "2026-09-08T09:31:40.863Z"
+    "todayInputTokens": 5938,
+    "todayOutputTokens": 1282753,
+    "asOf": "2026-09-08T09:51:19.034Z"
   },
-  "updatedAt": "2026-09-08T09:31:40.863Z"
+  "updatedAt": "2026-09-08T09:51:19.034Z"
 }
