@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビのPV向上中期ロードマップ立案",
-      "startedAt": "2026-09-07T16:39:15.985Z",
-      "finishedAt": "2026-09-07T16:39:18.873Z"
+      "task": "FST 5.0の最新情報を一次情報で裏取り調査",
+      "startedAt": "2026-09-08T18:38:32.088Z",
+      "finishedAt": "2026-09-08T18:38:33.980Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4930,
-    "todayOutputTokens": 1462571,
-    "asOf": "2026-09-08T18:38:20.148Z"
+    "todayInputTokens": 4994,
+    "todayOutputTokens": 1492786,
+    "asOf": "2026-09-08T18:38:43.228Z"
   },
-  "updatedAt": "2026-09-08T18:38:20.148Z"
+  "updatedAt": "2026-09-08T18:38:43.228Z"
 }
