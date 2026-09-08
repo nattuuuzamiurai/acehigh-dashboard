@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "朝イチ戦略の天国化率全展開と累積収支の再検証",
-      "startedAt": "2026-09-08T14:01:56.061Z",
-      "finishedAt": "2026-09-08T14:02:01.489Z"
+      "task": "11章を実測M別+理論値併記の構成に再構築",
+      "startedAt": "2026-09-08T14:13:20.567Z",
+      "finishedAt": "2026-09-08T14:13:23.292Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6938,
-    "todayOutputTokens": 1497080,
-    "asOf": "2026-09-08T14:13:06.435Z"
+    "todayInputTokens": 6978,
+    "todayOutputTokens": 1515358,
+    "asOf": "2026-09-08T14:13:44.519Z"
   },
-  "updatedAt": "2026-09-08T14:13:06.435Z"
+  "updatedAt": "2026-09-08T14:13:44.519Z"
 }
