@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "天井込み理論値を既存M閾値で完全網羅",
-      "startedAt": "2026-09-08T17:36:03.334Z",
-      "finishedAt": "2026-09-08T17:36:06.333Z"
+      "task": "OSM住所タグの追加確認",
+      "startedAt": "2026-09-08T18:16:17.065Z",
+      "finishedAt": "2026-09-08T18:16:19.169Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "9章と10章に理論的補完を統合",
-      "startedAt": "2026-09-08T17:59:57.933Z",
-      "finishedAt": "2026-09-08T18:00:00.090Z"
+      "task": "11章に天井込み理論値と2スルー訂正を統合",
+      "startedAt": "2026-09-08T18:18:51.375Z",
+      "finishedAt": "2026-09-08T18:18:53.664Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4022,
-    "todayOutputTokens": 1002208,
-    "asOf": "2026-09-08T18:00:17.626Z"
+    "todayInputTokens": 4218,
+    "todayOutputTokens": 1105286,
+    "asOf": "2026-09-08T18:19:10.035Z"
   },
-  "updatedAt": "2026-09-08T18:00:17.626Z"
+  "updatedAt": "2026-09-08T18:19:10.035Z"
 }
