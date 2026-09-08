@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "グラフ13aと12dを修正版に再生成",
-      "startedAt": "2026-09-08T19:18:13.851Z",
-      "finishedAt": "2026-09-08T19:18:16.400Z"
+      "task": "野町・尾島データ再取得の追加調査",
+      "startedAt": "2026-09-08T19:52:42.336Z",
+      "finishedAt": "2026-09-08T19:52:49.393Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8044,
-    "todayOutputTokens": 2097048,
-    "asOf": "2026-09-08T19:49:05.872Z"
+    "todayInputTokens": 8108,
+    "todayOutputTokens": 2145691,
+    "asOf": "2026-09-08T19:52:50.281Z"
   },
-  "updatedAt": "2026-09-08T19:49:05.872Z"
+  "updatedAt": "2026-09-08T19:52:50.281Z"
 }
