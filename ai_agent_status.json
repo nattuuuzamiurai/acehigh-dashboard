@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "FST 5.0の誤情報修正とITM情報追記",
-      "startedAt": "2026-09-08T18:48:15.183Z",
-      "finishedAt": "2026-09-08T18:48:17.066Z"
+      "task": "グラフ13aと12dを修正版に再生成",
+      "startedAt": "2026-09-08T19:18:13.851Z",
+      "finishedAt": "2026-09-08T19:18:16.400Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7214,
-    "todayOutputTokens": 1916704,
-    "asOf": "2026-09-08T19:14:09.416Z"
+    "todayInputTokens": 7330,
+    "todayOutputTokens": 1948487,
+    "asOf": "2026-09-08T19:18:33.606Z"
   },
-  "updatedAt": "2026-09-08T19:14:09.416Z"
+  "updatedAt": "2026-09-08T19:18:33.606Z"
 }
