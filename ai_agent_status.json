@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "推定番地表示のレビュー部最終判定",
-      "startedAt": "2026-09-08T17:13:02.427Z",
-      "finishedAt": "2026-09-08T17:13:04.480Z"
+      "task": "PR#84(運営主体表記修正)のデプロイ可否判定",
+      "startedAt": "2026-09-08T18:53:34.325Z",
+      "finishedAt": "2026-09-08T18:53:37.037Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5898,
-    "todayOutputTokens": 1702479,
-    "asOf": "2026-09-08T18:49:00.648Z"
+    "todayInputTokens": 6262,
+    "todayOutputTokens": 1753046,
+    "asOf": "2026-09-08T18:53:48.752Z"
   },
-  "updatedAt": "2026-09-08T18:49:00.648Z"
+  "updatedAt": "2026-09-08T18:53:48.752Z"
 }
