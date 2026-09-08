@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "エリアページに説明文コンテンツを実装",
-      "startedAt": "2026-09-08T14:29:20.340Z",
-      "finishedAt": "2026-09-08T14:29:22.676Z"
+      "task": "POIアイコンの表示形状・ズーム範囲調整と尾島・野町の番地漏れ調査",
+      "startedAt": "2026-09-08T14:47:05.372Z",
+      "finishedAt": "2026-09-08T14:47:20.214Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8382,
-    "todayOutputTokens": 1731799,
-    "asOf": "2026-09-08T14:46:41.571Z"
+    "todayInputTokens": 8562,
+    "todayOutputTokens": 1805899,
+    "asOf": "2026-09-08T14:53:08.113Z"
   },
-  "updatedAt": "2026-09-08T14:46:41.571Z"
+  "updatedAt": "2026-09-08T14:53:08.113Z"
 }
