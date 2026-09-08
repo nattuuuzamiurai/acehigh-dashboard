@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#83(エリアページ紹介文)の品質チェック",
-      "startedAt": "2026-09-08T14:34:10.197Z",
-      "finishedAt": "2026-09-08T14:34:12.986Z"
+      "task": "7章新設部分と11章再構築版の統合ファクトチェック",
+      "startedAt": "2026-09-08T15:28:53.228Z",
+      "finishedAt": "2026-09-08T15:28:55.657Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 514,
-    "todayOutputTokens": 70083,
-    "asOf": "2026-09-08T15:17:36.471Z"
+    "todayInputTokens": 708,
+    "todayOutputTokens": 102614,
+    "asOf": "2026-09-08T15:29:15.987Z"
   },
-  "updatedAt": "2026-09-08T15:17:36.471Z"
+  "updatedAt": "2026-09-08T15:29:15.987Z"
 }
