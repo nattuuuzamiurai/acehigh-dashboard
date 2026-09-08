@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "7章・9章の新規グラフ3枚を生成",
-      "startedAt": "2026-09-08T15:00:52.876Z",
-      "finishedAt": "2026-09-08T15:01:10.689Z"
+      "task": "推定番地表示の設計・実装",
+      "startedAt": "2026-09-08T15:51:51.293Z",
+      "finishedAt": "2026-09-08T15:51:53.252Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "2件の修正内容を再確認",
-      "startedAt": "2026-09-08T15:49:35.205Z",
-      "finishedAt": "2026-09-08T15:49:37.433Z"
+      "task": "6a39861のQA独立検証",
+      "startedAt": "2026-09-08T15:51:26.220Z",
+      "finishedAt": "2026-09-08T15:51:27.919Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1192,
-    "todayOutputTokens": 171765,
-    "asOf": "2026-09-08T15:50:05.199Z"
+    "todayInputTokens": 1274,
+    "todayOutputTokens": 201618,
+    "asOf": "2026-09-08T15:51:59.365Z"
   },
-  "updatedAt": "2026-09-08T15:50:05.199Z"
+  "updatedAt": "2026-09-08T15:51:59.365Z"
 }
