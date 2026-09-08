@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "理論値全面置き換え版の最終GO/NO-GO判定",
-      "startedAt": "2026-09-07T18:25:10.833Z",
-      "finishedAt": "2026-09-07T18:25:12.825Z"
+      "task": "PR#81のデプロイ可否判定",
+      "startedAt": "2026-09-08T09:29:04.536Z",
+      "finishedAt": "2026-09-08T09:29:06.587Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5412,
-    "todayOutputTokens": 1218156,
-    "asOf": "2026-09-08T09:24:11.003Z"
+    "todayInputTokens": 5608,
+    "todayOutputTokens": 1242053,
+    "asOf": "2026-09-08T09:29:12.649Z"
   },
-  "updatedAt": "2026-09-08T09:24:11.003Z"
+  "updatedAt": "2026-09-08T09:29:12.649Z"
 }
