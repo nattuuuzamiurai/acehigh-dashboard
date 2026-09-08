@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "7章9章10章11章13章の全変更を統合ファクトチェック",
-      "startedAt": "2026-09-08T19:01:26.406Z",
-      "finishedAt": "2026-09-08T19:01:31.747Z"
+      "task": "PR#85(FST誤情報修正)の品質チェック",
+      "startedAt": "2026-09-08T19:04:51.410Z",
+      "finishedAt": "2026-09-08T19:04:53.624Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6712,
-    "todayOutputTokens": 1819543,
-    "asOf": "2026-09-08T19:01:53.280Z"
+    "todayInputTokens": 6876,
+    "todayOutputTokens": 1871123,
+    "asOf": "2026-09-08T19:04:52.978Z"
   },
-  "updatedAt": "2026-09-08T19:01:53.280Z"
+  "updatedAt": "2026-09-08T19:04:52.978Z"
 }
