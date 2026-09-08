@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "7章に朝イチ最終結論を統合",
-      "startedAt": "2026-09-08T14:44:00.240Z",
-      "finishedAt": "2026-09-08T14:44:03.015Z"
+      "task": "7章に生命表展開とハイブリッド戦略を統合",
+      "startedAt": "2026-09-08T17:46:44.282Z",
+      "finishedAt": "2026-09-08T17:46:46.432Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3800,
-    "todayOutputTokens": 916547,
-    "asOf": "2026-09-08T17:36:25.192Z"
+    "todayInputTokens": 3940,
+    "todayOutputTokens": 951424,
+    "asOf": "2026-09-08T17:47:05.771Z"
   },
-  "updatedAt": "2026-09-08T17:36:25.192Z"
+  "updatedAt": "2026-09-08T17:47:05.771Z"
 }
