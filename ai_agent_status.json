@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "エリアページに説明文コンテンツを実装",
-      "startedAt": "2026-09-08T14:19:47.873Z",
-      "finishedAt": "2026-09-08T14:19:54.405Z"
+      "task": "11章グラフを実測主役デザインに作り直し",
+      "startedAt": "2026-09-08T14:26:17.057Z",
+      "finishedAt": "2026-09-08T14:26:19.460Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "エリアページのコンテンツ強化原稿作成",
-      "startedAt": "2026-09-08T14:12:56.907Z",
-      "finishedAt": "2026-09-08T14:12:59.067Z"
+      "task": "11章を実測主役版に統合",
+      "startedAt": "2026-09-08T14:25:58.907Z",
+      "finishedAt": "2026-09-08T14:26:01.292Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7392,
-    "todayOutputTokens": 1606630,
-    "asOf": "2026-09-08T14:25:08.926Z"
+    "todayInputTokens": 7494,
+    "todayOutputTokens": 1623779,
+    "asOf": "2026-09-08T14:26:37.933Z"
   },
-  "updatedAt": "2026-09-08T14:25:08.926Z"
+  "updatedAt": "2026-09-08T14:26:37.933Z"
 }
