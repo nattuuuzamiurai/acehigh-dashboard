@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#82(SPADIEページ)のデプロイ可否判定",
-      "startedAt": "2026-09-08T10:08:17.926Z",
-      "finishedAt": "2026-09-08T10:08:20.538Z"
+      "task": "PR#83(エリアページ紹介文)のデプロイ可否判定",
+      "startedAt": "2026-09-08T14:59:03.723Z",
+      "finishedAt": "2026-09-08T14:59:44.561Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8614,
-    "todayOutputTokens": 1809053,
-    "asOf": "2026-09-08T14:54:27.319Z"
+    "todayInputTokens": 0,
+    "todayOutputTokens": 0,
+    "asOf": "2026-09-08T15:00:04.777Z"
   },
-  "updatedAt": "2026-09-08T14:54:27.319Z"
+  "updatedAt": "2026-09-08T15:00:04.777Z"
 }
