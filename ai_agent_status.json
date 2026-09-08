@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "OSM住所タグの追加確認",
-      "startedAt": "2026-09-08T18:16:17.065Z",
-      "finishedAt": "2026-09-08T18:16:19.169Z"
+      "task": "尾島・野町の地番データ欠落の真因調査",
+      "startedAt": "2026-09-08T18:19:41.700Z",
+      "finishedAt": "2026-09-08T18:19:43.641Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4218,
-    "todayOutputTokens": 1105286,
-    "asOf": "2026-09-08T18:19:10.035Z"
+    "todayInputTokens": 4262,
+    "todayOutputTokens": 1110888,
+    "asOf": "2026-09-08T18:19:51.054Z"
   },
-  "updatedAt": "2026-09-08T18:19:10.035Z"
+  "updatedAt": "2026-09-08T18:19:51.054Z"
 }
