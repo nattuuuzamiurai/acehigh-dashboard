@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "任意座標系シートの位置補正・小規模検証",
-      "startedAt": "2026-09-08T18:39:56.428Z",
-      "finishedAt": "2026-09-08T18:39:59.159Z"
+      "task": "delivery-mapのPOIアイコンをブランドロゴ化・絞り込み",
+      "startedAt": "2026-09-08T18:43:45.962Z",
+      "finishedAt": "2026-09-08T18:43:47.857Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5182,
-    "todayOutputTokens": 1546833,
-    "asOf": "2026-09-08T18:40:38.414Z"
+    "todayInputTokens": 5504,
+    "todayOutputTokens": 1608887,
+    "asOf": "2026-09-08T18:44:08.061Z"
   },
-  "updatedAt": "2026-09-08T18:40:38.414Z"
+  "updatedAt": "2026-09-08T18:44:08.061Z"
 }
