@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "7章に生命表展開とハイブリッド戦略を統合",
-      "startedAt": "2026-09-08T17:46:44.282Z",
-      "finishedAt": "2026-09-08T17:46:46.432Z"
+      "task": "9章と10章に理論的補完を統合",
+      "startedAt": "2026-09-08T17:59:57.933Z",
+      "finishedAt": "2026-09-08T18:00:00.090Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3940,
-    "todayOutputTokens": 951424,
-    "asOf": "2026-09-08T17:47:05.771Z"
+    "todayInputTokens": 4022,
+    "todayOutputTokens": 1002208,
+    "asOf": "2026-09-08T18:00:17.626Z"
   },
-  "updatedAt": "2026-09-08T17:47:05.771Z"
+  "updatedAt": "2026-09-08T18:00:17.626Z"
 }
