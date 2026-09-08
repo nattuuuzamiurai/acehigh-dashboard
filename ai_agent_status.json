@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#85(FST誤情報修正)の品質チェック",
-      "startedAt": "2026-09-08T19:04:51.410Z",
-      "finishedAt": "2026-09-08T19:04:53.624Z"
+      "task": "戦略B数字統一とグラフ2枚の修正を再確認",
+      "startedAt": "2026-09-08T19:36:00.989Z",
+      "finishedAt": "2026-09-08T19:36:03.200Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7718,
-    "todayOutputTokens": 2034712,
-    "asOf": "2026-09-08T19:32:14.272Z"
+    "todayInputTokens": 7788,
+    "todayOutputTokens": 2043569,
+    "asOf": "2026-09-08T19:36:21.152Z"
   },
-  "updatedAt": "2026-09-08T19:32:14.272Z"
+  "updatedAt": "2026-09-08T19:36:21.152Z"
 }
