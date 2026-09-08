@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "生命表を各回数ごとに完全展開",
-      "startedAt": "2026-09-08T16:59:49.503Z",
-      "finishedAt": "2026-09-08T16:59:52.213Z"
+      "task": "見切り+粘りの組み合わせ戦略を新規シミュレーション",
+      "startedAt": "2026-09-08T17:04:42.818Z",
+      "finishedAt": "2026-09-08T17:04:46.232Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2642,
-    "todayOutputTokens": 580911,
-    "asOf": "2026-09-08T17:00:37.445Z"
+    "todayInputTokens": 2758,
+    "todayOutputTokens": 618082,
+    "asOf": "2026-09-08T17:05:12.619Z"
   },
-  "updatedAt": "2026-09-08T17:00:37.445Z"
+  "updatedAt": "2026-09-08T17:05:12.619Z"
 }
