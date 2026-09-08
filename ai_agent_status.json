@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "9章推奨戦略の理論的補完と2スルーの妥当性検証",
-      "startedAt": "2026-09-08T17:07:32.131Z",
-      "finishedAt": "2026-09-08T17:07:34.383Z"
+      "task": "有利区間チェックポイント仮説の検証",
+      "startedAt": "2026-09-08T17:12:14.387Z",
+      "finishedAt": "2026-09-08T17:12:18.810Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2884,
-    "todayOutputTokens": 666007,
-    "asOf": "2026-09-08T17:08:25.504Z"
+    "todayInputTokens": 3010,
+    "todayOutputTokens": 700956,
+    "asOf": "2026-09-08T17:12:43.825Z"
   },
-  "updatedAt": "2026-09-08T17:08:25.504Z"
+  "updatedAt": "2026-09-08T17:12:43.825Z"
 }
