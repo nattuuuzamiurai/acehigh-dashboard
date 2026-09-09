@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "野町・尾島の地図種別確認と手動位置合わせ試行",
-      "startedAt": "2026-09-08T20:12:46.548Z",
-      "finishedAt": "2026-09-08T20:12:48.376Z"
+      "task": "Geolonia・不動産情報ライブラリの実データ確認",
+      "startedAt": "2026-09-09T01:04:42.416Z",
+      "finishedAt": "2026-09-09T01:04:44.015Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 9360,
-    "todayOutputTokens": 2427023,
-    "asOf": "2026-09-08T20:51:03.795Z"
+    "todayInputTokens": 9416,
+    "todayOutputTokens": 2448825,
+    "asOf": "2026-09-09T01:05:13.133Z"
   },
-  "updatedAt": "2026-09-08T20:51:03.795Z"
+  "updatedAt": "2026-09-09T01:05:13.133Z"
 }
