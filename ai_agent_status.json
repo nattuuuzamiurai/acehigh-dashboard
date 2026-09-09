@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#86(FUXK情報更新)のデプロイ可否判定",
-      "startedAt": "2026-09-09T12:02:33.301Z",
-      "finishedAt": "2026-09-09T12:02:36.094Z"
+      "task": "PR#87(9店舗住所SNS修正)のデプロイ可否判定",
+      "startedAt": "2026-09-09T12:24:05.180Z",
+      "finishedAt": "2026-09-09T12:24:08.216Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 11480,
-    "todayOutputTokens": 2731830,
-    "asOf": "2026-09-09T12:22:13.609Z"
+    "todayInputTokens": 11518,
+    "todayOutputTokens": 2737621,
+    "asOf": "2026-09-09T12:24:14.541Z"
   },
-  "updatedAt": "2026-09-09T12:22:13.609Z"
+  "updatedAt": "2026-09-09T12:24:14.541Z"
 }
