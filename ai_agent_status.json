@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "全35店舗の住所・SNSリンクを再検証",
-      "startedAt": "2026-09-09T11:31:07.350Z",
-      "finishedAt": "2026-09-09T11:31:09.785Z"
+      "task": "PR#86(FUXK店舗情報更新)の品質チェック",
+      "startedAt": "2026-09-09T11:42:12.083Z",
+      "finishedAt": "2026-09-09T11:42:14.852Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 9656,
-    "todayOutputTokens": 2513077,
-    "asOf": "2026-09-09T11:31:17.599Z"
+    "todayInputTokens": 10220,
+    "todayOutputTokens": 2550903,
+    "asOf": "2026-09-09T11:42:21.438Z"
   },
-  "updatedAt": "2026-09-09T11:31:17.599Z"
+  "updatedAt": "2026-09-09T11:42:21.438Z"
 }
