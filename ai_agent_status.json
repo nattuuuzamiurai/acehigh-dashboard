@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "天国全般をチャンスモード別に見た規模を分析",
-      "startedAt": "2026-09-09T13:14:39.345Z",
-      "finishedAt": "2026-09-09T13:14:45.053Z"
+      "task": "9章用に理論クロスオーバーMを全スルー回数で確認",
+      "startedAt": "2026-09-09T13:19:23.722Z",
+      "finishedAt": "2026-09-09T13:19:27.510Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "運営主体表記を「当サイト運営者」に修正",
-      "startedAt": "2026-09-08T18:33:46.658Z",
-      "finishedAt": "2026-09-08T18:33:48.465Z"
+      "task": "戦略Bの定義を修正し名称を入れ替え",
+      "startedAt": "2026-09-09T13:17:06.853Z",
+      "finishedAt": "2026-09-09T13:17:09.710Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 12274,
-    "todayOutputTokens": 2978461,
-    "asOf": "2026-09-09T13:15:15.807Z"
+    "todayInputTokens": 12436,
+    "todayOutputTokens": 3042100,
+    "asOf": "2026-09-09T13:19:59.881Z"
   },
-  "updatedAt": "2026-09-09T13:15:15.807Z"
+  "updatedAt": "2026-09-09T13:19:59.881Z"
 }
