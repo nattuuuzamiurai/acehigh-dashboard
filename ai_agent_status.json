@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "古い航空写真での野町・尾島再照合",
-      "startedAt": "2026-09-09T13:24:48.678Z",
-      "finishedAt": "2026-09-09T13:24:50.805Z"
+      "task": "グラフ2枚(天国全般比較・理論交差点M)を生成",
+      "startedAt": "2026-09-09T14:10:18.271Z",
+      "finishedAt": "2026-09-09T14:10:21.256Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 13844,
-    "todayOutputTokens": 3426900,
-    "asOf": "2026-09-09T14:09:36.063Z"
+    "todayInputTokens": 13864,
+    "todayOutputTokens": 3430355,
+    "asOf": "2026-09-09T14:10:50.369Z"
   },
-  "updatedAt": "2026-09-09T14:09:36.063Z"
+  "updatedAt": "2026-09-09T14:10:50.369Z"
 }
