@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "戦略B/C・天国全般・9章理論値・11-1-1主役表の統合ファクトチェック",
-      "startedAt": "2026-09-09T14:35:28.749Z",
-      "finishedAt": "2026-09-09T14:35:31.636Z"
+      "task": "戦略B/C修正とグラフ2枚を再確認",
+      "startedAt": "2026-09-09T14:58:56.578Z",
+      "finishedAt": "2026-09-09T14:58:59.518Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 14296,
-    "todayOutputTokens": 3520725,
-    "asOf": "2026-09-09T14:52:55.664Z"
+    "todayInputTokens": 14448,
+    "todayOutputTokens": 3535244,
+    "asOf": "2026-09-09T14:59:27.327Z"
   },
-  "updatedAt": "2026-09-09T14:52:55.664Z"
+  "updatedAt": "2026-09-09T14:59:27.327Z"
 }
