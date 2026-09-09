@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#86(FUXK店舗情報更新)の品質チェック",
-      "startedAt": "2026-09-09T11:42:12.083Z",
-      "finishedAt": "2026-09-09T11:42:14.852Z"
+      "task": "PR#87(9店舗住所SNS修正)の品質チェック",
+      "startedAt": "2026-09-09T11:59:07.134Z",
+      "finishedAt": "2026-09-09T11:59:10.046Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 10800,
-    "todayOutputTokens": 2630937,
-    "asOf": "2026-09-09T11:57:03.961Z"
+    "todayInputTokens": 10892,
+    "todayOutputTokens": 2641496,
+    "asOf": "2026-09-09T11:59:17.773Z"
   },
-  "updatedAt": "2026-09-09T11:57:03.961Z"
+  "updatedAt": "2026-09-09T11:59:17.773Z"
 }
