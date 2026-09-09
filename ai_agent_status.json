@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#87(9店舗住所SNS修正)のデプロイ可否判定",
-      "startedAt": "2026-09-09T12:24:05.180Z",
-      "finishedAt": "2026-09-09T12:24:08.216Z"
+      "task": "PR#87(v33修正版)のデプロイ可否再判定",
+      "startedAt": "2026-09-09T12:38:15.871Z",
+      "finishedAt": "2026-09-09T12:38:18.145Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 11704,
-    "todayOutputTokens": 2777991,
-    "asOf": "2026-09-09T12:36:17.469Z"
+    "todayInputTokens": 11750,
+    "todayOutputTokens": 2784298,
+    "asOf": "2026-09-09T12:38:23.882Z"
   },
-  "updatedAt": "2026-09-09T12:36:17.469Z"
+  "updatedAt": "2026-09-09T12:38:23.882Z"
 }
