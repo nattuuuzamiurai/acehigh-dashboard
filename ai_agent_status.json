@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Geolonia・不動産情報ライブラリの実データ確認",
-      "startedAt": "2026-09-09T01:04:42.416Z",
-      "finishedAt": "2026-09-09T01:04:44.015Z"
+      "task": "FUXK店舗情報を正式情報に更新",
+      "startedAt": "2026-09-09T11:30:52.798Z",
+      "finishedAt": "2026-09-09T11:30:57.024Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "任意座標系の結論を独立検証",
-      "startedAt": "2026-09-08T19:57:00.804Z",
-      "finishedAt": "2026-09-08T19:57:02.546Z"
+      "task": "全35店舗の住所・SNSリンクを再検証",
+      "startedAt": "2026-09-09T11:31:07.350Z",
+      "finishedAt": "2026-09-09T11:31:09.785Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 9582,
-    "todayOutputTokens": 2493587,
-    "asOf": "2026-09-09T01:45:23.324Z"
+    "todayInputTokens": 9656,
+    "todayOutputTokens": 2513077,
+    "asOf": "2026-09-09T11:31:17.599Z"
   },
-  "updatedAt": "2026-09-09T01:45:23.324Z"
+  "updatedAt": "2026-09-09T11:31:17.599Z"
 }
