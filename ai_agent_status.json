@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "グラフ14aと12dの旧命名を修正",
-      "startedAt": "2026-09-09T14:52:22.314Z",
-      "finishedAt": "2026-09-09T14:52:25.162Z"
+      "task": "最新版をArtifactへ反映",
+      "startedAt": "2026-09-09T15:30:37.661Z",
+      "finishedAt": "2026-09-09T15:30:40.720Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 324,
-    "todayOutputTokens": 76038,
-    "asOf": "2026-09-09T15:26:50.486Z"
+    "todayInputTokens": 388,
+    "todayOutputTokens": 91665,
+    "asOf": "2026-09-09T15:31:07.510Z"
   },
-  "updatedAt": "2026-09-09T15:26:50.486Z"
+  "updatedAt": "2026-09-09T15:31:07.510Z"
 }
