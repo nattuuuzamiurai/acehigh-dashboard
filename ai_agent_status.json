@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#88(営業時間欄新設等)のデプロイ可否判定",
-      "startedAt": "2026-09-09T13:37:05.205Z",
-      "finishedAt": "2026-09-09T13:37:14.235Z"
+      "task": "5分析統合版の最終GO/NO-GO判定",
+      "startedAt": "2026-09-09T15:06:04.676Z",
+      "finishedAt": "2026-09-09T15:06:09.182Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 14448,
-    "todayOutputTokens": 3535244,
-    "asOf": "2026-09-09T14:59:27.327Z"
+    "todayInputTokens": 112,
+    "todayOutputTokens": 18398,
+    "asOf": "2026-09-09T15:06:42.810Z"
   },
-  "updatedAt": "2026-09-09T14:59:27.327Z"
+  "updatedAt": "2026-09-09T15:06:42.810Z"
 }
