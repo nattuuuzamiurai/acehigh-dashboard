@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "5分析統合版の最終GO/NO-GO判定",
-      "startedAt": "2026-09-09T15:06:04.676Z",
-      "finishedAt": "2026-09-09T15:06:09.182Z"
+      "task": "修正完了版の最終GO/NO-GO再判定",
+      "startedAt": "2026-09-09T15:26:11.956Z",
+      "finishedAt": "2026-09-09T15:26:15.155Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 222,
-    "todayOutputTokens": 45247,
-    "asOf": "2026-09-09T15:16:17.515Z"
+    "todayInputTokens": 324,
+    "todayOutputTokens": 76038,
+    "asOf": "2026-09-09T15:26:50.486Z"
   },
-  "updatedAt": "2026-09-09T15:16:17.515Z"
+  "updatedAt": "2026-09-09T15:26:50.486Z"
 }
