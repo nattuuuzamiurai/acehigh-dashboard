@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "グラフ2枚(天国全般比較・理論交差点M)を生成",
-      "startedAt": "2026-09-09T14:10:18.271Z",
-      "finishedAt": "2026-09-09T14:10:21.256Z"
+      "task": "グラフ14aと12dの旧命名を修正",
+      "startedAt": "2026-09-09T14:52:22.314Z",
+      "finishedAt": "2026-09-09T14:52:25.162Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 14158,
-    "todayOutputTokens": 3469374,
-    "asOf": "2026-09-09T14:35:58.393Z"
+    "todayInputTokens": 14296,
+    "todayOutputTokens": 3520725,
+    "asOf": "2026-09-09T14:52:55.664Z"
   },
-  "updatedAt": "2026-09-09T14:35:58.393Z"
+  "updatedAt": "2026-09-09T14:52:55.664Z"
 }
