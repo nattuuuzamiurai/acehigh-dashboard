@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#87(9店舗住所SNS修正)の品質チェック",
-      "startedAt": "2026-09-09T11:59:07.134Z",
-      "finishedAt": "2026-09-09T11:59:10.046Z"
+      "task": "PR#88(営業時間欄新設等)の品質チェック",
+      "startedAt": "2026-09-09T13:25:58.814Z",
+      "finishedAt": "2026-09-09T13:26:01.668Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 12720,
-    "todayOutputTokens": 3140570,
-    "asOf": "2026-09-09T13:25:36.013Z"
+    "todayInputTokens": 12758,
+    "todayOutputTokens": 3147640,
+    "asOf": "2026-09-09T13:26:12.376Z"
   },
-  "updatedAt": "2026-09-09T13:25:36.013Z"
+  "updatedAt": "2026-09-09T13:26:12.376Z"
 }
