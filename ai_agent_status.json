@@ -14,15 +14,15 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#87(v33修正版)のデプロイ可否再判定",
-      "startedAt": "2026-09-09T12:38:15.871Z",
-      "finishedAt": "2026-09-09T12:38:18.145Z"
+      "task": "PR#88(営業時間欄新設等)のデプロイ可否判定",
+      "startedAt": "2026-09-09T13:37:05.205Z",
+      "finishedAt": "2026-09-09T13:37:14.235Z"
     },
     "content-writer": {
       "status": "idle",
-      "task": "戦略Bの定義を修正し名称を入れ替え",
-      "startedAt": "2026-09-09T13:17:06.853Z",
-      "finishedAt": "2026-09-09T13:17:09.710Z"
+      "task": "7-3節に天国全般の分析を統合",
+      "startedAt": "2026-09-09T13:36:45.645Z",
+      "finishedAt": "2026-09-09T13:36:49.205Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 12758,
-    "todayOutputTokens": 3147640,
-    "asOf": "2026-09-09T13:26:12.376Z"
+    "todayInputTokens": 13358,
+    "todayOutputTokens": 3284719,
+    "asOf": "2026-09-09T13:37:14.096Z"
   },
-  "updatedAt": "2026-09-09T13:26:12.376Z"
+  "updatedAt": "2026-09-09T13:37:14.096Z"
 }
