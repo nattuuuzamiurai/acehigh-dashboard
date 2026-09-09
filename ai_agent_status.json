@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "メガ統合版の最終GO/NO-GO判定",
-      "startedAt": "2026-09-08T19:47:13.109Z",
-      "finishedAt": "2026-09-08T19:47:15.499Z"
+      "task": "PR#86(FUXK情報更新)のデプロイ可否判定",
+      "startedAt": "2026-09-09T12:02:33.301Z",
+      "finishedAt": "2026-09-09T12:02:36.094Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 10952,
-    "todayOutputTokens": 2647254,
-    "asOf": "2026-09-09T12:00:29.420Z"
+    "todayInputTokens": 11052,
+    "todayOutputTokens": 2655133,
+    "asOf": "2026-09-09T12:02:45.334Z"
   },
-  "updatedAt": "2026-09-09T12:00:29.420Z"
+  "updatedAt": "2026-09-09T12:02:45.334Z"
 }
