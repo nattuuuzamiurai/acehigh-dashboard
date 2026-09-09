@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "戦略B/C修正とグラフ2枚を再確認",
-      "startedAt": "2026-09-09T14:58:56.578Z",
-      "finishedAt": "2026-09-09T14:58:59.518Z"
+      "task": "13章の矛盾修正を再確認",
+      "startedAt": "2026-09-09T15:15:36.902Z",
+      "finishedAt": "2026-09-09T15:15:39.608Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 112,
-    "todayOutputTokens": 18398,
-    "asOf": "2026-09-09T15:06:42.810Z"
+    "todayInputTokens": 222,
+    "todayOutputTokens": 45247,
+    "asOf": "2026-09-09T15:16:17.515Z"
   },
-  "updatedAt": "2026-09-09T15:06:42.810Z"
+  "updatedAt": "2026-09-09T15:16:17.515Z"
 }
