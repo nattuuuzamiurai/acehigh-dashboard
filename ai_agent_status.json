@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "店舗情報の誤り9件を修正",
-      "startedAt": "2026-09-09T11:46:56.342Z",
-      "finishedAt": "2026-09-09T11:46:59.226Z"
+      "task": "店舗ページに営業時間欄を新設",
+      "startedAt": "2026-09-09T13:01:34.375Z",
+      "finishedAt": "2026-09-09T13:01:37.259Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 11812,
-    "todayOutputTokens": 2813836,
-    "asOf": "2026-09-09T13:00:48.743Z"
+    "todayInputTokens": 11846,
+    "todayOutputTokens": 2830581,
+    "asOf": "2026-09-09T13:01:52.528Z"
   },
-  "updatedAt": "2026-09-09T13:00:48.743Z"
+  "updatedAt": "2026-09-09T13:01:52.528Z"
 }
