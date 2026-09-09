@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "店舗ページに営業時間欄を新設",
-      "startedAt": "2026-09-09T13:01:34.375Z",
-      "finishedAt": "2026-09-09T13:01:37.259Z"
+      "task": "天国全般をチャンスモード別に見た規模を分析",
+      "startedAt": "2026-09-09T13:14:39.345Z",
+      "finishedAt": "2026-09-09T13:14:45.053Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 12106,
-    "todayOutputTokens": 2914963,
-    "asOf": "2026-09-09T13:07:17.104Z"
+    "todayInputTokens": 12274,
+    "todayOutputTokens": 2978461,
+    "asOf": "2026-09-09T13:15:15.807Z"
   },
-  "updatedAt": "2026-09-09T13:07:17.104Z"
+  "updatedAt": "2026-09-09T13:15:15.807Z"
 }
