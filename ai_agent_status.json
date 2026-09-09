@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#88(営業時間欄新設等)の品質チェック",
-      "startedAt": "2026-09-09T13:25:58.814Z",
-      "finishedAt": "2026-09-09T13:26:01.668Z"
+      "task": "戦略B/C・天国全般・9章理論値・11-1-1主役表の統合ファクトチェック",
+      "startedAt": "2026-09-09T14:35:28.749Z",
+      "finishedAt": "2026-09-09T14:35:31.636Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 13864,
-    "todayOutputTokens": 3430355,
-    "asOf": "2026-09-09T14:10:50.369Z"
+    "todayInputTokens": 14158,
+    "todayOutputTokens": 3469374,
+    "asOf": "2026-09-09T14:35:58.393Z"
   },
-  "updatedAt": "2026-09-09T14:10:50.369Z"
+  "updatedAt": "2026-09-09T14:35:58.393Z"
 }
