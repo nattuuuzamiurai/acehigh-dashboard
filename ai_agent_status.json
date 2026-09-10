@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "11-1-1節を理論交差点M主役に再構築",
-      "startedAt": "2026-09-09T13:52:07.217Z",
-      "finishedAt": "2026-09-09T13:52:09.766Z"
+      "task": "forced_to_heaven=False反映を記事に統合",
+      "startedAt": "2026-09-10T17:39:48.732Z",
+      "finishedAt": "2026-09-10T17:39:50.998Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 670,
-    "todayOutputTokens": 235851,
-    "asOf": "2026-09-10T17:27:05.541Z"
+    "todayInputTokens": 872,
+    "todayOutputTokens": 314198,
+    "asOf": "2026-09-10T17:39:54.823Z"
   },
-  "updatedAt": "2026-09-10T17:27:05.541Z"
+  "updatedAt": "2026-09-10T17:39:54.823Z"
 }
