@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "筆ポリゴンデータで野町・尾島を再照合",
-      "startedAt": "2026-09-10T18:10:29.785Z",
-      "finishedAt": "2026-09-10T18:10:31.370Z"
+      "task": "グラフ17のタイトル表記を修正",
+      "startedAt": "2026-09-10T18:37:35.214Z",
+      "finishedAt": "2026-09-10T18:37:36.703Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2134,
-    "todayOutputTokens": 834083,
-    "asOf": "2026-09-10T18:34:40.819Z"
+    "todayInputTokens": 2178,
+    "todayOutputTokens": 853202,
+    "asOf": "2026-09-10T18:37:42.063Z"
   },
-  "updatedAt": "2026-09-10T18:34:40.819Z"
+  "updatedAt": "2026-09-10T18:37:42.063Z"
 }
