@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "新シナリオで理論値データを完全再計算",
-      "startedAt": "2026-09-10T17:22:40.078Z",
-      "finishedAt": "2026-09-10T17:22:45.249Z"
+      "task": "シート境界線での野町・尾島位置合わせ",
+      "startedAt": "2026-09-10T17:45:13.298Z",
+      "finishedAt": "2026-09-10T17:45:14.892Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 872,
-    "todayOutputTokens": 314198,
-    "asOf": "2026-09-10T17:39:54.823Z"
+    "todayInputTokens": 934,
+    "todayOutputTokens": 325747,
+    "asOf": "2026-09-10T17:45:22.482Z"
   },
-  "updatedAt": "2026-09-10T17:39:54.823Z"
+  "updatedAt": "2026-09-10T17:45:22.482Z"
 }
