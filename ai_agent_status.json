@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "野町の有望候補を他図郭に拡張検証",
-      "startedAt": "2026-09-10T02:01:11.380Z",
-      "finishedAt": "2026-09-10T02:01:13.101Z"
+      "task": "神社・寺・橋を目印にした位置合わせ",
+      "startedAt": "2026-09-10T17:08:34.393Z",
+      "finishedAt": "2026-09-10T17:08:36.438Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1948,
-    "todayOutputTokens": 697994,
-    "asOf": "2026-09-10T11:33:55.900Z"
+    "todayInputTokens": 22,
+    "todayOutputTokens": 34629,
+    "asOf": "2026-09-10T17:08:30.894Z"
   },
-  "updatedAt": "2026-09-10T11:33:55.900Z"
+  "updatedAt": "2026-09-10T17:08:30.894Z"
 }
