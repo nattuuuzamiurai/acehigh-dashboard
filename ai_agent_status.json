@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "複数年代の航空写真で野町・尾島を再照合",
-      "startedAt": "2026-09-10T01:20:56.800Z",
-      "finishedAt": "2026-09-10T01:20:59.468Z"
+      "task": "野町の有望候補を他図郭に拡張検証",
+      "startedAt": "2026-09-10T02:01:11.380Z",
+      "finishedAt": "2026-09-10T02:01:13.101Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1062,
-    "todayOutputTokens": 288948,
-    "asOf": "2026-09-10T01:34:57.536Z"
+    "todayInputTokens": 1292,
+    "todayOutputTokens": 395828,
+    "asOf": "2026-09-10T02:01:17.843Z"
   },
-  "updatedAt": "2026-09-10T01:34:57.536Z"
+  "updatedAt": "2026-09-10T02:01:17.843Z"
 }
