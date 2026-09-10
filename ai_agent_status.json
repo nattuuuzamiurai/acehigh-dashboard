@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "FST 5.0の最新情報を一次情報で裏取り調査",
-      "startedAt": "2026-09-08T18:38:32.088Z",
-      "finishedAt": "2026-09-08T18:38:33.980Z"
+      "task": "ポーカー店舗向けチップ・LINE連携システムを市場調査",
+      "startedAt": "2026-09-10T08:44:12.332Z",
+      "finishedAt": "2026-09-10T08:44:17.951Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1576,
-    "todayOutputTokens": 553074,
-    "asOf": "2026-09-10T08:42:29.612Z"
+    "todayInputTokens": 1596,
+    "todayOutputTokens": 564872,
+    "asOf": "2026-09-10T08:44:28.120Z"
   },
-  "updatedAt": "2026-09-10T08:42:29.612Z"
+  "updatedAt": "2026-09-10T08:44:28.120Z"
 }
