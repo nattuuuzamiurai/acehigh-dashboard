@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "新シナリオでグラフ再生成",
-      "startedAt": "2026-09-10T18:05:40.416Z",
-      "finishedAt": "2026-09-10T18:05:42.370Z"
+      "task": "筆ポリゴンデータで野町・尾島を再照合",
+      "startedAt": "2026-09-10T18:10:29.785Z",
+      "finishedAt": "2026-09-10T18:10:31.370Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1296,
-    "todayOutputTokens": 599984,
-    "asOf": "2026-09-10T18:05:46.471Z"
+    "todayInputTokens": 1494,
+    "todayOutputTokens": 655647,
+    "asOf": "2026-09-10T18:10:39.497Z"
   },
-  "updatedAt": "2026-09-10T18:05:46.471Z"
+  "updatedAt": "2026-09-10T18:10:39.497Z"
 }
