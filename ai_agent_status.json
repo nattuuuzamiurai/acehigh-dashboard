@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "神社・寺・橋を目印にした位置合わせ",
-      "startedAt": "2026-09-10T17:08:34.393Z",
-      "finishedAt": "2026-09-10T17:08:36.438Z"
+      "task": "新シナリオで理論値データを完全再計算",
+      "startedAt": "2026-09-10T17:22:40.078Z",
+      "finishedAt": "2026-09-10T17:22:45.249Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 346,
-    "todayOutputTokens": 110981,
-    "asOf": "2026-09-10T17:15:41.360Z"
+    "todayInputTokens": 670,
+    "todayOutputTokens": 235851,
+    "asOf": "2026-09-10T17:27:05.541Z"
   },
-  "updatedAt": "2026-09-10T17:15:41.360Z"
+  "updatedAt": "2026-09-10T17:27:05.541Z"
 }
