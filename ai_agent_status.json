@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "13章の矛盾修正を再確認",
-      "startedAt": "2026-09-09T15:15:36.902Z",
-      "finishedAt": "2026-09-09T15:15:39.608Z"
+      "task": "forced_to_heaven=False統合後の事実確認",
+      "startedAt": "2026-09-10T18:26:39.924Z",
+      "finishedAt": "2026-09-10T18:26:41.495Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1494,
-    "todayOutputTokens": 655647,
-    "asOf": "2026-09-10T18:10:39.497Z"
+    "todayInputTokens": 1912,
+    "todayOutputTokens": 772770,
+    "asOf": "2026-09-10T18:26:44.974Z"
   },
-  "updatedAt": "2026-09-10T18:10:39.497Z"
+  "updatedAt": "2026-09-10T18:26:44.974Z"
 }
