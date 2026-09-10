@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "修正完了版の最終GO/NO-GO再判定",
-      "startedAt": "2026-09-09T15:26:11.956Z",
-      "finishedAt": "2026-09-09T15:26:15.155Z"
+      "task": "forced_to_heaven=False改訂の最終レビュー",
+      "startedAt": "2026-09-10T18:38:52.981Z",
+      "finishedAt": "2026-09-10T18:38:54.594Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2178,
-    "todayOutputTokens": 853202,
-    "asOf": "2026-09-10T18:37:42.063Z"
+    "todayInputTokens": 2230,
+    "todayOutputTokens": 858425,
+    "asOf": "2026-09-10T18:38:57.402Z"
   },
-  "updatedAt": "2026-09-10T18:37:42.063Z"
+  "updatedAt": "2026-09-10T18:38:57.402Z"
 }
