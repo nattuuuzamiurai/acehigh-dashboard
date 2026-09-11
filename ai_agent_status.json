@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "店舗ページの構造化データを拡充",
-      "startedAt": "2026-09-11T16:48:06.238Z",
-      "finishedAt": "2026-09-11T16:48:09.058Z"
+      "task": "初心者向け店舗比較ページを実装",
+      "startedAt": "2026-09-11T17:00:24.678Z",
+      "finishedAt": "2026-09-11T17:00:27.250Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 372,
-    "todayOutputTokens": 137033,
-    "asOf": "2026-09-11T16:54:13.423Z"
+    "todayInputTokens": 520,
+    "todayOutputTokens": 206909,
+    "asOf": "2026-09-11T17:00:38.645Z"
   },
-  "updatedAt": "2026-09-11T16:54:13.423Z"
+  "updatedAt": "2026-09-11T17:00:38.645Z"
 }
