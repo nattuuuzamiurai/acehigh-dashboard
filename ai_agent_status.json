@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "11章圧縮版の最終レビュー",
-      "startedAt": "2026-09-11T19:19:10.886Z",
-      "finishedAt": "2026-09-11T19:19:12.621Z"
+      "task": "手動番地登録機能のレビュー部最終判定",
+      "startedAt": "2026-09-11T19:54:07.164Z",
+      "finishedAt": "2026-09-11T19:54:09.112Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5404,
-    "todayOutputTokens": 1794606,
-    "asOf": "2026-09-11T19:36:57.574Z"
+    "todayInputTokens": 5610,
+    "todayOutputTokens": 1849744,
+    "asOf": "2026-09-11T19:54:15.638Z"
   },
-  "updatedAt": "2026-09-11T19:36:57.574Z"
+  "updatedAt": "2026-09-11T19:54:15.638Z"
 }
