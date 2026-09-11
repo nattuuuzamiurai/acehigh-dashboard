@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "手動番地登録機能の実装",
-      "startedAt": "2026-09-11T18:15:51.470Z",
-      "finishedAt": "2026-09-11T18:15:53.742Z"
+      "task": "11章の主要グラフを+50枚基準で再生成",
+      "startedAt": "2026-09-11T19:05:27.710Z",
+      "finishedAt": "2026-09-11T19:05:29.475Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4228,
-    "todayOutputTokens": 1344375,
-    "asOf": "2026-09-11T19:04:02.614Z"
+    "todayInputTokens": 4322,
+    "todayOutputTokens": 1371354,
+    "asOf": "2026-09-11T19:05:35.715Z"
   },
-  "updatedAt": "2026-09-11T19:04:02.614Z"
+  "updatedAt": "2026-09-11T19:05:35.715Z"
 }
