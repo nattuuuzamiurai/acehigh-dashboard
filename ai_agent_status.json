@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "forced_to_heaven=False改訂の最終レビュー",
-      "startedAt": "2026-09-10T18:38:52.981Z",
-      "finishedAt": "2026-09-10T18:38:54.594Z"
+      "task": "11章圧縮版の最終レビュー",
+      "startedAt": "2026-09-11T19:19:10.886Z",
+      "finishedAt": "2026-09-11T19:19:12.621Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4774,
-    "todayOutputTokens": 1552041,
-    "asOf": "2026-09-11T19:14:06.221Z"
+    "todayInputTokens": 4930,
+    "todayOutputTokens": 1625381,
+    "asOf": "2026-09-11T19:19:15.042Z"
   },
-  "updatedAt": "2026-09-11T19:14:06.221Z"
+  "updatedAt": "2026-09-11T19:19:15.042Z"
 }
