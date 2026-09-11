@@ -32,9 +32,9 @@
     },
     "marketing-lead": {
       "status": "idle",
-      "task": "ふくおかポーカーナビのGA4分析と収益化施策立案",
-      "startedAt": "2026-09-07T13:57:44.147Z",
-      "finishedAt": "2026-09-07T13:57:45.935Z"
+      "task": "「福岡 ポーカー」検索順位低迷の原因調査",
+      "startedAt": "2026-09-11T15:59:42.647Z",
+      "finishedAt": "2026-09-11T15:59:49.370Z"
     },
     "Explore": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2564,
-    "todayOutputTokens": 1013557,
-    "asOf": "2026-09-10T19:06:38.120Z"
+    "todayInputTokens": 20,
+    "todayOutputTokens": 9248,
+    "asOf": "2026-09-11T16:00:02.528Z"
   },
-  "updatedAt": "2026-09-10T19:06:38.120Z"
+  "updatedAt": "2026-09-11T16:00:02.528Z"
 }
