@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "理論交差点Mを+50枚基準で再計算",
-      "startedAt": "2026-09-11T18:13:01.323Z",
-      "finishedAt": "2026-09-11T18:13:03.467Z"
+      "task": "手動番地登録機能の実装",
+      "startedAt": "2026-09-11T18:15:51.470Z",
+      "finishedAt": "2026-09-11T18:15:53.742Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "初心者向け店舗比較ページを執筆",
-      "startedAt": "2026-09-11T16:53:55.611Z",
-      "finishedAt": "2026-09-11T16:53:58.568Z"
+      "task": "初心者ガイドページをカテゴリー別に書き直し",
+      "startedAt": "2026-09-11T18:17:53.444Z",
+      "finishedAt": "2026-09-11T18:17:56.658Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2066,
-    "todayOutputTokens": 577747,
-    "asOf": "2026-09-11T18:14:35.796Z"
+    "todayInputTokens": 2324,
+    "todayOutputTokens": 657091,
+    "asOf": "2026-09-11T18:18:16.688Z"
   },
-  "updatedAt": "2026-09-11T18:14:35.796Z"
+  "updatedAt": "2026-09-11T18:18:16.688Z"
 }
