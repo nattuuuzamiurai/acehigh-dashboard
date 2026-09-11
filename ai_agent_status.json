@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "住所検索・登録フローの動画分析",
-      "startedAt": "2026-09-07T13:44:13.143Z",
-      "finishedAt": "2026-09-07T13:44:17.301Z"
+      "task": "動画区間6(280-335秒)の番地・名前を書き起こし",
+      "startedAt": "2026-09-11T18:25:19.498Z",
+      "finishedAt": "2026-09-11T18:25:24.494Z"
     }
   },
   "usage": {
-    "todayInputTokens": 2622,
-    "todayOutputTokens": 807930,
-    "asOf": "2026-09-11T18:24:26.551Z"
+    "todayInputTokens": 2812,
+    "todayOutputTokens": 878126,
+    "asOf": "2026-09-11T18:25:48.752Z"
   },
-  "updatedAt": "2026-09-11T18:24:26.551Z"
+  "updatedAt": "2026-09-11T18:25:48.752Z"
 }
