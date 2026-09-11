@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "11章再構成後の事実確認",
-      "startedAt": "2026-09-11T19:11:50.524Z",
-      "finishedAt": "2026-09-11T19:11:52.881Z"
+      "task": "手動番地登録・新築ピン機能のQA検証",
+      "startedAt": "2026-09-11T19:19:54.217Z",
+      "finishedAt": "2026-09-11T19:19:56.755Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4930,
-    "todayOutputTokens": 1625381,
-    "asOf": "2026-09-11T19:19:15.042Z"
+    "todayInputTokens": 4988,
+    "todayOutputTokens": 1644025,
+    "asOf": "2026-09-11T19:20:03.216Z"
   },
-  "updatedAt": "2026-09-11T19:19:15.042Z"
+  "updatedAt": "2026-09-11T19:20:03.216Z"
 }
