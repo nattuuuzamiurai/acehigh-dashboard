@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "forced_to_heaven=False統合後の事実確認",
-      "startedAt": "2026-09-10T18:26:39.924Z",
-      "finishedAt": "2026-09-10T18:26:41.495Z"
+      "task": "PR#89(構造化データ拡充)の品質チェック",
+      "startedAt": "2026-09-11T17:11:11.006Z",
+      "finishedAt": "2026-09-11T17:11:13.632Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 520,
-    "todayOutputTokens": 206909,
-    "asOf": "2026-09-11T17:00:38.645Z"
+    "todayInputTokens": 858,
+    "todayOutputTokens": 298016,
+    "asOf": "2026-09-11T17:11:23.554Z"
   },
-  "updatedAt": "2026-09-11T17:00:38.645Z"
+  "updatedAt": "2026-09-11T17:11:23.554Z"
 }
