@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "店舗ページのデザインを改修(地図・写真・情報カード)",
-      "startedAt": "2026-09-11T18:07:08.281Z",
-      "finishedAt": "2026-09-11T18:07:10.730Z"
+      "task": "理論交差点Mを+50枚基準で再計算",
+      "startedAt": "2026-09-11T18:13:01.323Z",
+      "finishedAt": "2026-09-11T18:13:03.467Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1968,
-    "todayOutputTokens": 539956,
-    "asOf": "2026-09-11T18:12:49.163Z"
+    "todayInputTokens": 1988,
+    "todayOutputTokens": 552386,
+    "asOf": "2026-09-11T18:13:11.804Z"
   },
-  "updatedAt": "2026-09-11T18:12:49.163Z"
+  "updatedAt": "2026-09-11T18:13:11.804Z"
 }
