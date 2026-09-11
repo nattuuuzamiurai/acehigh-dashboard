@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "11章の主要グラフを+50枚基準で再生成",
-      "startedAt": "2026-09-11T19:05:27.710Z",
-      "finishedAt": "2026-09-11T19:05:29.475Z"
+      "task": "Artifact HTMLの11章を全面差し替え",
+      "startedAt": "2026-09-11T19:22:55.349Z",
+      "finishedAt": "2026-09-11T19:22:57.038Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5100,
-    "todayOutputTokens": 1665129,
-    "asOf": "2026-09-11T19:22:44.852Z"
+    "todayInputTokens": 5112,
+    "todayOutputTokens": 1671287,
+    "asOf": "2026-09-11T19:23:00.704Z"
   },
-  "updatedAt": "2026-09-11T19:22:44.852Z"
+  "updatedAt": "2026-09-11T19:23:00.704Z"
 }
