@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Artifact HTML同期用ファイルをマージ作成",
-      "startedAt": "2026-09-10T18:42:34.497Z",
-      "finishedAt": "2026-09-10T18:42:36.380Z"
+      "task": "店舗ページの構造化データを拡充",
+      "startedAt": "2026-09-11T16:48:06.238Z",
+      "finishedAt": "2026-09-11T16:48:09.058Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "ポーカー店舗向けチップ・LINE連携システムを市場調査",
-      "startedAt": "2026-09-10T08:44:12.332Z",
-      "finishedAt": "2026-09-10T08:44:17.951Z"
+      "task": "初心者向け店舗比較ページの企画",
+      "startedAt": "2026-09-11T16:47:48.046Z",
+      "finishedAt": "2026-09-11T16:47:50.962Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 134,
-    "todayOutputTokens": 40642,
-    "asOf": "2026-09-11T16:08:35.335Z"
+    "todayInputTokens": 346,
+    "todayOutputTokens": 124647,
+    "asOf": "2026-09-11T16:53:09.407Z"
   },
-  "updatedAt": "2026-09-11T16:08:35.335Z"
+  "updatedAt": "2026-09-11T16:53:09.407Z"
 }
