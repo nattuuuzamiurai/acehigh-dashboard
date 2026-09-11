@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "初心者向け店舗比較ページを実装",
-      "startedAt": "2026-09-11T17:00:24.678Z",
-      "finishedAt": "2026-09-11T17:00:27.250Z"
+      "task": "店舗ページのデザインを改修(地図・写真・情報カード)",
+      "startedAt": "2026-09-11T18:07:08.281Z",
+      "finishedAt": "2026-09-11T18:07:10.730Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "初心者向け店舗比較ページの企画",
-      "startedAt": "2026-09-11T16:47:48.046Z",
-      "finishedAt": "2026-09-11T16:47:50.962Z"
+      "task": "店舗のカテゴリー別特性を外部レビューから調査",
+      "startedAt": "2026-09-11T18:06:19.565Z",
+      "finishedAt": "2026-09-11T18:06:22.535Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1646,
-    "todayOutputTokens": 456496,
-    "asOf": "2026-09-11T17:45:10.866Z"
+    "todayInputTokens": 1702,
+    "todayOutputTokens": 485388,
+    "asOf": "2026-09-11T18:07:25.523Z"
   },
-  "updatedAt": "2026-09-11T17:45:10.866Z"
+  "updatedAt": "2026-09-11T18:07:25.523Z"
 }
