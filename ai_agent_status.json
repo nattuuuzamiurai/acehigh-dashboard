@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
-      "task": "建物名編集モーダルに番地入力欄を追加",
-      "startedAt": "2026-09-12T09:38:18.690Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "ホットペッパー写真取得を実装(久留米飲み屋ナビ方式)",
+      "startedAt": "2026-09-12T09:38:38.182Z",
+      "finishedAt": "2026-09-12T09:38:42.939Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7278,
-    "todayOutputTokens": 2431619,
-    "asOf": "2026-09-12T09:38:13.332Z"
+    "todayInputTokens": 7324,
+    "todayOutputTokens": 2442140,
+    "asOf": "2026-09-12T09:38:58.944Z"
   },
-  "updatedAt": "2026-09-12T09:38:13.332Z"
+  "updatedAt": "2026-09-12T09:38:58.944Z"
 }
