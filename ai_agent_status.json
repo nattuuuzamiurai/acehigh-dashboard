@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "追加した遭遇頻度の数値を検証",
-      "startedAt": "2026-09-12T04:42:30.030Z",
-      "finishedAt": "2026-09-12T04:42:31.783Z"
+      "task": "手動登録拡張機能のQA検証",
+      "startedAt": "2026-09-12T05:04:28.531Z",
+      "finishedAt": "2026-09-12T05:04:31.889Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6230,
-    "todayOutputTokens": 2090339,
-    "asOf": "2026-09-12T04:54:51.014Z"
+    "todayInputTokens": 6434,
+    "todayOutputTokens": 2145748,
+    "asOf": "2026-09-12T05:04:40.604Z"
   },
-  "updatedAt": "2026-09-12T04:54:51.014Z"
+  "updatedAt": "2026-09-12T05:04:40.604Z"
 }
