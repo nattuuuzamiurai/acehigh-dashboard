@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "建物名+番地統合編集・補正レイヤーのQA検証",
-      "startedAt": "2026-09-12T10:10:23.871Z",
-      "finishedAt": "2026-09-12T10:10:29.175Z"
+      "task": "確認ダイアログ修正の再検証",
+      "startedAt": "2026-09-12T10:40:40.794Z",
+      "finishedAt": "2026-09-12T10:40:43.267Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8932,
-    "todayOutputTokens": 2771497,
-    "asOf": "2026-09-12T10:32:38.519Z"
+    "todayInputTokens": 9098,
+    "todayOutputTokens": 2807456,
+    "asOf": "2026-09-12T10:40:53.540Z"
   },
-  "updatedAt": "2026-09-12T10:32:38.519Z"
+  "updatedAt": "2026-09-12T10:40:53.540Z"
 }
