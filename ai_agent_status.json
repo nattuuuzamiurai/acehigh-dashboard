@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "初代借用値への依存度を感度分析",
-      "startedAt": "2026-09-12T11:39:39.276Z",
-      "finishedAt": "2026-09-12T11:39:42.398Z"
+      "task": "番地入力の全角対応と表示ズーム統一",
+      "startedAt": "2026-09-12T11:42:51.690Z",
+      "finishedAt": "2026-09-12T11:42:56.833Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 9490,
-    "todayOutputTokens": 2951432,
-    "asOf": "2026-09-12T11:41:21.160Z"
+    "todayInputTokens": 9524,
+    "todayOutputTokens": 2981524,
+    "asOf": "2026-09-12T11:42:54.746Z"
   },
-  "updatedAt": "2026-09-12T11:41:21.160Z"
+  "updatedAt": "2026-09-12T11:42:54.746Z"
 }
