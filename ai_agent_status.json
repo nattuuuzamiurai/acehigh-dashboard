@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "手動登録拡張機能のQA検証",
-      "startedAt": "2026-09-12T05:04:28.531Z",
-      "finishedAt": "2026-09-12T05:04:31.889Z"
+      "task": "PR#90(カード形式再実装版)の品質チェック",
+      "startedAt": "2026-09-12T05:06:51.902Z",
+      "finishedAt": "2026-09-12T05:06:56.740Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6434,
-    "todayOutputTokens": 2145748,
-    "asOf": "2026-09-12T05:04:40.604Z"
+    "todayInputTokens": 6534,
+    "todayOutputTokens": 2156199,
+    "asOf": "2026-09-12T05:07:10.340Z"
   },
-  "updatedAt": "2026-09-12T05:04:40.604Z"
+  "updatedAt": "2026-09-12T05:07:10.340Z"
 }
