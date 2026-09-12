@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#92(ホットペッパー写真機能)の品質チェック",
-      "startedAt": "2026-09-12T10:07:20.070Z",
-      "finishedAt": "2026-09-12T10:07:33.545Z"
+      "task": "建物名+番地統合編集・補正レイヤーのQA検証",
+      "startedAt": "2026-09-12T10:10:23.871Z",
+      "finishedAt": "2026-09-12T10:10:29.175Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8320,
-    "todayOutputTokens": 2653643,
-    "asOf": "2026-09-12T10:08:02.557Z"
+    "todayInputTokens": 8422,
+    "todayOutputTokens": 2666517,
+    "asOf": "2026-09-12T10:10:44.509Z"
   },
-  "updatedAt": "2026-09-12T10:08:02.557Z"
+  "updatedAt": "2026-09-12T10:10:44.509Z"
 }
