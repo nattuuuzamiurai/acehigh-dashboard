@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "確認ダイアログ修正2回目の再検証",
-      "startedAt": "2026-09-12T10:52:16.989Z",
-      "finishedAt": "2026-09-12T10:52:20.023Z"
+      "task": "全角対応・ズーム統一修正のQA検証",
+      "startedAt": "2026-09-12T12:30:16.599Z",
+      "finishedAt": "2026-09-12T12:30:28.536Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 9678,
-    "todayOutputTokens": 3044547,
-    "asOf": "2026-09-12T11:49:24.194Z"
+    "todayInputTokens": 9968,
+    "todayOutputTokens": 3116373,
+    "asOf": "2026-09-12T12:30:38.944Z"
   },
-  "updatedAt": "2026-09-12T11:49:24.194Z"
+  "updatedAt": "2026-09-12T12:30:38.944Z"
 }
