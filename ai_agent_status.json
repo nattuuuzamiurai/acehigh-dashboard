@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "手動番地登録機能のレビュー部最終判定",
-      "startedAt": "2026-09-11T19:54:07.164Z",
-      "finishedAt": "2026-09-11T19:54:09.112Z"
+      "task": "追記1文の最終レビュー",
+      "startedAt": "2026-09-12T04:43:34.356Z",
+      "finishedAt": "2026-09-12T04:43:35.994Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5864,
-    "todayOutputTokens": 1955218,
-    "asOf": "2026-09-12T04:42:47.495Z"
+    "todayInputTokens": 5910,
+    "todayOutputTokens": 1965786,
+    "asOf": "2026-09-12T04:43:39.110Z"
   },
-  "updatedAt": "2026-09-12T04:42:47.495Z"
+  "updatedAt": "2026-09-12T04:43:39.110Z"
 }
