@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "店舗のカテゴリー別特性を外部レビューから調査",
-      "startedAt": "2026-09-11T18:06:19.565Z",
-      "finishedAt": "2026-09-11T18:06:22.535Z"
+      "task": "ポーカー店のホットペッパー掲載を調査",
+      "startedAt": "2026-09-12T09:32:28.930Z",
+      "finishedAt": "2026-09-12T09:32:32.832Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7032,
-    "todayOutputTokens": 2344574,
-    "asOf": "2026-09-12T09:31:22.104Z"
+    "todayInputTokens": 7064,
+    "todayOutputTokens": 2368617,
+    "asOf": "2026-09-12T09:32:44.618Z"
   },
-  "updatedAt": "2026-09-12T09:31:22.104Z"
+  "updatedAt": "2026-09-12T09:32:44.618Z"
 }
