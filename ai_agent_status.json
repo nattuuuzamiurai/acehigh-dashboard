@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ホットペッパー写真取得を実装(久留米飲み屋ナビ方式)",
-      "startedAt": "2026-09-12T09:38:38.182Z",
-      "finishedAt": "2026-09-12T09:38:42.939Z"
+      "task": "政府データ上書き時の確認ダイアログ追加",
+      "startedAt": "2026-09-12T10:32:21.309Z",
+      "finishedAt": "2026-09-12T10:32:26.545Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8862,
-    "todayOutputTokens": 2746456,
-    "asOf": "2026-09-12T10:26:17.535Z"
+    "todayInputTokens": 8932,
+    "todayOutputTokens": 2771497,
+    "asOf": "2026-09-12T10:32:38.519Z"
   },
-  "updatedAt": "2026-09-12T10:26:17.535Z"
+  "updatedAt": "2026-09-12T10:32:38.519Z"
 }
