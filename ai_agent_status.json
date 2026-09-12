@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "追記1文の最終レビュー",
-      "startedAt": "2026-09-12T04:43:34.356Z",
-      "finishedAt": "2026-09-12T04:43:35.994Z"
+      "task": "番地補正レイヤー機能のレビュー部最終判定",
+      "startedAt": "2026-09-12T10:56:05.543Z",
+      "finishedAt": "2026-09-12T10:56:08.948Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 9262,
-    "todayOutputTokens": 2859123,
-    "asOf": "2026-09-12T10:52:34.988Z"
+    "todayInputTokens": 9340,
+    "todayOutputTokens": 2875591,
+    "asOf": "2026-09-12T10:56:22.394Z"
   },
-  "updatedAt": "2026-09-12T10:52:34.988Z"
+  "updatedAt": "2026-09-12T10:56:22.394Z"
 }
