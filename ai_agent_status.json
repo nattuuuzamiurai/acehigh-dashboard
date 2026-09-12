@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "11章「夜の立ち回り」を全面圧縮・再構成",
-      "startedAt": "2026-09-11T18:22:37.362Z",
-      "finishedAt": "2026-09-11T18:22:44.187Z"
+      "task": "ガイドページのカテゴリー修正と文章圧縮",
+      "startedAt": "2026-09-12T04:47:33.454Z",
+      "finishedAt": "2026-09-12T04:47:36.652Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6054,
-    "todayOutputTokens": 2006706,
-    "asOf": "2026-09-12T04:47:21.851Z"
+    "todayInputTokens": 6086,
+    "todayOutputTokens": 2018661,
+    "asOf": "2026-09-12T04:47:49.279Z"
   },
-  "updatedAt": "2026-09-12T04:47:21.851Z"
+  "updatedAt": "2026-09-12T04:47:49.279Z"
 }
