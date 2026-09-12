@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "手動登録機能の拡張(番地+名前・削除・四角建物)",
-      "startedAt": "2026-09-12T04:38:47.613Z",
-      "finishedAt": "2026-09-12T04:38:49.782Z"
+      "status": "running",
+      "task": "建物名編集モーダルに番地入力欄を追加",
+      "startedAt": "2026-09-12T09:38:18.690Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7064,
-    "todayOutputTokens": 2368617,
-    "asOf": "2026-09-12T09:32:44.618Z"
+    "todayInputTokens": 7278,
+    "todayOutputTokens": 2431619,
+    "asOf": "2026-09-12T09:38:13.332Z"
   },
-  "updatedAt": "2026-09-12T09:32:44.618Z"
+  "updatedAt": "2026-09-12T09:38:13.332Z"
 }
