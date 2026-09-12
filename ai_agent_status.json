@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "政府データ上書き時の確認ダイアログ追加",
-      "startedAt": "2026-09-12T10:32:21.309Z",
-      "finishedAt": "2026-09-12T10:32:26.545Z"
+      "task": "過剰確認バグ2件の修正",
+      "startedAt": "2026-09-12T10:48:43.164Z",
+      "finishedAt": "2026-09-12T10:48:46.619Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 9098,
-    "todayOutputTokens": 2807456,
-    "asOf": "2026-09-12T10:40:53.540Z"
+    "todayInputTokens": 9204,
+    "todayOutputTokens": 2846649,
+    "asOf": "2026-09-12T10:48:58.235Z"
   },
-  "updatedAt": "2026-09-12T10:40:53.540Z"
+  "updatedAt": "2026-09-12T10:48:58.235Z"
 }
