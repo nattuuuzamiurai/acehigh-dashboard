@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "過剰確認バグ2件の修正",
-      "startedAt": "2026-09-12T10:48:43.164Z",
-      "finishedAt": "2026-09-12T10:48:46.619Z"
+      "task": "初代借用値への依存度を感度分析",
+      "startedAt": "2026-09-12T11:39:39.276Z",
+      "finishedAt": "2026-09-12T11:39:42.398Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 9394,
-    "todayOutputTokens": 2893304,
-    "asOf": "2026-09-12T11:32:59.746Z"
+    "todayInputTokens": 9434,
+    "todayOutputTokens": 2930598,
+    "asOf": "2026-09-12T11:39:51.345Z"
   },
-  "updatedAt": "2026-09-12T11:32:59.746Z"
+  "updatedAt": "2026-09-12T11:39:51.345Z"
 }
