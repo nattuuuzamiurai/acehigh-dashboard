@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "Artifact HTMLの11章を全面差し替え",
-      "startedAt": "2026-09-11T19:22:55.349Z",
-      "finishedAt": "2026-09-11T19:22:57.038Z"
+      "status": "running",
+      "task": "+50枚基準の交差点Mの妥当性を検証",
+      "startedAt": "2026-09-12T04:35:25.702Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5664,
-    "todayOutputTokens": 1871262,
-    "asOf": "2026-09-12T04:34:30.128Z"
+    "todayInputTokens": 5674,
+    "todayOutputTokens": 1872552,
+    "asOf": "2026-09-12T04:35:23.745Z"
   },
-  "updatedAt": "2026-09-12T04:34:30.128Z"
+  "updatedAt": "2026-09-12T04:35:23.745Z"
 }
