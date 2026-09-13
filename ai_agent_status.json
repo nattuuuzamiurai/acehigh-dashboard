@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "記事に夜間比較を追加し全体を読者目線で修正",
-      "startedAt": "2026-09-13T05:57:17.749Z",
-      "finishedAt": "2026-09-13T05:57:20.294Z"
+      "task": "11-6節の出典引用を修正",
+      "startedAt": "2026-09-13T06:19:13.816Z",
+      "finishedAt": "2026-09-13T06:19:16.079Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 854,
-    "todayOutputTokens": 251243,
-    "asOf": "2026-09-13T06:13:17.147Z"
+    "todayInputTokens": 1112,
+    "todayOutputTokens": 293696,
+    "asOf": "2026-09-13T06:19:26.047Z"
   },
-  "updatedAt": "2026-09-13T06:13:17.147Z"
+  "updatedAt": "2026-09-13T06:19:26.047Z"
 }
