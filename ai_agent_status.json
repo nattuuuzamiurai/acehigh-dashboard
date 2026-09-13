@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "全店舗SNS表記の裏取り調査",
-      "startedAt": "2026-09-13T12:38:32.891Z",
-      "finishedAt": "2026-09-13T12:38:37.201Z"
+      "task": "9章の理論値を+50枚基準に統一",
+      "startedAt": "2026-09-13T12:49:32.875Z",
+      "finishedAt": "2026-09-13T12:49:35.256Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4486,
-    "todayOutputTokens": 1059787,
-    "asOf": "2026-09-13T12:47:50.405Z"
+    "todayInputTokens": 4572,
+    "todayOutputTokens": 1077711,
+    "asOf": "2026-09-13T12:49:46.018Z"
   },
-  "updatedAt": "2026-09-13T12:47:50.405Z"
+  "updatedAt": "2026-09-13T12:49:46.018Z"
 }
