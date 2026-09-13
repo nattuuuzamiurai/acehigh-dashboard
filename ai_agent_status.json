@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "9章推奨Mの実測値を時間帯別に確認",
-      "startedAt": "2026-09-13T22:11:00.941Z",
-      "finishedAt": "2026-09-13T22:11:04.979Z"
+      "task": "ガイド掲載漏れ3店舗を追加",
+      "startedAt": "2026-09-13T22:35:27.174Z",
+      "finishedAt": "2026-09-13T22:35:30.673Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 796,
-    "todayOutputTokens": 287318,
-    "asOf": "2026-09-13T22:32:57.124Z"
+    "todayInputTokens": 908,
+    "todayOutputTokens": 329932,
+    "asOf": "2026-09-13T22:35:40.437Z"
   },
-  "updatedAt": "2026-09-13T22:32:57.124Z"
+  "updatedAt": "2026-09-13T22:35:40.437Z"
 }
