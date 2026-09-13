@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "9章の整合性修正を事実確認",
-      "startedAt": "2026-09-13T12:53:46.273Z",
-      "finishedAt": "2026-09-13T12:53:48.913Z"
+      "task": "9章追記の事実確認",
+      "startedAt": "2026-09-13T22:22:04.778Z",
+      "finishedAt": "2026-09-13T22:22:06.711Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 468,
-    "todayOutputTokens": 171226,
-    "asOf": "2026-09-13T22:21:50.229Z"
+    "todayInputTokens": 490,
+    "todayOutputTokens": 175533,
+    "asOf": "2026-09-13T22:22:14.578Z"
   },
-  "updatedAt": "2026-09-13T22:21:50.229Z"
+  "updatedAt": "2026-09-13T22:22:14.578Z"
 }
