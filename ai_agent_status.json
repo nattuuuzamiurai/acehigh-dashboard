@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "10-2節・4-2節のitikatu.jp出典を検証・修正",
-      "startedAt": "2026-09-13T06:22:15.988Z",
-      "finishedAt": "2026-09-13T06:22:18.357Z"
+      "task": "記事全体の読みやすさを改善(専門用語を平易に)",
+      "startedAt": "2026-09-13T09:32:06.622Z",
+      "finishedAt": "2026-09-13T09:32:08.979Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2660,
-    "todayOutputTokens": 542401,
-    "asOf": "2026-09-13T08:45:42.607Z"
+    "todayInputTokens": 2682,
+    "todayOutputTokens": 551758,
+    "asOf": "2026-09-13T09:32:20.541Z"
   },
-  "updatedAt": "2026-09-13T08:45:42.607Z"
+  "updatedAt": "2026-09-13T09:32:20.541Z"
 }
