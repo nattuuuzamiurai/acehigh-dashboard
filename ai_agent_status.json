@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "全角対応・ズーム統一修正のQA検証",
-      "startedAt": "2026-09-12T12:30:16.599Z",
-      "finishedAt": "2026-09-12T12:30:28.536Z"
+      "task": "大幅改訂版の全面事実確認",
+      "startedAt": "2026-09-13T06:11:11.379Z",
+      "finishedAt": "2026-09-13T06:11:14.013Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 358,
-    "todayOutputTokens": 161972,
-    "asOf": "2026-09-13T06:04:32.696Z"
+    "todayInputTokens": 764,
+    "todayOutputTokens": 222889,
+    "asOf": "2026-09-13T06:11:24.541Z"
   },
-  "updatedAt": "2026-09-13T06:04:32.696Z"
+  "updatedAt": "2026-09-13T06:11:24.541Z"
 }
