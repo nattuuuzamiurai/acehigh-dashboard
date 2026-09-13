@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "番地入力の全角対応と表示ズーム統一",
-      "startedAt": "2026-09-12T11:42:51.690Z",
-      "finishedAt": "2026-09-12T11:42:56.833Z"
+      "task": "全台の大当たり履歴を匿名化CSVで出力",
+      "startedAt": "2026-09-13T05:56:22.105Z",
+      "finishedAt": "2026-09-13T05:56:25.710Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "ガイドページのカテゴリー修正と文章圧縮",
-      "startedAt": "2026-09-12T04:47:33.454Z",
-      "finishedAt": "2026-09-12T04:47:36.652Z"
+      "task": "記事に夜間比較を追加し全体を読者目線で修正",
+      "startedAt": "2026-09-13T05:57:17.749Z",
+      "finishedAt": "2026-09-13T05:57:20.294Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 10218,
-    "todayOutputTokens": 3178732,
-    "asOf": "2026-09-12T12:56:00.185Z"
+    "todayInputTokens": 72,
+    "todayOutputTokens": 45709,
+    "asOf": "2026-09-13T05:57:34.583Z"
   },
-  "updatedAt": "2026-09-12T12:56:00.185Z"
+  "updatedAt": "2026-09-13T05:57:34.583Z"
 }
