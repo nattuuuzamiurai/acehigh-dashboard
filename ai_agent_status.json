@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "PR#89-92統合+ARIA閉店対応+ガイド調整",
-      "startedAt": "2026-09-13T06:04:09.610Z",
-      "finishedAt": "2026-09-13T06:04:12.469Z"
+      "task": "Artifact HTMLに大幅改訂を反映",
+      "startedAt": "2026-09-13T06:28:08.856Z",
+      "finishedAt": "2026-09-13T06:28:11.217Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1312,
-    "todayOutputTokens": 329181,
-    "asOf": "2026-09-13T06:24:03.614Z"
+    "todayInputTokens": 1452,
+    "todayOutputTokens": 356218,
+    "asOf": "2026-09-13T06:28:19.996Z"
   },
-  "updatedAt": "2026-09-13T06:24:03.614Z"
+  "updatedAt": "2026-09-13T06:28:19.996Z"
 }
