@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#97(ガイド掲載漏れ3店舗)の品質チェック",
-      "startedAt": "2026-09-13T22:43:14.911Z",
-      "finishedAt": "2026-09-13T22:43:18.169Z"
+      "task": "PR#98(WEBコイン記事ページ化)の品質チェック",
+      "startedAt": "2026-09-13T23:18:03.127Z",
+      "finishedAt": "2026-09-13T23:18:14.432Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1620,
-    "todayOutputTokens": 462577,
-    "asOf": "2026-09-13T22:52:56.150Z"
+    "todayInputTokens": 1918,
+    "todayOutputTokens": 533326,
+    "asOf": "2026-09-13T23:18:23.201Z"
   },
-  "updatedAt": "2026-09-13T22:52:56.150Z"
+  "updatedAt": "2026-09-13T23:18:23.201Z"
 }
