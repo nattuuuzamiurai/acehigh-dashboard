@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Artifact HTMLの9章理論値を11章と整合させる",
-      "startedAt": "2026-09-13T13:02:45.962Z",
-      "finishedAt": "2026-09-13T13:02:48.629Z"
+      "task": "9章推奨Mの実測値を時間帯別に確認",
+      "startedAt": "2026-09-13T22:11:00.941Z",
+      "finishedAt": "2026-09-13T22:11:04.979Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 30,
-    "todayOutputTokens": 19699,
-    "asOf": "2026-09-13T22:10:52.547Z"
+    "todayInputTokens": 48,
+    "todayOutputTokens": 33923,
+    "asOf": "2026-09-13T22:11:13.308Z"
   },
-  "updatedAt": "2026-09-13T22:10:52.547Z"
+  "updatedAt": "2026-09-13T22:11:13.308Z"
 }
