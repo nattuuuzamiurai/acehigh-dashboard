@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Artifact HTMLに9章の無制限限定注記を追加",
-      "startedAt": "2026-09-13T22:36:33.812Z",
-      "finishedAt": "2026-09-13T22:36:35.516Z"
+      "task": "WEBコイン規制記事のページ化",
+      "startedAt": "2026-09-13T22:46:55.261Z",
+      "finishedAt": "2026-09-13T22:46:58.718Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1350,
-    "todayOutputTokens": 399521,
-    "asOf": "2026-09-13T22:44:16.826Z"
+    "todayInputTokens": 1434,
+    "todayOutputTokens": 421785,
+    "asOf": "2026-09-13T22:47:07.584Z"
   },
-  "updatedAt": "2026-09-13T22:44:16.826Z"
+  "updatedAt": "2026-09-13T22:47:07.584Z"
 }
