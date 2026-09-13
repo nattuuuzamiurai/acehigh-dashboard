@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "PR#89-92統合+ARIA閉店対応+ガイド調整",
-      "startedAt": "2026-09-13T06:02:50.870Z",
-      "finishedAt": null
+      "startedAt": "2026-09-13T06:04:09.610Z",
+      "finishedAt": "2026-09-13T06:04:12.469Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 288,
-    "todayOutputTokens": 144469,
-    "asOf": "2026-09-13T06:03:24.946Z"
+    "todayInputTokens": 358,
+    "todayOutputTokens": 161972,
+    "asOf": "2026-09-13T06:04:32.696Z"
   },
-  "updatedAt": "2026-09-13T06:03:24.946Z"
+  "updatedAt": "2026-09-13T06:04:32.696Z"
 }
