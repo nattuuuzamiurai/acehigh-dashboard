@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "WEBコイン規制記事の事実確認",
-      "startedAt": "2026-09-13T22:25:51.638Z",
-      "finishedAt": "2026-09-13T22:25:54.117Z"
+      "task": "PR#97(ガイド掲載漏れ3店舗)の品質チェック",
+      "startedAt": "2026-09-13T22:43:14.911Z",
+      "finishedAt": "2026-09-13T22:43:18.169Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1236,
-    "todayOutputTokens": 378593,
-    "asOf": "2026-09-13T22:41:31.005Z"
+    "todayInputTokens": 1300,
+    "todayOutputTokens": 391190,
+    "asOf": "2026-09-13T22:43:27.045Z"
   },
-  "updatedAt": "2026-09-13T22:41:31.005Z"
+  "updatedAt": "2026-09-13T22:43:27.045Z"
 }
