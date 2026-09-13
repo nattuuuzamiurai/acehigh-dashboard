@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "9章の推奨列に無制限限定の注記を追加",
-      "startedAt": "2026-09-13T22:19:46.418Z",
-      "finishedAt": "2026-09-13T22:19:48.429Z"
+      "task": "WEBコイン規制ページの執筆",
+      "startedAt": "2026-09-13T22:23:35.089Z",
+      "finishedAt": "2026-09-13T22:23:38.747Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 490,
-    "todayOutputTokens": 175533,
-    "asOf": "2026-09-13T22:22:14.578Z"
+    "todayInputTokens": 550,
+    "todayOutputTokens": 191783,
+    "asOf": "2026-09-13T22:23:48.204Z"
   },
-  "updatedAt": "2026-09-13T22:22:14.578Z"
+  "updatedAt": "2026-09-13T22:23:48.204Z"
 }
