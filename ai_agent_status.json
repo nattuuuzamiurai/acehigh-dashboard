@@ -20,15 +20,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "9章の理論値を+50枚基準に統一",
-      "startedAt": "2026-09-13T12:49:32.875Z",
-      "finishedAt": "2026-09-13T12:49:35.256Z"
+      "task": "店舗ごとのリング情報を深掘り調査",
+      "startedAt": "2026-09-13T22:14:51.556Z",
+      "finishedAt": "2026-09-13T22:14:53.934Z"
     },
     "planning-lead": {
       "status": "idle",
-      "task": "ポーカー店のホットペッパー掲載を調査",
-      "startedAt": "2026-09-12T09:32:28.930Z",
-      "finishedAt": "2026-09-12T09:32:32.832Z"
+      "task": "WEBコイン規制動向のまとめページ調査",
+      "startedAt": "2026-09-13T22:15:11.237Z",
+      "finishedAt": "2026-09-13T22:15:13.573Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 48,
-    "todayOutputTokens": 33923,
-    "asOf": "2026-09-13T22:11:13.308Z"
+    "todayInputTokens": 158,
+    "todayOutputTokens": 81043,
+    "asOf": "2026-09-13T22:15:23.244Z"
   },
-  "updatedAt": "2026-09-13T22:11:13.308Z"
+  "updatedAt": "2026-09-13T22:15:23.244Z"
 }
