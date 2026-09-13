@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "記事全体の読みやすさを改善(専門用語を平易に)",
-      "startedAt": "2026-09-13T09:32:06.622Z",
-      "finishedAt": "2026-09-13T09:32:08.979Z"
+      "task": "全店舗SNS表記の裏取り調査",
+      "startedAt": "2026-09-13T12:38:32.891Z",
+      "finishedAt": "2026-09-13T12:38:37.201Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4212,
-    "todayOutputTokens": 942110,
-    "asOf": "2026-09-13T12:37:44.080Z"
+    "todayInputTokens": 4232,
+    "todayOutputTokens": 947609,
+    "asOf": "2026-09-13T12:38:48.987Z"
   },
-  "updatedAt": "2026-09-13T12:37:44.080Z"
+  "updatedAt": "2026-09-13T12:38:48.987Z"
 }
