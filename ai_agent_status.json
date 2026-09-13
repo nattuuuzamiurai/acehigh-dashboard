@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Artifact HTMLに読みやすさ改善を反映",
-      "startedAt": "2026-09-13T09:55:22.480Z",
-      "finishedAt": "2026-09-13T09:55:24.743Z"
+      "task": "店舗ページの単体検索(ブランド名)SEO強化",
+      "startedAt": "2026-09-13T11:15:45.253Z",
+      "finishedAt": "2026-09-13T11:15:48.139Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3780,
-    "todayOutputTokens": 855915,
-    "asOf": "2026-09-13T10:36:19.173Z"
+    "todayInputTokens": 3802,
+    "todayOutputTokens": 867168,
+    "asOf": "2026-09-13T11:16:00.435Z"
   },
-  "updatedAt": "2026-09-13T10:36:19.173Z"
+  "updatedAt": "2026-09-13T11:16:00.435Z"
 }
