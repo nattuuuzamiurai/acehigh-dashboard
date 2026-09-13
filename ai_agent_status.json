@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ガイドページへの内部リンク追加",
-      "startedAt": "2026-09-13T09:52:33.035Z",
-      "finishedAt": "2026-09-13T09:52:35.639Z"
+      "task": "Artifact HTMLに読みやすさ改善を反映",
+      "startedAt": "2026-09-13T09:55:22.480Z",
+      "finishedAt": "2026-09-13T09:55:24.743Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3016,
-    "todayOutputTokens": 666713,
-    "asOf": "2026-09-13T09:53:00.491Z"
+    "todayInputTokens": 3074,
+    "todayOutputTokens": 675981,
+    "asOf": "2026-09-13T09:55:34.494Z"
   },
-  "updatedAt": "2026-09-13T09:53:00.491Z"
+  "updatedAt": "2026-09-13T09:55:34.494Z"
 }
