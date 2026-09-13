@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "店舗ごとのリング情報を深掘り調査",
-      "startedAt": "2026-09-13T22:14:51.556Z",
-      "finishedAt": "2026-09-13T22:14:53.934Z"
+      "task": "9章の推奨列に無制限限定の注記を追加",
+      "startedAt": "2026-09-13T22:19:46.418Z",
+      "finishedAt": "2026-09-13T22:19:48.429Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 320,
-    "todayOutputTokens": 118376,
-    "asOf": "2026-09-13T22:17:32.156Z"
+    "todayInputTokens": 396,
+    "todayOutputTokens": 132564,
+    "asOf": "2026-09-13T22:19:54.615Z"
   },
-  "updatedAt": "2026-09-13T22:17:32.156Z"
+  "updatedAt": "2026-09-13T22:19:54.615Z"
 }
