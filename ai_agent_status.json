@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "9章用にN=7・8の+50枚基準を計算",
-      "startedAt": "2026-09-13T12:46:41.538Z",
-      "finishedAt": "2026-09-13T12:46:45.621Z"
+      "task": "8店舗にaltNamesを追加",
+      "startedAt": "2026-09-13T12:47:30.360Z",
+      "finishedAt": "2026-09-13T12:47:34.484Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4460,
-    "todayOutputTokens": 1044984,
-    "asOf": "2026-09-13T12:47:12.398Z"
+    "todayInputTokens": 4486,
+    "todayOutputTokens": 1059787,
+    "asOf": "2026-09-13T12:47:50.405Z"
   },
-  "updatedAt": "2026-09-13T12:47:12.398Z"
+  "updatedAt": "2026-09-13T12:47:50.405Z"
 }
