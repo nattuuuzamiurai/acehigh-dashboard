@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#96の本番反映GO/NO-GO判定",
-      "startedAt": "2026-09-13T13:02:17.429Z",
-      "finishedAt": "2026-09-13T13:02:20.274Z"
+      "task": "9章追記の最終レビュー",
+      "startedAt": "2026-09-13T22:32:49.951Z",
+      "finishedAt": "2026-09-13T22:32:51.829Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 624,
-    "todayOutputTokens": 236463,
-    "asOf": "2026-09-13T22:26:36.409Z"
+    "todayInputTokens": 796,
+    "todayOutputTokens": 287318,
+    "asOf": "2026-09-13T22:32:57.124Z"
   },
-  "updatedAt": "2026-09-13T22:26:36.409Z"
+  "updatedAt": "2026-09-13T22:32:57.124Z"
 }
