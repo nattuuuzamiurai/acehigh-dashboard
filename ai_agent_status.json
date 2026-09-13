@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "8店舗にaltNamesを追加",
-      "startedAt": "2026-09-13T12:47:30.360Z",
-      "finishedAt": "2026-09-13T12:47:34.484Z"
+      "task": "Artifact HTMLの9章理論値を11章と整合させる",
+      "startedAt": "2026-09-13T13:02:45.962Z",
+      "finishedAt": "2026-09-13T13:02:48.629Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5030,
-    "todayOutputTokens": 1174299,
-    "asOf": "2026-09-13T13:02:33.230Z"
+    "todayInputTokens": 5050,
+    "todayOutputTokens": 1178060,
+    "asOf": "2026-09-13T13:02:55.963Z"
   },
-  "updatedAt": "2026-09-13T13:02:33.230Z"
+  "updatedAt": "2026-09-13T13:02:55.963Z"
 }
