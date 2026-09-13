@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "9章追記の最終レビュー",
-      "startedAt": "2026-09-13T22:32:49.951Z",
-      "finishedAt": "2026-09-13T22:32:51.829Z"
+      "task": "WEBコイン記事のレビュー部最終判定",
+      "startedAt": "2026-09-13T22:44:03.542Z",
+      "finishedAt": "2026-09-13T22:44:07.447Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1300,
-    "todayOutputTokens": 391190,
-    "asOf": "2026-09-13T22:43:27.045Z"
+    "todayInputTokens": 1350,
+    "todayOutputTokens": 399521,
+    "asOf": "2026-09-13T22:44:16.826Z"
   },
-  "updatedAt": "2026-09-13T22:43:27.045Z"
+  "updatedAt": "2026-09-13T22:44:16.826Z"
 }
