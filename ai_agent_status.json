@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "全台の大当たり履歴を匿名化CSVで出力",
-      "startedAt": "2026-09-13T05:56:22.105Z",
-      "finishedAt": "2026-09-13T05:56:25.710Z"
+      "status": "running",
+      "task": "PR#89-92統合+ARIA閉店対応+ガイド調整",
+      "startedAt": "2026-09-13T06:02:50.870Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     },
     "marketing-lead": {
       "status": "idle",
-      "task": "「福岡 ポーカー」検索順位低迷の原因調査",
-      "startedAt": "2026-09-11T15:59:42.647Z",
-      "finishedAt": "2026-09-11T15:59:49.370Z"
+      "task": "「福岡 ポーカー」「福岡 ポーカー リング」SEO対策",
+      "startedAt": "2026-09-13T06:03:11.319Z",
+      "finishedAt": "2026-09-13T06:03:13.471Z"
     },
     "Explore": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 72,
-    "todayOutputTokens": 45709,
-    "asOf": "2026-09-13T05:57:34.583Z"
+    "todayInputTokens": 288,
+    "todayOutputTokens": 144469,
+    "asOf": "2026-09-13T06:03:24.946Z"
   },
-  "updatedAt": "2026-09-13T05:57:34.583Z"
+  "updatedAt": "2026-09-13T06:03:24.946Z"
 }
