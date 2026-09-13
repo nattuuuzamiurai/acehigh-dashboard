@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "店舗ページの単体検索(ブランド名)SEO強化",
-      "startedAt": "2026-09-13T11:15:45.253Z",
-      "finishedAt": "2026-09-13T11:15:48.139Z"
+      "task": "9章用にN=7・8の+50枚基準を計算",
+      "startedAt": "2026-09-13T12:46:41.538Z",
+      "finishedAt": "2026-09-13T12:46:45.621Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4412,
-    "todayOutputTokens": 1005472,
-    "asOf": "2026-09-13T12:45:31.860Z"
+    "todayInputTokens": 4440,
+    "todayOutputTokens": 1042144,
+    "asOf": "2026-09-13T12:46:53.721Z"
   },
-  "updatedAt": "2026-09-13T12:45:31.860Z"
+  "updatedAt": "2026-09-13T12:46:53.721Z"
 }
