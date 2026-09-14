@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "サイトマップ自動再送信の実装",
-      "startedAt": "2026-09-14T12:22:54.989Z",
-      "finishedAt": "2026-09-14T12:22:58.065Z"
+      "task": "改訂履歴除去版をArtifact HTMLへ反映",
+      "startedAt": "2026-09-14T12:42:51.480Z",
+      "finishedAt": "2026-09-14T12:42:53.518Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6182,
-    "todayOutputTokens": 1755897,
-    "asOf": "2026-09-14T12:38:31.601Z"
+    "todayInputTokens": 6246,
+    "todayOutputTokens": 1777648,
+    "asOf": "2026-09-14T12:42:58.806Z"
   },
-  "updatedAt": "2026-09-14T12:38:31.601Z"
+  "updatedAt": "2026-09-14T12:42:58.806Z"
 }
