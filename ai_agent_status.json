@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#98(WEBコイン記事ページ化)の品質チェック",
-      "startedAt": "2026-09-13T23:18:03.127Z",
-      "finishedAt": "2026-09-13T23:18:14.432Z"
+      "task": "PR#99(トップページCTA強化)の品質チェック",
+      "startedAt": "2026-09-14T03:23:01.763Z",
+      "finishedAt": "2026-09-14T03:23:04.779Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2956,
-    "todayOutputTokens": 715333,
-    "asOf": "2026-09-14T03:16:58.003Z"
+    "todayInputTokens": 3098,
+    "todayOutputTokens": 733522,
+    "asOf": "2026-09-14T03:23:14.134Z"
   },
-  "updatedAt": "2026-09-14T03:16:58.003Z"
+  "updatedAt": "2026-09-14T03:23:14.134Z"
 }
