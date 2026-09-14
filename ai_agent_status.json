@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "12章しきい値修正の最終確認",
-      "startedAt": "2026-09-14T06:13:49.192Z",
-      "finishedAt": "2026-09-14T06:13:51.097Z"
+      "task": "11-1節追記の最終レビュー",
+      "startedAt": "2026-09-14T11:18:15.045Z",
+      "finishedAt": "2026-09-14T11:18:17.403Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5082,
-    "todayOutputTokens": 1425200,
-    "asOf": "2026-09-14T11:14:26.152Z"
+    "todayInputTokens": 5132,
+    "todayOutputTokens": 1445512,
+    "asOf": "2026-09-14T11:18:28.096Z"
   },
-  "updatedAt": "2026-09-14T11:14:26.152Z"
+  "updatedAt": "2026-09-14T11:18:28.096Z"
 }
