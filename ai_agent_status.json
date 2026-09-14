@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Mを重ねても収益が単調に増えない理由を検証",
-      "startedAt": "2026-09-14T04:34:20.491Z",
-      "finishedAt": "2026-09-14T04:34:22.745Z"
+      "task": "Artifact HTMLに9章・11章の全面改訂を反映",
+      "startedAt": "2026-09-14T06:15:05.046Z",
+      "finishedAt": "2026-09-14T06:15:06.919Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4454,
-    "todayOutputTokens": 1206339,
-    "asOf": "2026-09-14T06:13:57.754Z"
+    "todayInputTokens": 4478,
+    "todayOutputTokens": 1213941,
+    "asOf": "2026-09-14T06:15:12.145Z"
   },
-  "updatedAt": "2026-09-14T06:13:57.754Z"
+  "updatedAt": "2026-09-14T06:15:12.145Z"
 }
