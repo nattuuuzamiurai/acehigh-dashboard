@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "内部参照の完全除去を最終レビュー",
-      "startedAt": "2026-09-14T11:30:53.215Z",
-      "finishedAt": "2026-09-14T11:30:56.254Z"
+      "task": "改訂履歴除去後の最終GO/NO-GO判定",
+      "startedAt": "2026-09-14T12:38:23.526Z",
+      "finishedAt": "2026-09-14T12:38:25.711Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6106,
-    "todayOutputTokens": 1731424,
-    "asOf": "2026-09-14T12:34:18.654Z"
+    "todayInputTokens": 6182,
+    "todayOutputTokens": 1755897,
+    "asOf": "2026-09-14T12:38:31.601Z"
   },
-  "updatedAt": "2026-09-14T12:34:18.654Z"
+  "updatedAt": "2026-09-14T12:38:31.601Z"
 }
