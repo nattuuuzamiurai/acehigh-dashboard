@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "WEBコイン規制記事のページ化",
-      "startedAt": "2026-09-13T22:46:55.261Z",
-      "finishedAt": "2026-09-13T22:46:58.718Z"
+      "task": "PR#97のリード文を中立化",
+      "startedAt": "2026-09-14T01:43:08.253Z",
+      "finishedAt": "2026-09-14T01:43:13.982Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2566,
-    "todayOutputTokens": 644835,
-    "asOf": "2026-09-14T01:41:55.579Z"
+    "todayInputTokens": 2578,
+    "todayOutputTokens": 648090,
+    "asOf": "2026-09-14T01:43:21.497Z"
   },
-  "updatedAt": "2026-09-14T01:41:55.579Z"
+  "updatedAt": "2026-09-14T01:43:21.497Z"
 }
