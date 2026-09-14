@@ -26,15 +26,15 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "アフィリエイト収益化の具体案調査",
-      "startedAt": "2026-09-14T11:06:07.935Z",
-      "finishedAt": "2026-09-14T11:06:10.871Z"
+      "task": "SNS・サイト戦略の企画",
+      "startedAt": "2026-09-14T17:52:38.802Z",
+      "finishedAt": "2026-09-14T17:52:40.548Z"
     },
     "marketing-lead": {
       "status": "idle",
-      "task": "「福岡 ポーカー」「福岡 ポーカー リング」SEO対策",
-      "startedAt": "2026-09-13T06:03:11.319Z",
-      "finishedAt": "2026-09-13T06:03:13.471Z"
+      "task": "収入管理・トラッキング設計",
+      "startedAt": "2026-09-14T17:52:49.875Z",
+      "finishedAt": "2026-09-14T17:52:51.294Z"
     },
     "Explore": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 564,
-    "todayOutputTokens": 271182,
-    "asOf": "2026-09-14T17:51:58.131Z"
+    "todayInputTokens": 608,
+    "todayOutputTokens": 291202,
+    "asOf": "2026-09-14T17:52:55.588Z"
   },
-  "updatedAt": "2026-09-14T17:51:58.131Z"
+  "updatedAt": "2026-09-14T17:52:55.588Z"
 }
