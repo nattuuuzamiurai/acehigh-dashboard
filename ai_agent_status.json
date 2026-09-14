@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "11-1節の追記を事実確認",
-      "startedAt": "2026-09-14T11:14:10.684Z",
-      "finishedAt": "2026-09-14T11:14:13.644Z"
+      "task": "改訂履歴除去後の事実確認",
+      "startedAt": "2026-09-14T12:32:18.379Z",
+      "finishedAt": "2026-09-14T12:32:20.521Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5768,
-    "todayOutputTokens": 1647384,
-    "asOf": "2026-09-14T12:24:13.584Z"
+    "todayInputTokens": 6058,
+    "todayOutputTokens": 1717786,
+    "asOf": "2026-09-14T12:32:26.399Z"
   },
-  "updatedAt": "2026-09-14T12:24:13.584Z"
+  "updatedAt": "2026-09-14T12:32:26.399Z"
 }
