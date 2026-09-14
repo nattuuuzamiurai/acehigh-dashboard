@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "12章のしきい値記述を再検証",
-      "startedAt": "2026-09-14T06:12:16.543Z",
-      "finishedAt": "2026-09-14T06:12:18.446Z"
+      "task": "11-1節の追記を事実確認",
+      "startedAt": "2026-09-14T11:14:10.684Z",
+      "finishedAt": "2026-09-14T11:14:13.644Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5046,
-    "todayOutputTokens": 1417463,
-    "asOf": "2026-09-14T11:12:39.778Z"
+    "todayInputTokens": 5082,
+    "todayOutputTokens": 1425200,
+    "asOf": "2026-09-14T11:14:26.152Z"
   },
-  "updatedAt": "2026-09-14T11:12:39.778Z"
+  "updatedAt": "2026-09-14T11:14:26.152Z"
 }
