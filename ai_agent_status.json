@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "改訂履歴除去版をArtifact HTMLへ反映",
-      "startedAt": "2026-09-14T12:42:51.480Z",
-      "finishedAt": "2026-09-14T12:42:53.518Z"
+      "task": "しきい値不一致の原因調査と修正",
+      "startedAt": "2026-09-14T13:21:10.904Z",
+      "finishedAt": "2026-09-14T13:21:12.744Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6452,
-    "todayOutputTokens": 1852336,
-    "asOf": "2026-09-14T12:58:40.802Z"
+    "todayInputTokens": 6468,
+    "todayOutputTokens": 1862226,
+    "asOf": "2026-09-14T13:21:17.972Z"
   },
-  "updatedAt": "2026-09-14T12:58:40.802Z"
+  "updatedAt": "2026-09-14T13:21:17.972Z"
 }
