@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "実測一本化版の最終レビュー",
-      "startedAt": "2026-09-14T06:07:42.576Z",
-      "finishedAt": "2026-09-14T06:07:44.451Z"
+      "task": "12章しきい値修正の最終確認",
+      "startedAt": "2026-09-14T06:13:49.192Z",
+      "finishedAt": "2026-09-14T06:13:51.097Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4410,
-    "todayOutputTokens": 1197878,
-    "asOf": "2026-09-14T06:12:25.490Z"
+    "todayInputTokens": 4454,
+    "todayOutputTokens": 1206339,
+    "asOf": "2026-09-14T06:13:57.754Z"
   },
-  "updatedAt": "2026-09-14T06:12:25.490Z"
+  "updatedAt": "2026-09-14T06:13:57.754Z"
 }
