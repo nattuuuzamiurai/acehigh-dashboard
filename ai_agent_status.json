@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "9章と11章を実測データのみに一本化",
-      "startedAt": "2026-09-14T05:47:51.960Z",
-      "finishedAt": "2026-09-14T05:47:53.782Z"
+      "task": "11-1節に単調性の方向性と予測の限界を追記",
+      "startedAt": "2026-09-14T11:12:23.957Z",
+      "finishedAt": "2026-09-14T11:12:26.647Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5020,
-    "todayOutputTokens": 1404674,
-    "asOf": "2026-09-14T11:11:03.731Z"
+    "todayInputTokens": 5046,
+    "todayOutputTokens": 1417463,
+    "asOf": "2026-09-14T11:12:39.778Z"
   },
-  "updatedAt": "2026-09-14T11:11:03.731Z"
+  "updatedAt": "2026-09-14T11:12:39.778Z"
 }
