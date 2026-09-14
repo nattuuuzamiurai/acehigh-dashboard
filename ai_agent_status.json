@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "WEBコイン規制ページの執筆",
-      "startedAt": "2026-09-13T22:23:35.089Z",
-      "finishedAt": "2026-09-13T22:23:38.747Z"
+      "task": "9章と11章を実測データのみに一本化",
+      "startedAt": "2026-09-14T05:47:51.960Z",
+      "finishedAt": "2026-09-14T05:47:53.782Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4010,
-    "todayOutputTokens": 1025664,
-    "asOf": "2026-09-14T04:48:15.067Z"
+    "todayInputTokens": 4038,
+    "todayOutputTokens": 1053143,
+    "asOf": "2026-09-14T05:48:01.645Z"
   },
-  "updatedAt": "2026-09-14T04:48:15.067Z"
+  "updatedAt": "2026-09-14T05:48:01.645Z"
 }
