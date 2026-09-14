@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "しきい値不一致の原因調査と修正",
-      "startedAt": "2026-09-14T13:21:10.904Z",
-      "finishedAt": "2026-09-14T13:21:12.744Z"
+      "task": "しきい値注記をArtifact HTMLへ反映",
+      "startedAt": "2026-09-14T13:34:09.195Z",
+      "finishedAt": "2026-09-14T13:34:11.356Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6664,
-    "todayOutputTokens": 1915023,
-    "asOf": "2026-09-14T13:31:23.854Z"
+    "todayInputTokens": 6698,
+    "todayOutputTokens": 1929731,
+    "asOf": "2026-09-14T13:34:18.140Z"
   },
-  "updatedAt": "2026-09-14T13:31:23.854Z"
+  "updatedAt": "2026-09-14T13:34:18.140Z"
 }
