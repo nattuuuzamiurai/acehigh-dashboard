@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "実測一本化版の全面事実確認",
-      "startedAt": "2026-09-14T05:59:12.316Z",
-      "finishedAt": "2026-09-14T05:59:14.336Z"
+      "task": "12章のしきい値記述を再検証",
+      "startedAt": "2026-09-14T06:12:16.543Z",
+      "finishedAt": "2026-09-14T06:12:18.446Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4388,
-    "todayOutputTokens": 1190626,
-    "asOf": "2026-09-14T06:11:39.670Z"
+    "todayInputTokens": 4410,
+    "todayOutputTokens": 1197878,
+    "asOf": "2026-09-14T06:12:25.490Z"
   },
-  "updatedAt": "2026-09-14T06:11:39.670Z"
+  "updatedAt": "2026-09-14T06:12:25.490Z"
 }
