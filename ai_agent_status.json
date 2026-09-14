@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "残存する内部ファイル名・関数名を記事全体から除去",
-      "startedAt": "2026-09-14T11:26:28.853Z",
-      "finishedAt": "2026-09-14T11:26:31.774Z"
+      "task": "記事内の改訂履歴・所感の露出を除去",
+      "startedAt": "2026-09-14T12:24:05.472Z",
+      "finishedAt": "2026-09-14T12:24:07.479Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5718,
-    "todayOutputTokens": 1628845,
-    "asOf": "2026-09-14T12:23:10.382Z"
+    "todayInputTokens": 5768,
+    "todayOutputTokens": 1647384,
+    "asOf": "2026-09-14T12:24:13.584Z"
   },
-  "updatedAt": "2026-09-14T12:23:10.382Z"
+  "updatedAt": "2026-09-14T12:24:13.584Z"
 }
