@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#100(説明文の折りたたみ化)の品質チェック",
-      "startedAt": "2026-09-14T03:48:57.962Z",
-      "finishedAt": "2026-09-14T03:49:00.622Z"
+      "task": "実測一本化版の全面事実確認",
+      "startedAt": "2026-09-14T05:59:12.316Z",
+      "finishedAt": "2026-09-14T05:59:14.336Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4062,
-    "todayOutputTokens": 1062862,
-    "asOf": "2026-09-14T05:51:24.113Z"
+    "todayInputTokens": 4166,
+    "todayOutputTokens": 1127642,
+    "asOf": "2026-09-14T05:59:20.889Z"
   },
-  "updatedAt": "2026-09-14T05:51:24.113Z"
+  "updatedAt": "2026-09-14T05:59:20.889Z"
 }
