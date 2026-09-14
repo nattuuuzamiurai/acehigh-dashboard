@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Artifact HTMLに9章・11章の全面改訂を反映",
-      "startedAt": "2026-09-14T06:15:05.046Z",
-      "finishedAt": "2026-09-14T06:15:06.919Z"
+      "task": "スルー回数増加に伴うM低下を検証し5-6スルーを予測",
+      "startedAt": "2026-09-14T11:04:34.205Z",
+      "finishedAt": "2026-09-14T11:04:43.849Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4808,
-    "todayOutputTokens": 1307774,
-    "asOf": "2026-09-14T06:34:45.597Z"
+    "todayInputTokens": 4830,
+    "todayOutputTokens": 1331357,
+    "asOf": "2026-09-14T11:04:58.488Z"
   },
-  "updatedAt": "2026-09-14T06:34:45.597Z"
+  "updatedAt": "2026-09-14T11:04:58.488Z"
 }
