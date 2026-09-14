@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "記事とArtifact HTMLの最新差分をマージ",
-      "startedAt": "2026-09-14T11:37:36.071Z",
-      "finishedAt": "2026-09-14T11:37:37.937Z"
+      "task": "サイトマップ自動再送信の実装",
+      "startedAt": "2026-09-14T12:22:54.989Z",
+      "finishedAt": "2026-09-14T12:22:58.065Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5670,
-    "todayOutputTokens": 1605240,
-    "asOf": "2026-09-14T12:19:59.896Z"
+    "todayInputTokens": 5718,
+    "todayOutputTokens": 1628845,
+    "asOf": "2026-09-14T12:23:10.382Z"
   },
-  "updatedAt": "2026-09-14T12:19:59.896Z"
+  "updatedAt": "2026-09-14T12:23:10.382Z"
 }
