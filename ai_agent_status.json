@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "しきい値注記をArtifact HTMLへ反映",
-      "startedAt": "2026-09-14T13:34:09.195Z",
-      "finishedAt": "2026-09-14T13:34:11.356Z"
+      "task": "note.com入稿用パッケージを作成",
+      "startedAt": "2026-09-14T14:40:50.630Z",
+      "finishedAt": "2026-09-14T14:40:53.109Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6966,
-    "todayOutputTokens": 2079646,
-    "asOf": "2026-09-14T14:30:53.108Z"
+    "todayInputTokens": 6994,
+    "todayOutputTokens": 2093439,
+    "asOf": "2026-09-14T14:40:59.028Z"
   },
-  "updatedAt": "2026-09-14T14:30:53.108Z"
+  "updatedAt": "2026-09-14T14:40:59.028Z"
 }
