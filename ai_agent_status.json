@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "note.com入稿用パッケージを作成",
-      "startedAt": "2026-09-14T14:40:50.630Z",
-      "finishedAt": "2026-09-14T14:40:53.109Z"
+      "task": "記事内の全42表を画像化",
+      "startedAt": "2026-09-14T15:04:51.682Z",
+      "finishedAt": "2026-09-14T15:04:53.561Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 12,
-    "todayOutputTokens": 7376,
-    "asOf": "2026-09-14T15:01:24.022Z"
+    "todayInputTokens": 28,
+    "todayOutputTokens": 19047,
+    "asOf": "2026-09-14T15:05:00.072Z"
   },
-  "updatedAt": "2026-09-14T15:01:24.022Z"
+  "updatedAt": "2026-09-14T15:05:00.072Z"
 }
