@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "実測データのみで交差点Mを算出",
-      "startedAt": "2026-09-14T03:33:33.883Z",
-      "finishedAt": "2026-09-14T03:33:38.193Z"
+      "task": "トップページの説明文を折りたたみ化",
+      "startedAt": "2026-09-14T03:42:49.541Z",
+      "finishedAt": "2026-09-14T03:42:53.481Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3336,
-    "todayOutputTokens": 782245,
-    "asOf": "2026-09-14T03:34:22.846Z"
+    "todayInputTokens": 3438,
+    "todayOutputTokens": 821758,
+    "asOf": "2026-09-14T03:43:02.548Z"
   },
-  "updatedAt": "2026-09-14T03:34:22.846Z"
+  "updatedAt": "2026-09-14T03:43:02.548Z"
 }
