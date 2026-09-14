@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "11-1節追記の最終レビュー",
-      "startedAt": "2026-09-14T11:18:15.045Z",
-      "finishedAt": "2026-09-14T11:18:17.403Z"
+      "task": "語り口修正の最終レビュー",
+      "startedAt": "2026-09-14T11:24:10.880Z",
+      "finishedAt": "2026-09-14T11:24:13.625Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5132,
-    "todayOutputTokens": 1445512,
-    "asOf": "2026-09-14T11:18:28.096Z"
+    "todayInputTokens": 5226,
+    "todayOutputTokens": 1470154,
+    "asOf": "2026-09-14T11:24:30.023Z"
   },
-  "updatedAt": "2026-09-14T11:18:28.096Z"
+  "updatedAt": "2026-09-14T11:24:30.023Z"
 }
