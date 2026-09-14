@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "改訂履歴除去後の事実確認",
-      "startedAt": "2026-09-14T12:32:18.379Z",
-      "finishedAt": "2026-09-14T12:32:20.521Z"
+      "task": "しきい値注記追加の事実確認",
+      "startedAt": "2026-09-14T13:26:14.636Z",
+      "finishedAt": "2026-09-14T13:26:16.671Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 6468,
-    "todayOutputTokens": 1862226,
-    "asOf": "2026-09-14T13:21:17.972Z"
+    "todayInputTokens": 6600,
+    "todayOutputTokens": 1888652,
+    "asOf": "2026-09-14T13:26:23.905Z"
   },
-  "updatedAt": "2026-09-14T13:21:17.972Z"
+  "updatedAt": "2026-09-14T13:26:23.905Z"
 }
