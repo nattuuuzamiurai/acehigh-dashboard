@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "11-1節に単調性の方向性と予測の限界を追記",
-      "startedAt": "2026-09-14T11:12:23.957Z",
-      "finishedAt": "2026-09-14T11:12:26.647Z"
+      "task": "残存する内部ファイル名・関数名を記事全体から除去",
+      "startedAt": "2026-09-14T11:26:28.853Z",
+      "finishedAt": "2026-09-14T11:26:31.774Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 5226,
-    "todayOutputTokens": 1470154,
-    "asOf": "2026-09-14T11:24:30.023Z"
+    "todayInputTokens": 5262,
+    "todayOutputTokens": 1480787,
+    "asOf": "2026-09-14T11:26:44.571Z"
   },
-  "updatedAt": "2026-09-14T11:24:30.023Z"
+  "updatedAt": "2026-09-14T11:26:44.571Z"
 }
