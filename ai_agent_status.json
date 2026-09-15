@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "X投稿文の作成",
-      "startedAt": "2026-09-14T18:01:00.435Z",
-      "finishedAt": "2026-09-14T18:01:01.954Z"
+      "task": "サイト掲載用コピーの作成",
+      "startedAt": "2026-09-15T03:27:22.497Z",
+      "finishedAt": "2026-09-15T03:27:23.917Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1316,
-    "todayOutputTokens": 617882,
-    "asOf": "2026-09-15T03:21:51.714Z"
+    "todayInputTokens": 1348,
+    "todayOutputTokens": 646898,
+    "asOf": "2026-09-15T03:27:28.287Z"
   },
-  "updatedAt": "2026-09-15T03:21:51.714Z"
+  "updatedAt": "2026-09-15T03:27:28.287Z"
 }
