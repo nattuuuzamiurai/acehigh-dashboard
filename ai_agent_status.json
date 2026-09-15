@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "利用規約ページの実装とPR作成",
-      "startedAt": "2026-09-15T15:10:21.905Z",
-      "finishedAt": "2026-09-15T15:10:24.115Z"
+      "task": "Xアカウント追加とIGアイコン修正",
+      "startedAt": "2026-09-15T15:14:57.167Z",
+      "finishedAt": "2026-09-15T15:14:59.139Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 490,
-    "todayOutputTokens": 235504,
-    "asOf": "2026-09-15T15:10:44.002Z"
+    "todayInputTokens": 784,
+    "todayOutputTokens": 329001,
+    "asOf": "2026-09-15T15:15:05.634Z"
   },
-  "updatedAt": "2026-09-15T15:10:44.002Z"
+  "updatedAt": "2026-09-15T15:15:05.634Z"
 }
