@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "SNS刷新案のコンプライアンスチェック",
-      "startedAt": "2026-09-15T15:10:35.229Z",
-      "finishedAt": "2026-09-15T15:10:36.983Z"
+      "task": "追加4ページの最終レビュー",
+      "startedAt": "2026-09-15T15:16:43.666Z",
+      "finishedAt": "2026-09-15T15:16:45.472Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 914,
-    "todayOutputTokens": 364895,
-    "asOf": "2026-09-15T15:16:29.557Z"
+    "todayInputTokens": 958,
+    "todayOutputTokens": 372357,
+    "asOf": "2026-09-15T15:16:49.769Z"
   },
-  "updatedAt": "2026-09-15T15:16:29.557Z"
+  "updatedAt": "2026-09-15T15:16:49.769Z"
 }
