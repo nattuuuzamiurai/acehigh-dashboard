@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "ダッシュボードにノートタブを追加",
-      "startedAt": "2026-09-15T01:50:02.449Z",
-      "finishedAt": "2026-09-15T01:50:08.585Z"
+      "task": "パチスロ実データサイトの構築",
+      "startedAt": "2026-09-15T03:31:01.581Z",
+      "finishedAt": "2026-09-15T03:31:03.112Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1348,
-    "todayOutputTokens": 646898,
-    "asOf": "2026-09-15T03:27:28.287Z"
+    "todayInputTokens": 1390,
+    "todayOutputTokens": 674854,
+    "asOf": "2026-09-15T03:31:06.822Z"
   },
-  "updatedAt": "2026-09-15T03:27:28.287Z"
+  "updatedAt": "2026-09-15T03:31:06.822Z"
 }
