@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#102の再判定",
-      "startedAt": "2026-09-15T15:41:37.112Z",
-      "finishedAt": "2026-09-15T15:41:39.650Z"
+      "task": "PR #103の最終GO/NO-GO判定",
+      "startedAt": "2026-09-15T15:43:11.426Z",
+      "finishedAt": "2026-09-15T15:43:33.625Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2238,
-    "todayOutputTokens": 622802,
-    "asOf": "2026-09-15T15:41:44.113Z"
+    "todayInputTokens": 2300,
+    "todayOutputTokens": 651079,
+    "asOf": "2026-09-15T15:43:38.474Z"
   },
-  "updatedAt": "2026-09-15T15:41:44.113Z"
+  "updatedAt": "2026-09-15T15:43:38.474Z"
 }
