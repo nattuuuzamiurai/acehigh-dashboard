@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "mainの生成物ドリフトを解消",
-      "startedAt": "2026-09-15T16:57:28.117Z",
-      "finishedAt": "2026-09-15T16:57:30.497Z"
+      "task": "店舗写真の表示改善4件を実装",
+      "startedAt": "2026-09-15T17:01:20.845Z",
+      "finishedAt": "2026-09-15T17:01:23.665Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4154,
-    "todayOutputTokens": 1121029,
-    "asOf": "2026-09-15T17:00:32.279Z"
+    "todayInputTokens": 4214,
+    "todayOutputTokens": 1135818,
+    "asOf": "2026-09-15T17:01:31.619Z"
   },
-  "updatedAt": "2026-09-15T17:00:32.279Z"
+  "updatedAt": "2026-09-15T17:01:31.619Z"
 }
