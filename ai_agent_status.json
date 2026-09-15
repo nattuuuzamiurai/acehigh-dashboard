@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "競合サイトのデータ・画像を流用してdata.js拡充",
-      "startedAt": "2026-09-15T14:56:37.729Z",
-      "finishedAt": "2026-09-15T14:56:57.649Z"
+      "task": "利用規約ページの実装とPR作成",
+      "startedAt": "2026-09-15T15:10:21.905Z",
+      "finishedAt": "2026-09-15T15:10:24.115Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -14,21 +14,21 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "スロットサイトの最終レビュー",
-      "startedAt": "2026-09-15T04:16:01.031Z",
-      "finishedAt": "2026-09-15T04:16:02.494Z"
+      "task": "SNS刷新案のコンプライアンスチェック",
+      "startedAt": "2026-09-15T15:10:35.229Z",
+      "finishedAt": "2026-09-15T15:10:36.983Z"
     },
     "content-writer": {
       "status": "idle",
-      "task": "サイト追加コンテンツの執筆",
-      "startedAt": "2026-09-15T14:48:32.718Z",
-      "finishedAt": "2026-09-15T14:48:35.227Z"
+      "task": "利用規約の条文を執筆",
+      "startedAt": "2026-09-15T15:07:25.002Z",
+      "finishedAt": "2026-09-15T15:09:13.657Z"
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "利用規約の構成案を作成",
       "startedAt": "2026-09-15T15:03:48.232Z",
-      "finishedAt": null
+      "finishedAt": "2026-09-15T15:06:14.707Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 182,
-    "todayOutputTokens": 83610,
-    "asOf": "2026-09-15T15:04:00.182Z"
+    "todayInputTokens": 464,
+    "todayOutputTokens": 212334,
+    "asOf": "2026-09-15T15:10:29.976Z"
   },
-  "updatedAt": "2026-09-15T15:04:00.182Z"
+  "updatedAt": "2026-09-15T15:10:29.976Z"
 }
