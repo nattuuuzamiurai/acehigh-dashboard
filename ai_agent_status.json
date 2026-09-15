@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#102 sitemap修正の再チェック",
-      "startedAt": "2026-09-15T15:37:29.461Z",
-      "finishedAt": "2026-09-15T15:37:31.344Z"
+      "task": "PR #103修正版の再チェック",
+      "startedAt": "2026-09-15T16:04:15.953Z",
+      "finishedAt": "2026-09-15T16:04:18.218Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2528,
-    "todayOutputTokens": 746549,
-    "asOf": "2026-09-15T15:55:06.533Z"
+    "todayInputTokens": 2664,
+    "todayOutputTokens": 770122,
+    "asOf": "2026-09-15T16:04:22.866Z"
   },
-  "updatedAt": "2026-09-15T15:55:06.533Z"
+  "updatedAt": "2026-09-15T16:04:22.866Z"
 }
