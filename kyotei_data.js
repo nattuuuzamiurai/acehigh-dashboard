@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-09-15 11:06",
+  "updated": "2026-09-15 11:34",
   "today_label": "2026年9月15日",
   "pred_date": "2026/09/15",
   "pred_is_today": true,
