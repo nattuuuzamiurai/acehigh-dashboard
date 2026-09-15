@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "公式サイトバッジをアイコン化",
-      "startedAt": "2026-09-15T16:46:11.152Z",
-      "finishedAt": "2026-09-15T16:46:13.434Z"
+      "task": "mainの生成物ドリフトを解消",
+      "startedAt": "2026-09-15T16:57:28.117Z",
+      "finishedAt": "2026-09-15T16:57:30.497Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3880,
-    "todayOutputTokens": 1046012,
-    "asOf": "2026-09-15T16:57:03.882Z"
+    "todayInputTokens": 3920,
+    "todayOutputTokens": 1056075,
+    "asOf": "2026-09-15T16:57:38.091Z"
   },
-  "updatedAt": "2026-09-15T16:57:03.882Z"
+  "updatedAt": "2026-09-15T16:57:38.091Z"
 }
