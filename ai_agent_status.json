@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "追加コンテンツのサイト組み込み",
-      "startedAt": "2026-09-15T14:55:13.454Z",
-      "finishedAt": "2026-09-15T14:55:15.313Z"
+      "task": "競合サイトのデータ・画像を流用してdata.js拡充",
+      "startedAt": "2026-09-15T14:56:37.729Z",
+      "finishedAt": "2026-09-15T14:56:57.649Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2528,
-    "todayOutputTokens": 1103959,
-    "asOf": "2026-09-15T14:56:18.253Z"
+    "todayInputTokens": 2546,
+    "todayOutputTokens": 1124797,
+    "asOf": "2026-09-15T14:57:02.698Z"
   },
-  "updatedAt": "2026-09-15T14:56:18.253Z"
+  "updatedAt": "2026-09-15T14:57:02.698Z"
 }
