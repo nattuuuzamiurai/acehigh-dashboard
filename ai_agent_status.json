@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "店舗写真の表示改善4件を実装",
-      "startedAt": "2026-09-15T17:01:20.845Z",
-      "finishedAt": "2026-09-15T17:01:23.665Z"
+      "task": "200G〜999G統合グラフのデータ検証・生成",
+      "startedAt": "2026-09-15T17:06:19.215Z",
+      "finishedAt": "2026-09-15T17:06:21.442Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4504,
-    "todayOutputTokens": 1194510,
-    "asOf": "2026-09-15T17:05:02.260Z"
+    "todayInputTokens": 4822,
+    "todayOutputTokens": 1271483,
+    "asOf": "2026-09-15T17:08:58.046Z"
   },
-  "updatedAt": "2026-09-15T17:05:02.260Z"
+  "updatedAt": "2026-09-15T17:08:58.046Z"
 }
