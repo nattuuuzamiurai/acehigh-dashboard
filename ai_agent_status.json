@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "新リポジトリでの最終確認",
-      "startedAt": "2026-09-15T04:13:15.630Z",
-      "finishedAt": "2026-09-15T04:13:17.154Z"
+      "task": "追加4ページの品質チェック",
+      "startedAt": "2026-09-15T15:03:53.944Z",
+      "finishedAt": "2026-09-15T15:03:55.751Z"
     },
     "review-lead": {
       "status": "idle",
@@ -25,10 +25,10 @@
       "finishedAt": "2026-09-15T14:48:35.227Z"
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "SNS・サイト戦略の企画",
-      "startedAt": "2026-09-14T17:52:38.802Z",
-      "finishedAt": "2026-09-14T17:52:40.548Z"
+      "status": "running",
+      "task": "利用規約の構成案を作成",
+      "startedAt": "2026-09-15T15:03:48.232Z",
+      "finishedAt": null
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 108,
-    "todayOutputTokens": 47655,
-    "asOf": "2026-09-15T15:02:15.773Z"
+    "todayInputTokens": 182,
+    "todayOutputTokens": 83610,
+    "asOf": "2026-09-15T15:04:00.182Z"
   },
-  "updatedAt": "2026-09-15T15:02:15.773Z"
+  "updatedAt": "2026-09-15T15:04:00.182Z"
 }
