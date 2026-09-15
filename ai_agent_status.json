@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "スロットサイトの再チェック",
-      "startedAt": "2026-09-15T04:06:42.193Z",
-      "finishedAt": "2026-09-15T04:06:43.723Z"
+      "task": "新リポジトリでの最終確認",
+      "startedAt": "2026-09-15T04:13:15.630Z",
+      "finishedAt": "2026-09-15T04:13:17.154Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1986,
-    "todayOutputTokens": 821850,
-    "asOf": "2026-09-15T04:06:46.479Z"
+    "todayInputTokens": 2120,
+    "todayOutputTokens": 858741,
+    "asOf": "2026-09-15T04:13:21.164Z"
   },
-  "updatedAt": "2026-09-15T04:06:46.479Z"
+  "updatedAt": "2026-09-15T04:13:21.164Z"
 }
