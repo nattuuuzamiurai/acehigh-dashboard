@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "追加コンテンツのサイト組み込み",
-      "startedAt": "2026-09-15T14:54:41.516Z",
-      "finishedAt": null
+      "startedAt": "2026-09-15T14:55:13.454Z",
+      "finishedAt": "2026-09-15T14:55:15.313Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2492,
-    "todayOutputTokens": 1090576,
-    "asOf": "2026-09-15T14:54:41.313Z"
+    "todayInputTokens": 2524,
+    "todayOutputTokens": 1098079,
+    "asOf": "2026-09-15T14:55:20.001Z"
   },
-  "updatedAt": "2026-09-15T14:54:41.313Z"
+  "updatedAt": "2026-09-15T14:55:20.001Z"
 }
