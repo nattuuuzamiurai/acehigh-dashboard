@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Xアカウント・IGアイコンPRのレビュー部最終判定",
-      "startedAt": "2026-09-15T15:38:11.103Z",
-      "finishedAt": "2026-09-15T15:38:13.394Z"
+      "task": "PR#102の再判定",
+      "startedAt": "2026-09-15T15:41:37.112Z",
+      "finishedAt": "2026-09-15T15:41:39.650Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2106,
-    "todayOutputTokens": 583777,
-    "asOf": "2026-09-15T15:38:18.478Z"
+    "todayInputTokens": 2238,
+    "todayOutputTokens": 622802,
+    "asOf": "2026-09-15T15:41:44.113Z"
   },
-  "updatedAt": "2026-09-15T15:38:18.478Z"
+  "updatedAt": "2026-09-15T15:41:44.113Z"
 }
