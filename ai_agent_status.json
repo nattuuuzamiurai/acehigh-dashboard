@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Xアカウント追加とIGアイコン修正",
-      "startedAt": "2026-09-15T15:14:57.167Z",
-      "finishedAt": "2026-09-15T15:14:59.139Z"
+      "task": "PR#102のsitemap.xml修正",
+      "startedAt": "2026-09-15T15:33:27.601Z",
+      "finishedAt": "2026-09-15T15:33:29.847Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1598,
-    "todayOutputTokens": 498677,
-    "asOf": "2026-09-15T15:29:36.121Z"
+    "todayInputTokens": 1816,
+    "todayOutputTokens": 538318,
+    "asOf": "2026-09-15T15:33:37.192Z"
   },
-  "updatedAt": "2026-09-15T15:29:36.121Z"
+  "updatedAt": "2026-09-15T15:33:37.192Z"
 }
