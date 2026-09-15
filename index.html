@@ -671,6 +671,7 @@
     <div class="ni" onclick="showPage('kyotei')"><span class="ni-ic">🚤</span>競艇予測</div>
     <div class="ni" onclick="showPage('chaipo')"><span class="ni-ic">🃏</span>チャイポ OFC</div>
     <div class="ni" onclick="showPage('affiliate')"><span class="ni-ic">🔗</span>アフィリエイト</div>
+    <div class="ni" onclick="showPage('note')"><span class="ni-ic">📝</span>ノート</div>
     <a class="ni" href="crypto_arbitrage.html" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">⇄</span>裁定機会モニター</a>
     <div class="ni" onclick="showPage('slot')"><span class="ni-ic">🎰</span>スロット</div>
     <a class="ni" href="https://rusu-calendar.ukenthe.workers.dev" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">🏠</span>スマートホーム</a>
@@ -1197,6 +1198,30 @@
         <span style="font-size:.78em;color:var(--mut);">ニッチアフィリエイトサイト事業 / niche_sites_revenue.json から自動反映</span>
       </div>
       <div class="proj-grid mt12" id="aff-grid"></div>
+    </div>
+
+    <!-- ===== note記事販売事業 ===== -->
+    <div class="page" id="page-note">
+      <div class="g4" id="note-stats" style="margin-bottom:18px;"></div>
+      <div class="sh">
+        <h2>記事別 売上・インプレッション</h2>
+        <span style="font-size:.78em;color:var(--mut);">note記事販売事業 / note_content_revenue.json から自動反映(手動更新)</span>
+      </div>
+      <div class="tw mt12">
+        <table>
+          <thead><tr>
+            <th>記事タイトル</th>
+            <th>公開日</th>
+            <th style="text-align:right">価格</th>
+            <th style="text-align:right">売上</th>
+            <th style="text-align:right">インプレッション</th>
+            <th style="text-align:right">購入数</th>
+            <th style="text-align:right">売り率</th>
+          </tr></thead>
+          <tbody id="note-tbody"><tr><td colspan="7" class="empty">読み込み中…</td></tr></tbody>
+        </table>
+      </div>
+      <div style="font-size:.74em;color:var(--mut);margin-top:10px;" id="note-updated"></div>
     </div>
 
   </div>
@@ -2131,7 +2156,7 @@ function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業',slot:'スロット'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業',slot:'スロット',note:'note記事販売事業'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
@@ -2143,6 +2168,7 @@ function showPage(name) {
   if (name==='slot') renderSlot();
   if (name==='chaipo-board') cbRenderBoard();
   if (name==='affiliate') renderAffiliateSites();
+  if (name==='note') renderNoteContent();
 }
 
 // ===== TASKS =====
@@ -4122,6 +4148,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   pollAffiliateStatus();
   setInterval(pollAffiliateStatus, 15000);
 
+  // note記事販売事業: 記事ごとの売上・インプレッション・購入数データ
+  pollNoteContentStatus();
+  setInterval(pollNoteContentStatus, 15000);
+
 });
 
 // お問い合わせ状況(件数のみ)。アフィリ欄の運用サイトカード内に表示する。
@@ -4310,6 +4340,75 @@ function renderAffiliateSites() {
       </div>
     </div>`;
   }).join('');
+}
+
+// ===== note記事販売事業(note.comでの有料記事販売) =====
+// note_content_revenue.json をポーリングして得た記事ごとの売上・インプレッション・購入数データ。
+// note.comには売上・インプレッションを自動取得できる公式APIが無いため、このJSONは手動更新。
+// 取得できるまではnull。
+let NOTE_DATA = null;
+
+async function pollNoteContentStatus() {
+  try {
+    const res = await fetch('note_content_revenue.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) return;
+    NOTE_DATA = await res.json();
+    renderNoteContent();
+  } catch (e) {
+    // 取得失敗時は空表示のまま(握りつぶす)
+  }
+}
+
+function renderNoteContent() {
+  const statsEl = document.getElementById('note-stats');
+  const tbodyEl = document.getElementById('note-tbody');
+  const updatedEl = document.getElementById('note-updated');
+  if (!statsEl || !tbodyEl) return;
+  const articles = (NOTE_DATA && Array.isArray(NOTE_DATA.articles)) ? NOTE_DATA.articles : [];
+
+  const totalRevenue = articles.reduce((s, a) => s + (Number(a.metrics && a.metrics.revenue) || 0), 0);
+  const hasImpressions = articles.some(a => a.metrics && a.metrics.impressions != null);
+  const totalImpressions = articles.reduce((s, a) => s + (Number(a.metrics && a.metrics.impressions) || 0), 0);
+  const totalPurchases = articles.reduce((s, a) => s + (Number(a.metrics && a.metrics.purchases) || 0), 0);
+  const overallRate = (hasImpressions && totalImpressions > 0) ? (totalPurchases / totalImpressions * 100) : null;
+
+  statsEl.innerHTML =
+    `<div class="chip"><div class="n" style="color:${totalRevenue > 0 ? 'var(--grn)' : 'var(--mut)'}">¥${totalRevenue.toLocaleString()}</div><div class="l">今月の総売上</div></div>` +
+    `<div class="chip"><div class="n" style="color:var(--txt)">${hasImpressions ? totalImpressions.toLocaleString() : '-'}</div><div class="l">総インプレッション</div></div>` +
+    `<div class="chip"><div class="n" style="color:var(--acc)">${totalPurchases.toLocaleString()}</div><div class="l">総購入数</div></div>` +
+    `<div class="chip"><div class="n" style="color:var(--txt)">${overallRate != null ? overallRate.toFixed(2) + '%' : '-'}</div><div class="l">売り率(購入率)</div></div>`;
+
+  if (!articles.length) {
+    tbodyEl.innerHTML = '<tr><td colspan="7" class="empty">記事データがまだありません</td></tr>';
+  } else {
+    tbodyEl.innerHTML = articles.map(a => {
+      const m = a.metrics || {};
+      const rev = Number(m.revenue) || 0;
+      const imp = m.impressions;
+      const purchases = Number(m.purchases) || 0;
+      const rate = (imp != null && imp > 0) ? (purchases / imp * 100) : null;
+      const badge = a.needsManualUpdate
+        ? '<span style="display:inline-block;margin-left:8px;font-size:.68em;font-weight:700;color:var(--amb);border:1px solid var(--amb);border-radius:20px;padding:1px 8px;vertical-align:middle;">要手動更新</span>'
+        : '';
+      const titleHtml = a.url
+        ? `<a href="${aiEsc(a.url)}" target="_blank" rel="noopener" style="color:var(--acc);text-decoration:none;font-weight:600;">${aiEsc(a.title)} <span style="font-size:.8em;opacity:.6;">↗</span></a>`
+        : aiEsc(a.title || '');
+      return `<tr>
+        <td>${titleHtml}${badge}</td>
+        <td>${aiEsc(a.publishedAt || '-')}</td>
+        <td style="text-align:right;">${a.price != null ? '¥' + Number(a.price).toLocaleString() : '-'}</td>
+        <td style="text-align:right;">¥${rev.toLocaleString()}</td>
+        <td style="text-align:right;">${imp != null ? Number(imp).toLocaleString() : '-'}</td>
+        <td style="text-align:right;">${purchases.toLocaleString()}</td>
+        <td style="text-align:right;">${rate != null ? rate.toFixed(2) + '%' : '-'}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  const updatedAt = (NOTE_DATA && NOTE_DATA.lastUpdatedAt) ? NOTE_DATA.lastUpdatedAt : '';
+  updatedEl.textContent = updatedAt
+    ? `最終更新: ${updatedAt}(note公式APIが無いため手動更新)`
+    : '(note公式APIが無いため手動更新)';
 }
 
 let chaipoRunning = false;

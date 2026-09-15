@@ -1,0 +1,26 @@
+{
+  "_comment": "note記事販売事業(note.com)の収益トラッキング。note.comには売上・インプレッション等を自動取得できる公式APIが無いため、このファイルは手動更新(note.comクリエイターダッシュボードの「アクセス状況」ページ・「売上」ページを目視確認して転記する)。値を推測・補完してはならず、未確認の項目はnullとする。articlesは記事ごとに1エントリで、今後パチスロ他機種の記事シリーズが増えるたびに配列へ追加していく。各記事のmetricsは現時点の実績値(売上・インプレッション・購入数)を表す。ダッシュボードの月次サマリはarticles配列を単純合算して算出するだけの設計なので、月をまたいで『今月分』のみを厳密に切り出したい場合は、更新担当者が月初にmetricsを当月分に付け替える(前月分はarticles[].monthlyLogに退避する等)運用上の工夫が必要になる。現状はサービス開始直後で全記事が同一月内のため、この単純合算で問題ない。",
+  "platform": "note.com",
+  "creatorAccount": "ホブゴブリン",
+  "lastUpdatedAt": "2026-09-15T00:00:00+09:00",
+  "articles": [
+    {
+      "id": "okidoki-gorgeous-realdata",
+      "title": "沖ドキ！ゴージャス実データ解析",
+      "url": "https://note.com/hobgoblin/n/nd62c1658bcf8",
+      "genre": "パチンコ・スロット攻略",
+      "publishedAt": "2026-09-15",
+      "price": 1980,
+      "status": "販売中",
+      "metrics": {
+        "asOf": null,
+        "revenue": 0,
+        "impressions": null,
+        "purchases": 0,
+        "conversionRate": null
+      },
+      "needsManualUpdate": true,
+      "note": "2026-09-15公開当日。note.comクリエイターダッシュボードでの実績確認前のため、価格以外の数値はすべて未計測(0/null)。実数が判明次第、経営管理オフィス側で手動更新する。"
+    }
+  ]
+}
