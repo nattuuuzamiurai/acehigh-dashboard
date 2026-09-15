@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "スロットサイトの指摘事項修正",
-      "startedAt": "2026-09-15T03:54:55.943Z",
-      "finishedAt": "2026-09-15T03:55:15.507Z"
+      "status": "running",
+      "task": "追加コンテンツのサイト組み込み",
+      "startedAt": "2026-09-15T14:54:41.516Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2468,
-    "todayOutputTokens": 1084504,
-    "asOf": "2026-09-15T14:54:20.618Z"
+    "todayInputTokens": 2492,
+    "todayOutputTokens": 1090576,
+    "asOf": "2026-09-15T14:54:41.313Z"
   },
-  "updatedAt": "2026-09-15T14:54:20.618Z"
+  "updatedAt": "2026-09-15T14:54:41.313Z"
 }
