@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ノートタブPRの動作確認",
-      "startedAt": "2026-09-15T01:58:57.058Z",
-      "finishedAt": "2026-09-15T01:59:02.843Z"
+      "task": "スロットサイトの動作・事実確認",
+      "startedAt": "2026-09-15T03:44:33.509Z",
+      "finishedAt": "2026-09-15T03:44:35.099Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1390,
-    "todayOutputTokens": 674854,
-    "asOf": "2026-09-15T03:31:06.822Z"
+    "todayInputTokens": 1618,
+    "todayOutputTokens": 736151,
+    "asOf": "2026-09-15T03:44:39.711Z"
   },
-  "updatedAt": "2026-09-15T03:31:06.822Z"
+  "updatedAt": "2026-09-15T03:44:39.711Z"
 }
