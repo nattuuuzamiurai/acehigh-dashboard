@@ -8,15 +8,15 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR #111の動作確認・品質チェック",
-      "startedAt": "2026-09-16T04:41:44.504Z",
-      "finishedAt": "2026-09-16T04:41:47.847Z"
+      "task": "PR #112の動作確認・品質チェック",
+      "startedAt": "2026-09-16T04:59:33.559Z",
+      "finishedAt": "2026-09-16T04:59:36.369Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR #111の最終GO/NO-GO判定",
-      "startedAt": "2026-09-16T04:46:30.869Z",
-      "finishedAt": "2026-09-16T04:46:33.417Z"
+      "task": "PR #109の最終確認(コンフリクト解消後)",
+      "startedAt": "2026-09-16T04:59:58.840Z",
+      "finishedAt": "2026-09-16T05:00:01.224Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 9408,
-    "todayOutputTokens": 2253045,
-    "asOf": "2026-09-16T04:51:30.790Z"
+    "todayInputTokens": 9654,
+    "todayOutputTokens": 2292324,
+    "asOf": "2026-09-16T05:00:09.216Z"
   },
-  "updatedAt": "2026-09-16T04:51:30.790Z"
+  "updatedAt": "2026-09-16T05:00:09.216Z"
 }
