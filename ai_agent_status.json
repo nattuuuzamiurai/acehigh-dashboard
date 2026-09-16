@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "Week10企画立案(AI実務ナビ)",
-      "startedAt": "2026-09-16T15:52:58.251Z",
-      "finishedAt": "2026-09-16T15:53:00.214Z"
+      "task": "店舗向け営業ページの企画・サービス案検討",
+      "startedAt": "2026-09-16T16:53:41.145Z",
+      "finishedAt": "2026-09-16T16:53:48.687Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1988,
-    "todayOutputTokens": 1045497,
-    "asOf": "2026-09-16T16:49:33.194Z"
+    "todayInputTokens": 2080,
+    "todayOutputTokens": 1107719,
+    "asOf": "2026-09-16T16:53:59.014Z"
   },
-  "updatedAt": "2026-09-16T16:49:33.194Z"
+  "updatedAt": "2026-09-16T16:53:59.014Z"
 }
