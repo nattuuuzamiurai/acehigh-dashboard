@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "sitemap基準変更+コーディング規約追記",
-      "startedAt": "2026-09-16T06:30:52.885Z",
-      "finishedAt": "2026-09-16T06:30:58.432Z"
+      "task": "PR#114のマージコンフリクト解消",
+      "startedAt": "2026-09-16T07:06:41.328Z",
+      "finishedAt": "2026-09-16T07:06:43.729Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 11308,
-    "todayOutputTokens": 2617684,
-    "asOf": "2026-09-16T06:54:27.965Z"
+    "todayInputTokens": 11524,
+    "todayOutputTokens": 2661047,
+    "asOf": "2026-09-16T07:06:50.468Z"
   },
-  "updatedAt": "2026-09-16T06:54:27.965Z"
+  "updatedAt": "2026-09-16T07:06:50.468Z"
 }
