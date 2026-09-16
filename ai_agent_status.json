@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "緊急: 4店舗ページの内部技術情報混入を修正",
-      "startedAt": "2026-09-16T04:33:12.682Z",
-      "finishedAt": "2026-09-16T04:33:15.076Z"
+      "task": "本番サイトの内部情報漏洩を修正",
+      "startedAt": "2026-09-16T06:30:07.175Z",
+      "finishedAt": "2026-09-16T06:30:12.899Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 10376,
-    "todayOutputTokens": 2422139,
-    "asOf": "2026-09-16T06:29:11.986Z"
+    "todayInputTokens": 10408,
+    "todayOutputTokens": 2456860,
+    "asOf": "2026-09-16T06:30:27.674Z"
   },
-  "updatedAt": "2026-09-16T06:29:11.986Z"
+  "updatedAt": "2026-09-16T06:30:27.674Z"
 }
