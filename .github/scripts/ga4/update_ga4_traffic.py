@@ -69,6 +69,13 @@ SITES = [
         "default_since": "2026-07-25",
         "source": "GA4（measurement ID: G-W6Y7FK5HSM）",
     },
+    {
+        "id": "poker-tourney-log",
+        "label": "ポーカートナメ成績表",
+        "script": "check_ga4_stats_poker_tourney_log.py",
+        "default_since": "2026-09-17",
+        "source": "GA4（measurement ID: G-R7ZQLCWL2J）",
+    },
 ]
 
 

@@ -170,6 +170,10 @@
       "url": "https://poker-tourney-log--family.expo.app/",
       "genre": "ポーカートーナメント成績記録アプリ（フリーミアム、React Native/Expo）",
       "status": "運用中（Web版テスト運用。ネイティブアプリ版は未リリース）",
+      "analytics": {
+        "propertyId": "544242229",
+        "measurementId": "G-R7ZQLCWL2J"
+      },
       "users": {
         "registered": 9,
         "asOf": "2026-09-16",
@@ -179,8 +183,8 @@
         "monthly": 0,
         "total": 0,
         "status": "収益は未計測（広告・課金機能はWeb版では非対応）",
-        "note": "バックエンドはFirebase(Authentication/Firestore)。広告(Google AdMob)・アプリ内課金(RevenueCat)はネイティブモジュールのため、現在運用中のWeb版では動作せず収益は発生しない。GA4等のアクセス解析は未導入のためPV等のトラフィックデータもまだ無い。",
-        "updatedAt": "2026-09-16 22:57"
+        "note": "バックエンドはFirebase(Authentication/Firestore)。広告(Google AdMob)・アプリ内課金(RevenueCat)はネイティブモジュールのため、現在運用中のWeb版では動作せず収益は発生しない。GA4計測タグは2026-09-17に導入(measurement ID: G-R7ZQLCWL2J)、6時間おきに自動反映(traffic参照)。",
+        "updatedAt": "2026-09-17 00:55"
       }
     },
     {
