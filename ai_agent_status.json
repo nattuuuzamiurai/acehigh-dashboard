@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "FST枠にPR募集バナーを実装",
-      "startedAt": "2026-09-16T17:12:37.010Z",
-      "finishedAt": "2026-09-16T17:12:39.330Z"
+      "task": "KKPOKER/ONECASINO料金システム掲載PR",
+      "startedAt": "2026-09-16T18:02:01.965Z",
+      "finishedAt": "2026-09-16T18:02:05.377Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3228,
-    "todayOutputTokens": 1613382,
-    "asOf": "2026-09-16T17:51:11.223Z"
+    "todayInputTokens": 5256,
+    "todayOutputTokens": 1831678,
+    "asOf": "2026-09-16T18:03:19.042Z"
   },
-  "updatedAt": "2026-09-16T17:51:11.223Z"
+  "updatedAt": "2026-09-16T18:03:19.042Z"
 }
