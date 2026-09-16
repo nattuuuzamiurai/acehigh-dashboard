@@ -1,6 +1,6 @@
 {
   "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。articles.monthly は「実際に公開(draft:false化)した暦月」ごとに1エントリを集計すること(記事フロントマターのpubDateではなく、実際にpushして公開した日で判断する。記事執筆時に将来日付のpubDateを仮設定している場合があるため)。バッチ単位(Week1/Week2等)で分けず、同じ暦月なら合算する。analytics.propertyId はダッシュボードのカードから当該サイトのGA4レポートへ直接飛ぶためのGoogleアナリティクスのプロパティID(測定IDではない)。traffic は ga4-watch-daemon.js が丸ごと上書きするため、GA4リンク用の情報は traffic の外(analytics)に置くこと。",
-  "generatedAt": "2026-09-15T16:39:49.123Z",
+  "generatedAt": "2026-09-16T14:03:22.503261Z",
   "sites": [
     {
       "id": "ai-jitsumu-navi",
@@ -181,6 +181,24 @@
         "status": "収益は未計測（広告・課金機能はWeb版では非対応）",
         "note": "バックエンドはFirebase(Authentication/Firestore)。広告(Google AdMob)・アプリ内課金(RevenueCat)はネイティブモジュールのため、現在運用中のWeb版では動作せず収益は発生しない。GA4等のアクセス解析は未導入のためPV等のトラフィックデータもまだ無い。",
         "updatedAt": "2026-09-16 22:57"
+      }
+    },
+    {
+      "id": "slot-realdata-lab",
+      "name": "パチスロ実データ解析ラボ",
+      "url": "https://slotrealdata.com/",
+      "genre": "パチスロ実データ解析(note記事販売事業のハブサイト)",
+      "status": "運用中",
+      "analytics": {
+        "propertyId": "554625183",
+        "measurementId": "G-0RHTV4QLPC"
+      },
+      "revenue": {
+        "monthly": 0,
+        "total": 0,
+        "status": "サイト自体に決済機能なし(関連note記事の売上として計上)",
+        "note": "note記事販売事業のパチスロジャンル向けハブサイト。各記事の要約・紹介を掲載し、購入はnote記事へ誘導する構成。独自ドメイン(slotrealdata.com)で運用、GitHub Pages(独立リポジトリ nattuuuzamiurai/slot-realdata-lab-site)。Google Search Console登録・サイトマップ送信済み。GA4導入(2026-09-16〜、traffic参照)。掲載中の記事は「沖ドキ！ゴージャス実データ解析」の1本(note.com、有料)。",
+        "updatedAt": "2026-09-16"
       }
     }
   ]
