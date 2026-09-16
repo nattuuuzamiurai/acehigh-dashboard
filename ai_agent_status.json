@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "全社内固有情報の棚卸し・除去",
-      "startedAt": "2026-09-16T04:26:21.678Z",
-      "finishedAt": "2026-09-16T04:26:24.045Z"
+      "task": "緊急: 4店舗ページの内部技術情報混入を修正",
+      "startedAt": "2026-09-16T04:33:12.682Z",
+      "finishedAt": "2026-09-16T04:33:15.076Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8248,
-    "todayOutputTokens": 2051964,
-    "asOf": "2026-09-16T04:29:35.829Z"
+    "todayInputTokens": 8404,
+    "todayOutputTokens": 2095441,
+    "asOf": "2026-09-16T04:33:26.960Z"
   },
-  "updatedAt": "2026-09-16T04:29:35.829Z"
+  "updatedAt": "2026-09-16T04:33:26.960Z"
 }
