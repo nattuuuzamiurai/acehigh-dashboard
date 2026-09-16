@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "poker-tourney-log PR #2 再GO/NO-GO判定",
-      "startedAt": "2026-09-16T13:43:23.107Z",
-      "finishedAt": "2026-09-16T13:43:40.098Z"
+      "task": "PR #117の最終GO/NO-GO判定",
+      "startedAt": "2026-09-16T13:45:57.977Z",
+      "finishedAt": "2026-09-16T13:46:01.683Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 15140,
-    "todayOutputTokens": 3594102,
-    "asOf": "2026-09-16T13:45:16.598Z"
+    "todayInputTokens": 15162,
+    "todayOutputTokens": 3598781,
+    "asOf": "2026-09-16T13:46:11.151Z"
   },
-  "updatedAt": "2026-09-16T13:45:16.598Z"
+  "updatedAt": "2026-09-16T13:46:11.151Z"
 }
