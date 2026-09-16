@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR #117の動作確認を再開",
-      "startedAt": "2026-09-16T13:34:48.179Z",
-      "finishedAt": "2026-09-16T13:34:51.519Z"
+      "task": "poker-tourney-log PR #2再チェック(修正後)",
+      "startedAt": "2026-09-16T13:40:04.750Z",
+      "finishedAt": "2026-09-16T13:40:06.368Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 14868,
-    "todayOutputTokens": 3531594,
-    "asOf": "2026-09-16T13:38:16.605Z"
+    "todayInputTokens": 14950,
+    "todayOutputTokens": 3543511,
+    "asOf": "2026-09-16T13:40:13.901Z"
   },
-  "updatedAt": "2026-09-16T13:38:16.605Z"
+  "updatedAt": "2026-09-16T13:40:13.901Z"
 }
