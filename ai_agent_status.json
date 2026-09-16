@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "PR#114のマージコンフリクト解消",
-      "startedAt": "2026-09-16T07:06:41.328Z",
-      "finishedAt": "2026-09-16T07:06:43.729Z"
+      "task": "生成物の自動再生成ワークフロー追加",
+      "startedAt": "2026-09-16T08:21:56.270Z",
+      "finishedAt": "2026-09-16T08:22:00.828Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 11858,
-    "todayOutputTokens": 2710541,
-    "asOf": "2026-09-16T07:22:59.413Z"
+    "todayInputTokens": 11880,
+    "todayOutputTokens": 2722839,
+    "asOf": "2026-09-16T08:22:09.020Z"
   },
-  "updatedAt": "2026-09-16T07:22:59.413Z"
+  "updatedAt": "2026-09-16T08:22:09.020Z"
 }
