@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "店舗向け営業ページの企画・サービス案検討",
-      "startedAt": "2026-09-16T16:53:41.145Z",
-      "finishedAt": "2026-09-16T16:53:48.687Z"
+      "task": "店舗経営ダッシュボードの企画案作成",
+      "startedAt": "2026-09-16T17:43:24.321Z",
+      "finishedAt": "2026-09-16T17:43:32.069Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2904,
-    "todayOutputTokens": 1485617,
-    "asOf": "2026-09-16T17:43:05.963Z"
+    "todayInputTokens": 2944,
+    "todayOutputTokens": 1497621,
+    "asOf": "2026-09-16T17:43:41.609Z"
   },
-  "updatedAt": "2026-09-16T17:43:05.963Z"
+  "updatedAt": "2026-09-16T17:43:41.609Z"
 }
