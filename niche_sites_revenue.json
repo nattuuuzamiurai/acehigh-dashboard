@@ -13,8 +13,8 @@
         "measurementId": "G-QSW29CYYNP"
       },
       "articles": {
-        "total": 66,
-        "asOf": "2026-08-30",
+        "total": 73,
+        "asOf": "2026-09-17",
         "monthly": [
           {
             "period": "2026-07",
@@ -23,6 +23,10 @@
           {
             "period": "2026-08",
             "count": 14
+          },
+          {
+            "period": "2026-09",
+            "count": 7
           }
         ]
       },
