@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "ラクヨコ アフィリエイト実現性調査",
-      "startedAt": "2026-09-16T15:24:24.125Z",
-      "finishedAt": "2026-09-16T15:27:41.650Z"
+      "task": "Week10企画立案(AI実務ナビ)",
+      "startedAt": "2026-09-16T15:52:58.251Z",
+      "finishedAt": "2026-09-16T15:53:00.214Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1154,
-    "todayOutputTokens": 566937,
-    "asOf": "2026-09-16T15:51:59.347Z"
+    "todayInputTokens": 1174,
+    "todayOutputTokens": 584389,
+    "asOf": "2026-09-16T15:52:52.877Z"
   },
-  "updatedAt": "2026-09-16T15:51:59.347Z"
+  "updatedAt": "2026-09-16T15:52:52.877Z"
 }
