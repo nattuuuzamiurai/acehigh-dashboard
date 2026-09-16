@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "料金システム情報が無い23店舗のリサーチ",
-      "startedAt": "2026-09-16T08:50:44.848Z",
-      "finishedAt": "2026-09-16T08:50:47.910Z"
+      "task": "PR #116修正版の再チェック",
+      "startedAt": "2026-09-16T08:53:52.600Z",
+      "finishedAt": "2026-09-16T08:53:55.204Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 12872,
-    "todayOutputTokens": 2965390,
-    "asOf": "2026-09-16T08:50:57.729Z"
+    "todayInputTokens": 13020,
+    "todayOutputTokens": 2993269,
+    "asOf": "2026-09-16T08:54:03.549Z"
   },
-  "updatedAt": "2026-09-16T08:50:57.729Z"
+  "updatedAt": "2026-09-16T08:54:03.549Z"
 }
