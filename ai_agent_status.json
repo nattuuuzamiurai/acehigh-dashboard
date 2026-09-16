@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "poker-tourney-log signUpエラーハンドリング修正",
-      "startedAt": "2026-09-16T13:38:05.846Z",
-      "finishedAt": "2026-09-16T13:38:07.468Z"
+      "task": "PokerDiaryの雰囲気情報をdata.jsに反映",
+      "startedAt": "2026-09-16T14:23:24.735Z",
+      "finishedAt": "2026-09-16T14:23:28.849Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 16272,
-    "todayOutputTokens": 3936420,
-    "asOf": "2026-09-16T14:20:14.286Z"
+    "todayInputTokens": 16302,
+    "todayOutputTokens": 3969538,
+    "asOf": "2026-09-16T14:23:47.068Z"
   },
-  "updatedAt": "2026-09-16T14:20:14.286Z"
+  "updatedAt": "2026-09-16T14:23:47.068Z"
 }
