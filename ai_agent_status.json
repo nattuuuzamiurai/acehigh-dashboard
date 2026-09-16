@@ -13,10 +13,10 @@
       "finishedAt": "2026-09-16T13:40:06.368Z"
     },
     "review-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "poker-tourney-log PR #2 再GO/NO-GO判定",
       "startedAt": "2026-09-16T13:43:23.107Z",
-      "finishedAt": null
+      "finishedAt": "2026-09-16T13:43:40.098Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 15074,
-    "todayOutputTokens": 3582299,
-    "asOf": "2026-09-16T13:43:27.088Z"
+    "todayInputTokens": 15126,
+    "todayOutputTokens": 3588395,
+    "asOf": "2026-09-16T13:44:32.935Z"
   },
-  "updatedAt": "2026-09-16T13:43:27.088Z"
+  "updatedAt": "2026-09-16T13:44:32.935Z"
 }
