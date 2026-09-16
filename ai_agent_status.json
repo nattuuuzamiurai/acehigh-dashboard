@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "確実な2店舗の料金情報をdata.jsに反映",
-      "startedAt": "2026-09-16T12:49:11.917Z",
-      "finishedAt": "2026-09-16T12:49:14.956Z"
+      "task": "poker-tourney-log signUpエラーハンドリング修正",
+      "startedAt": "2026-09-16T13:38:05.846Z",
+      "finishedAt": "2026-09-16T13:38:07.468Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 14758,
-    "todayOutputTokens": 3497825,
-    "asOf": "2026-09-16T13:35:02.699Z"
+    "todayInputTokens": 14868,
+    "todayOutputTokens": 3531594,
+    "asOf": "2026-09-16T13:38:16.605Z"
   },
-  "updatedAt": "2026-09-16T13:35:02.699Z"
+  "updatedAt": "2026-09-16T13:38:16.605Z"
 }
