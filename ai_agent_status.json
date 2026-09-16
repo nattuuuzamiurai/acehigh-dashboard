@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "poker-tourney-log PR #5再判定(コメント修正後)",
-      "startedAt": "2026-09-16T15:29:24.248Z",
-      "finishedAt": "2026-09-16T15:29:25.862Z"
+      "task": "poker-tourney-log PR #6のQA・レビュー",
+      "startedAt": "2026-09-16T15:47:55.148Z",
+      "finishedAt": "2026-09-16T15:47:56.883Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 912,
-    "todayOutputTokens": 482877,
-    "asOf": "2026-09-16T15:46:55.571Z"
+    "todayInputTokens": 1088,
+    "todayOutputTokens": 531022,
+    "asOf": "2026-09-16T15:49:49.879Z"
   },
-  "updatedAt": "2026-09-16T15:46:55.571Z"
+  "updatedAt": "2026-09-16T15:49:49.879Z"
 }
