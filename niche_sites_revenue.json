@@ -170,6 +170,11 @@
       "url": "https://poker-tourney-log--family.expo.app/",
       "genre": "ポーカートーナメント成績記録アプリ（フリーミアム、React Native/Expo）",
       "status": "運用中（Web版テスト運用。ネイティブアプリ版は未リリース）",
+      "users": {
+        "registered": 9,
+        "asOf": "2026-09-16",
+        "note": "Firebase Authenticationの登録アカウント数（手動集計、自動更新の仕組みは未整備）"
+      },
       "revenue": {
         "monthly": 0,
         "total": 0,
