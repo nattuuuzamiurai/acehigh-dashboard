@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR #116の動作確認・品質チェック",
-      "startedAt": "2026-09-16T08:43:15.483Z",
-      "finishedAt": "2026-09-16T08:43:18.326Z"
+      "task": "料金システム情報が無い23店舗のリサーチ",
+      "startedAt": "2026-09-16T08:50:44.848Z",
+      "finishedAt": "2026-09-16T08:50:47.910Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 12824,
-    "todayOutputTokens": 2948924,
-    "asOf": "2026-09-16T08:50:06.947Z"
+    "todayInputTokens": 12872,
+    "todayOutputTokens": 2965390,
+    "asOf": "2026-09-16T08:50:57.729Z"
   },
-  "updatedAt": "2026-09-16T08:50:06.947Z"
+  "updatedAt": "2026-09-16T08:50:57.729Z"
 }
