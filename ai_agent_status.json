@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "生成物の自動再生成ワークフロー追加",
-      "startedAt": "2026-09-16T08:21:56.270Z",
-      "finishedAt": "2026-09-16T08:22:00.828Z"
+      "task": "緊急修正+自動検知の仕組み構築",
+      "startedAt": "2026-09-16T08:24:01.012Z",
+      "finishedAt": "2026-09-16T08:24:06.766Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 11936,
-    "todayOutputTokens": 2729975,
-    "asOf": "2026-09-16T08:23:28.906Z"
+    "todayInputTokens": 11988,
+    "todayOutputTokens": 2751748,
+    "asOf": "2026-09-16T08:24:56.253Z"
   },
-  "updatedAt": "2026-09-16T08:23:28.906Z"
+  "updatedAt": "2026-09-16T08:24:56.253Z"
 }
