@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "SEO改善2点(CLS対策・priceRange追加)を実装",
-      "startedAt": "2026-09-16T03:16:13.787Z",
-      "finishedAt": "2026-09-16T03:16:17.179Z"
+      "task": "緊急: 免責文に混入した社内部署名を削除",
+      "startedAt": "2026-09-16T04:04:34.870Z",
+      "finishedAt": "2026-09-16T04:04:37.050Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 7298,
-    "todayOutputTokens": 1810171,
-    "asOf": "2026-09-16T03:57:24.379Z"
+    "todayInputTokens": 7412,
+    "todayOutputTokens": 1847687,
+    "asOf": "2026-09-16T04:04:48.514Z"
   },
-  "updatedAt": "2026-09-16T03:57:24.379Z"
+  "updatedAt": "2026-09-16T04:04:48.514Z"
 }
