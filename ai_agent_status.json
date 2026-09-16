@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "本番サイトの内部情報漏洩を修正",
-      "startedAt": "2026-09-16T06:30:07.175Z",
-      "finishedAt": "2026-09-16T06:30:12.899Z"
+      "task": "sitemap基準変更+コーディング規約追記",
+      "startedAt": "2026-09-16T06:30:52.885Z",
+      "finishedAt": "2026-09-16T06:30:58.432Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 10408,
-    "todayOutputTokens": 2456860,
-    "asOf": "2026-09-16T06:30:27.674Z"
+    "todayInputTokens": 10446,
+    "todayOutputTokens": 2462567,
+    "asOf": "2026-09-16T06:31:07.427Z"
   },
-  "updatedAt": "2026-09-16T06:30:27.674Z"
+  "updatedAt": "2026-09-16T06:31:07.427Z"
 }
