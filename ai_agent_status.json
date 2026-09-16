@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "緊急修正+自動検知の仕組み構築",
-      "startedAt": "2026-09-16T08:24:01.012Z",
-      "finishedAt": "2026-09-16T08:24:06.766Z"
+      "task": "PR#115の設計ギャップ修正",
+      "startedAt": "2026-09-16T08:57:30.854Z",
+      "finishedAt": "2026-09-16T08:57:33.525Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 13142,
-    "todayOutputTokens": 3025136,
-    "asOf": "2026-09-16T08:56:53.445Z"
+    "todayInputTokens": 13182,
+    "todayOutputTokens": 3039809,
+    "asOf": "2026-09-16T08:57:39.298Z"
   },
-  "updatedAt": "2026-09-16T08:56:53.445Z"
+  "updatedAt": "2026-09-16T08:57:39.298Z"
 }
