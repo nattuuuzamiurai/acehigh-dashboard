@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PokerDiary福岡店舗の追加情報調査",
-      "startedAt": "2026-09-16T14:10:44.139Z",
-      "finishedAt": "2026-09-16T14:10:47.370Z"
+      "task": "PR #118の動作確認・品質チェック",
+      "startedAt": "2026-09-16T14:32:00.602Z",
+      "finishedAt": "2026-09-16T14:32:04.207Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 16302,
-    "todayOutputTokens": 3969538,
-    "asOf": "2026-09-16T14:23:47.068Z"
+    "todayInputTokens": 16460,
+    "todayOutputTokens": 3998773,
+    "asOf": "2026-09-16T14:32:16.721Z"
   },
-  "updatedAt": "2026-09-16T14:23:47.068Z"
+  "updatedAt": "2026-09-16T14:32:16.721Z"
 }
