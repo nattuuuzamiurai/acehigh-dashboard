@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "利用規約の構成案を作成",
-      "startedAt": "2026-09-15T15:03:48.232Z",
-      "finishedAt": "2026-09-15T15:06:14.707Z"
+      "task": "福岡ポーカー関連の隠れた良質サイトを調査",
+      "startedAt": "2026-09-16T12:48:37.953Z",
+      "finishedAt": "2026-09-16T12:48:43.972Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 13830,
-    "todayOutputTokens": 3249753,
-    "asOf": "2026-09-16T12:47:16.444Z"
+    "todayInputTokens": 13846,
+    "todayOutputTokens": 3259366,
+    "asOf": "2026-09-16T12:48:44.954Z"
   },
-  "updatedAt": "2026-09-16T12:47:16.444Z"
+  "updatedAt": "2026-09-16T12:48:44.954Z"
 }
