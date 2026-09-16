@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR #118の最終GO/NO-GO判定",
-      "startedAt": "2026-09-16T14:47:13.506Z",
-      "finishedAt": "2026-09-16T14:47:16.786Z"
+      "task": "poker-tourney-log PR #5のGO/NO-GO判定",
+      "startedAt": "2026-09-16T15:24:42.890Z",
+      "finishedAt": "2026-09-16T15:24:44.570Z"
     },
     "content-writer": {
       "status": "idle",
@@ -25,10 +25,10 @@
       "finishedAt": "2026-09-15T15:09:13.657Z"
     },
     "planning-lead": {
-      "status": "idle",
-      "task": "福岡ポーカー関連の隠れた良質サイトを調査",
-      "startedAt": "2026-09-16T12:48:37.953Z",
-      "finishedAt": "2026-09-16T12:48:43.972Z"
+      "status": "running",
+      "task": "ラクヨコ アフィリエイト実現性調査",
+      "startedAt": "2026-09-16T15:24:24.125Z",
+      "finishedAt": null
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 402,
-    "todayOutputTokens": 208165,
-    "asOf": "2026-09-16T15:23:23.725Z"
+    "todayInputTokens": 488,
+    "todayOutputTokens": 286254,
+    "asOf": "2026-09-16T15:24:53.151Z"
   },
-  "updatedAt": "2026-09-16T15:23:23.725Z"
+  "updatedAt": "2026-09-16T15:24:53.151Z"
 }
