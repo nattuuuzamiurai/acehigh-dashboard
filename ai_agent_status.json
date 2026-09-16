@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "PokerDiaryの雰囲気情報をdata.jsに反映",
-      "startedAt": "2026-09-16T14:23:24.735Z",
-      "finishedAt": "2026-09-16T14:23:28.849Z"
+      "task": "Week10公開作業(AI実務ナビ)",
+      "startedAt": "2026-09-16T16:39:00.485Z",
+      "finishedAt": "2026-09-16T16:39:41.199Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1698,
-    "todayOutputTokens": 974865,
-    "asOf": "2026-09-16T16:33:34.166Z"
+    "todayInputTokens": 1788,
+    "todayOutputTokens": 1001079,
+    "asOf": "2026-09-16T16:39:48.158Z"
   },
-  "updatedAt": "2026-09-16T16:33:34.166Z"
+  "updatedAt": "2026-09-16T16:39:48.158Z"
 }
