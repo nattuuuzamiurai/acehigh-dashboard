@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "PR#115のコメント事実誤りを修正",
-      "startedAt": "2026-09-16T09:13:57.382Z",
-      "finishedAt": "2026-09-16T09:14:00.327Z"
+      "task": "確実な2店舗の料金情報をdata.jsに反映",
+      "startedAt": "2026-09-16T12:49:11.917Z",
+      "finishedAt": "2026-09-16T12:49:14.956Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 13846,
-    "todayOutputTokens": 3259366,
-    "asOf": "2026-09-16T12:48:44.954Z"
+    "todayInputTokens": 13876,
+    "todayOutputTokens": 3266193,
+    "asOf": "2026-09-16T12:49:26.315Z"
   },
-  "updatedAt": "2026-09-16T12:48:44.954Z"
+  "updatedAt": "2026-09-16T12:49:26.315Z"
 }
