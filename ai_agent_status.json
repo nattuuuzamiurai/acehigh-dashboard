@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "poker-tourney-log PR #4の動作確認",
-      "startedAt": "2026-09-16T14:09:29.251Z",
-      "finishedAt": "2026-09-16T14:09:31.431Z"
+      "task": "PokerDiary福岡店舗の追加情報調査",
+      "startedAt": "2026-09-16T14:10:44.139Z",
+      "finishedAt": "2026-09-16T14:10:47.370Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 15870,
-    "todayOutputTokens": 3842636,
-    "asOf": "2026-09-16T14:09:58.119Z"
+    "todayInputTokens": 15920,
+    "todayOutputTokens": 3855546,
+    "asOf": "2026-09-16T14:11:14.514Z"
   },
-  "updatedAt": "2026-09-16T14:09:58.119Z"
+  "updatedAt": "2026-09-16T14:11:14.514Z"
 }
