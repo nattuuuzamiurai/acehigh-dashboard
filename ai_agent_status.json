@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Week10公開作業(AI実務ナビ)",
-      "startedAt": "2026-09-16T16:39:00.485Z",
-      "finishedAt": "2026-09-16T16:39:41.199Z"
+      "task": "FST枠にPR募集バナーを実装",
+      "startedAt": "2026-09-16T17:12:37.010Z",
+      "finishedAt": "2026-09-16T17:12:39.330Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2372,
-    "todayOutputTokens": 1330601,
-    "asOf": "2026-09-16T17:11:22.992Z"
+    "todayInputTokens": 2390,
+    "todayOutputTokens": 1346683,
+    "asOf": "2026-09-16T17:12:45.455Z"
   },
-  "updatedAt": "2026-09-16T17:11:22.992Z"
+  "updatedAt": "2026-09-16T17:12:45.455Z"
 }
