@@ -4260,11 +4260,21 @@ function renderAffiliateSites() {
           <a href="${aiEsc(s.adminConsole.url)}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:.84em;font-weight:700;color:var(--acc);text-decoration:none;border:1px solid var(--bor);border-radius:8px;padding:7px 13px;background:var(--sur);">${aiEsc(s.adminConsole.icon || '🗂️')} ${aiEsc(s.adminConsole.label || '管理コンソール')} <span style="opacity:.6;">↗</span></a>${s.adminConsole.local ? `<span style="display:inline-block;font-size:.68em;font-weight:700;color:var(--mut);border:1px solid var(--bor);border-radius:20px;padding:2px 9px;margin-left:8px;vertical-align:middle;">ローカル専用</span>` : ''}
           ${s.adminConsole.note ? `<div style="font-size:.75em;color:var(--mut);margin-top:6px;line-height:1.6;">${aiEsc(s.adminConsole.note)}</div>` : ''}
         </div>` : ''}
+        ${s.articles ? `
         <div class="proj-sect">公開記事数</div>
         <div class="proj-rev">
           <div class="proj-rev-item"><div class="proj-rev-val">${articles.total ?? '-'}</div><div class="proj-rev-lbl">累計${articles.asOf ? '（' + aiEsc(articles.asOf) + '時点）' : ''}</div></div>
           <div class="proj-rev-item"><div class="proj-rev-val">${latest ? latest.count : '-'}</div><div class="proj-rev-lbl">${latest ? aiEsc(latest.period) : '直近月'}</div></div>
-        </div>
+        </div>` : ''}
+        ${s.users ? `
+        <div class="proj-sect">登録ユーザー数</div>
+        <div class="proj-rev">
+          <div class="proj-rev-item" style="flex:1;text-align:left;padding:8px 10px;">
+            <div class="proj-rev-val">${s.users.registered ?? '-'}</div>
+            <div class="proj-rev-lbl">${s.users.asOf ? '（' + aiEsc(s.users.asOf) + '時点）' : '登録者数'}</div>
+            ${s.users.note ? `<div style="font-size:.75em;color:var(--mut);margin-top:6px;line-height:1.6;">${aiEsc(s.users.note)}</div>` : ''}
+          </div>
+        </div>` : ''}
         ${s.traffic ? `
         <div class="proj-sect" style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;">
           <span>アクセス数（${aiEsc(s.traffic.source || 'GA4')}）</span>${gaLink}
