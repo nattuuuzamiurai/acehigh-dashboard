@@ -8,15 +8,15 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "料金システム調査 グループC(5店)",
-      "startedAt": "2026-09-17T14:08:13.759Z",
-      "finishedAt": "2026-09-17T14:08:16.616Z"
+      "task": "PR#122 料金一括反映の品質チェック",
+      "startedAt": "2026-09-17T14:43:21.229Z",
+      "finishedAt": "2026-09-17T14:43:23.875Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#121 マージ可否の判定",
-      "startedAt": "2026-09-17T13:49:46.119Z",
-      "finishedAt": "2026-09-17T13:49:52.831Z"
+      "task": "PR#122 マージ可否の判定",
+      "startedAt": "2026-09-17T14:43:48.949Z",
+      "finishedAt": "2026-09-17T14:43:51.673Z"
     },
     "content-writer": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "ポーカーハンドメディア新サイクル企画",
-      "startedAt": "2026-09-17T00:34:46.781Z",
-      "finishedAt": "2026-09-17T00:45:29.923Z"
+      "task": "運用フロー・画面要件の設計",
+      "startedAt": "2026-09-17T14:41:54.423Z",
+      "finishedAt": "2026-09-17T14:45:02.078Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 30722,
-    "todayOutputTokens": 3093709,
-    "asOf": "2026-09-17T14:35:31.480Z"
+    "todayInputTokens": 33576,
+    "todayOutputTokens": 3237724,
+    "asOf": "2026-09-17T14:45:08.045Z"
   },
-  "updatedAt": "2026-09-17T14:35:31.480Z"
+  "updatedAt": "2026-09-17T14:45:08.045Z"
 }
