@@ -2,15 +2,15 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "KKPOKER/ONECASINO料金システム掲載PR",
-      "startedAt": "2026-09-16T18:02:01.965Z",
-      "finishedAt": "2026-09-16T18:02:05.377Z"
+      "task": "poker-hand-media内部リンク404バグ調査",
+      "startedAt": "2026-09-17T01:33:32.892Z",
+      "finishedAt": "2026-09-17T01:33:35.559Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#120 料金システム掲載の品質チェック",
-      "startedAt": "2026-09-16T18:15:37.042Z",
-      "finishedAt": "2026-09-16T18:15:40.052Z"
+      "task": "ポーカーハンドメディア第2サイクルQA",
+      "startedAt": "2026-09-17T01:22:00.240Z",
+      "finishedAt": "2026-09-17T01:32:44.105Z"
     },
     "review-lead": {
       "status": "idle",
@@ -20,15 +20,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "Week10記事7本執筆(AI実務ナビ)",
-      "startedAt": "2026-09-16T16:05:51.136Z",
-      "finishedAt": "2026-09-16T16:05:53.636Z"
+      "task": "ポーカーハンドメディア第2サイクル執筆",
+      "startedAt": "2026-09-17T00:48:02.221Z",
+      "finishedAt": "2026-09-17T01:21:24.455Z"
     },
     "planning-lead": {
       "status": "idle",
-      "task": "店舗経営ダッシュボードの企画案作成",
-      "startedAt": "2026-09-16T17:43:24.321Z",
-      "finishedAt": "2026-09-16T17:43:32.069Z"
+      "task": "ポーカーハンドメディア新サイクル企画",
+      "startedAt": "2026-09-17T00:34:46.781Z",
+      "finishedAt": "2026-09-17T00:45:29.923Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 12152,
-    "todayOutputTokens": 2096543,
-    "asOf": "2026-09-16T18:32:51.982Z"
+    "todayInputTokens": 13698,
+    "todayOutputTokens": 2404946,
+    "asOf": "2026-09-17T01:33:49.828Z"
   },
-  "updatedAt": "2026-09-16T18:32:51.982Z"
+  "updatedAt": "2026-09-17T01:33:49.828Z"
 }
