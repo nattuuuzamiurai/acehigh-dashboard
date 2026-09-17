@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-09-17 21:01",
+  "updated": "2026-09-17 21:30",
   "today_label": "2026年9月17日",
   "pred_date": "2026/09/17",
   "pred_is_today": true,
@@ -1228,8 +1228,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "9.3",
+      "actual_ev": 0.512
     },
     {
       "venue_name": "唐津",
@@ -1242,8 +1242,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "7.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "28.2",
+      "actual_ev": 2.03
     },
     {
       "venue_name": "常滑",
@@ -1256,8 +1256,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "28.4",
+      "actual_ev": 1.866
     },
     {
       "venue_name": "常滑",
@@ -1270,8 +1270,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "39.8",
+      "actual_ev": 1.863
     },
     {
       "venue_name": "蒲郡",
@@ -1284,8 +1284,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "55.9",
+      "actual_ev": 2.924
     },
     {
       "venue_name": "尼崎",
@@ -1298,8 +1298,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "24.4",
+      "actual_ev": 1.649
     },
     {
       "venue_name": "蒲郡",
@@ -1312,8 +1312,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "1.9",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "96.1",
+      "actual_ev": 1.855
     },
     {
       "venue_name": "平和島",
@@ -1326,8 +1326,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "8.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "13.1",
+      "actual_ev": 1.095
     },
     {
       "venue_name": "鳴門",
@@ -1340,8 +1340,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "24.3",
+      "actual_ev": 1.166
     },
     {
       "venue_name": "琵琶湖",
@@ -1354,8 +1354,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "50.7",
+      "actual_ev": 1.84
     },
     {
       "venue_name": "丸亀",
@@ -1368,8 +1368,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "32.6",
+      "actual_ev": 1.522
     },
     {
       "venue_name": "常滑",
@@ -1382,8 +1382,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "37.3",
+      "actual_ev": 2.007
     },
     {
       "venue_name": "鳴門",
@@ -1396,8 +1396,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "8.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "16.0",
+      "actual_ev": 1.338
     },
     {
       "venue_name": "下関",
@@ -1410,8 +1410,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "41.1",
+      "actual_ev": 2.388
     },
     {
       "venue_name": "児島",
@@ -1424,8 +1424,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "28.9",
+      "actual_ev": 1.306
     },
     {
       "venue_name": "鳴門",
@@ -1438,8 +1438,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.9",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "37.4",
+      "actual_ev": 1.825
     },
     {
       "venue_name": "福岡",
@@ -1452,8 +1452,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "8.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "22.0",
+      "actual_ev": 1.817
     },
     {
       "venue_name": "唐津",
@@ -1466,8 +1466,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "28.9",
+      "actual_ev": 1.815
     },
     {
       "venue_name": "常滑",
@@ -1480,8 +1480,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "26.8",
+      "actual_ev": 1.812
     },
     {
       "venue_name": "丸亀",
@@ -1494,8 +1494,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "29.5",
+      "actual_ev": 2.003
     },
     {
       "venue_name": "唐津",
@@ -1508,8 +1508,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "8.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "20.7",
+      "actual_ev": 1.805
     },
     {
       "venue_name": "大村",
@@ -1522,8 +1522,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "17.9",
+      "actual_ev": 0.945
     },
     {
       "venue_name": "蒲郡",
@@ -1536,8 +1536,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "31.5",
+      "actual_ev": 1.796
     },
     {
       "venue_name": "琵琶湖",
@@ -1550,8 +1550,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "18.5",
+      "actual_ev": 0.921
     },
     {
       "venue_name": "尼崎",
@@ -1564,8 +1564,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "8.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "13.9",
+      "actual_ev": 1.182
     },
     {
       "venue_name": "尼崎",
@@ -1578,8 +1578,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "63.7",
+      "actual_ev": 1.79
     },
     {
       "venue_name": "丸亀",
@@ -1592,8 +1592,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "41.8",
+      "actual_ev": 1.789
     },
     {
       "venue_name": "常滑",
@@ -1606,8 +1606,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "67.6",
+      "actual_ev": 1.785
     },
     {
       "venue_name": "常滑",
@@ -1620,8 +1620,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "39.7",
+      "actual_ev": 1.775
     },
     {
       "venue_name": "児島",
@@ -1634,8 +1634,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "15.5",
+      "actual_ev": 0.622
     },
     {
       "venue_name": "児島",
@@ -1648,8 +1648,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "9.6",
+      "actual_ev": 0.405
     },
     {
       "venue_name": "鳴門",
@@ -1662,8 +1662,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "31.7",
+      "actual_ev": 1.753
     },
     {
       "venue_name": "丸亀",
@@ -1676,8 +1676,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "47.1",
+      "actual_ev": 1.898
     },
     {
       "venue_name": "下関",
@@ -1690,8 +1690,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.3",
       "hit": "1",
       "payout": "1820",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "18.2",
+      "actual_ev": 1.15
     },
     {
       "venue_name": "平和島",
@@ -1704,8 +1704,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "8.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "12.0",
+      "actual_ev": 1.031
     },
     {
       "venue_name": "琵琶湖",
@@ -1718,22 +1718,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
-    },
-    {
-      "venue_name": "蒲郡",
-      "race_no": "12",
-      "start_time": "20:38",
-      "combo": "1-4-2",
-      "actual_combo": "",
-      "ev": 1.74,
-      "odds": "48.5",
-      "prob_pct": "3.6",
-      "hit": "",
-      "payout": "",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "70.1",
+      "actual_ev": 1.738
     },
     {
       "venue_name": "津",
@@ -1746,8 +1732,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "45.4",
+      "actual_ev": 1.957
     },
     {
       "venue_name": "唐津",
@@ -1760,8 +1746,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "75.3",
+      "actual_ev": 1.724
     },
     {
       "venue_name": "常滑",
@@ -1774,8 +1760,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.9",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "31.4",
+      "actual_ev": 2.157
     },
     {
       "venue_name": "多摩川",
@@ -1788,8 +1774,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.9",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "51.3",
+      "actual_ev": 2.534
     },
     {
       "venue_name": "蒲郡",
@@ -1802,8 +1788,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "32.4",
+      "actual_ev": 2.155
     },
     {
       "venue_name": "唐津",
@@ -1816,8 +1802,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "19.0",
+      "actual_ev": 1.049
     },
     {
       "venue_name": "福岡",
@@ -1830,8 +1816,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "8.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "20.7",
+      "actual_ev": 1.689
     },
     {
       "venue_name": "蒲郡",
@@ -1844,8 +1830,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "35.9",
+      "actual_ev": 1.687
     },
     {
       "venue_name": "児島",
@@ -1858,8 +1844,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "48.7",
+      "actual_ev": 1.685
     },
     {
       "venue_name": "平和島",
@@ -1872,8 +1858,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "45.4",
+      "actual_ev": 1.684
     },
     {
       "venue_name": "児島",
@@ -1886,8 +1872,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "9.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "8.1",
+      "actual_ev": 0.792
     },
     {
       "venue_name": "下関",
@@ -1900,8 +1886,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.7",
       "hit": "1",
       "payout": "1870",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "18.7",
+      "actual_ev": 0.873
     },
     {
       "venue_name": "鳴門",
@@ -1914,8 +1900,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.2",
       "hit": "1",
       "payout": "2500",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "25.0",
+      "actual_ev": 1.307
     },
     {
       "venue_name": "大村",
@@ -1928,8 +1914,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "44.2",
+      "actual_ev": 2.064
     },
     {
       "venue_name": "丸亀",
@@ -1942,8 +1928,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "50.2",
+      "actual_ev": 1.667
     },
     {
       "venue_name": "児島",
@@ -1956,8 +1942,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "40.0",
+      "actual_ev": 1.66
     },
     {
       "venue_name": "鳴門",
@@ -1970,8 +1956,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.1",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "17.6",
+      "actual_ev": 0.54
     },
     {
       "venue_name": "津",
@@ -1984,8 +1970,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "41.0",
+      "actual_ev": 1.661
     },
     {
       "venue_name": "津",
@@ -1998,6 +1984,20 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.3",
       "hit": "0",
       "payout": "0",
+      "final_odds": "38.1",
+      "actual_ev": 1.65
+    },
+    {
+      "venue_name": "大村",
+      "race_no": "9",
+      "start_time": "21:25",
+      "combo": "1-6-4",
+      "actual_combo": "",
+      "ev": 1.65,
+      "odds": "43.5",
+      "prob_pct": "3.8",
+      "hit": "",
+      "payout": "",
       "final_odds": "",
       "actual_ev": null
     },
@@ -2012,8 +2012,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "261.4",
+      "actual_ev": 5.176
     },
     {
       "venue_name": "福岡",
@@ -2026,8 +2026,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "9.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "17.0",
+      "actual_ev": 1.649
     },
     {
       "venue_name": "福岡",
@@ -2040,8 +2040,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "7.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "22.8",
+      "actual_ev": 1.646
     },
     {
       "venue_name": "多摩川",
@@ -2054,8 +2054,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.1",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "26.6",
+      "actual_ev": 1.088
     },
     {
       "venue_name": "丸亀",
@@ -2068,8 +2068,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "44.0",
+      "actual_ev": 1.641
     },
     {
       "venue_name": "尼崎",
@@ -2082,8 +2082,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "19.0",
+      "actual_ev": 0.912
     },
     {
       "venue_name": "蒲郡",
@@ -2096,8 +2096,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "19.1",
+      "actual_ev": 1.058
     },
     {
       "venue_name": "琵琶湖",
@@ -2110,8 +2110,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "12.8",
+      "actual_ev": 0.872
     },
     {
       "venue_name": "唐津",
@@ -2124,8 +2124,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "29.0",
+      "actual_ev": 1.612
     },
     {
       "venue_name": "琵琶湖",
@@ -2138,8 +2138,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.1",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "30.1",
+      "actual_ev": 1.228
     },
     {
       "venue_name": "福岡",
@@ -2152,8 +2152,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "33.2",
+      "actual_ev": 1.6
     },
     {
       "venue_name": "下関",
@@ -2166,8 +2166,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "38.2",
+      "actual_ev": 1.383
     },
     {
       "venue_name": "平和島",
@@ -2180,8 +2180,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "21.9",
+      "actual_ev": 1.007
     },
     {
       "venue_name": "鳴門",
@@ -2194,8 +2194,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "64.8",
+      "actual_ev": 1.588
     },
     {
       "venue_name": "琵琶湖",
@@ -2208,8 +2208,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "32.0",
+      "actual_ev": 1.584
     },
     {
       "venue_name": "児島",
@@ -2222,8 +2222,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "36.8",
+      "actual_ev": 1.627
     },
     {
       "venue_name": "尼崎",
@@ -2236,22 +2236,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
-    },
-    {
-      "venue_name": "大村",
-      "race_no": "9",
-      "start_time": "21:25",
-      "combo": "1-4-2",
-      "actual_combo": "",
-      "ev": 1.58,
-      "odds": "38.7",
-      "prob_pct": "4.1",
-      "hit": "",
-      "payout": "",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "32.9",
+      "actual_ev": 1.579
     },
     {
       "venue_name": "児島",
@@ -2264,8 +2250,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "14.1",
+      "actual_ev": 0.756
     },
     {
       "venue_name": "尼崎",
@@ -2278,8 +2264,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "8.9",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "14.8",
+      "actual_ev": 1.317
     },
     {
       "venue_name": "鳴門",
@@ -2292,8 +2278,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "9.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "8.1",
+      "actual_ev": 0.795
     },
     {
       "venue_name": "尼崎",
@@ -2306,8 +2292,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "14.5",
+      "actual_ev": 0.961
     },
     {
       "venue_name": "大村",
@@ -2320,8 +2306,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "38.5",
+      "actual_ev": 1.552
     },
     {
       "venue_name": "琵琶湖",
@@ -2334,8 +2320,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "66.4",
+      "actual_ev": 1.547
     },
     {
       "venue_name": "唐津",
@@ -2348,8 +2334,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "7.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "22.1",
+      "actual_ev": 1.543
     },
     {
       "venue_name": "琵琶湖",
@@ -2362,8 +2348,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "6.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "23.6",
+      "actual_ev": 1.532
     },
     {
       "venue_name": "平和島",
@@ -2376,8 +2362,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "43.5",
+      "actual_ev": 1.531
     },
     {
       "venue_name": "平和島",
@@ -2390,8 +2376,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "70.2",
+      "actual_ev": 1.53
     },
     {
       "venue_name": "唐津",
@@ -2404,8 +2390,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "34.8",
+      "actual_ev": 1.524
     },
     {
       "venue_name": "徳山",
@@ -2418,8 +2404,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "60.0",
+      "actual_ev": 1.518
     },
     {
       "venue_name": "常滑",
@@ -2432,8 +2418,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "28.3",
+      "actual_ev": 1.33
     },
     {
       "venue_name": "平和島",
@@ -2446,8 +2432,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.1",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "29.5",
+      "actual_ev": 1.513
     },
     {
       "venue_name": "下関",
@@ -2460,8 +2446,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.9",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "30.8",
+      "actual_ev": 1.512
     },
     {
       "venue_name": "津",
@@ -2474,8 +2460,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "31.9",
+      "actual_ev": 1.512
     },
     {
       "venue_name": "下関",
@@ -2488,6 +2474,20 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.6",
       "hit": "0",
       "payout": "0",
+      "final_odds": "26.7",
+      "actual_ev": 1.503
+    },
+    {
+      "venue_name": "大村",
+      "race_no": "10",
+      "start_time": "21:51",
+      "combo": "1-6-3",
+      "actual_combo": "",
+      "ev": 1.5,
+      "odds": "23.3",
+      "prob_pct": "6.5",
+      "hit": "",
+      "payout": "",
       "final_odds": "",
       "actual_ev": null
     },
@@ -2502,8 +2502,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "8.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "11.3",
+      "actual_ev": 0.898
     },
     {
       "venue_name": "徳山",
@@ -2516,8 +2516,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.9",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "51.9",
+      "actual_ev": 1.5
     },
     {
       "venue_name": "津",
@@ -2530,8 +2530,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "28.5",
+      "actual_ev": 1.488
     },
     {
       "venue_name": "蒲郡",
@@ -2544,8 +2544,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "21.8",
+      "actual_ev": 1.197
     },
     {
       "venue_name": "津",
@@ -2558,8 +2558,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "1.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "82.8",
+      "actual_ev": 1.474
     },
     {
       "venue_name": "下関",
@@ -2572,8 +2572,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "11.6",
+      "actual_ev": 0.609
     },
     {
       "venue_name": "津",
@@ -2586,8 +2586,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "37.3",
+      "actual_ev": 1.473
     },
     {
       "venue_name": "常滑",
@@ -2600,8 +2600,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "28.3",
+      "actual_ev": 1.472
     },
     {
       "venue_name": "大村",
@@ -2614,8 +2614,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "10.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "13.6",
+      "actual_ev": 1.467
     },
     {
       "venue_name": "多摩川",
@@ -2628,8 +2628,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "36.5",
+      "actual_ev": 1.464
     },
     {
       "venue_name": "大村",
@@ -2642,8 +2642,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "33.0",
+      "actual_ev": 1.439
     },
     {
       "venue_name": "平和島",
@@ -2656,8 +2656,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "1.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "92.0",
+      "actual_ev": 1.435
     },
     {
       "venue_name": "尼崎",
@@ -2670,8 +2670,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.7",
       "hit": "1",
       "payout": "1260",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "12.6",
+      "actual_ev": 0.716
     },
     {
       "venue_name": "下関",
@@ -2684,8 +2684,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "7.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "11.7",
+      "actual_ev": 0.859
     },
     {
       "venue_name": "福岡",
@@ -2698,8 +2698,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "7.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "18.3",
+      "actual_ev": 1.413
     },
     {
       "venue_name": "平和島",
@@ -2712,8 +2712,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "26.7",
+      "actual_ev": 1.412
     },
     {
       "venue_name": "唐津",
@@ -2726,8 +2726,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.1",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "34.0",
+      "actual_ev": 1.408
     },
     {
       "venue_name": "児島",
@@ -2740,8 +2740,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.1",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "45.6",
+      "actual_ev": 1.404
     },
     {
       "venue_name": "鳴門",
@@ -2754,8 +2754,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "10.6",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "9.6",
+      "actual_ev": 1.02
     },
     {
       "venue_name": "福岡",
@@ -2768,8 +2768,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.0",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "25.4",
+      "actual_ev": 1.029
     },
     {
       "venue_name": "福岡",
@@ -2782,8 +2782,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.8",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "16.8",
+      "actual_ev": 0.981
     },
     {
       "venue_name": "蒲郡",
@@ -2796,8 +2796,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "25.5",
+      "actual_ev": 1.063
     },
     {
       "venue_name": "津",
@@ -2810,8 +2810,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.1",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "26.8",
+      "actual_ev": 1.104
     },
     {
       "venue_name": "丸亀",
@@ -2824,8 +2824,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "41.0",
+      "actual_ev": 1.374
     },
     {
       "venue_name": "平和島",
@@ -2838,8 +2838,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "50.2",
+      "actual_ev": 1.652
     },
     {
       "venue_name": "平和島",
@@ -2852,8 +2852,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "49.2",
+      "actual_ev": 2.111
     },
     {
       "venue_name": "津",
@@ -2866,8 +2866,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "44.8",
+      "actual_ev": 1.882
     },
     {
       "venue_name": "琵琶湖",
@@ -2880,8 +2880,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "14.4",
+      "actual_ev": 0.78
     },
     {
       "venue_name": "平和島",
@@ -2894,8 +2894,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "15.5",
+      "actual_ev": 0.685
     },
     {
       "venue_name": "福岡",
@@ -2908,22 +2908,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "15.7",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
-    },
-    {
-      "venue_name": "大村",
-      "race_no": "8",
-      "start_time": "20:59",
-      "combo": "6-1-2",
-      "actual_combo": "",
-      "ev": 1.34,
-      "odds": "32.8",
-      "prob_pct": "4.1",
-      "hit": "",
-      "payout": "",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "8.5",
+      "actual_ev": 1.337
     },
     {
       "venue_name": "徳山",
@@ -2936,8 +2922,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "3.5",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "38.1",
+      "actual_ev": 1.334
     },
     {
       "venue_name": "尼崎",
@@ -2950,8 +2936,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "7.3",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "18.2",
+      "actual_ev": 1.334
     },
     {
       "venue_name": "尼崎",
@@ -2964,8 +2950,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "5.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "25.4",
+      "actual_ev": 1.326
     },
     {
       "venue_name": "福岡",
@@ -2978,8 +2964,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "7.2",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "16.8",
+      "actual_ev": 1.21
     },
     {
       "venue_name": "丸亀",
@@ -2992,8 +2978,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "2.1",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "63.1",
+      "actual_ev": 1.319
     }
   ],
   "pred_days": [
@@ -3013,8 +2999,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.3",
+          "actual_ev": 0.512
         },
         {
           "venue_name": "唐津",
@@ -3027,8 +3013,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.2",
+          "actual_ev": 2.03
         },
         {
           "venue_name": "常滑",
@@ -3041,8 +3027,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.4",
+          "actual_ev": 1.866
         },
         {
           "venue_name": "常滑",
@@ -3055,8 +3041,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "39.8",
+          "actual_ev": 1.863
         },
         {
           "venue_name": "蒲郡",
@@ -3069,8 +3055,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "55.9",
+          "actual_ev": 2.924
         },
         {
           "venue_name": "尼崎",
@@ -3083,8 +3069,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.4",
+          "actual_ev": 1.649
         },
         {
           "venue_name": "蒲郡",
@@ -3097,8 +3083,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "1.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "96.1",
+          "actual_ev": 1.855
         },
         {
           "venue_name": "平和島",
@@ -3111,8 +3097,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.1",
+          "actual_ev": 1.095
         },
         {
           "venue_name": "鳴門",
@@ -3125,8 +3111,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.3",
+          "actual_ev": 1.166
         },
         {
           "venue_name": "琵琶湖",
@@ -3139,8 +3125,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "50.7",
+          "actual_ev": 1.84
         },
         {
           "venue_name": "丸亀",
@@ -3153,8 +3139,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.6",
+          "actual_ev": 1.522
         },
         {
           "venue_name": "常滑",
@@ -3167,8 +3153,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "37.3",
+          "actual_ev": 2.007
         },
         {
           "venue_name": "鳴門",
@@ -3181,8 +3167,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.0",
+          "actual_ev": 1.338
         },
         {
           "venue_name": "下関",
@@ -3195,8 +3181,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "41.1",
+          "actual_ev": 2.388
         },
         {
           "venue_name": "児島",
@@ -3209,8 +3195,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.9",
+          "actual_ev": 1.306
         },
         {
           "venue_name": "鳴門",
@@ -3223,8 +3209,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "37.4",
+          "actual_ev": 1.825
         },
         {
           "venue_name": "福岡",
@@ -3237,8 +3223,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.0",
+          "actual_ev": 1.817
         },
         {
           "venue_name": "唐津",
@@ -3251,8 +3237,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.9",
+          "actual_ev": 1.815
         },
         {
           "venue_name": "常滑",
@@ -3265,8 +3251,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.8",
+          "actual_ev": 1.812
         },
         {
           "venue_name": "丸亀",
@@ -3279,8 +3265,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.5",
+          "actual_ev": 2.003
         },
         {
           "venue_name": "唐津",
@@ -3293,8 +3279,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.7",
+          "actual_ev": 1.805
         },
         {
           "venue_name": "大村",
@@ -3307,8 +3293,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.9",
+          "actual_ev": 0.945
         },
         {
           "venue_name": "蒲郡",
@@ -3321,8 +3307,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.5",
+          "actual_ev": 1.796
         },
         {
           "venue_name": "琵琶湖",
@@ -3335,8 +3321,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.5",
+          "actual_ev": 0.921
         },
         {
           "venue_name": "尼崎",
@@ -3349,8 +3335,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.9",
+          "actual_ev": 1.182
         },
         {
           "venue_name": "尼崎",
@@ -3363,8 +3349,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "63.7",
+          "actual_ev": 1.79
         },
         {
           "venue_name": "丸亀",
@@ -3377,8 +3363,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "41.8",
+          "actual_ev": 1.789
         },
         {
           "venue_name": "常滑",
@@ -3391,8 +3377,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "67.6",
+          "actual_ev": 1.785
         },
         {
           "venue_name": "常滑",
@@ -3405,8 +3391,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "39.7",
+          "actual_ev": 1.775
         },
         {
           "venue_name": "児島",
@@ -3419,8 +3405,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.5",
+          "actual_ev": 0.622
         },
         {
           "venue_name": "児島",
@@ -3433,8 +3419,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 0.405
         },
         {
           "venue_name": "鳴門",
@@ -3447,8 +3433,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.7",
+          "actual_ev": 1.753
         },
         {
           "venue_name": "丸亀",
@@ -3461,8 +3447,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "47.1",
+          "actual_ev": 1.898
         },
         {
           "venue_name": "下関",
@@ -3475,8 +3461,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.3",
           "hit": "1",
           "payout": "1820",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.2",
+          "actual_ev": 1.15
         },
         {
           "venue_name": "平和島",
@@ -3489,8 +3475,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.0",
+          "actual_ev": 1.031
         },
         {
           "venue_name": "琵琶湖",
@@ -3503,22 +3489,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "蒲郡",
-          "race_no": "12",
-          "start_time": "20:38",
-          "combo": "1-4-2",
-          "actual_combo": "",
-          "ev": 1.74,
-          "odds": "48.5",
-          "prob_pct": "3.6",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "70.1",
+          "actual_ev": 1.738
         },
         {
           "venue_name": "津",
@@ -3531,8 +3503,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "45.4",
+          "actual_ev": 1.957
         },
         {
           "venue_name": "唐津",
@@ -3545,8 +3517,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "75.3",
+          "actual_ev": 1.724
         },
         {
           "venue_name": "常滑",
@@ -3559,8 +3531,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.4",
+          "actual_ev": 2.157
         },
         {
           "venue_name": "多摩川",
@@ -3573,8 +3545,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "51.3",
+          "actual_ev": 2.534
         },
         {
           "venue_name": "蒲郡",
@@ -3587,8 +3559,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.4",
+          "actual_ev": 2.155
         },
         {
           "venue_name": "唐津",
@@ -3601,8 +3573,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.0",
+          "actual_ev": 1.049
         },
         {
           "venue_name": "福岡",
@@ -3615,8 +3587,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.7",
+          "actual_ev": 1.689
         },
         {
           "venue_name": "蒲郡",
@@ -3629,8 +3601,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "35.9",
+          "actual_ev": 1.687
         },
         {
           "venue_name": "児島",
@@ -3643,8 +3615,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "48.7",
+          "actual_ev": 1.685
         },
         {
           "venue_name": "平和島",
@@ -3657,8 +3629,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "45.4",
+          "actual_ev": 1.684
         },
         {
           "venue_name": "児島",
@@ -3671,8 +3643,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.1",
+          "actual_ev": 0.792
         },
         {
           "venue_name": "下関",
@@ -3685,8 +3657,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.7",
           "hit": "1",
           "payout": "1870",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.7",
+          "actual_ev": 0.873
         },
         {
           "venue_name": "鳴門",
@@ -3699,8 +3671,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.2",
           "hit": "1",
           "payout": "2500",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.0",
+          "actual_ev": 1.307
         },
         {
           "venue_name": "大村",
@@ -3713,8 +3685,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.2",
+          "actual_ev": 2.064
         },
         {
           "venue_name": "丸亀",
@@ -3727,8 +3699,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "50.2",
+          "actual_ev": 1.667
         },
         {
           "venue_name": "児島",
@@ -3741,8 +3713,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "40.0",
+          "actual_ev": 1.66
         },
         {
           "venue_name": "鳴門",
@@ -3755,8 +3727,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.6",
+          "actual_ev": 0.54
         },
         {
           "venue_name": "津",
@@ -3769,8 +3741,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "41.0",
+          "actual_ev": 1.661
         },
         {
           "venue_name": "津",
@@ -3783,6 +3755,20 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.3",
           "hit": "0",
           "payout": "0",
+          "final_odds": "38.1",
+          "actual_ev": 1.65
+        },
+        {
+          "venue_name": "大村",
+          "race_no": "9",
+          "start_time": "21:25",
+          "combo": "1-6-4",
+          "actual_combo": "",
+          "ev": 1.65,
+          "odds": "43.5",
+          "prob_pct": "3.8",
+          "hit": "",
+          "payout": "",
           "final_odds": "",
           "actual_ev": null
         },
@@ -3797,8 +3783,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "261.4",
+          "actual_ev": 5.176
         },
         {
           "venue_name": "福岡",
@@ -3811,8 +3797,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.0",
+          "actual_ev": 1.649
         },
         {
           "venue_name": "福岡",
@@ -3825,8 +3811,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.8",
+          "actual_ev": 1.646
         },
         {
           "venue_name": "多摩川",
@@ -3839,8 +3825,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.6",
+          "actual_ev": 1.088
         },
         {
           "venue_name": "丸亀",
@@ -3853,8 +3839,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.0",
+          "actual_ev": 1.641
         },
         {
           "venue_name": "尼崎",
@@ -3867,8 +3853,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.0",
+          "actual_ev": 0.912
         },
         {
           "venue_name": "蒲郡",
@@ -3881,8 +3867,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.1",
+          "actual_ev": 1.058
         },
         {
           "venue_name": "琵琶湖",
@@ -3895,8 +3881,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.8",
+          "actual_ev": 0.872
         },
         {
           "venue_name": "唐津",
@@ -3909,8 +3895,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.0",
+          "actual_ev": 1.612
         },
         {
           "venue_name": "琵琶湖",
@@ -3923,8 +3909,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "30.1",
+          "actual_ev": 1.228
         },
         {
           "venue_name": "福岡",
@@ -3937,8 +3923,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.2",
+          "actual_ev": 1.6
         },
         {
           "venue_name": "下関",
@@ -3951,8 +3937,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "38.2",
+          "actual_ev": 1.383
         },
         {
           "venue_name": "平和島",
@@ -3965,8 +3951,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.9",
+          "actual_ev": 1.007
         },
         {
           "venue_name": "鳴門",
@@ -3979,8 +3965,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "64.8",
+          "actual_ev": 1.588
         },
         {
           "venue_name": "琵琶湖",
@@ -3993,8 +3979,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.0",
+          "actual_ev": 1.584
         },
         {
           "venue_name": "児島",
@@ -4007,8 +3993,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.8",
+          "actual_ev": 1.627
         },
         {
           "venue_name": "尼崎",
@@ -4021,22 +4007,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "9",
-          "start_time": "21:25",
-          "combo": "1-4-2",
-          "actual_combo": "",
-          "ev": 1.58,
-          "odds": "38.7",
-          "prob_pct": "4.1",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.9",
+          "actual_ev": 1.579
         },
         {
           "venue_name": "児島",
@@ -4049,8 +4021,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.1",
+          "actual_ev": 0.756
         },
         {
           "venue_name": "尼崎",
@@ -4063,8 +4035,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.8",
+          "actual_ev": 1.317
         },
         {
           "venue_name": "鳴門",
@@ -4077,8 +4049,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.1",
+          "actual_ev": 0.795
         },
         {
           "venue_name": "尼崎",
@@ -4091,8 +4063,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.5",
+          "actual_ev": 0.961
         },
         {
           "venue_name": "大村",
@@ -4105,8 +4077,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "38.5",
+          "actual_ev": 1.552
         },
         {
           "venue_name": "琵琶湖",
@@ -4119,8 +4091,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "66.4",
+          "actual_ev": 1.547
         },
         {
           "venue_name": "唐津",
@@ -4133,8 +4105,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.1",
+          "actual_ev": 1.543
         },
         {
           "venue_name": "琵琶湖",
@@ -4147,8 +4119,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.6",
+          "actual_ev": 1.532
         },
         {
           "venue_name": "平和島",
@@ -4161,8 +4133,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "43.5",
+          "actual_ev": 1.531
         },
         {
           "venue_name": "平和島",
@@ -4175,8 +4147,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "70.2",
+          "actual_ev": 1.53
         },
         {
           "venue_name": "唐津",
@@ -4189,8 +4161,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "34.8",
+          "actual_ev": 1.524
         },
         {
           "venue_name": "徳山",
@@ -4203,8 +4175,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "60.0",
+          "actual_ev": 1.518
         },
         {
           "venue_name": "常滑",
@@ -4217,8 +4189,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.3",
+          "actual_ev": 1.33
         },
         {
           "venue_name": "平和島",
@@ -4231,8 +4203,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.5",
+          "actual_ev": 1.513
         },
         {
           "venue_name": "下関",
@@ -4245,8 +4217,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "30.8",
+          "actual_ev": 1.512
         },
         {
           "venue_name": "津",
@@ -4259,8 +4231,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.9",
+          "actual_ev": 1.512
         },
         {
           "venue_name": "下関",
@@ -4273,6 +4245,20 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.6",
           "hit": "0",
           "payout": "0",
+          "final_odds": "26.7",
+          "actual_ev": 1.503
+        },
+        {
+          "venue_name": "大村",
+          "race_no": "10",
+          "start_time": "21:51",
+          "combo": "1-6-3",
+          "actual_combo": "",
+          "ev": 1.5,
+          "odds": "23.3",
+          "prob_pct": "6.5",
+          "hit": "",
+          "payout": "",
           "final_odds": "",
           "actual_ev": null
         },
@@ -4287,8 +4273,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.3",
+          "actual_ev": 0.898
         },
         {
           "venue_name": "徳山",
@@ -4301,8 +4287,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "51.9",
+          "actual_ev": 1.5
         },
         {
           "venue_name": "津",
@@ -4315,8 +4301,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.5",
+          "actual_ev": 1.488
         },
         {
           "venue_name": "蒲郡",
@@ -4329,8 +4315,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.8",
+          "actual_ev": 1.197
         },
         {
           "venue_name": "津",
@@ -4343,8 +4329,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "1.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "82.8",
+          "actual_ev": 1.474
         },
         {
           "venue_name": "下関",
@@ -4357,8 +4343,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.6",
+          "actual_ev": 0.609
         },
         {
           "venue_name": "津",
@@ -4371,8 +4357,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "37.3",
+          "actual_ev": 1.473
         },
         {
           "venue_name": "常滑",
@@ -4385,8 +4371,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.3",
+          "actual_ev": 1.472
         },
         {
           "venue_name": "大村",
@@ -4399,8 +4385,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.6",
+          "actual_ev": 1.467
         },
         {
           "venue_name": "多摩川",
@@ -4413,8 +4399,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.5",
+          "actual_ev": 1.464
         },
         {
           "venue_name": "大村",
@@ -4427,8 +4413,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.0",
+          "actual_ev": 1.439
         },
         {
           "venue_name": "平和島",
@@ -4441,8 +4427,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "1.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "92.0",
+          "actual_ev": 1.435
         },
         {
           "venue_name": "尼崎",
@@ -4455,8 +4441,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.7",
           "hit": "1",
           "payout": "1260",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.6",
+          "actual_ev": 0.716
         },
         {
           "venue_name": "下関",
@@ -4469,8 +4455,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.7",
+          "actual_ev": 0.859
         },
         {
           "venue_name": "福岡",
@@ -4483,8 +4469,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.3",
+          "actual_ev": 1.413
         },
         {
           "venue_name": "平和島",
@@ -4497,8 +4483,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.7",
+          "actual_ev": 1.412
         },
         {
           "venue_name": "唐津",
@@ -4511,8 +4497,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "34.0",
+          "actual_ev": 1.408
         },
         {
           "venue_name": "児島",
@@ -4525,8 +4511,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "45.6",
+          "actual_ev": 1.404
         },
         {
           "venue_name": "鳴門",
@@ -4539,8 +4525,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 1.02
         },
         {
           "venue_name": "福岡",
@@ -4553,8 +4539,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.4",
+          "actual_ev": 1.029
         },
         {
           "venue_name": "福岡",
@@ -4567,8 +4553,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.8",
+          "actual_ev": 0.981
         },
         {
           "venue_name": "蒲郡",
@@ -4581,8 +4567,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.5",
+          "actual_ev": 1.063
         },
         {
           "venue_name": "津",
@@ -4595,8 +4581,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.8",
+          "actual_ev": 1.104
         },
         {
           "venue_name": "丸亀",
@@ -4609,8 +4595,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "41.0",
+          "actual_ev": 1.374
         },
         {
           "venue_name": "平和島",
@@ -4623,8 +4609,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "50.2",
+          "actual_ev": 1.652
         },
         {
           "venue_name": "平和島",
@@ -4637,8 +4623,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "49.2",
+          "actual_ev": 2.111
         },
         {
           "venue_name": "津",
@@ -4651,8 +4637,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.8",
+          "actual_ev": 1.882
         },
         {
           "venue_name": "琵琶湖",
@@ -4665,8 +4651,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.4",
+          "actual_ev": 0.78
         },
         {
           "venue_name": "平和島",
@@ -4679,8 +4665,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.5",
+          "actual_ev": 0.685
         },
         {
           "venue_name": "福岡",
@@ -4693,22 +4679,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "15.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "8",
-          "start_time": "20:59",
-          "combo": "6-1-2",
-          "actual_combo": "",
-          "ev": 1.34,
-          "odds": "32.8",
-          "prob_pct": "4.1",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 1.337
         },
         {
           "venue_name": "徳山",
@@ -4721,8 +4693,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "38.1",
+          "actual_ev": 1.334
         },
         {
           "venue_name": "尼崎",
@@ -4735,8 +4707,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.2",
+          "actual_ev": 1.334
         },
         {
           "venue_name": "尼崎",
@@ -4749,8 +4721,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.4",
+          "actual_ev": 1.326
         },
         {
           "venue_name": "福岡",
@@ -4763,8 +4735,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.8",
+          "actual_ev": 1.21
         },
         {
           "venue_name": "丸亀",
@@ -4777,8 +4749,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "63.1",
+          "actual_ev": 1.319
         }
       ]
     },
@@ -14101,28 +14073,28 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "1.15": {
-          "bets": 2041,
+          "bets": 2038,
           "hits": 57,
           "hit_rate": 2.8,
-          "invested": 204100,
+          "invested": 203800,
           "returned": 152790,
-          "roi": -25.1
+          "roi": -25.0
         },
         "1.2": {
-          "bets": 1964,
+          "bets": 1961,
           "hits": 54,
-          "hit_rate": 2.7,
-          "invested": 196400,
+          "hit_rate": 2.8,
+          "invested": 196100,
           "returned": 148090,
-          "roi": -24.6
+          "roi": -24.5
         },
         "1.3": {
-          "bets": 1806,
+          "bets": 1803,
           "hits": 49,
           "hit_rate": 2.7,
-          "invested": 180600,
+          "invested": 180300,
           "returned": 133470,
-          "roi": -26.1
+          "roi": -26.0
         }
       }
     },
@@ -15593,8 +15565,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "18.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.9",
+          "actual_ev": 0.884
         },
         {
           "venue_name": "福岡",
@@ -15608,8 +15580,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "18.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.1",
+          "actual_ev": 0.92
         },
         {
           "venue_name": "福岡",
@@ -15623,8 +15595,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "17.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.0",
+          "actual_ev": 0.896
         },
         {
           "venue_name": "下関",
@@ -15638,8 +15610,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "14.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.9",
+          "actual_ev": 1.031
         },
         {
           "venue_name": "鳴門",
@@ -15653,8 +15625,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "14.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.0",
+          "actual_ev": 1.335
         },
         {
           "venue_name": "平和島",
@@ -15668,23 +15640,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "14.7",
           "hit": "1",
           "payout": "500",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "8",
-          "start_time": "20:59",
-          "combo": "1-2-6",
-          "actual_combo": "",
-          "ev": 0.74,
-          "has_ev": false,
-          "odds": "5.4",
-          "prob_pct": "13.8",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.0",
+          "actual_ev": 0.735
         },
         {
           "venue_name": "琵琶湖",
@@ -15698,8 +15655,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "12.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 1.01
         },
         {
           "venue_name": "蒲郡",
@@ -15713,8 +15670,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "12.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.3",
+          "actual_ev": 1.186
         },
         {
           "venue_name": "唐津",
@@ -15728,8 +15685,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "12.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.9",
+          "actual_ev": 0.874
         },
         {
           "venue_name": "児島",
@@ -15743,8 +15700,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "12.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.5",
+          "actual_ev": 0.807
         },
         {
           "venue_name": "蒲郡",
@@ -15758,8 +15715,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "12.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.7",
+          "actual_ev": 0.702
         },
         {
           "venue_name": "唐津",
@@ -15773,8 +15730,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "12.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.9",
+          "actual_ev": 1.191
         },
         {
           "venue_name": "平和島",
@@ -15788,8 +15745,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "11.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.1",
+          "actual_ev": 1.198
         },
         {
           "venue_name": "丸亀",
@@ -15803,8 +15760,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "11.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.916
         },
         {
           "venue_name": "常滑",
@@ -15818,8 +15775,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "11.6",
           "hit": "1",
           "payout": "490",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.9",
+          "actual_ev": 0.566
         },
         {
           "venue_name": "鳴門",
@@ -15833,8 +15790,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "11.5",
           "hit": "1",
           "payout": "960",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 1.101
         },
         {
           "venue_name": "常滑",
@@ -15848,8 +15805,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "11.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.2",
+          "actual_ev": 0.588
         },
         {
           "venue_name": "福岡",
@@ -15863,8 +15820,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "11.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.2",
+          "actual_ev": 1.146
         },
         {
           "venue_name": "常滑",
@@ -15878,8 +15835,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "11.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.4",
+          "actual_ev": 1.038
         },
         {
           "venue_name": "唐津",
@@ -15893,8 +15850,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "11.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.4",
+          "actual_ev": 0.483
         },
         {
           "venue_name": "大村",
@@ -15908,8 +15865,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.0",
+          "actual_ev": 0.543
         },
         {
           "venue_name": "鳴門",
@@ -15923,8 +15880,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.7",
+          "actual_ev": 3.211
         },
         {
           "venue_name": "大村",
@@ -15938,8 +15895,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.6",
+          "actual_ev": 1.467
         },
         {
           "venue_name": "下関",
@@ -15953,8 +15910,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "3.3",
+          "actual_ev": 0.353
         },
         {
           "venue_name": "鳴門",
@@ -15968,8 +15925,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 1.02
         },
         {
           "venue_name": "唐津",
@@ -15983,8 +15940,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.692
         },
         {
           "venue_name": "大村",
@@ -15998,8 +15955,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.3",
+          "actual_ev": 0.749
         },
         {
           "venue_name": "丸亀",
@@ -16013,8 +15970,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.678
         },
         {
           "venue_name": "尼崎",
@@ -16028,8 +15985,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.6",
+          "actual_ev": 0.766
         },
         {
           "venue_name": "平和島",
@@ -16043,8 +16000,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.3",
+          "actual_ev": 0.937
         },
         {
           "venue_name": "平和島",
@@ -16058,8 +16015,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "10.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.3",
+          "actual_ev": 3.634
         },
         {
           "venue_name": "児島",
@@ -16073,8 +16030,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.1",
+          "actual_ev": 0.792
         },
         {
           "venue_name": "常滑",
@@ -16088,8 +16045,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.6",
+          "actual_ev": 0.45
         },
         {
           "venue_name": "唐津",
@@ -16103,8 +16060,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.689
         },
         {
           "venue_name": "福岡",
@@ -16118,8 +16075,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.0",
+          "actual_ev": 1.649
         },
         {
           "venue_name": "下関",
@@ -16133,8 +16090,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.6",
           "hit": "1",
           "payout": "870",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.7",
+          "actual_ev": 0.835
         },
         {
           "venue_name": "唐津",
@@ -16148,8 +16105,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.0",
+          "actual_ev": 0.958
         },
         {
           "venue_name": "蒲郡",
@@ -16163,8 +16120,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.8",
+          "actual_ev": 0.643
         },
         {
           "venue_name": "福岡",
@@ -16178,8 +16135,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.7",
+          "actual_ev": 0.532
         },
         {
           "venue_name": "常滑",
@@ -16193,8 +16150,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.5",
+          "actual_ev": 2.382
         },
         {
           "venue_name": "福岡",
@@ -16208,8 +16165,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.584
         },
         {
           "venue_name": "蒲郡",
@@ -16223,8 +16180,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.618
         },
         {
           "venue_name": "唐津",
@@ -16238,8 +16195,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.1",
+          "actual_ev": 1.023
         },
         {
           "venue_name": "常滑",
@@ -16253,8 +16210,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.2",
           "hit": "1",
           "payout": "1330",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.3",
+          "actual_ev": 1.222
         },
         {
           "venue_name": "尼崎",
@@ -16268,8 +16225,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.574
         },
         {
           "venue_name": "常滑",
@@ -16283,8 +16240,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.1",
+          "actual_ev": 0.464
         },
         {
           "venue_name": "常滑",
@@ -16298,8 +16255,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.4",
+          "actual_ev": 1.121
         },
         {
           "venue_name": "鳴門",
@@ -16313,8 +16270,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "9.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.2",
+          "actual_ev": 1.64
         },
         {
           "venue_name": "尼崎",
@@ -16328,8 +16285,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.8",
+          "actual_ev": 1.317
         },
         {
           "venue_name": "蒲郡",
@@ -16343,8 +16300,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.5",
+          "actual_ev": 1.023
         },
         {
           "venue_name": "蒲郡",
@@ -16358,8 +16315,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.9",
+          "actual_ev": 2.189
         },
         {
           "venue_name": "鳴門",
@@ -16373,8 +16330,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.8",
+          "actual_ev": 1.387
         },
         {
           "venue_name": "尼崎",
@@ -16388,8 +16345,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.553
         },
         {
           "venue_name": "下関",
@@ -16403,8 +16360,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.1",
+          "actual_ev": 0.886
         },
         {
           "venue_name": "児島",
@@ -16418,8 +16375,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.583
         },
         {
           "venue_name": "下関",
@@ -16433,8 +16390,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.567
         },
         {
           "venue_name": "鳴門",
@@ -16448,8 +16405,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.1",
+          "actual_ev": 0.849
         },
         {
           "venue_name": "津",
@@ -16463,23 +16420,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "蒲郡",
-          "race_no": "12",
-          "start_time": "20:38",
-          "combo": "1-2-3",
-          "actual_combo": "",
-          "ev": 0.64,
-          "has_ev": false,
-          "odds": "7.7",
-          "prob_pct": "8.3",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.2",
+          "actual_ev": 0.435
         },
         {
           "venue_name": "福岡",
@@ -16493,8 +16435,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.0",
+          "actual_ev": 1.817
         },
         {
           "venue_name": "常滑",
@@ -16508,8 +16450,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.9",
+          "actual_ev": 1.219
         },
         {
           "venue_name": "尼崎",
@@ -16523,8 +16465,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "8.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.4",
+          "actual_ev": 0.433
         },
         {
           "venue_name": "児島",
@@ -16538,8 +16480,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.0",
+          "actual_ev": 1.031
         },
         {
           "venue_name": "琵琶湖",
@@ -16553,8 +16495,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.9",
           "hit": "1",
           "payout": "920",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.2",
+          "actual_ev": 0.727
         },
         {
           "venue_name": "唐津",
@@ -16568,8 +16510,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.1",
+          "actual_ev": 0.703
         },
         {
           "venue_name": "尼崎",
@@ -16583,8 +16525,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.4",
+          "actual_ev": 1.186
         },
         {
           "venue_name": "下関",
@@ -16598,8 +16540,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.6",
+          "actual_ev": 0.658
         },
         {
           "venue_name": "児島",
@@ -16613,8 +16555,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.2",
+          "actual_ev": 0.55
         },
         {
           "venue_name": "平和島",
@@ -16628,8 +16570,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.7",
+          "actual_ev": 0.434
         },
         {
           "venue_name": "大村",
@@ -16643,8 +16585,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.9",
+          "actual_ev": 0.669
         },
         {
           "venue_name": "福岡",
@@ -16658,8 +16600,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.5",
           "hit": "1",
           "payout": "1040",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.4",
+          "actual_ev": 0.777
         },
         {
           "venue_name": "琵琶湖",
@@ -16673,8 +16615,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.468
         },
         {
           "venue_name": "鳴門",
@@ -16688,8 +16630,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.4",
+          "actual_ev": 0.549
         },
         {
           "venue_name": "児島",
@@ -16703,8 +16645,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.9",
+          "actual_ev": 0.956
         },
         {
           "venue_name": "鳴門",
@@ -16718,8 +16660,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.1",
+          "actual_ev": 0.938
         },
         {
           "venue_name": "福岡",
@@ -16733,8 +16675,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.6",
+          "actual_ev": 0.967
         },
         {
           "venue_name": "丸亀",
@@ -16748,8 +16690,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.552
         },
         {
           "venue_name": "琵琶湖",
@@ -16763,8 +16705,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.1",
           "hit": "1",
           "payout": "1460",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.6",
+          "actual_ev": 1.032
         },
         {
           "venue_name": "平和島",
@@ -16778,8 +16720,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.2",
+          "actual_ev": 0.785
         },
         {
           "venue_name": "鳴門",
@@ -16793,8 +16735,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "7.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.496
         },
         {
           "venue_name": "琵琶湖",
@@ -16808,8 +16750,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "96.8",
+          "actual_ev": 6.67
         },
         {
           "venue_name": "蒲郡",
@@ -16823,8 +16765,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.5",
+          "actual_ev": 0.513
         },
         {
           "venue_name": "下関",
@@ -16838,8 +16780,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.1",
+          "actual_ev": 1.373
         },
         {
           "venue_name": "常滑",
@@ -16853,8 +16795,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.4",
+          "actual_ev": 1.391
         },
         {
           "venue_name": "常滑",
@@ -16868,8 +16810,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.8",
           "hit": "1",
           "payout": "370",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "3.7",
+          "actual_ev": 0.252
         },
         {
           "venue_name": "蒲郡",
@@ -16883,8 +16825,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.1",
+          "actual_ev": 0.929
         },
         {
           "venue_name": "児島",
@@ -16898,8 +16840,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.1",
+          "actual_ev": 0.597
         },
         {
           "venue_name": "丸亀",
@@ -16913,8 +16855,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.4",
+          "actual_ev": 0.878
         },
         {
           "venue_name": "琵琶湖",
@@ -16928,8 +16870,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.2",
+          "actual_ev": 0.403
         },
         {
           "venue_name": "琵琶湖",
@@ -16943,8 +16885,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.6",
+          "actual_ev": 1.532
         },
         {
           "venue_name": "津",
@@ -16958,8 +16900,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.6",
+          "actual_ev": 0.557
         },
         {
           "venue_name": "唐津",
@@ -16973,8 +16915,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.2",
+          "actual_ev": 0.466
         },
         {
           "venue_name": "平和島",
@@ -16988,6 +16930,21 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.5",
           "hit": "0",
           "payout": "0",
+          "final_odds": "15.3",
+          "actual_ev": 0.987
+        },
+        {
+          "venue_name": "大村",
+          "race_no": "10",
+          "start_time": "21:51",
+          "combo": "1-6-3",
+          "actual_combo": "",
+          "ev": 1.5,
+          "has_ev": true,
+          "odds": "23.3",
+          "prob_pct": "6.5",
+          "hit": "",
+          "payout": "",
           "final_odds": "",
           "actual_ev": null
         },
@@ -17003,8 +16960,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.1",
+          "actual_ev": 0.971
         },
         {
           "venue_name": "尼崎",
@@ -17018,8 +16975,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.2",
+          "actual_ev": 0.906
         },
         {
           "venue_name": "尼崎",
@@ -17033,8 +16990,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.8",
+          "actual_ev": 0.749
         },
         {
           "venue_name": "津",
@@ -17048,8 +17005,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 0.538
         },
         {
           "venue_name": "福岡",
@@ -17063,8 +17020,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "3.9",
+          "actual_ev": 0.244
         },
         {
           "venue_name": "平和島",
@@ -17078,8 +17035,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.6",
+          "actual_ev": 0.344
         },
         {
           "venue_name": "福岡",
@@ -17093,8 +17050,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.5",
+          "actual_ev": 0.4
         },
         {
           "venue_name": "鳴門",
@@ -17108,8 +17065,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.433
         },
         {
           "venue_name": "下関",
@@ -17123,8 +17080,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.0",
+          "actual_ev": 0.488
         },
         {
           "venue_name": "尼崎",
@@ -17138,8 +17095,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.1",
           "hit": "1",
           "payout": "1200",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.0",
+          "actual_ev": 0.731
         },
         {
           "venue_name": "津",
@@ -17153,8 +17110,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.5",
+          "actual_ev": 0.817
         },
         {
           "venue_name": "児島",
@@ -17168,8 +17125,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.2",
+          "actual_ev": 0.554
         },
         {
           "venue_name": "唐津",
@@ -17183,8 +17140,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 0.472
         },
         {
           "venue_name": "津",
@@ -17198,8 +17155,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "6.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.3",
+          "actual_ev": 1.389
         },
         {
           "venue_name": "丸亀",
@@ -17213,8 +17170,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.1",
+          "actual_ev": 0.768
         },
         {
           "venue_name": "大村",
@@ -17228,8 +17185,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.8",
+          "actual_ev": 1.334
         },
         {
           "venue_name": "平和島",
@@ -17243,8 +17200,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.7",
+          "actual_ev": 0.975
         },
         {
           "venue_name": "尼崎",
@@ -17258,8 +17215,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.9",
+          "actual_ev": 1.1
         },
         {
           "venue_name": "尼崎",
@@ -17273,8 +17230,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.7",
           "hit": "1",
           "payout": "1260",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.6",
+          "actual_ev": 0.716
         },
         {
           "venue_name": "津",
@@ -17288,8 +17245,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.8",
+          "actual_ev": 0.557
         },
         {
           "venue_name": "丸亀",
@@ -17303,8 +17260,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.7",
+          "actual_ev": 0.547
         },
         {
           "venue_name": "琵琶湖",
@@ -17318,8 +17275,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.1",
+          "actual_ev": 1.019
         },
         {
           "venue_name": "蒲郡",
@@ -17333,8 +17290,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 0.443
         },
         {
           "venue_name": "琵琶湖",
@@ -17348,8 +17305,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 0.52
         },
         {
           "venue_name": "尼崎",
@@ -17363,8 +17320,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.3",
+          "actual_ev": 0.766
         },
         {
           "venue_name": "津",
@@ -17378,8 +17335,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.412
         },
         {
           "venue_name": "琵琶湖",
@@ -17393,8 +17350,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.2",
+          "actual_ev": 0.642
         },
         {
           "venue_name": "津",
@@ -17408,8 +17365,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.4",
+          "actual_ev": 0.699
         },
         {
           "venue_name": "丸亀",
@@ -17423,8 +17380,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.9",
+          "actual_ev": 1.86
         },
         {
           "venue_name": "多摩川",
@@ -17438,8 +17395,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "51.3",
+          "actual_ev": 2.534
         },
         {
           "venue_name": "下関",
@@ -17453,6 +17410,21 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.9",
           "hit": "0",
           "payout": "0",
+          "final_odds": "8.5",
+          "actual_ev": 0.417
+        },
+        {
+          "venue_name": "大村",
+          "race_no": "9",
+          "start_time": "21:25",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "ev": 0.42,
+          "has_ev": false,
+          "odds": "8.8",
+          "prob_pct": "4.8",
+          "hit": "",
+          "payout": "",
           "final_odds": "",
           "actual_ev": null
         },
@@ -17468,8 +17440,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.4",
+          "actual_ev": 0.685
         },
         {
           "venue_name": "丸亀",
@@ -17483,8 +17455,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.6",
+          "actual_ev": 0.408
         },
         {
           "venue_name": "唐津",
@@ -17498,8 +17470,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.4",
+          "actual_ev": 0.98
         },
         {
           "venue_name": "丸亀",
@@ -17513,8 +17485,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.9",
+          "actual_ev": 0.82
         },
         {
           "venue_name": "児島",
@@ -17528,8 +17500,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.8",
+          "actual_ev": 0.4
         },
         {
           "venue_name": "大村",
@@ -17543,23 +17515,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "9",
-          "start_time": "21:25",
-          "combo": "1-3-2",
-          "actual_combo": "",
-          "ev": 0.69,
-          "has_ev": false,
-          "odds": "15.5",
-          "prob_pct": "4.4",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.3",
+          "actual_ev": 0.956
         },
         {
           "venue_name": "児島",
@@ -17573,8 +17530,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.8",
+          "actual_ev": 1.627
         },
         {
           "venue_name": "津",
@@ -17588,8 +17545,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.1",
+          "actual_ev": 0.798
         },
         {
           "venue_name": "琵琶湖",
@@ -17603,8 +17560,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.3",
+          "actual_ev": 1.459
         },
         {
           "venue_name": "蒲郡",
@@ -17618,8 +17575,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.3",
+          "actual_ev": 0.362
         },
         {
           "venue_name": "多摩川",
@@ -17633,8 +17590,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.4",
+          "actual_ev": 0.275
         },
         {
           "venue_name": "平和島",
@@ -17648,8 +17605,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.2",
+          "actual_ev": 0.395
         },
         {
           "venue_name": "児島",
@@ -17663,8 +17620,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 0.405
         },
         {
           "venue_name": "平和島",
@@ -17678,8 +17635,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.3",
+          "actual_ev": 0.981
         },
         {
           "venue_name": "福岡",
@@ -17693,8 +17650,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.3",
+          "actual_ev": 0.307
         },
         {
           "venue_name": "多摩川",
@@ -17708,8 +17665,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.6",
+          "actual_ev": 1.088
         },
         {
           "venue_name": "蒲郡",
@@ -17723,8 +17680,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "1",
           "payout": "690",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.9",
+          "actual_ev": 0.277
         },
         {
           "venue_name": "多摩川",
@@ -17738,8 +17695,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.5",
+          "actual_ev": 1.464
         },
         {
           "venue_name": "下関",
@@ -17753,8 +17710,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "30.6",
+          "actual_ev": 1.224
         },
         {
           "venue_name": "津",
@@ -17768,23 +17725,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "下関",
-          "race_no": "12",
-          "start_time": "20:45",
-          "combo": "1-3-2",
-          "actual_combo": "",
-          "ev": 0.33,
-          "has_ev": false,
-          "odds": "8.4",
-          "prob_pct": "4.0",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.4",
+          "actual_ev": 0.415
         },
         {
           "venue_name": "多摩川",
@@ -17798,8 +17740,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.1",
+          "actual_ev": 0.352
         },
         {
           "venue_name": "徳山",
@@ -17813,8 +17755,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.8",
+          "actual_ev": 0.608
         },
         {
           "venue_name": "徳山",
@@ -17828,8 +17770,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.7",
+          "actual_ev": 0.369
         },
         {
           "venue_name": "琵琶湖",
@@ -17843,8 +17785,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.1",
+          "actual_ev": 0.726
         },
         {
           "venue_name": "平和島",
@@ -17858,8 +17800,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.2",
+          "actual_ev": 0.806
         },
         {
           "venue_name": "徳山",
@@ -17873,23 +17815,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "丸亀",
-          "race_no": "12",
-          "start_time": "20:31",
-          "combo": "1-3-2",
-          "actual_combo": "",
-          "ev": 0.32,
-          "has_ev": false,
-          "odds": "8.7",
-          "prob_pct": "3.7",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.5",
+          "actual_ev": 0.988
         },
         {
           "venue_name": "児島",
@@ -17903,8 +17830,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.1",
+          "actual_ev": 1.162
         },
         {
           "venue_name": "多摩川",
@@ -17918,8 +17845,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.1",
+          "actual_ev": 0.834
         },
         {
           "venue_name": "丸亀",
@@ -17933,8 +17860,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.9",
+          "actual_ev": 0.746
         },
         {
           "venue_name": "徳山",
@@ -17948,8 +17875,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 0.278
         },
         {
           "venue_name": "徳山",
@@ -17963,8 +17890,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.4",
           "hit": "1",
           "payout": "790",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 0.271
         },
         {
           "venue_name": "鳴門",
@@ -17978,8 +17905,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.6",
+          "actual_ev": 0.564
         },
         {
           "venue_name": "丸亀",
@@ -17993,8 +17920,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "50.2",
+          "actual_ev": 1.667
         },
         {
           "venue_name": "多摩川",
@@ -18008,8 +17935,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.256
         },
         {
           "venue_name": "徳山",
@@ -18023,8 +17950,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.5",
+          "actual_ev": 0.343
         },
         {
           "venue_name": "津",
@@ -18038,8 +17965,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.1",
+          "actual_ev": 0.552
         },
         {
           "venue_name": "徳山",
@@ -18053,8 +17980,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.8",
+          "actual_ev": 0.154
         },
         {
           "venue_name": "多摩川",
@@ -18068,8 +17995,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.2",
           "hit": "1",
           "payout": "960",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 0.303
         },
         {
           "venue_name": "唐津",
@@ -18083,8 +18010,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "65.5",
+          "actual_ev": 2.05
         },
         {
           "venue_name": "多摩川",
@@ -18098,8 +18025,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.6",
+          "actual_ev": 0.267
         },
         {
           "venue_name": "徳山",
@@ -18113,8 +18040,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.5",
+          "actual_ev": 0.878
         },
         {
           "venue_name": "多摩川",
@@ -18128,8 +18055,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.9",
+          "actual_ev": 0.517
         },
         {
           "venue_name": "徳山",
@@ -18143,8 +18070,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.6",
+          "actual_ev": 0.202
         },
         {
           "venue_name": "多摩川",
@@ -18158,8 +18085,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "3.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.8",
+          "actual_ev": 0.298
         },
         {
           "venue_name": "多摩川",
@@ -18173,8 +18100,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.5",
+          "actual_ev": 0.506
         },
         {
           "venue_name": "徳山",
@@ -18188,8 +18115,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.0",
+          "actual_ev": 0.279
         },
         {
           "venue_name": "徳山",
@@ -18203,8 +18130,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.6",
+          "actual_ev": 0.153
         },
         {
           "venue_name": "徳山",
@@ -18218,8 +18145,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.3",
+          "actual_ev": 0.722
         },
         {
           "venue_name": "下関",
@@ -18233,8 +18160,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "2.4",
           "hit": "1",
           "payout": "1340",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.4",
+          "actual_ev": 0.32
         }
       ]
     },
@@ -33797,8 +33724,8 @@ window.KYOTEI_DATA = {
           "odds": "4.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.9",
+          "actual_ev": 0.884
         },
         {
           "venue_name": "福岡",
@@ -33812,8 +33739,8 @@ window.KYOTEI_DATA = {
           "odds": "5.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.1",
+          "actual_ev": 0.92
         },
         {
           "venue_name": "福岡",
@@ -33827,8 +33754,8 @@ window.KYOTEI_DATA = {
           "odds": "5.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.0",
+          "actual_ev": 0.896
         },
         {
           "venue_name": "下関",
@@ -33842,8 +33769,8 @@ window.KYOTEI_DATA = {
           "odds": "6.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.9",
+          "actual_ev": 1.031
         },
         {
           "venue_name": "平和島",
@@ -33857,23 +33784,8 @@ window.KYOTEI_DATA = {
           "odds": "5.0",
           "hit": "1",
           "payout": "500",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "8",
-          "start_time": "20:59",
-          "combo": "1-2-6",
-          "actual_combo": "",
-          "prob_pct": "13.8",
-          "top1_pct": "57",
-          "ev": 0.74,
-          "odds": "5.4",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.0",
+          "actual_ev": 0.735
         },
         {
           "venue_name": "琵琶湖",
@@ -33887,8 +33799,8 @@ window.KYOTEI_DATA = {
           "odds": "7.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 1.01
         },
         {
           "venue_name": "唐津",
@@ -33902,8 +33814,8 @@ window.KYOTEI_DATA = {
           "odds": "6.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.9",
+          "actual_ev": 0.874
         },
         {
           "venue_name": "児島",
@@ -33917,8 +33829,8 @@ window.KYOTEI_DATA = {
           "odds": "6.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.5",
+          "actual_ev": 0.807
         },
         {
           "venue_name": "蒲郡",
@@ -33932,8 +33844,8 @@ window.KYOTEI_DATA = {
           "odds": "5.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.3",
+          "actual_ev": 0.657
         },
         {
           "venue_name": "蒲郡",
@@ -33947,8 +33859,8 @@ window.KYOTEI_DATA = {
           "odds": "5.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.7",
+          "actual_ev": 0.702
         },
         {
           "venue_name": "唐津",
@@ -33962,8 +33874,8 @@ window.KYOTEI_DATA = {
           "odds": "9.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.9",
+          "actual_ev": 1.191
         },
         {
           "venue_name": "平和島",
@@ -33977,8 +33889,8 @@ window.KYOTEI_DATA = {
           "odds": "18.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.1",
+          "actual_ev": 1.198
         },
         {
           "venue_name": "常滑",
@@ -33992,8 +33904,8 @@ window.KYOTEI_DATA = {
           "odds": "4.9",
           "hit": "1",
           "payout": "490",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.9",
+          "actual_ev": 0.566
         },
         {
           "venue_name": "丸亀",
@@ -34007,8 +33919,8 @@ window.KYOTEI_DATA = {
           "odds": "7.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.891
         },
         {
           "venue_name": "常滑",
@@ -34022,8 +33934,8 @@ window.KYOTEI_DATA = {
           "odds": "5.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.2",
+          "actual_ev": 0.588
         },
         {
           "venue_name": "鳴門",
@@ -34037,8 +33949,8 @@ window.KYOTEI_DATA = {
           "odds": "9.6",
           "hit": "1",
           "payout": "960",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 1.083
         },
         {
           "venue_name": "福岡",
@@ -34052,8 +33964,8 @@ window.KYOTEI_DATA = {
           "odds": "10.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.2",
+          "actual_ev": 1.146
         },
         {
           "venue_name": "唐津",
@@ -34067,8 +33979,8 @@ window.KYOTEI_DATA = {
           "odds": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.4",
+          "actual_ev": 0.483
         },
         {
           "venue_name": "大村",
@@ -34082,8 +33994,8 @@ window.KYOTEI_DATA = {
           "odds": "5.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.0",
+          "actual_ev": 0.543
         },
         {
           "venue_name": "下関",
@@ -34097,8 +34009,8 @@ window.KYOTEI_DATA = {
           "odds": "3.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "3.3",
+          "actual_ev": 0.353
         },
         {
           "venue_name": "鳴門",
@@ -34112,8 +34024,8 @@ window.KYOTEI_DATA = {
           "odds": "9.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 0.993
         },
         {
           "venue_name": "大村",
@@ -34127,8 +34039,8 @@ window.KYOTEI_DATA = {
           "odds": "7.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.3",
+          "actual_ev": 0.749
         },
         {
           "venue_name": "尼崎",
@@ -34142,8 +34054,8 @@ window.KYOTEI_DATA = {
           "odds": "7.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.6",
+          "actual_ev": 0.766
         },
         {
           "venue_name": "常滑",
@@ -34157,8 +34069,8 @@ window.KYOTEI_DATA = {
           "odds": "4.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.6",
+          "actual_ev": 0.45
         },
         {
           "venue_name": "下関",
@@ -34172,8 +34084,8 @@ window.KYOTEI_DATA = {
           "odds": "8.7",
           "hit": "1",
           "payout": "870",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.7",
+          "actual_ev": 0.835
         },
         {
           "venue_name": "唐津",
@@ -34187,8 +34099,8 @@ window.KYOTEI_DATA = {
           "odds": "10.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.0",
+          "actual_ev": 0.958
         },
         {
           "venue_name": "福岡",
@@ -34202,8 +34114,8 @@ window.KYOTEI_DATA = {
           "odds": "8.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.7",
+          "actual_ev": 0.532
         },
         {
           "venue_name": "福岡",
@@ -34217,8 +34129,8 @@ window.KYOTEI_DATA = {
           "odds": "6.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.584
         },
         {
           "venue_name": "蒲郡",
@@ -34232,8 +34144,8 @@ window.KYOTEI_DATA = {
           "odds": "6.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.618
         },
         {
           "venue_name": "平和島",
@@ -34247,8 +34159,8 @@ window.KYOTEI_DATA = {
           "odds": "25.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.3",
+          "actual_ev": 0.857
         },
         {
           "venue_name": "尼崎",
@@ -34262,8 +34174,8 @@ window.KYOTEI_DATA = {
           "odds": "6.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.574
         },
         {
           "venue_name": "常滑",
@@ -34277,8 +34189,8 @@ window.KYOTEI_DATA = {
           "odds": "6.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.1",
+          "actual_ev": 0.464
         },
         {
           "venue_name": "常滑",
@@ -34292,8 +34204,8 @@ window.KYOTEI_DATA = {
           "odds": "12.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.4",
+          "actual_ev": 1.121
         },
         {
           "venue_name": "蒲郡",
@@ -34307,8 +34219,8 @@ window.KYOTEI_DATA = {
           "odds": "11.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.5",
+          "actual_ev": 1.023
         },
         {
           "venue_name": "福岡",
@@ -34322,8 +34234,8 @@ window.KYOTEI_DATA = {
           "odds": "14.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.1",
+          "actual_ev": 1.239
         },
         {
           "venue_name": "尼崎",
@@ -34337,8 +34249,8 @@ window.KYOTEI_DATA = {
           "odds": "6.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.553
         },
         {
           "venue_name": "下関",
@@ -34352,8 +34264,8 @@ window.KYOTEI_DATA = {
           "odds": "10.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.1",
+          "actual_ev": 0.886
         },
         {
           "venue_name": "児島",
@@ -34367,8 +34279,8 @@ window.KYOTEI_DATA = {
           "odds": "6.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.583
         },
         {
           "venue_name": "下関",
@@ -34382,8 +34294,8 @@ window.KYOTEI_DATA = {
           "odds": "6.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.567
         },
         {
           "venue_name": "鳴門",
@@ -34397,23 +34309,8 @@ window.KYOTEI_DATA = {
           "odds": "10.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "蒲郡",
-          "race_no": "12",
-          "start_time": "20:38",
-          "combo": "1-2-3",
-          "actual_combo": "",
-          "prob_pct": "8.3",
-          "top1_pct": "64",
-          "ev": 0.64,
-          "odds": "7.7",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.1",
+          "actual_ev": 0.849
         },
         {
           "venue_name": "鳴門",
@@ -34427,8 +34324,8 @@ window.KYOTEI_DATA = {
           "odds": "6.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.5",
+          "actual_ev": 0.52
         },
         {
           "venue_name": "児島",
@@ -34442,8 +34339,8 @@ window.KYOTEI_DATA = {
           "odds": "13.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.0",
+          "actual_ev": 1.031
         },
         {
           "venue_name": "琵琶湖",
@@ -34457,8 +34354,8 @@ window.KYOTEI_DATA = {
           "odds": "9.2",
           "hit": "1",
           "payout": "920",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.2",
+          "actual_ev": 0.727
         },
         {
           "venue_name": "下関",
@@ -34472,8 +34369,8 @@ window.KYOTEI_DATA = {
           "odds": "11.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.6",
+          "actual_ev": 0.658
         },
         {
           "venue_name": "児島",
@@ -34487,8 +34384,8 @@ window.KYOTEI_DATA = {
           "odds": "7.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.2",
+          "actual_ev": 0.55
         },
         {
           "venue_name": "平和島",
@@ -34502,8 +34399,8 @@ window.KYOTEI_DATA = {
           "odds": "5.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.7",
+          "actual_ev": 0.434
         },
         {
           "venue_name": "大村",
@@ -34517,8 +34414,8 @@ window.KYOTEI_DATA = {
           "odds": "7.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.9",
+          "actual_ev": 0.669
         },
         {
           "venue_name": "福岡",
@@ -34532,8 +34429,8 @@ window.KYOTEI_DATA = {
           "odds": "10.4",
           "hit": "1",
           "payout": "1040",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.4",
+          "actual_ev": 0.777
         },
         {
           "venue_name": "丸亀",
@@ -34547,8 +34444,8 @@ window.KYOTEI_DATA = {
           "odds": "7.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.552
         },
         {
           "venue_name": "琵琶湖",
@@ -34562,8 +34459,8 @@ window.KYOTEI_DATA = {
           "odds": "14.6",
           "hit": "1",
           "payout": "1460",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.6",
+          "actual_ev": 1.032
         },
         {
           "venue_name": "鳴門",
@@ -34577,8 +34474,8 @@ window.KYOTEI_DATA = {
           "odds": "7.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.496
         },
         {
           "venue_name": "琵琶湖",
@@ -34592,8 +34489,8 @@ window.KYOTEI_DATA = {
           "odds": "96.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "96.8",
+          "actual_ev": 6.67
         },
         {
           "venue_name": "常滑",
@@ -34607,8 +34504,8 @@ window.KYOTEI_DATA = {
           "odds": "3.7",
           "hit": "1",
           "payout": "370",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "3.7",
+          "actual_ev": 0.252
         },
         {
           "venue_name": "福岡",
@@ -34622,8 +34519,8 @@ window.KYOTEI_DATA = {
           "odds": "6.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.0",
+          "actual_ev": 0.403
         },
         {
           "venue_name": "津",
@@ -34637,8 +34534,8 @@ window.KYOTEI_DATA = {
           "odds": "11.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.1",
+          "actual_ev": 0.971
         },
         {
           "venue_name": "津",
@@ -34652,8 +34549,8 @@ window.KYOTEI_DATA = {
           "odds": "8.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 0.538
         },
         {
           "venue_name": "鳴門",
@@ -34667,8 +34564,8 @@ window.KYOTEI_DATA = {
           "odds": "11.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.4",
+          "actual_ev": 0.459
         },
         {
           "venue_name": "鳴門",
@@ -34682,8 +34579,8 @@ window.KYOTEI_DATA = {
           "odds": "7.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.433
         },
         {
           "venue_name": "児島",
@@ -34697,8 +34594,8 @@ window.KYOTEI_DATA = {
           "odds": "15.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.2",
+          "actual_ev": 0.554
         },
         {
           "venue_name": "唐津",
@@ -34712,8 +34609,8 @@ window.KYOTEI_DATA = {
           "odds": "7.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 0.472
         },
         {
           "venue_name": "平和島",
@@ -34727,8 +34624,8 @@ window.KYOTEI_DATA = {
           "odds": "16.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.7",
+          "actual_ev": 0.975
         },
         {
           "venue_name": "津",
@@ -34742,8 +34639,8 @@ window.KYOTEI_DATA = {
           "odds": "15.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.2",
+          "actual_ev": 0.886
         },
         {
           "venue_name": "津",
@@ -34757,8 +34654,8 @@ window.KYOTEI_DATA = {
           "odds": "10.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.5",
+          "actual_ev": 0.596
         },
         {
           "venue_name": "丸亀",
@@ -34772,8 +34669,8 @@ window.KYOTEI_DATA = {
           "odds": "9.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.7",
+          "actual_ev": 0.547
         },
         {
           "venue_name": "丸亀",
@@ -34787,6 +34684,21 @@ window.KYOTEI_DATA = {
           "odds": "11.5",
           "hit": "0",
           "payout": "0",
+          "final_odds": "11.5",
+          "actual_ev": 0.646
+        },
+        {
+          "venue_name": "大村",
+          "race_no": "9",
+          "start_time": "21:25",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "prob_pct": "4.8",
+          "top1_pct": "65",
+          "ev": 0.42,
+          "odds": "8.8",
+          "hit": "",
+          "payout": "",
           "final_odds": "",
           "actual_ev": null
         },
@@ -34802,23 +34714,8 @@ window.KYOTEI_DATA = {
           "odds": "8.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "9",
-          "start_time": "21:25",
-          "combo": "1-3-2",
-          "actual_combo": "",
-          "prob_pct": "4.4",
-          "top1_pct": "64",
-          "ev": 0.69,
-          "odds": "15.5",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 0.382
         },
         {
           "venue_name": "蒲郡",
@@ -34832,8 +34729,8 @@ window.KYOTEI_DATA = {
           "odds": "8.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.3",
+          "actual_ev": 0.362
         },
         {
           "venue_name": "琵琶湖",
@@ -34847,8 +34744,8 @@ window.KYOTEI_DATA = {
           "odds": "19.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.1",
+          "actual_ev": 0.726
         }
       ]
     },
@@ -41644,8 +41541,8 @@ window.KYOTEI_DATA = {
           "odds": "15.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.3",
+          "actual_ev": 0.987
         },
         {
           "venue_name": "平和島",
@@ -41659,8 +41556,8 @@ window.KYOTEI_DATA = {
           "odds": "9.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.3",
+          "actual_ev": 0.937
         },
         {
           "venue_name": "平和島",
@@ -41674,8 +41571,8 @@ window.KYOTEI_DATA = {
           "odds": "16.7",
           "hit": "1",
           "payout": "1580",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.7",
+          "actual_ev": 0.975
         },
         {
           "venue_name": "平和島",
@@ -41689,8 +41586,8 @@ window.KYOTEI_DATA = {
           "odds": "5.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.7",
+          "actual_ev": 0.434
         },
         {
           "venue_name": "平和島",
@@ -41704,8 +41601,8 @@ window.KYOTEI_DATA = {
           "odds": "10.8",
           "hit": "1",
           "payout": "1390",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.2",
+          "actual_ev": 0.785
         },
         {
           "venue_name": "平和島",
@@ -41719,8 +41616,8 @@ window.KYOTEI_DATA = {
           "odds": "36.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.3",
+          "actual_ev": 3.634
         },
         {
           "venue_name": "平和島",
@@ -41734,8 +41631,8 @@ window.KYOTEI_DATA = {
           "odds": "23.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.3",
+          "actual_ev": 0.981
         },
         {
           "venue_name": "平和島",
@@ -41749,8 +41646,8 @@ window.KYOTEI_DATA = {
           "odds": "9.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.2",
+          "actual_ev": 0.395
         },
         {
           "venue_name": "平和島",
@@ -41764,8 +41661,8 @@ window.KYOTEI_DATA = {
           "odds": "10.1",
           "hit": "1",
           "payout": "12080",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.1",
+          "actual_ev": 1.177
         },
         {
           "venue_name": "平和島",
@@ -41779,8 +41676,8 @@ window.KYOTEI_DATA = {
           "odds": "5.0",
           "hit": "1",
           "payout": "500",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.0",
+          "actual_ev": 0.735
         },
         {
           "venue_name": "平和島",
@@ -41794,8 +41691,8 @@ window.KYOTEI_DATA = {
           "odds": "21.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.2",
+          "actual_ev": 0.806
         },
         {
           "venue_name": "平和島",
@@ -41809,8 +41706,8 @@ window.KYOTEI_DATA = {
           "odds": "5.6",
           "hit": "1",
           "payout": "930",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.6",
+          "actual_ev": 0.344
         },
         {
           "venue_name": "多摩川",
@@ -41824,8 +41721,8 @@ window.KYOTEI_DATA = {
           "odds": "21.4",
           "hit": "1",
           "payout": "1020",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.1",
+          "actual_ev": 0.834
         },
         {
           "venue_name": "多摩川",
@@ -41839,8 +41736,8 @@ window.KYOTEI_DATA = {
           "odds": "9.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.8",
+          "actual_ev": 0.298
         },
         {
           "venue_name": "多摩川",
@@ -41854,8 +41751,8 @@ window.KYOTEI_DATA = {
           "odds": "9.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.1",
+          "actual_ev": 0.352
         },
         {
           "venue_name": "多摩川",
@@ -41869,8 +41766,8 @@ window.KYOTEI_DATA = {
           "odds": "8.3",
           "hit": "1",
           "payout": "3100",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.6",
+          "actual_ev": 0.267
         },
         {
           "venue_name": "多摩川",
@@ -41884,8 +41781,8 @@ window.KYOTEI_DATA = {
           "odds": "31.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.2",
+          "actual_ev": 1.173
         },
         {
           "venue_name": "多摩川",
@@ -41899,8 +41796,8 @@ window.KYOTEI_DATA = {
           "odds": "6.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.4",
+          "actual_ev": 0.275
         },
         {
           "venue_name": "多摩川",
@@ -41914,8 +41811,8 @@ window.KYOTEI_DATA = {
           "odds": "16.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.9",
+          "actual_ev": 0.517
         },
         {
           "venue_name": "多摩川",
@@ -41929,8 +41826,8 @@ window.KYOTEI_DATA = {
           "odds": "8.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.2",
+          "actual_ev": 0.385
         },
         {
           "venue_name": "多摩川",
@@ -41944,8 +41841,8 @@ window.KYOTEI_DATA = {
           "odds": "9.6",
           "hit": "1",
           "payout": "960",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 0.303
         },
         {
           "venue_name": "多摩川",
@@ -41959,8 +41856,8 @@ window.KYOTEI_DATA = {
           "odds": "17.1",
           "hit": "1",
           "payout": "2580",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.1",
+          "actual_ev": 0.595
         },
         {
           "venue_name": "多摩川",
@@ -41974,8 +41871,8 @@ window.KYOTEI_DATA = {
           "odds": "17.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.5",
+          "actual_ev": 0.506
         },
         {
           "venue_name": "多摩川",
@@ -41989,8 +41886,8 @@ window.KYOTEI_DATA = {
           "odds": "7.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.256
         },
         {
           "venue_name": "蒲郡",
@@ -42004,8 +41901,8 @@ window.KYOTEI_DATA = {
           "odds": "6.7",
           "hit": "1",
           "payout": "690",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.618
         },
         {
           "venue_name": "蒲郡",
@@ -42019,8 +41916,8 @@ window.KYOTEI_DATA = {
           "odds": "7.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.5",
+          "actual_ev": 0.513
         },
         {
           "venue_name": "蒲郡",
@@ -42034,23 +41931,8 @@ window.KYOTEI_DATA = {
           "odds": "6.6",
           "hit": "1",
           "payout": "690",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "蒲郡",
-          "race_no": "12",
-          "start_time": "20:38",
-          "combo": "1-2-3",
-          "n_bets": 6,
-          "actual_combo": "",
-          "prob_pct": "8.3",
-          "ev": 0.64,
-          "odds": "7.7",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.9",
+          "actual_ev": 0.277
         },
         {
           "venue_name": "蒲郡",
@@ -42064,8 +41946,8 @@ window.KYOTEI_DATA = {
           "odds": "8.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.3",
+          "actual_ev": 0.362
         },
         {
           "venue_name": "蒲郡",
@@ -42079,8 +41961,8 @@ window.KYOTEI_DATA = {
           "odds": "24.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.9",
+          "actual_ev": 2.189
         },
         {
           "venue_name": "蒲郡",
@@ -42094,8 +41976,8 @@ window.KYOTEI_DATA = {
           "odds": "14.1",
           "hit": "1",
           "payout": "1430",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.1",
+          "actual_ev": 0.898
         },
         {
           "venue_name": "蒲郡",
@@ -42109,8 +41991,8 @@ window.KYOTEI_DATA = {
           "odds": "5.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.7",
+          "actual_ev": 0.702
         },
         {
           "venue_name": "蒲郡",
@@ -42124,8 +42006,8 @@ window.KYOTEI_DATA = {
           "odds": "6.8",
           "hit": "1",
           "payout": "790",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.8",
+          "actual_ev": 0.643
         },
         {
           "venue_name": "蒲郡",
@@ -42139,8 +42021,8 @@ window.KYOTEI_DATA = {
           "odds": "9.3",
           "hit": "1",
           "payout": "1060",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.3",
+          "actual_ev": 1.12
         },
         {
           "venue_name": "蒲郡",
@@ -42154,8 +42036,8 @@ window.KYOTEI_DATA = {
           "odds": "11.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.5",
+          "actual_ev": 1.023
         },
         {
           "venue_name": "蒲郡",
@@ -42169,8 +42051,8 @@ window.KYOTEI_DATA = {
           "odds": "7.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 0.443
         },
         {
           "venue_name": "常滑",
@@ -42184,8 +42066,8 @@ window.KYOTEI_DATA = {
           "odds": "12.4",
           "hit": "1",
           "payout": "1230",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.4",
+          "actual_ev": 1.121
         },
         {
           "venue_name": "常滑",
@@ -42199,8 +42081,8 @@ window.KYOTEI_DATA = {
           "odds": "4.6",
           "hit": "1",
           "payout": "800",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.6",
+          "actual_ev": 0.45
         },
         {
           "venue_name": "常滑",
@@ -42214,8 +42096,8 @@ window.KYOTEI_DATA = {
           "odds": "3.7",
           "hit": "1",
           "payout": "370",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "3.7",
+          "actual_ev": 0.252
         },
         {
           "venue_name": "常滑",
@@ -42229,8 +42111,8 @@ window.KYOTEI_DATA = {
           "odds": "5.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.1",
+          "actual_ev": 0.441
         },
         {
           "venue_name": "常滑",
@@ -42244,8 +42126,8 @@ window.KYOTEI_DATA = {
           "odds": "4.9",
           "hit": "1",
           "payout": "1060",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.9",
+          "actual_ev": 0.884
         },
         {
           "venue_name": "常滑",
@@ -42259,8 +42141,8 @@ window.KYOTEI_DATA = {
           "odds": "20.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.4",
+          "actual_ev": 1.391
         },
         {
           "venue_name": "常滑",
@@ -42274,8 +42156,8 @@ window.KYOTEI_DATA = {
           "odds": "9.4",
           "hit": "1",
           "payout": "1170",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.4",
+          "actual_ev": 1.038
         },
         {
           "venue_name": "常滑",
@@ -42289,8 +42171,8 @@ window.KYOTEI_DATA = {
           "odds": "4.9",
           "hit": "1",
           "payout": "490",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.9",
+          "actual_ev": 0.566
         },
         {
           "venue_name": "常滑",
@@ -42304,8 +42186,8 @@ window.KYOTEI_DATA = {
           "odds": "5.2",
           "hit": "1",
           "payout": "540",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.2",
+          "actual_ev": 0.588
         },
         {
           "venue_name": "常滑",
@@ -42319,8 +42201,8 @@ window.KYOTEI_DATA = {
           "odds": "14.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.9",
+          "actual_ev": 1.219
         },
         {
           "venue_name": "常滑",
@@ -42334,8 +42216,8 @@ window.KYOTEI_DATA = {
           "odds": "25.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.5",
+          "actual_ev": 2.382
         },
         {
           "venue_name": "常滑",
@@ -42349,8 +42231,8 @@ window.KYOTEI_DATA = {
           "odds": "13.3",
           "hit": "1",
           "payout": "1330",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.3",
+          "actual_ev": 1.222
         },
         {
           "venue_name": "津",
@@ -42364,8 +42246,8 @@ window.KYOTEI_DATA = {
           "odds": "11.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.1",
+          "actual_ev": 0.971
         },
         {
           "venue_name": "津",
@@ -42379,8 +42261,8 @@ window.KYOTEI_DATA = {
           "odds": "13.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.4",
+          "actual_ev": 0.699
         },
         {
           "venue_name": "津",
@@ -42394,8 +42276,8 @@ window.KYOTEI_DATA = {
           "odds": "17.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.1",
+          "actual_ev": 0.552
         },
         {
           "venue_name": "津",
@@ -42409,8 +42291,8 @@ window.KYOTEI_DATA = {
           "odds": "18.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.1",
+          "actual_ev": 0.798
         },
         {
           "venue_name": "津",
@@ -42424,8 +42306,8 @@ window.KYOTEI_DATA = {
           "odds": "10.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.4",
+          "actual_ev": 0.415
         },
         {
           "venue_name": "津",
@@ -42439,8 +42321,8 @@ window.KYOTEI_DATA = {
           "odds": "7.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.412
         },
         {
           "venue_name": "津",
@@ -42454,8 +42336,8 @@ window.KYOTEI_DATA = {
           "odds": "5.2",
           "hit": "1",
           "payout": "1240",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.2",
+          "actual_ev": 0.435
         },
         {
           "venue_name": "津",
@@ -42469,8 +42351,8 @@ window.KYOTEI_DATA = {
           "odds": "8.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 0.538
         },
         {
           "venue_name": "津",
@@ -42484,8 +42366,8 @@ window.KYOTEI_DATA = {
           "odds": "8.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.6",
+          "actual_ev": 0.557
         },
         {
           "venue_name": "津",
@@ -42499,8 +42381,8 @@ window.KYOTEI_DATA = {
           "odds": "23.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.3",
+          "actual_ev": 1.389
         },
         {
           "venue_name": "津",
@@ -42514,8 +42396,8 @@ window.KYOTEI_DATA = {
           "odds": "9.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.8",
+          "actual_ev": 0.557
         },
         {
           "venue_name": "津",
@@ -42529,8 +42411,8 @@ window.KYOTEI_DATA = {
           "odds": "13.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.5",
+          "actual_ev": 0.817
         },
         {
           "venue_name": "琵琶湖",
@@ -42544,8 +42426,8 @@ window.KYOTEI_DATA = {
           "odds": "9.2",
           "hit": "1",
           "payout": "920",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.2",
+          "actual_ev": 0.727
         },
         {
           "venue_name": "琵琶湖",
@@ -42559,8 +42441,8 @@ window.KYOTEI_DATA = {
           "odds": "18.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.1",
+          "actual_ev": 1.019
         },
         {
           "venue_name": "琵琶湖",
@@ -42574,8 +42456,8 @@ window.KYOTEI_DATA = {
           "odds": "6.3",
           "hit": "1",
           "payout": "1420",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.468
         },
         {
           "venue_name": "琵琶湖",
@@ -42589,8 +42471,8 @@ window.KYOTEI_DATA = {
           "odds": "6.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.2",
+          "actual_ev": 0.403
         },
         {
           "venue_name": "琵琶湖",
@@ -42604,8 +42486,8 @@ window.KYOTEI_DATA = {
           "odds": "9.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 0.52
         },
         {
           "venue_name": "琵琶湖",
@@ -42619,8 +42501,8 @@ window.KYOTEI_DATA = {
           "odds": "32.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.0",
+          "actual_ev": 1.584
         },
         {
           "venue_name": "琵琶湖",
@@ -42634,8 +42516,8 @@ window.KYOTEI_DATA = {
           "odds": "52.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.3",
+          "actual_ev": 1.459
         },
         {
           "venue_name": "琵琶湖",
@@ -42649,8 +42531,8 @@ window.KYOTEI_DATA = {
           "odds": "23.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.6",
+          "actual_ev": 1.532
         },
         {
           "venue_name": "琵琶湖",
@@ -42664,8 +42546,8 @@ window.KYOTEI_DATA = {
           "odds": "7.9",
           "hit": "1",
           "payout": "1460",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 1.01
         },
         {
           "venue_name": "琵琶湖",
@@ -42679,8 +42561,8 @@ window.KYOTEI_DATA = {
           "odds": "14.6",
           "hit": "1",
           "payout": "1460",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.6",
+          "actual_ev": 1.032
         },
         {
           "venue_name": "琵琶湖",
@@ -42694,8 +42576,8 @@ window.KYOTEI_DATA = {
           "odds": "19.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.1",
+          "actual_ev": 0.726
         },
         {
           "venue_name": "琵琶湖",
@@ -42709,8 +42591,8 @@ window.KYOTEI_DATA = {
           "odds": "96.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "96.8",
+          "actual_ev": 6.67
         },
         {
           "venue_name": "尼崎",
@@ -42724,8 +42606,8 @@ window.KYOTEI_DATA = {
           "odds": "11.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.8",
+          "actual_ev": 0.749
         },
         {
           "venue_name": "尼崎",
@@ -42739,8 +42621,8 @@ window.KYOTEI_DATA = {
           "odds": "5.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.4",
+          "actual_ev": 0.433
         },
         {
           "venue_name": "尼崎",
@@ -42754,8 +42636,8 @@ window.KYOTEI_DATA = {
           "odds": "6.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.574
         },
         {
           "venue_name": "尼崎",
@@ -42769,8 +42651,8 @@ window.KYOTEI_DATA = {
           "odds": "12.0",
           "hit": "1",
           "payout": "1200",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.0",
+          "actual_ev": 0.731
         },
         {
           "venue_name": "尼崎",
@@ -42784,8 +42666,8 @@ window.KYOTEI_DATA = {
           "odds": "14.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.2",
+          "actual_ev": 0.906
         },
         {
           "venue_name": "尼崎",
@@ -42799,8 +42681,8 @@ window.KYOTEI_DATA = {
           "odds": "17.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.8",
+          "actual_ev": 1.317
         },
         {
           "venue_name": "尼崎",
@@ -42814,8 +42696,8 @@ window.KYOTEI_DATA = {
           "odds": "14.3",
           "hit": "1",
           "payout": "1250",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.3",
+          "actual_ev": 0.766
         },
         {
           "venue_name": "尼崎",
@@ -42829,8 +42711,8 @@ window.KYOTEI_DATA = {
           "odds": "15.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.4",
+          "actual_ev": 1.186
         },
         {
           "venue_name": "尼崎",
@@ -42844,8 +42726,8 @@ window.KYOTEI_DATA = {
           "odds": "7.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.6",
+          "actual_ev": 0.766
         },
         {
           "venue_name": "尼崎",
@@ -42859,8 +42741,8 @@ window.KYOTEI_DATA = {
           "odds": "8.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.6",
+          "actual_ev": 0.419
         },
         {
           "venue_name": "尼崎",
@@ -42874,8 +42756,8 @@ window.KYOTEI_DATA = {
           "odds": "6.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.553
         },
         {
           "venue_name": "尼崎",
@@ -42889,8 +42771,8 @@ window.KYOTEI_DATA = {
           "odds": "18.9",
           "hit": "1",
           "payout": "4160",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.9",
+          "actual_ev": 1.1
         },
         {
           "venue_name": "鳴門",
@@ -42904,8 +42786,8 @@ window.KYOTEI_DATA = {
           "odds": "9.6",
           "hit": "1",
           "payout": "730",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 0.993
         },
         {
           "venue_name": "鳴門",
@@ -42919,8 +42801,8 @@ window.KYOTEI_DATA = {
           "odds": "15.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.8",
+          "actual_ev": 1.387
         },
         {
           "venue_name": "鳴門",
@@ -42934,8 +42816,8 @@ window.KYOTEI_DATA = {
           "odds": "7.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.471
         },
         {
           "venue_name": "鳴門",
@@ -42949,8 +42831,8 @@ window.KYOTEI_DATA = {
           "odds": "16.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.6",
+          "actual_ev": 0.564
         },
         {
           "venue_name": "鳴門",
@@ -42964,8 +42846,8 @@ window.KYOTEI_DATA = {
           "odds": "10.1",
           "hit": "1",
           "payout": "1920",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.1",
+          "actual_ev": 0.849
         },
         {
           "venue_name": "鳴門",
@@ -42979,8 +42861,8 @@ window.KYOTEI_DATA = {
           "odds": "9.6",
           "hit": "1",
           "payout": "960",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 1.083
         },
         {
           "venue_name": "鳴門",
@@ -42994,8 +42876,8 @@ window.KYOTEI_DATA = {
           "odds": "7.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.433
         },
         {
           "venue_name": "鳴門",
@@ -43009,8 +42891,8 @@ window.KYOTEI_DATA = {
           "odds": "9.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.0",
+          "actual_ev": 1.335
         },
         {
           "venue_name": "鳴門",
@@ -43024,8 +42906,8 @@ window.KYOTEI_DATA = {
           "odds": "7.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.4",
+          "actual_ev": 0.549
         },
         {
           "venue_name": "鳴門",
@@ -43039,8 +42921,8 @@ window.KYOTEI_DATA = {
           "odds": "23.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.7",
+          "actual_ev": 3.211
         },
         {
           "venue_name": "鳴門",
@@ -43054,8 +42936,8 @@ window.KYOTEI_DATA = {
           "odds": "22.4",
           "hit": "1",
           "payout": "2500",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.2",
+          "actual_ev": 1.64
         },
         {
           "venue_name": "鳴門",
@@ -43069,8 +42951,8 @@ window.KYOTEI_DATA = {
           "odds": "13.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.1",
+          "actual_ev": 0.938
         },
         {
           "venue_name": "丸亀",
@@ -43084,8 +42966,8 @@ window.KYOTEI_DATA = {
           "odds": "8.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 0.382
         },
         {
           "venue_name": "丸亀",
@@ -43099,8 +42981,8 @@ window.KYOTEI_DATA = {
           "odds": "9.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.7",
+          "actual_ev": 0.547
         },
         {
           "venue_name": "丸亀",
@@ -43114,23 +42996,8 @@ window.KYOTEI_DATA = {
           "odds": "9.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "丸亀",
-          "race_no": "12",
-          "start_time": "20:31",
-          "combo": "1-3-2",
-          "n_bets": 6,
-          "actual_combo": "",
-          "prob_pct": "3.7",
-          "ev": 0.32,
-          "odds": "8.7",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.6",
+          "actual_ev": 0.408
         },
         {
           "venue_name": "丸亀",
@@ -43144,8 +43011,8 @@ window.KYOTEI_DATA = {
           "odds": "20.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.9",
+          "actual_ev": 0.746
         },
         {
           "venue_name": "丸亀",
@@ -43159,8 +43026,8 @@ window.KYOTEI_DATA = {
           "odds": "50.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "50.2",
+          "actual_ev": 1.667
         },
         {
           "venue_name": "丸亀",
@@ -43174,8 +43041,8 @@ window.KYOTEI_DATA = {
           "odds": "46.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.9",
+          "actual_ev": 1.86
         },
         {
           "venue_name": "丸亀",
@@ -43189,8 +43056,8 @@ window.KYOTEI_DATA = {
           "odds": "13.1",
           "hit": "1",
           "payout": "1820",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.1",
+          "actual_ev": 0.768
         },
         {
           "venue_name": "丸亀",
@@ -43204,8 +43071,8 @@ window.KYOTEI_DATA = {
           "odds": "7.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.891
         },
         {
           "venue_name": "丸亀",
@@ -43219,8 +43086,8 @@ window.KYOTEI_DATA = {
           "odds": "6.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.678
         },
         {
           "venue_name": "丸亀",
@@ -43234,8 +43101,8 @@ window.KYOTEI_DATA = {
           "odds": "7.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.552
         },
         {
           "venue_name": "丸亀",
@@ -43249,8 +43116,8 @@ window.KYOTEI_DATA = {
           "odds": "11.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.5",
+          "actual_ev": 0.646
         },
         {
           "venue_name": "児島",
@@ -43264,8 +43131,8 @@ window.KYOTEI_DATA = {
           "odds": "8.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.1",
+          "actual_ev": 0.619
         },
         {
           "venue_name": "児島",
@@ -43279,8 +43146,8 @@ window.KYOTEI_DATA = {
           "odds": "6.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.583
         },
         {
           "venue_name": "児島",
@@ -43294,8 +43161,8 @@ window.KYOTEI_DATA = {
           "odds": "9.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.2",
+          "actual_ev": 0.526
         },
         {
           "venue_name": "児島",
@@ -43309,8 +43176,8 @@ window.KYOTEI_DATA = {
           "odds": "8.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.8",
+          "actual_ev": 0.4
         },
         {
           "venue_name": "児島",
@@ -43324,8 +43191,8 @@ window.KYOTEI_DATA = {
           "odds": "10.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.8",
+          "actual_ev": 0.408
         },
         {
           "venue_name": "児島",
@@ -43339,8 +43206,8 @@ window.KYOTEI_DATA = {
           "odds": "32.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.1",
+          "actual_ev": 1.162
         },
         {
           "venue_name": "児島",
@@ -43354,8 +43221,8 @@ window.KYOTEI_DATA = {
           "odds": "8.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.1",
+          "actual_ev": 0.746
         },
         {
           "venue_name": "児島",
@@ -43369,8 +43236,8 @@ window.KYOTEI_DATA = {
           "odds": "6.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.5",
+          "actual_ev": 0.807
         },
         {
           "venue_name": "児島",
@@ -43384,8 +43251,8 @@ window.KYOTEI_DATA = {
           "odds": "9.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.1",
+          "actual_ev": 0.597
         },
         {
           "venue_name": "児島",
@@ -43399,8 +43266,8 @@ window.KYOTEI_DATA = {
           "odds": "12.9",
           "hit": "1",
           "payout": "750",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.9",
+          "actual_ev": 0.956
         },
         {
           "venue_name": "児島",
@@ -43414,8 +43281,8 @@ window.KYOTEI_DATA = {
           "odds": "13.9",
           "hit": "1",
           "payout": "8970",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.9",
+          "actual_ev": 0.448
         },
         {
           "venue_name": "児島",
@@ -43429,8 +43296,8 @@ window.KYOTEI_DATA = {
           "odds": "13.0",
           "hit": "1",
           "payout": "1580",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.0",
+          "actual_ev": 1.031
         },
         {
           "venue_name": "徳山",
@@ -43444,8 +43311,8 @@ window.KYOTEI_DATA = {
           "odds": "10.5",
           "hit": "1",
           "payout": "520",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.5",
+          "actual_ev": 0.343
         },
         {
           "venue_name": "徳山",
@@ -43459,8 +43326,8 @@ window.KYOTEI_DATA = {
           "odds": "7.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 0.278
         },
         {
           "venue_name": "徳山",
@@ -43474,8 +43341,8 @@ window.KYOTEI_DATA = {
           "odds": "4.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.8",
+          "actual_ev": 0.154
         },
         {
           "venue_name": "徳山",
@@ -43489,8 +43356,8 @@ window.KYOTEI_DATA = {
           "odds": "7.9",
           "hit": "1",
           "payout": "790",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 0.271
         },
         {
           "venue_name": "徳山",
@@ -43504,8 +43371,8 @@ window.KYOTEI_DATA = {
           "odds": "9.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.7",
+          "actual_ev": 0.369
         },
         {
           "venue_name": "徳山",
@@ -43519,8 +43386,8 @@ window.KYOTEI_DATA = {
           "odds": "26.5",
           "hit": "1",
           "payout": "950",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.5",
+          "actual_ev": 0.988
         },
         {
           "venue_name": "徳山",
@@ -43534,8 +43401,8 @@ window.KYOTEI_DATA = {
           "odds": "10.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.0",
+          "actual_ev": 0.279
         },
         {
           "venue_name": "徳山",
@@ -43549,8 +43416,8 @@ window.KYOTEI_DATA = {
           "odds": "6.6",
           "hit": "1",
           "payout": "1240",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.6",
+          "actual_ev": 0.202
         },
         {
           "venue_name": "徳山",
@@ -43564,8 +43431,8 @@ window.KYOTEI_DATA = {
           "odds": "15.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.8",
+          "actual_ev": 0.608
         },
         {
           "venue_name": "徳山",
@@ -43579,8 +43446,8 @@ window.KYOTEI_DATA = {
           "odds": "5.6",
           "hit": "1",
           "payout": "830",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.6",
+          "actual_ev": 0.153
         },
         {
           "venue_name": "徳山",
@@ -43594,8 +43461,8 @@ window.KYOTEI_DATA = {
           "odds": "28.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.5",
+          "actual_ev": 0.878
         },
         {
           "venue_name": "徳山",
@@ -43609,8 +43476,8 @@ window.KYOTEI_DATA = {
           "odds": "28.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.3",
+          "actual_ev": 0.722
         },
         {
           "venue_name": "下関",
@@ -43624,8 +43491,8 @@ window.KYOTEI_DATA = {
           "odds": "20.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.1",
+          "actual_ev": 1.373
         },
         {
           "venue_name": "下関",
@@ -43639,8 +43506,8 @@ window.KYOTEI_DATA = {
           "odds": "8.0",
           "hit": "1",
           "payout": "1870",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.0",
+          "actual_ev": 0.488
         },
         {
           "venue_name": "下関",
@@ -43654,23 +43521,8 @@ window.KYOTEI_DATA = {
           "odds": "10.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "下関",
-          "race_no": "12",
-          "start_time": "20:45",
-          "combo": "1-3-2",
-          "n_bets": 6,
-          "actual_combo": "",
-          "prob_pct": "4.0",
-          "ev": 0.33,
-          "odds": "8.4",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 0.417
         },
         {
           "venue_name": "下関",
@@ -43684,8 +43536,8 @@ window.KYOTEI_DATA = {
           "odds": "8.7",
           "hit": "1",
           "payout": "870",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.7",
+          "actual_ev": 0.835
         },
         {
           "venue_name": "下関",
@@ -43699,8 +43551,8 @@ window.KYOTEI_DATA = {
           "odds": "13.4",
           "hit": "1",
           "payout": "1340",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.4",
+          "actual_ev": 0.32
         },
         {
           "venue_name": "下関",
@@ -43714,8 +43566,8 @@ window.KYOTEI_DATA = {
           "odds": "8.5",
           "hit": "1",
           "payout": "850",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 0.604
         },
         {
           "venue_name": "下関",
@@ -43729,8 +43581,8 @@ window.KYOTEI_DATA = {
           "odds": "6.7",
           "hit": "1",
           "payout": "600",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.567
         },
         {
           "venue_name": "下関",
@@ -43744,8 +43596,8 @@ window.KYOTEI_DATA = {
           "odds": "3.3",
           "hit": "1",
           "payout": "1820",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "3.3",
+          "actual_ev": 0.353
         },
         {
           "venue_name": "下関",
@@ -43759,8 +43611,8 @@ window.KYOTEI_DATA = {
           "odds": "6.9",
           "hit": "1",
           "payout": "1800",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.9",
+          "actual_ev": 1.031
         },
         {
           "venue_name": "下関",
@@ -43774,8 +43626,8 @@ window.KYOTEI_DATA = {
           "odds": "10.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.1",
+          "actual_ev": 0.886
         },
         {
           "venue_name": "下関",
@@ -43789,8 +43641,8 @@ window.KYOTEI_DATA = {
           "odds": "30.6",
           "hit": "1",
           "payout": "2190",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "30.6",
+          "actual_ev": 1.224
         },
         {
           "venue_name": "福岡",
@@ -43804,8 +43656,8 @@ window.KYOTEI_DATA = {
           "odds": "6.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.3",
+          "actual_ev": 0.584
         },
         {
           "venue_name": "福岡",
@@ -43819,8 +43671,8 @@ window.KYOTEI_DATA = {
           "odds": "3.9",
           "hit": "1",
           "payout": "410",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "3.9",
+          "actual_ev": 0.244
         },
         {
           "venue_name": "福岡",
@@ -43834,8 +43686,8 @@ window.KYOTEI_DATA = {
           "odds": "7.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.3",
+          "actual_ev": 0.307
         },
         {
           "venue_name": "福岡",
@@ -43849,8 +43701,8 @@ window.KYOTEI_DATA = {
           "odds": "6.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.5",
+          "actual_ev": 0.4
         },
         {
           "venue_name": "福岡",
@@ -43864,8 +43716,8 @@ window.KYOTEI_DATA = {
           "odds": "13.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.6",
+          "actual_ev": 0.967
         },
         {
           "venue_name": "福岡",
@@ -43879,8 +43731,8 @@ window.KYOTEI_DATA = {
           "odds": "5.7",
           "hit": "1",
           "payout": "1440",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.7",
+          "actual_ev": 0.497
         },
         {
           "venue_name": "福岡",
@@ -43894,8 +43746,8 @@ window.KYOTEI_DATA = {
           "odds": "5.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.1",
+          "actual_ev": 0.92
         },
         {
           "venue_name": "福岡",
@@ -43909,8 +43761,8 @@ window.KYOTEI_DATA = {
           "odds": "5.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.0",
+          "actual_ev": 0.896
         },
         {
           "venue_name": "福岡",
@@ -43924,8 +43776,8 @@ window.KYOTEI_DATA = {
           "odds": "10.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.2",
+          "actual_ev": 1.146
         },
         {
           "venue_name": "福岡",
@@ -43939,8 +43791,8 @@ window.KYOTEI_DATA = {
           "odds": "22.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.0",
+          "actual_ev": 1.817
         },
         {
           "venue_name": "福岡",
@@ -43954,8 +43806,8 @@ window.KYOTEI_DATA = {
           "odds": "17.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.0",
+          "actual_ev": 1.649
         },
         {
           "venue_name": "福岡",
@@ -43969,8 +43821,8 @@ window.KYOTEI_DATA = {
           "odds": "10.4",
           "hit": "1",
           "payout": "1040",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.4",
+          "actual_ev": 0.777
         },
         {
           "venue_name": "唐津",
@@ -43984,8 +43836,8 @@ window.KYOTEI_DATA = {
           "odds": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "4.4",
+          "actual_ev": 0.483
         },
         {
           "venue_name": "唐津",
@@ -43999,8 +43851,8 @@ window.KYOTEI_DATA = {
           "odds": "65.5",
           "hit": "1",
           "payout": "8670",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "65.5",
+          "actual_ev": 2.05
         },
         {
           "venue_name": "唐津",
@@ -44014,8 +43866,8 @@ window.KYOTEI_DATA = {
           "odds": "6.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.7",
+          "actual_ev": 0.692
         },
         {
           "venue_name": "唐津",
@@ -44029,8 +43881,8 @@ window.KYOTEI_DATA = {
           "odds": "7.9",
           "hit": "1",
           "payout": "650",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.9",
+          "actual_ev": 0.472
         },
         {
           "venue_name": "唐津",
@@ -44044,8 +43896,8 @@ window.KYOTEI_DATA = {
           "odds": "6.9",
           "hit": "1",
           "payout": "890",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.9",
+          "actual_ev": 0.874
         },
         {
           "venue_name": "唐津",
@@ -44059,8 +43911,8 @@ window.KYOTEI_DATA = {
           "odds": "9.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.9",
+          "actual_ev": 1.191
         },
         {
           "venue_name": "唐津",
@@ -44074,8 +43926,8 @@ window.KYOTEI_DATA = {
           "odds": "21.4",
           "hit": "1",
           "payout": "2370",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.4",
+          "actual_ev": 0.98
         },
         {
           "venue_name": "唐津",
@@ -44089,8 +43941,8 @@ window.KYOTEI_DATA = {
           "odds": "10.0",
           "hit": "1",
           "payout": "860",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.0",
+          "actual_ev": 0.958
         },
         {
           "venue_name": "唐津",
@@ -44104,8 +43956,8 @@ window.KYOTEI_DATA = {
           "odds": "7.1",
           "hit": "1",
           "payout": "1930",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.689
         },
         {
           "venue_name": "唐津",
@@ -44119,8 +43971,8 @@ window.KYOTEI_DATA = {
           "odds": "7.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.2",
+          "actual_ev": 0.466
         },
         {
           "venue_name": "唐津",
@@ -44134,8 +43986,8 @@ window.KYOTEI_DATA = {
           "odds": "9.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.1",
+          "actual_ev": 0.703
         },
         {
           "venue_name": "唐津",
@@ -44149,8 +44001,8 @@ window.KYOTEI_DATA = {
           "odds": "11.1",
           "hit": "1",
           "payout": "650",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.1",
+          "actual_ev": 1.023
         },
         {
           "venue_name": "大村",
@@ -44164,8 +44016,8 @@ window.KYOTEI_DATA = {
           "odds": "14.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.4",
+          "actual_ev": 0.685
         },
         {
           "venue_name": "大村",
@@ -44179,8 +44031,8 @@ window.KYOTEI_DATA = {
           "odds": "13.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.6",
+          "actual_ev": 1.467
         },
         {
           "venue_name": "大村",
@@ -44194,8 +44046,8 @@ window.KYOTEI_DATA = {
           "odds": "22.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.8",
+          "actual_ev": 1.215
         },
         {
           "venue_name": "大村",
@@ -44209,8 +44061,8 @@ window.KYOTEI_DATA = {
           "odds": "7.3",
           "hit": "1",
           "payout": "350",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.3",
+          "actual_ev": 0.749
         },
         {
           "venue_name": "大村",
@@ -44224,8 +44076,8 @@ window.KYOTEI_DATA = {
           "odds": "21.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.3",
+          "actual_ev": 0.956
         },
         {
           "venue_name": "大村",
@@ -44239,8 +44091,8 @@ window.KYOTEI_DATA = {
           "odds": "5.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "5.0",
+          "actual_ev": 0.543
         },
         {
           "venue_name": "大村",
@@ -44254,34 +44106,19 @@ window.KYOTEI_DATA = {
           "odds": "7.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "8",
-          "start_time": "20:59",
-          "combo": "1-2-6",
-          "n_bets": 6,
-          "actual_combo": "",
-          "prob_pct": "13.8",
-          "ev": 0.74,
-          "odds": "5.4",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.9",
+          "actual_ev": 0.669
         },
         {
           "venue_name": "大村",
           "race_no": "9",
           "start_time": "21:25",
-          "combo": "1-3-2",
+          "combo": "1-3-4",
           "n_bets": 6,
           "actual_combo": "",
-          "prob_pct": "4.4",
-          "ev": 0.69,
-          "odds": "15.5",
+          "prob_pct": "4.8",
+          "ev": 0.42,
+          "odds": "8.8",
           "hit": "",
           "payout": "0",
           "final_odds": "",
@@ -59736,8 +59573,8 @@ window.KYOTEI_DATA = {
           "odds": "23.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.3",
+          "actual_ev": 0.949
         },
         {
           "venue_name": "平和島",
@@ -59751,8 +59588,8 @@ window.KYOTEI_DATA = {
           "odds": "31.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "49.2",
+          "actual_ev": 2.111
         },
         {
           "venue_name": "平和島",
@@ -59766,8 +59603,8 @@ window.KYOTEI_DATA = {
           "odds": "29.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.1",
+          "actual_ev": 1.49
         },
         {
           "venue_name": "平和島",
@@ -59781,8 +59618,8 @@ window.KYOTEI_DATA = {
           "odds": "23.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.9",
+          "actual_ev": 1.367
         },
         {
           "venue_name": "平和島",
@@ -59796,8 +59633,8 @@ window.KYOTEI_DATA = {
           "odds": "18.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.0",
+          "actual_ev": 1.354
         },
         {
           "venue_name": "平和島",
@@ -59811,8 +59648,8 @@ window.KYOTEI_DATA = {
           "odds": "36.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.0",
+          "actual_ev": 0.481
         },
         {
           "venue_name": "平和島",
@@ -59826,8 +59663,8 @@ window.KYOTEI_DATA = {
           "odds": "22.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.1",
+          "actual_ev": 1.095
         },
         {
           "venue_name": "平和島",
@@ -59841,8 +59678,8 @@ window.KYOTEI_DATA = {
           "odds": "20.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.0",
+          "actual_ev": 1.031
         },
         {
           "venue_name": "平和島",
@@ -59856,8 +59693,8 @@ window.KYOTEI_DATA = {
           "odds": "30.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.5",
+          "actual_ev": 0.685
         },
         {
           "venue_name": "多摩川",
@@ -59871,8 +59708,8 @@ window.KYOTEI_DATA = {
           "odds": "36.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.5",
+          "actual_ev": 1.464
         },
         {
           "venue_name": "多摩川",
@@ -59886,8 +59723,8 @@ window.KYOTEI_DATA = {
           "odds": "34.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "51.3",
+          "actual_ev": 2.534
         },
         {
           "venue_name": "多摩川",
@@ -59901,8 +59738,8 @@ window.KYOTEI_DATA = {
           "odds": "40.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.6",
+          "actual_ev": 1.088
         },
         {
           "venue_name": "蒲郡",
@@ -59916,8 +59753,8 @@ window.KYOTEI_DATA = {
           "odds": "24.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.2",
+          "actual_ev": 1.393
         },
         {
           "venue_name": "蒲郡",
@@ -59931,8 +59768,8 @@ window.KYOTEI_DATA = {
           "odds": "22.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.9",
+          "actual_ev": 1.897
         },
         {
           "venue_name": "蒲郡",
@@ -59946,8 +59783,8 @@ window.KYOTEI_DATA = {
           "odds": "22.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.1",
+          "actual_ev": 0.929
         },
         {
           "venue_name": "蒲郡",
@@ -59961,8 +59798,8 @@ window.KYOTEI_DATA = {
           "odds": "13.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.3",
+          "actual_ev": 1.519
         },
         {
           "venue_name": "蒲郡",
@@ -59976,8 +59813,8 @@ window.KYOTEI_DATA = {
           "odds": "31.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.5",
+          "actual_ev": 1.796
         },
         {
           "venue_name": "蒲郡",
@@ -59991,8 +59828,8 @@ window.KYOTEI_DATA = {
           "odds": "10.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.3",
+          "actual_ev": 1.186
         },
         {
           "venue_name": "蒲郡",
@@ -60006,8 +59843,8 @@ window.KYOTEI_DATA = {
           "odds": "35.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "35.9",
+          "actual_ev": 1.687
         },
         {
           "venue_name": "蒲郡",
@@ -60021,8 +59858,8 @@ window.KYOTEI_DATA = {
           "odds": "33.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.5",
+          "actual_ev": 1.063
         },
         {
           "venue_name": "常滑",
@@ -60036,8 +59873,8 @@ window.KYOTEI_DATA = {
           "odds": "39.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "39.7",
+          "actual_ev": 1.775
         },
         {
           "venue_name": "常滑",
@@ -60051,8 +59888,8 @@ window.KYOTEI_DATA = {
           "odds": "34.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "37.3",
+          "actual_ev": 2.007
         },
         {
           "venue_name": "常滑",
@@ -60066,8 +59903,8 @@ window.KYOTEI_DATA = {
           "odds": "22.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.4",
+          "actual_ev": 1.032
         },
         {
           "venue_name": "常滑",
@@ -60081,8 +59918,8 @@ window.KYOTEI_DATA = {
           "odds": "26.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.8",
+          "actual_ev": 1.812
         },
         {
           "venue_name": "常滑",
@@ -60096,8 +59933,8 @@ window.KYOTEI_DATA = {
           "odds": "15.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.3",
+          "actual_ev": 1.306
         },
         {
           "venue_name": "常滑",
@@ -60111,8 +59948,8 @@ window.KYOTEI_DATA = {
           "odds": "28.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.4",
+          "actual_ev": 1.866
         },
         {
           "venue_name": "常滑",
@@ -60126,8 +59963,8 @@ window.KYOTEI_DATA = {
           "odds": "24.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.4",
+          "actual_ev": 2.157
         },
         {
           "venue_name": "常滑",
@@ -60141,8 +59978,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.6",
+          "actual_ev": 1.769
         },
         {
           "venue_name": "津",
@@ -60156,8 +59993,8 @@ window.KYOTEI_DATA = {
           "odds": "33.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.8",
+          "actual_ev": 1.104
         },
         {
           "venue_name": "津",
@@ -60171,8 +60008,8 @@ window.KYOTEI_DATA = {
           "odds": "31.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.9",
+          "actual_ev": 1.512
         },
         {
           "venue_name": "津",
@@ -60186,8 +60023,8 @@ window.KYOTEI_DATA = {
           "odds": "41.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "41.0",
+          "actual_ev": 1.661
         },
         {
           "venue_name": "津",
@@ -60201,8 +60038,8 @@ window.KYOTEI_DATA = {
           "odds": "39.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "45.4",
+          "actual_ev": 1.957
         },
         {
           "venue_name": "津",
@@ -60216,8 +60053,8 @@ window.KYOTEI_DATA = {
           "odds": "28.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.5",
+          "actual_ev": 1.488
         },
         {
           "venue_name": "津",
@@ -60231,8 +60068,8 @@ window.KYOTEI_DATA = {
           "odds": "23.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.6",
+          "actual_ev": 1.607
         },
         {
           "venue_name": "津",
@@ -60246,8 +60083,8 @@ window.KYOTEI_DATA = {
           "odds": "23.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.3",
+          "actual_ev": 1.389
         },
         {
           "venue_name": "津",
@@ -60261,8 +60098,8 @@ window.KYOTEI_DATA = {
           "odds": "32.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.8",
+          "actual_ev": 1.882
         },
         {
           "venue_name": "琵琶湖",
@@ -60276,8 +60113,8 @@ window.KYOTEI_DATA = {
           "odds": "23.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.8",
+          "actual_ev": 0.872
         },
         {
           "venue_name": "琵琶湖",
@@ -60291,8 +60128,8 @@ window.KYOTEI_DATA = {
           "odds": "33.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.8",
+          "actual_ev": 1.426
         },
         {
           "venue_name": "琵琶湖",
@@ -60306,8 +60143,8 @@ window.KYOTEI_DATA = {
           "odds": "30.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.2",
+          "actual_ev": 0.642
         },
         {
           "venue_name": "琵琶湖",
@@ -60321,8 +60158,8 @@ window.KYOTEI_DATA = {
           "odds": "39.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "30.1",
+          "actual_ev": 1.228
         },
         {
           "venue_name": "琵琶湖",
@@ -60336,8 +60173,8 @@ window.KYOTEI_DATA = {
           "odds": "23.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.6",
+          "actual_ev": 1.532
         },
         {
           "venue_name": "琵琶湖",
@@ -60351,8 +60188,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.6",
+          "actual_ev": 1.58
         },
         {
           "venue_name": "琵琶湖",
@@ -60366,8 +60203,8 @@ window.KYOTEI_DATA = {
           "odds": "24.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.4",
+          "actual_ev": 0.78
         },
         {
           "venue_name": "尼崎",
@@ -60381,8 +60218,8 @@ window.KYOTEI_DATA = {
           "odds": "32.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.9",
+          "actual_ev": 1.579
         },
         {
           "venue_name": "尼崎",
@@ -60396,8 +60233,8 @@ window.KYOTEI_DATA = {
           "odds": "27.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.4",
+          "actual_ev": 1.649
         },
         {
           "venue_name": "尼崎",
@@ -60411,8 +60248,8 @@ window.KYOTEI_DATA = {
           "odds": "21.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.9",
+          "actual_ev": 1.182
         },
         {
           "venue_name": "尼崎",
@@ -60426,8 +60263,8 @@ window.KYOTEI_DATA = {
           "odds": "29.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.8",
+          "actual_ev": 2.339
         },
         {
           "venue_name": "尼崎",
@@ -60441,8 +60278,8 @@ window.KYOTEI_DATA = {
           "odds": "25.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.4",
+          "actual_ev": 1.326
         },
         {
           "venue_name": "尼崎",
@@ -60456,8 +60293,8 @@ window.KYOTEI_DATA = {
           "odds": "17.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.8",
+          "actual_ev": 1.317
         },
         {
           "venue_name": "尼崎",
@@ -60471,8 +60308,8 @@ window.KYOTEI_DATA = {
           "odds": "23.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.5",
+          "actual_ev": 0.961
         },
         {
           "venue_name": "尼崎",
@@ -60486,8 +60323,8 @@ window.KYOTEI_DATA = {
           "odds": "25.1",
           "hit": "1",
           "payout": "1260",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.6",
+          "actual_ev": 0.716
         },
         {
           "venue_name": "尼崎",
@@ -60501,8 +60338,8 @@ window.KYOTEI_DATA = {
           "odds": "18.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.2",
+          "actual_ev": 1.334
         },
         {
           "venue_name": "尼崎",
@@ -60516,8 +60353,8 @@ window.KYOTEI_DATA = {
           "odds": "28.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.4",
+          "actual_ev": 0.614
         },
         {
           "venue_name": "鳴門",
@@ -60531,8 +60368,8 @@ window.KYOTEI_DATA = {
           "odds": "13.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 1.02
         },
         {
           "venue_name": "鳴門",
@@ -60546,8 +60383,8 @@ window.KYOTEI_DATA = {
           "odds": "15.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.8",
+          "actual_ev": 1.387
         },
         {
           "venue_name": "鳴門",
@@ -60561,8 +60398,8 @@ window.KYOTEI_DATA = {
           "odds": "27.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "27.3",
+          "actual_ev": 1.474
         },
         {
           "venue_name": "鳴門",
@@ -60576,8 +60413,8 @@ window.KYOTEI_DATA = {
           "odds": "26.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.2",
+          "actual_ev": 1.499
         },
         {
           "venue_name": "鳴門",
@@ -60591,8 +60428,8 @@ window.KYOTEI_DATA = {
           "odds": "13.5",
           "hit": "1",
           "payout": "960",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 1.101
         },
         {
           "venue_name": "鳴門",
@@ -60606,8 +60443,8 @@ window.KYOTEI_DATA = {
           "odds": "16.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.0",
+          "actual_ev": 1.709
         },
         {
           "venue_name": "鳴門",
@@ -60621,8 +60458,8 @@ window.KYOTEI_DATA = {
           "odds": "27.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.9",
+          "actual_ev": 0.537
         },
         {
           "venue_name": "鳴門",
@@ -60636,8 +60473,8 @@ window.KYOTEI_DATA = {
           "odds": "20.9",
           "hit": "1",
           "payout": "2500",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.9",
+          "actual_ev": 1.446
         },
         {
           "venue_name": "鳴門",
@@ -60651,8 +60488,8 @@ window.KYOTEI_DATA = {
           "odds": "31.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.7",
+          "actual_ev": 1.753
         },
         {
           "venue_name": "丸亀",
@@ -60666,8 +60503,8 @@ window.KYOTEI_DATA = {
           "odds": "33.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.9",
+          "actual_ev": 0.82
         },
         {
           "venue_name": "丸亀",
@@ -60681,8 +60518,8 @@ window.KYOTEI_DATA = {
           "odds": "35.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.0",
+          "actual_ev": 1.369
         },
         {
           "venue_name": "丸亀",
@@ -60696,8 +60533,8 @@ window.KYOTEI_DATA = {
           "odds": "20.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.609
         },
         {
           "venue_name": "丸亀",
@@ -60711,8 +60548,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.5",
+          "actual_ev": 2.003
         },
         {
           "venue_name": "丸亀",
@@ -60726,8 +60563,8 @@ window.KYOTEI_DATA = {
           "odds": "39.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.6",
+          "actual_ev": 1.522
         },
         {
           "venue_name": "丸亀",
@@ -60741,8 +60578,8 @@ window.KYOTEI_DATA = {
           "odds": "41.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "41.8",
+          "actual_ev": 1.789
         },
         {
           "venue_name": "児島",
@@ -60756,8 +60593,8 @@ window.KYOTEI_DATA = {
           "odds": "41.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 0.405
         },
         {
           "venue_name": "児島",
@@ -60771,8 +60608,8 @@ window.KYOTEI_DATA = {
           "odds": "17.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.1",
+          "actual_ev": 0.792
         },
         {
           "venue_name": "児島",
@@ -60786,8 +60623,8 @@ window.KYOTEI_DATA = {
           "odds": "23.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.0",
+          "actual_ev": 1.352
         },
         {
           "venue_name": "児島",
@@ -60801,8 +60638,8 @@ window.KYOTEI_DATA = {
           "odds": "24.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.1",
+          "actual_ev": 0.592
         },
         {
           "venue_name": "児島",
@@ -60816,8 +60653,8 @@ window.KYOTEI_DATA = {
           "odds": "24.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.9",
+          "actual_ev": 0.769
         },
         {
           "venue_name": "児島",
@@ -60831,8 +60668,8 @@ window.KYOTEI_DATA = {
           "odds": "35.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.8",
+          "actual_ev": 1.627
         },
         {
           "venue_name": "児島",
@@ -60846,8 +60683,8 @@ window.KYOTEI_DATA = {
           "odds": "40.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "40.0",
+          "actual_ev": 1.66
         },
         {
           "venue_name": "下関",
@@ -60861,8 +60698,8 @@ window.KYOTEI_DATA = {
           "odds": "20.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.1",
+          "actual_ev": 1.373
         },
         {
           "venue_name": "下関",
@@ -60876,8 +60713,8 @@ window.KYOTEI_DATA = {
           "odds": "35.8",
           "hit": "1",
           "payout": "1870",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.7",
+          "actual_ev": 0.873
         },
         {
           "venue_name": "下関",
@@ -60891,8 +60728,8 @@ window.KYOTEI_DATA = {
           "odds": "18.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.8",
+          "actual_ev": 0.489
         },
         {
           "venue_name": "下関",
@@ -60906,8 +60743,8 @@ window.KYOTEI_DATA = {
           "odds": "17.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.6",
+          "actual_ev": 1.434
         },
         {
           "venue_name": "下関",
@@ -60921,8 +60758,8 @@ window.KYOTEI_DATA = {
           "odds": "27.7",
           "hit": "1",
           "payout": "1820",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.2",
+          "actual_ev": 1.15
         },
         {
           "venue_name": "下関",
@@ -60936,8 +60773,8 @@ window.KYOTEI_DATA = {
           "odds": "13.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.2",
+          "actual_ev": 1.311
         },
         {
           "venue_name": "下関",
@@ -60951,8 +60788,8 @@ window.KYOTEI_DATA = {
           "odds": "18.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.3",
+          "actual_ev": 1.275
         },
         {
           "venue_name": "福岡",
@@ -60966,8 +60803,8 @@ window.KYOTEI_DATA = {
           "odds": "20.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.7",
+          "actual_ev": 1.689
         },
         {
           "venue_name": "福岡",
@@ -60981,8 +60818,8 @@ window.KYOTEI_DATA = {
           "odds": "34.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.4",
+          "actual_ev": 1.029
         },
         {
           "venue_name": "福岡",
@@ -60996,8 +60833,8 @@ window.KYOTEI_DATA = {
           "odds": "19.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.4",
+          "actual_ev": 1.335
         },
         {
           "venue_name": "福岡",
@@ -61011,8 +60848,8 @@ window.KYOTEI_DATA = {
           "odds": "23.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.8",
+          "actual_ev": 0.981
         },
         {
           "venue_name": "福岡",
@@ -61026,8 +60863,8 @@ window.KYOTEI_DATA = {
           "odds": "8.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.8",
+          "actual_ev": 1.323
         },
         {
           "venue_name": "福岡",
@@ -61041,8 +60878,8 @@ window.KYOTEI_DATA = {
           "odds": "8.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 1.337
         },
         {
           "venue_name": "福岡",
@@ -61056,8 +60893,8 @@ window.KYOTEI_DATA = {
           "odds": "18.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.8",
+          "actual_ev": 1.21
         },
         {
           "venue_name": "福岡",
@@ -61071,8 +60908,8 @@ window.KYOTEI_DATA = {
           "odds": "22.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.0",
+          "actual_ev": 1.817
         },
         {
           "venue_name": "福岡",
@@ -61086,8 +60923,8 @@ window.KYOTEI_DATA = {
           "odds": "17.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.0",
+          "actual_ev": 1.649
         },
         {
           "venue_name": "福岡",
@@ -61101,8 +60938,8 @@ window.KYOTEI_DATA = {
           "odds": "22.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.8",
+          "actual_ev": 1.646
         },
         {
           "venue_name": "唐津",
@@ -61116,8 +60953,8 @@ window.KYOTEI_DATA = {
           "odds": "30.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.0",
+          "actual_ev": 1.049
         },
         {
           "venue_name": "唐津",
@@ -61131,8 +60968,8 @@ window.KYOTEI_DATA = {
           "odds": "34.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "34.8",
+          "actual_ev": 1.524
         },
         {
           "venue_name": "唐津",
@@ -61146,8 +60983,8 @@ window.KYOTEI_DATA = {
           "odds": "20.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.7",
+          "actual_ev": 1.805
         },
         {
           "venue_name": "唐津",
@@ -61161,8 +60998,8 @@ window.KYOTEI_DATA = {
           "odds": "26.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.2",
+          "actual_ev": 2.03
         },
         {
           "venue_name": "唐津",
@@ -61176,8 +61013,8 @@ window.KYOTEI_DATA = {
           "odds": "34.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "34.0",
+          "actual_ev": 1.408
         },
         {
           "venue_name": "唐津",
@@ -61191,8 +61028,8 @@ window.KYOTEI_DATA = {
           "odds": "18.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.3",
+          "actual_ev": 0.898
         },
         {
           "venue_name": "唐津",
@@ -61206,8 +61043,8 @@ window.KYOTEI_DATA = {
           "odds": "15.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.655
         },
         {
           "venue_name": "唐津",
@@ -61221,8 +61058,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.3",
+          "actual_ev": 0.685
         },
         {
           "venue_name": "唐津",
@@ -61236,8 +61073,8 @@ window.KYOTEI_DATA = {
           "odds": "22.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.1",
+          "actual_ev": 1.543
         },
         {
           "venue_name": "唐津",
@@ -61250,6 +61087,21 @@ window.KYOTEI_DATA = {
           "ev": 1.81,
           "odds": "28.9",
           "hit": "0",
+          "payout": "0",
+          "final_odds": "28.9",
+          "actual_ev": 1.815
+        },
+        {
+          "venue_name": "大村",
+          "race_no": "10",
+          "start_time": "21:51",
+          "combo": "1-6-3",
+          "n_bets": 1,
+          "actual_combo": "",
+          "prob_pct": "6.5",
+          "ev": 1.5,
+          "odds": "23.3",
+          "hit": "",
           "payout": "0",
           "final_odds": "",
           "actual_ev": null
@@ -61266,8 +61118,8 @@ window.KYOTEI_DATA = {
           "odds": "13.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.6",
+          "actual_ev": 1.467
         },
         {
           "venue_name": "大村",
@@ -61281,8 +61133,8 @@ window.KYOTEI_DATA = {
           "odds": "22.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.8",
+          "actual_ev": 1.334
         },
         {
           "venue_name": "大村",
@@ -61296,8 +61148,8 @@ window.KYOTEI_DATA = {
           "odds": "35.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.2",
+          "actual_ev": 2.064
         },
         {
           "venue_name": "大村",
@@ -61311,8 +61163,8 @@ window.KYOTEI_DATA = {
           "odds": "33.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.0",
+          "actual_ev": 1.439
         },
         {
           "venue_name": "大村",
@@ -61326,38 +61178,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "8",
-          "start_time": "20:59",
-          "combo": "6-1-2",
-          "n_bets": 1,
-          "actual_combo": "",
-          "prob_pct": "4.1",
-          "ev": 1.34,
-          "odds": "32.8",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "9",
-          "start_time": "21:25",
-          "combo": "1-4-2",
-          "n_bets": 1,
-          "actual_combo": "",
-          "prob_pct": "4.1",
-          "ev": 1.58,
-          "odds": "38.7",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "38.2",
+          "actual_ev": 2.46
         }
       ]
     },
@@ -70853,8 +70675,8 @@ window.KYOTEI_DATA = {
           "odds": "23.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.3",
+          "actual_ev": 0.949
         },
         {
           "venue_name": "平和島",
@@ -70868,8 +70690,8 @@ window.KYOTEI_DATA = {
           "odds": "31.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "49.2",
+          "actual_ev": 2.111
         },
         {
           "venue_name": "平和島",
@@ -70883,8 +70705,8 @@ window.KYOTEI_DATA = {
           "odds": "29.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.1",
+          "actual_ev": 1.49
         },
         {
           "venue_name": "平和島",
@@ -70898,8 +70720,8 @@ window.KYOTEI_DATA = {
           "odds": "23.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.9",
+          "actual_ev": 1.367
         },
         {
           "venue_name": "平和島",
@@ -70913,8 +70735,8 @@ window.KYOTEI_DATA = {
           "odds": "18.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.0",
+          "actual_ev": 1.354
         },
         {
           "venue_name": "平和島",
@@ -70928,8 +70750,8 @@ window.KYOTEI_DATA = {
           "odds": "36.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.0",
+          "actual_ev": 0.481
         },
         {
           "venue_name": "平和島",
@@ -70943,8 +70765,8 @@ window.KYOTEI_DATA = {
           "odds": "22.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.1",
+          "actual_ev": 1.095
         },
         {
           "venue_name": "平和島",
@@ -70958,8 +70780,8 @@ window.KYOTEI_DATA = {
           "odds": "20.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.0",
+          "actual_ev": 1.031
         },
         {
           "venue_name": "平和島",
@@ -70973,8 +70795,8 @@ window.KYOTEI_DATA = {
           "odds": "30.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.5",
+          "actual_ev": 0.685
         },
         {
           "venue_name": "多摩川",
@@ -70988,8 +70810,8 @@ window.KYOTEI_DATA = {
           "odds": "36.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.5",
+          "actual_ev": 1.464
         },
         {
           "venue_name": "多摩川",
@@ -71003,8 +70825,8 @@ window.KYOTEI_DATA = {
           "odds": "34.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "51.3",
+          "actual_ev": 2.534
         },
         {
           "venue_name": "蒲郡",
@@ -71018,8 +70840,8 @@ window.KYOTEI_DATA = {
           "odds": "24.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "21.2",
+          "actual_ev": 1.393
         },
         {
           "venue_name": "蒲郡",
@@ -71033,8 +70855,8 @@ window.KYOTEI_DATA = {
           "odds": "22.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.9",
+          "actual_ev": 1.897
         },
         {
           "venue_name": "蒲郡",
@@ -71048,8 +70870,8 @@ window.KYOTEI_DATA = {
           "odds": "22.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.1",
+          "actual_ev": 0.929
         },
         {
           "venue_name": "蒲郡",
@@ -71063,8 +70885,8 @@ window.KYOTEI_DATA = {
           "odds": "13.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.3",
+          "actual_ev": 1.519
         },
         {
           "venue_name": "蒲郡",
@@ -71078,8 +70900,8 @@ window.KYOTEI_DATA = {
           "odds": "31.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.5",
+          "actual_ev": 1.796
         },
         {
           "venue_name": "蒲郡",
@@ -71093,8 +70915,8 @@ window.KYOTEI_DATA = {
           "odds": "10.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.3",
+          "actual_ev": 1.186
         },
         {
           "venue_name": "蒲郡",
@@ -71108,8 +70930,8 @@ window.KYOTEI_DATA = {
           "odds": "35.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "35.9",
+          "actual_ev": 1.687
         },
         {
           "venue_name": "蒲郡",
@@ -71123,8 +70945,8 @@ window.KYOTEI_DATA = {
           "odds": "33.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.5",
+          "actual_ev": 1.063
         },
         {
           "venue_name": "常滑",
@@ -71138,8 +70960,8 @@ window.KYOTEI_DATA = {
           "odds": "39.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "39.7",
+          "actual_ev": 1.775
         },
         {
           "venue_name": "常滑",
@@ -71153,8 +70975,8 @@ window.KYOTEI_DATA = {
           "odds": "34.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "37.3",
+          "actual_ev": 2.007
         },
         {
           "venue_name": "常滑",
@@ -71168,8 +70990,8 @@ window.KYOTEI_DATA = {
           "odds": "22.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.4",
+          "actual_ev": 1.032
         },
         {
           "venue_name": "常滑",
@@ -71183,8 +71005,8 @@ window.KYOTEI_DATA = {
           "odds": "26.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.8",
+          "actual_ev": 1.812
         },
         {
           "venue_name": "常滑",
@@ -71198,8 +71020,8 @@ window.KYOTEI_DATA = {
           "odds": "15.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.3",
+          "actual_ev": 1.306
         },
         {
           "venue_name": "常滑",
@@ -71213,8 +71035,8 @@ window.KYOTEI_DATA = {
           "odds": "28.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.4",
+          "actual_ev": 1.866
         },
         {
           "venue_name": "常滑",
@@ -71228,8 +71050,8 @@ window.KYOTEI_DATA = {
           "odds": "24.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.4",
+          "actual_ev": 2.157
         },
         {
           "venue_name": "常滑",
@@ -71243,8 +71065,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.6",
+          "actual_ev": 1.769
         },
         {
           "venue_name": "津",
@@ -71258,8 +71080,8 @@ window.KYOTEI_DATA = {
           "odds": "33.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.8",
+          "actual_ev": 1.104
         },
         {
           "venue_name": "津",
@@ -71273,8 +71095,8 @@ window.KYOTEI_DATA = {
           "odds": "31.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.9",
+          "actual_ev": 1.512
         },
         {
           "venue_name": "津",
@@ -71288,8 +71110,8 @@ window.KYOTEI_DATA = {
           "odds": "39.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "45.4",
+          "actual_ev": 1.957
         },
         {
           "venue_name": "津",
@@ -71303,8 +71125,8 @@ window.KYOTEI_DATA = {
           "odds": "28.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.5",
+          "actual_ev": 1.488
         },
         {
           "venue_name": "津",
@@ -71318,8 +71140,8 @@ window.KYOTEI_DATA = {
           "odds": "23.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.6",
+          "actual_ev": 1.607
         },
         {
           "venue_name": "津",
@@ -71333,8 +71155,8 @@ window.KYOTEI_DATA = {
           "odds": "23.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.3",
+          "actual_ev": 1.389
         },
         {
           "venue_name": "津",
@@ -71348,8 +71170,8 @@ window.KYOTEI_DATA = {
           "odds": "32.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.8",
+          "actual_ev": 1.882
         },
         {
           "venue_name": "琵琶湖",
@@ -71363,8 +71185,8 @@ window.KYOTEI_DATA = {
           "odds": "23.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.8",
+          "actual_ev": 0.872
         },
         {
           "venue_name": "琵琶湖",
@@ -71378,8 +71200,8 @@ window.KYOTEI_DATA = {
           "odds": "33.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.8",
+          "actual_ev": 1.426
         },
         {
           "venue_name": "琵琶湖",
@@ -71393,8 +71215,8 @@ window.KYOTEI_DATA = {
           "odds": "30.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.2",
+          "actual_ev": 0.642
         },
         {
           "venue_name": "琵琶湖",
@@ -71408,8 +71230,8 @@ window.KYOTEI_DATA = {
           "odds": "39.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "30.1",
+          "actual_ev": 1.228
         },
         {
           "venue_name": "琵琶湖",
@@ -71423,8 +71245,8 @@ window.KYOTEI_DATA = {
           "odds": "23.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.6",
+          "actual_ev": 1.532
         },
         {
           "venue_name": "琵琶湖",
@@ -71438,8 +71260,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.6",
+          "actual_ev": 1.58
         },
         {
           "venue_name": "琵琶湖",
@@ -71453,8 +71275,8 @@ window.KYOTEI_DATA = {
           "odds": "24.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.4",
+          "actual_ev": 0.78
         },
         {
           "venue_name": "尼崎",
@@ -71468,8 +71290,8 @@ window.KYOTEI_DATA = {
           "odds": "32.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.9",
+          "actual_ev": 1.579
         },
         {
           "venue_name": "尼崎",
@@ -71483,8 +71305,8 @@ window.KYOTEI_DATA = {
           "odds": "27.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.4",
+          "actual_ev": 1.649
         },
         {
           "venue_name": "尼崎",
@@ -71498,8 +71320,8 @@ window.KYOTEI_DATA = {
           "odds": "21.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.9",
+          "actual_ev": 1.182
         },
         {
           "venue_name": "尼崎",
@@ -71513,8 +71335,8 @@ window.KYOTEI_DATA = {
           "odds": "29.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.8",
+          "actual_ev": 2.339
         },
         {
           "venue_name": "尼崎",
@@ -71528,8 +71350,8 @@ window.KYOTEI_DATA = {
           "odds": "25.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.4",
+          "actual_ev": 1.326
         },
         {
           "venue_name": "尼崎",
@@ -71543,8 +71365,8 @@ window.KYOTEI_DATA = {
           "odds": "17.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.8",
+          "actual_ev": 1.317
         },
         {
           "venue_name": "尼崎",
@@ -71558,8 +71380,8 @@ window.KYOTEI_DATA = {
           "odds": "23.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.5",
+          "actual_ev": 0.961
         },
         {
           "venue_name": "尼崎",
@@ -71573,8 +71395,8 @@ window.KYOTEI_DATA = {
           "odds": "25.1",
           "hit": "1",
           "payout": "1260",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.6",
+          "actual_ev": 0.716
         },
         {
           "venue_name": "尼崎",
@@ -71588,8 +71410,8 @@ window.KYOTEI_DATA = {
           "odds": "18.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.2",
+          "actual_ev": 1.334
         },
         {
           "venue_name": "尼崎",
@@ -71603,8 +71425,8 @@ window.KYOTEI_DATA = {
           "odds": "28.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.4",
+          "actual_ev": 0.614
         },
         {
           "venue_name": "鳴門",
@@ -71618,8 +71440,8 @@ window.KYOTEI_DATA = {
           "odds": "13.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 1.02
         },
         {
           "venue_name": "鳴門",
@@ -71633,8 +71455,8 @@ window.KYOTEI_DATA = {
           "odds": "15.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "15.8",
+          "actual_ev": 1.387
         },
         {
           "venue_name": "鳴門",
@@ -71648,8 +71470,8 @@ window.KYOTEI_DATA = {
           "odds": "27.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "27.3",
+          "actual_ev": 1.474
         },
         {
           "venue_name": "鳴門",
@@ -71663,8 +71485,8 @@ window.KYOTEI_DATA = {
           "odds": "26.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.2",
+          "actual_ev": 1.499
         },
         {
           "venue_name": "鳴門",
@@ -71678,8 +71500,8 @@ window.KYOTEI_DATA = {
           "odds": "13.5",
           "hit": "1",
           "payout": "960",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.6",
+          "actual_ev": 1.101
         },
         {
           "venue_name": "鳴門",
@@ -71693,8 +71515,8 @@ window.KYOTEI_DATA = {
           "odds": "16.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.0",
+          "actual_ev": 1.709
         },
         {
           "venue_name": "鳴門",
@@ -71708,8 +71530,8 @@ window.KYOTEI_DATA = {
           "odds": "27.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.9",
+          "actual_ev": 0.537
         },
         {
           "venue_name": "鳴門",
@@ -71723,8 +71545,8 @@ window.KYOTEI_DATA = {
           "odds": "20.9",
           "hit": "1",
           "payout": "2500",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.9",
+          "actual_ev": 1.446
         },
         {
           "venue_name": "鳴門",
@@ -71738,8 +71560,8 @@ window.KYOTEI_DATA = {
           "odds": "31.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.7",
+          "actual_ev": 1.753
         },
         {
           "venue_name": "丸亀",
@@ -71753,8 +71575,8 @@ window.KYOTEI_DATA = {
           "odds": "33.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.9",
+          "actual_ev": 0.82
         },
         {
           "venue_name": "丸亀",
@@ -71768,8 +71590,8 @@ window.KYOTEI_DATA = {
           "odds": "35.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.0",
+          "actual_ev": 1.369
         },
         {
           "venue_name": "丸亀",
@@ -71783,8 +71605,8 @@ window.KYOTEI_DATA = {
           "odds": "20.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.8",
+          "actual_ev": 0.609
         },
         {
           "venue_name": "丸亀",
@@ -71798,8 +71620,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.5",
+          "actual_ev": 2.003
         },
         {
           "venue_name": "丸亀",
@@ -71813,8 +71635,8 @@ window.KYOTEI_DATA = {
           "odds": "39.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.6",
+          "actual_ev": 1.522
         },
         {
           "venue_name": "丸亀",
@@ -71828,8 +71650,8 @@ window.KYOTEI_DATA = {
           "odds": "25.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.4",
+          "actual_ev": 0.878
         },
         {
           "venue_name": "児島",
@@ -71843,8 +71665,8 @@ window.KYOTEI_DATA = {
           "odds": "17.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.1",
+          "actual_ev": 0.792
         },
         {
           "venue_name": "児島",
@@ -71858,8 +71680,8 @@ window.KYOTEI_DATA = {
           "odds": "23.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.0",
+          "actual_ev": 1.352
         },
         {
           "venue_name": "児島",
@@ -71873,8 +71695,8 @@ window.KYOTEI_DATA = {
           "odds": "24.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "9.1",
+          "actual_ev": 0.592
         },
         {
           "venue_name": "児島",
@@ -71888,8 +71710,8 @@ window.KYOTEI_DATA = {
           "odds": "24.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.9",
+          "actual_ev": 0.769
         },
         {
           "venue_name": "児島",
@@ -71903,8 +71725,8 @@ window.KYOTEI_DATA = {
           "odds": "35.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "36.8",
+          "actual_ev": 1.627
         },
         {
           "venue_name": "児島",
@@ -71918,8 +71740,8 @@ window.KYOTEI_DATA = {
           "odds": "40.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "40.0",
+          "actual_ev": 1.66
         },
         {
           "venue_name": "下関",
@@ -71933,8 +71755,8 @@ window.KYOTEI_DATA = {
           "odds": "20.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.1",
+          "actual_ev": 1.373
         },
         {
           "venue_name": "下関",
@@ -71948,8 +71770,8 @@ window.KYOTEI_DATA = {
           "odds": "35.8",
           "hit": "1",
           "payout": "1870",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.7",
+          "actual_ev": 0.873
         },
         {
           "venue_name": "下関",
@@ -71963,8 +71785,8 @@ window.KYOTEI_DATA = {
           "odds": "18.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "6.8",
+          "actual_ev": 0.489
         },
         {
           "venue_name": "下関",
@@ -71978,8 +71800,8 @@ window.KYOTEI_DATA = {
           "odds": "17.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.6",
+          "actual_ev": 1.434
         },
         {
           "venue_name": "下関",
@@ -71993,8 +71815,8 @@ window.KYOTEI_DATA = {
           "odds": "27.7",
           "hit": "1",
           "payout": "1820",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.2",
+          "actual_ev": 1.15
         },
         {
           "venue_name": "下関",
@@ -72008,8 +71830,8 @@ window.KYOTEI_DATA = {
           "odds": "13.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.2",
+          "actual_ev": 1.311
         },
         {
           "venue_name": "下関",
@@ -72023,8 +71845,8 @@ window.KYOTEI_DATA = {
           "odds": "18.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.3",
+          "actual_ev": 1.275
         },
         {
           "venue_name": "福岡",
@@ -72038,8 +71860,8 @@ window.KYOTEI_DATA = {
           "odds": "20.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.7",
+          "actual_ev": 1.689
         },
         {
           "venue_name": "福岡",
@@ -72053,8 +71875,8 @@ window.KYOTEI_DATA = {
           "odds": "34.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.4",
+          "actual_ev": 1.029
         },
         {
           "venue_name": "福岡",
@@ -72068,8 +71890,8 @@ window.KYOTEI_DATA = {
           "odds": "19.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.4",
+          "actual_ev": 1.335
         },
         {
           "venue_name": "福岡",
@@ -72083,8 +71905,8 @@ window.KYOTEI_DATA = {
           "odds": "23.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.8",
+          "actual_ev": 0.981
         },
         {
           "venue_name": "福岡",
@@ -72098,8 +71920,8 @@ window.KYOTEI_DATA = {
           "odds": "8.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.8",
+          "actual_ev": 1.323
         },
         {
           "venue_name": "福岡",
@@ -72113,8 +71935,8 @@ window.KYOTEI_DATA = {
           "odds": "8.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "8.5",
+          "actual_ev": 1.337
         },
         {
           "venue_name": "福岡",
@@ -72128,8 +71950,8 @@ window.KYOTEI_DATA = {
           "odds": "18.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "16.8",
+          "actual_ev": 1.21
         },
         {
           "venue_name": "福岡",
@@ -72143,8 +71965,8 @@ window.KYOTEI_DATA = {
           "odds": "22.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.0",
+          "actual_ev": 1.817
         },
         {
           "venue_name": "福岡",
@@ -72158,8 +71980,8 @@ window.KYOTEI_DATA = {
           "odds": "17.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "17.0",
+          "actual_ev": 1.649
         },
         {
           "venue_name": "福岡",
@@ -72173,8 +71995,8 @@ window.KYOTEI_DATA = {
           "odds": "22.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.8",
+          "actual_ev": 1.646
         },
         {
           "venue_name": "唐津",
@@ -72188,8 +72010,8 @@ window.KYOTEI_DATA = {
           "odds": "30.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.0",
+          "actual_ev": 1.049
         },
         {
           "venue_name": "唐津",
@@ -72203,8 +72025,8 @@ window.KYOTEI_DATA = {
           "odds": "34.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "34.8",
+          "actual_ev": 1.524
         },
         {
           "venue_name": "唐津",
@@ -72218,8 +72040,8 @@ window.KYOTEI_DATA = {
           "odds": "20.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "20.7",
+          "actual_ev": 1.805
         },
         {
           "venue_name": "唐津",
@@ -72233,8 +72055,8 @@ window.KYOTEI_DATA = {
           "odds": "26.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.2",
+          "actual_ev": 2.03
         },
         {
           "venue_name": "唐津",
@@ -72248,8 +72070,8 @@ window.KYOTEI_DATA = {
           "odds": "34.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "34.0",
+          "actual_ev": 1.408
         },
         {
           "venue_name": "唐津",
@@ -72263,8 +72085,8 @@ window.KYOTEI_DATA = {
           "odds": "18.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.3",
+          "actual_ev": 0.898
         },
         {
           "venue_name": "唐津",
@@ -72278,8 +72100,8 @@ window.KYOTEI_DATA = {
           "odds": "15.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "7.1",
+          "actual_ev": 0.655
         },
         {
           "venue_name": "唐津",
@@ -72293,8 +72115,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.3",
+          "actual_ev": 0.685
         },
         {
           "venue_name": "唐津",
@@ -72308,8 +72130,8 @@ window.KYOTEI_DATA = {
           "odds": "22.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.1",
+          "actual_ev": 1.543
         },
         {
           "venue_name": "唐津",
@@ -72322,6 +72144,21 @@ window.KYOTEI_DATA = {
           "ev": 1.81,
           "odds": "28.9",
           "hit": "0",
+          "payout": "0",
+          "final_odds": "28.9",
+          "actual_ev": 1.815
+        },
+        {
+          "venue_name": "大村",
+          "race_no": "10",
+          "start_time": "21:51",
+          "combo": "1-6-3",
+          "n_bets": 1,
+          "actual_combo": "",
+          "prob_pct": "6.5",
+          "ev": 1.5,
+          "odds": "23.3",
+          "hit": "",
           "payout": "0",
           "final_odds": "",
           "actual_ev": null
@@ -72338,8 +72175,8 @@ window.KYOTEI_DATA = {
           "odds": "13.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.6",
+          "actual_ev": 1.467
         },
         {
           "venue_name": "大村",
@@ -72353,8 +72190,8 @@ window.KYOTEI_DATA = {
           "odds": "22.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "22.8",
+          "actual_ev": 1.334
         },
         {
           "venue_name": "大村",
@@ -72368,8 +72205,8 @@ window.KYOTEI_DATA = {
           "odds": "35.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.2",
+          "actual_ev": 2.064
         },
         {
           "venue_name": "大村",
@@ -72383,8 +72220,8 @@ window.KYOTEI_DATA = {
           "odds": "33.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.0",
+          "actual_ev": 1.439
         },
         {
           "venue_name": "大村",
@@ -72398,38 +72235,8 @@ window.KYOTEI_DATA = {
           "odds": "26.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "8",
-          "start_time": "20:59",
-          "combo": "6-1-2",
-          "n_bets": 1,
-          "actual_combo": "",
-          "prob_pct": "4.1",
-          "ev": 1.34,
-          "odds": "32.8",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "9",
-          "start_time": "21:25",
-          "combo": "1-4-2",
-          "n_bets": 1,
-          "actual_combo": "",
-          "prob_pct": "4.1",
-          "ev": 1.58,
-          "odds": "38.7",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "38.2",
+          "actual_ev": 2.46
         }
       ]
     },
@@ -81640,8 +81447,8 @@ window.KYOTEI_DATA = {
           "odds": "26.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.7",
+          "actual_ev": 1.412
         },
         {
           "venue_name": "平和島",
@@ -81655,8 +81462,8 @@ window.KYOTEI_DATA = {
           "odds": "33.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.0",
+          "actual_ev": 1.61
         },
         {
           "venue_name": "多摩川",
@@ -81670,8 +81477,8 @@ window.KYOTEI_DATA = {
           "odds": "34.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "51.3",
+          "actual_ev": 2.534
         },
         {
           "venue_name": "蒲郡",
@@ -81685,8 +81492,8 @@ window.KYOTEI_DATA = {
           "odds": "26.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "26.2",
+          "actual_ev": 1.465
         },
         {
           "venue_name": "蒲郡",
@@ -81700,8 +81507,8 @@ window.KYOTEI_DATA = {
           "odds": "35.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "55.9",
+          "actual_ev": 2.924
         },
         {
           "venue_name": "蒲郡",
@@ -81715,8 +81522,8 @@ window.KYOTEI_DATA = {
           "odds": "31.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.5",
+          "actual_ev": 1.796
         },
         {
           "venue_name": "蒲郡",
@@ -81730,8 +81537,8 @@ window.KYOTEI_DATA = {
           "odds": "25.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "32.4",
+          "actual_ev": 2.155
         },
         {
           "venue_name": "常滑",
@@ -81745,8 +81552,8 @@ window.KYOTEI_DATA = {
           "odds": "39.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "39.7",
+          "actual_ev": 1.775
         },
         {
           "venue_name": "常滑",
@@ -81760,8 +81567,8 @@ window.KYOTEI_DATA = {
           "odds": "28.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.3",
+          "actual_ev": 1.472
         },
         {
           "venue_name": "常滑",
@@ -81775,8 +81582,8 @@ window.KYOTEI_DATA = {
           "odds": "33.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.3",
+          "actual_ev": 1.678
         },
         {
           "venue_name": "常滑",
@@ -81790,8 +81597,8 @@ window.KYOTEI_DATA = {
           "odds": "32.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.3",
+          "actual_ev": 1.33
         },
         {
           "venue_name": "常滑",
@@ -81805,8 +81612,8 @@ window.KYOTEI_DATA = {
           "odds": "24.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "31.4",
+          "actual_ev": 2.157
         },
         {
           "venue_name": "常滑",
@@ -81820,8 +81627,8 @@ window.KYOTEI_DATA = {
           "odds": "30.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "35.8",
+          "actual_ev": 1.908
         },
         {
           "venue_name": "津",
@@ -81835,8 +81642,8 @@ window.KYOTEI_DATA = {
           "odds": "39.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "45.4",
+          "actual_ev": 1.957
         },
         {
           "venue_name": "津",
@@ -81850,8 +81657,8 @@ window.KYOTEI_DATA = {
           "odds": "28.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.5",
+          "actual_ev": 1.488
         },
         {
           "venue_name": "津",
@@ -81865,8 +81672,8 @@ window.KYOTEI_DATA = {
           "odds": "23.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.6",
+          "actual_ev": 1.607
         },
         {
           "venue_name": "琵琶湖",
@@ -81880,8 +81687,8 @@ window.KYOTEI_DATA = {
           "odds": "35.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "35.0",
+          "actual_ev": 1.48
         },
         {
           "venue_name": "琵琶湖",
@@ -81895,8 +81702,8 @@ window.KYOTEI_DATA = {
           "odds": "33.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.8",
+          "actual_ev": 1.426
         },
         {
           "venue_name": "尼崎",
@@ -81910,8 +81717,8 @@ window.KYOTEI_DATA = {
           "odds": "25.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.4",
+          "actual_ev": 1.326
         },
         {
           "venue_name": "尼崎",
@@ -81925,8 +81732,8 @@ window.KYOTEI_DATA = {
           "odds": "17.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "14.8",
+          "actual_ev": 1.317
         },
         {
           "venue_name": "尼崎",
@@ -81940,8 +81747,8 @@ window.KYOTEI_DATA = {
           "odds": "25.1",
           "hit": "1",
           "payout": "1260",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "12.6",
+          "actual_ev": 0.716
         },
         {
           "venue_name": "尼崎",
@@ -81955,8 +81762,8 @@ window.KYOTEI_DATA = {
           "odds": "31.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.0",
+          "actual_ev": 0.515
         },
         {
           "venue_name": "鳴門",
@@ -81970,8 +81777,8 @@ window.KYOTEI_DATA = {
           "odds": "24.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.3",
+          "actual_ev": 1.776
         },
         {
           "venue_name": "鳴門",
@@ -81985,8 +81792,8 @@ window.KYOTEI_DATA = {
           "odds": "31.9",
           "hit": "1",
           "payout": "2500",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "25.0",
+          "actual_ev": 1.307
         },
         {
           "venue_name": "丸亀",
@@ -82000,8 +81807,8 @@ window.KYOTEI_DATA = {
           "odds": "35.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.0",
+          "actual_ev": 1.369
         },
         {
           "venue_name": "丸亀",
@@ -82015,8 +81822,8 @@ window.KYOTEI_DATA = {
           "odds": "39.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "39.9",
+          "actual_ev": 1.708
         },
         {
           "venue_name": "丸亀",
@@ -82030,8 +81837,8 @@ window.KYOTEI_DATA = {
           "odds": "41.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "63.2",
+          "actual_ev": 2.616
         },
         {
           "venue_name": "児島",
@@ -82045,8 +81852,8 @@ window.KYOTEI_DATA = {
           "odds": "23.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "23.0",
+          "actual_ev": 1.352
         },
         {
           "venue_name": "児島",
@@ -82060,8 +81867,8 @@ window.KYOTEI_DATA = {
           "odds": "35.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "35.5",
+          "actual_ev": 1.491
         },
         {
           "venue_name": "児島",
@@ -82075,8 +81882,8 @@ window.KYOTEI_DATA = {
           "odds": "24.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "24.3",
+          "actual_ev": 1.361
         },
         {
           "venue_name": "児島",
@@ -82090,8 +81897,8 @@ window.KYOTEI_DATA = {
           "odds": "40.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "40.0",
+          "actual_ev": 1.66
         },
         {
           "venue_name": "下関",
@@ -82105,8 +81912,8 @@ window.KYOTEI_DATA = {
           "odds": "30.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "30.8",
+          "actual_ev": 1.512
         },
         {
           "venue_name": "下関",
@@ -82120,8 +81927,8 @@ window.KYOTEI_DATA = {
           "odds": "28.1",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "11.6",
+          "actual_ev": 0.609
         },
         {
           "venue_name": "福岡",
@@ -82135,8 +81942,8 @@ window.KYOTEI_DATA = {
           "odds": "33.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "33.2",
+          "actual_ev": 1.6
         },
         {
           "venue_name": "福岡",
@@ -82150,8 +81957,8 @@ window.KYOTEI_DATA = {
           "odds": "18.3",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.3",
+          "actual_ev": 1.413
         },
         {
           "venue_name": "福岡",
@@ -82165,8 +81972,8 @@ window.KYOTEI_DATA = {
           "odds": "30.2",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "30.2",
+          "actual_ev": 1.549
         },
         {
           "venue_name": "唐津",
@@ -82180,8 +81987,8 @@ window.KYOTEI_DATA = {
           "odds": "30.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "19.0",
+          "actual_ev": 1.049
         },
         {
           "venue_name": "唐津",
@@ -82195,8 +82002,8 @@ window.KYOTEI_DATA = {
           "odds": "34.8",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "34.8",
+          "actual_ev": 1.524
         },
         {
           "venue_name": "唐津",
@@ -82210,8 +82017,8 @@ window.KYOTEI_DATA = {
           "odds": "31.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "18.2",
+          "actual_ev": 0.886
         },
         {
           "venue_name": "唐津",
@@ -82225,8 +82032,8 @@ window.KYOTEI_DATA = {
           "odds": "27.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "27.5",
+          "actual_ev": 1.469
         },
         {
           "venue_name": "唐津",
@@ -82240,8 +82047,8 @@ window.KYOTEI_DATA = {
           "odds": "34.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "34.0",
+          "actual_ev": 1.408
         },
         {
           "venue_name": "唐津",
@@ -82255,8 +82062,8 @@ window.KYOTEI_DATA = {
           "odds": "29.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.5",
+          "actual_ev": 1.487
         },
         {
           "venue_name": "唐津",
@@ -82270,8 +82077,8 @@ window.KYOTEI_DATA = {
           "odds": "29.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "29.0",
+          "actual_ev": 1.612
         },
         {
           "venue_name": "唐津",
@@ -82285,8 +82092,8 @@ window.KYOTEI_DATA = {
           "odds": "28.9",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "28.9",
+          "actual_ev": 1.815
         },
         {
           "venue_name": "大村",
@@ -82300,8 +82107,8 @@ window.KYOTEI_DATA = {
           "odds": "38.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "38.5",
+          "actual_ev": 1.552
         },
         {
           "venue_name": "大村",
@@ -82315,23 +82122,8 @@ window.KYOTEI_DATA = {
           "odds": "35.7",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "大村",
-          "race_no": "8",
-          "start_time": "20:59",
-          "combo": "6-1-2",
-          "n_bets": 1,
-          "actual_combo": "",
-          "prob_pct": "4.1",
-          "ev": 1.34,
-          "odds": "32.8",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "44.2",
+          "actual_ev": 2.064
         }
       ]
     },
