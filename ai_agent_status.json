@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#121 文言補正の品質チェック",
-      "startedAt": "2026-09-17T13:49:30.521Z",
-      "finishedAt": "2026-09-17T13:49:33.579Z"
+      "task": "料金システム調査 グループC(5店)",
+      "startedAt": "2026-09-17T14:08:13.759Z",
+      "finishedAt": "2026-09-17T14:08:16.616Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 17366,
-    "todayOutputTokens": 2835294,
-    "asOf": "2026-09-17T14:02:17.672Z"
+    "todayInputTokens": 18798,
+    "todayOutputTokens": 2875000,
+    "asOf": "2026-09-17T14:08:29.762Z"
   },
-  "updatedAt": "2026-09-17T14:02:17.672Z"
+  "updatedAt": "2026-09-17T14:08:29.762Z"
 }
