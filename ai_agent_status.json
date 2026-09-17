@@ -28,7 +28,7 @@
       "status": "idle",
       "task": "運用フロー・画面要件の設計",
       "startedAt": "2026-09-17T14:41:54.423Z",
-      "finishedAt": "2026-09-17T14:45:02.078Z"
+      "finishedAt": "2026-09-17T14:46:09.456Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 33576,
-    "todayOutputTokens": 3237724,
-    "asOf": "2026-09-17T14:45:08.045Z"
+    "todayInputTokens": 35046,
+    "todayOutputTokens": 3297343,
+    "asOf": "2026-09-17T14:50:10.468Z"
   },
-  "updatedAt": "2026-09-17T14:45:08.045Z"
+  "updatedAt": "2026-09-17T14:50:10.468Z"
 }
