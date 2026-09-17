@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "poker-hand-media内部リンク404バグ調査",
-      "startedAt": "2026-09-17T01:33:32.892Z",
-      "finishedAt": "2026-09-17T01:33:35.559Z"
+      "task": "料金システム一括反映PR(7店舗)",
+      "startedAt": "2026-09-17T14:33:27.327Z",
+      "finishedAt": "2026-09-17T14:33:30.098Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 29288,
-    "todayOutputTokens": 3021953,
-    "asOf": "2026-09-17T14:25:51.447Z"
+    "todayInputTokens": 30042,
+    "todayOutputTokens": 3071302,
+    "asOf": "2026-09-17T14:33:57.673Z"
   },
-  "updatedAt": "2026-09-17T14:25:51.447Z"
+  "updatedAt": "2026-09-17T14:33:57.673Z"
 }
