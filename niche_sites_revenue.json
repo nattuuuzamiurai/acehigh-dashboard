@@ -1,6 +1,6 @@
 {
   "_comment": "ニッチアフィリエイトサイト事業。サイトが増えたら sites 配列に追加していく。金額・記事数は実測値のみを記載し、架空の数値は入れないこと。articles.monthly は「実際に公開(draft:false化)した暦月」ごとに1エントリを集計すること(記事フロントマターのpubDateではなく、実際にpushして公開した日で判断する。記事執筆時に将来日付のpubDateを仮設定している場合があるため)。バッチ単位(Week1/Week2等)で分けず、同じ暦月なら合算する。analytics.propertyId はダッシュボードのカードから当該サイトのGA4レポートへ直接飛ぶためのGoogleアナリティクスのプロパティID(測定IDではない)。traffic は ga4-watch-daemon.js が丸ごと上書きするため、GA4リンク用の情報は traffic の外(analytics)に置くこと。",
-  "generatedAt": "2026-09-17T16:40:24.550Z",
+  "generatedAt": "2026-09-17T18:51:17.100Z",
   "sites": [
     {
       "id": "ai-jitsumu-navi",
@@ -192,23 +192,23 @@
         "total": 0,
         "status": "収益は未計測（広告・課金機能はWeb版では非対応）",
         "note": "バックエンドはFirebase(Authentication/Firestore)。広告(Google AdMob)・アプリ内課金(RevenueCat)はネイティブモジュールのため、現在運用中のWeb版では動作せず収益は発生しない。GA4計測タグは2026-09-17に導入(measurement ID: G-R7ZQLCWL2J)、6時間おきに自動反映(traffic参照)。",
-        "updatedAt": "2026-09-17 00:51"
+        "updatedAt": "2026-09-18 03:51"
       },
       "traffic": {
-        "pageViews": 0,
-        "activeUsers": 0,
-        "sessions": 0,
+        "pageViews": 1,
+        "activeUsers": 1,
+        "sessions": 1,
         "engagedSessions": 0,
         "since": "2026-09-17",
-        "asOf": "2026-09-17",
+        "asOf": "2026-09-18",
         "source": "GA4（measurement ID: G-R7ZQLCWL2J）",
         "daily": {
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "pageViews": 0,
           "activeUsers": 0,
           "sessions": 0,
-          "prevDate": "2026-09-16",
-          "prevPageViews": 0
+          "prevDate": "2026-09-17",
+          "prevPageViews": 1
         }
       }
     },
