@@ -8,15 +8,15 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "poker-hand-media PR#1のQA検証",
-      "startedAt": "2026-09-17T01:44:21.642Z",
-      "finishedAt": "2026-09-17T01:44:24.617Z"
+      "task": "PR#121 文言補正の品質チェック",
+      "startedAt": "2026-09-17T13:49:30.521Z",
+      "finishedAt": "2026-09-17T13:49:33.579Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "poker-hand-media PR#1レビュー判定",
-      "startedAt": "2026-09-17T01:57:43.989Z",
-      "finishedAt": "2026-09-17T02:00:37.046Z"
+      "task": "PR#121 マージ可否の判定",
+      "startedAt": "2026-09-17T13:49:46.119Z",
+      "finishedAt": "2026-09-17T13:49:52.831Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 14640,
-    "todayOutputTokens": 2693153,
-    "asOf": "2026-09-17T03:06:02.658Z"
+    "todayInputTokens": 15668,
+    "todayOutputTokens": 2735509,
+    "asOf": "2026-09-17T13:51:00.390Z"
   },
-  "updatedAt": "2026-09-17T03:06:02.658Z"
+  "updatedAt": "2026-09-17T13:51:00.390Z"
 }
