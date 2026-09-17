@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "ポーカーハンドメディア第2サイクルQA",
-      "startedAt": "2026-09-17T01:22:00.240Z",
-      "finishedAt": "2026-09-17T01:32:44.105Z"
+      "task": "poker-hand-media PR#1のQA検証",
+      "startedAt": "2026-09-17T01:44:21.642Z",
+      "finishedAt": "2026-09-17T01:44:24.617Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 13698,
-    "todayOutputTokens": 2404946,
-    "asOf": "2026-09-17T01:33:49.828Z"
+    "todayInputTokens": 14050,
+    "todayOutputTokens": 2488576,
+    "asOf": "2026-09-17T01:44:30.019Z"
   },
-  "updatedAt": "2026-09-17T01:33:49.828Z"
+  "updatedAt": "2026-09-17T01:44:30.019Z"
 }
