@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "ポーカーハンドメディア第2サイクル最終レビュー",
-      "startedAt": "2026-09-17T01:48:11.172Z",
-      "finishedAt": "2026-09-17T01:53:14.868Z"
+      "task": "poker-hand-media PR#1レビュー判定",
+      "startedAt": "2026-09-17T01:57:43.989Z",
+      "finishedAt": "2026-09-17T02:00:37.046Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 14312,
-    "todayOutputTokens": 2563536,
-    "asOf": "2026-09-17T01:55:17.391Z"
+    "todayInputTokens": 14432,
+    "todayOutputTokens": 2622779,
+    "asOf": "2026-09-17T02:01:49.032Z"
   },
-  "updatedAt": "2026-09-17T01:55:17.391Z"
+  "updatedAt": "2026-09-17T02:01:49.032Z"
 }
