@@ -20,9 +20,9 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "ポーカーハンドメディア第2サイクル執筆",
-      "startedAt": "2026-09-17T00:48:02.221Z",
-      "finishedAt": "2026-09-17T01:21:24.455Z"
+      "task": "筑後遺品整理ナビ フェーズA記事執筆",
+      "startedAt": "2026-09-19T04:23:59.334Z",
+      "finishedAt": "2026-09-19T04:24:13.111Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2018,
-    "todayOutputTokens": 1038177,
-    "asOf": "2026-09-19T04:20:55.126Z"
+    "todayInputTokens": 2156,
+    "todayOutputTokens": 1127840,
+    "asOf": "2026-09-19T04:24:31.026Z"
   },
-  "updatedAt": "2026-09-19T04:20:55.126Z"
+  "updatedAt": "2026-09-19T04:24:31.026Z"
 }
