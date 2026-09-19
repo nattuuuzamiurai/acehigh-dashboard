@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#122 料金一括反映の品質チェック",
-      "startedAt": "2026-09-17T14:43:21.229Z",
-      "finishedAt": "2026-09-17T14:43:23.875Z"
+      "task": "福岡ポーカーナビ PR#125品質チェック",
+      "startedAt": "2026-09-19T04:31:40.162Z",
+      "finishedAt": "2026-09-19T04:31:51.112Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2474,
-    "todayOutputTokens": 1216011,
-    "asOf": "2026-09-19T04:30:50.669Z"
+    "todayInputTokens": 2564,
+    "todayOutputTokens": 1248734,
+    "asOf": "2026-09-19T04:32:26.370Z"
   },
-  "updatedAt": "2026-09-19T04:30:50.669Z"
+  "updatedAt": "2026-09-19T04:32:26.370Z"
 }
