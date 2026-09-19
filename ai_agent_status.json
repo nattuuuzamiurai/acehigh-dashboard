@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
-      "task": "店舗関係者向け宣伝ページの実装",
-      "startedAt": "2026-09-19T04:04:51.263Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "福岡ポーカーナビ SEOタイトル/meta改善",
+      "startedAt": "2026-09-19T04:13:01.781Z",
+      "finishedAt": "2026-09-19T04:13:04.102Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1598,
-    "todayOutputTokens": 888549,
-    "asOf": "2026-09-19T04:11:58.189Z"
+    "todayInputTokens": 1642,
+    "todayOutputTokens": 923877,
+    "asOf": "2026-09-19T04:13:08.331Z"
   },
-  "updatedAt": "2026-09-19T04:11:58.189Z"
+  "updatedAt": "2026-09-19T04:13:08.331Z"
 }
