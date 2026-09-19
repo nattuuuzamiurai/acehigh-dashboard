@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "DreaM PR banner + offer box implementation",
-      "startedAt": "2026-09-19T04:00:00.198Z",
-      "finishedAt": null
+      "startedAt": "2026-09-19T04:01:27.817Z",
+      "finishedAt": "2026-09-19T04:01:29.676Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1148,
-    "todayOutputTokens": 707039,
-    "asOf": "2026-09-19T04:01:00.426Z"
+    "todayInputTokens": 1178,
+    "todayOutputTokens": 723452,
+    "asOf": "2026-09-19T04:01:59.965Z"
   },
-  "updatedAt": "2026-09-19T04:01:00.426Z"
+  "updatedAt": "2026-09-19T04:01:59.965Z"
 }
