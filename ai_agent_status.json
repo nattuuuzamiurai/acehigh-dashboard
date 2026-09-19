@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#122 マージ可否の判定",
-      "startedAt": "2026-09-17T14:43:48.949Z",
-      "finishedAt": "2026-09-17T14:43:51.673Z"
+      "task": "福岡ポーカーナビ PR#125最終GO/NO-GO判定",
+      "startedAt": "2026-09-19T04:39:27.253Z",
+      "finishedAt": "2026-09-19T04:39:32.687Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2720,
-    "todayOutputTokens": 1341456,
-    "asOf": "2026-09-19T04:35:16.234Z"
+    "todayInputTokens": 3112,
+    "todayOutputTokens": 1443014,
+    "asOf": "2026-09-19T04:39:36.757Z"
   },
-  "updatedAt": "2026-09-19T04:35:16.234Z"
+  "updatedAt": "2026-09-19T04:39:36.757Z"
 }
