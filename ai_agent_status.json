@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "遺品整理×久留米のSEO勝ち筋調査",
-      "startedAt": "2026-09-19T03:34:21.406Z",
-      "finishedAt": "2026-09-19T03:34:24.254Z"
+      "task": "遺品整理×久留米SEO勝率の深掘り調査",
+      "startedAt": "2026-09-19T03:47:41.190Z",
+      "finishedAt": "2026-09-19T03:47:43.530Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 816,
-    "todayOutputTokens": 594281,
-    "asOf": "2026-09-19T03:45:11.501Z"
+    "todayInputTokens": 840,
+    "todayOutputTokens": 614928,
+    "asOf": "2026-09-19T03:47:54.969Z"
   },
-  "updatedAt": "2026-09-19T03:45:11.501Z"
+  "updatedAt": "2026-09-19T03:47:54.969Z"
 }
