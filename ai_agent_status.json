@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "遺品整理×久留米SEO勝率の深掘り調査",
-      "startedAt": "2026-09-19T03:47:41.190Z",
-      "finishedAt": "2026-09-19T03:47:43.530Z"
+      "task": "遺品整理×久留米周辺複数都市の合算SEO評価",
+      "startedAt": "2026-09-19T03:55:59.817Z",
+      "finishedAt": "2026-09-19T03:56:01.981Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1004,
-    "todayOutputTokens": 661159,
-    "asOf": "2026-09-19T03:55:37.523Z"
+    "todayInputTokens": 1016,
+    "todayOutputTokens": 670481,
+    "asOf": "2026-09-19T03:56:07.087Z"
   },
-  "updatedAt": "2026-09-19T03:55:37.523Z"
+  "updatedAt": "2026-09-19T03:56:07.087Z"
 }
