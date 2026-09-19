@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "DreaM PR banner + offer box implementation",
-      "startedAt": "2026-09-19T04:01:27.817Z",
-      "finishedAt": "2026-09-19T04:01:29.676Z"
+      "status": "running",
+      "task": "店舗関係者向け宣伝ページの実装",
+      "startedAt": "2026-09-19T04:04:51.263Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -32,9 +32,9 @@
     },
     "marketing-lead": {
       "status": "idle",
-      "task": "直近の追加内容のSEO観点チェック",
-      "startedAt": "2026-09-16T01:37:43.352Z",
-      "finishedAt": "2026-09-16T01:37:46.908Z"
+      "task": "福岡ポーカーナビ検索クエリ分析",
+      "startedAt": "2026-09-19T04:06:04.108Z",
+      "finishedAt": "2026-09-19T04:06:05.609Z"
     },
     "Explore": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1252,
-    "todayOutputTokens": 743567,
-    "asOf": "2026-09-19T04:03:12.330Z"
+    "todayInputTokens": 1408,
+    "todayOutputTokens": 787878,
+    "asOf": "2026-09-19T04:06:09.875Z"
   },
-  "updatedAt": "2026-09-19T04:03:12.330Z"
+  "updatedAt": "2026-09-19T04:06:09.875Z"
 }
