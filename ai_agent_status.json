@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "運用フロー・画面要件の設計",
-      "startedAt": "2026-09-17T14:41:54.423Z",
-      "finishedAt": "2026-09-17T14:46:09.456Z"
+      "task": "遺品整理×久留米のSEO勝ち筋調査",
+      "startedAt": "2026-09-19T03:34:21.406Z",
+      "finishedAt": "2026-09-19T03:34:24.254Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 656,
-    "todayOutputTokens": 499916,
-    "asOf": "2026-09-19T03:32:40.246Z"
+    "todayInputTokens": 678,
+    "todayOutputTokens": 511198,
+    "asOf": "2026-09-19T03:34:29.132Z"
   },
-  "updatedAt": "2026-09-19T03:32:40.246Z"
+  "updatedAt": "2026-09-19T03:34:29.132Z"
 }
