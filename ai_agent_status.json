@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "遺品整理×久留米周辺複数都市の合算SEO評価",
-      "startedAt": "2026-09-19T03:55:59.817Z",
-      "finishedAt": "2026-09-19T03:56:01.981Z"
+      "task": "筑後遺品整理ナビのキーワードマップ作成",
+      "startedAt": "2026-09-19T04:17:55.742Z",
+      "finishedAt": "2026-09-19T04:17:57.856Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1694,
-    "todayOutputTokens": 938791,
-    "asOf": "2026-09-19T04:13:49.301Z"
+    "todayInputTokens": 1910,
+    "todayOutputTokens": 1006809,
+    "asOf": "2026-09-19T04:18:09.200Z"
   },
-  "updatedAt": "2026-09-19T04:13:49.301Z"
+  "updatedAt": "2026-09-19T04:18:09.200Z"
 }
