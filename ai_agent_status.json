@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "idle",
-      "task": "料金システム一括反映PR(7店舗)",
-      "startedAt": "2026-09-17T14:33:27.327Z",
-      "finishedAt": "2026-09-17T14:33:30.098Z"
+      "status": "running",
+      "task": "DreaM PR banner + offer box implementation",
+      "startedAt": "2026-09-19T04:00:00.198Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1098,
-    "todayOutputTokens": 684945,
-    "asOf": "2026-09-19T03:58:52.549Z"
+    "todayInputTokens": 1148,
+    "todayOutputTokens": 707039,
+    "asOf": "2026-09-19T04:01:00.426Z"
   },
-  "updatedAt": "2026-09-19T03:58:52.549Z"
+  "updatedAt": "2026-09-19T04:01:00.426Z"
 }
