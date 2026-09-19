@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "福岡ポーカーナビ PR#125品質チェック",
-      "startedAt": "2026-09-19T04:31:40.162Z",
-      "finishedAt": "2026-09-19T04:31:51.112Z"
+      "task": "筑後遺品整理ナビ記事の事実確認",
+      "startedAt": "2026-09-19T04:35:00.897Z",
+      "finishedAt": "2026-09-19T04:35:03.288Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2590,
-    "todayOutputTokens": 1270877,
-    "asOf": "2026-09-19T04:33:24.507Z"
+    "todayInputTokens": 2700,
+    "todayOutputTokens": 1340360,
+    "asOf": "2026-09-19T04:35:03.293Z"
   },
-  "updatedAt": "2026-09-19T04:33:24.507Z"
+  "updatedAt": "2026-09-19T04:35:03.293Z"
 }
