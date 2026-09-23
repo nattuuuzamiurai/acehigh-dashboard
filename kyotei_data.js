@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-09-23 12:12",
+  "updated": "2026-09-23 12:37",
   "today_label": "2026年9月23日",
   "pred_date": "2026/09/23",
   "pred_is_today": true,
@@ -1890,8 +1890,8 @@ window.KYOTEI_DATA = {
       "prob_pct": "4.4",
       "hit": "0",
       "payout": "0",
-      "final_odds": "",
-      "actual_ev": null
+      "final_odds": "34.5",
+      "actual_ev": 1.528
     },
     {
       "venue_name": "津",
@@ -2695,8 +2695,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.4",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "34.5",
+          "actual_ev": 1.528
         },
         {
           "venue_name": "津",
@@ -8723,8 +8723,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "5.6",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.0",
+          "actual_ev": 0.559
         },
         {
           "venue_name": "宮島",
@@ -9293,8 +9293,8 @@ window.KYOTEI_DATA = {
           "prob_pct": "4.5",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.0",
+          "actual_ev": 0.586
         },
         {
           "venue_name": "徳山",
@@ -24076,8 +24076,8 @@ window.KYOTEI_DATA = {
           "odds": "10.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "10.0",
+          "actual_ev": 0.559
         },
         {
           "venue_name": "桐生",
@@ -25756,8 +25756,8 @@ window.KYOTEI_DATA = {
           "odds": "13.0",
           "hit": "0",
           "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
+          "final_odds": "13.0",
+          "actual_ev": 0.586
         },
         {
           "venue_name": "若松",
