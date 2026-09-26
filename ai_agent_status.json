@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi PR137 再レビュー判定",
-      "startedAt": "2026-09-26T14:23:13.838Z",
-      "finishedAt": "2026-09-26T14:23:15.937Z"
+      "task": "fukuoka-poker-navi PR138 レビュー判定",
+      "startedAt": "2026-09-26T14:50:45.175Z",
+      "finishedAt": "2026-09-26T14:50:47.271Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8458,
-    "todayOutputTokens": 2672893,
-    "asOf": "2026-09-26T14:41:30.389Z"
+    "todayInputTokens": 8710,
+    "todayOutputTokens": 2707437,
+    "asOf": "2026-09-26T14:50:50.486Z"
   },
-  "updatedAt": "2026-09-26T14:41:30.389Z"
+  "updatedAt": "2026-09-26T14:50:50.486Z"
 }
