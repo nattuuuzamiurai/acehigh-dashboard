@@ -42199,6 +42199,21 @@ window.KYOTEI_DATA = {
         },
         {
           "venue_name": "下関",
+          "race_no": "12",
+          "start_time": "20:35",
+          "combo": "1-2-3",
+          "n_bets": 6,
+          "actual_combo": "1-3-5",
+          "prob_pct": "4.2",
+          "ev": 0.58,
+          "odds": "14.0",
+          "hit": "1",
+          "payout": "2070",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "下関",
           "race_no": "2",
           "start_time": "15:48",
           "combo": "1-3-2",
@@ -42361,6 +42376,21 @@ window.KYOTEI_DATA = {
           "payout": "1330",
           "final_odds": "17.7",
           "actual_ev": 0.604
+        },
+        {
+          "venue_name": "若松",
+          "race_no": "12",
+          "start_time": "20:40",
+          "combo": "1-2-3",
+          "n_bets": 6,
+          "actual_combo": "4-1-5",
+          "prob_pct": "3.7",
+          "ev": 0.45,
+          "odds": "12.3",
+          "hit": "0",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
         },
         {
           "venue_name": "若松",
