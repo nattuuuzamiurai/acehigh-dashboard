@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-09-28 21:01",
+  "updated": "2026-09-28 21:30",
   "today_label": "2026年9月28日",
   "pred_date": "2026/09/28",
   "pred_is_today": true,
@@ -12977,28 +12977,28 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "1.15": {
-          "bets": 465,
+          "bets": 468,
           "hits": 8,
           "hit_rate": 1.7,
-          "invested": 46500,
+          "invested": 46800,
           "returned": 21420,
-          "roi": -53.9
+          "roi": -54.2
         },
         "1.2": {
-          "bets": 446,
+          "bets": 449,
           "hits": 7,
           "hit_rate": 1.6,
-          "invested": 44600,
+          "invested": 44900,
           "returned": 19190,
-          "roi": -57.0
+          "roi": -57.3
         },
         "1.3": {
-          "bets": 406,
+          "bets": 409,
           "hits": 7,
           "hit_rate": 1.7,
-          "invested": 40600,
+          "invested": 40900,
           "returned": 19190,
-          "roi": -52.7
+          "roi": -53.1
         }
       }
     },
@@ -32320,6 +32320,21 @@ window.KYOTEI_DATA = {
           "actual_ev": 0.534
         },
         {
+          "venue_name": "大村",
+          "race_no": "9",
+          "start_time": "21:25",
+          "combo": "1-3-5",
+          "actual_combo": "",
+          "prob_pct": "8.6",
+          "top1_pct": "58",
+          "ev": 0.79,
+          "odds": "9.2",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
           "venue_name": "下関",
           "race_no": "8",
           "start_time": "18:45",
@@ -42486,7 +42501,7 @@ window.KYOTEI_DATA = {
           "race_no": "9",
           "start_time": "21:25",
           "combo": "1-3-5",
-          "n_bets": 6,
+          "n_bets": 12,
           "actual_combo": "",
           "prob_pct": "9.8",
           "ev": 1.11,
@@ -59000,12 +59015,12 @@ window.KYOTEI_DATA = {
           "venue_name": "大村",
           "race_no": "9",
           "start_time": "21:25",
-          "combo": "3-1-5",
-          "n_bets": 2,
+          "combo": "1-5-3",
+          "n_bets": 3,
           "actual_combo": "",
-          "prob_pct": "6.4",
-          "ev": 1.54,
-          "odds": "24.0",
+          "prob_pct": "6.6",
+          "ev": 1.63,
+          "odds": "24.6",
           "hit": "",
           "payout": "0",
           "final_odds": "",
@@ -69410,12 +69425,12 @@ window.KYOTEI_DATA = {
           "venue_name": "大村",
           "race_no": "9",
           "start_time": "21:25",
-          "combo": "3-1-5",
-          "n_bets": 2,
+          "combo": "1-5-3",
+          "n_bets": 3,
           "actual_combo": "",
-          "prob_pct": "6.4",
-          "ev": 1.54,
-          "odds": "24.0",
+          "prob_pct": "6.6",
+          "ev": 1.63,
+          "odds": "24.6",
           "hit": "",
           "payout": "0",
           "final_odds": "",
