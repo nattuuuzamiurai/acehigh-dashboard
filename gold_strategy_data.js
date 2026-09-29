@@ -1,6 +1,6 @@
 // 自動生成ファイル。手動編集しないこと(export_dashboard.py が生成)
 const GOLD_STRATEGY_DATA = {
-  "generatedAt": "2026-09-29T03:18:01.044100+00:00",
+  "generatedAt": "2026-09-29T03:20:31.440962+00:00",
   "liveStartDate": "2026-09-26",
   "backtest": {
     "metrics": {
@@ -2776,7 +2776,7 @@ const GOLD_STRATEGY_DATA = {
   },
   "live": {
     "metrics": {
-      "generated_at": "2026-09-29T03:17:43.150485+00:00",
+      "generated_at": "2026-09-29T03:20:31.385716+00:00",
       "data_source": "LBMA Gold Price (AM/PM fixing, USD) via prices.lbma.org.uk",
       "period_start": "2026-09-26",
       "period_end": "2026-09-28",
