@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi 既存Search Consoleファイルの削除",
-      "startedAt": "2026-09-29T03:59:55.440Z",
-      "finishedAt": "2026-09-29T03:59:59.111Z"
+      "task": "Roll out approved design across fukuoka-poker-navi production",
+      "startedAt": "2026-09-29T14:16:25.857Z",
+      "finishedAt": "2026-09-29T14:16:29.089Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2770,
-    "todayOutputTokens": 699009,
-    "asOf": "2026-09-29T14:15:07.213Z"
+    "todayInputTokens": 2822,
+    "todayOutputTokens": 730563,
+    "asOf": "2026-09-29T14:17:05.501Z"
   },
-  "updatedAt": "2026-09-29T14:15:07.213Z"
+  "updatedAt": "2026-09-29T14:17:05.501Z"
 }
