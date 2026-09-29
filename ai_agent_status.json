@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi PR141 説明文・コミットメッセージ圧縮",
-      "startedAt": "2026-09-29T03:27:39.806Z",
-      "finishedAt": "2026-09-29T03:27:43.388Z"
+      "task": "fukuoka-poker-navi 既存Search Consoleファイルの削除",
+      "startedAt": "2026-09-29T03:59:55.440Z",
+      "finishedAt": "2026-09-29T03:59:59.111Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2146,
-    "todayOutputTokens": 516982,
-    "asOf": "2026-09-29T03:45:33.544Z"
+    "todayInputTokens": 2298,
+    "todayOutputTokens": 556341,
+    "asOf": "2026-09-29T04:00:01.922Z"
   },
-  "updatedAt": "2026-09-29T03:45:33.544Z"
+  "updatedAt": "2026-09-29T04:00:01.922Z"
 }
