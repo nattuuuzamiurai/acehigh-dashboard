@@ -600,6 +600,7 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="kyotei_data.js" onerror="window.KYOTEI_DATA=null"></script>
+<script src="gold_strategy_data.js" onerror="window.GOLD_STRATEGY_DATA=null"></script>
 <script src="evo37_slot_data.js" onerror="window.EVO37_DATA=null"></script>
 <script src="../チャイポ/poker.js"></script>
 <script src="../チャイポ/montecarlo.js"></script>
@@ -669,6 +670,7 @@
     <div class="ni" onclick="showPage('aiorg')"><span class="ni-ic">🏢</span>AI組織</div>
     <div class="ng">ツール</div>
     <div class="ni" onclick="showPage('kyotei')"><span class="ni-ic">🚤</span>競艇予測</div>
+    <div class="ni" onclick="showPage('gold')"><span class="ni-ic">🥇</span>ゴールド戦略</div>
     <div class="ni" onclick="showPage('chaipo')"><span class="ni-ic">🃏</span>チャイポ OFC</div>
     <div class="ni" onclick="showPage('affiliate')"><span class="ni-ic">🔗</span>アフィリエイト</div>
     <a class="ni" href="crypto_arbitrage.html" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">⇄</span>裁定機会モニター</a>
@@ -1083,6 +1085,11 @@
     <!-- ===== 競艇予測 ===== -->
     <div class="page" id="page-kyotei">
       <div id="kyotei-root"></div>
+    </div>
+
+    <!-- ===== ゴールド戦略ラボ(社長個人の資産運用リサーチ。実口座には接続せず仮想発注のみ) ===== -->
+    <div class="page" id="page-gold">
+      <div id="gold-root"></div>
     </div>
 
     <!-- ===== スロット(沖ドキ島モニター EVO37久留米) ===== -->
@@ -2126,12 +2133,193 @@ function closeSidebar() {
   };
 })();
 
+function renderGold() {
+  var root = document.getElementById('gold-root');
+  var D = window.GOLD_STRATEGY_DATA;
+  if (!D) {
+    root.innerHTML = '<div class="empty">ゴールド戦略データを読み込めませんでした(gold_strategy_data.js)。</div>';
+    return;
+  }
+  var bt = D.backtest && D.backtest.metrics;
+  var live = D.live && D.live.metrics;
+
+  function fmtPct(v) { return (v === null || v === undefined) ? '—' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%'; }
+  function fmtNum(v, d) { return (v === null || v === undefined) ? '—' : v.toFixed(d === undefined ? 2 : d); }
+  function colorForPct(v) { return (v === null || v === undefined) ? 'var(--txt)' : (v >= 0 ? 'var(--grn)' : 'var(--red)'); }
+  function jaDir(d) { return d === 'long' ? 'ロング' : 'ショート'; }
+
+  var html = '';
+
+  html += '<div class="card" style="margin-bottom:16px;">' +
+    '<div class="c-label">ゴールド戦略ラボ(社長個人の資産運用リサーチ)</div>' +
+    '<div class="c-sub">実口座・デモ口座への発注は一切行っていません。価格データにルールベースのブレイクアウト戦略(グリッド・ナンピンは不使用)を適用した仮想発注(シミュレーション)の成績のみを表示しています。' +
+    (bt ? ('データソース: ' + bt.data_source) : '') + '</div>' +
+    '</div>';
+
+  var bh = D.backtest && D.backtest.buyAndHold;
+  var variantCmp = D.variantComparison;
+
+  if (bt) {
+    html += '<div class="c-label" style="margin:4px 0 8px;">バックテスト実績(' + bt.period_start + ' 〜 ' + bt.period_end + ') — 採用中: ' + (bt.variant_label || bt.variant_name || '') + '</div>';
+    html += '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;">' +
+      '<div class="chip"><div class="n" style="color:' + colorForPct(bt.total_return_pct) + '">' + fmtPct(bt.total_return_pct) + '</div><div class="l">累計リターン</div></div>' +
+      '<div class="chip"><div class="n" style="color:var(--txt)">' + fmtNum(bt.win_rate_pct, 1) + '%</div><div class="l">勝率(' + bt.num_trades + 'トレード)</div></div>' +
+      '<div class="chip"><div class="n" style="color:var(--txt)">' + fmtNum(bt.sharpe_ratio, 2) + '</div><div class="l">シャープレシオ</div></div>' +
+      '<div class="chip"><div class="n" style="color:var(--red)">-' + fmtNum(bt.max_drawdown_pct, 1) + '%</div><div class="l">最大ドローダウン</div></div>' +
+      '<div class="chip"><div class="n" style="color:var(--txt)">' + (bt.profit_factor === null ? '—' : fmtNum(bt.profit_factor, 2)) + '</div><div class="l">プロフィットファクター</div></div>' +
+      '</div>';
+
+    if (bh) {
+      var btBeatsBH = (bt.total_return_pct >= bh.total_return_pct) && (bt.sharpe_ratio >= bh.sharpe_ratio);
+      html += '<div class="card" style="margin-bottom:18px;border:1.5px solid ' + (btBeatsBH ? 'var(--grn)' : 'var(--red)') + ';">' +
+        '<div class="c-label" style="margin-bottom:8px;">同期間 ゴールド単純買い持ち(バイアンドホールド)との比較【必須指標】</div>' +
+        '<div style="display:flex;gap:10px;flex-wrap:wrap;">' +
+        '<div class="chip"><div class="n" style="color:' + colorForPct(bh.total_return_pct) + '">' + fmtPct(bh.total_return_pct) + '</div><div class="l">B&H 累計リターン</div></div>' +
+        '<div class="chip"><div class="n" style="color:var(--txt)">' + fmtNum(bh.sharpe_ratio, 2) + '</div><div class="l">B&H シャープレシオ</div></div>' +
+        '<div class="chip"><div class="n" style="color:var(--red)">-' + fmtNum(bh.max_drawdown_pct, 1) + '%</div><div class="l">B&H 最大ドローダウン</div></div>' +
+        '</div>' +
+        '<div class="c-sub" style="margin-top:8px;">' + (btBeatsBH
+          ? '現行戦略はバイアンドホールドをリターン・シャープレシオの両方で上回っています。'
+          : '正直な現状: 現行戦略はこの全期間ではバイアンドホールド(ただゴールドを買って持ち続けるだけ)にリターン・シャープレシオのいずれかで及んでいません。市場平均に勝つのは簡単ではないという前提の通りの結果です。') +
+        '</div></div>';
+    }
+
+    html += '<div class="card" style="margin-bottom:18px;">' +
+      '<div class="c-label" style="margin-bottom:10px;">バックテスト資産推移(仮想元本 $' + Number(bt.initial_capital_usd).toLocaleString() + '、対数スケール表示ではありません。B&Hは巨大なため右軸で表示)</div>' +
+      '<div style="height:260px;"><canvas id="gold-equity-chart"></canvas></div>' +
+      '</div>';
+
+    if (variantCmp && variantCmp.variants && variantCmp.variants.length) {
+      html += '<div class="card" style="margin-bottom:18px;overflow-x:auto;">' +
+        '<div class="c-label" style="margin-bottom:10px;">戦略バリエーション比較(グリッド・ナンピンは全バリエーション不使用)</div>' +
+        '<div class="tw"><table><thead><tr>' +
+        '<th>バリエーション</th><th>トレード数</th><th>勝率</th><th>累計リターン</th><th>最大DD</th><th>シャープレシオ</th><th></th>' +
+        '</tr></thead><tbody>';
+      variantCmp.variants.forEach(function (v) {
+        var isActive = v.variant_name === variantCmp.active_variant;
+        var isRecommended = v.variant_name === variantCmp.recommended_variant;
+        var tag = isActive ? '<span style="color:var(--grn);font-weight:700;">採用中</span>' : (isRecommended ? '<span style="color:var(--acc);">推奨</span>' : '');
+        html += '<tr' + (isActive ? ' style="background:rgba(16,185,129,0.06);"' : '') + '>' +
+          '<td>' + v.label + '</td><td>' + v.num_trades + '</td><td>' + fmtNum(v.win_rate_pct, 1) + '%</td>' +
+          '<td style="color:' + colorForPct(v.total_return_pct) + '">' + fmtPct(v.total_return_pct) + '</td>' +
+          '<td style="color:var(--red);">-' + fmtNum(v.max_drawdown_pct, 1) + '%</td>' +
+          '<td>' + fmtNum(v.sharpe_ratio, 3) + '</td><td>' + tag + '</td></tr>';
+      });
+      if (bh) {
+        html += '<tr style="border-top:1.5px solid var(--bor);"><td>(参考)バイアンドホールド</td><td>—</td><td>—</td>' +
+          '<td style="color:' + colorForPct(bh.total_return_pct) + '">' + fmtPct(bh.total_return_pct) + '</td>' +
+          '<td style="color:var(--red);">-' + fmtNum(bh.max_drawdown_pct, 1) + '%</td>' +
+          '<td>' + fmtNum(bh.sharpe_ratio, 3) + '</td><td></td></tr>';
+      }
+      html += '</tbody></table></div>' +
+        '<div class="c-sub" style="margin-top:8px;">サンプル数・過学習の有無は品質管理部の検証待ち(2026-09時点)。</div>' +
+        '</div>';
+    }
+  }
+
+  html += '<div class="c-label" style="margin:4px 0 8px;">日次仮想発注(運用開始日: ' + D.liveStartDate + ' 〜)</div>';
+  if (!live) {
+    html += '<div class="empty">まだ運用開始日以降のデータがありません。日次実行が始まると、ここに仮想発注の実績が表示されます。</div>';
+  } else {
+    var liveBH = D.live && D.live.buyAndHold;
+    html += '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;">' +
+      '<div class="chip"><div class="n" style="color:' + colorForPct(live.total_return_pct) + '">' + fmtPct(live.total_return_pct) + '</div><div class="l">累計リターン</div></div>' +
+      '<div class="chip"><div class="n" style="color:var(--txt)">' + live.num_trades + '</div><div class="l">トレード数</div></div>' +
+      '<div class="chip"><div class="n" style="color:var(--txt)">' + fmtNum(live.win_rate_pct, 1) + '%</div><div class="l">勝率</div></div>' +
+      (liveBH ? ('<div class="chip"><div class="n" style="color:' + colorForPct(liveBH.total_return_pct) + '">' + fmtPct(liveBH.total_return_pct) + '</div><div class="l">(参考)同期間B&H</div></div>') : '') +
+      '</div>';
+    html += '<div class="c-sub" style="margin-bottom:18px;">運用開始直後で日数が少ないため、B&H比較はまだ統計的な意味を持ちません。日数が積み上がってから参照してください。</div>';
+    if (live.open_position) {
+      var op = live.open_position;
+      html += '<div class="card" style="margin-bottom:18px;"><div class="c-label">現在の保有中ポジション(仮想)</div>' +
+        '<div class="c-sub">' + jaDir(op.direction) + ' @ ' + Number(op.entry_price).toFixed(2) +
+        '(' + op.entry_date + ' ' + op.entry_session + ')' +
+        (op.stop_loss_price !== null && op.stop_loss_price !== undefined ? ' / SL ' + Number(op.stop_loss_price).toFixed(2) : '') +
+        (op.take_profit_price !== null && op.take_profit_price !== undefined ? ' / TP ' + Number(op.take_profit_price).toFixed(2) : '') +
+        '</div></div>';
+    }
+  }
+
+  var trades = (D.backtest && D.backtest.recentTrades) || [];
+  if (trades.length) {
+    html += '<div class="c-label" style="margin:4px 0 8px;">直近のバックテストトレード例(直近' + trades.length + '件)</div>';
+    html += '<div class="tw" style="margin-bottom:18px;overflow-x:auto;"><table><thead><tr>' +
+      '<th>エントリー日</th><th>方向</th><th>エントリー価格</th><th>エグジット日</th><th>エグジット価格</th><th>理由</th><th>損益</th>' +
+      '</tr></thead><tbody>';
+    trades.forEach(function (t) {
+      var pnl = parseFloat(t.pnl_usd);
+      html += '<tr><td>' + t.entry_date + ' ' + t.entry_session + '</td><td>' + jaDir(t.direction) + '</td>' +
+        '<td>' + parseFloat(t.entry_price).toFixed(2) + '</td><td>' + t.exit_date + ' ' + t.exit_session + '</td>' +
+        '<td>' + parseFloat(t.exit_price).toFixed(2) + '</td><td>' + t.exit_reason + '</td>' +
+        '<td style="color:' + (pnl >= 0 ? 'var(--grn)' : 'var(--red)') + '">' + (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '</td></tr>';
+    });
+    html += '</tbody></table></div>';
+  }
+
+  var caveats = (bt && bt.caveats) || [];
+  if (caveats.length) {
+    html += '<div class="card" style="font-size:.82em;color:var(--mut);line-height:1.7;">' +
+      '<div class="c-label" style="margin-bottom:6px;">前提・注意事項</div>' +
+      '<ul style="margin:0;padding-left:18px;">' + caveats.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' +
+      '</div>';
+  }
+
+  root.innerHTML = html;
+
+  if (bt && D.backtest.equityCurve && D.backtest.equityCurve.length && window.Chart) {
+    var ctx = document.getElementById('gold-equity-chart');
+    if (window._goldChart) { window._goldChart.destroy(); }
+    var bhCurve = D.backtest.buyAndHoldEquityCurve || [];
+    var datasets = [{
+      label: '戦略(採用中バリエーション)',
+      data: D.backtest.equityCurve.map(function (p) { return p.equity; }),
+      borderColor: '#d97706',
+      backgroundColor: 'rgba(217,119,6,0.08)',
+      fill: true,
+      pointRadius: 0,
+      borderWidth: 1.5,
+      tension: 0.1,
+      yAxisID: 'y'
+    }];
+    if (bhCurve.length) {
+      datasets.push({
+        label: 'バイアンドホールド(右軸)',
+        data: bhCurve.map(function (p) { return p.equity; }),
+        borderColor: '#6b7280',
+        borderDash: [4, 3],
+        fill: false,
+        pointRadius: 0,
+        borderWidth: 1.2,
+        tension: 0.1,
+        yAxisID: 'y1'
+      });
+    }
+    window._goldChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: D.backtest.equityCurve.map(function (p) { return p.date; }),
+        datasets: datasets
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          x: { ticks: { maxTicksLimit: 10 }, grid: { display: false } },
+          y: { position: 'left', ticks: { callback: function (v) { return '$' + Number(v).toLocaleString(); } } },
+          y1: { position: 'right', display: bhCurve.length > 0, grid: { display: false }, ticks: { callback: function (v) { return '$' + Number(v).toLocaleString(); } } }
+        },
+        plugins: { legend: { display: true, labels: { boxWidth: 12, font: { size: 10 } } } }
+      }
+    });
+  }
+}
+
 function showPage(name) {
   closeSidebar();
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業',slot:'スロット'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業',slot:'スロット',gold:'ゴールド戦略ラボ'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
@@ -2140,6 +2328,7 @@ function showPage(name) {
   if (name==='projects') { renderProjectStats(); renderProjects(); }
   if (name==='aiorg') { renderAIOrg(); renderPipeline(); }
   if (name==='kyotei') renderKyotei();
+  if (name==='gold') renderGold();
   if (name==='slot') renderSlot();
   if (name==='chaipo-board') cbRenderBoard();
   if (name==='affiliate') renderAffiliateSites();
