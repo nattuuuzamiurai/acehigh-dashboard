@@ -1,6 +1,6 @@
 // 自動生成ファイル。手動編集しないこと(export_dashboard.py が生成)
-const GOLD_STRATEGY_DATA = {
-  "generatedAt": "2026-09-29T03:20:31.440962+00:00",
+window.GOLD_STRATEGY_DATA = {
+  "generatedAt": "2026-09-29T14:08:56.167929+00:00",
   "liveStartDate": "2026-09-26",
   "backtest": {
     "metrics": {
