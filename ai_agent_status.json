@@ -2,21 +2,21 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi PR138 リベース・重複解消",
-      "startedAt": "2026-09-26T14:33:01.451Z",
-      "finishedAt": "2026-09-26T14:33:04.922Z"
+      "task": "Redesign gold strategy using real trader data",
+      "startedAt": "2026-09-29T14:26:50.477Z",
+      "finishedAt": "2026-09-29T14:26:53.263Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi PR138 QAチェック",
-      "startedAt": "2026-09-26T14:41:23.967Z",
-      "finishedAt": "2026-09-26T14:41:25.886Z"
+      "task": "fukuoka-poker-navi PR142 QAチェック",
+      "startedAt": "2026-09-29T04:06:36.042Z",
+      "finishedAt": "2026-09-29T04:06:39.966Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi PR138 レビュー判定",
-      "startedAt": "2026-09-26T14:50:45.175Z",
-      "finishedAt": "2026-09-26T14:50:47.271Z"
+      "task": "fukuoka-poker-navi PR142 レビュー判定",
+      "startedAt": "2026-09-29T04:12:28.068Z",
+      "finishedAt": "2026-09-29T04:12:29.824Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 8710,
-    "todayOutputTokens": 2707437,
-    "asOf": "2026-09-26T14:50:50.486Z"
+    "todayInputTokens": 3898,
+    "todayOutputTokens": 1075792,
+    "asOf": "2026-09-29T14:54:51.863Z"
   },
-  "updatedAt": "2026-09-26T14:50:50.486Z"
+  "updatedAt": "2026-09-29T14:54:51.863Z"
 }
