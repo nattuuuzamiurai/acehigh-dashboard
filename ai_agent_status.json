@@ -2,39 +2,39 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "福岡ポーカーナビ SEOタイトル/meta改善",
-      "startedAt": "2026-09-19T04:13:01.781Z",
-      "finishedAt": "2026-09-19T04:18:37.507Z"
+      "task": "fukuoka-poker-navi PR141 説明文・コミットメッセージ圧縮",
+      "startedAt": "2026-09-29T03:27:39.806Z",
+      "finishedAt": "2026-09-29T03:27:43.388Z"
     },
     "qa-lead": {
       "status": "idle",
-      "task": "福岡ポーカーナビ PR#125品質チェック",
-      "startedAt": "2026-09-19T04:31:40.162Z",
-      "finishedAt": "2026-09-19T04:31:51.112Z"
+      "task": "fukuoka-poker-navi PR141 再QAチェック",
+      "startedAt": "2026-09-29T03:18:49.143Z",
+      "finishedAt": "2026-09-29T03:18:53.930Z"
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#122 マージ可否の判定",
-      "startedAt": "2026-09-17T14:43:48.949Z",
-      "finishedAt": "2026-09-17T14:43:51.673Z"
+      "task": "fukuoka-poker-navi PR141 レビュー判定",
+      "startedAt": "2026-09-29T02:11:21.224Z",
+      "finishedAt": "2026-09-29T02:11:25.102Z"
     },
     "content-writer": {
       "status": "idle",
-      "task": "筑後遺品整理ナビ フェーズA記事執筆",
-      "startedAt": "2026-09-19T04:23:59.334Z",
-      "finishedAt": "2026-09-19T04:24:13.111Z"
+      "task": "fukuoka-poker-navi 前置き短縮リライト",
+      "startedAt": "2026-09-26T07:16:24.887Z",
+      "finishedAt": "2026-09-26T07:16:28.946Z"
     },
     "planning-lead": {
       "status": "idle",
-      "task": "筑後遺品整理ナビのキーワードマップ作成",
-      "startedAt": "2026-09-19T04:17:55.742Z",
-      "finishedAt": "2026-09-19T04:17:57.856Z"
+      "task": "AI実務ナビWeek11企画",
+      "startedAt": "2026-09-24T00:34:04.478Z",
+      "finishedAt": "2026-09-24T00:44:28.810Z"
     },
     "marketing-lead": {
       "status": "idle",
-      "task": "福岡ポーカーナビ検索クエリ分析",
-      "startedAt": "2026-09-19T04:06:04.108Z",
-      "finishedAt": "2026-09-19T04:06:05.609Z"
+      "task": "ポーカー関連の高単価アフィリエイト案件調査",
+      "startedAt": "2026-09-22T18:20:20.163Z",
+      "finishedAt": "2026-09-22T18:20:21.424Z"
     },
     "Explore": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2564,
-    "todayOutputTokens": 1248734,
-    "asOf": "2026-09-19T04:32:26.370Z"
+    "todayInputTokens": 1900,
+    "todayOutputTokens": 467207,
+    "asOf": "2026-09-29T03:27:47.068Z"
   },
-  "updatedAt": "2026-09-19T04:32:26.370Z"
+  "updatedAt": "2026-09-29T03:27:47.068Z"
 }
