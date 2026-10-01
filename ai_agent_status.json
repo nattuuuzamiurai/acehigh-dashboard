@@ -19,16 +19,16 @@
       "finishedAt": "2026-09-29T17:31:05.889Z"
     },
     "content-writer": {
-      "status": "idle",
-      "task": "fukuoka-poker-navi 前置き短縮リライト",
-      "startedAt": "2026-09-26T07:16:24.887Z",
-      "finishedAt": "2026-09-26T07:16:28.946Z"
+      "status": "running",
+      "task": "AI実務ナビWeek12執筆",
+      "startedAt": "2026-10-01T16:58:04.937Z",
+      "finishedAt": null
     },
     "planning-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "AI実務ナビWeek12企画",
       "startedAt": "2026-10-01T16:46:42.329Z",
-      "finishedAt": null
+      "finishedAt": "2026-10-01T16:57:32.599Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 676,
-    "todayOutputTokens": 278064,
-    "asOf": "2026-10-01T16:55:18.537Z"
+    "todayInputTokens": 944,
+    "todayOutputTokens": 347995,
+    "asOf": "2026-10-01T16:59:05.941Z"
   },
-  "updatedAt": "2026-10-01T16:55:18.537Z"
+  "updatedAt": "2026-10-01T16:59:05.941Z"
 }
