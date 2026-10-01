@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Polymarketスマートマネー分析ツールの構築",
-      "startedAt": "2026-10-01T16:44:30.220Z",
-      "finishedAt": "2026-10-01T16:44:30.593Z"
+      "task": "6店舗分のOctober告知画像をdata.jsへ登録",
+      "startedAt": "2026-10-01T16:50:15.259Z",
+      "finishedAt": "2026-10-01T16:50:15.780Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 394,
-    "todayOutputTokens": 208535,
-    "asOf": "2026-10-01T16:49:36.100Z"
+    "todayInputTokens": 438,
+    "todayOutputTokens": 217469,
+    "asOf": "2026-10-01T16:50:20.265Z"
   },
-  "updatedAt": "2026-10-01T16:49:36.100Z"
+  "updatedAt": "2026-10-01T16:50:20.265Z"
 }
