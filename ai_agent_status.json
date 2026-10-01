@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Redesign gold strategy using real trader data",
-      "startedAt": "2026-09-29T14:26:50.477Z",
-      "finishedAt": "2026-09-29T14:26:53.263Z"
+      "task": "Polymarketスマートマネー分析ツールの構築",
+      "startedAt": "2026-10-01T16:44:30.220Z",
+      "finishedAt": "2026-10-01T16:44:30.593Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 64,
-    "todayOutputTokens": 43147,
-    "asOf": "2026-10-01T16:05:28.272Z"
+    "todayInputTokens": 106,
+    "todayOutputTokens": 80985,
+    "asOf": "2026-10-01T16:44:34.883Z"
   },
-  "updatedAt": "2026-10-01T16:05:28.272Z"
+  "updatedAt": "2026-10-01T16:44:34.883Z"
 }
