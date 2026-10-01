@@ -1342,35 +1342,7 @@ window.KYOTEI_DATA = {
   ],
   "today_preds": [
     {
-      "venue_name": "尼崎",
-      "race_no": "4",
-      "start_time": "11:58",
-      "combo": "2-1-4",
-      "actual_combo": "",
-      "ev": 1.88,
-      "odds": "16.5",
-      "prob_pct": "11.4",
-      "hit": "",
-      "payout": "",
-      "final_odds": "",
-      "actual_ev": null
-    },
-    {
-      "venue_name": "江戸川",
-      "race_no": "8",
-      "start_time": "14:24",
-      "combo": "1-5-4",
-      "actual_combo": "",
-      "ev": 1.87,
-      "odds": "49.8",
-      "prob_pct": "3.8",
-      "hit": "",
-      "payout": "",
-      "final_odds": "",
-      "actual_ev": null
-    },
-    {
-      "venue_name": "児島",
+      "venue_name": "鳴門",
       "race_no": "2",
       "start_time": "11:09",
       "combo": "1-5-2",
