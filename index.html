@@ -673,6 +673,7 @@
     <div class="ni" onclick="showPage('gold')"><span class="ni-ic">🥇</span>ゴールド戦略</div>
     <div class="ni" onclick="showPage('chaipo')"><span class="ni-ic">🃏</span>チャイポ OFC</div>
     <div class="ni" onclick="showPage('affiliate')"><span class="ni-ic">🔗</span>アフィリエイト</div>
+    <div class="ni" onclick="showPage('meta')"><span class="ni-ic">📣</span>メタ広告</div>
     <a class="ni" href="crypto_arbitrage.html" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">⇄</span>裁定機会モニター</a>
     <div class="ni" onclick="showPage('slot')"><span class="ni-ic">🎰</span>スロット</div>
     <a class="ni" href="https://rusu-calendar.ukenthe.workers.dev" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">🏠</span>スマートホーム</a>
@@ -1193,6 +1194,27 @@
         <div class="card"><div style="font-weight:700;font-size:.9em;margin-bottom:12px;">上段 役分布</div><div id="chaipo-rank-top"><p style="color:var(--mut);font-size:.85em;">実行後に表示</p></div></div>
         <div class="card"><div style="font-weight:700;font-size:.9em;margin-bottom:12px;">中段 役分布</div><div id="chaipo-rank-middle"><p style="color:var(--mut);font-size:.85em;">実行後に表示</p></div></div>
         <div class="card"><div style="font-weight:700;font-size:.9em;margin-bottom:12px;">下段 役分布</div><div id="chaipo-rank-bottom"><p style="color:var(--mut);font-size:.85em;">実行後に表示</p></div></div>
+      </div>
+    </div>
+
+    <!-- ===== メタ広告 ===== -->
+    <div class="page" id="page-meta">
+      <div class="card" style="padding:16px;">
+        <div id="meta-updated" style="font-size:.85em;color:var(--mut);margin-bottom:12px;"></div>
+        <div class="tw">
+          <table>
+            <thead>
+              <tr>
+                <th>広告名</th><th>キャンペーン</th><th>状態</th>
+                <th style="text-align:right">消化金額</th><th style="text-align:right">表示回数</th>
+                <th style="text-align:right">クリック</th><th style="text-align:right">CTR</th>
+                <th style="text-align:right">クリック単価</th><th style="text-align:right">LP閲覧</th>
+                <th style="text-align:right">LINE友だち追加</th><th style="text-align:right">LINE1件あたり</th>
+              </tr>
+            </thead>
+            <tbody id="meta-body"></tbody>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -2319,7 +2341,7 @@ function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業',slot:'スロット',gold:'ゴールド戦略ラボ'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',kyotei:'競艇予測ツール',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業',slot:'スロット',gold:'ゴールド戦略ラボ',meta:'メタ広告'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
@@ -2332,6 +2354,43 @@ function showPage(name) {
   if (name==='slot') renderSlot();
   if (name==='chaipo-board') cbRenderBoard();
   if (name==='affiliate') renderAffiliateSites();
+  if (name==='meta') renderMetaAds();
+}
+
+// ===== メタ広告 =====
+const META_STATUS_LABEL = {ACTIVE:'配信中', IN_PROCESS:'審査・配信準備中', PENDING_REVIEW:'審査中', PAUSED:'停止中', CAMPAIGN_PAUSED:'停止中(キャンペーン)', ARCHIVED:'アーカイブ', DISAPPROVED:'不承認'};
+function metaEsc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function metaYen(n){ return n==null ? '—' : '¥' + Number(n).toLocaleString('ja-JP'); }
+function metaNum(n){ return n==null ? '—' : Number(n).toLocaleString('ja-JP'); }
+async function renderMetaAds(){
+  const upd = document.getElementById('meta-updated');
+  const body = document.getElementById('meta-body');
+  try {
+    const res = await fetch('meta_ads_analytics.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const d = await res.json();
+    upd.textContent = '最終更新: ' + d.updatedAt + '（1日1回更新） ／ ' + d.period;
+    if (!d.ads || d.ads.length === 0) {
+      body.innerHTML = '<tr><td colspan="11" style="text-align:center;color:var(--mut);">配信データはまだありません</td></tr>';
+      return;
+    }
+    body.innerHTML = d.ads.map(a => '<tr>' +
+      '<td>' + metaEsc(a.adName) + '</td>' +
+      '<td>' + metaEsc(a.campaign) + '</td>' +
+      '<td>' + metaEsc(META_STATUS_LABEL[a.status] || a.status) + '</td>' +
+      '<td style="text-align:right">' + metaYen(a.spend) + '</td>' +
+      '<td style="text-align:right">' + metaNum(a.impressions) + '</td>' +
+      '<td style="text-align:right">' + metaNum(a.clicks) + '</td>' +
+      '<td style="text-align:right">' + (a.ctr == null ? '—' : a.ctr.toFixed(2) + '%') + '</td>' +
+      '<td style="text-align:right">' + metaYen(a.cpc) + '</td>' +
+      '<td style="text-align:right">' + metaNum(a.landingPageViews) + '</td>' +
+      '<td style="text-align:right">' + metaNum(a.lineFriendAdds) + '</td>' +
+      '<td style="text-align:right">' + metaYen(a.costPerLine) + '</td>' +
+      '</tr>').join('');
+  } catch (e) {
+    upd.textContent = '広告データを取得できませんでした';
+    body.innerHTML = '';
+  }
 }
 
 // ===== TASKS =====
