@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "裁定型/予測的中型ウォレットの分離分析",
-      "startedAt": "2026-10-02T00:38:34.722Z",
-      "finishedAt": "2026-10-02T00:38:35.376Z"
+      "task": "tazcotの追随タイムラグ・バックテスト",
+      "startedAt": "2026-10-03T08:37:57.168Z",
+      "finishedAt": "2026-10-03T08:37:57.666Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 56,
-    "todayOutputTokens": 26493,
-    "asOf": "2026-10-03T08:35:12.667Z"
+    "todayInputTokens": 154,
+    "todayOutputTokens": 68843,
+    "asOf": "2026-10-03T08:38:12.482Z"
   },
-  "updatedAt": "2026-10-03T08:35:12.667Z"
+  "updatedAt": "2026-10-03T08:38:12.482Z"
 }
