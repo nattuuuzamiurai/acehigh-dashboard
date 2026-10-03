@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "tazcotの追随タイムラグ・バックテスト",
-      "startedAt": "2026-10-03T08:37:57.168Z",
-      "finishedAt": "2026-10-03T08:37:57.666Z"
+      "task": "数分単位の追随遅延の検証",
+      "startedAt": "2026-10-03T10:20:21.398Z",
+      "finishedAt": "2026-10-03T10:20:22.219Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 728,
-    "todayOutputTokens": 414641,
-    "asOf": "2026-10-03T10:18:44.856Z"
+    "todayInputTokens": 774,
+    "todayOutputTokens": 508334,
+    "asOf": "2026-10-03T10:20:27.094Z"
   },
-  "updatedAt": "2026-10-03T10:18:44.856Z"
+  "updatedAt": "2026-10-03T10:20:27.094Z"
 }
