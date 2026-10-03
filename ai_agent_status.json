@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "現在活動中の勝ちウォレットを探す読み取り専用調査",
-      "startedAt": "2026-10-03T10:25:28.105Z",
-      "finishedAt": "2026-10-03T10:25:28.572Z"
+      "task": "範囲を広げた追随候補の確定判定",
+      "startedAt": "2026-10-03T12:21:01.043Z",
+      "finishedAt": "2026-10-03T12:21:01.510Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1746,
-    "todayOutputTokens": 927300,
-    "asOf": "2026-10-03T12:17:47.430Z"
+    "todayInputTokens": 1764,
+    "todayOutputTokens": 938199,
+    "asOf": "2026-10-03T12:21:05.065Z"
   },
-  "updatedAt": "2026-10-03T12:17:47.430Z"
+  "updatedAt": "2026-10-03T12:21:05.065Z"
 }
