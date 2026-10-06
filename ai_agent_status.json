@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 921,
-    "todayOutputTokens": 383578,
-    "asOf": "2026-10-06T14:03:51.187Z"
+    "todayInputTokens": 1057,
+    "todayOutputTokens": 573672,
+    "asOf": "2026-10-06T14:09:37.972Z"
   },
-  "updatedAt": "2026-10-06T14:03:51.187Z"
+  "updatedAt": "2026-10-06T14:09:37.972Z"
 }
