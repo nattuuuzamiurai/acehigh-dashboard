@@ -1210,6 +1210,7 @@
                 <th style="text-align:right">クリック</th><th style="text-align:right">CTR</th>
                 <th style="text-align:right">クリック単価</th><th style="text-align:right">LP閲覧</th>
                 <th style="text-align:right">LINE友だち追加</th><th style="text-align:right">LINE1件あたり</th>
+                <th style="text-align:right">フォームボタン</th><th style="text-align:right">フォーム閲覧</th><th style="text-align:right">フォーム完了</th>
               </tr>
             </thead>
             <tbody id="meta-body"></tbody>
@@ -2371,7 +2372,7 @@ async function renderMetaAds(){
     const d = await res.json();
     upd.textContent = '最終更新: ' + d.updatedAt + '（1日1回更新） ／ ' + d.period;
     if (!d.ads || d.ads.length === 0) {
-      body.innerHTML = '<tr><td colspan="11" style="text-align:center;color:var(--mut);">配信データはまだありません</td></tr>';
+      body.innerHTML = '<tr><td colspan="14" style="text-align:center;color:var(--mut);">配信データはまだありません</td></tr>';
       return;
     }
     body.innerHTML = d.ads.map(a => '<tr>' +
@@ -2386,6 +2387,9 @@ async function renderMetaAds(){
       '<td style="text-align:right">' + metaNum(a.landingPageViews) + '</td>' +
       '<td style="text-align:right">' + metaNum(a.lineFriendAdds) + '</td>' +
       '<td style="text-align:right">' + metaYen(a.costPerLine) + '</td>' +
+      '<td style="text-align:right">' + metaNum(a.formClicks) + '</td>' +
+      '<td style="text-align:right">' + metaNum(a.formViews) + '</td>' +
+      '<td style="text-align:right">' + metaNum(a.formCompletions) + '</td>' +
       '</tr>').join('');
   } catch (e) {
     upd.textContent = '広告データを取得できませんでした';
