@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ GA4配線とAIO対策実装",
-      "startedAt": "2026-10-07T16:11:49.786Z",
-      "finishedAt": "2026-10-07T16:12:10.970Z"
+      "task": "懸賞応募アシスタント 軽微バグ修正",
+      "startedAt": "2026-10-07T16:37:24.627Z",
+      "finishedAt": "2026-10-07T16:37:25.044Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2596,
-    "todayOutputTokens": 675151,
-    "asOf": "2026-10-07T16:35:38.362Z"
+    "todayInputTokens": 2622,
+    "todayOutputTokens": 684803,
+    "asOf": "2026-10-07T16:37:31.101Z"
   },
-  "updatedAt": "2026-10-07T16:35:38.362Z"
+  "updatedAt": "2026-10-07T16:37:31.101Z"
 }
