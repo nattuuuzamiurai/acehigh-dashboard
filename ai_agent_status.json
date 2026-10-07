@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "九州・福岡の大型ポーカー大会リサーチ",
-      "startedAt": "2026-10-07T14:51:11.673Z",
-      "finishedAt": "2026-10-07T14:53:26.708Z"
+      "task": "懸賞サイト調査とフォームパターン収集",
+      "startedAt": "2026-10-07T15:55:06.623Z",
+      "finishedAt": "2026-10-07T15:55:07.299Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 462,
-    "todayOutputTokens": 144826,
-    "asOf": "2026-10-07T15:53:39.225Z"
+    "todayInputTokens": 526,
+    "todayOutputTokens": 176728,
+    "asOf": "2026-10-07T15:55:12.904Z"
   },
-  "updatedAt": "2026-10-07T15:53:39.225Z"
+  "updatedAt": "2026-10-07T15:55:12.904Z"
 }
