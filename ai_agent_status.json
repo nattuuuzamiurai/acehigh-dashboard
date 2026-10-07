@@ -8,9 +8,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "AI実務ナビWeek12公開作業の最終QA",
-      "startedAt": "2026-10-01T17:30:04.791Z",
-      "finishedAt": "2026-10-01T17:34:05.256Z"
+      "task": "久留米飲み屋ナビ PR#60品質チェック",
+      "startedAt": "2026-10-07T16:24:26.202Z",
+      "finishedAt": "2026-10-07T16:24:26.748Z"
     },
     "review-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2138,
-    "todayOutputTokens": 609942,
-    "asOf": "2026-10-07T16:22:44.361Z"
+    "todayInputTokens": 2206,
+    "todayOutputTokens": 626983,
+    "asOf": "2026-10-07T16:24:31.005Z"
   },
-  "updatedAt": "2026-10-07T16:22:44.361Z"
+  "updatedAt": "2026-10-07T16:24:31.005Z"
 }
