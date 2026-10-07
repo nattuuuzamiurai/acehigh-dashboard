@@ -44,15 +44,15 @@
     },
     "general-purpose": {
       "status": "idle",
-      "task": "動画区間6(280-335秒)の番地・名前を書き起こし",
-      "startedAt": "2026-09-11T18:25:19.498Z",
-      "finishedAt": "2026-09-11T18:25:24.494Z"
+      "task": "懸賞応募アシスタント 公式URL解決と規約チェック実動作化",
+      "startedAt": "2026-10-07T16:49:44.787Z",
+      "finishedAt": "2026-10-07T16:49:45.175Z"
     }
   },
   "usage": {
-    "todayInputTokens": 2780,
-    "todayOutputTokens": 708922,
-    "asOf": "2026-10-07T16:47:40.030Z"
+    "todayInputTokens": 2806,
+    "todayOutputTokens": 736003,
+    "asOf": "2026-10-07T16:49:51.339Z"
   },
-  "updatedAt": "2026-10-07T16:47:40.030Z"
+  "updatedAt": "2026-10-07T16:49:51.339Z"
 }
