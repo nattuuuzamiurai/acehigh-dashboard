@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "範囲を広げた追随候補の確定判定",
-      "startedAt": "2026-10-03T12:21:01.043Z",
-      "finishedAt": "2026-10-03T12:21:01.510Z"
+      "task": "Polymarket調査の再開と全カテゴリへの拡大",
+      "startedAt": "2026-10-07T14:34:10.165Z",
+      "finishedAt": "2026-10-07T14:34:10.944Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3672,
-    "todayOutputTokens": 1733916,
-    "asOf": "2026-10-07T14:32:32.203Z"
+    "todayInputTokens": 3740,
+    "todayOutputTokens": 1769984,
+    "asOf": "2026-10-07T14:34:17.537Z"
   },
-  "updatedAt": "2026-10-07T14:32:32.203Z"
+  "updatedAt": "2026-10-07T14:34:17.537Z"
 }
