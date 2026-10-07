@@ -217,6 +217,29 @@
     .proj-block-note { font-size:.86em; color:var(--mut); margin-top:3px; }
     .proj-noblock { font-size:.83em; color:var(--grn); background:#e8f7f1; border-radius:7px; padding:8px 12px; margin-bottom:10px; font-weight:600; }
 
+    /* 裏付けログ */
+    .urg-thesis { background:var(--sur); border:1px solid var(--bor); border-left:4px solid var(--urg-stripe,var(--mut)); border-radius:var(--r); padding:14px 16px; box-shadow:var(--sha); }
+    .urg-thesis.closed { opacity:.6; }
+    .urg-top { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+    .urg-title { font-weight:700; font-size:.95em; }
+    .urg-instrument { font-size:.78em; color:var(--mut); margin-top:2px; }
+    .urg-stance { font-size:.72em; padding:3px 9px; border-radius:20px; font-weight:700; flex-shrink:0; white-space:nowrap; }
+    .urg-stance.long { background:#eef0fe; color:var(--acc); }
+    .urg-stance.short { background:#fef3c7; color:var(--amb); }
+    .urg-stance.neutral { background:var(--sur2); color:var(--mut); border:1px solid var(--bor); }
+    .urg-meta { display:flex; flex-wrap:wrap; gap:10px; font-size:.78em; color:var(--mut); margin-top:9px; }
+    .urg-meta b { color:var(--txt); }
+    .urg-note { font-size:.82em; color:var(--mut); margin-top:8px; line-height:1.5; }
+    .urg-entry { padding:11px 14px; border-radius:8px; margin-bottom:8px; background:var(--sur); border:1px solid var(--bor); border-left:3px solid var(--urg-e-stripe,var(--mut)); }
+    .urg-entry-head { display:flex; align-items:baseline; gap:9px; flex-wrap:wrap; }
+    .urg-entry-date { font-size:.76em; color:var(--mut); }
+    .urg-entry-title { font-weight:700; font-size:.88em; flex:1; min-width:0; }
+    .urg-score { font-size:.72em; padding:2px 7px; border-radius:6px; background:var(--sur2); border:1px solid var(--bor); color:var(--mut); }
+    .urg-entry-desc { font-size:.82em; color:var(--mut); margin-top:5px; }
+    .urg-chips { display:flex; gap:5px; flex-wrap:wrap; margin-top:7px; }
+    .urg-chip { font-size:.7em; padding:2px 8px; border-radius:20px; border:1px solid var(--bor); color:var(--mut); }
+    .urg-chip.on { border-color:transparent; background:#e8f7f1; color:#16a34a; font-weight:700; }
+
     /* AI組織: 部署ライブステータス */
     .aiorg-live-row { display:flex; align-items:center; gap:8px; background:var(--sur2); border:1px solid var(--bor); border-radius:8px; padding:8px 11px; margin-bottom:11px; }
     .aiorg-live-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; background:var(--mut); }
@@ -670,7 +693,7 @@
     <div class="ng">ツール</div>
     <div class="ni" onclick="showPage('affiliate')"><span class="ni-ic">🔗</span>アフィリエイト</div>
     <div class="ni" onclick="showPage('meta')"><span class="ni-ic">📣</span>メタ広告</div>
-    <a class="ni" href="https://claude.ai/artifact/9ERpMsRtF7GVxu9vVLoRjF" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">📋</span>裏付けログ</a>
+    <div class="ni" onclick="showPage('uragazuke')"><span class="ni-ic">📋</span>裏付けログ</div>
     <div class="ni" onclick="showPage('slot')"><span class="ni-ic">🎰</span>スロット</div>
     <a class="ni" href="https://rusu-calendar.ukenthe.workers.dev" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="ni-ic">🏠</span>スマートホーム</a>
   </nav>
@@ -1183,6 +1206,22 @@
           </table>
         </div>
       </div>
+    </div>
+
+    <!-- ===== 裏付けログ ===== -->
+    <div class="page" id="page-uragazuke">
+      <div class="g4" id="urg-stats" style="margin-bottom:18px;"></div>
+      <div class="sh">
+        <h2>保有方針(中長期テーゼ)</h2>
+        <span style="font-size:.78em;color:var(--mut);" id="urg-updated"></span>
+      </div>
+      <div class="proj-grid mt12" id="urg-theses"></div>
+
+      <div class="sh mt28">
+        <h2>記録一覧</h2>
+        <span style="font-size:.78em;color:var(--mut);">地政学・マクロイベント判定ジャーナル / <a href="https://claude.ai/artifact/9ERpMsRtF7GVxu9vVLoRjF" target="_blank" rel="noopener noreferrer" style="color:var(--acc);">元のArtifactを開く ↗</a></span>
+      </div>
+      <div id="urg-entries" class="mt12"></div>
     </div>
 
     <!-- ===== アフィリエイト事業 ===== -->
@@ -2275,7 +2314,7 @@ function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.ni').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
-  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業',slot:'スロット',gold:'ゴールド戦略ラボ',meta:'メタ広告'};
+  const lbl = {overview:'概要',tasks:'タスク管理',revenue:'収益管理',projects:'プロジェクト管理',aiorg:'AI組織',chaipo:'チャイポ OFC シミュレーター','chaipo-board':'チャイポ OFC — 配置アシスト',affiliate:'アフィリエイト事業',slot:'スロット',gold:'ゴールド戦略ラボ',meta:'メタ広告',uragazuke:'裏付けログ'};
   document.getElementById('page-title').textContent = lbl[name]||name;
   const ni = document.querySelector('.ni[onclick="showPage(\''+name+'\')"]');
   if (ni) ni.classList.add('active');
@@ -2288,6 +2327,7 @@ function showPage(name) {
   if (name==='chaipo-board') cbRenderBoard();
   if (name==='affiliate') renderAffiliateSites();
   if (name==='meta') renderMetaAds();
+  if (name==='uragazuke') renderUragazuke();
 }
 
 // ===== メタ広告 =====
@@ -2326,6 +2366,95 @@ async function renderMetaAds(){
   } catch (e) {
     upd.textContent = '広告データを取得できませんでした';
     body.innerHTML = '';
+  }
+}
+
+// ===== 裏付けログ(地政学・マクロ判定ジャーナル) =====
+function urgEsc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+function urgStanceLabel(s) { return s === 'long' ? 'ロング' : s === 'short' ? 'ショート' : '様子見'; }
+function urgDaysHeld(openedDate) {
+  if (!openedDate) return null;
+  const t = new Date(openedDate + 'T00:00:00Z').getTime();
+  if (Number.isNaN(t)) return null;
+  const d = Math.floor((Date.now() - t) / 86400000);
+  return d >= 0 ? d : 0;
+}
+function renderUrgThesis(t) {
+  const stance = t.stance || 'neutral';
+  const stripe = stance === 'long' ? 'var(--acc)' : stance === 'short' ? 'var(--amb)' : 'var(--mut)';
+  const conf = typeof t.confidence === 'number' ? t.confidence : 0;
+  const held = urgDaysHeld(t.openedDate);
+  const closed = t.status === 'closed';
+  return '<div class="urg-thesis' + (closed ? ' closed' : '') + '" style="--urg-stripe:' + stripe + '">' +
+    '<div class="urg-top"><div><div class="urg-title">' + urgEsc(t.title || '') + '</div>' +
+    (t.instrument ? '<div class="urg-instrument">' + urgEsc(t.instrument) + '</div>' : '') + '</div>' +
+    (closed ? '<span class="badge routine">決着済</span>' : '<span class="urg-stance ' + stance + '">' + urgStanceLabel(stance) + '</span>') +
+    '</div>' +
+    '<div class="urg-meta">' +
+    '<span>確信度 <b>' + (conf > 0 ? '+' + conf : conf) + '</b></span>' +
+    (held !== null ? '<span>保有 <b>' + held + '日</b></span>' : '') +
+    (t.entryPriceApprox ? '<span>起点 <b>' + urgEsc(t.entryPriceApprox) + '</b></span>' : '') +
+    (t.lastPriceApprox ? '<span>直近 <b>' + urgEsc(t.lastPriceApprox) + '</b></span>' : '') +
+    '</div>' +
+    (t.note ? '<div class="urg-note">' + urgEsc(t.note) + '</div>' : '') +
+    (closed && t.outcome ? '<div class="urg-note">結果: <b>' + urgEsc(t.outcome) + '</b>' + (t.exitPriceApprox ? '(決着水準 ' + urgEsc(t.exitPriceApprox) + ')' : '') + '</div>' : '') +
+    '</div>';
+}
+function renderUrgEntry(e, theses) {
+  const score = [e.critAction, e.critConfirm, e.critFresh].filter(Boolean).length;
+  const stripe = e.outcome === 'win' ? 'var(--grn)' : e.outcome === 'loss' ? 'var(--red)' : e.outcome === 'breakeven' ? 'var(--mut)' : 'var(--amb)';
+  const linked = e.thesisId ? (theses.find(t => t.id === e.thesisId) || {}).title : '';
+  const chips = [['行動', e.critAction], ['確証', e.critConfirm], ['鮮度', e.critFresh]]
+    .map(([l, on]) => '<span class="urg-chip' + (on ? ' on' : '') + '">' + l + '</span>').join('');
+  return '<div class="urg-entry" style="--urg-e-stripe:' + stripe + '">' +
+    '<div class="urg-entry-head">' +
+    '<span class="urg-entry-date">' + urgEsc(e.date || '') + '</span>' +
+    '<span class="urg-entry-title">' + urgEsc(e.title || '') + '</span>' +
+    '<span class="urg-score">判定 ' + score + '/3</span>' +
+    '</div>' +
+    (e.description ? '<div class="urg-entry-desc">' + urgEsc(e.description) + '</div>' : '') +
+    '<div class="urg-chips">' + chips + '</div>' +
+    (linked ? '<div class="urg-entry-desc">関連テーゼ: <b>' + urgEsc(linked) + '</b></div>' : '') +
+    '</div>';
+}
+async function renderUragazuke() {
+  const statsEl = document.getElementById('urg-stats');
+  const thesesEl = document.getElementById('urg-theses');
+  const entriesEl = document.getElementById('urg-entries');
+  const updEl = document.getElementById('urg-updated');
+  try {
+    const res = await fetch('uragazuke_log.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const d = await res.json();
+    const theses = d.theses || [];
+    const entries = d.entries || [];
+    updEl.textContent = d.updatedAt ? ('最終更新: ' + d.updatedAt) : '司令塔からの初回更新待ち';
+
+    const openTheses = theses.filter(t => t.status !== 'closed');
+    const decided = entries.filter(e => e.outcome === 'win' || e.outcome === 'loss');
+    const wins = entries.filter(e => e.outcome === 'win').length;
+    const winRate = decided.length ? Math.round(wins / decided.length * 100) + '%' : '—';
+    statsEl.innerHTML =
+      '<div class="chip"><div class="n">' + openTheses.length + '</div><div class="l">オープン中のテーゼ</div></div>' +
+      '<div class="chip"><div class="n">' + theses.length + '</div><div class="l">テーゼ累計</div></div>' +
+      '<div class="chip"><div class="n">' + entries.length + '</div><div class="l">観測記録数</div></div>' +
+      '<div class="chip"><div class="n">' + winRate + '</div><div class="l">的中率(決着済み' + decided.length + '件中)</div></div>';
+
+    thesesEl.innerHTML = theses.length
+      ? theses.slice().sort((a, b) => {
+          if ((a.status === 'closed') !== (b.status === 'closed')) return a.status === 'closed' ? 1 : -1;
+          return (b.openedDate || '').localeCompare(a.openedDate || '');
+        }).map(renderUrgThesis).join('')
+      : '<div class="proj-empty">まだテーゼがありません。自動監視が材料を見つけると、ここに中長期の立場が表示されます。</div>';
+
+    entriesEl.innerHTML = entries.length
+      ? entries.slice().sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0)).slice(0, 100).map(e => renderUrgEntry(e, theses)).join('')
+      : '<div class="proj-empty">まだ記録がありません。</div>';
+  } catch (e) {
+    updEl.textContent = 'データを取得できませんでした';
+    statsEl.innerHTML = '';
+    thesesEl.innerHTML = '';
+    entriesEl.innerHTML = '';
   }
 }
 
