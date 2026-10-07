@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "懸賞応募アシスタント Phase 1実装",
-      "startedAt": "2026-10-07T16:10:19.148Z",
-      "finishedAt": "2026-10-07T16:10:19.546Z"
+      "task": "久留米飲み屋ナビ GA4配線とAIO対策実装",
+      "startedAt": "2026-10-07T16:11:49.786Z",
+      "finishedAt": "2026-10-07T16:12:10.970Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ 需要・マネタイズ再検証",
-      "startedAt": "2026-10-07T16:03:40.301Z",
-      "finishedAt": "2026-10-07T16:03:51.695Z"
+      "task": "久留米飲み屋ナビ SNS能動施策の小規模試験案",
+      "startedAt": "2026-10-07T16:12:10.543Z",
+      "finishedAt": "2026-10-07T16:12:10.977Z"
     },
     "marketing-lead": {
       "status": "running",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 1402,
-    "todayOutputTokens": 439056,
-    "asOf": "2026-10-07T16:10:49.457Z"
+    "todayInputTokens": 1454,
+    "todayOutputTokens": 464063,
+    "asOf": "2026-10-07T16:12:10.406Z"
   },
-  "updatedAt": "2026-10-07T16:10:49.457Z"
+  "updatedAt": "2026-10-07T16:12:10.406Z"
 }
