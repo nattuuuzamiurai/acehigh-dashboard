@@ -1,5 +1,92 @@
 {
-  "updatedAt": null,
-  "theses": [],
-  "entries": []
+  "updatedAt": "2026-10-08 07:50",
+  "theses": [
+    {
+      "id": "thesis-hormuz-oil-conflict",
+      "title": "イラン・ホルムズ海峡情勢による原油供給ショック",
+      "theme": "イラン・ホルムズ海峡の実際の軍事外交の動き",
+      "instrument": "WTI原油/エネルギー株(XLE等)",
+      "stance": "long",
+      "confidence": 2,
+      "status": "open",
+      "openedDate": "2026-10-08",
+      "entryPriceApprox": "WTI約$100/bbl",
+      "lastPriceApprox": "WTI約$100/bbl",
+      "lastCheckedDate": "2026-10-08",
+      "note": "米・イスラエル対イランの軍事衝突が継続中。米海軍がイラン南部港湾を事実上封鎖(タンカー122隻を迂回させ原油輸出を実質停止)、IRGCはホルムズ海峡を『調整なき船舶には閉鎖』と主張し継続的にタンカー攻撃。OPEC+は名目上の増産を発表しているが、サウジ・クウェート・イラクなど主要生産国の実際の出荷能力がホルムズ海峡経由で制約され『紙の上の増産』にとどまる。CBS・Al Jazeera・The Hill等、独立した複数の大手メディアが一致して報道。ロシアもウクライナの燃料施設攻撃で輸出余力が低下しており供給逼迫が重なる。単発の発言ではなく実際の海上封鎖・軍事行動という『行動』の裏付けがある継続的事態のため開始。",
+      "closedDate": null,
+      "exitPriceApprox": null,
+      "outcome": null
+    }
+  ],
+  "entries": [
+    {
+      "date": "2026-10-08",
+      "title": "ホルムズ海峡封鎖・原油$100超が継続",
+      "description": "米海軍によるイラン南部港湾の事実上の封鎖(タンカー122隻迂回)、IRGCの継続的タンカー攻撃、OPEC+の名目増産が物理的に制約される状況が継続。ロシアもウクライナの燃料施設攻撃で輸出余力低下。複数の供給ショック要因が重なり原油$100超で推移。",
+      "sourceUrl": "https://thehill.com/policy/defense/6080200-trump-threatens-more-iranian-attacks/",
+      "critAction": true,
+      "critConfirm": true,
+      "critFresh": true,
+      "decision": "trade",
+      "instrument": "WTI原油",
+      "direction": "long",
+      "outcome": "pending",
+      "notes": "thesis-hormuz-oil-conflict開始の根拠。行動(海上封鎖・攻撃)の裏付けあり、複数独立メディアで確証、原油価格への反映で鮮度も確認。",
+      "createdAt": 1791413403000,
+      "source": "auto",
+      "thesisId": "thesis-hormuz-oil-conflict"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "日銀・植田総裁「利上げ継続」発言(10/6)",
+      "description": "植田総裁が証券会社団体向けの会合で利上げ継続姿勢を示したと報道。市場は10/30会合での利上げ確率を4分の1程度とみており、発言と市場の織り込みにギャップ。",
+      "sourceUrl": "https://www.fxstreet.com/analysis/the-market-is-pricing-a-boj-pause-heres-why-uedas-keep-raising-rates-could-force-a-sharp-yen-repricing-202610061823",
+      "critAction": false,
+      "critConfirm": true,
+      "critFresh": true,
+      "decision": "skip",
+      "instrument": "JPY/USD",
+      "direction": "neutral",
+      "outcome": "pending",
+      "notes": "実際の利上げ(行動)は9/18に既発生済みで市場に織り込み済み。今回は発言・ガイダンスの再強調に過ぎず「言葉」の域。10/30の会合結果(実際の行動)が出るまでテーゼ化は見送り、ウォッチ継続。",
+      "createdAt": 1791413403000,
+      "source": "auto",
+      "thesisId": null
+    },
+    {
+      "date": "2026-10-08",
+      "title": "トランプ対中関税、情報が矛盾(検索結果の日付整合性に疑問)",
+      "description": "一部報道で「10月10日に対中100%関税を発表、11月1日発効」との情報があったが、別の報道では「米中は貿易休戦を2027年1月10日まで延長(9/23発表)・レアアース休戦も延長」という正反対の内容が同時に見つかった。",
+      "sourceUrl": "https://www.cnbc.com/2026/09/18/trump-iran-canada-europe-tariffs-hormuz-ai-palatir-.html",
+      "critAction": false,
+      "critConfirm": false,
+      "critFresh": false,
+      "decision": "skip",
+      "instrument": "USD/CNY, 中国関連株",
+      "direction": "neutral",
+      "outcome": "pending",
+      "notes": "検索結果間で日付・内容が矛盾し真偽確認できず(日付整合性が怪しい記事を含む)。「言葉」と「行動」の仕分け精度に自信が持てないため見送り。次回以降、公式発表の原文で再確認する。",
+      "createdAt": 1791413403000,
+      "source": "auto",
+      "thesisId": null
+    },
+    {
+      "date": "2026-10-08",
+      "title": "米中貿易休戦、2027年1月10日まで延長(9/23発表)",
+      "description": "ベッセント財務長官が、本来11/10失効予定だった米中貿易休戦を2027/1/10まで延長すると発表。習近平の訪米(10年ぶり)と合わせ、$30億ドル規模の相互関税優遇措置も合意。AI分野での協力可能性にも言及されたが、具体的な大きな合意はなし。",
+      "sourceUrl": "https://www.cnn.com/2026/09/25/world/xi-dc-trump-analysis-intl-hnk",
+      "critAction": true,
+      "critConfirm": true,
+      "critFresh": false,
+      "decision": "skip",
+      "instrument": "USD/CNY, 中国関連株",
+      "direction": "neutral",
+      "outcome": "pending",
+      "notes": "デエスカレーション方向の実際の行動(休戦延長)だが9/23時点の既発表事項で鮮度は低い(3週間前)。新規テーゼ化はせず背景情報として記録。",
+      "createdAt": 1791413403000,
+      "source": "auto",
+      "thesisId": null
+    }
+  ]
 }
