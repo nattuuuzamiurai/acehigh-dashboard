@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "AI実務ナビWeek12企画",
-      "startedAt": "2026-10-01T16:46:42.329Z",
-      "finishedAt": "2026-10-01T16:57:32.599Z"
+      "task": "九州・福岡の大型ポーカー大会リサーチ",
+      "startedAt": "2026-10-07T14:51:11.673Z",
+      "finishedAt": "2026-10-07T14:53:26.708Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 4312,
-    "todayOutputTokens": 1984418,
-    "asOf": "2026-10-07T14:50:21.971Z"
+    "todayInputTokens": 4476,
+    "todayOutputTokens": 2045664,
+    "asOf": "2026-10-07T14:54:05.583Z"
   },
-  "updatedAt": "2026-10-07T14:50:21.971Z"
+  "updatedAt": "2026-10-07T14:54:05.583Z"
 }
