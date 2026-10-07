@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "AI実務ナビWeek12最終レビュー",
-      "startedAt": "2026-10-01T17:22:56.909Z",
-      "finishedAt": "2026-10-01T17:25:56.283Z"
+      "task": "懸賞応募アシスタント Phase1 最終レビュー",
+      "startedAt": "2026-10-07T16:40:33.159Z",
+      "finishedAt": "2026-10-07T16:40:33.592Z"
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 2622,
-    "todayOutputTokens": 684803,
-    "asOf": "2026-10-07T16:37:31.101Z"
+    "todayInputTokens": 2696,
+    "todayOutputTokens": 692515,
+    "asOf": "2026-10-07T16:40:36.542Z"
   },
-  "updatedAt": "2026-10-07T16:37:31.101Z"
+  "updatedAt": "2026-10-07T16:40:36.542Z"
 }
