@@ -20,9 +20,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ PR#66レビュー判定",
-      "startedAt": "2026-10-08T17:10:55.428Z",
-      "finishedAt": "2026-10-08T17:10:55.967Z"
+      "task": "久留米飲み屋ナビ PR#67レビュー判定",
+      "startedAt": "2026-10-08T17:33:03.806Z",
+      "finishedAt": "2026-10-08T17:33:04.347Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-08T13:16:34.384Z"
     }
   },
-  "updatedAt": "2026-10-08T17:29:29.002Z",
+  "updatedAt": "2026-10-08T17:33:06.645Z",
   "usage": {
-    "todayInputTokens": 5068,
-    "todayOutputTokens": 1357855,
-    "asOf": "2026-10-08T17:29:29.002Z"
+    "todayInputTokens": 5210,
+    "todayOutputTokens": 1361421,
+    "asOf": "2026-10-08T17:33:06.645Z"
   }
 }
