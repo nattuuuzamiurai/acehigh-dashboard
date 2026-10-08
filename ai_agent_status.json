@@ -17,12 +17,18 @@
       "task": "久留米飲み屋ナビ PR#61品質チェック",
       "startedAt": "2026-10-08T03:52:49.986Z",
       "finishedAt": "2026-10-08T03:52:50.429Z"
+    },
+    "review-lead": {
+      "status": "idle",
+      "task": "久留米飲み屋ナビ PR#61レビュー判定",
+      "startedAt": "2026-10-08T03:59:34.321Z",
+      "finishedAt": "2026-10-08T03:59:34.741Z"
     }
   },
-  "updatedAt": "2026-10-08T03:55:55.543Z",
+  "updatedAt": "2026-10-08T03:59:37.261Z",
   "usage": {
-    "todayInputTokens": 4336,
-    "todayOutputTokens": 1113260,
-    "asOf": "2026-10-08T03:55:55.543Z"
+    "todayInputTokens": 4502,
+    "todayOutputTokens": 1116864,
+    "asOf": "2026-10-08T03:59:37.261Z"
   }
 }
