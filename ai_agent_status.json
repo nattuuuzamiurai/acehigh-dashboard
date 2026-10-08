@@ -14,9 +14,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ PR#62品質チェック",
-      "startedAt": "2026-10-08T04:01:15.538Z",
-      "finishedAt": "2026-10-08T04:01:15.840Z"
+      "task": "相互リンクPR 2件の品質チェック",
+      "startedAt": "2026-10-08T13:21:49.498Z",
+      "finishedAt": "2026-10-08T13:21:50.218Z"
     },
     "review-lead": {
       "status": "idle",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-08T13:16:34.384Z"
     }
   },
-  "updatedAt": "2026-10-08T13:21:01.588Z",
+  "updatedAt": "2026-10-08T13:21:53.299Z",
   "usage": {
-    "todayInputTokens": 6422,
-    "todayOutputTokens": 1546904,
-    "asOf": "2026-10-08T13:21:01.588Z"
+    "todayInputTokens": 6456,
+    "todayOutputTokens": 1551830,
+    "asOf": "2026-10-08T13:21:53.299Z"
   }
 }
