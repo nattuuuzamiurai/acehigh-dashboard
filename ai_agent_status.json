@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "kondate-planner 仕様修正(調味料・在庫粗化・機材)",
-      "startedAt": "2026-10-08T15:40:24.860Z",
-      "finishedAt": "2026-10-08T15:40:25.224Z"
+      "task": "久留米飲み屋ナビ PR#65 バッジのコントラスト比修正",
+      "startedAt": "2026-10-08T16:16:57.301Z",
+      "finishedAt": "2026-10-08T16:16:57.734Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-08T13:16:34.384Z"
     }
   },
-  "updatedAt": "2026-10-08T16:11:41.955Z",
+  "updatedAt": "2026-10-08T16:17:00.316Z",
   "usage": {
-    "todayInputTokens": 2478,
-    "todayOutputTokens": 782124,
-    "asOf": "2026-10-08T16:11:41.955Z"
+    "todayInputTokens": 2594,
+    "todayOutputTokens": 792760,
+    "asOf": "2026-10-08T16:17:00.316Z"
   }
 }
