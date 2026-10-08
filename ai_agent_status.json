@@ -35,12 +35,18 @@
       "task": "社内サイト間の内部送客 可能性調査",
       "startedAt": "2026-10-08T13:10:23.169Z",
       "finishedAt": "2026-10-08T13:10:23.988Z"
+    },
+    "content-writer": {
+      "status": "idle",
+      "task": "久留米飲み屋ナビ はしご酒/深夜記事 執筆",
+      "startedAt": "2026-10-08T13:16:33.964Z",
+      "finishedAt": "2026-10-08T13:16:34.384Z"
     }
   },
-  "updatedAt": "2026-10-08T13:16:10.405Z",
+  "updatedAt": "2026-10-08T13:16:53.436Z",
   "usage": {
-    "todayInputTokens": 6012,
-    "todayOutputTokens": 1461622,
-    "asOf": "2026-10-08T13:16:10.405Z"
+    "todayInputTokens": 6084,
+    "todayOutputTokens": 1480867,
+    "asOf": "2026-10-08T13:16:53.436Z"
   }
 }
