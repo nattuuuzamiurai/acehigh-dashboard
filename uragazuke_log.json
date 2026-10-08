@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08 07:50",
+  "updatedAt": "2026-10-08 16:20",
   "theses": [
     {
       "id": "thesis-hormuz-oil-conflict",
@@ -11,9 +11,10 @@
       "status": "open",
       "openedDate": "2026-10-08",
       "entryPriceApprox": "WTI約$100/bbl",
-      "lastPriceApprox": "WTI約$100/bbl",
+      "lastPriceApprox": "WTI約$100/bbl(供給逼迫継続)",
       "lastCheckedDate": "2026-10-08",
       "note": "米・イスラエル対イランの軍事衝突が継続中。米海軍がイラン南部港湾を事実上封鎖(タンカー122隻を迂回させ原油輸出を実質停止)、IRGCはホルムズ海峡を『調整なき船舶には閉鎖』と主張し継続的にタンカー攻撃。OPEC+は名目上の増産を発表しているが、サウジ・クウェート・イラクなど主要生産国の実際の出荷能力がホルムズ海峡経由で制約され『紙の上の増産』にとどまる。CBS・Al Jazeera・The Hill等、独立した複数の大手メディアが一致して報道。ロシアもウクライナの燃料施設攻撃で輸出余力が低下しており供給逼迫が重なる。単発の発言ではなく実際の海上封鎖・軍事行動という『行動』の裏付けがある継続的事態のため開始。",
+      "deescalationSignals": "2026-10-08時点: 沈静化の前兆は見られず、逆にエスカレーションが優勢。①攻撃頻度=9/28〜10/5の週に最少12件、イラン戦争開始以来最多の週間数(Reuters系複数報道)。通行量は2ヶ月ぶりの最小(10/7に7隻のみ通過)。②要人往来=ルートは活発(カタール・パキスタンが介入、イランはPakistanがmain mediatorと公認)だが、確認できた具体的な会談記事の最新は7月〜8月付けが中心で、直近24-48時間の新規進展は未確認。③調停国トーン=早急に進展方向の公式発言は未確認(6月のIslamabad MOUはすでに崩壊済みの教訓あり、過度に楽観しない)。④戦争保険料率=7月時点で6%から3-10%(ピーク10%から一時退却した履歴あり)。最新数値未確認だが構造的に高いまま。結論: 4項目すべて沈静化の張りを欠き、むしろ①が明確にエスカレーション。confidenceは現状維持(2)とするが、テーゼは補強された判断。",
       "closedDate": null,
       "exitPriceApprox": null,
       "outcome": null
@@ -87,6 +88,23 @@
       "createdAt": 1791413403000,
       "source": "auto",
       "thesisId": null
+    },
+    {
+      "date": "2026-10-08",
+      "title": "ホルムズ海峡、イラン戦争開始以来最大の週間攻撃頻度(鎮静化前兆初回観測)",
+      "description": "9/28〜10/5の週に少なくとも約20隻が攻撃を受け、イラン戦争開始以来最多の週間数(Reuters系複数報道)。通行量は2ヶ月ぶりの最小(10/7に7隻のみ)。調停国(カタール・パキスタン)の介入は従来通り活発だが進展方向の新規発言はなし。戦争保険料率は構造的に高いまま(最新データは7月時点)。",
+      "sourceUrl": "https://www.usnews.com/news/world/articles/2026-10-07/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say",
+      "critAction": true,
+      "critConfirm": true,
+      "critFresh": true,
+      "decision": "trade",
+      "instrument": "WTI原油",
+      "direction": "long",
+      "outcome": "pending",
+      "notes": "社長との議論を踏まえたデエスカレーション前兆観測の初回実施。現時点は逆にエスカレーションが優勢のためテーゼを補強。詳細はthesis-hormuz-oil-conflictのdeescalationSignalsフィールド参照。",
+      "createdAt": 1791421200000,
+      "source": "auto",
+      "thesisId": "thesis-hormuz-oil-conflict"
     }
   ]
 }
