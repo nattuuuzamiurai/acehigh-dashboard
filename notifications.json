@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "flop-20261009-0808",
+    "ts": "2026-10-09T08:08:52+09:00",
+    "title": "テストネットFLOP、HTLCで実資金取引可能に",
+    "body": "Arthur Hayesが、FLOPテストネットトークンはHTLC(ハッシュタイムロックコントラクト)により実際の資金で取引可能にし、将来的に未定の比率でメインネットトークンへ交換できると発表。マイナー・バリデーター・AIエージェントにはテストネット期間中の追加インセンティブも言及された。交換比率や取引開始の具体的な日時は未発表で、GitHub上(flop-labs/tclk)のHTLC実装PRも現時点ではモック実装にとどまる。",
+    "links": [
+      {"label": "PANews", "url": "https://panews.io/articles/01a0ae49-2ec0-7400-9d65-a42a509a4f6c"},
+      {"label": "ChainCatcher", "url": "https://www.chaincatcher.com/en/article/2290465"},
+      {"label": "KuCoin News", "url": "https://www.kucoin.com/news/flash/flop-labs-testnet-token-to-support-real-fund-transactions-via-htlc-protocol"}
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 {
   "topic": "FLOP (Flop Labs / Arthur Hayes) airdrop watch",
-  "last_updated": "2026-10-09T00:00:00+09:00",
+  "last_updated": "2026-10-09T08:08:52+09:00",
   "known_facts": [
     "2026-08-18: Arthur Hayes(BitMEX共同創業者)がFlop LabsのCEO就任を発表。VCなし・プリセールなしの「100%フェアローンチ」でFLOPトークンをAIエージェント向け通貨として展開すると説明。",
     "Flop NetworkはProof-of-Useful-Inference(PoUI)プロトコル。AIエージェントがマイナーに推論作業の対価をFLOPで支払う仕組み。",
@@ -14,6 +14,8 @@
     "2026-10-02: Arthur Hayesが「AIはバブルだが、そこからagentic commerceという有用なものが生まれる」と発言。",
     "2026-10-07: Token2049でArthur Hayesが「FLOPテストネットは2026年10月中に90日サイクルでローンチ、メインネットはQ1 2027」と発表。具体的な開始日・一般ユーザー/AIエージェント経路の参加方法の詳細は未発表。",
     "2026-10-08時点: テストネット・フォーセットはまだ稼働していない。適格条件・スナップショット日・請求方法は依然未公開。airdrops.ioの表記は「Potential」から「Confirmed」(エアドロップ実施自体は確定)に変化したが、条件の中身は不明のまま。",
-    "唯一確定している公式ルール: シードフレーズ・ウォレット接続・支払いを要求するものは全てなりすまし/詐欺。公式窓口はX @flop_labs、@cryptohayes、technocore.chat、flop.financeのみ。"
+    "唯一確定している公式ルール: シードフレーズ・ウォレット接続・支払いを要求するものは全てなりすまし/詐欺。公式窓口はX @flop_labs、@cryptohayes、technocore.chat、flop.financeのみ。",
+    "2026-09-17: Arthur Hayesが、FLOPテストネットトークンはHTLC(ハッシュタイムロックコントラクト)により実資金で取引可能になり、将来的に未定の比率でメインネットトークンへ交換できると発表。交換比率・取引開始日は未発表。GitHub(flop-labs/tclk)上のHTLCバインディング実装はPR段階でモック実装にとどまる(2026-10-09時点)。",
+    "2026-10-09時点: Hyperliquid NVDA先物価格予測コンペ(10/4開催、計100万FLOP)の結果はまだ公式発表が見当たらず未確認のまま。"
   ]
 }
