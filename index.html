@@ -245,7 +245,12 @@
     .urg-metric-label { font-size:.82em; font-weight:700; }
     .urg-metric-value { font-size:.76em; color:var(--mut); white-space:nowrap; }
     .urg-metric-value b { color:var(--txt); }
-    .urg-metric-canvas-wrap { height:120px; margin-top:8px; position:relative; }
+    .urg-metric-canvas-wrap { height:120px; margin-top:8px; position:relative; overflow-x:auto; overflow-y:hidden; }
+    .urg-metric-canvas-inner { height:120px; }
+    .urg-granularity-row { display:flex; gap:6px; margin:10px 0 2px; }
+    .urg-gran-btn { font-size:.78em; padding:5px 13px; border-radius:7px; border:1px solid var(--bor); background:var(--sur); color:var(--mut); cursor:pointer; font-family:inherit; font-weight:600; }
+    .urg-gran-btn:hover { background:var(--sur2); }
+    .urg-gran-btn.active { background:var(--acc); color:#fff; border-color:var(--acc); }
     .urg-qual-row { padding:10px 13px; border-radius:8px; background:var(--sur); border:1px solid var(--bor); margin-bottom:8px; font-size:.83em; line-height:1.6; }
     .urg-qual-row .d { color:var(--mut); font-size:.78em; margin-bottom:3px; }
     .urg-qual-row .k { font-weight:700; margin-right:4px; }
@@ -1262,6 +1267,11 @@
       <div class="sh mt28">
         <h2>シグナル推移</h2>
         <span style="font-size:.78em;color:var(--mut);">攻撃件数・保険料率・洋上在庫などの数値推移。複数が同方向を示すほど確度が高い</span>
+      </div>
+      <div class="urg-granularity-row" id="urg-granularity">
+        <button type="button" class="urg-gran-btn active" data-gran="daily">日次</button>
+        <button type="button" class="urg-gran-btn" data-gran="weekly">週次</button>
+        <button type="button" class="urg-gran-btn" data-gran="monthly">月次</button>
       </div>
       <div class="urg-metric-grid" id="urg-metric-grid"></div>
       <div id="urg-qual-log" class="mt12"></div>
@@ -2595,8 +2605,9 @@ async function renderUragazuke() {
     entriesEl.innerHTML = entries.length
       ? entries.slice().sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0)).slice(0, 100).map(e => renderUrgEntry(e, theses)).join('')
       : '<div class="proj-empty">まだ記録がありません。</div>';
-    renderUrgMetrics(theses, d.signalsLog || []);
-    renderUrgQualLog(d.signalsLog || []);
+    urgLastSignalsLog = d.signalsLog || [];
+    renderUrgMetrics(urgLastSignalsLog);
+    renderUrgQualLog(urgLastSignalsLog);
   } catch (e) {
     updEl.textContent = 'データを取得できませんでした';
     statsEl.innerHTML = '';
@@ -2619,6 +2630,37 @@ const URG_METRICS = [
   { keys: ['brentPrice'], label: '原油(Brent)', unit: '$/bbl', type: 'line' },
 ];
 let urgChartInstances = [];
+let urgLastSignalsLog = [];
+let urgGranularity = 'daily';
+function urgBucketKey(dateStr, granularity) {
+  if (granularity === 'daily') return dateStr;
+  const d = new Date(dateStr + 'T00:00:00Z');
+  if (granularity === 'monthly') return dateStr.slice(0, 7) + '-01';
+  const day = d.getUTCDay();
+  const diffToMonday = (day === 0 ? -6 : 1 - day);
+  d.setUTCDate(d.getUTCDate() + diffToMonday);
+  return d.toISOString().slice(0, 10);
+}
+function urgAggregate(points, metric, granularity) {
+  if (granularity === 'daily' || points.length === 0) return points;
+  const buckets = new Map();
+  points.forEach(p => {
+    const key = urgBucketKey(p.date, granularity);
+    if (!buckets.has(key)) buckets.set(key, []);
+    buckets.get(key).push(p.value);
+  });
+  const isSum = metric.type === 'bar';
+  return Array.from(buckets.entries())
+    .map(([date, vals]) => ({ date, value: isSum ? vals.reduce((a, b) => a + b, 0) : (vals.reduce((a, b) => a + b, 0) / vals.length) }))
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+document.getElementById('urg-granularity').addEventListener('click', (ev) => {
+  const btn = ev.target.closest('.urg-gran-btn');
+  if (!btn) return;
+  urgGranularity = btn.dataset.gran;
+  document.querySelectorAll('.urg-gran-btn').forEach(b => b.classList.toggle('active', b === btn));
+  renderUrgMetrics(urgLastSignalsLog);
+});
 function urgFmtNum(n) {
   if (n == null || Number.isNaN(n)) return '—';
   if (Math.abs(n) >= 10000) return (n / 10000).toLocaleString('ja-JP', { maximumFractionDigits: 1 }) + '万';
@@ -2637,7 +2679,7 @@ function urgMetricValue(rec, metric) {
   }
   return null;
 }
-function renderUrgMetrics(theses, signalsLog) {
+function renderUrgMetrics(signalsLog) {
   const grid = document.getElementById('urg-metric-grid');
   urgChartInstances.forEach(c => c.destroy());
   urgChartInstances = [];
@@ -2647,7 +2689,10 @@ function renderUrgMetrics(theses, signalsLog) {
   }
   const sorted = signalsLog.slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
   const renderable = URG_METRICS
-    .map(metric => ({ metric, points: sorted.map(rec => ({ date: rec.date, value: urgMetricValue(rec, metric) })).filter(p => p.value != null) }))
+    .map(metric => {
+      const raw = sorted.map(rec => ({ date: rec.date, value: urgMetricValue(rec, metric) })).filter(p => p.value != null);
+      return { metric, points: urgAggregate(raw, metric, urgGranularity) };
+    })
     .filter(x => x.points.length > 0);
 
   if (!renderable.length) {
@@ -2655,15 +2700,18 @@ function renderUrgMetrics(theses, signalsLog) {
     return;
   }
 
+  const PX_PER_POINT = 52;
+
   grid.innerHTML = renderable.map(({ metric, points }) => {
     const canvasId = 'urg-chart-' + metric.keys[0];
     const latest = points[points.length - 1];
     const prev = points.length > 1 ? points[points.length - 2] : null;
     const delta = prev ? (latest.value - prev.value) : null;
     const deltaStr = delta != null ? ' (' + (delta > 0 ? '+' : '') + urgFmtNum(delta) + ')' : '';
+    const innerWidth = Math.max(points.length * PX_PER_POINT, 200);
     const body = points.length < 2
       ? '<div style="font-size:.78em;color:var(--mut);margin-top:8px;">データ蓄積中(推移にはあと' + (2 - points.length) + '点必要)</div>'
-      : '<div class="urg-metric-canvas-wrap"><canvas id="' + canvasId + '"></canvas></div>';
+      : '<div class="urg-metric-canvas-wrap"><div class="urg-metric-canvas-inner" style="width:' + innerWidth + 'px"><canvas id="' + canvasId + '"></canvas></div></div>';
     return '<div class="urg-metric-card">' +
       '<div class="urg-metric-head">' +
       '<span class="urg-metric-label">' + metric.label + '</span>' +
@@ -2674,17 +2722,20 @@ function renderUrgMetrics(theses, signalsLog) {
   const accent = getComputedStyle(document.documentElement).getPropertyValue('--acc').trim();
   const muted = getComputedStyle(document.documentElement).getPropertyValue('--mut').trim();
   const border = getComputedStyle(document.documentElement).getPropertyValue('--bor').trim();
+  const dateFmt = (ts) => { const dt = new Date(ts); return (dt.getUTCMonth() + 1) + '/' + dt.getUTCDate(); };
+  const dateFmtFull = (ts) => { const dt = new Date(ts); return dt.getUTCFullYear() + '/' + (dt.getUTCMonth() + 1) + '/' + dt.getUTCDate(); };
 
   renderable.forEach(({ metric, points }) => {
     if (points.length < 2) return;
     const el = document.getElementById('urg-chart-' + metric.keys[0]);
     if (!el) return;
+    // 右端(最新)から見えるよう、描画後にスクロール位置を末尾へ
+    const scrollParent = el.closest('.urg-metric-canvas-wrap');
     const chart = new Chart(el.getContext('2d'), {
       type: metric.type === 'bar' ? 'bar' : 'line',
       data: {
-        labels: points.map(p => (p.date || '').slice(5)),
         datasets: [{
-          data: points.map(p => p.value),
+          data: points.map(p => ({ x: new Date(p.date + 'T00:00:00Z').getTime(), y: p.value })),
           borderColor: accent,
           backgroundColor: metric.type === 'bar' ? accent : urgHexToRgba(accent, 0.1),
           borderWidth: 2,
@@ -2702,16 +2753,23 @@ function renderUrgMetrics(theses, signalsLog) {
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
-          tooltip: { mode: 'index', intersect: false, callbacks: { label: (ctx) => urgFmtNum(ctx.parsed.y) + metric.unit } }
+          tooltip: {
+            mode: 'index', intersect: false,
+            callbacks: {
+              title: (items) => items.length ? dateFmtFull(items[0].parsed.x) : '',
+              label: (ctx) => urgFmtNum(ctx.parsed.y) + metric.unit
+            }
+          }
         },
         interaction: { mode: 'index', intersect: false },
         scales: {
-          x: { grid: { display: false }, ticks: { maxTicksLimit: 6, color: muted, font: { size: 10 } } },
+          x: { type: 'linear', grid: { display: false }, ticks: { maxTicksLimit: 6, color: muted, font: { size: 10 }, callback: dateFmt } },
           y: { grid: { color: border }, ticks: { color: muted, font: { size: 10 } } }
         }
       }
     });
     urgChartInstances.push(chart);
+    if (scrollParent) scrollParent.scrollLeft = scrollParent.scrollWidth;
   });
 }
 function renderUrgQualLog(signalsLog) {
