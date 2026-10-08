@@ -1,10 +1,10 @@
 {
   "departments": {
     "dev-lead": {
-      "status": "running",
+      "status": "idle",
       "task": "久留米飲み屋ナビ⇔ふくおかポーカーナビ相互リンク実装",
       "startedAt": "2026-10-08T13:12:18.118Z",
-      "finishedAt": null
+      "finishedAt": "2026-10-08T13:12:27.167Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-10-08T13:10:23.988Z"
     }
   },
-  "updatedAt": "2026-10-08T13:12:18.186Z",
+  "updatedAt": "2026-10-08T13:14:55.904Z",
   "usage": {
-    "todayInputTokens": 5786,
-    "todayOutputTokens": 1430244,
-    "asOf": "2026-10-08T13:12:18.186Z"
+    "todayInputTokens": 5954,
+    "todayOutputTokens": 1449981,
+    "asOf": "2026-10-08T13:14:55.904Z"
   }
 }
