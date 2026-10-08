@@ -13,10 +13,10 @@
       "finishedAt": "2026-10-07T16:30:54.282Z"
     },
     "review-lead": {
-      "status": "idle",
-      "task": "懸賞応募アシスタント Phase1 最終レビュー",
-      "startedAt": "2026-10-07T16:40:33.159Z",
-      "finishedAt": "2026-10-07T16:40:33.592Z"
+      "status": "running",
+      "task": "久留米飲み屋ナビ PR#60レビュー判定",
+      "startedAt": "2026-10-08T03:34:17.937Z",
+      "finishedAt": null
     },
     "content-writer": {
       "status": "idle",
@@ -50,9 +50,9 @@
     }
   },
   "usage": {
-    "todayInputTokens": 3246,
-    "todayOutputTokens": 914326,
-    "asOf": "2026-10-08T03:33:23.085Z"
+    "todayInputTokens": 3254,
+    "todayOutputTokens": 917506,
+    "asOf": "2026-10-08T03:34:25.314Z"
   },
-  "updatedAt": "2026-10-08T03:33:23.085Z"
+  "updatedAt": "2026-10-08T03:34:25.314Z"
 }
