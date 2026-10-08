@@ -353,6 +353,24 @@
     #pw-gate-box button:hover{opacity:.9;}
     #pw-gate-err{color:var(--red);font-size:.8em;margin-top:10px;min-height:1.2em;}
 
+    /* ===== NOTIFICATIONS (通知ベル) ===== */
+    .notif-bell-wrap { position:relative; display:inline-flex; align-items:center; justify-content:center; }
+    .notif-badge { position:absolute; top:-7px; right:-11px; background:var(--red); color:#fff; font-size:.62em; font-weight:700; min-width:15px; height:15px; border-radius:20px; display:none; align-items:center; justify-content:center; padding:0 4px; line-height:1; }
+    #notif-modal { position:fixed; inset:0; background:rgba(0,0,0,.55); z-index:700; display:none; align-items:center; justify-content:center; padding:20px; }
+    #notif-modal.show { display:flex; }
+    .notif-box { background:#fff; border-radius:14px; padding:20px 22px; max-width:440px; width:100%; box-shadow:0 16px 56px rgba(0,0,0,.3); max-height:80vh; overflow-y:auto; box-sizing:border-box; }
+    .notif-box-hd { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
+    .notif-box-hd h3 { font-size:.95em; font-weight:700; }
+    .notif-box-close { background:none; border:none; cursor:pointer; font-size:1.3em; color:var(--mut); line-height:1; }
+    .notif-item { padding:12px 0; border-bottom:1px solid var(--bor); }
+    .notif-item:last-child { border-bottom:none; }
+    .notif-item-title { font-weight:700; font-size:.92em; margin-bottom:3px; }
+    .notif-item-ts { font-size:.73em; color:var(--mut); margin-bottom:6px; }
+    .notif-item-body { font-size:.85em; color:var(--txt); line-height:1.5; margin-bottom:6px; }
+    .notif-item-links { display:flex; gap:10px; flex-wrap:wrap; }
+    .notif-item-links a { font-size:.78em; color:var(--acc); text-decoration:none; font-weight:600; }
+    .notif-item-links a:hover { text-decoration:underline; }
+
     /* ===== MOBILE / RESPONSIVE ===== */
     #menu-toggle { display:none; background:none; border:none; font-size:1.5em; line-height:1; color:var(--txt); cursor:pointer; padding:0 6px; margin-right:6px; border-radius:6px; }
     #menu-toggle:hover { background:var(--sur2); }
@@ -407,6 +425,7 @@
       .demo-amt { font-size:1.5rem; }
       .demo-sum { font-size:.7em !important; line-height:1.5; }
       .demo-row { flex-direction:column; gap:10px; }
+      .notif-box { padding:16px 14px; }
     }
 
     /* ============ SLOT PAGE (沖ドキ島モニター EVO37久留米・埋め込み版) ============ */
@@ -683,6 +702,9 @@
     <h1>Dashboard <span class="ai-badge">AI</span></h1>
   </div>
   <nav>
+    <div class="ni" id="notif-bell-btn" onclick="toggleNotifPanel()" role="button" aria-label="通知">
+      <span class="ni-ic"><span class="notif-bell-wrap">🔔<span class="notif-badge" id="notif-badge">0</span></span></span>通知
+    </div>
     <div class="ng">メイン</div>
     <div class="ni active" onclick="showPage('overview')"><span class="ni-ic">⊞</span>概要</div>
     <div class="ng">管理</div>
@@ -699,6 +721,16 @@
   </nav>
 </div>
 <div id="sb-overlay" onclick="closeSidebar()"></div>
+
+<div id="notif-modal" onclick="if(event.target===this) closeNotifPanel()">
+  <div class="notif-box">
+    <div class="notif-box-hd">
+      <h3>通知</h3>
+      <button class="notif-box-close" onclick="closeNotifPanel()" aria-label="閉じる">✕</button>
+    </div>
+    <div id="notif-list"></div>
+  </div>
+</div>
 
 <div id="main">
   <div id="topbar">
@@ -2369,6 +2401,92 @@ async function renderMetaAds(){
   }
 }
 
+// ===== 通知ベル(汎用通知フィード。各種自動チェックが notifications.json に追記していく想定) =====
+const NOTIF_SEEN_KEY = 'notifications_last_seen_ts';
+let NOTIF_ITEMS = [];
+
+function notifEsc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+
+function notifRelativeTs(ts) {
+  const t = new Date(ts).getTime();
+  if (Number.isNaN(t)) return ts || '';
+  const diffMin = Math.floor((Date.now() - t) / 60000);
+  if (diffMin < 1) return 'たった今';
+  if (diffMin < 60) return diffMin + '分前';
+  const diffHr = Math.floor(diffMin / 60);
+  if (diffHr < 24) return diffHr + '時間前';
+  const diffDay = Math.floor(diffHr / 24);
+  if (diffDay < 7) return diffDay + '日前';
+  return new Date(ts).toLocaleString('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' });
+}
+
+function updateNotifBadge() {
+  const badge = document.getElementById('notif-badge');
+  if (!badge) return;
+  const lastSeen = localStorage.getItem(NOTIF_SEEN_KEY) || '';
+  const unread = NOTIF_ITEMS.filter(n => (n.ts || '') > lastSeen).length;
+  if (unread > 0) {
+    badge.textContent = String(unread);
+    badge.style.display = 'flex';
+  } else {
+    badge.style.display = 'none';
+  }
+}
+
+function renderNotifList() {
+  const list = document.getElementById('notif-list');
+  if (!list) return;
+  if (!NOTIF_ITEMS.length) {
+    list.innerHTML = '<div class="empty">新着通知はありません</div>';
+    return;
+  }
+  list.innerHTML = NOTIF_ITEMS.map(n => {
+    const links = (n.links || []).map(l =>
+      '<a href="' + notifEsc(l.url) + '" target="_blank" rel="noopener noreferrer">' + notifEsc(l.label) + '</a>'
+    ).join('');
+    return '<div class="notif-item">' +
+      '<div class="notif-item-title">' + notifEsc(n.title) + '</div>' +
+      '<div class="notif-item-ts">' + notifEsc(notifRelativeTs(n.ts)) + '</div>' +
+      '<div class="notif-item-body">' + notifEsc(n.body) + '</div>' +
+      (links ? '<div class="notif-item-links">' + links + '</div>' : '') +
+      '</div>';
+  }).join('');
+}
+
+async function pollNotifications() {
+  try {
+    const res = await fetch('notifications.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const d = await res.json();
+    NOTIF_ITEMS = (Array.isArray(d) ? d.slice() : []).sort((a, b) => (b.ts || '').localeCompare(a.ts || ''));
+  } catch (e) {
+    NOTIF_ITEMS = [];
+  }
+  updateNotifBadge();
+  // パネルを開いたまま裏で新着が来た場合に表示も更新する
+  const modal = document.getElementById('notif-modal');
+  if (modal && modal.classList.contains('show')) renderNotifList();
+}
+
+function openNotifPanel() {
+  renderNotifList();
+  document.getElementById('notif-modal').classList.add('show');
+  if (NOTIF_ITEMS.length) {
+    localStorage.setItem(NOTIF_SEEN_KEY, NOTIF_ITEMS[0].ts || '');
+  }
+  updateNotifBadge();
+}
+
+function closeNotifPanel() {
+  document.getElementById('notif-modal').classList.remove('show');
+}
+
+function toggleNotifPanel() {
+  const modal = document.getElementById('notif-modal');
+  if (modal.classList.contains('show')) closeNotifPanel();
+  else openNotifPanel();
+}
+
 // ===== 裏付けログ(地政学・マクロ判定ジャーナル) =====
 function urgEsc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
 function urgStanceLabel(s) { return s === 'long' ? 'ロング' : s === 'short' ? 'ショート' : '様子見'; }
@@ -3128,6 +3246,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   // アフィリエイト事業: サイトごとの記事数・収益データ
   pollAffiliateStatus();
   setInterval(pollAffiliateStatus, 15000);
+
+  // 通知ベル: 各種自動チェックからの通知フィード
+  pollNotifications();
+  setInterval(pollNotifications, 15000);
 
 });
 
