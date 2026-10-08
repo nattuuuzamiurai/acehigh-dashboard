@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "",
-      "startedAt": null,
-      "finishedAt": "2026-10-08T03:35:20.854Z"
+      "task": "久留米飲み屋ナビ PR#61コンフリクト解消",
+      "startedAt": "2026-10-08T04:04:21.368Z",
+      "finishedAt": "2026-10-08T04:04:21.823Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -25,10 +25,10 @@
       "finishedAt": "2026-10-08T03:59:34.741Z"
     }
   },
-  "updatedAt": "2026-10-08T04:01:18.625Z",
+  "updatedAt": "2026-10-08T04:04:24.155Z",
   "usage": {
-    "todayInputTokens": 4548,
-    "todayOutputTokens": 1122187,
-    "asOf": "2026-10-08T04:01:18.625Z"
+    "todayInputTokens": 4642,
+    "todayOutputTokens": 1126034,
+    "asOf": "2026-10-08T04:04:24.155Z"
   }
 }
