@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09 00:50",
+  "updatedAt": "2026-10-09 01:10",
   "theses": [
     {
       "id": "thesis-hormuz-lng-shock",
@@ -13,7 +13,7 @@
       "entryPriceApprox": "JKM約$25.39/MMBtu(前日比+68%、複数ソースで確認済み)、TTFは直近で67-82€/MWhレンジで推移(「2日で+70%」という指摘は検索では正確に裏付け取れず、日付・基準点により幅がある点は保留)",
       "lastPriceApprox": "JKM約$25.39/MMBtu、TTF約79.85€/MWh(10/8時点)",
       "lastCheckedDate": "2026-10-09",
-      "note": "ホルムズ海峡経由の国際LNG(世界輸送量約五分の一)が事実上閉鎖され、アジアJKMベンチマークが前日比+68%の$25.39/MMBtuへ急高(EIA・Kpler・Oilprice等複数独立ソースで確証)。欧州TTFもホルムズ危機を要因に2023年以来の高値圏で推移(79-82€/MWhレンジ)。一方、米国Henry Hubは約$3/MMBtuでほぼ不変――国内市場が影響を受けず国際ガスのみが反応していることが、原因がホルムズ海峡に特定される根拠となる。タンカー運賃(大西洋/太平洋路線)も急高しておりパニック買いの様相。原油テーゼ(thesis-hormuz-oil-conflict)と同根拠だが、値幅・鮮度ともそちらより大きく新鮮な可能性。判定は同じこと(signals_logのhormuzテーマ)を参照。反転(ショート)側はthesis-hormuz-lng-reversionとして、原油側の揺り戻しルール(2項目以上×1〜2週間持続改善)と同様の条件で別途検討可。",
+      "note": "ホルムズ海峡経由の国際LNG(世界輸送量約五分の一)が事実上閉鎖され、アジアJKMベンチマークが前日比+68%の$25.39/MMBtuへ急高(EIA・Kpler・Oilprice等複数独立ソースで確証)。欧州TTFもホルムズ危機を要因に2023年以来の高値圏で推移(79-82€/MWhレンジ)。一方、米国Henry Hubは約$3/MMBtuでほぼ不変――国内市場が影響を受けず国際ガスのみが反応していることが、原因がホルムズ海峡に特定される根拠となる。タンカー運賃(大西洋/太平洋路線)も急高しておりパニック買いの様相。原油テーゼ(thesis-hormuz-oil-conflict)と同根拠だが、値幅・鮮度ともそちらより大きく新鮮な可能性。判定は同じこと(signals_logのhormuzテーマ)を参照。反転(ショート)側はthesis-hormuz-lng-reversionとして、原油側の揺り戻しルール(複数指標の同方向性×1〜2週間持続改善)と同様の条件で別途検討可。",
       "deescalationSignals": null,
       "closedDate": null,
       "exitPriceApprox": null,
@@ -31,7 +31,7 @@
       "entryPriceApprox": "WTI約$100/bbl",
       "lastPriceApprox": "WTI約$100/bbl(供給逼迫継続)",
       "lastCheckedDate": "2026-10-08",
-      "note": "米・イスラエル対イランの軍事衝突が継続中。米海軍がイラン南部港湾を事実上封鎖(タンカー122隻を迂回させ原油輸出を実質停止)、IRGCはホルムズ海峡を『調整なき船舶には閉鎖』と主張し継続的にタンカー攻撃。OPEC+は名目上の増産を発表しているが、サウジ・クウェート・イラクなど主要生産国の実際の出荷能力がホルムズ海峡経由で制約され『紙の上の増産』にとどまる。CBS・Al Jazeera・The Hill等、独立した複数の大手メディアが一致して報道。ロシアもウクライナの燃料施設攻撃で輸出余力が低下しており供給逼迫が重なる。単発の発言ではなく実際の海上封鎖・軍事行動という『行動』の裏付けがある継続的事態のため開始。",
+      "note": "米・イスラエル対イランの軍事衝突が継続中。米海軍がイラン南部港湾を事実上封鎖(タンカー122隻を迂回させ原油輸出を実質停止)、IRGCはホルムズ海峡を『調整なき船舶には閉鎖』と主張し継続的にタンカー攻撃。OPEC+は名目上の増産を発表しているが、サウジ・クウェート・イラクなど主要生産国の実際の出荷能力がホルムズ海峡経由で制約され『紙の上の増産』にとどまる。CBS・Al Jazeera・The Hill等、独立した複数の大手メディアが一致して報道。ロシアもウクライナの燃料施設攻撃で輸出余力が低下しており供給逼迫が重なる。単発の発言ではなく実際の海上封鎖・軍事行動という『行動』の裏付けがある継続的事態のため開始。【2026-10-09追記・SPR(戦略石油備蓄)について】トランプ政権はIEA協調(32ヶ国計4億バレル)の一環で1.72億バレルを放出済み(10/2時点で約80%=約3.25億バレル執行済み、米SPR残高283.0万バレルで低水準)。しかし価格はほぼ無反応(織り込み済み)——「政府介入による反転トリガー」はすでに使用済み・弾切れに近い。今後、追加のSPR放出による価格押し下げは期待しにくい前提で判断すること。",
       "deescalationSignals": "2026-10-08時点: 沈静化の前兆は見られず、逆にエスカレーションが優勢。①攻撃頻度=9/28〜10/5の週に最少12件、イラン戦争開始以来最多の週間数(Reuters系複数報道)。通行量は2ヶ月ぶりの最小(10/7に7隻のみ通過)。②要人往来=ルートは活発(カタール・パキスタンが介入、イランはPakistanがmain mediatorと公認)だが、確認できた具体的な会談記事の最新は7月〜8月付けが中心で、直近24-48時間の新規進展は未確認。③調停国トーン=早急に進展方向の公式発言は未確認(6月のIslamabad MOUはすでに崩壊済みの教訓あり、過度に楽観しない)。④戦争保険料率=7月時点で6%から3-10%(ピーク10%から一時退却した履歴あり)。最新数値未確認だが構造的に高いまま。結論: 4項目すべて沈静化の兆しを欠き、むしろ①が明確にエスカレーション。confidenceは現状維持(2)とするが、テーゼは補強された判断。",
       "closedDate": null,
       "exitPriceApprox": null,
@@ -144,9 +144,28 @@
   ],
   "signalsLog": [
     {
+      "date": "2026-10-09",
+      "theme": "hormuz",
+      "weeklyAttackCount": 12,
+      "notableTravel": "7-8月付け以降の新規進展未確認(変化なし)",
+      "mediatorTone": "緊張継続(変化なし)",
+      "insuranceOrFreightNote": "構造的に高いまま(最新数値は7月時点、未更新)",
+      "houthiSaudiActivity": "10/3アラムコ攻撃の余響継続中。フーシ・サウジ間の戦闘は拡大傾向との報道あり(JPost等)。",
+      "floatingStorage": "イラン原油がホルムズ海峡周辺で洋上在庫化・輸出せず滞留中(Windward.ai確認)。10/7は18隻が通航(入港12隻ほぼ全てAIS有、出港12隻中1隻が暗行)。10月中旬に88隻中52隻が一時的にAIS発信再開した後暗行化に戻る傾向。cloude-30提示の「2,100万バレル/暗行船242隻」という具体数値は自分の検索では裏付け取れず(未検証)。",
+      "termStructure": "WTIタームストラクチャはバックワーデーション継続(供給逼迫を反映)。自分の検索での確認値: 11月限$89.25/12月限$87.96/1月限$86.85(前3ヶ月スプレッド約$2.40)。cloude-30提示値(10月限$94.25/11月限$91.27/12月限$88.00、スプレッド$6-7)とは絶対水準・スプレッド幅ともかなり乖離あり(参照日が異なる可能性)。方向性(バックワーデーション=供給逼迫)は一致。",
+      "cotNetLong": -226707,
+      "cotNote": "自分の検索(CME Group COT Summary 9/29時点)ではcrude oil net position -226,707(ネットショート)。cloude-30提示値(net long 109,463、前週比-31,643)と完全に不一致(符号も逆)。集計対象区分(Managed Moneyのみ vs 全トレーダー合算等)の違いの可能性があるが断定できず。次回以降cftc.gov原典で要再確認。",
+      "iranRialRate": 2659000,
+      "sourceUrls": [
+        "https://windward.ai/blog/hormuz-dark-fleet-stalls-as-enforcement-widens/",
+        "https://www.cmegroup.com/insights/economic-research/2026/implications-of-wti-oil-futures-in-backwardation-amid-the-supply-crunch.html",
+        "https://www.pashizi.com/en/currency/usd",
+        "https://www.jpost.com/middle-east/article-911068"
+      ]
+    },
+    {
       "date": "2026-10-08",
       "theme": "hormuz",
-      "attackCount": null,
       "weeklyAttackCount": 12,
       "notableTravel": "カタール・パキスタンの介入は従来通り活発だが、確認できた具体的会談記事の最新は7-8月付け中心。直近24-48時間の新規進展は未確認",
       "mediatorTone": "緊張継続(進展方向の新規発言なし)",
@@ -154,6 +173,81 @@
       "sourceUrls": [
         "https://www.usnews.com/news/world/articles/2026-10-07/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say",
         "https://www.lloydslist.com/LL1156586/Gulf-war-risk-premiums-topping-double-digit-millions-of-dollars-per-trip"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "theme": "hormuz",
+      "mediatorTone": "別経路でエスカレーション(フーシ派・サウジ)",
+      "houthiSaudiActivity": "フーシ派がリヤド近郊のアラムコ施設をミサイル・ドローンで攻撃したと主張。煙・火災が目撃されたが、サウジ当局はフーシの主張を「誤解を招く」と否定し公式な被害確認はなし(Spokesman/USNews/AlJazeera/France24/JPost複数ソースで確認)。イラン本体とは別経路のエスカレーションとして独立追跡開始。cloude-30からの「直後にBrent $106超」という価格反応は自分の検索では独立確認できず(未検証)。",
+      "sourceUrls": [
+        "https://www.aljazeera.com/news/2026/10/4/houthis-claim-strike-on-saudi-energy-facility-as-yemen-fighting-intensifies",
+        "https://www.usnews.com/news/world/articles/2026-10-03/fire-smoke-seen-near-aramco-facility-in-riyadh-witness-says"
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "theme": "hormuz",
+      "mediatorTone": "軍事的エスカレーション深化",
+      "contextNote": "9/1(Day187)CENTCOMが約100のIRGC関連標的を攻撃(初めてイラン政府タンカー2隻も対象=「タンカー・フォー・タンカー」政策)。9/3(Day188)イランが2日目の報復ミサイル・ドローン攻撃、タンカーSidr事件のフィリピン人死亡確認。9/5-6(Day191)IRGCが米空母・駆逐艦に弾道ミサイル発射(いずれも回避)、CENTCOMはタンカーDowny/Stark1を無力化しKyloを撃沈。米イラン双方で直接軍事衝突の応酬が激化。",
+      "sourceUrls": [
+        "https://www.globalsecurity.org/military/ops/iran-war-20260903.htm",
+        "https://www.globalsecurity.org/military/ops/iran-war-20260906.htm"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "theme": "hormuz",
+      "mediatorTone": "エスカレーション継続",
+      "insuranceOrFreightNote": "Brent $87.46、ガソリン平均$4.08/gal(米AAA調べ)",
+      "contextNote": "タンカーSidrが攻撃を受けフィリピン人船員2名が死亡——攻撃再開後初の人的被害。UAEタンカー2隻も同月中に攻撃された。途中(8/12〜中旬)も姿勢悪化を裏付ける複数の価格上昇あり(Brent約$90から$87帯)。",
+      "sourceUrls": [
+        "https://www.aljazeera.com/economy/2026/8/12/oil-prices-rise-as-attacks-dent-hopes-for-strait-of-hormuz-reopening"
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "theme": "hormuz",
+      "attackCount": 2,
+      "mediatorTone": "悪化(MOU事実上崩壊)",
+      "insuranceOrFreightNote": "WTI $84.67(+1%超)、Brent $90.12へ上昇",
+      "contextNote": "MOUが事実上崩壊。イランが事前承認ルートを外れた3隻を七月中に攻撃していたと報道。米軍護衛下の2隻への攻撃で他の4隻が引き返す事態も。封鎖解除から約6週間で再エスカレーションへ。",
+      "sourceUrls": [
+        "https://www.cnbc.com/2026/07/31/oil-prices-today-brent-wti-hormuz-trump-iran-.html"
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "theme": "hormuz",
+      "attackCount": 0,
+      "weeklyAttackCount": 0,
+      "mediatorTone": "進展(MOU締結)",
+      "notableTravel": "トランプ・ペゼシュキアン大統領がMOU署名",
+      "insuranceOrFreightNote": "一時的に低下見込み(封鎖解除合意のため)",
+      "contextNote": "米・イランが6/12に最終合意文を固め、6/17に正式署名(Islamabad Memorandum)。海上封鎖解除・イランによる安全航行保証を60日間の期限付きで合意。ホルムズの航行自由・核・ミサイル・制裁が交渉項目。この時点が本戦争中最も鎮静化が進んだ局面。",
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Islamabad_Memorandum",
+        "https://abcnews.com/Politics/us-iran-ceasefire-mou-broke-timeline/story?id=134622392"
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "theme": "hormuz",
+      "mediatorTone": "交渉決裂、鎮静化の兆しなし",
+      "notableTravel": "Islamabad会談決裂",
+      "contextNote": "Islamabad会談決裂を受け米がイラン海上封鎖を発動。3/19から米空軍・海軍・イスラエル空軍がホルムズ再開通目的の空爆作戦開始。イスラエルが封鎖指揮官Alireza Tangsiriを暗殺。4/23トランプが機雷敷設船破壊を指示。5/1時点で米国防総省はイランの石油収入損失を48億ドルと推計。",
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_campaign",
+        "https://en.wikipedia.org/wiki/2026_United_States_naval_blockade_of_Iran"
+      ]
+    },
+    {
+      "date": "2026-02-28",
+      "theme": "hormuz",
+      "mediatorTone": "開戦直後、調停機運なし",
+      "contextNote": "開戦日。イスラエル・米がイランへの積極的攻撃を開始(体制変化・核・ミサイル計画が目的)。イランが報復としてホルムズ海峡を封鎖し通航はほぼ停止(2/28〜4/7)。",
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/2026_Iran_war"
       ]
     }
   ]
