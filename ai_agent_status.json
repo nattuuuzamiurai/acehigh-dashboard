@@ -20,9 +20,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ PR#64修正後の再判定",
-      "startedAt": "2026-10-08T13:41:29.361Z",
-      "finishedAt": "2026-10-08T13:41:29.860Z"
+      "task": "通知ベルPRのGO/NO-GO判定",
+      "startedAt": "2026-10-08T15:57:46.880Z",
+      "finishedAt": "2026-10-08T15:57:48.477Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-08T13:16:34.384Z"
     }
   },
-  "updatedAt": "2026-10-08T15:57:03.600Z",
+  "updatedAt": "2026-10-08T15:57:52.456Z",
   "usage": {
-    "todayInputTokens": 1584,
-    "todayOutputTokens": 603688,
-    "asOf": "2026-10-08T15:57:03.600Z"
+    "todayInputTokens": 1648,
+    "todayOutputTokens": 646416,
+    "asOf": "2026-10-08T15:57:52.456Z"
   }
 }
