@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi PR#155コンフリクト解消",
-      "startedAt": "2026-10-08T13:28:56.216Z",
-      "finishedAt": "2026-10-08T13:28:56.705Z"
+      "task": "久留米飲み屋ナビ PR#64 予算統計の誤解を招く表現を修正",
+      "startedAt": "2026-10-08T13:39:08.452Z",
+      "finishedAt": "2026-10-08T13:39:09.274Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -20,9 +20,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ PR#64レビュー判定",
-      "startedAt": "2026-10-08T13:32:45.930Z",
-      "finishedAt": "2026-10-08T13:32:46.414Z"
+      "task": "fukuoka-poker-navi PR#155レビュー判定",
+      "startedAt": "2026-10-08T13:38:25.728Z",
+      "finishedAt": "2026-10-08T13:38:26.140Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-08T13:16:34.384Z"
     }
   },
-  "updatedAt": "2026-10-08T13:33:03.647Z",
+  "updatedAt": "2026-10-08T13:39:13.284Z",
   "usage": {
-    "todayInputTokens": 7162,
-    "todayOutputTokens": 1639967,
-    "asOf": "2026-10-08T13:33:03.647Z"
+    "todayInputTokens": 7452,
+    "todayOutputTokens": 1656216,
+    "asOf": "2026-10-08T13:39:13.284Z"
   }
 }
