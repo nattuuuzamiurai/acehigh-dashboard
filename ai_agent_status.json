@@ -20,9 +20,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "fukuoka-poker-navi PR#155レビュー判定",
-      "startedAt": "2026-10-08T13:38:25.728Z",
-      "finishedAt": "2026-10-08T13:38:26.140Z"
+      "task": "久留米飲み屋ナビ PR#64修正後の再判定",
+      "startedAt": "2026-10-08T13:41:29.361Z",
+      "finishedAt": "2026-10-08T13:41:29.860Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-08T13:16:34.384Z"
     }
   },
-  "updatedAt": "2026-10-08T13:39:13.284Z",
+  "updatedAt": "2026-10-08T13:41:35.415Z",
   "usage": {
-    "todayInputTokens": 7452,
-    "todayOutputTokens": 1656216,
-    "asOf": "2026-10-08T13:39:13.284Z"
+    "todayInputTokens": 7570,
+    "todayOutputTokens": 1662023,
+    "asOf": "2026-10-08T13:41:35.415Z"
   }
 }
