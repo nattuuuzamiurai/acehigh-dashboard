@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ 絞り込みページ刷新を本実装",
-      "startedAt": "2026-10-08T15:27:16.808Z",
-      "finishedAt": "2026-10-08T15:27:18.065Z"
+      "task": "ダッシュボードに通知ベル機能を追加",
+      "startedAt": "2026-10-08T15:33:41.846Z",
+      "finishedAt": "2026-10-08T15:33:43.085Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-08T13:16:34.384Z"
     }
   },
-  "updatedAt": "2026-10-08T15:31:25.037Z",
+  "updatedAt": "2026-10-08T15:34:30.214Z",
   "usage": {
-    "todayInputTokens": 372,
-    "todayOutputTokens": 127555,
-    "asOf": "2026-10-08T15:31:25.037Z"
+    "todayInputTokens": 450,
+    "todayOutputTokens": 160308,
+    "asOf": "2026-10-08T15:34:30.214Z"
   }
 }
