@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09 01:45",
+  "updatedAt": "2026-10-09 02:05",
   "theses": [
     {
       "id": "thesis-hormuz-lng-shock",
@@ -241,6 +241,18 @@
       ]
     },
     {
+      "date": "2026-05-04",
+      "theme": "hormuz",
+      "weeklyAttackCount": 1,
+      "mediatorTone": "米軍の護衛作戦開始(Operation Project Freedom)だが1日で一時中断",
+      "insuranceOrFreightNote": "",
+      "contextNote": "5/4に米軍が商船護衛作戦「Operation Project Freedom」を開始(イランの改めての船舶攻撃への対応)。フランス籍CMA CGM艦が被弾。作戦中にイラン艦艇7隻を撃沈(軍事艦艇、タンカー攻撃件数とは別カテゴリ)。作戦は翌日(5/5)に一時中断。weeklyAttackCount=1はCMA CGM艦への被弾1件を根拠(中確度。イラン艦艇の撃沈はタンカー攻撃件数には含めていない)。",
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Operation_Project_Freedom",
+        "https://en.wikipedia.org/wiki/Touska"
+      ]
+    },
+    {
       "date": "2026-04-13",
       "theme": "hormuz",
       "weeklyAttackCount": 3,
@@ -251,6 +263,18 @@
       "sourceUrls": [
         "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_campaign",
         "https://en.wikipedia.org/wiki/2026_United_States_naval_blockade_of_Iran"
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "theme": "hormuz",
+      "weeklyAttackCount": 4,
+      "mediatorTone": "開戦直後、調停機運なし",
+      "insuranceOrFreightNote": "固有名のタンカー攻撃を確認: MV Ocean Electra(3/1)、Stena Imperative(3/2、火災・死者1・負傷2)、Gold Oak(3/3、軽微損害)、Safeen Prestige(3/4、機関室火災で乗組員が退船)の計4件(高確度。具体的な船名・日付で裏付け済み)。海峡は3/2から事実上閉鎖状態へ。",
+      "contextNote": "開戦(2/28)直後の最初のタンカー攻撃波。この時点でホルムズ海峡が実質的に閉鎖されたと評価できる(2/28エントリでは「まだ本格化していない」と判断していたが、3/1〜4に集中的に発生していたことが判明)。",
+      "sourceUrls": [
+        "https://www.aljazeera.com/news/2026/8/27/how-a-95-percent-drop-in-hormuz-traffic-changed-global-shipping",
+        "https://en.wikipedia.org/wiki/List_of_ships_attacked_during_the_2026_Iran_war"
       ]
     },
     {
