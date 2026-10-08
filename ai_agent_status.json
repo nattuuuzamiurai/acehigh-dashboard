@@ -5,12 +5,18 @@
       "task": "",
       "startedAt": null,
       "finishedAt": "2026-10-08T03:35:20.854Z"
+    },
+    "claude-code-guide": {
+      "status": "running",
+      "task": "Real-World Transactions分類器の設定変更方法を調査",
+      "startedAt": "2026-10-08T03:43:49.101Z",
+      "finishedAt": null
     }
   },
-  "updatedAt": "2026-10-08T03:37:25.712Z",
+  "updatedAt": "2026-10-08T03:44:32.406Z",
   "usage": {
-    "todayInputTokens": 3420,
-    "todayOutputTokens": 981670,
-    "asOf": "2026-10-08T03:37:25.712Z"
+    "todayInputTokens": 3762,
+    "todayOutputTokens": 1039799,
+    "asOf": "2026-10-08T03:44:32.406Z"
   }
 }
