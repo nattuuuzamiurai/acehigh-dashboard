@@ -239,6 +239,16 @@
     .urg-chips { display:flex; gap:5px; flex-wrap:wrap; margin-top:7px; }
     .urg-chip { font-size:.7em; padding:2px 8px; border-radius:20px; border:1px solid var(--bor); color:var(--mut); }
     .urg-chip.on { border-color:transparent; background:#e8f7f1; color:#16a34a; font-weight:700; }
+    .urg-metric-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:14px; margin-top:10px; }
+    .urg-metric-card { background:var(--sur); border:1px solid var(--bor); border-radius:var(--r); padding:14px 16px; box-shadow:var(--sha); }
+    .urg-metric-head { display:flex; justify-content:space-between; align-items:baseline; gap:8px; flex-wrap:wrap; }
+    .urg-metric-label { font-size:.82em; font-weight:700; }
+    .urg-metric-value { font-size:.76em; color:var(--mut); white-space:nowrap; }
+    .urg-metric-value b { color:var(--txt); }
+    .urg-metric-canvas-wrap { height:120px; margin-top:8px; position:relative; }
+    .urg-qual-row { padding:10px 13px; border-radius:8px; background:var(--sur); border:1px solid var(--bor); margin-bottom:8px; font-size:.83em; line-height:1.6; }
+    .urg-qual-row .d { color:var(--mut); font-size:.78em; margin-bottom:3px; }
+    .urg-qual-row .k { font-weight:700; margin-right:4px; }
 
     /* AI組織: 部署ライブステータス */
     .aiorg-live-row { display:flex; align-items:center; gap:8px; background:var(--sur2); border:1px solid var(--bor); border-radius:8px; padding:8px 11px; margin-bottom:11px; }
@@ -1216,6 +1226,13 @@
         <span style="font-size:.78em;color:var(--mut);" id="urg-updated"></span>
       </div>
       <div class="proj-grid mt12" id="urg-theses"></div>
+
+      <div class="sh mt28">
+        <h2>シグナル推移</h2>
+        <span style="font-size:.78em;color:var(--mut);">攻撃件数・保険料率・洋上在庫などの数値推移。複数が同方向を示すほど確度が高い</span>
+      </div>
+      <div class="urg-metric-grid" id="urg-metric-grid"></div>
+      <div id="urg-qual-log" class="mt12"></div>
 
       <div class="sh mt28">
         <h2>記録一覧</h2>
@@ -2450,12 +2467,138 @@ async function renderUragazuke() {
     entriesEl.innerHTML = entries.length
       ? entries.slice().sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0)).slice(0, 100).map(e => renderUrgEntry(e, theses)).join('')
       : '<div class="proj-empty">まだ記録がありません。</div>';
+    renderUrgMetrics(theses, d.signalsLog || []);
+    renderUrgQualLog(d.signalsLog || []);
   } catch (e) {
     updEl.textContent = 'データを取得できませんでした';
     statsEl.innerHTML = '';
     thesesEl.innerHTML = '';
     entriesEl.innerHTML = '';
+    document.getElementById('urg-metric-grid').innerHTML = '';
+    document.getElementById('urg-qual-log').innerHTML = '';
   }
+}
+
+const URG_METRICS = [
+  { keys: ['weeklyAttackCount', 'attackCount'], label: '週間攻撃件数', unit: '件', type: 'bar' },
+  { keys: ['insuranceRate'], label: '戦争保険料率', unit: '%', type: 'line' },
+  { keys: ['floatingStorage'], label: '洋上在庫', unit: '百万バレル', type: 'line' },
+  { keys: ['aisDarkCount'], label: 'AIS非表示船数', unit: '隻', type: 'line' },
+  { keys: ['termStructureSpread'], label: '原油先物スプレッド(期近-期先)', unit: '$/bbl', type: 'line' },
+  { keys: ['cotNetLong'], label: '投機筋ネットロング', unit: '枚', type: 'line' },
+  { keys: ['iranRialRate'], label: 'イランリアル相場', unit: '万リアル/$', type: 'line', scale: 1 / 10000 },
+  { keys: ['wtiPrice'], label: '原油(WTI)', unit: '$/bbl', type: 'line' },
+  { keys: ['brentPrice'], label: '原油(Brent)', unit: '$/bbl', type: 'line' },
+];
+let urgChartInstances = [];
+function urgFmtNum(n) {
+  if (n == null || Number.isNaN(n)) return '—';
+  if (Math.abs(n) >= 10000) return (n / 10000).toLocaleString('ja-JP', { maximumFractionDigits: 1 }) + '万';
+  return n.toLocaleString('ja-JP', { maximumFractionDigits: 2 });
+}
+function urgHexToRgba(hex, alpha) {
+  const h = (hex || '').replace('#', '').trim();
+  if (h.length !== 3 && h.length !== 6) return 'rgba(102,116,240,' + alpha + ')';
+  const full = h.length === 3 ? h.split('').map(c => c + c).join('') : h;
+  const bigint = parseInt(full, 16);
+  return 'rgba(' + ((bigint >> 16) & 255) + ',' + ((bigint >> 8) & 255) + ',' + (bigint & 255) + ',' + alpha + ')';
+}
+function urgMetricValue(rec, metric) {
+  for (const k of metric.keys) {
+    if (typeof rec[k] === 'number') return rec[k] * (metric.scale || 1);
+  }
+  return null;
+}
+function renderUrgMetrics(theses, signalsLog) {
+  const grid = document.getElementById('urg-metric-grid');
+  urgChartInstances.forEach(c => c.destroy());
+  urgChartInstances = [];
+  if (!signalsLog.length) {
+    grid.innerHTML = '<div class="proj-empty">まだシグナルの記録がありません。</div>';
+    return;
+  }
+  const sorted = signalsLog.slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+  const renderable = URG_METRICS
+    .map(metric => ({ metric, points: sorted.map(rec => ({ date: rec.date, value: urgMetricValue(rec, metric) })).filter(p => p.value != null) }))
+    .filter(x => x.points.length > 0);
+
+  if (!renderable.length) {
+    grid.innerHTML = '<div class="proj-empty">まだ数値化されたシグナルがありません。</div>';
+    return;
+  }
+
+  grid.innerHTML = renderable.map(({ metric, points }) => {
+    const canvasId = 'urg-chart-' + metric.keys[0];
+    const latest = points[points.length - 1];
+    const prev = points.length > 1 ? points[points.length - 2] : null;
+    const delta = prev ? (latest.value - prev.value) : null;
+    const deltaStr = delta != null ? ' (' + (delta > 0 ? '+' : '') + urgFmtNum(delta) + ')' : '';
+    const body = points.length < 2
+      ? '<div style="font-size:.78em;color:var(--mut);margin-top:8px;">データ蓄積中(推移にはあと' + (2 - points.length) + '点必要)</div>'
+      : '<div class="urg-metric-canvas-wrap"><canvas id="' + canvasId + '"></canvas></div>';
+    return '<div class="urg-metric-card">' +
+      '<div class="urg-metric-head">' +
+      '<span class="urg-metric-label">' + metric.label + '</span>' +
+      '<span class="urg-metric-value">直近 <b>' + urgFmtNum(latest.value) + metric.unit + '</b>' + deltaStr + '</span>' +
+      '</div>' + body + '</div>';
+  }).join('');
+
+  const accent = getComputedStyle(document.documentElement).getPropertyValue('--acc').trim();
+  const muted = getComputedStyle(document.documentElement).getPropertyValue('--mut').trim();
+  const border = getComputedStyle(document.documentElement).getPropertyValue('--bor').trim();
+
+  renderable.forEach(({ metric, points }) => {
+    if (points.length < 2) return;
+    const el = document.getElementById('urg-chart-' + metric.keys[0]);
+    if (!el) return;
+    const chart = new Chart(el.getContext('2d'), {
+      type: metric.type === 'bar' ? 'bar' : 'line',
+      data: {
+        labels: points.map(p => (p.date || '').slice(5)),
+        datasets: [{
+          data: points.map(p => p.value),
+          borderColor: accent,
+          backgroundColor: metric.type === 'bar' ? accent : urgHexToRgba(accent, 0.1),
+          borderWidth: 2,
+          pointRadius: 0,
+          pointHoverRadius: 4,
+          pointBackgroundColor: accent,
+          fill: metric.type !== 'bar',
+          tension: 0.15,
+          borderRadius: metric.type === 'bar' ? 4 : 0,
+          maxBarThickness: 22,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { mode: 'index', intersect: false, callbacks: { label: (ctx) => urgFmtNum(ctx.parsed.y) + metric.unit } }
+        },
+        interaction: { mode: 'index', intersect: false },
+        scales: {
+          x: { grid: { display: false }, ticks: { maxTicksLimit: 6, color: muted, font: { size: 10 } } },
+          y: { grid: { color: border }, ticks: { color: muted, font: { size: 10 } } }
+        }
+      }
+    });
+    urgChartInstances.push(chart);
+  });
+}
+function renderUrgQualLog(signalsLog) {
+  const el = document.getElementById('urg-qual-log');
+  if (!signalsLog.length) { el.innerHTML = ''; return; }
+  const rows = signalsLog.slice().sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 14).map(rec => {
+    const parts = [];
+    if (rec.mediatorTone) parts.push('<span class="k">調停国トーン:</span>' + urgEsc(rec.mediatorTone));
+    if (rec.notableTravel) parts.push('<span class="k">要人往来:</span>' + urgEsc(rec.notableTravel));
+    if (rec.houthiSaudiActivity) parts.push('<span class="k">フーシ派/サウジ:</span>' + urgEsc(rec.houthiSaudiActivity));
+    if (rec.insuranceOrFreightNote) parts.push('<span class="k">保険/運賃:</span>' + urgEsc(rec.insuranceOrFreightNote));
+    if (!parts.length) return '';
+    return '<div class="urg-qual-row"><div class="d mono">' + urgEsc(rec.date || '') + '</div>' + parts.join('<br>') + '</div>';
+  }).filter(Boolean);
+  el.innerHTML = rows.join('');
 }
 
 // ===== TASKS =====
