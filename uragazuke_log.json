@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-10-08 16:20",
+  "updatedAt": "2026-10-09 00:50",
   "theses": [
+    {
+      "id": "thesis-hormuz-lng-shock",
+      "title": "ホルムズ海峡LNG供給ショック(天然ガス)",
+      "theme": "hormuz",
+      "instrument": "欧州 TTF/アジア JKM天然ガス先物",
+      "stance": "long",
+      "confidence": 2,
+      "status": "open",
+      "openedDate": "2026-10-09",
+      "entryPriceApprox": "JKM約$25.39/MMBtu(前日比+68%、複数ソースで確認済み)、TTFは直近で67-82€/MWhレンジで推移(「2日で+70%」という指摘は検索では正確に裏付け取れず、日付・基準点により幅がある点は保留)",
+      "lastPriceApprox": "JKM約$25.39/MMBtu、TTF約79.85€/MWh(10/8時点)",
+      "lastCheckedDate": "2026-10-09",
+      "note": "ホルムズ海峡経由の国際LNG(世界輸送量約五分の一)が事実上閉鎖され、アジアJKMベンチマークが前日比+68%の$25.39/MMBtuへ急高(EIA・Kpler・Oilprice等複数独立ソースで確証)。欧州TTFもホルムズ危機を要因に2023年以来の高値圏で推移(79-82€/MWhレンジ)。一方、米国Henry Hubは約$3/MMBtuでほぼ不変――国内市場が影響を受けず国際ガスのみが反応していることが、原因がホルムズ海峡に特定される根拠となる。タンカー運賃(大西洋/太平洋路線)も急高しておりパニック買いの様相。原油テーゼ(thesis-hormuz-oil-conflict)と同根拠だが、値幅・鮮度ともそちらより大きく新鮮な可能性。判定は同じこと(signals_logのhormuzテーマ)を参照。反転(ショート)側はthesis-hormuz-lng-reversionとして、原油側の揺り戻しルール(2項目以上×1〜2週間持続改善)と同様の条件で別途検討可。",
+      "deescalationSignals": null,
+      "closedDate": null,
+      "exitPriceApprox": null,
+      "outcome": null
+    },
     {
       "id": "thesis-hormuz-oil-conflict",
       "title": "イラン・ホルムズ海峡情勢による原油供給ショック",
@@ -14,13 +32,30 @@
       "lastPriceApprox": "WTI約$100/bbl(供給逼迫継続)",
       "lastCheckedDate": "2026-10-08",
       "note": "米・イスラエル対イランの軍事衝突が継続中。米海軍がイラン南部港湾を事実上封鎖(タンカー122隻を迂回させ原油輸出を実質停止)、IRGCはホルムズ海峡を『調整なき船舶には閉鎖』と主張し継続的にタンカー攻撃。OPEC+は名目上の増産を発表しているが、サウジ・クウェート・イラクなど主要生産国の実際の出荷能力がホルムズ海峡経由で制約され『紙の上の増産』にとどまる。CBS・Al Jazeera・The Hill等、独立した複数の大手メディアが一致して報道。ロシアもウクライナの燃料施設攻撃で輸出余力が低下しており供給逼迫が重なる。単発の発言ではなく実際の海上封鎖・軍事行動という『行動』の裏付けがある継続的事態のため開始。",
-      "deescalationSignals": "2026-10-08時点: 沈静化の前兆は見られず、逆にエスカレーションが優勢。①攻撃頻度=9/28〜10/5の週に最少12件、イラン戦争開始以来最多の週間数(Reuters系複数報道)。通行量は2ヶ月ぶりの最小(10/7に7隻のみ通過)。②要人往来=ルートは活発(カタール・パキスタンが介入、イランはPakistanがmain mediatorと公認)だが、確認できた具体的な会談記事の最新は7月〜8月付けが中心で、直近24-48時間の新規進展は未確認。③調停国トーン=早急に進展方向の公式発言は未確認(6月のIslamabad MOUはすでに崩壊済みの教訓あり、過度に楽観しない)。④戦争保険料率=7月時点で6%から3-10%(ピーク10%から一時退却した履歴あり)。最新数値未確認だが構造的に高いまま。結論: 4項目すべて沈静化の張りを欠き、むしろ①が明確にエスカレーション。confidenceは現状維持(2)とするが、テーゼは補強された判断。",
+      "deescalationSignals": "2026-10-08時点: 沈静化の前兆は見られず、逆にエスカレーションが優勢。①攻撃頻度=9/28〜10/5の週に最少12件、イラン戦争開始以来最多の週間数(Reuters系複数報道)。通行量は2ヶ月ぶりの最小(10/7に7隻のみ通過)。②要人往来=ルートは活発(カタール・パキスタンが介入、イランはPakistanがmain mediatorと公認)だが、確認できた具体的な会談記事の最新は7月〜8月付けが中心で、直近24-48時間の新規進展は未確認。③調停国トーン=早急に進展方向の公式発言は未確認(6月のIslamabad MOUはすでに崩壊済みの教訓あり、過度に楽観しない)。④戦争保険料率=7月時点で6%から3-10%(ピーク10%から一時退却した履歴あり)。最新数値未確認だが構造的に高いまま。結論: 4項目すべて沈静化の兆しを欠き、むしろ①が明確にエスカレーション。confidenceは現状維持(2)とするが、テーゼは補強された判断。",
       "closedDate": null,
       "exitPriceApprox": null,
       "outcome": null
     }
   ],
   "entries": [
+    {
+      "date": "2026-10-09",
+      "title": "ホルムズ海峡LNG供給ショック、JKM前日比+68%急高",
+      "description": "アジアJKMベンチマークが$25.39/MMBtuへ前日比+68%急高(EIA・Kpler等複数ソースで確証)。欧州TTFもホルムズ危機を要因に2023年以来高値圏(79-82€/MWh)。米国Henry Hubは約$3で不変――ホルムズ海峡経由の国際市場のみが反応している。「TTF 2日で+70%」という指摘は検索では正確に裏付け取れず、暫定的にJKMの+68%のみ確証済みとして扱う。",
+      "sourceUrl": "https://www.eia.gov/todayinenergy/detail.php?id=67604",
+      "critAction": true,
+      "critConfirm": true,
+      "critFresh": true,
+      "decision": "trade",
+      "instrument": "JKM/TTF天然ガス先物",
+      "direction": "long",
+      "outcome": "pending",
+      "notes": "thesis-hormuz-lng-shock開始の根拠。原油より値幅・鮮度とも大きい可能性。TTFの具体的数値は複数記事間で幅があり断定しない。",
+      "createdAt": 1791473841000,
+      "source": "auto",
+      "thesisId": "thesis-hormuz-lng-shock"
+    },
     {
       "date": "2026-10-08",
       "title": "ホルムズ海峡封鎖・原油$100超が継続",
@@ -105,6 +140,21 @@
       "createdAt": 1791421200000,
       "source": "auto",
       "thesisId": "thesis-hormuz-oil-conflict"
+    }
+  ],
+  "signalsLog": [
+    {
+      "date": "2026-10-08",
+      "theme": "hormuz",
+      "attackCount": null,
+      "weeklyAttackCount": 12,
+      "notableTravel": "カタール・パキスタンの介入は従来通り活発だが、確認できた具体的会談記事の最新は7-8月付け中心。直近24-48時間の新規進展は未確認",
+      "mediatorTone": "緊張継続(進展方向の新規発言なし)",
+      "insuranceOrFreightNote": "戦争保険料率0.25%(戦前)→3-10%へ上昇。ピーク10%から一時退却履歴あり。最新数値は7月時点で未更新",
+      "sourceUrls": [
+        "https://www.usnews.com/news/world/articles/2026-10-07/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say",
+        "https://www.lloydslist.com/LL1156586/Gulf-war-risk-premiums-topping-double-digit-millions-of-dollars-per-trip"
+      ]
     }
   ]
 }
