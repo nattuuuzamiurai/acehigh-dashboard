@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ 絞り込みシートのエリア/業態を折り畳み化",
-      "startedAt": "2026-10-08T16:57:04.903Z",
-      "finishedAt": "2026-10-08T16:57:06.305Z"
+      "task": "久留米飲み屋ナビ 一覧ページ群の絞り込みUI統一",
+      "startedAt": "2026-10-08T16:58:48.329Z",
+      "finishedAt": "2026-10-08T16:58:48.612Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-08T13:16:34.384Z"
     }
   },
-  "updatedAt": "2026-10-08T16:57:09.084Z",
+  "updatedAt": "2026-10-08T16:58:51.806Z",
   "usage": {
-    "todayInputTokens": 3544,
-    "todayOutputTokens": 1119765,
-    "asOf": "2026-10-08T16:57:09.084Z"
+    "todayInputTokens": 3636,
+    "todayOutputTokens": 1135794,
+    "asOf": "2026-10-08T16:58:51.806Z"
   }
 }
