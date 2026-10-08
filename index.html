@@ -2407,6 +2407,15 @@ let NOTIF_ITEMS = [];
 
 function notifEsc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
 
+// http(s)/mailto以外のスキーム(javascript:等)はhref埋め込み時に実行され得るため、許可リスト外は'#'に落とす
+function notifSafeUrl(u) {
+  try {
+    const parsed = new URL(u, location.href);
+    if (['http:', 'https:', 'mailto:'].includes(parsed.protocol)) return u;
+  } catch (e) {}
+  return '#';
+}
+
 function notifRelativeTs(ts) {
   const t = new Date(ts).getTime();
   if (Number.isNaN(t)) return ts || '';
@@ -2423,8 +2432,8 @@ function notifRelativeTs(ts) {
 function updateNotifBadge() {
   const badge = document.getElementById('notif-badge');
   if (!badge) return;
-  const lastSeen = localStorage.getItem(NOTIF_SEEN_KEY) || '';
-  const unread = NOTIF_ITEMS.filter(n => (n.ts || '') > lastSeen).length;
+  const lastSeenMs = new Date(localStorage.getItem(NOTIF_SEEN_KEY) || 0).getTime() || 0;
+  const unread = NOTIF_ITEMS.filter(n => (new Date(n.ts).getTime() || 0) > lastSeenMs).length;
   if (unread > 0) {
     badge.textContent = String(unread);
     badge.style.display = 'flex';
@@ -2442,7 +2451,7 @@ function renderNotifList() {
   }
   list.innerHTML = NOTIF_ITEMS.map(n => {
     const links = (n.links || []).map(l =>
-      '<a href="' + notifEsc(l.url) + '" target="_blank" rel="noopener noreferrer">' + notifEsc(l.label) + '</a>'
+      '<a href="' + notifEsc(notifSafeUrl(l.url)) + '" target="_blank" rel="noopener noreferrer">' + notifEsc(l.label) + '</a>'
     ).join('');
     return '<div class="notif-item">' +
       '<div class="notif-item-title">' + notifEsc(n.title) + '</div>' +
@@ -2458,7 +2467,8 @@ async function pollNotifications() {
     const res = await fetch('notifications.json?t=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const d = await res.json();
-    NOTIF_ITEMS = (Array.isArray(d) ? d.slice() : []).sort((a, b) => (b.ts || '').localeCompare(a.ts || ''));
+    // ISO8601の文字列比較(localeCompare)ではなくepoch数値で比較し、タイムスタンプの表記ゆれによる並び順崩れを避ける
+    NOTIF_ITEMS = (Array.isArray(d) ? d.slice() : []).sort((a, b) => (new Date(b.ts).getTime() || 0) - (new Date(a.ts).getTime() || 0));
   } catch (e) {
     NOTIF_ITEMS = [];
   }
