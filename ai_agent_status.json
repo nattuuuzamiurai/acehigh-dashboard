@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ PR#67コンフリクト解消",
-      "startedAt": "2026-10-08T17:29:25.794Z",
-      "finishedAt": "2026-10-08T17:29:26.420Z"
+      "task": "kondate-planner 手間タグ修正と調理手順追加",
+      "startedAt": "2026-10-09T16:32:02.301Z",
+      "finishedAt": "2026-10-09T16:32:03.039Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-09T14:57:55.076Z"
     }
   },
-  "updatedAt": "2026-10-09T16:29:29.402Z",
+  "updatedAt": "2026-10-09T16:32:07.369Z",
   "usage": {
-    "todayInputTokens": 364,
-    "todayOutputTokens": 568175,
-    "asOf": "2026-10-09T16:29:29.402Z"
+    "todayInputTokens": 458,
+    "todayOutputTokens": 584255,
+    "asOf": "2026-10-09T16:32:07.369Z"
   }
 }
