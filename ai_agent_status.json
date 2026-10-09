@@ -14,9 +14,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ PR#67品質チェック",
-      "startedAt": "2026-10-08T17:16:02.923Z",
-      "finishedAt": "2026-10-08T17:16:03.395Z"
+      "task": "AI実務ナビWeek13 QA",
+      "startedAt": "2026-10-09T00:58:38.467Z",
+      "finishedAt": "2026-10-09T01:05:57.896Z"
     },
     "review-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ デスクリサーチ記事の企画",
-      "startedAt": "2026-10-08T13:10:08.567Z",
-      "finishedAt": "2026-10-08T13:10:23.987Z"
+      "task": "AI実務ナビWeek13企画",
+      "startedAt": "2026-10-09T00:33:53.306Z",
+      "finishedAt": "2026-10-09T00:44:35.431Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -38,15 +38,15 @@
     },
     "content-writer": {
       "status": "idle",
-      "task": "久留米飲み屋ナビ はしご酒/深夜記事 執筆",
-      "startedAt": "2026-10-08T13:16:33.964Z",
-      "finishedAt": "2026-10-08T13:16:34.384Z"
+      "task": "AI実務ナビWeek13執筆",
+      "startedAt": "2026-10-09T00:45:05.348Z",
+      "finishedAt": "2026-10-09T00:58:09.778Z"
     }
   },
-  "updatedAt": "2026-10-08T22:51:58.826Z",
+  "updatedAt": "2026-10-09T01:06:19.421Z",
   "usage": {
-    "todayInputTokens": 5510,
-    "todayOutputTokens": 1417813,
-    "asOf": "2026-10-08T22:51:58.826Z"
+    "todayInputTokens": 5936,
+    "todayOutputTokens": 1489480,
+    "asOf": "2026-10-09T01:06:19.421Z"
   }
 }
