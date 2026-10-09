@@ -43,16 +43,16 @@
       "finishedAt": "2026-10-09T01:21:05.016Z"
     },
     "general-purpose": {
-      "status": "running",
-      "task": "Hormuz backfill research 6/24-7/22",
-      "startedAt": "2026-10-09T14:57:38.156Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "Hormuz backfill research 8/7-9/27",
+      "startedAt": "2026-10-09T14:57:54.528Z",
+      "finishedAt": "2026-10-09T14:57:55.076Z"
     }
   },
-  "updatedAt": "2026-10-09T14:57:35.366Z",
+  "updatedAt": "2026-10-09T14:58:41.319Z",
   "usage": {
-    "todayInputTokens": 7046,
-    "todayOutputTokens": 2089711,
-    "asOf": "2026-10-09T14:57:35.366Z"
+    "todayInputTokens": 7152,
+    "todayOutputTokens": 2181362,
+    "asOf": "2026-10-09T14:58:41.319Z"
   }
 }
