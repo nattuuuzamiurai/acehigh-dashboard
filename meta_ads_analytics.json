@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T07:23+09:00",
+  "updatedAt": "2026-10-10T07:23+09:00",
   "period": "2026-10-07 00:47 JST 以降",
   "ads": [
     {
@@ -8,17 +8,17 @@
       "campaign": "軽配送ドライバー募集_2026-10(最適化版)",
       "adSet": "博多20km_FB+IG限定配置",
       "status": "ACTIVE",
-      "spend": 2992,
-      "impressions": 1387,
-      "reach": 533,
-      "clicks": 45,
-      "ctr": 3.24,
-      "cpc": 66,
-      "landingPageViews": 28,
+      "spend": 3768,
+      "impressions": 1747,
+      "reach": 658,
+      "clicks": 48,
+      "ctr": 2.75,
+      "cpc": 78,
+      "landingPageViews": 31,
       "lineFriendAdds": 0,
       "costPerLine": null,
-      "formClicks": 3,
-      "formViews": 4,
+      "formClicks": 4,
+      "formViews": 5,
       "formCompletions": 0
     }
   ]
