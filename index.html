@@ -1288,6 +1288,7 @@
         <h2>シグナル推移</h2>
         <span style="font-size:.78em;color:var(--mut);">攻撃件数・保険料率・洋上在庫などの数値推移。複数が同方向を示すほど確度が高い</span>
       </div>
+      <div style="font-size:.78em;color:var(--mut);background:var(--sur2);border:1px solid var(--bor);border-radius:7px;padding:8px 12px;margin-bottom:4px;">● は実際に確認できた値。点を結ぶ破線は目安であり、線が引かれている期間に実際に何もなかった(ゼロだった)という意味ではない。点がない期間は単に未確認。</div>
       <div class="urg-granularity-row" id="urg-granularity">
         <button type="button" class="urg-gran-btn active" data-gran="daily">日次</button>
         <button type="button" class="urg-gran-btn" data-gran="weekly">週次</button>
@@ -2852,21 +2853,23 @@ function renderUrgMetrics(signalsLog) {
         ctx.restore();
       }
     };
+    // 点=実際に確認できた値、点を結ぶ線=単なる目安(間の期間に何もなかったという意味ではない)
+    // であることを示すため、常に破線でつなぎ、塗りつぶし(面)も行わない。点がない期間を
+    // ゼロや平坦だったかのように見せないための意図的な選択。
     const chart = new Chart(el.getContext('2d'), {
-      type: metric.type === 'bar' ? 'bar' : 'line',
+      type: 'line',
       data: {
         datasets: [{
           data: points.map((p, i) => ({ x: xByPoint[i].x, y: p.value })),
-          borderColor: accent,
-          backgroundColor: metric.type === 'bar' ? accent : urgHexToRgba(accent, 0.1),
+          borderColor: urgHexToRgba(accent, 0.55),
+          borderDash: [5, 4],
           borderWidth: 2,
-          pointRadius: metric.type === 'bar' ? 0 : 3,
-          pointHoverRadius: 5,
+          pointRadius: 5,
+          pointHoverRadius: 6,
           pointBackgroundColor: accent,
-          fill: metric.type !== 'bar',
-          tension: 0.15,
-          borderRadius: metric.type === 'bar' ? 4 : 0,
-          barThickness: metric.type === 'bar' ? 20 : undefined,
+          pointBorderColor: accent,
+          fill: false,
+          tension: 0,
         }]
       },
       plugins: [valueLabelPlugin],
@@ -2903,8 +2906,8 @@ function renderUrgMetrics(signalsLog) {
       }
     });
     urgChartInstances.push(chart);
-    // 最新側に自動スクロールすると過去分がまるごと隠れて「データが少ない」ように見えるため、
-    // 時系列の開始(最古)から読めるようスクロール位置は先頭のままにする。
+    // 開いた時は今日に近い側を見せる。過去分は‹ボタン/横スクロールで辿れる。
+    if (scrollParent) scrollParent.scrollLeft = scrollParent.scrollWidth;
   });
 }
 function renderUrgQualLog(signalsLog) {
