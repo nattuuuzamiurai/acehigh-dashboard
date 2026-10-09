@@ -245,8 +245,13 @@
     .urg-metric-label { font-size:.82em; font-weight:700; }
     .urg-metric-value { font-size:.76em; color:var(--mut); white-space:nowrap; }
     .urg-metric-value b { color:var(--txt); }
-    .urg-metric-canvas-wrap { height:168px; margin-top:8px; position:relative; overflow-x:auto; overflow-y:hidden; }
+    .urg-metric-scroll-box { position:relative; margin-top:8px; }
+    .urg-metric-canvas-wrap { height:168px; position:relative; overflow-x:auto; overflow-y:hidden; }
     .urg-metric-canvas-inner { height:150px; }
+    .urg-scroll-btn { position:absolute; top:60px; width:24px; height:24px; border-radius:50%; border:1px solid var(--bor); background:var(--sur); color:var(--txt); font-size:.95em; line-height:1; cursor:pointer; box-shadow:var(--sha); opacity:.85; }
+    .urg-scroll-btn:hover { opacity:1; background:var(--sur2); }
+    .urg-scroll-btn.left { left:-4px; }
+    .urg-scroll-btn.right { right:-4px; }
     .urg-granularity-row { display:flex; gap:6px; margin:10px 0 2px; }
     .urg-gran-btn { font-size:.78em; padding:5px 13px; border-radius:7px; border:1px solid var(--bor); background:var(--sur); color:var(--mut); cursor:pointer; font-family:inherit; font-weight:600; }
     .urg-gran-btn:hover { background:var(--sur2); }
@@ -2661,6 +2666,12 @@ document.getElementById('urg-granularity').addEventListener('click', (ev) => {
   document.querySelectorAll('.urg-gran-btn').forEach(b => b.classList.toggle('active', b === btn));
   renderUrgMetrics(urgLastSignalsLog);
 });
+document.getElementById('urg-metric-grid').addEventListener('click', (ev) => {
+  const btn = ev.target.closest('.urg-scroll-btn');
+  if (!btn) return;
+  const wrap = btn.closest('.urg-metric-scroll-box').querySelector('.urg-metric-canvas-wrap');
+  wrap.scrollBy({ left: Number(btn.dataset.dir) * wrap.clientWidth * 0.8, behavior: 'smooth' });
+});
 function urgFmtNum(n) {
   if (n == null || Number.isNaN(n)) return '—';
   if (Math.abs(n) >= 10000) return (n / 10000).toLocaleString('ja-JP', { maximumFractionDigits: 1 }) + '万';
@@ -2727,7 +2738,11 @@ function renderUrgMetrics(signalsLog) {
     const innerWidth = Math.max((xPos[xPos.length - 1].x + 1) * PX_PER_UNIT, 200);
     const body = points.length < 2
       ? '<div style="font-size:.78em;color:var(--mut);margin-top:8px;">データ蓄積中(推移にはあと' + (2 - points.length) + '点必要)</div>'
-      : '<div class="urg-metric-canvas-wrap"><div class="urg-metric-canvas-inner" style="width:' + innerWidth + 'px"><canvas id="' + canvasId + '"></canvas></div></div>';
+      : '<div class="urg-metric-scroll-box">' +
+          '<div class="urg-metric-canvas-wrap"><div class="urg-metric-canvas-inner" style="width:' + innerWidth + 'px"><canvas id="' + canvasId + '"></canvas></div></div>' +
+          '<button type="button" class="urg-scroll-btn left" data-dir="-1" aria-label="過去へスクロール">‹</button>' +
+          '<button type="button" class="urg-scroll-btn right" data-dir="1" aria-label="最新へスクロール">›</button>' +
+        '</div>';
     return '<div class="urg-metric-card">' +
       '<div class="urg-metric-head">' +
       '<span class="urg-metric-label">' + metric.label + '</span>' +
@@ -2821,7 +2836,8 @@ function renderUrgMetrics(signalsLog) {
       }
     });
     urgChartInstances.push(chart);
-    if (scrollParent) scrollParent.scrollLeft = scrollParent.scrollWidth;
+    // 最新側に自動スクロールすると過去分がまるごと隠れて「データが少ない」ように見えるため、
+    // 時系列の開始(最古)から読めるようスクロール位置は先頭のままにする。
   });
 }
 function renderUrgQualLog(signalsLog) {
