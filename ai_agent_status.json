@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-09T14:57:55.076Z"
     }
   },
-  "updatedAt": "2026-10-09T17:24:06.101Z",
+  "updatedAt": "2026-10-09T17:39:34.476Z",
   "usage": {
-    "todayInputTokens": 1802,
-    "todayOutputTokens": 822806,
-    "asOf": "2026-10-09T17:24:06.101Z"
+    "todayInputTokens": 2284,
+    "todayOutputTokens": 847202,
+    "asOf": "2026-10-09T17:39:34.476Z"
   }
 }
