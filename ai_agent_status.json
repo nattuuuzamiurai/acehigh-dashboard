@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "AI実務ナビWeek13企画",
-      "startedAt": "2026-10-09T00:33:53.306Z",
-      "finishedAt": "2026-10-09T00:44:35.431Z"
+      "task": "直近数週間の5指標を密に調査",
+      "startedAt": "2026-10-09T16:28:04.624Z",
+      "finishedAt": "2026-10-09T16:28:06.073Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-09T14:57:55.076Z"
     }
   },
-  "updatedAt": "2026-10-09T16:22:59.893Z",
+  "updatedAt": "2026-10-09T16:28:19.099Z",
   "usage": {
-    "todayInputTokens": 294,
-    "todayOutputTokens": 534666,
-    "asOf": "2026-10-09T16:22:59.893Z"
+    "todayInputTokens": 316,
+    "todayOutputTokens": 554622,
+    "asOf": "2026-10-09T16:28:19.099Z"
   }
 }
