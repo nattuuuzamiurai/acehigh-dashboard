@@ -1290,9 +1290,9 @@
       </div>
       <div style="font-size:.78em;color:var(--mut);background:var(--sur2);border:1px solid var(--bor);border-radius:7px;padding:8px 12px;margin-bottom:4px;">● は実際に確認できた値。点を結ぶ破線は目安であり、線が引かれている期間に実際に何もなかった(ゼロだった)という意味ではない。点がない期間は単に未確認。</div>
       <div class="urg-granularity-row" id="urg-granularity">
-        <button type="button" class="urg-gran-btn active" data-gran="daily">日次</button>
+        <button type="button" class="urg-gran-btn" data-gran="daily">日次</button>
         <button type="button" class="urg-gran-btn" data-gran="weekly">週次</button>
-        <button type="button" class="urg-gran-btn" data-gran="monthly">月次</button>
+        <button type="button" class="urg-gran-btn active" data-gran="monthly">月次(全体像)</button>
       </div>
       <div class="urg-metric-grid" id="urg-metric-grid"></div>
       <div id="urg-qual-log" class="mt12"></div>
@@ -2704,7 +2704,7 @@ const URG_METRICS = [
 ];
 let urgChartInstances = [];
 let urgLastSignalsLog = [];
-let urgGranularity = 'daily';
+let urgGranularity = 'monthly';
 function urgBucketKey(dateStr, granularity) {
   if (granularity === 'daily') return dateStr;
   const d = new Date(dateStr + 'T00:00:00Z');
@@ -2752,20 +2752,13 @@ function urgHexToRgba(hex, alpha) {
   const bigint = parseInt(full, 16);
   return 'rgba(' + ((bigint >> 16) & 255) + ',' + ((bigint >> 8) & 255) + ',' + (bigint & 255) + ',' + alpha + ')';
 }
-// 各点の間隔(前の点との日数差)に平方根圧縮をかけて累積したx座標(単位: 任意スケール)を返す。
-// 累積日数そのままに圧縮をかけると、後ろの方(密集しがち)ほど逆に潰れてしまうため、
-// 「隣との差」ごとに圧縮することで、間隔の大小関係は保ちつつどの位置でも窮屈になりすぎないようにする。
+// 点を等間隔(インデックス順)に配置する。実日数に比例させる方式も試したが、
+// 点数が増える(数十点)につれてグラフが縦にではなく横に伸び続け、
+// 全体像を把握するのに延々スクロールが必要になった。点と点の間を
+// ゼロ(未確認ではなく確認済みゼロ)に見せない役目は破線+●のマーク自体が
+// 既に果たしているので、間隔自体は等間隔の方が全体を見渡しやすい。
 function urgXPositions(points) {
-  let cum = 0;
-  return points.map((p, i) => {
-    if (i > 0) {
-      const prevTs = new Date(points[i - 1].date + 'T00:00:00Z').getTime();
-      const curTs = new Date(p.date + 'T00:00:00Z').getTime();
-      const gapDays = Math.max(0.5, (curTs - prevTs) / 86400000);
-      cum += Math.sqrt(gapDays);
-    }
-    return { x: cum, date: p.date };
-  });
+  return points.map((p, i) => ({ x: i, date: p.date }));
 }
 function urgMetricValue(rec, metric) {
   for (const k of metric.keys) {
@@ -2794,7 +2787,7 @@ function renderUrgMetrics(signalsLog) {
     return;
   }
 
-  const PX_PER_UNIT = 46;
+  const PX_PER_UNIT = 36;
 
   grid.innerHTML = renderable.map(({ metric, points }) => {
     const canvasId = 'urg-chart-' + metric.keys[0];
