@@ -2720,11 +2720,23 @@ function urgAggregate(points, metric, granularity) {
   points.forEach(p => {
     const key = urgBucketKey(p.date, granularity);
     if (!buckets.has(key)) buckets.set(key, []);
-    buckets.get(key).push(p.value);
+    buckets.get(key).push(p);
   });
   const isSum = metric.type === 'bar';
   return Array.from(buckets.entries())
-    .map(([date, vals]) => ({ date, value: isSum ? vals.reduce((a, b) => a + b, 0) : (vals.reduce((a, b) => a + b, 0) / vals.length) }))
+    .map(([bucketStart, pts]) => {
+      const sum = pts.reduce((a, b) => a + b.value, 0);
+      if (!isSum) return { date: bucketStart, value: sum / pts.length };
+      // 件数系(bar)は合計でなく「1日あたり」に正規化する。進行中の期間(今月等)を
+      // そのまま合計すると、経過日数が短いだけで過去の完了済み期間より少なく
+      // 見えてしまう(例: 9月30件/30日 vs 10月17件/9日は、合計だけだと10月の方が
+      // 少なく見えるが1日あたりでは10月の方が約2倍多い)。期間の開始日から、その
+      // 期間内で実際に値がある最後の日までの日数で割り、進行中でも実ペースを示す。
+      const bucketStartTs = new Date(bucketStart + 'T00:00:00Z').getTime();
+      const lastDateTs = Math.max(...pts.map(p => new Date(p.date + 'T00:00:00Z').getTime()));
+      const daySpan = Math.max(1, Math.round((lastDateTs - bucketStartTs) / 86400000) + 1);
+      return { date: bucketStart, value: sum / daySpan, total: sum, daySpan };
+    })
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 document.getElementById('urg-granularity').addEventListener('click', (ev) => {
@@ -2795,8 +2807,11 @@ function renderUrgMetrics(signalsLog) {
     const prev = points.length > 1 ? points[points.length - 2] : null;
     const delta = prev ? (latest.value - prev.value) : null;
     const deltaStr = delta != null ? ' (' + (delta > 0 ? '+' : '') + urgFmtNum(delta) + ')' : '';
+    const isRate = metric.type === 'bar' && urgGranularity !== 'daily';
+    const displayUnit = isRate ? metric.unit + '/日' : metric.unit;
     const xPos = urgXPositions(points);
     const innerWidth = Math.max((xPos[xPos.length - 1].x + 1) * PX_PER_UNIT, 200);
+    const latestExtra = isRate && latest.total != null ? '(合計' + urgFmtNum(latest.total) + metric.unit + '/' + latest.daySpan + '日分)' : '';
     const body = points.length < 2
       ? '<div style="font-size:.78em;color:var(--mut);margin-top:8px;">データ蓄積中(推移にはあと' + (2 - points.length) + '点必要)</div>'
       : '<div class="urg-metric-scroll-box">' +
@@ -2807,8 +2822,10 @@ function renderUrgMetrics(signalsLog) {
     return '<div class="urg-metric-card">' +
       '<div class="urg-metric-head">' +
       '<span class="urg-metric-label">' + metric.label + '</span>' +
-      '<span class="urg-metric-value">直近 <b>' + urgFmtNum(latest.value) + metric.unit + '</b>' + deltaStr + '</span>' +
-      '</div>' + body + '</div>';
+      '<span class="urg-metric-value">直近 <b>' + urgFmtNum(latest.value) + displayUnit + '</b>' + deltaStr + '</span>' +
+      '</div>' +
+      (latestExtra ? '<div style="font-size:.72em;color:var(--mut);margin-top:2px;">' + latestExtra + '(進行中の期間は合計ではなく1日あたりで比較)</div>' : '') +
+      body + '</div>';
   }).join('');
 
   const accent = getComputedStyle(document.documentElement).getPropertyValue('--acc').trim();
@@ -2824,6 +2841,7 @@ function renderUrgMetrics(signalsLog) {
     if (!el) return;
     // 右端(最新)から見えるよう、描画後にスクロール位置を末尾へ
     const scrollParent = el.closest('.urg-metric-canvas-wrap');
+    const displayUnit = (metric.type === 'bar' && urgGranularity !== 'daily') ? metric.unit + '/日' : metric.unit;
     const xByPoint = urgXPositions(points);
     const dateForX = (x) => {
       let best = xByPoint[0];
@@ -2880,7 +2898,7 @@ function renderUrgMetrics(signalsLog) {
                 const dt = new Date(dateForX(items[0].parsed.x) + 'T00:00:00Z');
                 return dateFmtFull(dt.getTime());
               },
-              label: (ctx) => urgFmtNum(ctx.parsed.y) + metric.unit
+              label: (ctx) => urgFmtNum(ctx.parsed.y) + displayUnit
             }
           }
         },
