@@ -35810,16 +35810,16 @@ window.KYOTEI_DATA = {
           "combo": "1-2-3",
           "n_bets": 6,
           "actual_combo": "",
-          "prob_pct": "7.1",
-          "ev": 0.81,
-          "odds": "11.4",
+          "prob_pct": "6.3",
+          "ev": 0.99,
+          "odds": "15.7",
           "hit": "",
           "payout": "0",
           "final_odds": "",
           "actual_ev": null
         },
         {
-          "venue_name": "戸田",
+          "venue_name": "鳴門",
           "race_no": "2",
           "start_time": "11:16",
           "combo": "1-3-2",
@@ -35954,7 +35954,7 @@ window.KYOTEI_DATA = {
           "actual_ev": null
         },
         {
-          "venue_name": "常滑",
+          "venue_name": "鳴門",
           "race_no": "3",
           "start_time": "11:11",
           "combo": "1-5-4",
@@ -50770,22 +50770,7 @@ window.KYOTEI_DATA = {
       "is_today": true,
       "preds": [
         {
-          "venue_name": "戸田",
-          "race_no": "1",
-          "start_time": "10:47",
-          "combo": "1-2-6",
-          "n_bets": 2,
-          "actual_combo": "",
-          "prob_pct": "5.2",
-          "ev": 1.74,
-          "odds": "33.3",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "戸田",
+          "venue_name": "鳴門",
           "race_no": "2",
           "start_time": "11:16",
           "combo": "2-1-3",
@@ -61131,22 +61116,7 @@ window.KYOTEI_DATA = {
       "is_today": true,
       "preds": [
         {
-          "venue_name": "戸田",
-          "race_no": "1",
-          "start_time": "10:47",
-          "combo": "1-2-6",
-          "n_bets": 2,
-          "actual_combo": "",
-          "prob_pct": "5.2",
-          "ev": 1.74,
-          "odds": "33.3",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "戸田",
+          "venue_name": "鳴門",
           "race_no": "2",
           "start_time": "11:16",
           "combo": "2-1-3",
