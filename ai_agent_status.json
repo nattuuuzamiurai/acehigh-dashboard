@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "kondate-planner 手間タグ修正と調理手順追加",
-      "startedAt": "2026-10-09T16:32:02.301Z",
-      "finishedAt": "2026-10-09T16:32:03.039Z"
+      "task": "kondate-planner 在庫の期限トラッキング追加",
+      "startedAt": "2026-10-10T06:00:32.534Z",
+      "finishedAt": "2026-10-10T06:00:32.749Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-09T14:57:55.076Z"
     }
   },
-  "updatedAt": "2026-10-10T00:33:50.923Z",
+  "updatedAt": "2026-10-10T06:00:48.914Z",
   "usage": {
-    "todayInputTokens": 3440,
-    "todayOutputTokens": 902536,
-    "asOf": "2026-10-10T00:33:50.923Z"
+    "todayInputTokens": 3466,
+    "todayOutputTokens": 918132,
+    "asOf": "2026-10-10T06:00:48.914Z"
   }
 }
