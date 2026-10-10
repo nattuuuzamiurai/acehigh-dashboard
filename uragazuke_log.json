@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10 (経営管理オフィスが直接反映、4指標の過去分追加)",
+  "updatedAt": "2026-10-10T00:00:00Z",
   "theses": [
     {
       "confidence": 2,
@@ -38,60 +38,6 @@
     }
   ],
   "entries": [
-    {
-      "createdAt": 1791489000000,
-      "critAction": true,
-      "critConfirm": true,
-      "critFresh": true,
-      "date": "2026-10-09",
-      "decision": "trade",
-      "description": "過去24時間でカタール沖(半年ぶりの同海域攻撃)・フジャイラ沖(オマーン湾)の商船計2隻が攻撃を受け、複数メディア(Euronews/CBS/CNBC)が「意図的な攻撃範囲の拡大」と報道。9/28〜10/2の週だけで少なくとも12件の攻撃(米海軍系情報源)、通航量は7月下旬以来の最低水準(Kpler)。Brentが$105/bbl超へ上昇。",
-      "direction": "long",
-      "instrument": "Brent原油",
-      "notes": "ホルムズ海峡外への攻撃拡大という新たな「行動」の裏付け。thesis-hormuz-oil-conflictのconfidenceを2→3に引き上げ。",
-      "outcome": "pending",
-      "source": "auto",
-      "sourceUrl": "https://www.euronews.com/2026/10/08/iran-strikes-tankers-outside-hormuz-in-signs-of-expanding-campaign",
-      "thesisId": "thesis-hormuz-oil-conflict",
-      "title": "イランがホルムズ海峡外へ攻撃を拡大(カタール沖・フジャイラ沖)、Brent $105超",
-      "id": "auto-20261009-02"
-    },
-    {
-      "createdAt": 1791473841000,
-      "critAction": true,
-      "critConfirm": true,
-      "critFresh": true,
-      "date": "2026-10-09",
-      "decision": "trade",
-      "description": "アジアJKMベンチマークが$25.39/MMBtuへ前日比+68％急高(EIA・Kpler等複数ソースで確証)。欧州 TTFもホルムズ危機を要因に2023年以来高値圈(79-82€/MWh)。米国Henry Hubは約$3で不変——ホルムズ海峡経由の国際市場のみが反応している。「TTF 2日で+70％」という指摘は検索では正確に裏付け取れず、暫定的にJKMの+68％のみ確証済みとして扱う。",
-      "direction": "long",
-      "instrument": "JKM/TTF天然ガス先物",
-      "notes": "thesis-hormuz-lng-shock開始の根拠。原油より値幅・鮮度とも大きい可能性。TTFの具体的数値は複数記事間で幅があり断定しない。",
-      "outcome": "pending",
-      "source": "auto",
-      "sourceUrl": "https://www.eia.gov/todayinenergy/detail.php?id=67604",
-      "thesisId": "thesis-hormuz-lng-shock",
-      "title": "ホルムズ海峡LNG供給ショック、JKM前日比+68％急高",
-      "id": "auto-20261009-01"
-    },
-    {
-      "createdAt": 1791421200000,
-      "critAction": true,
-      "critConfirm": true,
-      "critFresh": true,
-      "date": "2026-10-08",
-      "decision": "trade",
-      "description": "9/28〜10/5の週に少なくとも20隻ほどが攻撃を受け、イラン戦争開始以来最多の週間数(Reuters系複数報道)。通航量は2ヶ月ぶりの最小(10/7に7隻のみ)。調停国(カタール・パキスタン)の介入は従来通り活発だが進展方向の新規発言はなし。戦争保険料率は構造的に高いまま(最新データは7月時点)。",
-      "direction": "long",
-      "instrument": "WTI原油",
-      "notes": "社長との議論を踏まえたデエスカレーション前兆観測の初回実施。現時点は逆にエスカレーションが優勢のためテーゼは補強。詳細は thesis-hormuz-oil-conflict の deescalationSignals フィールド参照。",
-      "outcome": "pending",
-      "source": "auto",
-      "sourceUrl": "https://www.usnews.com/news/world/articles/2026-10-07/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say",
-      "thesisId": "thesis-hormuz-oil-conflict",
-      "title": "ホルムズ海峡、イラン戦争開始以来最大の週間攻撃頻度(沈静化前兆イベント初回観測)",
-      "id": "auto-20261008-05"
-    },
     {
       "createdAt": 1791413403000,
       "critAction": true,
@@ -160,6 +106,60 @@
       "sourceUrl": "https://www.cnn.com/2026/09/25/world/xi-dc-trump-analysis-intl-hnk",
       "title": "米中貿易休戦、2027年1月10日まで延長(9/23発表)",
       "id": "auto-20261008-04"
+    },
+    {
+      "createdAt": 1791421200000,
+      "critAction": true,
+      "critConfirm": true,
+      "critFresh": true,
+      "date": "2026-10-08",
+      "decision": "trade",
+      "description": "9/28〜10/5の週に少なくとも20隻ほどが攻撃を受け、イラン戦争開始以来最多の週間数(Reuters系複数報道)。通航量は2ヶ月ぶりの最小(10/7に7隻のみ)。調停国(カタール・パキスタン)の介入は従来通り活発だが進展方向の新規発言はなし。戦争保険料率は構造的に高いまま(最新データは7月時点)。",
+      "direction": "long",
+      "instrument": "WTI原油",
+      "notes": "社長との議論を踏まえたデエスカレーション前兆観測の初回実施。現時点は逆にエスカレーションが優勢のためテーゼは補強。詳細は thesis-hormuz-oil-conflict の deescalationSignals フィールド参照。",
+      "outcome": "pending",
+      "source": "auto",
+      "sourceUrl": "https://www.usnews.com/news/world/articles/2026-10-07/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say",
+      "thesisId": "thesis-hormuz-oil-conflict",
+      "title": "ホルムズ海峡、イラン戦争開始以来最大の週間攻撃頻度(沈静化前兆イベント初回観測)",
+      "id": "auto-20261008-05"
+    },
+    {
+      "createdAt": 1791473841000,
+      "critAction": true,
+      "critConfirm": true,
+      "critFresh": true,
+      "date": "2026-10-09",
+      "decision": "trade",
+      "description": "アジアJKMベンチマークが$25.39/MMBtuへ前日比+68％急高(EIA・Kpler等複数ソースで確証)。欧州 TTFもホルムズ危機を要因に2023年以来高値圈(79-82€/MWh)。米国Henry Hubは約$3で不変——ホルムズ海峡経由の国際市場のみが反応している。「TTF 2日で+70％」という指摘は検索では正確に裏付け取れず、暫定的にJKMの+68％のみ確証済みとして扱う。",
+      "direction": "long",
+      "instrument": "JKM/TTF天然ガス先物",
+      "notes": "thesis-hormuz-lng-shock開始の根拠。原油より値幅・鮮度とも大きい可能性。TTFの具体的数値は複数記事間で幅があり断定しない。",
+      "outcome": "pending",
+      "source": "auto",
+      "sourceUrl": "https://www.eia.gov/todayinenergy/detail.php?id=67604",
+      "thesisId": "thesis-hormuz-lng-shock",
+      "title": "ホルムズ海峡LNG供給ショック、JKM前日比+68％急高",
+      "id": "auto-20261009-01"
+    },
+    {
+      "createdAt": 1791489000000,
+      "critAction": true,
+      "critConfirm": true,
+      "critFresh": true,
+      "date": "2026-10-09",
+      "decision": "trade",
+      "description": "過去24時間でカタール沖(半年ぶりの同海域攻撃)・フジャイラ沖(オマーン湾)の商船計2隻が攻撃を受け、複数メディア(Euronews/CBS/CNBC)が「意図的な攻撃範囲の拡大」と報道。9/28〜10/2の週だけで少なくとも12件の攻撃(米海軍系情報源)、通航量は7月下旬以来の最低水準(Kpler)。Brentが$105/bbl超へ上昇。",
+      "direction": "long",
+      "instrument": "Brent原油",
+      "notes": "ホルムズ海峡外への攻撃拡大という新たな「行動」の裏付け。thesis-hormuz-oil-conflictのconfidenceを2→3に引き上げ。",
+      "outcome": "pending",
+      "source": "auto",
+      "sourceUrl": "https://www.euronews.com/2026/10/08/iran-strikes-tankers-outside-hormuz-in-signs-of-expanding-campaign",
+      "thesisId": "thesis-hormuz-oil-conflict",
+      "title": "イランがホルムズ海峡外へ攻撃を拡大(カタール沖・フジャイラ沖)、Brent $105超",
+      "id": "auto-20261009-02"
     }
   ],
   "signalsLog": [
@@ -222,6 +222,17 @@
       "id": "hormuz-20260307"
     },
     {
+      "contextNote": "【統一定義で再調査・2026-10-10】WTI M1-M2(4月限-5月限、$98.71-$96.84、CME清算値ベース)。確度高。",
+      "date": "2026-03-13",
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://commodity-board.com/crude-oil-in-crisis-mode-backwardation-war-premiums-and-policy-shocks"
+      ],
+      "termStructureSpread": 1.87,
+      "theme": "hormuz",
+      "id": "hormuz-20260313"
+    },
+    {
       "contextNote": "【planning-lead調査・2026-10-10追記、中確度】海峡近傍1件(Mayuree Naree、3/10オマーン沖、船員3名行方不明)。湾内だが海峡から離れたZefyros/Safesea Vishnu(3/12イラク沖、インド人1名死亡)は本カウントに含めず。米が6州への最大規模夜間爆撃、USSトリポリ・海兵隊5000人規模をペルシャ湾へ展開。タンカー攻撃自体は前週より少なく、低通航状態が継続。",
       "date": "2026-03-15",
       "granularity": "weekly",
@@ -234,6 +245,17 @@
       "theme": "hormuz",
       "weeklyAttackCount": 1,
       "id": "hormuz-20260315"
+    },
+    {
+      "contextNote": "【統一定義で再調査・2026-10-10】WTI M1-M2(4月限-5月限、$96.19-$95.37)。確度高。",
+      "date": "2026-03-18",
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://commodity-board.com/crude-oil-in-backwardation-tight-near-term-softer-long-term-outlook"
+      ],
+      "termStructureSpread": 0.82,
+      "theme": "hormuz",
+      "id": "hormuz-20260318"
     },
     {
       "contextNote": "【planning-lead調査・2026-10-10追記、中確度】海峡近傍3件(Gas Al Ahmadiah 3/17フジャイラ東沖、不明船籍3/18ホルファカーン東沖、不明船籍3/22シャルジャ北方)。この後3/23に一転「対話は非常に生産的」として最終期限を延期と報道、週末にかけ緊張緩和の兆し。",
@@ -261,6 +283,17 @@
       "id": "hormuz-20260324"
     },
     {
+      "contextNote": "【統一定義で再調査・2026-10-10】WTI M1-M2(5月限-6月限、$99.64-$94.19)。確度高。",
+      "date": "2026-03-27",
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://commodity-board.com/wti-and-brent-surge-into-steep-backwardation-as-war-risk-reprices-oil"
+      ],
+      "termStructureSpread": 5.45,
+      "theme": "hormuz",
+      "id": "hormuz-20260327"
+    },
+    {
       "contextNote": "【planning-lead調査・2026-10-10追記、中確度】開戦1カ月の節目。3/25パキスタンが米の「15項目提案」をイランへ伝達、3/26イスラマバードでの間接協議で45日間停戦案が出たがイランは恒久解決を求め拒否。同日3/26にイスラエルがイラン海軍司令官Tangsiri提督を殺害(hormuz-20260413エントリでは日付未記載だった。3/19-4/23の幅の中に含まれる。)、3/27イランが中国船2隻の海峡進入を阻止。タンカー攻撃は1件のみ(Al Salmi、3/30ドバイ港内ドローン攻撃、海峡本体ではなく港湾施設のため「海峡近傍」への該当性は弱い)。",
       "date": "2026-03-29",
       "granularity": "weekly",
@@ -275,6 +308,17 @@
       "theme": "hormuz",
       "weeklyAttackCount": 1,
       "id": "hormuz-20260329"
+    },
+    {
+      "contextNote": "【統一定義で再調査・2026-10-10】WTI M1-M2(5月限-6月限、$101.60-$93.08)。確度高。",
+      "date": "2026-04-01",
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://commodity-board.com/oil-curve-flattens-as-front-end-retreats-from-triple-digits"
+      ],
+      "termStructureSpread": 8.52,
+      "theme": "hormuz",
+      "id": "hormuz-20260401"
     },
     {
       "contextNote": "【planning-lead調査・2026-10-10追記、低確度】手持ち資料(ships attackedリスト)は4/2-4/6のタンカー攻撃事例を発見できず。海峡通航量自体がこの時期も極小のままだったとみられ、「0件=安全」ではなく「通航船がほぼ無いため攻撃対象自体が少ない」可能性が高い(weeklyAttackCountはnull=未確定として扱う。0とは区別)。3/31パキスタン・中国が5項目提案(停戦・海峡航行再開)発表、外交トラック継続。4/1イラン領ヘンガム島空爆で負傷7名(タンカー攻撃ではなく軍事目標)。4/4米情報評価でイランは戦前の彈道ミサイル発射機の約半数等を維持と報告。",
@@ -349,6 +393,17 @@
       "id": "hormuz-20260422"
     },
     {
+      "contextNote": "【統一定義で再調査・2026-10-10】洋上在庫183百万バレル、イラン全体(Kpler)。確度高。",
+      "date": "2026-04-26",
+      "floatingStorage": 183,
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://houseofsaud.com/kharg-island-storage-full-iran-blockade-endgame/"
+      ],
+      "theme": "hormuz",
+      "id": "hormuz-20260426"
+    },
+    {
       "contextNote": "5/4に米軍が商船護衛作戦「Operation Project Freedom」を開始(イランの改めての船舶攻撃への対応)。作戦中にイラン艦艇7隻を撃沈(軍事艦艇、タンカー攻撃件数とは別カテゴリ)。作戦は翌日(5/5)に一時中断(建前上の理由は「交渉進展」だが、planning-leadの2026-10-10追記により実際はサウジの領空提供拒否が原因と報道されていることが判明、ルビオ長官のMaritime Freedom Construct枠組みが背景)。【planning-lead調査・2026-10-10追記】weeklyAttackCountは1→4に修正: JV Innovation、CMA CGM San Antonio(記録当時の「フランス籍CMA CGM艦」と同一艦と推定)、Ocean Koi(拿捕)、Safesea Nehaが損傷。フランス籍CMA CGM艦は「イラン無許可横断」を理由に攻撃され負傷者発生。イラン艦艦の撃沈は引き続きタンカー攻撃件数には含めていない。",
       "createdAt": 1791479375000,
       "date": "2026-05-04",
@@ -364,6 +419,17 @@
       "theme": "hormuz",
       "weeklyAttackCount": 4,
       "id": "hormuz-20260504"
+    },
+    {
+      "contextNote": "【統一定義で再調査・2026-10-10】WTI M1-M2(6月限-7月限、$98.07-$94.94)。確度高。",
+      "date": "2026-05-12",
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://commodity-board.com/crude-oil-futures-rally-into-steep-backwardation-as-products-tighten"
+      ],
+      "termStructureSpread": 3.13,
+      "theme": "hormuz",
+      "id": "hormuz-20260512"
     },
     {
       "contextNote": "【planning-lead調査・2026-10-10追記、低〜中確度】ダウ船Haji Ali(インド籍)がドローン/ミサイルで沈没(5/13)。5/14「浮体式武器庫」船Hui Chuanがオマーン湾でイラン軍に拿捕。犠牲数は未確認。",
@@ -406,6 +472,17 @@
       "theme": "hormuz",
       "weeklyAttackCount": 2,
       "id": "hormuz-20260526"
+    },
+    {
+      "contextNote": "【統一定義で再調査・2026-10-10】洋上在庫140百万バレル、イラン全体(Kpler、ただし約半分は封鎖内に閉じ込められていると付記あり)。日付は「5月末」の記載から推定、確度中。",
+      "date": "2026-05-29",
+      "floatingStorage": 140,
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://dataportuaria.com/en/internacional/analysis/op-ed-iran-s-floating-storage-is-sinking-fast"
+      ],
+      "theme": "hormuz",
+      "id": "hormuz-20260529"
     },
     {
       "contextNote": "【planning-lead調査・2026-10-10追記、中確度】この週に確認できた2件はいずれも米側によるタンカー無力化作戦(6/2ヘルファイア・ミサイルでMT Lexie、6/8 F/A-18がMT Marivexを爆損、いずれも「イラン関連」艦への米側拿捕・無力化)で、イランによる商船攻撃ではないためweeklyAttackCount=0(イラン発の攻撃なしという意味)として記録。",
@@ -451,7 +528,7 @@
       "id": "hormuz-20260617"
     },
     {
-      "contextNote": "【planning-lead調査・2026-10-10追記、中確度】】 6/17のIslamabad Memorandum署名後、6/18にパキスタンが即時実施を発表しホルムズ海峡の通航再開・米の海上封鎖解除が進んだ。この週はタンカー攻撃の報道が見つからず、戦争全体で最も平穏な週だった可能性が高い(weeklyAttackCount=0は「確認できる攻撃が無かった」という推定)。",
+      "contextNote": "【planning-lead調査・2026-10-10追記、中確度】 6/17のIslamabad Memorandum署名後、6/18にパキスタンが即時実施を発表しホルムズ海峡の通航再開・米の海上封鎖解除が進んだ。この週はタンカー攻撃の報道が見つからず、戦争全体で最も平穏な週だった可能性が高い(weeklyAttackCount=0は「確認できる攻撃が無かった」という推定)。",
       "createdAt": 1791558151000,
       "date": "2026-06-24",
       "granularity": "weekly",
@@ -477,6 +554,17 @@
       "id": "hormuz-20260625"
     },
     {
+      "contextNote": "【統一定義で再調査・2026-10-10】WTI M1-M2(8月限-9月限、$70.46-$70.14)。停戦直後のフラット化局面。確度高。",
+      "date": "2026-06-29",
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://commodity-board.com/terminkurve-fuer-rohoel-vertieft-sich-in-backwardation-produkte-fuehren-die-rally-an"
+      ],
+      "termStructureSpread": 0.32,
+      "theme": "hormuz",
+      "id": "hormuz-20260629"
+    },
+    {
       "contextNote": "【planning-lead調査・2026-10-10追記、中確度】停戦後初の攻撃が散発: Evergreen系コンテナ船(6/25)、パナマ籍VLCC「KIKU」(6/27、軽微)、クウェート籍タンカー「Al Salmi」(6/30、ドバイ港でドローン攻撃)の計3件程度。トランプ氏は6/26-28にイランのドローン攻撃を非難し米軍が報復空爆。",
       "createdAt": 1791558151000,
       "date": "2026-06-30",
@@ -494,9 +582,20 @@
       "id": "hormuz-20260630"
     },
     {
-      "contextNote": "【planning-lead調査、2026-10-10】洋上在庫58〜68百万バレル(中値記録)、イラン全体・行先不明貨物中心。確度低(社長既知の「7月90M」と一致する一次報道は未発見、値が大きく乗離している点要注意)。",
-      "date": "2026-07-05",
+      "contextNote": "【統一定義で再調査・2026-10-10】洋上在庫58〜68百万バレル(中値63で記録)、イラン全体、Vortexa/Bloomberg集計。確度高。以前の7/5エントリ(確度低)を本エントリに差し替え。",
+      "date": "2026-07-02",
       "floatingStorage": 63,
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://www.insurancejournal.com/news/international/2026/07/02/876095.htm"
+      ],
+      "theme": "hormuz",
+      "id": "hormuz-20260702"
+    },
+    {
+      "contextNote": "【統一定義で再調査・2026-10-10訂正】この値(63、イラン全体と記録)は日付が不正確だったため、より確度の高い新規エントリ(2026-07-02、58-68レンジ)に差し替え。このフィールドはnullとする。",
+      "date": "2026-07-05",
+      "floatingStorage": null,
       "granularity": "weekly",
       "sourceUrls": [],
       "theme": "hormuz",
@@ -583,13 +682,24 @@
       "id": "hormuz-20260720"
     },
     {
-      "contextNote": "【planning-lead調査、2026-10-10】洋上在庫46.0百万バレル、ホルムズ海峡周辺のみ(イラン全体ではない範囲)。確度低。",
+      "contextNote": "【統一定義で再調査・2026-10-10訂正】この値(46.0)はホルムズ海峡周辺のみの範囲でイラン全体ではないと判明。トレンド比較に使えないためnullとする(参考値としてのみ記録: ホルムズ海峡周辺46.0百万バレル)。",
       "date": "2026-07-29",
-      "floatingStorage": 46,
+      "floatingStorage": null,
       "granularity": "weekly",
       "sourceUrls": [],
       "theme": "hormuz",
       "id": "hormuz-20260729"
+    },
+    {
+      "contextNote": "【統一定義で再調査・2026-10-10】WTI M1-M2(9月限-10月限、$84.60-$82.10)。確度高。",
+      "date": "2026-07-30",
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://commodity-board.com/crude-oil-surges-in-a-steep-backwardation-as-stocks-tighten-again"
+      ],
+      "termStructureSpread": 2.5,
+      "theme": "hormuz",
+      "id": "hormuz-20260730"
     },
     {
       "attackCount": 2,
@@ -659,9 +769,9 @@
       "id": "hormuz-20260824"
     },
     {
-      "contextNote": "【planning-lead調査、2026-10-10】保険料率3～8%(中値記録)、洋上在庫76.9百万バレル(東39.8+西37.1、ペルシャ湾周辺のみ)。いずれも社長既知値と完全一致、確度高。",
+      "contextNote": "【統一定義で再調査・2026-10-10訂正】保険料率(5.5%)はそのまま有効。洋上在庫の値(76.9)はペルシャ湾周辺のみの範囲でイラン全体ではないため、トレンド比較からは除外しnullとする(参考値: ペルシャ湾周辺76.9百万バレル、東39.8+西37.1)。",
       "date": "2026-08-26",
-      "floatingStorage": 76.9,
+      "floatingStorage": null,
       "granularity": "weekly",
       "insuranceRate": 5.5,
       "sourceUrls": [],
@@ -674,7 +784,7 @@
       "createdAt": 1791474336000,
       "date": "2026-08-31",
       "floatingStorage": 80,
-      "floatingStorageNote": "【planning-lead調査、2026-10-10】洋上在庫80百万バレル、イラン全体。確度中。",
+      "floatingStorageNote": "【推定値追記・2026-10-09】洋上在庫80百万バレル、イラン全体。【統一定義で再調査・2026-10-10】この値は複数情報源で「イラン全体」スコープと確認でき、トレンド系列として採用継続。確度中。",
       "insuranceOrFreightNote": "【planning-lead調査、2026-10-10】戦争保険料率7.5～10%(中値8.75で記録)。ララク島攻撃後の高値。確度高。",
       "insuranceRate": 8.75,
       "mediatorTone": "エスカレーション継続",
@@ -689,9 +799,9 @@
       "id": "hormuz-20260831"
     },
     {
-      "contextNote": "【planning-lead調査、2026-10-10】保険料率3～10%(中値記録、確度高)。洋上在庫28.95百万バレル(前週比+2.1%、範囲未確認、確度低)。",
+      "contextNote": "【統一定義で再調査・2026-10-10訂正】保険料率(6.5%)はそのまま有効。洋上在庫の値(28.95)は原典(ynetnews.com)を直接確認した結果「米の海上封鎖線の外側にあるタンカーのみ」でイラン全体ではないと判明。トレンド比較から除外しnullとする(参考値のみ)。",
       "date": "2026-09-02",
-      "floatingStorage": 28.95,
+      "floatingStorage": null,
       "granularity": "weekly",
       "insuranceRate": 6.5,
       "sourceUrls": [],
@@ -744,6 +854,17 @@
       "id": "hormuz-20260909"
     },
     {
+      "contextNote": "【統一定義で再調査・2026-10-10】WTI M1-M2(11月限-12月限、$91.85-$91.01)。CME公式清算値ではなくoilprice.comの先物カーブ表示ベース。確度中。",
+      "date": "2026-09-10",
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://oilprice.com/futures/wti"
+      ],
+      "termStructureSpread": 0.84,
+      "theme": "hormuz",
+      "id": "hormuz-20260910"
+    },
+    {
       "contextNote": "【planning-lead調査・2026-10-10追記、中確度】Trend(トーゴ籍、IRGCが拿捕・攻撃)が9/16-18、不明パナマ籍タンカー、STI Steadfast(マーシャル諸島籍)が被害。9/20 LPGタンカーAl Maryahも損傷。",
       "date": "2026-09-16",
       "granularity": "weekly",
@@ -771,6 +892,17 @@
       "theme": "hormuz",
       "weeklyAttackCount": 2,
       "id": "hormuz-20260922"
+    },
+    {
+      "contextNote": "【統一定義で再調査・2026-10-10】WTI M1-M2(11月限-12月限、$94.76-$90.90)。確度高。",
+      "date": "2026-09-25",
+      "granularity": "weekly",
+      "sourceUrls": [
+        "https://commodity-board.com/wti-rally-steepens-backwardation-as-inventories-build-and-opec-holds-line"
+      ],
+      "termStructureSpread": 3.86,
+      "theme": "hormuz",
+      "id": "hormuz-20260925"
     },
     {
       "contextNote": "【planning-lead調査、2026-10-10】LNGタンカー含む複数隻がunknown projectileで被弾(検索要約ベース、元記事未確認のため中確度)。",
@@ -859,6 +991,8 @@
       "sourceUrls": [
         "https://www.cftc.gov/files/dea/cotarchives/"
       ],
+      "termStructure": "【統一定義で再調査・2026-10-10】WTI M1-M2(11月限-12月限、$89.25-$87.96、CME清算値ベース)。確度高。既存のhormuz-20261009エントリの価格引用元と同一の清算値。",
+      "termStructureSpread": 1.29,
       "theme": "hormuz",
       "id": "hormuz-20261006"
     },
@@ -866,11 +1000,11 @@
       "aisDarkCount": null,
       "aisDarkCountNote": "2026-10-09時点で88隻のイラン国旗タンカー全体に対する暗行/点灯の明確な内訳データを確認できず、nullとして記録(未確定≠0)。代理指標: 10/8付UANI報告ではEOPL錨地滞留タンカーのAIS発信数が22隻(10/6-7は24隻、漸減傾向)。ただしこれは88隻全体ではなくEOPL錨地滞留部分集合の指標。88隻全体の明確な内訳が確認できる次の報告は10/12-14付Windward.ai記事(52/88隻がAIS発信=36隻暗行)だが、これは本日より後の日付のデータのため、日次cronがその日付に到達した時点で正しい日付のエントリとして記録する(過去の日付誤帰属バグの再発を避けるため、今日の日付には記録しない)。",
       "cotNetLong": 109463,
-      "cotNote": "【解決済【2026-10-09、cloude-30がLegacy/Disaggregated両方で再検証: 9/29時点のWTI COTではNon-Commercials(大口投機筋/Managed Money)がネットロング+109,463枚(トレーリング1年レンジの36％水準)、Commercials(商業筋・ヘッジャー)がネットショート-142,618枚、Non-Reportablesが+33,155枚。自分が最初に拾った-226,707はCommercials(ヘッジャー)側の数字を誤って拾っていた可能性が高い(商業筋は生産者ヘッジ売りが主体で構造的に常にネットショート寄り、投機筋とは別概念)。以後 cotNetLong はNon-Commercials/Managed Moneyのネットロングで統一する。",
+      "cotNote": "【解決済】【2026-10-09、cloude-30がLegacy/Disaggregated両方で再検証】9/29時点のWTI COTではNon-Commercials(大口投機筋/Managed Money)がネットロング+109,463枚(トレーリング1年レンジの36％水準)、Commercials(商業筋・ヘッジャー)がネットショート-142,618枚、Non-Reportablesが+33,155枚。自分が最初に拾った-226,707はCommercials(ヘッジャー)側の数字を誤って拾っていた可能性が高い(商業筋は生産者ヘッジ売りが主体で構造的に常にネットショート寄り、投機筋とは別概念)。以後 cotNetLong はNon-Commercials/Managed Moneyのネットロングで統一する。",
       "createdAt": 1791474479000,
       "date": "2026-10-09",
-      "floatingStorage": 10,
-      "floatingStorageNote": "イラン原油がホルムズ海峡周辺で洋上在庫化・輸出せず滞留中(Windward.ai確認)。10/7は18隻が通航(入境12隻ほぼ全てAIS有、出境12隻中1隻が暗行)。10月中旬に88隻中52隻が一時的にAIS発信再開した後暗行化に戻る傾向。cloude-30提示の「2,100万バレル/暗行約242隻」という具体数値は自分の検索では裏付け取れず(未検証)。【2026-10-09追記】数値10(floatingStorageフィールド)はKpler/業界トラッキング報道(10/6付、gcaptain)によるマレーシアEOPL錨地周辺の残量(百万バレル)。イラン全体の洋上在庫はより広域で、9月時点29百万バレル(7月時点90百万バレルから減少、中国向け約100万バレル/日のペースで減少中とKpler推計、同ペースなら10月末頃に枯渇見込み)。地域範囲が異なる数値である点に注意。",
+      "floatingStorage": null,
+      "floatingStorageNote": "【統一定義で再調査・2026-10-10訂正】数値10(マレーシアEOPL錨地周辺)はイラン全体ではない範囲のため、トレンド系列からは除外しnullとする(参考値のみ)。イラン全体で確度の高い9〜10月の数値は今回の再調査でも発見できず、素直に「不明」として扱う。",
       "granularity": "daily",
       "houthiSaudiActivity": "10/3アラムコ攻撃の余響継続中。フーシ・サウジ間の戦闘は拡大傾向との報道あり(JPost等)。【追記】イラン本体もホルムズ海峡外(カタール沖・フジャイラ沖)へ攻撃を拡大しており、ホルムズ本体・周辺海域の両方でエスカレーションが同時進行。",
       "insuranceOrFreightNote": "【追記・10/8報道】Brentが$105/bbl超へ上昇(複数ソースで確認)。戦争保険料率の構造的記述はhormuz-20261005エントリへ移動済み。",
@@ -884,8 +1018,8 @@
         "https://www.pashizi.com/en/currency/usd",
         "https://www.jpost.com/middle-east/article-911068"
       ],
-      "termStructure": "WTIタームストラクチャはバックワーデーション継続(供給逼迫を反映)。自分の検索での確認値: 11月限$89.25/12月限$87.96/1月限$86.85(前3ヶ月スプレッド約$2.40)。cloude-30提示値(10月限$94.25/11月限$91.27/12月限$88.00、スプレッド$6-7)とは水準が異なるが、原油タームストラクチャーは日々変動するため参照日の違いによる自然な差と判断(2026-10-09、cloude-30確認)。以後は参照日・限月を必ず明記し、情報源はcmegroup.comの受渡決済価格に統一する。",
-      "termStructureSpread": 2.4,
+      "termStructure": "【統一定義で再調査・2026-10-10訂正】タームストラクチャーの定義をWTI M1-M2(期近-次限月)に統一。11月限$89.25-12月限$87.96のスプレッドは2.4ではなく正しくは1.29($89.25-$87.96)。以前の2.40は誤って1月限との差(M1-M3)で計算していた。以後M1-M2で統一する。",
+      "termStructureSpread": 1.29,
       "theme": "hormuz",
       "updatedAt": 1791489000000,
       "id": "hormuz-20261009"
@@ -896,15 +1030,15 @@
       "contextNote": "2026-10-10(土)。UKMTO/ニュース検索では本日付の新規タンカー攻撃報告は確認できず(直近の確認済み事案は10/6のMT On Peace、オマーン・リマ沖で12名負傷)。【cloude-30方針・2026-10-10確認】attackCount=nullとした根拠: 現在(10月)はUSNI(10/9付)が「ほぼ毎日攻撃」と報じる活発期のため、個別報道が見つからないこと=「本当に無かった」よりも「拾いきれていない」可能性が高いと判断しnullを採用(0とはしない)。この基準(活発期=null、平穏期=0)は以後の日次cronでも継続適用。土曜のため市場休場・新規ニュースサイクルも平日より薄い点に留意。",
       "createdAt": 1791586124000,
       "date": "2026-10-10",
-      "floatingStorage": 10,
-      "floatingStorageNote": "【cloude-30方針・2026-10-10追記】本日確認、前回値(10百万バレル、マレーシアEOPL錨地、hormuz-20261009)から変化なし。洋上在庫量も数ヶ月単位でほぼ不変の指標のため、値が同じであっても「確認済み・変化なし」として本日日付で記録。",
+      "floatingStorage": null,
+      "floatingStorageNote": "【統一定義で再調査・2026-10-10訂正】前回値もマレーシアEOPL錨地周辺でイラン全体ではなかったため、このフィールドはnullとする(参考値のみ)。",
       "granularity": "daily",
       "insuranceOrFreightNote": "【cloude-30方針・2026-10-10追記】本日確認、前回値(5%、hormuz-20261009)から変化なし。戦争保険料率は数ヶ月単位でほぼ不変の指標のため、値が同じであっても「確認済み・変化なし」として本日日付で記録(パネルの横ばいトレンド判定に必要な2点目を確実に確認するため)。",
       "insuranceOrFreightNoteDateRef": "2026-10-09",
       "insuranceRate": 5,
       "iranRialRate": 2667000,
       "iranRialRateNote": "bonbast.comよる($1=266,700トーマン=2,667,000リアル)。テーブル自体の表記は「last update: October 09」だった(イランの週末は金・土のため木曜は通常営業日だが、ページ自体の更新タイバラズの可能性あり、未検証)。前回値(10/9記録時点の2,659,000)から僅かに減価(+8,000リアル/USD)。",
-      "iranRialRateNote2": "【planning-lead調査、2026-10-10追記】alanchand.comでは同日2,689,000との報告あり(こちらはbonbast.com由楥2,667,000を採用中)。サイト間で数千リアル程度の差が常怠的にある模様、断定せず両論併記。",
+      "iranRialRateNote2": "【planning-lead調査、2026-10-10追記】alanchand.comでは同日2,689,000との報告あり(こちらはbonbast.com由来2,667,000を採用中)。サイト間で数千リアル程度の差が常態的にある模様、断定せず両論併記。",
       "mediatorTone": "カタール・オマーン・パキスタンによる仲介ルートは活動継続中との既存報道のまま、本日時点で新規の目立った進展・後退は確認できず。",
       "sourceUrls": [
         "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
@@ -912,7 +1046,7 @@
         "https://www.breitbart.com/middle-east/2026/10/07/oman-rescues-mostly-indian-crew-from-tanker-attacked-in-strait-of-hormuz/",
         "https://oilprice.com/futures/wti"
       ],
-      "termStructure": "cmegroup関連ソース(10/9金曜取引、土曜は休場のため直近値)によるとWTI 11月限(CLX26)$90.91、12月限(CLZ26)$89.94(隣接月スプレッド)。前回(10/9記録時点)の「11月限$89.25/12月限$87.96/1月限$86.85」とは参照時点・限月ペアが異なる(前回はNov-Jan、今回はNov-Dec隣接月)。カーブ全体が小幅に上方シフト。",
+      "termStructure": "cmegroup関連ソース(10/9金曜取引、土曜は休場のため直近値)によるとWTI 11月限(CLX26)$90.91、12月限(CLZ26)$89.94(M1-M2スプレッド)。【統一定義で再調査・2026-10-10訂正】前回(10/9記録)も同じM1-M2定義に統一されたため、限月ペアの違いによる見かけ上の差ではなくなった。",
       "termStructureSpread": 0.97,
       "theme": "hormuz",
       "updatedAt": 1791586124000,
