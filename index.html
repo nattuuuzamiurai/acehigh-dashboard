@@ -1283,6 +1283,8 @@
         <span style="font-size:.78em;color:var(--mut);">直近の記録が前回と比べて改善/悪化どちらに連続しているかを機械的に判定(文章の印象ではなく数値の連続性で判定)</span>
       </div>
       <div id="urg-readiness"></div>
+      <div style="font-size:.78em;color:var(--mut);margin-top:10px;">反転指数の推移(5指標中いくつが改善方向にあるか、0〜5)。破線は「2」=反転テーゼの検討ライン。最初期は指標がまだ揃っていないため低く出る点に注意</div>
+      <div id="urg-index-chart" class="mt12"></div>
 
       <div class="sh mt28">
         <h2>シグナル推移</h2>
@@ -2628,6 +2630,7 @@ async function renderUragazuke() {
       : '<div class="proj-empty">まだ記録がありません。</div>';
     urgLastSignalsLog = d.signalsLog || [];
     renderUrgReadiness(urgLastSignalsLog);
+    renderUrgIndexChart(urgLastSignalsLog);
     renderUrgMetrics(urgLastSignalsLog);
     renderUrgQualLog(urgLastSignalsLog);
   } catch (e) {
@@ -2636,6 +2639,7 @@ async function renderUragazuke() {
     thesesEl.innerHTML = '';
     entriesEl.innerHTML = '';
     document.getElementById('urg-readiness').innerHTML = '';
+    document.getElementById('urg-index-chart').innerHTML = '';
     document.getElementById('urg-metric-grid').innerHTML = '';
     document.getElementById('urg-qual-log').innerHTML = '';
   }
@@ -2691,6 +2695,139 @@ function renderUrgReadiness(signalsLog) {
     '<div class="urg-readiness-grid">' + items + '</div>' +
     (trackable < URG_ESCALATION_METRICS.length ? '<div style="font-size:.76em;color:var(--mut);margin-top:8px;">※データが2点未満の指標は「データ不足」と表示(判定不能)。連続回数は日次データが積み上がるほど実際の日数に近づく(現状は記録の間隔が不揃いなため、必ずしも暦日の連続とは限らない)。</div>' : '');
 }
+// 「5指標中いくつが現在改善方向にあるか」(0〜5)を時系列にした合成指数。
+// 各指標が新しい値を得た時点ごとに、その指標の方向(前回値との比較)だけを
+// 更新し、他の指標は直前までの方向を維持する(forward-fill)。どれか1つでも
+// 更新があった日のその時点の合計を1点として記録する。
+function urgComputeCompositeSeries(signalsLog) {
+  const sorted = signalsLog.slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+  const state = URG_ESCALATION_METRICS.map(() => ({ lastValue: null, direction: null }));
+  const byDate = new Map();
+  sorted.forEach(rec => {
+    let updated = false;
+    URG_ESCALATION_METRICS.forEach((metric, i) => {
+      const v = urgMetricValue(rec, metric);
+      if (v == null) return;
+      updated = true;
+      const s = state[i];
+      // urgStreak(反転条件の進捗パネル)と基準を合わせる: 前回と同値(変化なし)の場合は
+      // 「連続改善/悪化」をリセットし、改善中として数え続けない(横ばい確認を改善と誤認しない)。
+      if (s.lastValue != null) s.direction = (v === s.lastValue) ? null : (v < s.lastValue ? 'improving' : 'worsening');
+      s.lastValue = v;
+    });
+    if (updated) byDate.set(rec.date, state.filter(s => s.direction === 'improving').length);
+  });
+  return Array.from(byDate.entries()).map(([date, value]) => ({ date, value })).sort((a, b) => a.date.localeCompare(b.date));
+}
+let urgIndexChartInstance = null;
+function renderUrgIndexChart(signalsLog) {
+  const el = document.getElementById('urg-index-chart');
+  if (urgIndexChartInstance) { urgIndexChartInstance.destroy(); urgIndexChartInstance = null; }
+  const raw = urgComputeCompositeSeries(signalsLog);
+  const points = urgAggregate(raw, { type: 'line' }, urgGranularity);
+  if (points.length < 2) {
+    el.innerHTML = '<div class="proj-empty">まだ推移を描けるほどデータがありません。</div>';
+    return;
+  }
+  const PX = 36;
+  const xPos = urgXPositions(points);
+  const innerWidth = Math.max((xPos[xPos.length - 1].x + 1) * PX, 200);
+  el.innerHTML = '<div class="urg-metric-scroll-box">' +
+    '<div class="urg-metric-canvas-wrap" style="height:168px"><div class="urg-metric-canvas-inner" style="width:' + innerWidth + 'px;height:150px"><canvas id="urg-index-canvas"></canvas></div></div>' +
+    '<button type="button" class="urg-scroll-btn left" data-dir="-1" aria-label="過去へスクロール">‹</button>' +
+    '<button type="button" class="urg-scroll-btn right" data-dir="1" aria-label="最新へスクロール">›</button>' +
+    '</div>';
+  const canvas = document.getElementById('urg-index-canvas');
+  const scrollParent = canvas.closest('.urg-metric-canvas-wrap');
+  const accent = getComputedStyle(document.documentElement).getPropertyValue('--acc').trim();
+  const ink = getComputedStyle(document.documentElement).getPropertyValue('--txt').trim();
+  const muted = getComputedStyle(document.documentElement).getPropertyValue('--mut').trim();
+  const border = getComputedStyle(document.documentElement).getPropertyValue('--bor').trim();
+  const red = getComputedStyle(document.documentElement).getPropertyValue('--red').trim();
+  const dateFmt = (ds) => { const dt = new Date(ds + 'T00:00:00Z'); return (dt.getUTCMonth() + 1) + '/' + dt.getUTCDate(); };
+  const dateForX = (x) => { let best = xPos[0]; for (const e of xPos) if (Math.abs(e.x - x) < Math.abs(best.x - x)) best = e; return best.date; };
+  const thresholdLinePlugin = {
+    id: 'urgThresholdLine',
+    afterDatasetsDraw(c) {
+      const yScale = c.scales.y;
+      const y = yScale.getPixelForValue(2);
+      const { ctx, chartArea } = c;
+      ctx.save();
+      ctx.strokeStyle = red;
+      ctx.setLineDash([4, 4]);
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(chartArea.left, y);
+      ctx.lineTo(chartArea.right, y);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = red;
+      ctx.font = '700 10px -apple-system, "Hiragino Sans", sans-serif';
+      ctx.textAlign = 'left';
+      ctx.fillText('反転検討ライン', chartArea.left + 4, y - 4);
+      ctx.restore();
+    }
+  };
+  const valueLabelPlugin = {
+    id: 'urgIndexValueLabel',
+    afterDatasetsDraw(c) {
+      const meta = c.getDatasetMeta(0);
+      const { ctx } = c;
+      ctx.save();
+      ctx.fillStyle = ink;
+      ctx.font = '700 10px -apple-system, "Hiragino Sans", sans-serif';
+      ctx.textAlign = 'center';
+      meta.data.forEach((el2, i) => {
+        const pos = el2.tooltipPosition ? el2.tooltipPosition() : el2;
+        ctx.fillText(urgFmtNum(points[i].value), pos.x, pos.y - 8);
+      });
+      ctx.restore();
+    }
+  };
+  urgIndexChartInstance = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: {
+      datasets: [{
+        data: points.map((p, i) => ({ x: xPos[i].x, y: p.value })),
+        borderColor: urgHexToRgba(accent, 0.55),
+        borderDash: [5, 4],
+        borderWidth: 2,
+        pointRadius: 5,
+        pointHoverRadius: 6,
+        pointBackgroundColor: accent,
+        pointBorderColor: accent,
+        fill: false,
+        tension: 0,
+      }]
+    },
+    plugins: [thresholdLinePlugin, valueLabelPlugin],
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: { padding: { top: 18 } },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          mode: 'index', intersect: false,
+          callbacks: {
+            title: (items) => items.length ? dateForX(items[0].parsed.x) : '',
+            label: (ctx) => urgFmtNum(ctx.parsed.y) + ' / 5 指標が改善方向'
+          }
+        }
+      },
+      interaction: { mode: 'index', intersect: false },
+      scales: {
+        x: {
+          type: 'linear', grid: { display: false },
+          afterBuildTicks: (axis) => { axis.ticks = xPos.map(e => ({ value: e.x })); },
+          ticks: { color: ink, font: { size: 10, weight: '600' }, autoSkipPadding: 6, maxRotation: 0, callback: (val) => dateFmt(dateForX(val)) }
+        },
+        y: { min: 0, max: 5, ticks: { stepSize: 1, color: muted, font: { size: 10 } }, grid: { color: border } }
+      }
+    }
+  });
+  if (scrollParent) scrollParent.scrollLeft = scrollParent.scrollWidth;
+}
 const URG_METRICS = [
   { keys: ['weeklyAttackCount', 'attackCount', 'dailyAttackCount'], label: '週間攻撃件数', unit: '件', type: 'bar' },
   { keys: ['insuranceRate'], label: '戦争保険料率', unit: '%', type: 'line' },
@@ -2744,14 +2881,17 @@ document.getElementById('urg-granularity').addEventListener('click', (ev) => {
   if (!btn) return;
   urgGranularity = btn.dataset.gran;
   document.querySelectorAll('.urg-gran-btn').forEach(b => b.classList.toggle('active', b === btn));
+  renderUrgIndexChart(urgLastSignalsLog);
   renderUrgMetrics(urgLastSignalsLog);
 });
-document.getElementById('urg-metric-grid').addEventListener('click', (ev) => {
+function urgScrollBtnHandler(ev) {
   const btn = ev.target.closest('.urg-scroll-btn');
   if (!btn) return;
   const wrap = btn.closest('.urg-metric-scroll-box').querySelector('.urg-metric-canvas-wrap');
   wrap.scrollBy({ left: Number(btn.dataset.dir) * wrap.clientWidth * 0.8, behavior: 'smooth' });
-});
+}
+document.getElementById('urg-metric-grid').addEventListener('click', urgScrollBtnHandler);
+document.getElementById('urg-index-chart').addEventListener('click', urgScrollBtnHandler);
 function urgFmtNum(n) {
   if (n == null || Number.isNaN(n)) return '—';
   if (Math.abs(n) >= 10000) return (n / 10000).toLocaleString('ja-JP', { maximumFractionDigits: 1 }) + '万';
