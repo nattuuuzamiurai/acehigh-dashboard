@@ -1283,7 +1283,7 @@
         <span style="font-size:.78em;color:var(--mut);">直近の記録が前回と比べて改善/悪化どちらに連続しているかを機械的に判定(文章の印象ではなく数値の連続性で判定)</span>
       </div>
       <div id="urg-readiness"></div>
-      <div style="font-size:.78em;color:var(--mut);margin-top:10px;">反転指数の推移(5指標中いくつが改善方向にあるか、0〜5)。破線は「2」=反転テーゼの検討ライン。最初期は指標がまだ揃っていないため低く出る点に注意</div>
+      <div style="font-size:.78em;color:var(--mut);margin-top:10px;">反転指数の推移(5指標中いくつが「沈静化方向で2回連続確認」されたか、0〜5)。<strong>高いほど沈静化が優勢=原油高シナリオの後退を示唆</strong>(数字が大きい=悪化ではない)。破線は「2」=反転テーゼの検討ライン。前回更新から21日を超えて更新のない指標は「データなし」として数えない。市場価格より先に動く指数ではなく、既存テーゼが崩れていないかを事後確認するための遅行指標。最初期は指標がまだ揃っていないため低く出る点に注意</div>
       <div id="urg-index-chart" class="mt12"></div>
 
       <div class="sh mt28">
@@ -2655,6 +2655,15 @@ const URG_ESCALATION_METRICS = [
   { keys: ['aisDarkCount'], label: 'AIS非表示船数' },
   { keys: ['termStructureSpread'], label: '原油先物スプレッド' },
 ];
+// 指標の最終更新からこの日数を超えたら「データなし」として扱う。更新が止まった指標の
+// 古い方向判定を凍結したまま合成指数に使い続けることを防ぐためのガード。
+const URG_STALE_DAYS = 21;
+function urgDateDiffDays(dateA, dateB) {
+  const a = new Date(dateA + 'T00:00:00Z').getTime();
+  const b = new Date(dateB + 'T00:00:00Z').getTime();
+  if (Number.isNaN(a) || Number.isNaN(b)) return Infinity;
+  return Math.round((b - a) / 86400000);
+}
 function urgStreak(points) {
   if (points.length < 2) return { direction: null, length: 0 };
   let dir = null, length = 0;
@@ -2675,14 +2684,18 @@ function renderUrgReadiness(signalsLog) {
     return;
   }
   const sorted = signalsLog.slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+  const asOfDate = sorted[sorted.length - 1].date;
   const results = URG_ESCALATION_METRICS.map(metric => {
     const points = sorted.map(rec => ({ date: rec.date, value: urgMetricValue(rec, metric) })).filter(p => p.value != null);
-    return { metric, streak: urgStreak(points), hasData: points.length >= 2 };
+    const lastDate = points.length ? points[points.length - 1].date : null;
+    const staleDays = lastDate ? urgDateDiffDays(lastDate, asOfDate) : Infinity;
+    return { metric, streak: urgStreak(points), hasData: points.length >= 2, stale: staleDays > URG_STALE_DAYS, staleDays };
   });
-  const improvingCount = results.filter(r => r.streak.direction === 'improving').length;
-  const trackable = results.filter(r => r.hasData).length;
-  const items = results.map(({ metric, streak, hasData }) => {
+  const improvingCount = results.filter(r => r.streak.direction === 'improving' && !r.stale).length;
+  const trackable = results.filter(r => r.hasData && !r.stale).length;
+  const items = results.map(({ metric, streak, hasData, stale, staleDays }) => {
     if (!hasData) return '<div class="urg-readiness-item"><span class="urg-readiness-label">' + metric.label + '</span><span class="urg-readiness-badge flat">データ不足</span></div>';
+    if (stale) return '<div class="urg-readiness-item"><span class="urg-readiness-label">' + metric.label + '</span><span class="urg-readiness-badge flat">データなし(前回更新から' + staleDays + '日)</span></div>';
     const cls = streak.direction === 'improving' ? 'improving' : streak.direction === 'worsening' ? 'worsening' : 'flat';
     const txt = streak.direction === 'improving' ? (streak.length + '回連続で改善')
       : streak.direction === 'worsening' ? (streak.length + '回連続で悪化')
@@ -2693,15 +2706,22 @@ function renderUrgReadiness(signalsLog) {
     '<div class="urg-readiness-head"><span class="urg-readiness-count">' + improvingCount + ' / ' + URG_ESCALATION_METRICS.length + '</span>' +
     '<span style="font-size:.85em;color:var(--mut);">指標が「直近、前回より改善方向」(反転テーゼの新規オープン目安は2つ以上×1〜2週間持続)</span></div>' +
     '<div class="urg-readiness-grid">' + items + '</div>' +
-    (trackable < URG_ESCALATION_METRICS.length ? '<div style="font-size:.76em;color:var(--mut);margin-top:8px;">※データが2点未満の指標は「データ不足」と表示(判定不能)。連続回数は日次データが積み上がるほど実際の日数に近づく(現状は記録の間隔が不揃いなため、必ずしも暦日の連続とは限らない)。</div>' : '');
+    (trackable < URG_ESCALATION_METRICS.length ? '<div style="font-size:.76em;color:var(--mut);margin-top:8px;">※データが2点未満、または前回更新から' + URG_STALE_DAYS + '日を超えて更新が無い指標は判定不能として扱う(古いデータを凍結したまま使わない)。連続回数は日次データが積み上がるほど実際の日数に近づく(現状は記録の間隔が不揃いなため、必ずしも暦日の連続とは限らない)。</div>' : '');
 }
-// 「5指標中いくつが現在改善方向にあるか」(0〜5)を時系列にした合成指数。
-// 各指標が新しい値を得た時点ごとに、その指標の方向(前回値との比較)だけを
-// 更新し、他の指標は直前までの方向を維持する(forward-fill)。どれか1つでも
-// 更新があった日のその時点の合計を1点として記録する。
+// 「5指標中いくつが、沈静化方向で2回連続確認されているか」(0〜5)を時系列にした合成指数。
+// 高いほど沈静化(原油高シナリオの後退)が優勢、低いほど悪化継続。悪化の度合いではない。
+// ニュース速報や市場価格より構造的に遅行する指標であり(確定した統計しか拾えないため)、
+// 新しいテーゼを市場より先に開くための指数ではなく、既存テーゼがまだ崩れていないかを
+// 確認するための指数として使う。
+//
+// 単発のブレで方向を確定させない: 新しい値が前回と逆方向でも1回だけでは確定扱いにせず
+// pendingDirに保留し、同方向が2回連続して初めてconfirmedDirとして採用する(ノイズで
+// 頻繁に反転判定が入れ替わることを防ぐ)。また、ある指標がURG_STALE_DAYS日を超えて
+// 更新されていない場合は、古いconfirmedDirを凍結したまま使い続けず「データなし」として
+// 合成カウントから除外する。
 function urgComputeCompositeSeries(signalsLog) {
   const sorted = signalsLog.slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
-  const state = URG_ESCALATION_METRICS.map(() => ({ lastValue: null, direction: null }));
+  const state = URG_ESCALATION_METRICS.map(() => ({ lastValue: null, lastDate: null, pendingDir: null, confirmedDir: null }));
   const byDate = new Map();
   sorted.forEach(rec => {
     let updated = false;
@@ -2710,12 +2730,22 @@ function urgComputeCompositeSeries(signalsLog) {
       if (v == null) return;
       updated = true;
       const s = state[i];
-      // urgStreak(反転条件の進捗パネル)と基準を合わせる: 前回と同値(変化なし)の場合は
-      // 「連続改善/悪化」をリセットし、改善中として数え続けない(横ばい確認を改善と誤認しない)。
-      if (s.lastValue != null) s.direction = (v === s.lastValue) ? null : (v < s.lastValue ? 'improving' : 'worsening');
+      if (s.lastValue != null) {
+        if (v === s.lastValue) {
+          s.pendingDir = null; s.confirmedDir = null;
+        } else {
+          const rawDir = v < s.lastValue ? 'improving' : 'worsening';
+          if (rawDir === s.pendingDir) s.confirmedDir = rawDir;
+          else { s.pendingDir = rawDir; s.confirmedDir = null; }
+        }
+      }
       s.lastValue = v;
+      s.lastDate = rec.date;
     });
-    if (updated) byDate.set(rec.date, state.filter(s => s.direction === 'improving').length);
+    if (updated) {
+      const count = state.filter(s => s.confirmedDir === 'improving' && s.lastDate && urgDateDiffDays(s.lastDate, rec.date) <= URG_STALE_DAYS).length;
+      byDate.set(rec.date, count);
+    }
   });
   return Array.from(byDate.entries()).map(([date, value]) => ({ date, value })).sort((a, b) => a.date.localeCompare(b.date));
 }
@@ -2811,7 +2841,7 @@ function renderUrgIndexChart(signalsLog) {
           mode: 'index', intersect: false,
           callbacks: {
             title: (items) => items.length ? dateForX(items[0].parsed.x) : '',
-            label: (ctx) => urgFmtNum(ctx.parsed.y) + ' / 5 指標が改善方向'
+            label: (ctx) => urgFmtNum(ctx.parsed.y) + ' / 5 指標が沈静化方向で確定(高いほど原油高シナリオの後退)'
           }
         }
       },
