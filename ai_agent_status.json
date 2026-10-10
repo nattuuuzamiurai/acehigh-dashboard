@@ -26,9 +26,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "4指標の過去分を調査",
-      "startedAt": "2026-10-10T06:32:23.393Z",
-      "finishedAt": "2026-10-10T06:32:23.703Z"
+      "task": "洋上在庫とスプレッドを統一定義で再調査",
+      "startedAt": "2026-10-10T07:14:50.086Z",
+      "finishedAt": "2026-10-10T07:14:50.491Z"
     },
     "marketing-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-09T14:57:55.076Z"
     }
   },
-  "updatedAt": "2026-10-10T07:11:27.278Z",
+  "updatedAt": "2026-10-10T07:14:58.620Z",
   "usage": {
-    "todayInputTokens": 5518,
-    "todayOutputTokens": 1566994,
-    "asOf": "2026-10-10T07:11:27.278Z"
+    "todayInputTokens": 5700,
+    "todayOutputTokens": 1581747,
+    "asOf": "2026-10-10T07:14:58.620Z"
   }
 }
