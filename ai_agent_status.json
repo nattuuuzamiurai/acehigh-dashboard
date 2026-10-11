@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "Polymarket新規上場戦略の自動実行システム構築",
-      "startedAt": "2026-10-11T07:26:07.530Z",
-      "finishedAt": "2026-10-11T07:26:07.967Z"
+      "task": "通知バッジが再び未読に戻る不具合を調査",
+      "startedAt": "2026-10-11T07:30:56.893Z",
+      "finishedAt": "2026-10-11T07:30:58.289Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-09T14:57:55.076Z"
     }
   },
-  "updatedAt": "2026-10-11T07:30:02.909Z",
+  "updatedAt": "2026-10-11T07:31:05.162Z",
   "usage": {
-    "todayInputTokens": 1278,
-    "todayOutputTokens": 515230,
-    "asOf": "2026-10-11T07:30:02.909Z"
+    "todayInputTokens": 1324,
+    "todayOutputTokens": 544027,
+    "asOf": "2026-10-11T07:31:05.162Z"
   }
 }
