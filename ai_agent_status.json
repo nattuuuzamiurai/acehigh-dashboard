@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "kondate-planner 在庫の期限トラッキング追加",
-      "startedAt": "2026-10-10T06:00:32.534Z",
-      "finishedAt": "2026-10-10T06:00:32.749Z"
+      "task": "Polymarket新規上場戦略の自動実行システム構築",
+      "startedAt": "2026-10-11T07:26:07.530Z",
+      "finishedAt": "2026-10-11T07:26:07.967Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-09T14:57:55.076Z"
     }
   },
-  "updatedAt": "2026-10-11T07:24:28.274Z",
+  "updatedAt": "2026-10-11T07:27:17.701Z",
   "usage": {
-    "todayInputTokens": 980,
-    "todayOutputTokens": 397791,
-    "asOf": "2026-10-11T07:24:28.274Z"
+    "todayInputTokens": 1170,
+    "todayOutputTokens": 476148,
+    "asOf": "2026-10-11T07:27:17.701Z"
   }
 }
