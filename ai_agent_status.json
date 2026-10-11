@@ -14,9 +14,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "AI実務ナビWeek13公開作業の最終QA",
-      "startedAt": "2026-10-09T01:21:22.778Z",
-      "finishedAt": "2026-10-09T01:26:01.668Z"
+      "task": "Polymarket自動取引botのコード・テスト検証",
+      "startedAt": "2026-10-11T08:13:27.251Z",
+      "finishedAt": "2026-10-11T08:13:27.659Z"
     },
     "review-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-09T14:57:55.076Z"
     }
   },
-  "updatedAt": "2026-10-11T07:45:27.826Z",
+  "updatedAt": "2026-10-11T08:13:37.233Z",
   "usage": {
-    "todayInputTokens": 1702,
-    "todayOutputTokens": 582528,
-    "asOf": "2026-10-11T07:45:27.826Z"
+    "todayInputTokens": 2390,
+    "todayOutputTokens": 621251,
+    "asOf": "2026-10-11T08:13:37.233Z"
   }
 }
