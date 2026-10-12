@@ -65,12 +65,18 @@
       "task": "Polymarket botのセキュリティ観点レビュー",
       "startedAt": "2026-10-12T09:07:16.619Z",
       "finishedAt": "2026-10-12T09:07:17.274Z"
+    },
+    "prediction-market-risk-manager": {
+      "status": "idle",
+      "task": "Polymarket botの資金管理観点レビュー",
+      "startedAt": "2026-10-12T09:07:47.640Z",
+      "finishedAt": "2026-10-12T09:07:48.131Z"
     }
   },
-  "updatedAt": "2026-10-12T09:07:38.686Z",
+  "updatedAt": "2026-10-12T09:11:54.345Z",
   "usage": {
-    "todayInputTokens": 2970,
-    "todayOutputTokens": 585173,
-    "asOf": "2026-10-12T09:07:38.686Z"
+    "todayInputTokens": 3106,
+    "todayOutputTokens": 602760,
+    "asOf": "2026-10-12T09:11:54.345Z"
   }
 }
