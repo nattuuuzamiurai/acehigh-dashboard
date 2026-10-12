@@ -14,9 +14,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "Polymarket bot フェーズ0+1のコード品質確認",
-      "startedAt": "2026-10-12T15:57:56.286Z",
-      "finishedAt": "2026-10-12T15:58:08.226Z"
+      "task": "PR#1の修正内容を品質管理部で再確認",
+      "startedAt": "2026-10-12T16:41:31.807Z",
+      "finishedAt": "2026-10-12T16:41:46.970Z"
     },
     "review-lead": {
       "status": "idle",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:54:43.549Z"
     }
   },
-  "updatedAt": "2026-10-12T16:33:35.534Z",
+  "updatedAt": "2026-10-12T16:41:53.542Z",
   "usage": {
-    "todayInputTokens": 1396,
-    "todayOutputTokens": 122949,
-    "asOf": "2026-10-12T16:33:35.534Z"
+    "todayInputTokens": 1538,
+    "todayOutputTokens": 133754,
+    "asOf": "2026-10-12T16:41:53.542Z"
   }
 }
