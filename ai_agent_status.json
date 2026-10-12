@@ -50,9 +50,9 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "価格ソース・遅延・日本サーバ調査",
-      "startedAt": "2026-10-12T08:57:38.233Z",
-      "finishedAt": "2026-10-12T08:57:47.227Z"
+      "task": "PolymarketのV1/V2アーキテクチャ不一致を緊急調査",
+      "startedAt": "2026-10-12T09:19:08.554Z",
+      "finishedAt": "2026-10-12T09:19:09.133Z"
     },
     "prediction-market-critic": {
       "status": "idle",
@@ -73,10 +73,10 @@
       "finishedAt": "2026-10-12T09:07:48.131Z"
     }
   },
-  "updatedAt": "2026-10-12T09:17:37.053Z",
+  "updatedAt": "2026-10-12T09:19:18.190Z",
   "usage": {
-    "todayInputTokens": 3232,
-    "todayOutputTokens": 628278,
-    "asOf": "2026-10-12T09:17:37.053Z"
+    "todayInputTokens": 3286,
+    "todayOutputTokens": 646367,
+    "asOf": "2026-10-12T09:19:18.190Z"
   }
 }
