@@ -74,15 +74,15 @@
     },
     "prediction-market-lead": {
       "status": "idle",
-      "task": "Polymarket bot改修の指示書作成",
-      "startedAt": "2026-10-12T09:24:04.279Z",
-      "finishedAt": "2026-10-12T09:24:04.905Z"
+      "task": "実験A〜Cの開発指示書作成",
+      "startedAt": "2026-10-12T09:26:36.671Z",
+      "finishedAt": "2026-10-12T09:26:37.611Z"
     }
   },
-  "updatedAt": "2026-10-12T09:24:11.489Z",
+  "updatedAt": "2026-10-12T09:26:52.619Z",
   "usage": {
-    "todayInputTokens": 3448,
-    "todayOutputTokens": 666555,
-    "asOf": "2026-10-12T09:24:11.489Z"
+    "todayInputTokens": 3524,
+    "todayOutputTokens": 675646,
+    "asOf": "2026-10-12T09:26:52.619Z"
   }
 }
