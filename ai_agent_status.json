@@ -62,9 +62,9 @@
     },
     "prediction-market-security": {
       "status": "idle",
-      "task": "指示書v2再レビュー: セキュリティ",
-      "startedAt": "2026-10-12T09:45:29.523Z",
-      "finishedAt": "2026-10-12T09:45:35.656Z"
+      "task": "改修指示書 第2版のセキュリティ再レビュー",
+      "startedAt": "2026-10-12T10:01:52.638Z",
+      "finishedAt": "2026-10-12T10:01:53.376Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:54:43.549Z"
     }
   },
-  "updatedAt": "2026-10-12T10:01:09.277Z",
+  "updatedAt": "2026-10-12T10:02:03.098Z",
   "usage": {
-    "todayInputTokens": 6556,
-    "todayOutputTokens": 952012,
-    "asOf": "2026-10-12T10:01:09.277Z"
+    "todayInputTokens": 6644,
+    "todayOutputTokens": 956430,
+    "asOf": "2026-10-12T10:02:03.098Z"
   }
 }
