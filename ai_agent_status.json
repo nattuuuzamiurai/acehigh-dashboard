@@ -59,12 +59,18 @@
       "task": "仮説の事前反証(レッドチーム)",
       "startedAt": "2026-10-12T08:57:46.514Z",
       "finishedAt": "2026-10-12T08:57:47.233Z"
+    },
+    "prediction-market-security": {
+      "status": "idle",
+      "task": "Polymarket botのセキュリティ観点レビュー",
+      "startedAt": "2026-10-12T09:07:16.619Z",
+      "finishedAt": "2026-10-12T09:07:17.274Z"
     }
   },
-  "updatedAt": "2026-10-12T09:07:01.160Z",
+  "updatedAt": "2026-10-12T09:07:38.686Z",
   "usage": {
-    "todayInputTokens": 2934,
-    "todayOutputTokens": 573695,
-    "asOf": "2026-10-12T09:07:01.160Z"
+    "todayInputTokens": 2970,
+    "todayOutputTokens": 585173,
+    "asOf": "2026-10-12T09:07:38.686Z"
   }
 }
