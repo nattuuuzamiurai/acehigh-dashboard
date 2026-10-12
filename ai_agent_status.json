@@ -62,15 +62,15 @@
     },
     "prediction-market-security": {
       "status": "idle",
-      "task": "第3.1版レビュー: セキュリティ",
-      "startedAt": "2026-10-12T10:31:53.711Z",
-      "finishedAt": "2026-10-12T10:32:02.176Z"
+      "task": "FOK/FAK注文方式への変更をセキュリティ観点で確認",
+      "startedAt": "2026-10-12T11:15:51.755Z",
+      "finishedAt": "2026-10-12T11:15:52.023Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "第3.1版レビュー: リスク管理",
-      "startedAt": "2026-10-12T10:31:57.187Z",
-      "finishedAt": "2026-10-12T10:32:02.190Z"
+      "task": "FOK/FAK注文方式への変更をリスク観点で確認",
+      "startedAt": "2026-10-12T11:15:31.400Z",
+      "finishedAt": "2026-10-12T11:15:31.978Z"
     },
     "prediction-market-lead": {
       "status": "idle",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:54:43.549Z"
     }
   },
-  "updatedAt": "2026-10-12T11:01:07.815Z",
+  "updatedAt": "2026-10-12T11:16:03.283Z",
   "usage": {
-    "todayInputTokens": 8658,
-    "todayOutputTokens": 1290674,
-    "asOf": "2026-10-12T11:01:07.815Z"
+    "todayInputTokens": 8866,
+    "todayOutputTokens": 1300986,
+    "asOf": "2026-10-12T11:16:03.283Z"
   }
 }
