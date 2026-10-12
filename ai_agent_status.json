@@ -71,12 +71,18 @@
       "task": "Polymarket botの資金管理観点レビュー",
       "startedAt": "2026-10-12T09:07:47.640Z",
       "finishedAt": "2026-10-12T09:07:48.131Z"
+    },
+    "prediction-market-lead": {
+      "status": "idle",
+      "task": "Polymarket bot改修の指示書作成",
+      "startedAt": "2026-10-12T09:24:04.279Z",
+      "finishedAt": "2026-10-12T09:24:04.905Z"
     }
   },
-  "updatedAt": "2026-10-12T09:19:18.190Z",
+  "updatedAt": "2026-10-12T09:24:11.489Z",
   "usage": {
-    "todayInputTokens": 3286,
-    "todayOutputTokens": 646367,
-    "asOf": "2026-10-12T09:19:18.190Z"
+    "todayInputTokens": 3448,
+    "todayOutputTokens": 666555,
+    "asOf": "2026-10-12T09:24:11.489Z"
   }
 }
