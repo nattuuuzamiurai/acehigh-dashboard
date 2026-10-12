@@ -56,33 +56,39 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "仮説の事前反証(レッドチーム)",
-      "startedAt": "2026-10-12T08:57:46.514Z",
-      "finishedAt": "2026-10-12T08:57:47.233Z"
+      "task": "指示書レビュー: 批判役",
+      "startedAt": "2026-10-12T09:31:57.233Z",
+      "finishedAt": "2026-10-12T09:32:11.326Z"
     },
     "prediction-market-security": {
       "status": "idle",
-      "task": "Polymarket botのセキュリティ観点レビュー",
-      "startedAt": "2026-10-12T09:07:16.619Z",
-      "finishedAt": "2026-10-12T09:07:17.274Z"
+      "task": "指示書レビュー: セキュリティ",
+      "startedAt": "2026-10-12T09:32:10.787Z",
+      "finishedAt": "2026-10-12T09:32:11.332Z"
     },
     "prediction-market-risk-manager": {
-      "status": "idle",
-      "task": "Polymarket botの資金管理観点レビュー",
-      "startedAt": "2026-10-12T09:07:47.640Z",
-      "finishedAt": "2026-10-12T09:07:48.131Z"
+      "status": "running",
+      "task": "指示書レビュー: リスク管理",
+      "startedAt": "2026-10-12T09:32:05.878Z",
+      "finishedAt": null
     },
     "prediction-market-lead": {
       "status": "idle",
       "task": "実験A〜Cの開発指示書作成",
       "startedAt": "2026-10-12T09:26:36.671Z",
       "finishedAt": "2026-10-12T09:26:37.611Z"
+    },
+    "prediction-market-quant": {
+      "status": "idle",
+      "task": "指示書レビュー: 定量分析",
+      "startedAt": "2026-10-12T09:32:01.622Z",
+      "finishedAt": "2026-10-12T09:32:11.328Z"
     }
   },
-  "updatedAt": "2026-10-12T09:28:44.369Z",
+  "updatedAt": "2026-10-12T09:32:22.919Z",
   "usage": {
-    "todayInputTokens": 3556,
-    "todayOutputTokens": 697775,
-    "asOf": "2026-10-12T09:28:44.369Z"
+    "todayInputTokens": 3862,
+    "todayOutputTokens": 737838,
+    "asOf": "2026-10-12T09:32:22.919Z"
   }
 }
