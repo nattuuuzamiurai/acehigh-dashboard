@@ -56,21 +56,21 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "指示書レビュー: 批判役",
-      "startedAt": "2026-10-12T09:31:57.233Z",
-      "finishedAt": "2026-10-12T09:32:11.326Z"
+      "task": "指示書v2再レビュー: 批判役",
+      "startedAt": "2026-10-12T09:45:34.959Z",
+      "finishedAt": "2026-10-12T09:45:35.650Z"
     },
     "prediction-market-security": {
       "status": "idle",
-      "task": "指示書レビュー: セキュリティ",
-      "startedAt": "2026-10-12T09:32:10.787Z",
-      "finishedAt": "2026-10-12T09:32:11.332Z"
+      "task": "指示書v2再レビュー: セキュリティ",
+      "startedAt": "2026-10-12T09:45:29.523Z",
+      "finishedAt": "2026-10-12T09:45:35.656Z"
     },
     "prediction-market-risk-manager": {
-      "status": "running",
-      "task": "指示書レビュー: リスク管理",
-      "startedAt": "2026-10-12T09:32:05.878Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "指示書v2再レビュー: リスク管理",
+      "startedAt": "2026-10-12T09:45:32.200Z",
+      "finishedAt": "2026-10-12T09:45:35.649Z"
     },
     "prediction-market-lead": {
       "status": "idle",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:32:11.328Z"
     }
   },
-  "updatedAt": "2026-10-12T09:40:35.862Z",
+  "updatedAt": "2026-10-12T09:45:44.988Z",
   "usage": {
-    "todayInputTokens": 4834,
-    "todayOutputTokens": 772217,
-    "asOf": "2026-10-12T09:40:35.862Z"
+    "todayInputTokens": 4992,
+    "todayOutputTokens": 809531,
+    "asOf": "2026-10-12T09:45:44.988Z"
   }
 }
