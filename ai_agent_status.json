@@ -14,9 +14,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#1の修正内容を品質管理部で再確認",
-      "startedAt": "2026-10-12T16:41:31.807Z",
-      "finishedAt": "2026-10-12T16:41:46.970Z"
+      "task": "PR#2(フェーズ2 P0-1/P0-9)の品質確認",
+      "startedAt": "2026-10-12T17:33:46.183Z",
+      "finishedAt": "2026-10-12T17:33:46.233Z"
     },
     "review-lead": {
       "status": "idle",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:54:43.549Z"
     }
   },
-  "updatedAt": "2026-10-12T17:11:39.525Z",
+  "updatedAt": "2026-10-12T17:33:54.649Z",
   "usage": {
-    "todayInputTokens": 2218,
-    "todayOutputTokens": 169655,
-    "asOf": "2026-10-12T17:11:39.525Z"
+    "todayInputTokens": 2516,
+    "todayOutputTokens": 198193,
+    "asOf": "2026-10-12T17:33:54.649Z"
   }
 }
