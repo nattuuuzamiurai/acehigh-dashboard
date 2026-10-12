@@ -47,12 +47,24 @@
       "task": "Hormuz backfill research 8/7-9/27",
       "startedAt": "2026-10-09T14:57:54.528Z",
       "finishedAt": "2026-10-09T14:57:55.076Z"
+    },
+    "prediction-market-researcher": {
+      "status": "idle",
+      "task": "価格ソース・遅延・日本サーバ調査",
+      "startedAt": "2026-10-12T08:57:38.233Z",
+      "finishedAt": "2026-10-12T08:57:47.227Z"
+    },
+    "prediction-market-critic": {
+      "status": "idle",
+      "task": "仮説の事前反証(レッドチーム)",
+      "startedAt": "2026-10-12T08:57:46.514Z",
+      "finishedAt": "2026-10-12T08:57:47.233Z"
     }
   },
-  "updatedAt": "2026-10-12T08:54:59.614Z",
+  "updatedAt": "2026-10-12T08:57:53.370Z",
   "usage": {
-    "todayInputTokens": 2250,
-    "todayOutputTokens": 512526,
-    "asOf": "2026-10-12T08:54:59.614Z"
+    "todayInputTokens": 2280,
+    "todayOutputTokens": 525744,
+    "asOf": "2026-10-12T08:57:53.370Z"
   }
 }
