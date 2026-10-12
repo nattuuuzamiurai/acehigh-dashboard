@@ -4,6 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>エースハイ ダッシュボード</title>
+  <script>
+  // ===== [診断用・一時的] localStorage操作トレース =====
+  // 通知ベル既読状態(notifications_last_seen_ts)が時間経過で未読に戻る不具合の
+  // 原因調査用。どこから・いつ書き換え/削除されたかをコンソールに記録する。
+  // 本番投入はしない(別ブランチのドラフトPRでのみ利用)。
+  (function () {
+    try {
+      var TRACK_KEYS = ['notifications_last_seen_ts', 'dash_auth_until'];
+      var origSetItem = Storage.prototype.setItem;
+      var origRemoveItem = Storage.prototype.removeItem;
+      var origClear = Storage.prototype.clear;
+
+      Storage.prototype.setItem = function (key, value) {
+        if (this === localStorage && TRACK_KEYS.indexOf(key) !== -1) {
+          console.log('[ls-debug] setItem', key, '=', value, '\n' + new Error().stack);
+        }
+        return origSetItem.apply(this, arguments);
+      };
+      Storage.prototype.removeItem = function (key) {
+        if (this === localStorage && TRACK_KEYS.indexOf(key) !== -1) {
+          console.log('[ls-debug] removeItem', key, '\n' + new Error().stack);
+        }
+        return origRemoveItem.apply(this, arguments);
+      };
+      Storage.prototype.clear = function () {
+        if (this === localStorage) {
+          console.log('[ls-debug] localStorage.clear() が呼ばれた\n' + new Error().stack);
+        }
+        return origClear.apply(this, arguments);
+      };
+
+      // ページ読み込み時点の値を記録(他タブ・別訪問との比較用)
+      TRACK_KEYS.forEach(function (k) {
+        console.log('[ls-debug] on load,', k, '=', localStorage.getItem(k));
+      });
+
+      // 他タブ/他ウィンドウ(同一オリジンの別ページ含む)からの変更はstorageイベントで検知できる
+      // (同一タブ内の変更ではstorageイベントは発火しない点に注意)
+      window.addEventListener('storage', function (e) {
+        if (TRACK_KEYS.indexOf(e.key) !== -1) {
+          console.log('[ls-debug] storage event(別タブ/別ウィンドウ経由の変更)', {
+            key: e.key, oldValue: e.oldValue, newValue: e.newValue, url: e.url, storageAreaIsLocal: e.storageArea === localStorage
+          });
+        }
+      });
+
+      // ページを離れる/隠す直前の値も記録(落ちる前の最終値の確認用)
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') {
+          TRACK_KEYS.forEach(function (k) {
+            console.log('[ls-debug] on hidden,', k, '=', localStorage.getItem(k));
+          });
+        }
+      });
+    } catch (e) {
+      console.warn('[ls-debug] wrap failed', e);
+    }
+  })();
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
