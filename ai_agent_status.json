@@ -20,9 +20,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Polymarket bot PR#1 最終GO/NO-GO判定",
-      "startedAt": "2026-10-12T16:59:22.697Z",
-      "finishedAt": "2026-10-12T16:59:23.334Z"
+      "task": "PR#2最終GO/NO-GO判定",
+      "startedAt": "2026-10-12T23:21:06.107Z",
+      "finishedAt": "2026-10-12T23:21:06.626Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:54:43.549Z"
     }
   },
-  "updatedAt": "2026-10-12T23:20:22.370Z",
+  "updatedAt": "2026-10-12T23:21:11.240Z",
   "usage": {
-    "todayInputTokens": 3854,
-    "todayOutputTokens": 370771,
-    "asOf": "2026-10-12T23:20:22.370Z"
+    "todayInputTokens": 3866,
+    "todayOutputTokens": 376793,
+    "asOf": "2026-10-12T23:21:11.240Z"
   }
 }
