@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "フェーズ2残件の実装(P0-2/P0-3/P0-5/P0-6/P0-8/6-3)",
-      "startedAt": "2026-10-13T00:50:35.864Z",
-      "finishedAt": "2026-10-13T00:50:36.408Z"
+      "task": "フェーズ3: 暗号化キーストア・手動操作ツール実装",
+      "startedAt": "2026-10-13T03:21:56.679Z",
+      "finishedAt": "2026-10-13T03:21:57.077Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:54:43.549Z"
     }
   },
-  "updatedAt": "2026-10-13T03:18:17.296Z",
+  "updatedAt": "2026-10-13T03:22:02.488Z",
   "usage": {
-    "todayInputTokens": 5592,
-    "todayOutputTokens": 530205,
-    "asOf": "2026-10-13T03:18:17.296Z"
+    "todayInputTokens": 5604,
+    "todayOutputTokens": 536099,
+    "asOf": "2026-10-13T03:22:02.488Z"
   }
 }
