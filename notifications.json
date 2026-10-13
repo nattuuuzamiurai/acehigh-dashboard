@@ -9,5 +9,17 @@
       {"label": "ChainCatcher", "url": "https://www.chaincatcher.com/en/article/2290465"},
       {"label": "KuCoin News", "url": "https://www.kucoin.com/news/flash/flop-labs-testnet-token-to-support-real-fund-transactions-via-htlc-protocol"}
     ]
+  },
+  {
+    "id": "flop-20261013-1808",
+    "ts": "2026-10-13T18:08:15+09:00",
+    "title": "FLOPテストネット、「10月中」から「数週間後」に軌道修正",
+    "body": "Arthur Hayesが10/7のToken2049で表明した「テストネットは10月中にローンチ」に続き、10/11(Token2049後)にXで改めて「テストネットは数週間以内にローンチする」と発言。具体的な開始日は示されず、公式テストネットページもreadiness基準(達成条件)に紐づけており、基準を満たさない場合は延期の可能性があるとされる。一部報道ではテストネットトークンに金銭的価値はないとする記述もあり、9/17発表のHTLCによる実資金取引可能という既報と矛盾する情報が出ている点も要注意。",
+    "links": [
+      {"label": "KuCoin News", "url": "https://www.kucoin.com/news/flash/arthur-hayes-announces-flop-testnet-launch-imminent"},
+      {"label": "PANews", "url": "https://panews.io/articles/01a12d9d-481e-7745-8a56-e30cc7214e41"},
+      {"label": "TokenPost", "url": "https://www.tokenpost.com/news/technology/29947"},
+      {"label": "ChainCatcher", "url": "https://www.chaincatcher.com/en/article/2295529"}
+    ]
   }
 ]
