@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "Phase L 最終ゲート(レビュー部)",
-      "startedAt": "2026-10-13T08:43:33.226Z",
-      "finishedAt": "2026-10-13T08:43:33.496Z"
+      "task": "PR#5最終GO/NO-GO判定",
+      "startedAt": "2026-10-13T09:25:10.938Z",
+      "finishedAt": "2026-10-13T09:25:11.442Z"
     },
     "prediction-market-critic": {
       "status": "idle",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-13T08:38:36.737Z"
     }
   },
-  "updatedAt": "2026-10-13T09:24:30.425Z",
+  "updatedAt": "2026-10-13T09:25:16.059Z",
   "usage": {
-    "todayInputTokens": 16930,
-    "todayOutputTokens": 1079565,
-    "asOf": "2026-10-13T09:24:30.425Z"
+    "todayInputTokens": 16966,
+    "todayOutputTokens": 1085811,
+    "asOf": "2026-10-13T09:25:16.059Z"
   }
 }
