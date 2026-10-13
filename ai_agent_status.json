@@ -11,12 +11,18 @@
       "task": "",
       "startedAt": null,
       "finishedAt": "2026-10-13T04:36:40.058Z"
+    },
+    "review-lead": {
+      "status": "idle",
+      "task": "PR#4最終GO/NO-GO判定",
+      "startedAt": "2026-10-13T05:47:10.458Z",
+      "finishedAt": "2026-10-13T05:47:10.940Z"
     }
   },
-  "updatedAt": "2026-10-13T05:45:31.888Z",
+  "updatedAt": "2026-10-13T05:47:16.882Z",
   "usage": {
-    "todayInputTokens": 8178,
-    "todayOutputTokens": 681612,
-    "asOf": "2026-10-13T05:45:31.888Z"
+    "todayInputTokens": 8208,
+    "todayOutputTokens": 687678,
+    "asOf": "2026-10-13T05:47:16.882Z"
   }
 }
