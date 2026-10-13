@@ -2,27 +2,33 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "",
-      "startedAt": null,
-      "finishedAt": "2026-10-13T04:36:40.051Z"
+      "task": "第3.3版最終レビュー: セキュリティ",
+      "startedAt": "2026-10-13T07:07:16.530Z",
+      "finishedAt": "2026-10-13T07:07:24.669Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "",
-      "startedAt": null,
-      "finishedAt": "2026-10-13T04:36:40.058Z"
+      "task": "第3.3版最終レビュー: リスク管理",
+      "startedAt": "2026-10-13T07:07:19.893Z",
+      "finishedAt": "2026-10-13T07:07:24.670Z"
     },
     "review-lead": {
       "status": "idle",
       "task": "PR#4最終GO/NO-GO判定",
       "startedAt": "2026-10-13T05:47:10.458Z",
       "finishedAt": "2026-10-13T05:47:10.940Z"
+    },
+    "prediction-market-critic": {
+      "status": "idle",
+      "task": "第3.3版最終レビュー: 批判役",
+      "startedAt": "2026-10-13T07:07:23.943Z",
+      "finishedAt": "2026-10-13T07:07:24.676Z"
     }
   },
-  "updatedAt": "2026-10-13T05:54:27.644Z",
+  "updatedAt": "2026-10-13T07:07:30.786Z",
   "usage": {
-    "todayInputTokens": 8314,
-    "todayOutputTokens": 694542,
-    "asOf": "2026-10-13T05:54:27.644Z"
+    "todayInputTokens": 8370,
+    "todayOutputTokens": 705236,
+    "asOf": "2026-10-13T07:07:30.786Z"
   }
 }
