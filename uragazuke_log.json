@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13 07:35",
+  "updatedAt": "2026-10-14 07:20",
   "theses": [
     {
       "confidence": 2,
@@ -164,8 +164,32 @@
   ],
   "signalsLog": [
     {
-      "aisDarkCount": null,
-      "aisDarkCountNote": "88隻全体の内訳データは本日も未確認。活発期のためnullを維持。前提としていた「10/12-14付Windward.ai記事で確認可能」は2025年の出来事を誤って2026年の未到達日付として扱っていた誤解であり、hormuz-20261012で訂正済み。以後は特定の将来日付を前提にせず、毎回グリーンフィールドから最新のWindward.ai/UANI報告を探す。",
+      "aisDarkCount": 6,
+      "aisDarkCountNote": "【新系列・hormuz-20261012で確立】Windward.aiの日次ホルムズ通航船舶中の暗行隻数(全船籍対象)を単一ソース系列として採用。本日分の新版は未発見のため、直近値(10/12、6隻/14隻中)を繰り返し記録。",
+      "attackCount": null,
+      "contextNote": "2026-10-14(水)。本日付の個別タンカー攻撃報告は検索では未確認(検索ツール自体が本日分を十分にインデックスしていない可能性あり)。活発期(10月は「ほぼ毎日攻撃」USNI報道、直近10/11に単日6隻被弾のピーク)を踏まえ、鉄則2bに基づきattackCount=nullを採用(0とはしない)。",
+      "date": "2026-10-14",
+      "floatingStorage": 107,
+      "floatingStorageNote": "Vortexa最新値(8/26時点107百万バレル)を本日も検索したがこれより新しい値は未発見。鉄則3cに従い「確認済み、変化なし」として107を繰り返し記録。",
+      "granularity": "daily",
+      "insuranceOrFreightNote": "本日確認、前回値(5%)から変化なし。",
+      "insuranceRate": 5,
+      "iranRialRate": 2598000,
+      "iranRialRateNote": "bon-bast.comを本日も直接WebFetchしたが、表示は依然「last update: October 13, 2026 22:28 UTC」のまま(=2,598,000リアル)。新しい更新は未発見のため、前回値を「確認済み、変化なし」として繰り返し記録。",
+      "mediatorTone": "カタール・オマーン・パキスタンの仲介ルートは活動中との既存報道のまま、本日新規の進展・後退は未確認。",
+      "sourceUrls": [
+        "https://gcaptain.com/new-reports-reveal-five-more-ships-hit-near-hormuz",
+        "https://www.thenationalnews.com/news/gulf/2026/10/13/strait-of-hormuz-attacks-surge-as-iran-steps-up-campaign-against-us-backed-oil-shipping/",
+        "https://www.bon-bast.com/",
+        "https://en.fnnews.com/news/202610140452085589"
+      ],
+      "termStructure": "【新規】Brentが10/13正式決済$105.69(前日比-0.9%)、WTIが$94.14(+0.43%)と報道(fnnews等)。ただしCLX26/CLZ26の個別決済値は本日の検索で発見できず、M1-M2スプレッドの正確な再計算は保留。前回値(10/12、oilprice.com、$0.86)を参考値として繰り返し記録。",
+      "termStructureSpread": 0.86,
+      "theme": "hormuz"
+    },
+    {
+      "aisDarkCount": 6,
+      "aisDarkCountNote": "【新系列・2026-10-14追記】Windward.aiの最新版(hormuz-20261012参照、6隻/14隻中が暗行)を繰り返し記録(10/13付の新版は検索で発見できず)。",
       "attackCount": null,
       "contextNote": "2026-10-13(火)。本日付の個別タンカー攻撃報告は未確認(検索ツール自体がまだ本日分を十分にインデックスしていない可能性あり)。活発期(鉄則2b)に基づきattackCount=nullを採用(0とはしない)。",
       "date": "2026-10-13",
@@ -174,8 +198,8 @@
       "granularity": "daily",
       "insuranceOrFreightNote": "本日確認、前回値(5%)から変化なし。",
       "insuranceRate": 5,
-      "iranRialRate": 2620000,
-      "iranRialRateNote": "bon-bast.comを本日も直接WebFetchしたが、表示は依然「last update: October 12, 2026 22:28 UTC」のまま更新されておらず(イラン現地は既に10/13入り済みだがサイト自体の更新が追いついていない模様)。鉄則3bに従い前回値2,620,000を「確認済み、変化なし」として繰り返し記録。",
+      "iranRialRate": 2598000,
+      "iranRialRateNote": "【2026-10-14訂正】本日(10/14)再度bon-bast.comをWebFetchしたところ、「last update: October 13, 2026 22:28 UTC」という新しいタイムスタンプで$1=259,800トーマン(売り)=2,598,000リアルへ更新されていた。この値は鉄則1(発生日=記録日)に従い本来は10/13付として記録すべきものだったため、前回記録の繰越し値(2,620,000、前日以前のスナップショットを誤って繰越したもの)から2,598,000へ訂正する。リアルは10/12(2,620,000)からさらに強化。",
       "mediatorTone": "カタール・オマーン・パキスタンの仲介ルートは活動中との既存報道のまま、本日新規の進展・後退は未確認。",
       "sourceUrls": [
         "https://www.bon-bast.com/"
@@ -185,10 +209,10 @@
       "theme": "hormuz"
     },
     {
-      "aisDarkCount": null,
-      "aisDarkCountNote": "【訂正】以前「10/12-14付Windward.ai記事で確認可能になる」として未到達日付扱いしていた88隻中52隻発信というデータは、2025年(前年)の出来事であり2026年のこの日付とは無関係だと本日判明(検索で確認)。その「将来確認可能」という前提自体が誤りだったため撤回。2026年88隻全体の内訳データは引き続き未発見。活発期のためnullを維持。",
+      "aisDarkCount": 6,
+      "aisDarkCountNote": "【新系列採用、hormuz-20261011の注記参照】Windward.ai Oct12付レポート: 本日のホルムズ通航船舶は14隻(入ー8、出ー6)、うち6隻(43%)が暗行で通航(前日は3隻から増加)。暗行隻4隻は南方ルート経由との記述あり。定義: ホルムズ通航中の全船籍対象(88隻のNITC/イラン国旗艦隊のみではない)。",
       "attackCount": 1,
-      "contextNote": "2026-10-12(月)。UKMTOが「Monday(10/12)にプロダケトカーガー1隻被弾」を確認(艦名・損傷度・被害詳細未発表)。attackCount=1を確認済み最小値として記録(活発期のためさらに未確認の攻撃があった可能性あり)。IRGCの「過去2日間でスーパータンカー3隻打撃(うち1隻は未承認ルートでの触雷)」主張は10/11エントリと日別分解不可のため重複カウントを避けこちらには含めず。米CENTCOMによるパナマ籍貨船の無力化(イラン発港を出港、封鎖突空を試みたとされる)は米側の行動によるため、イラン発のタンカー攻撃件数には含めていない。",
+      "contextNote": "2026-10-12(月)。UKMTOが「Monday(10/12)にプロダクトタンカー1隻被弾」を確認(艦名・損傷度・被害詳細未発表)。attackCount=1を確認済み最小値として記録(活発期のためさらに未確認の攻撃があった可能性あり)。IRGCの「過去2日間でスーパータンカー3隻打撃(うち1隻は未承認ルートでの触雷)」主張は10/11エントリと日別分解不可のため重複カウントを避けこちらには含めず。米CENTCOMによるパナマ籍貨船の無力化(イラン発港を出港、封鎖突空を試みたとされる)は米側の行動によるため、イラン発のタンカー攻撃件数には含めていない。",
       "date": "2026-10-12",
       "floatingStorage": 107,
       "floatingStorageNote": "Vortexaの最新値(8/26時点107百万バレル)を繰り返し検索したがこれより新しい値は発見できず。鉄則3cに従い「本日確認、変化なし」として107を記録(参考: Kplerは9/7時点で別定義の「封鎖外の浮体原油約29百万バレル」を報告しているが、これはVortexa定義とは範囲が異なるため本体フィールドには混在させず)。",
@@ -203,17 +227,18 @@
         "https://oilprice.com/Latest-Energy-News/World-News/Two-More-Oil-Tankers-Attacked-Near-Strait-of-Hormuz.html",
         "https://www.bon-bast.com/",
         "https://oilprice.com/futures/wti",
-        "https://www.mitrade.com/insights/commodity-analysis/oil-news/brent-round-trip-hormuz-energy-ceasefire-20261012J1346"
+        "https://www.mitrade.com/insights/commodity-analysis/oil-news/brent-round-trip-hormuz-energy-ceasefire-20261012J1346",
+        "https://gcaptain.com/more-tankers-hit-in-hormuz-as-u-s-strikes-cargo-ship"
       ],
       "termStructure": "oilprice.comによる11月限(CLX26)$93.59、12月限(CLZ26)$92.73(M1-M2)。ただし同日の日中価格はBrentが$103(-1.5%)という報道と$107(+2.2%)という報道が同日内で両方存在し矛盾(セッション時間帯・報道ソースの違いか)。本タームストラクチャーはoilprice.com値を採用したが日内ブレ幅が大きかった日として保留しておく。",
       "termStructureSpread": 0.86,
       "theme": "hormuz"
     },
     {
-      "aisDarkCount": null,
-      "aisDarkCountNote": "88隻全体の内訳データは本日も未確認。活発期のためnull維持(0とはしない)。次の確認可能ポイント(10/12-14付Windward.ai)はまだ到達していない。",
-      "attackCount": 2,
-      "contextNote": "2026-10-11(日)。【2026-10-13追記、訂正】後日の誤報道を確認: CNN(10/11付)等が10/8出港のイラキ原油積載Suezmaxが不明発射物により被弾・出火(船員2名行方不明)、別のプロダクトタンカーがドローンにより被弾されたと報道(UKMTOも被弾を確認)。この2件を根拠に前回記録のnullからattackCount=2へ訂正(確認済み最小値)。別途、IRGCは「過去2日間でスーパータンカー3隻を打撃」と主張(10/11-12分を合算した可能性あり、日別分解不可)。活発期(鉄則2b)を踏まえ、上記2件を下限とし、さらに未確認の攻撃があった可能性も残る。",
+      "aisDarkCount": 3,
+      "aisDarkCountNote": "【2026-10-14追記・新シリーズ採用】Windward.aiの日次ホルムズ通航船舶中の「暗行(AIS停止)」隻数を単一ソース系列として採用(gcaptain等の報道経由で確認、全船籍対象・NITC/イラン国旗船に限定しない点に注意、鉄則3cのfloatingStorage運用と同様に以後この定義に固定)。Windward Oct12付レポートで「10/11は暗行3隻」との記述を確認、本エントリに反映。",
+      "attackCount": 6,
+      "contextNote": "2026-10-11(日)。【2026-10-14再追記】gcaptain(見出し記事)が「単日で6隻が被弾」と包括的に報道(タンカー5隻+コンテナ船1隻、うち1件はオマーン・ソハール錨地付近でのドローン攻撃)。前回記録のattackCount=2(Suezmax+プロダクトタンカーの個別2件)はこの6件のうちの一部だったとみられるため、より包括的なgcaptain集計に基づき6へ再訂正(確認済み数値、過小評価だった可能性を解消)。IRGCは「過去2日間でスーパータンカー3隻打撃」とも主張しており一部重複の可能性はあるが、gcaptainの単日6件集計を採用。",
       "date": "2026-10-11",
       "floatingStorage": 107,
       "floatingStorageNote": "【cloude-30方針の運用を訂正・2026-10-13追記】鉄則3cは「同ソースの最新値が見つからない日は前回値を「本日確認、変化なし」として記録してよい。本当に一度も確認できていない場合のみnullとする」と明記されていたのを、前回(hormuz-20261011作成時)は「発生日=記録日の鉄則1に反する」と誤解しnullのままとした誤り。Vortexa値(8/26時点107百万バレル)は既に確認済みのため、本日(2026-10-13)付で正しく「確認済み・変化なし」としてfloatingStorage=107へ訂正する。",
@@ -227,7 +252,8 @@
         "https://azernews.az/region/265298.html",
         "https://www.bon-bast.com/",
         "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
-        "https://www.cnn.com/2026/10/11/middleeast/iran-hormuz-oil-analysis-intl"
+        "https://www.cnn.com/2026/10/11/middleeast/iran-hormuz-oil-analysis-intl",
+        "https://gcaptain.com/new-reports-reveal-five-more-ships-hit-near-hormuz"
       ],
       "termStructure": "新規のnymex取引は日曜のためcmegroupの最新受渡決済は引き続き10/9(金)分(WTI 11月限$90.91/12月限$89.94、M1-M2スプレッド)が最新。",
       "termStructureSpread": 0.97,
