@@ -2,15 +2,15 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "期間ゲート+フェーズ4/5並行実施のセキュリティ確認",
-      "startedAt": "2026-10-13T08:30:10.660Z",
-      "finishedAt": "2026-10-13T08:30:11.275Z"
+      "task": "Phase L 実装のセキュリティレビュー",
+      "startedAt": "2026-10-13T08:32:27.379Z",
+      "finishedAt": "2026-10-13T08:32:33.869Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "期間ゲート+フェーズ4/5並行実施の最終確認",
-      "startedAt": "2026-10-13T08:29:57.756Z",
-      "finishedAt": "2026-10-13T08:30:11.270Z"
+      "task": "Phase L 実装の金額仕様レビュー",
+      "startedAt": "2026-10-13T08:32:33.158Z",
+      "finishedAt": "2026-10-13T08:32:33.870Z"
     },
     "review-lead": {
       "status": "idle",
@@ -35,12 +35,18 @@
       "task": "中間案での330到達までの具体的日数を算出",
       "startedAt": "2026-10-13T08:03:33.968Z",
       "finishedAt": "2026-10-13T08:12:24.206Z"
+    },
+    "qa-lead": {
+      "status": "idle",
+      "task": "Phase L 実装の動作確認(品質管理)",
+      "startedAt": "2026-10-13T08:32:21.231Z",
+      "finishedAt": "2026-10-13T08:32:33.814Z"
     }
   },
-  "updatedAt": "2026-10-13T08:32:06.935Z",
+  "updatedAt": "2026-10-13T08:32:49.184Z",
   "usage": {
-    "todayInputTokens": 14056,
-    "todayOutputTokens": 907083,
-    "asOf": "2026-10-13T08:32:06.935Z"
+    "todayInputTokens": 14106,
+    "todayOutputTokens": 922830,
+    "asOf": "2026-10-13T08:32:49.184Z"
   }
 }
