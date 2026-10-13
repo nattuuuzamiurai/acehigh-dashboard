@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#4最終GO/NO-GO判定",
-      "startedAt": "2026-10-13T05:47:10.458Z",
-      "finishedAt": "2026-10-13T05:47:10.940Z"
+      "task": "Phase L 最終ゲート(レビュー部)",
+      "startedAt": "2026-10-13T08:43:33.226Z",
+      "finishedAt": "2026-10-13T08:43:33.496Z"
     },
     "prediction-market-critic": {
       "status": "idle",
@@ -31,10 +31,10 @@
       "finishedAt": "2026-10-13T07:31:36.920Z"
     },
     "prediction-market-quant": {
-      "status": "idle",
-      "task": "中間案での330到達までの具体的日数を算出",
-      "startedAt": "2026-10-13T08:03:33.968Z",
-      "finishedAt": "2026-10-13T08:12:24.206Z"
+      "status": "running",
+      "task": "10pUSD発注の収益性と上限の必要性を検証",
+      "startedAt": "2026-10-13T08:42:45.118Z",
+      "finishedAt": null
     },
     "qa-lead": {
       "status": "idle",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-13T08:38:36.737Z"
     }
   },
-  "updatedAt": "2026-10-13T08:40:56.965Z",
+  "updatedAt": "2026-10-13T08:43:44.857Z",
   "usage": {
-    "todayInputTokens": 14602,
-    "todayOutputTokens": 971782,
-    "asOf": "2026-10-13T08:40:56.965Z"
+    "todayInputTokens": 15434,
+    "todayOutputTokens": 985762,
+    "asOf": "2026-10-13T08:43:44.857Z"
   }
 }
