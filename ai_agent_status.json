@@ -2,15 +2,15 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "PR#6をセキュリティ観点でレビュー",
-      "startedAt": "2026-10-13T10:34:49.990Z",
-      "finishedAt": "2026-10-13T10:35:12.318Z"
+      "task": "PR#7をセキュリティ観点でレビュー",
+      "startedAt": "2026-10-13T11:53:00.807Z",
+      "finishedAt": "2026-10-13T11:53:01.406Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "FOK完全一致規則の決め直し",
-      "startedAt": "2026-10-13T10:36:35.610Z",
-      "finishedAt": "2026-10-13T10:36:39.994Z"
+      "task": "PR#7を資金管理観点でレビュー",
+      "startedAt": "2026-10-13T11:52:51.385Z",
+      "finishedAt": "2026-10-13T11:53:01.404Z"
     },
     "review-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-13T10:35:12.336Z"
     }
   },
-  "updatedAt": "2026-10-13T11:48:33.872Z",
+  "updatedAt": "2026-10-13T11:53:06.076Z",
   "usage": {
-    "todayInputTokens": 21996,
-    "todayOutputTokens": 1486941,
-    "asOf": "2026-10-13T11:48:33.872Z"
+    "todayInputTokens": 22134,
+    "todayOutputTokens": 1504866,
+    "asOf": "2026-10-13T11:53:06.076Z"
   }
 }
