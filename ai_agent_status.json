@@ -68,9 +68,9 @@
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "PR#3を資金管理観点でレビュー",
-      "startedAt": "2026-10-13T01:31:22.019Z",
-      "finishedAt": "2026-10-13T01:31:34.331Z"
+      "task": "指示書第13版U1/U2の確認",
+      "startedAt": "2026-10-13T03:12:01.114Z",
+      "finishedAt": "2026-10-13T03:12:01.610Z"
     },
     "prediction-market-lead": {
       "status": "idle",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:54:43.549Z"
     }
   },
-  "updatedAt": "2026-10-13T03:10:07.385Z",
+  "updatedAt": "2026-10-13T03:12:15.565Z",
   "usage": {
-    "todayInputTokens": 5460,
-    "todayOutputTokens": 514937,
-    "asOf": "2026-10-13T03:10:07.385Z"
+    "todayInputTokens": 5510,
+    "todayOutputTokens": 519689,
+    "asOf": "2026-10-13T03:12:15.565Z"
   }
 }
