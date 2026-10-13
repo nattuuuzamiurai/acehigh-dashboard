@@ -32,15 +32,15 @@
     },
     "prediction-market-quant": {
       "status": "idle",
-      "task": "72時間シャドー運転の機会損失を定量化",
-      "startedAt": "2026-10-13T07:35:42.352Z",
-      "finishedAt": "2026-10-13T07:40:57.914Z"
+      "task": "本番$330到達までの期間と機会損失を算出",
+      "startedAt": "2026-10-13T07:43:57.834Z",
+      "finishedAt": "2026-10-13T07:49:37.116Z"
     }
   },
-  "updatedAt": "2026-10-13T07:41:19.070Z",
+  "updatedAt": "2026-10-13T07:50:02.835Z",
   "usage": {
-    "todayInputTokens": 10804,
-    "todayOutputTokens": 808115,
-    "asOf": "2026-10-13T07:41:19.070Z"
+    "todayInputTokens": 11622,
+    "todayOutputTokens": 819222,
+    "asOf": "2026-10-13T07:50:02.835Z"
   }
 }
