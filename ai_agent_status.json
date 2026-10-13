@@ -2,15 +2,15 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "PR#7をセキュリティ観点でレビュー",
-      "startedAt": "2026-10-13T11:53:00.807Z",
-      "finishedAt": "2026-10-13T11:53:01.406Z"
+      "task": "PR#7修正版のセキュリティレビュー",
+      "startedAt": "2026-10-13T13:02:29.564Z",
+      "finishedAt": "2026-10-13T13:02:37.513Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "PR#7を資金管理観点でレビュー",
-      "startedAt": "2026-10-13T11:52:51.385Z",
-      "finishedAt": "2026-10-13T11:53:01.404Z"
+      "task": "PR#7修正版の資金管理レビュー",
+      "startedAt": "2026-10-13T13:02:20.731Z",
+      "finishedAt": "2026-10-13T13:02:37.519Z"
     },
     "review-lead": {
       "status": "idle",
@@ -38,21 +38,21 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#7の品質確認",
-      "startedAt": "2026-10-13T11:44:51.037Z",
-      "finishedAt": "2026-10-13T11:44:51.084Z"
+      "task": "PR#7修正版の品質確認",
+      "startedAt": "2026-10-13T13:02:10.352Z",
+      "finishedAt": "2026-10-13T13:02:37.512Z"
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "買いFOKの価格改善規則を公式調査",
-      "startedAt": "2026-10-13T10:34:10.489Z",
-      "finishedAt": "2026-10-13T10:35:12.336Z"
+      "task": "0.0025刻みの実在を確認",
+      "startedAt": "2026-10-13T13:02:36.759Z",
+      "finishedAt": "2026-10-13T13:02:37.518Z"
     }
   },
-  "updatedAt": "2026-10-13T12:26:05.236Z",
+  "updatedAt": "2026-10-13T13:02:41.898Z",
   "usage": {
-    "todayInputTokens": 23012,
-    "todayOutputTokens": 1539622,
-    "asOf": "2026-10-13T12:26:05.236Z"
+    "todayInputTokens": 23648,
+    "todayOutputTokens": 1568455,
+    "asOf": "2026-10-13T13:02:41.898Z"
   }
 }
