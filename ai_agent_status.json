@@ -8,9 +8,9 @@
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "PR#6を資金管理観点でレビュー",
-      "startedAt": "2026-10-13T10:34:38.728Z",
-      "finishedAt": "2026-10-13T10:35:12.337Z"
+      "task": "FOK完全一致規則の決め直し",
+      "startedAt": "2026-10-13T10:36:35.610Z",
+      "finishedAt": "2026-10-13T10:36:39.994Z"
     },
     "review-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-13T10:35:12.336Z"
     }
   },
-  "updatedAt": "2026-10-13T10:35:17.710Z",
+  "updatedAt": "2026-10-13T10:36:46.462Z",
   "usage": {
-    "todayInputTokens": 19826,
-    "todayOutputTokens": 1314908,
-    "asOf": "2026-10-13T10:35:17.710Z"
+    "todayInputTokens": 20036,
+    "todayOutputTokens": 1324951,
+    "asOf": "2026-10-13T10:36:46.462Z"
   }
 }
