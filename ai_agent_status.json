@@ -2,15 +2,15 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "PR#5をセキュリティ観点でレビュー",
-      "startedAt": "2026-10-13T08:38:36.161Z",
-      "finishedAt": "2026-10-13T08:38:36.739Z"
+      "task": "PR#6をセキュリティ観点でレビュー",
+      "startedAt": "2026-10-13T10:34:49.990Z",
+      "finishedAt": "2026-10-13T10:35:12.318Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "330pUSD運用時の発注上限の具体案を確認",
-      "startedAt": "2026-10-13T09:38:53.378Z",
-      "finishedAt": "2026-10-13T09:39:31.525Z"
+      "task": "PR#6を資金管理観点でレビュー",
+      "startedAt": "2026-10-13T10:34:38.728Z",
+      "finishedAt": "2026-10-13T10:35:12.337Z"
     },
     "review-lead": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "既知の未実装項目(U1/U2等)の実装",
-      "startedAt": "2026-10-13T09:20:34.289Z",
-      "finishedAt": "2026-10-13T09:20:45.734Z"
+      "task": "直列化キュー+全範囲テストの実装",
+      "startedAt": "2026-10-13T10:35:11.598Z",
+      "finishedAt": "2026-10-13T10:35:12.326Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -38,15 +38,21 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#5(フェーズ4)の品質確認",
-      "startedAt": "2026-10-13T08:38:15.808Z",
-      "finishedAt": "2026-10-13T08:38:36.737Z"
+      "task": "PR#6の品質確認",
+      "startedAt": "2026-10-13T10:34:27.009Z",
+      "finishedAt": "2026-10-13T10:35:12.339Z"
+    },
+    "prediction-market-researcher": {
+      "status": "idle",
+      "task": "買いFOKの価格改善規則を公式調査",
+      "startedAt": "2026-10-13T10:34:10.489Z",
+      "finishedAt": "2026-10-13T10:35:12.336Z"
     }
   },
-  "updatedAt": "2026-10-13T10:30:00.329Z",
+  "updatedAt": "2026-10-13T10:35:17.710Z",
   "usage": {
-    "todayInputTokens": 19770,
-    "todayOutputTokens": 1248803,
-    "asOf": "2026-10-13T10:30:00.329Z"
+    "todayInputTokens": 19826,
+    "todayOutputTokens": 1314908,
+    "asOf": "2026-10-13T10:35:17.710Z"
   }
 }
