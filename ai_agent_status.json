@@ -2,9 +2,9 @@
   "departments": {
     "dev-lead": {
       "status": "idle",
-      "task": "通知バッジが再び未読に戻る不具合を調査",
-      "startedAt": "2026-10-11T07:30:56.893Z",
-      "finishedAt": "2026-10-11T07:30:58.289Z"
+      "task": "フェーズ2残件の実装(P0-2/P0-3/P0-5/P0-6/P0-8/6-3)",
+      "startedAt": "2026-10-13T00:50:35.864Z",
+      "finishedAt": "2026-10-13T00:50:36.408Z"
     },
     "claude-code-guide": {
       "status": "running",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:54:43.549Z"
     }
   },
-  "updatedAt": "2026-10-13T00:33:30.645Z",
+  "updatedAt": "2026-10-13T00:50:44.751Z",
   "usage": {
-    "todayInputTokens": 3978,
-    "todayOutputTokens": 384317,
-    "asOf": "2026-10-13T00:33:30.645Z"
+    "todayInputTokens": 3994,
+    "todayOutputTokens": 390679,
+    "asOf": "2026-10-13T00:50:44.751Z"
   }
 }
