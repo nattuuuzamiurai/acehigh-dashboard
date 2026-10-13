@@ -32,15 +32,15 @@
     },
     "prediction-market-quant": {
       "status": "idle",
-      "task": "本番$330到達までの期間と機会損失を算出",
-      "startedAt": "2026-10-13T07:43:57.834Z",
-      "finishedAt": "2026-10-13T07:49:37.116Z"
+      "task": "中間案での330到達までの具体的日数を算出",
+      "startedAt": "2026-10-13T08:03:33.968Z",
+      "finishedAt": "2026-10-13T08:12:24.206Z"
     }
   },
-  "updatedAt": "2026-10-13T07:54:50.968Z",
+  "updatedAt": "2026-10-13T08:12:45.519Z",
   "usage": {
-    "todayInputTokens": 11736,
-    "todayOutputTokens": 831928,
-    "asOf": "2026-10-13T07:54:50.968Z"
+    "todayInputTokens": 13578,
+    "todayOutputTokens": 855432,
+    "asOf": "2026-10-13T08:12:45.519Z"
   }
 }
