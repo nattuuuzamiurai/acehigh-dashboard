@@ -29,12 +29,18 @@
       "task": "フェーズ4: シャドー運転+実例再生の実装",
       "startedAt": "2026-10-13T07:31:35.640Z",
       "finishedAt": "2026-10-13T07:31:36.920Z"
+    },
+    "prediction-market-quant": {
+      "status": "idle",
+      "task": "72時間シャドー運転の機会損失を定量化",
+      "startedAt": "2026-10-13T07:35:42.352Z",
+      "finishedAt": "2026-10-13T07:40:57.914Z"
     }
   },
-  "updatedAt": "2026-10-13T07:32:16.717Z",
+  "updatedAt": "2026-10-13T07:41:19.070Z",
   "usage": {
-    "todayInputTokens": 9460,
-    "todayOutputTokens": 772308,
-    "asOf": "2026-10-13T07:32:16.717Z"
+    "todayInputTokens": 10804,
+    "todayOutputTokens": 808115,
+    "asOf": "2026-10-13T07:41:19.070Z"
   }
 }
