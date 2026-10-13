@@ -23,12 +23,18 @@
       "task": "第3.3版最終レビュー: 批判役",
       "startedAt": "2026-10-13T07:07:23.943Z",
       "finishedAt": "2026-10-13T07:07:24.676Z"
+    },
+    "dev-lead": {
+      "status": "idle",
+      "task": "Phase L 読み取り専用レコーダー実装",
+      "startedAt": "2026-10-13T07:25:24.834Z",
+      "finishedAt": "2026-10-13T07:25:25.331Z"
     }
   },
-  "updatedAt": "2026-10-13T07:18:19.771Z",
+  "updatedAt": "2026-10-13T07:25:40.979Z",
   "usage": {
-    "todayInputTokens": 9228,
-    "todayOutputTokens": 712631,
-    "asOf": "2026-10-13T07:18:19.771Z"
+    "todayInputTokens": 9268,
+    "todayOutputTokens": 764557,
+    "asOf": "2026-10-13T07:25:40.979Z"
   }
 }
