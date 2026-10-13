@@ -8,9 +8,9 @@
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "第3.3版最終レビュー: リスク管理",
-      "startedAt": "2026-10-13T07:07:19.893Z",
-      "finishedAt": "2026-10-13T07:07:24.670Z"
+      "task": "段階的増額の必要性そのものを再検証",
+      "startedAt": "2026-10-13T07:54:01.469Z",
+      "finishedAt": "2026-10-13T07:54:31.156Z"
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-10-13T07:49:37.116Z"
     }
   },
-  "updatedAt": "2026-10-13T07:50:02.835Z",
+  "updatedAt": "2026-10-13T07:54:50.968Z",
   "usage": {
-    "todayInputTokens": 11622,
-    "todayOutputTokens": 819222,
-    "asOf": "2026-10-13T07:50:02.835Z"
+    "todayInputTokens": 11736,
+    "todayOutputTokens": 831928,
+    "asOf": "2026-10-13T07:54:50.968Z"
   }
 }
