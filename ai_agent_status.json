@@ -8,9 +8,9 @@
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "シャドー運転の開始タイミングを確認",
-      "startedAt": "2026-10-13T09:20:45.332Z",
-      "finishedAt": "2026-10-13T09:20:45.732Z"
+      "task": "本番実トレードの必要最小回数を確認",
+      "startedAt": "2026-10-13T09:28:57.975Z",
+      "finishedAt": "2026-10-13T09:29:13.054Z"
     },
     "review-lead": {
       "status": "idle",
@@ -43,10 +43,10 @@
       "finishedAt": "2026-10-13T08:38:36.737Z"
     }
   },
-  "updatedAt": "2026-10-13T09:25:16.059Z",
+  "updatedAt": "2026-10-13T09:29:30.185Z",
   "usage": {
-    "todayInputTokens": 16966,
-    "todayOutputTokens": 1085811,
-    "asOf": "2026-10-13T09:25:16.059Z"
+    "todayInputTokens": 17118,
+    "todayOutputTokens": 1104528,
+    "asOf": "2026-10-13T09:29:30.185Z"
   }
 }
