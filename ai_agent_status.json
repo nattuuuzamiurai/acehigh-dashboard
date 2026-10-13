@@ -1,94 +1,22 @@
 {
   "departments": {
-    "dev-lead": {
-      "status": "idle",
-      "task": "フェーズ3: 暗号化キーストア・手動操作ツール実装",
-      "startedAt": "2026-10-13T03:21:56.679Z",
-      "finishedAt": "2026-10-13T03:21:57.077Z"
-    },
-    "claude-code-guide": {
-      "status": "running",
-      "task": "Real-World Transactions分類器の設定変更方法を調査",
-      "startedAt": "2026-10-08T03:43:49.101Z",
-      "finishedAt": null
-    },
-    "qa-lead": {
-      "status": "running",
-      "task": "PR#3(フェーズ2残件)の品質確認",
-      "startedAt": "2026-10-13T01:31:08.583Z",
-      "finishedAt": null
-    },
-    "review-lead": {
-      "status": "idle",
-      "task": "PR#3最終GO/NO-GO判定",
-      "startedAt": "2026-10-13T02:02:08.062Z",
-      "finishedAt": "2026-10-13T02:02:08.467Z"
-    },
-    "planning-lead": {
-      "status": "idle",
-      "task": "戦争関連の原油価格急騰後の下落パターンを調査",
-      "startedAt": "2026-10-10T10:38:20.423Z",
-      "finishedAt": "2026-10-10T10:38:21.242Z"
-    },
-    "marketing-lead": {
-      "status": "idle",
-      "task": "社内サイト間の内部送客 可能性調査",
-      "startedAt": "2026-10-08T13:10:23.169Z",
-      "finishedAt": "2026-10-08T13:10:23.988Z"
-    },
-    "content-writer": {
-      "status": "idle",
-      "task": "AI実務ナビWeek13公開作業",
-      "startedAt": "2026-10-09T01:15:46.512Z",
-      "finishedAt": "2026-10-09T01:21:05.016Z"
-    },
-    "general-purpose": {
-      "status": "idle",
-      "task": "Hormuz backfill research 8/7-9/27",
-      "startedAt": "2026-10-09T14:57:54.528Z",
-      "finishedAt": "2026-10-09T14:57:55.076Z"
-    },
-    "prediction-market-researcher": {
-      "status": "idle",
-      "task": "G0: 決着文言一致ペアの机上照合",
-      "startedAt": "2026-10-12T09:54:43.455Z",
-      "finishedAt": "2026-10-12T09:54:43.578Z"
-    },
-    "prediction-market-critic": {
-      "status": "idle",
-      "task": "第3.1版レビュー: 批判役",
-      "startedAt": "2026-10-12T10:32:01.604Z",
-      "finishedAt": "2026-10-12T10:32:02.191Z"
-    },
     "prediction-market-security": {
       "status": "idle",
-      "task": "凍結解除PR必須条件の文書化",
-      "startedAt": "2026-10-13T03:09:53.939Z",
-      "finishedAt": "2026-10-13T03:09:53.995Z"
+      "task": "",
+      "startedAt": null,
+      "finishedAt": "2026-10-13T04:36:40.051Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "指示書第13版U1/U2の確認",
-      "startedAt": "2026-10-13T03:12:01.114Z",
-      "finishedAt": "2026-10-13T03:12:01.610Z"
-    },
-    "prediction-market-lead": {
-      "status": "idle",
-      "task": "実験A〜Cの開発指示書作成",
-      "startedAt": "2026-10-12T09:26:36.671Z",
-      "finishedAt": "2026-10-12T09:26:37.611Z"
-    },
-    "prediction-market-quant": {
-      "status": "idle",
-      "task": "B0: Binance履歴の机上計算",
-      "startedAt": "2026-10-12T09:54:43.456Z",
-      "finishedAt": "2026-10-12T09:54:43.549Z"
+      "task": "",
+      "startedAt": null,
+      "finishedAt": "2026-10-13T04:36:40.058Z"
     }
   },
-  "updatedAt": "2026-10-13T04:31:12.898Z",
+  "updatedAt": "2026-10-13T04:36:46.454Z",
   "usage": {
-    "todayInputTokens": 6564,
-    "todayOutputTokens": 594533,
-    "asOf": "2026-10-13T04:31:12.898Z"
+    "todayInputTokens": 6664,
+    "todayOutputTokens": 615814,
+    "asOf": "2026-10-13T04:36:46.454Z"
   }
 }
