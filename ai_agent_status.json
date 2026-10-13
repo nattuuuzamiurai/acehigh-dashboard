@@ -2,15 +2,15 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "第3.3版最終レビュー: セキュリティ",
-      "startedAt": "2026-10-13T07:07:16.530Z",
-      "finishedAt": "2026-10-13T07:07:24.669Z"
+      "task": "期間ゲート+フェーズ4/5並行実施のセキュリティ確認",
+      "startedAt": "2026-10-13T08:30:10.660Z",
+      "finishedAt": "2026-10-13T08:30:11.275Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "段階的増額の必要性そのものを再検証",
-      "startedAt": "2026-10-13T07:54:01.469Z",
-      "finishedAt": "2026-10-13T07:54:31.156Z"
+      "task": "期間ゲート+フェーズ4/5並行実施の最終確認",
+      "startedAt": "2026-10-13T08:29:57.756Z",
+      "finishedAt": "2026-10-13T08:30:11.270Z"
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-10-13T08:12:24.206Z"
     }
   },
-  "updatedAt": "2026-10-13T08:27:33.639Z",
+  "updatedAt": "2026-10-13T08:30:17.127Z",
   "usage": {
-    "todayInputTokens": 13904,
-    "todayOutputTokens": 889410,
-    "asOf": "2026-10-13T08:27:33.639Z"
+    "todayInputTokens": 14006,
+    "todayOutputTokens": 901445,
+    "asOf": "2026-10-13T08:30:17.127Z"
   }
 }
