@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "直列化キュー+全範囲テストの実装",
-      "startedAt": "2026-10-13T10:35:11.598Z",
-      "finishedAt": "2026-10-13T10:35:12.326Z"
+      "task": "残りのneeds_verification項目の解消",
+      "startedAt": "2026-10-13T13:44:33.305Z",
+      "finishedAt": "2026-10-13T13:44:33.950Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-13T13:02:37.518Z"
     }
   },
-  "updatedAt": "2026-10-13T13:36:02.067Z",
+  "updatedAt": "2026-10-13T13:44:39.206Z",
   "usage": {
-    "todayInputTokens": 24740,
-    "todayOutputTokens": 1611317,
-    "asOf": "2026-10-13T13:36:02.067Z"
+    "todayInputTokens": 24756,
+    "todayOutputTokens": 1623970,
+    "asOf": "2026-10-13T13:44:39.206Z"
   }
 }
