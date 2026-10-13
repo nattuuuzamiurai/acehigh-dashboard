@@ -62,9 +62,9 @@
     },
     "prediction-market-security": {
       "status": "idle",
-      "task": "PR#3をセキュリティ観点でレビュー",
-      "startedAt": "2026-10-13T01:31:33.759Z",
-      "finishedAt": "2026-10-13T01:31:34.325Z"
+      "task": "凍結解除PR必須条件の文書化",
+      "startedAt": "2026-10-13T03:09:53.939Z",
+      "finishedAt": "2026-10-13T03:09:53.995Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
@@ -85,10 +85,10 @@
       "finishedAt": "2026-10-12T09:54:43.549Z"
     }
   },
-  "updatedAt": "2026-10-13T02:10:03.783Z",
+  "updatedAt": "2026-10-13T03:10:07.385Z",
   "usage": {
-    "todayInputTokens": 5414,
-    "todayOutputTokens": 507620,
-    "asOf": "2026-10-13T02:10:03.783Z"
+    "todayInputTokens": 5460,
+    "todayOutputTokens": 514937,
+    "asOf": "2026-10-13T03:10:07.385Z"
   }
 }
