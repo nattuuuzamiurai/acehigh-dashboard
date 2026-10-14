@@ -2,9 +2,9 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "WS有効化後の差分レビュー",
-      "startedAt": "2026-10-13T16:43:55.219Z",
-      "finishedAt": "2026-10-13T16:43:55.651Z"
+      "task": "修正コミットの独立検証(セキュリティ)",
+      "startedAt": "2026-10-14T03:07:19.163Z",
+      "finishedAt": "2026-10-14T03:07:42.371Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
@@ -32,9 +32,9 @@
     },
     "prediction-market-quant": {
       "status": "idle",
-      "task": "新上限案での月間利益を再計算",
-      "startedAt": "2026-10-13T09:39:49.838Z",
-      "finishedAt": "2026-10-13T09:51:05.537Z"
+      "task": "速度投資の損益分岐モデル",
+      "startedAt": "2026-10-14T03:07:29.855Z",
+      "finishedAt": "2026-10-14T03:07:42.365Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -44,15 +44,15 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "0.0025刻みの実在を確認",
-      "startedAt": "2026-10-13T13:02:36.759Z",
-      "finishedAt": "2026-10-13T13:02:37.518Z"
+      "task": "FOMC 10/28のstrike対応表(オフライン)",
+      "startedAt": "2026-10-14T03:07:41.752Z",
+      "finishedAt": "2026-10-14T03:07:42.384Z"
     }
   },
-  "updatedAt": "2026-10-14T03:06:33.482Z",
+  "updatedAt": "2026-10-14T03:07:52.627Z",
   "usage": {
-    "todayInputTokens": 920,
-    "todayOutputTokens": 122633,
-    "asOf": "2026-10-14T03:06:33.482Z"
+    "todayInputTokens": 1080,
+    "todayOutputTokens": 144908,
+    "asOf": "2026-10-14T03:07:52.627Z"
   }
 }
