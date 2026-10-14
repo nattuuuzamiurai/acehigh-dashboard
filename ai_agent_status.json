@@ -44,15 +44,15 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "FOMC 10/28のstrike対応表(オフライン)",
-      "startedAt": "2026-10-14T03:07:41.752Z",
-      "finishedAt": "2026-10-14T03:07:42.384Z"
+      "task": "個人が出せる速度の調査",
+      "startedAt": "2026-10-14T13:23:37.507Z",
+      "finishedAt": "2026-10-14T13:23:37.557Z"
     }
   },
-  "updatedAt": "2026-10-14T12:52:06.528Z",
+  "updatedAt": "2026-10-14T13:23:50.783Z",
   "usage": {
-    "todayInputTokens": 2346,
-    "todayOutputTokens": 241784,
-    "asOf": "2026-10-14T12:52:06.528Z"
+    "todayInputTokens": 2364,
+    "todayOutputTokens": 250985,
+    "asOf": "2026-10-14T13:23:50.783Z"
   }
 }
