@@ -32,9 +32,9 @@
     },
     "prediction-market-quant": {
       "status": "idle",
-      "task": "速度投資の損益分岐モデル",
-      "startedAt": "2026-10-14T03:07:29.855Z",
-      "finishedAt": "2026-10-14T03:07:42.365Z"
+      "task": "新規上場矛盾の競合度合いを実データで調査",
+      "startedAt": "2026-10-14T14:39:42.728Z",
+      "finishedAt": "2026-10-14T14:39:43.422Z"
     },
     "qa-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T13:23:37.557Z"
     }
   },
-  "updatedAt": "2026-10-14T14:38:14.771Z",
+  "updatedAt": "2026-10-14T14:39:49.981Z",
   "usage": {
-    "todayInputTokens": 3664,
-    "todayOutputTokens": 526446,
-    "asOf": "2026-10-14T14:38:14.771Z"
+    "todayInputTokens": 3708,
+    "todayOutputTokens": 539376,
+    "asOf": "2026-10-14T14:39:49.981Z"
   }
 }
