@@ -20,9 +20,9 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "第3.3版最終レビュー: 批判役",
-      "startedAt": "2026-10-13T07:07:23.943Z",
-      "finishedAt": "2026-10-13T07:07:24.676Z"
+      "task": "第3.5版の追加仕様レビュー(批判役)",
+      "startedAt": "2026-10-14T13:31:55.280Z",
+      "finishedAt": "2026-10-14T13:31:55.328Z"
     },
     "dev-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T13:23:37.557Z"
     }
   },
-  "updatedAt": "2026-10-14T13:25:30.917Z",
+  "updatedAt": "2026-10-14T13:32:08.265Z",
   "usage": {
-    "todayInputTokens": 2406,
-    "todayOutputTokens": 262856,
-    "asOf": "2026-10-14T13:25:30.917Z"
+    "todayInputTokens": 2582,
+    "todayOutputTokens": 316487,
+    "asOf": "2026-10-14T13:32:08.265Z"
   }
 }
