@@ -32,9 +32,9 @@
     },
     "prediction-market-quant": {
       "status": "idle",
-      "task": "新規上場矛盾の競合度合いを実データで調査",
-      "startedAt": "2026-10-14T14:39:42.728Z",
-      "finishedAt": "2026-10-14T14:39:43.422Z"
+      "task": "Kalshiの期日ラダー矛盾を実取引記録で検証",
+      "startedAt": "2026-10-14T15:21:59.672Z",
+      "finishedAt": "2026-10-14T15:22:03.703Z"
     },
     "qa-lead": {
       "status": "running",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T15:19:15.076Z"
     }
   },
-  "updatedAt": "2026-10-14T15:20:20.177Z",
+  "updatedAt": "2026-10-14T15:22:09.531Z",
   "usage": {
-    "todayInputTokens": 300,
-    "todayOutputTokens": 26404,
-    "asOf": "2026-10-14T15:20:20.177Z"
+    "todayInputTokens": 1066,
+    "todayOutputTokens": 38028,
+    "asOf": "2026-10-14T15:22:09.531Z"
   }
 }
