@@ -32,9 +32,9 @@
     },
     "prediction-market-quant": {
       "status": "idle",
-      "task": "Kalshiの期日ラダー矛盾を実取引記録で検証",
-      "startedAt": "2026-10-14T15:21:59.672Z",
-      "finishedAt": "2026-10-14T15:22:03.703Z"
+      "task": "Polymarket既存ラダー矛盾を実約定で検証",
+      "startedAt": "2026-10-14T17:49:08.159Z",
+      "finishedAt": "2026-10-14T17:49:08.595Z"
     },
     "qa-lead": {
       "status": "running",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T15:19:15.076Z"
     }
   },
-  "updatedAt": "2026-10-14T17:48:13.087Z",
+  "updatedAt": "2026-10-14T17:49:17.085Z",
   "usage": {
-    "todayInputTokens": 9904,
-    "todayOutputTokens": 116689,
-    "asOf": "2026-10-14T17:48:13.087Z"
+    "todayInputTokens": 9980,
+    "todayOutputTokens": 120345,
+    "asOf": "2026-10-14T17:49:17.085Z"
   }
 }
