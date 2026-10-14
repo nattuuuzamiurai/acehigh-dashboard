@@ -20,9 +20,9 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "競合調査の結論を反証担当が検証",
-      "startedAt": "2026-10-14T15:20:13.072Z",
-      "finishedAt": "2026-10-14T15:20:13.758Z"
+      "task": "Kalshi回転・速度分析を反証",
+      "startedAt": "2026-10-14T23:36:21.994Z",
+      "finishedAt": "2026-10-14T23:36:22.346Z"
     },
     "dev-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T15:19:15.076Z"
     }
   },
-  "updatedAt": "2026-10-14T23:31:08.313Z",
+  "updatedAt": "2026-10-14T23:36:40.134Z",
   "usage": {
-    "todayInputTokens": 16320,
-    "todayOutputTokens": 152755,
-    "asOf": "2026-10-14T23:31:08.313Z"
+    "todayInputTokens": 17568,
+    "todayOutputTokens": 164766,
+    "asOf": "2026-10-14T23:36:40.134Z"
   }
 }
