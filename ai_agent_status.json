@@ -20,9 +20,9 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "Polymarketラダー分析を反証",
-      "startedAt": "2026-10-15T01:17:15.524Z",
-      "finishedAt": "2026-10-15T01:17:16.051Z"
+      "task": "Kalshi再計算の反証と板記録の中間確認",
+      "startedAt": "2026-10-15T11:58:12.816Z",
+      "finishedAt": "2026-10-15T11:58:13.497Z"
     },
     "dev-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T15:19:15.076Z"
     }
   },
-  "updatedAt": "2026-10-15T11:56:02.180Z",
+  "updatedAt": "2026-10-15T11:58:19.702Z",
   "usage": {
-    "todayInputTokens": 26610,
-    "todayOutputTokens": 231810,
-    "asOf": "2026-10-15T11:56:02.180Z"
+    "todayInputTokens": 26622,
+    "todayOutputTokens": 235021,
+    "asOf": "2026-10-15T11:58:19.702Z"
   }
 }
