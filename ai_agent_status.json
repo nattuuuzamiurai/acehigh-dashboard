@@ -20,9 +20,9 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "Kalshi回転・速度分析を反証",
-      "startedAt": "2026-10-14T23:36:21.994Z",
-      "finishedAt": "2026-10-14T23:36:22.346Z"
+      "task": "Polymarketラダー分析を反証",
+      "startedAt": "2026-10-15T01:17:15.524Z",
+      "finishedAt": "2026-10-15T01:17:16.051Z"
     },
     "dev-lead": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T15:19:15.076Z"
     }
   },
-  "updatedAt": "2026-10-15T00:33:59.779Z",
+  "updatedAt": "2026-10-15T01:17:30.761Z",
   "usage": {
-    "todayInputTokens": 20166,
-    "todayOutputTokens": 179906,
-    "asOf": "2026-10-15T00:33:59.779Z"
+    "todayInputTokens": 20686,
+    "todayOutputTokens": 183836,
+    "asOf": "2026-10-15T01:17:30.761Z"
   }
 }
