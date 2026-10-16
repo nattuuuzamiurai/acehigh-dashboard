@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "退避先設定とS6監視の実装",
-      "startedAt": "2026-10-16T12:49:01.501Z",
-      "finishedAt": "2026-10-16T12:49:01.916Z"
+      "task": "Deposit Wallet作成スクリプトと修正",
+      "startedAt": "2026-10-16T12:56:43.413Z",
+      "finishedAt": "2026-10-16T12:56:43.909Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T15:19:15.076Z"
     }
   },
-  "updatedAt": "2026-10-16T12:55:22.469Z",
+  "updatedAt": "2026-10-16T12:56:57.209Z",
   "usage": {
-    "todayInputTokens": 410,
-    "todayOutputTokens": 109127,
-    "asOf": "2026-10-16T12:55:22.469Z"
+    "todayInputTokens": 440,
+    "todayOutputTokens": 114198,
+    "asOf": "2026-10-16T12:56:57.209Z"
   }
 }
