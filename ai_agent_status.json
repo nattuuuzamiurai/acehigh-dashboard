@@ -44,15 +44,15 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "他の予測市場で新規上場戦略が成り立つか調査",
-      "startedAt": "2026-10-14T15:19:14.388Z",
-      "finishedAt": "2026-10-14T15:19:15.076Z"
+      "task": "入金・承認の手順調査",
+      "startedAt": "2026-10-16T14:46:52.054Z",
+      "finishedAt": "2026-10-16T14:46:52.454Z"
     }
   },
-  "updatedAt": "2026-10-16T14:45:50.293Z",
+  "updatedAt": "2026-10-16T14:47:04.099Z",
   "usage": {
-    "todayInputTokens": 1362,
-    "todayOutputTokens": 178286,
-    "asOf": "2026-10-16T14:45:50.293Z"
+    "todayInputTokens": 1388,
+    "todayOutputTokens": 181961,
+    "asOf": "2026-10-16T14:47:04.099Z"
   }
 }
