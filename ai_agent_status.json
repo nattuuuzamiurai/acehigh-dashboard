@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "入金前ゲート項目の実装",
-      "startedAt": "2026-10-16T14:22:46.703Z",
-      "finishedAt": "2026-10-16T14:22:46.762Z"
+      "task": "approveにBuilder Key対応を追加",
+      "startedAt": "2026-10-16T14:48:54.732Z",
+      "finishedAt": "2026-10-16T14:48:54.779Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-16T14:46:52.454Z"
     }
   },
-  "updatedAt": "2026-10-16T14:47:04.099Z",
+  "updatedAt": "2026-10-16T14:49:07.375Z",
   "usage": {
-    "todayInputTokens": 1388,
-    "todayOutputTokens": 181961,
-    "asOf": "2026-10-16T14:47:04.099Z"
+    "todayInputTokens": 1436,
+    "todayOutputTokens": 187263,
+    "asOf": "2026-10-16T14:49:07.375Z"
   }
 }
