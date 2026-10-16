@@ -2,9 +2,9 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "PR#9をセキュリティ観点でレビュー",
-      "startedAt": "2026-10-14T14:47:34.997Z",
-      "finishedAt": "2026-10-14T14:47:35.579Z"
+      "task": "Deposit Wallet作成経路の調査",
+      "startedAt": "2026-10-16T12:48:50.834Z",
+      "finishedAt": "2026-10-16T12:48:51.104Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "空の板での誤検知を修正",
-      "startedAt": "2026-10-14T14:35:12.703Z",
-      "finishedAt": "2026-10-14T14:35:13.388Z"
+      "task": "退避先設定とS6監視の実装",
+      "startedAt": "2026-10-16T12:49:01.501Z",
+      "finishedAt": "2026-10-16T12:49:01.916Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T15:19:15.076Z"
     }
   },
-  "updatedAt": "2026-10-16T12:47:38.466Z",
+  "updatedAt": "2026-10-16T12:49:12.905Z",
   "usage": {
-    "todayInputTokens": 234,
-    "todayOutputTokens": 93158,
-    "asOf": "2026-10-16T12:47:38.466Z"
+    "todayInputTokens": 264,
+    "todayOutputTokens": 100195,
+    "asOf": "2026-10-16T12:49:12.905Z"
   }
 }
