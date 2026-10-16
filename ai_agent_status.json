@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "Deposit Wallet作成スクリプトと修正",
-      "startedAt": "2026-10-16T12:56:43.413Z",
-      "finishedAt": "2026-10-16T12:56:43.909Z"
+      "task": "入金前ゲート項目の実装",
+      "startedAt": "2026-10-16T14:22:46.703Z",
+      "finishedAt": "2026-10-16T14:22:46.762Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-14T15:19:15.076Z"
     }
   },
-  "updatedAt": "2026-10-16T14:21:25.683Z",
+  "updatedAt": "2026-10-16T14:22:59.140Z",
   "usage": {
-    "todayInputTokens": 974,
-    "todayOutputTokens": 155868,
-    "asOf": "2026-10-16T14:21:25.683Z"
+    "todayInputTokens": 994,
+    "todayOutputTokens": 162785,
+    "asOf": "2026-10-16T14:22:59.140Z"
   }
 }
