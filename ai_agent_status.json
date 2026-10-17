@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "Cloudflare監視Workerの実装",
-      "startedAt": "2026-10-16T14:56:30.393Z",
-      "finishedAt": "2026-10-16T14:56:30.891Z"
+      "task": "監視のowner()読み取り失敗の修正",
+      "startedAt": "2026-10-17T00:34:52.680Z",
+      "finishedAt": "2026-10-17T00:34:52.999Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -49,10 +49,10 @@
       "finishedAt": "2026-10-16T14:46:52.454Z"
     }
   },
-  "updatedAt": "2026-10-17T00:32:57.272Z",
+  "updatedAt": "2026-10-17T00:35:01.164Z",
   "usage": {
-    "todayInputTokens": 314,
-    "todayOutputTokens": 28949,
-    "asOf": "2026-10-17T00:32:57.272Z"
+    "todayInputTokens": 366,
+    "todayOutputTokens": 44710,
+    "asOf": "2026-10-17T00:35:01.164Z"
   }
 }
