@@ -2,15 +2,15 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "計画書第3版のセキュリティ再確認",
-      "startedAt": "2026-10-17T13:10:01.751Z",
-      "finishedAt": "2026-10-17T13:10:02.181Z"
+      "task": "PR#19/#20/#21のセキュリティ確認",
+      "startedAt": "2026-10-17T14:11:57.472Z",
+      "finishedAt": "2026-10-17T14:12:05.261Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "計画書第3版のリスク再確認",
-      "startedAt": "2026-10-17T13:09:58.555Z",
-      "finishedAt": "2026-10-17T13:10:02.175Z"
+      "task": "検証PRのリスク・資金確認",
+      "startedAt": "2026-10-17T14:12:04.873Z",
+      "finishedAt": "2026-10-17T14:12:05.268Z"
     },
     "review-lead": {
       "status": "idle",
@@ -38,9 +38,9 @@
     },
     "qa-lead": {
       "status": "idle",
-      "task": "PR#15の動作確認",
-      "startedAt": "2026-10-16T15:02:20.847Z",
-      "finishedAt": "2026-10-16T15:02:31.656Z"
+      "task": "PR#19/#20/#21の動作確認",
+      "startedAt": "2026-10-17T14:11:50.153Z",
+      "finishedAt": "2026-10-17T14:12:05.254Z"
     },
     "prediction-market-researcher": {
       "status": "idle",
@@ -55,10 +55,10 @@
       "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T14:09:42.254Z",
+  "updatedAt": "2026-10-17T14:12:16.546Z",
   "usage": {
-    "todayInputTokens": 1636,
-    "todayOutputTokens": 230399,
-    "asOf": "2026-10-17T14:09:42.254Z"
+    "todayInputTokens": 1696,
+    "todayOutputTokens": 242804,
+    "asOf": "2026-10-17T14:12:16.546Z"
   }
 }
