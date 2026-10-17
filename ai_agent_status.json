@@ -47,12 +47,18 @@
       "task": "入金・承認の手順調査",
       "startedAt": "2026-10-16T14:46:52.054Z",
       "finishedAt": "2026-10-16T14:46:52.454Z"
+    },
+    "prediction-market-lead": {
+      "status": "idle",
+      "task": "検証取引の計画書を作成",
+      "startedAt": "2026-10-17T12:52:36.135Z",
+      "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T12:49:13.143Z",
+  "updatedAt": "2026-10-17T12:52:48.965Z",
   "usage": {
-    "todayInputTokens": 482,
-    "todayOutputTokens": 60448,
-    "asOf": "2026-10-17T12:49:13.143Z"
+    "todayInputTokens": 538,
+    "todayOutputTokens": 67200,
+    "asOf": "2026-10-17T12:52:48.965Z"
   }
 }
