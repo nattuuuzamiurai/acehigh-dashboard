@@ -44,9 +44,9 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "1ドル最小注文額の確認",
-      "startedAt": "2026-10-17T14:06:19.763Z",
-      "finishedAt": "2026-10-17T14:06:20.158Z"
+      "task": "検証用の市場の選定",
+      "startedAt": "2026-10-17T17:21:38.616Z",
+      "finishedAt": "2026-10-17T17:21:39.009Z"
     },
     "prediction-market-lead": {
       "status": "idle",
@@ -55,10 +55,10 @@
       "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T17:21:06.104Z",
+  "updatedAt": "2026-10-17T17:21:49.520Z",
   "usage": {
-    "todayInputTokens": 480,
-    "todayOutputTokens": 75478,
-    "asOf": "2026-10-17T17:21:06.104Z"
+    "todayInputTokens": 504,
+    "todayOutputTokens": 80662,
+    "asOf": "2026-10-17T17:21:49.520Z"
   }
 }
