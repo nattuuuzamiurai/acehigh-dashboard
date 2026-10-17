@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "段階0: 検証専用ガードと検証スクリプト",
-      "startedAt": "2026-10-17T13:46:19.256Z",
-      "finishedAt": "2026-10-17T13:46:19.319Z"
+      "task": "Builder KeyのTTY入力化",
+      "startedAt": "2026-10-17T14:06:14.461Z",
+      "finishedAt": "2026-10-17T14:06:20.151Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -44,9 +44,9 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "入金・承認の手順調査",
-      "startedAt": "2026-10-16T14:46:52.054Z",
-      "finishedAt": "2026-10-16T14:46:52.454Z"
+      "task": "1ドル最小注文額の確認",
+      "startedAt": "2026-10-17T14:06:19.763Z",
+      "finishedAt": "2026-10-17T14:06:20.158Z"
     },
     "prediction-market-lead": {
       "status": "idle",
@@ -55,10 +55,10 @@
       "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T13:47:40.710Z",
+  "updatedAt": "2026-10-17T14:06:30.347Z",
   "usage": {
-    "todayInputTokens": 1242,
-    "todayOutputTokens": 219100,
-    "asOf": "2026-10-17T13:47:40.710Z"
+    "todayInputTokens": 1528,
+    "todayOutputTokens": 226874,
+    "asOf": "2026-10-17T14:06:30.347Z"
   }
 }
