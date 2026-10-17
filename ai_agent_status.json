@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "監視のgetLogs過負荷の修正",
-      "startedAt": "2026-10-17T12:47:41.536Z",
-      "finishedAt": "2026-10-17T12:47:41.970Z"
+      "task": "段階0: 検証専用ガードと検証スクリプト",
+      "startedAt": "2026-10-17T13:46:19.256Z",
+      "finishedAt": "2026-10-17T13:46:19.319Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -55,10 +55,10 @@
       "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T13:45:04.252Z",
+  "updatedAt": "2026-10-17T13:46:31.189Z",
   "usage": {
-    "todayInputTokens": 1182,
-    "todayOutputTokens": 206591,
-    "asOf": "2026-10-17T13:45:04.252Z"
+    "todayInputTokens": 1204,
+    "todayOutputTokens": 212949,
+    "asOf": "2026-10-17T13:46:31.189Z"
   }
 }
