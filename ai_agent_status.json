@@ -25,10 +25,10 @@
       "finishedAt": "2026-10-15T11:58:13.497Z"
     },
     "dev-lead": {
-      "status": "running",
-      "task": "上限なし承認対応とBuilder Keyの暗号化保管",
-      "startedAt": "2026-10-17T16:31:48.819Z",
-      "finishedAt": null
+      "status": "idle",
+      "task": "上限なし承認対応とBuilder Key暗号化保管",
+      "startedAt": "2026-10-17T16:32:47.827Z",
+      "finishedAt": "2026-10-17T16:32:48.184Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -55,10 +55,10 @@
       "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T16:32:15.731Z",
+  "updatedAt": "2026-10-17T16:32:57.306Z",
   "usage": {
-    "todayInputTokens": 114,
-    "todayOutputTokens": 38776,
-    "asOf": "2026-10-17T16:32:15.731Z"
+    "todayInputTokens": 160,
+    "todayOutputTokens": 46237,
+    "asOf": "2026-10-17T16:32:57.306Z"
   }
 }
