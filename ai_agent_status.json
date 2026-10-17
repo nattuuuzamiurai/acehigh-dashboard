@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR#14の最終GO/NO-GO",
-      "startedAt": "2026-10-16T14:58:15.489Z",
-      "finishedAt": "2026-10-16T14:58:15.810Z"
+      "task": "PR#19/#21の最終GO/NO-GO",
+      "startedAt": "2026-10-17T14:32:30.221Z",
+      "finishedAt": "2026-10-17T14:32:30.671Z"
     },
     "prediction-market-critic": {
       "status": "idle",
@@ -55,10 +55,10 @@
       "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T14:30:44.338Z",
+  "updatedAt": "2026-10-17T14:32:38.320Z",
   "usage": {
-    "todayInputTokens": 2192,
-    "todayOutputTokens": 299804,
-    "asOf": "2026-10-17T14:30:44.338Z"
+    "todayInputTokens": 2220,
+    "todayOutputTokens": 302470,
+    "asOf": "2026-10-17T14:32:38.320Z"
   }
 }
