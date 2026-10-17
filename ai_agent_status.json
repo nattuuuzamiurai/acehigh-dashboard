@@ -8,9 +8,9 @@
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "PR#24のリスク確認",
-      "startedAt": "2026-10-17T16:42:28.221Z",
-      "finishedAt": "2026-10-17T16:42:28.792Z"
+      "task": "PR#26のリスク・動作確認",
+      "startedAt": "2026-10-17T18:13:20.946Z",
+      "finishedAt": "2026-10-17T18:13:22.562Z"
     },
     "review-lead": {
       "status": "idle",
@@ -55,10 +55,10 @@
       "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T18:11:14.618Z",
+  "updatedAt": "2026-10-17T18:14:10.658Z",
   "usage": {
-    "todayInputTokens": 890,
-    "todayOutputTokens": 161344,
-    "asOf": "2026-10-17T18:11:14.618Z"
+    "todayInputTokens": 948,
+    "todayOutputTokens": 171774,
+    "asOf": "2026-10-17T18:14:10.658Z"
   }
 }
