@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14 07:20",
+  "updatedAt": "2026-10-18 07:30",
   "theses": [
     {
       "confidence": 2,
@@ -164,8 +164,92 @@
   ],
   "signalsLog": [
     {
-      "aisDarkCount": 6,
-      "aisDarkCountNote": "【新系列・hormuz-20261012で確立】Windward.aiの日次ホルムズ通航船舶中の暗行隻数(全船籍対象)を単一ソース系列として採用。本日分の新版は未発見のため、直近値(10/12、6隻/14隻中)を繰り返し記録。",
+      "aisDarkCount": 2,
+      "aisDarkCountNote": "Windward系列、直近値(10/14窓、2/6隻)を繰り越し。",
+      "attackCount": null,
+      "contextNote": "2026-10-18(日)。本日付の個別攻撃報道は未確認(検索範囲内、日曜のためニュースサイクルも薄い)。活発期のためnull(0ではない)。",
+      "date": "2026-10-18",
+      "floatingStorage": 107,
+      "floatingStorageNote": "Vortexa値(8/26=107)を確認済み・変化なしとして繰り越し。",
+      "granularity": "daily",
+      "insuranceOrFreightNote": "変化なし(確認済み)。",
+      "insuranceRate": 5,
+      "iranRialRate": 2636000,
+      "iranRialRateNote": "bon-bast.comを本日も直接WebFetchしたが表示は依然「last update: October 17, 2026 22:28 UTC」のまま(=2,636,000リアル)。新しい更新未発見のため繰り越し。",
+      "sourceUrls": [
+        "https://www.bon-bast.com/"
+      ],
+      "termStructure": "日曜のため新規決済なし。10/16(金)正式決済(Brent$109.86/WTI$101.41)を参考値として保持。",
+      "termStructureSpread": 0.86,
+      "theme": "hormuz"
+    },
+    {
+      "aisDarkCount": 2,
+      "aisDarkCountNote": "Windward系列、直近値(10/14窓、2/6隻)を繰り越し。10/15-17付の新版は未発見。",
+      "attackCount": 1,
+      "contextNote": "2026-10-17(土)。IRGCが「未承認ルート走行中のタンカーが触雷・出火」と主張(マーシャル諸島籍Safeen Principal、機関室火災)。IRGC発表のみで独立検証未確認のため低確度。UKMTOは「過去1週間で少なくとも10隻が攻撃を受けた」(CNN 10/17付)と報道、週次集計として別途記録。",
+      "date": "2026-10-17",
+      "floatingStorage": 107,
+      "floatingStorageNote": "Vortexa値(8/26=107)を確認済み・変化なしとして繰り越し。",
+      "granularity": "daily",
+      "insuranceOrFreightNote": "変化なし(確認済み)。",
+      "insuranceRate": 5,
+      "iranRialRate": 2636000,
+      "iranRialRateNote": "bon-bast.comを直接WebFetch(last update: October 17, 2026 22:28 UTC)。$1=263,600トーマン(売り)=2,636,000リアル。10/13(2,598,000)から減価方向。",
+      "sourceUrls": [
+        "https://tribune.net.ph/2026/10/17/oil-tanker-on-fire-after-hitting-mine-in-hormuz",
+        "https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2",
+        "https://www.bon-bast.com/"
+      ],
+      "termStructure": "土曜のため新規決済なし。10/16(金)の正式決済(Brent$109.86/WTI$101.41)を参考値として保持、M1-M2スプレッドは前回値を繰り越し。",
+      "termStructureSpread": 0.86,
+      "theme": "hormuz"
+    },
+    {
+      "aisDarkCount": 2,
+      "aisDarkCountNote": "Windward系列、直近値(10/14窓、2/6隻)を繰り越し。",
+      "attackCount": 2,
+      "contextNote": "2026-10-16(金)。確認: 原油タンカーMT ST 3(インド人船員、不明発射物で被弾・全員無事)。同日報道でシンガポール籍コンテナ船GFS Pride(乗員21名)も被弾・出火・沈没、全員避難(日付がMT ST3と同一報道内のため同日と推定、確度中)。計2件を記録(活発期のためさらに未確認の攻撃の可能性あり)。",
+      "date": "2026-10-16",
+      "floatingStorage": 107,
+      "floatingStorageNote": "Vortexa値(8/26=107)を確認済み・変化なしとして繰り越し。",
+      "granularity": "daily",
+      "insuranceOrFreightNote": "変化なし(確認済み)。",
+      "insuranceRate": 5,
+      "iranRialRate": 2598000,
+      "iranRialRateNote": "bon-bast新値未確認のため前回値を繰り越し。",
+      "sourceUrls": [
+        "https://thenationalnews.com/news/mena/2026/10/16/india-hormuz-strait-tanker-attack",
+        "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+        "https://www.tokenpost.com/news/investing/33503"
+      ],
+      "termStructure": "本日正式決済: Brent $109.86(+3.7%、5/19以来の高値)、WTI $101.41(+3.5%、9/17以来の高値)。CLX26/CLZ26個別限月値は未発見のためM1-M2スプレッドの再計算は保留、前回値を参考値として繰り越し。",
+      "termStructureSpread": 0.86,
+      "theme": "hormuz"
+    },
+    {
+      "aisDarkCount": 2,
+      "aisDarkCountNote": "Windward系列、10/14窓の値(2/6隻)を繰り越し。新版未発見。",
+      "attackCount": null,
+      "contextNote": "2026-10-15(木)。本日付の個別攻撃報道は未確認(検索範囲内)。活発期のためnull(0ではない)。",
+      "date": "2026-10-15",
+      "floatingStorage": 107,
+      "floatingStorageNote": "Vortexa値(8/26=107)を確認済み・変化なしとして繰り越し。新値未発見。",
+      "granularity": "daily",
+      "insuranceOrFreightNote": "変化なし(確認済み)。",
+      "insuranceRate": 5,
+      "iranRialRate": 2598000,
+      "iranRialRateNote": "bon-bast新値未確認のため前回値(10/13付2,598,000)を繰り越し。",
+      "sourceUrls": [
+        "https://thenationalnews.com/news/mena/2026/10/16/india-hormuz-strait-tanker-attack"
+      ],
+      "termStructure": "新規決済未確認、前回値(10/12、$0.86)を参考値として繰り越し。",
+      "termStructureSpread": 0.86,
+      "theme": "hormuz"
+    },
+    {
+      "aisDarkCount": 2,
+      "aisDarkCountNote": "【2026-10-18訂正】Windward 10/15付エディションがOct14の24時間窓を集計: 通航6隻(入2/出4)中、暗行2隻・AIS発信4隻。前回の繰越値6(10/12分を誤って繰越)より正確なOct14固有値のため2へ訂正。",
       "attackCount": null,
       "contextNote": "2026-10-14(水)。本日付の個別タンカー攻撃報告は検索では未確認(検索ツール自体が本日分を十分にインデックスしていない可能性あり)。活発期(10月は「ほぼ毎日攻撃」USNI報道、直近10/11に単日6隻被弾のピーク)を踏まえ、鉄則2bに基づきattackCount=nullを採用(0とはしない)。",
       "date": "2026-10-14",
