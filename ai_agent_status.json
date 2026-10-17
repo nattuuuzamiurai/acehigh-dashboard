@@ -2,15 +2,15 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "PR#19/#20/#21のセキュリティ確認",
-      "startedAt": "2026-10-17T14:11:57.472Z",
-      "finishedAt": "2026-10-17T14:12:05.261Z"
+      "task": "PR#19/#20/#21セキュリティ再確認",
+      "startedAt": "2026-10-17T14:26:42.944Z",
+      "finishedAt": "2026-10-17T14:26:56.174Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "検証PRのリスク・資金確認",
-      "startedAt": "2026-10-17T14:12:04.873Z",
-      "finishedAt": "2026-10-17T14:12:05.268Z"
+      "task": "PR#21リスク再確認",
+      "startedAt": "2026-10-17T14:26:47.157Z",
+      "finishedAt": "2026-10-17T14:26:56.178Z"
     },
     "review-lead": {
       "status": "idle",
@@ -55,10 +55,10 @@
       "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T14:20:56.150Z",
+  "updatedAt": "2026-10-17T14:27:05.908Z",
   "usage": {
-    "todayInputTokens": 1970,
-    "todayOutputTokens": 260305,
-    "asOf": "2026-10-17T14:20:56.150Z"
+    "todayInputTokens": 2060,
+    "todayOutputTokens": 271628,
+    "asOf": "2026-10-17T14:27:05.908Z"
   }
 }
