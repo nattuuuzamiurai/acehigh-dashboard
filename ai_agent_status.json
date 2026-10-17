@@ -25,10 +25,10 @@
       "finishedAt": "2026-10-15T11:58:13.497Z"
     },
     "dev-lead": {
-      "status": "idle",
-      "task": "償還経路のBuilder Key TTY入力",
-      "startedAt": "2026-10-17T14:36:59.915Z",
-      "finishedAt": "2026-10-17T14:36:59.964Z"
+      "status": "running",
+      "task": "上限なし承認対応とBuilder Keyの暗号化保管",
+      "startedAt": "2026-10-17T16:31:48.819Z",
+      "finishedAt": null
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -55,10 +55,10 @@
       "finishedAt": "2026-10-17T12:52:36.466Z"
     }
   },
-  "updatedAt": "2026-10-17T16:30:09.599Z",
+  "updatedAt": "2026-10-17T16:32:15.731Z",
   "usage": {
-    "todayInputTokens": 104,
-    "todayOutputTokens": 27328,
-    "asOf": "2026-10-17T16:30:09.599Z"
+    "todayInputTokens": 114,
+    "todayOutputTokens": 38776,
+    "asOf": "2026-10-17T16:32:15.731Z"
   }
 }
