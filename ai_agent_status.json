@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "Kalshiラダーの最良気配ウォッチャー作成",
-      "startedAt": "2026-10-18T15:01:23.044Z",
-      "finishedAt": "2026-10-18T15:01:23.445Z"
+      "task": "判定レポート生成スクリプトの開発",
+      "startedAt": "2026-10-18T16:33:20.613Z",
+      "finishedAt": "2026-10-18T16:33:22.721Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-18T16:32:25.860Z",
+  "updatedAt": "2026-10-18T16:33:30.003Z",
   "usage": {
-    "todayInputTokens": 168,
-    "todayOutputTokens": 47141,
-    "asOf": "2026-10-18T16:32:25.860Z"
+    "todayInputTokens": 182,
+    "todayOutputTokens": 54217,
+    "asOf": "2026-10-18T16:33:30.003Z"
   }
 }
