@@ -8,9 +8,9 @@
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "PR#26のリスク・動作確認",
-      "startedAt": "2026-10-17T18:13:20.946Z",
-      "finishedAt": "2026-10-17T18:13:22.562Z"
+      "task": "PR#26 B案のリスク再確認",
+      "startedAt": "2026-10-18T01:09:44.564Z",
+      "finishedAt": "2026-10-18T01:09:45.067Z"
     },
     "review-lead": {
       "status": "idle",
@@ -37,10 +37,10 @@
       "finishedAt": "2026-10-14T17:49:08.595Z"
     },
     "qa-lead": {
-      "status": "idle",
-      "task": "PR#19/#20/#21の動作確認",
-      "startedAt": "2026-10-17T14:11:50.153Z",
-      "finishedAt": "2026-10-17T14:12:05.254Z"
+      "status": "running",
+      "task": "AI実務ナビ Week14 QAチェック",
+      "startedAt": "2026-10-18T01:07:49.804Z",
+      "finishedAt": null
     },
     "prediction-market-researcher": {
       "status": "idle",
@@ -61,16 +61,16 @@
       "finishedAt": "2026-10-18T00:52:19.304Z"
     },
     "content-writer": {
-      "status": "running",
+      "status": "idle",
       "task": "AI実務ナビ Week14記事執筆(7本)",
       "startedAt": "2026-10-18T00:53:00.167Z",
-      "finishedAt": null
+      "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-18T01:05:17.406Z",
+  "updatedAt": "2026-10-18T01:09:52.977Z",
   "usage": {
-    "todayInputTokens": 1346,
-    "todayOutputTokens": 303436,
-    "asOf": "2026-10-18T01:05:17.406Z"
+    "todayInputTokens": 1496,
+    "todayOutputTokens": 311259,
+    "asOf": "2026-10-18T01:09:52.977Z"
   }
 }
