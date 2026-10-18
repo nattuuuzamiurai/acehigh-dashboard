@@ -50,9 +50,9 @@
     },
     "prediction-market-lead": {
       "status": "idle",
-      "task": "検証取引の計画書を作成",
-      "startedAt": "2026-10-17T12:52:36.135Z",
-      "finishedAt": "2026-10-17T12:52:36.466Z"
+      "task": "go/no-go 判定基準書の作成",
+      "startedAt": "2026-10-18T09:58:05.133Z",
+      "finishedAt": "2026-10-18T09:58:05.217Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-18T09:57:06.133Z",
+  "updatedAt": "2026-10-18T09:58:13.731Z",
   "usage": {
-    "todayInputTokens": 2102,
-    "todayOutputTokens": 457594,
-    "asOf": "2026-10-18T09:57:06.133Z"
+    "todayInputTokens": 2128,
+    "todayOutputTokens": 473355,
+    "asOf": "2026-10-18T09:58:13.731Z"
   }
 }
