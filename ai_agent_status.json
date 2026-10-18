@@ -44,21 +44,33 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "検証用の市場の選定",
-      "startedAt": "2026-10-17T17:21:38.616Z",
-      "finishedAt": "2026-10-17T17:21:39.009Z"
+      "task": "B案向けの市場の再選定",
+      "startedAt": "2026-10-18T01:05:08.721Z",
+      "finishedAt": "2026-10-18T01:05:09.428Z"
     },
     "prediction-market-lead": {
       "status": "idle",
       "task": "検証取引の計画書を作成",
       "startedAt": "2026-10-17T12:52:36.135Z",
       "finishedAt": "2026-10-17T12:52:36.466Z"
+    },
+    "planning-lead": {
+      "status": "idle",
+      "task": "AI実務ナビ Week14企画",
+      "startedAt": "2026-10-18T00:34:51.781Z",
+      "finishedAt": "2026-10-18T00:52:19.304Z"
+    },
+    "content-writer": {
+      "status": "running",
+      "task": "AI実務ナビ Week14記事執筆(7本)",
+      "startedAt": "2026-10-18T00:53:00.167Z",
+      "finishedAt": null
     }
   },
-  "updatedAt": "2026-10-17T22:31:09.821Z",
+  "updatedAt": "2026-10-18T01:05:17.406Z",
   "usage": {
-    "todayInputTokens": 1012,
-    "todayOutputTokens": 206366,
-    "asOf": "2026-10-17T22:31:09.821Z"
+    "todayInputTokens": 1346,
+    "todayOutputTokens": 303436,
+    "asOf": "2026-10-18T01:05:17.406Z"
   }
 }
