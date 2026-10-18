@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "欠損区間の集計側の修正",
-      "startedAt": "2026-10-18T01:38:45.125Z",
-      "finishedAt": "2026-10-18T01:38:45.762Z"
+      "task": "Kalshiラダーの最良気配ウォッチャー作成",
+      "startedAt": "2026-10-18T15:01:23.044Z",
+      "finishedAt": "2026-10-18T15:01:23.445Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-18T15:00:31.556Z",
+  "updatedAt": "2026-10-18T15:01:31.543Z",
   "usage": {
-    "todayInputTokens": 10,
-    "todayOutputTokens": 6282,
-    "asOf": "2026-10-18T15:00:31.556Z"
+    "todayInputTokens": 34,
+    "todayOutputTokens": 23136,
+    "asOf": "2026-10-18T15:01:31.543Z"
   }
 }
