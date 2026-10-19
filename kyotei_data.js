@@ -24466,21 +24466,6 @@ window.KYOTEI_DATA = {
           "payout": "",
           "final_odds": "",
           "actual_ev": null
-        },
-        {
-          "venue_name": "三国",
-          "race_no": "1",
-          "start_time": "08:47",
-          "combo": "1-6-3",
-          "actual_combo": "",
-          "prob_pct": "4.3",
-          "top1_pct": "65",
-          "ev": 3.69,
-          "odds": "86.3",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
         }
       ]
     },
@@ -31223,8 +31208,8 @@ window.KYOTEI_DATA = {
         {
           "venue_name": "徳山",
           "race_no": "2",
-          "start_time": "09:01",
-          "combo": "1-4-3",
+          "start_time": "08:58",
+          "combo": "1-2-3",
           "n_bets": 6,
           "actual_combo": "",
           "prob_pct": "4.8",
