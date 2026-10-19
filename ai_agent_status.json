@@ -50,9 +50,9 @@
     },
     "prediction-market-lead": {
       "status": "idle",
-      "task": "go/no-go 判定基準書の作成",
-      "startedAt": "2026-10-18T09:58:05.133Z",
-      "finishedAt": "2026-10-18T09:58:05.217Z"
+      "task": "フェーズ6の準備計画書",
+      "startedAt": "2026-10-19T15:53:55.004Z",
+      "finishedAt": "2026-10-19T15:53:55.541Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-19T15:51:38.063Z",
+  "updatedAt": "2026-10-19T15:54:04.474Z",
   "usage": {
-    "todayInputTokens": 94,
-    "todayOutputTokens": 44320,
-    "asOf": "2026-10-19T15:51:38.063Z"
+    "todayInputTokens": 130,
+    "todayOutputTokens": 54574,
+    "asOf": "2026-10-19T15:54:04.474Z"
   }
 }
