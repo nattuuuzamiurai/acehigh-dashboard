@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "Relayer経由の通常の出金の開発",
-      "startedAt": "2026-10-19T08:38:17.315Z",
-      "finishedAt": "2026-10-19T08:38:17.790Z"
+      "task": "phase6の上限の列と台帳の整理",
+      "startedAt": "2026-10-19T17:13:23.464Z",
+      "finishedAt": "2026-10-19T17:13:24.095Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-19T16:56:18.565Z",
+  "updatedAt": "2026-10-19T17:13:38.128Z",
   "usage": {
-    "todayInputTokens": 588,
-    "todayOutputTokens": 160828,
-    "asOf": "2026-10-19T16:56:18.565Z"
+    "todayInputTokens": 800,
+    "todayOutputTokens": 177308,
+    "asOf": "2026-10-19T17:13:38.128Z"
   }
 }
