@@ -2,9 +2,9 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "PR#34のセキュリティ確認",
-      "startedAt": "2026-10-20T00:56:18.010Z",
-      "finishedAt": "2026-10-20T00:56:18.064Z"
+      "task": "メーカー調査 R1: 取得前のセキュリティ確認",
+      "startedAt": "2026-10-20T01:43:41.320Z",
+      "finishedAt": "2026-10-20T01:43:41.781Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
@@ -32,9 +32,9 @@
     },
     "prediction-market-quant": {
       "status": "idle",
-      "task": "競合の再調査と取り分の再試算",
-      "startedAt": "2026-10-19T17:29:50.181Z",
-      "finishedAt": "2026-10-19T17:29:50.593Z"
+      "task": "メーカー調査 R1: 計算手順書(定量分析)",
+      "startedAt": "2026-10-20T01:43:36.930Z",
+      "finishedAt": "2026-10-20T01:43:41.772Z"
     },
     "qa-lead": {
       "status": "running",
@@ -44,9 +44,9 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "B案向けの市場の再選定",
-      "startedAt": "2026-10-18T01:05:08.721Z",
-      "finishedAt": "2026-10-18T01:05:09.428Z"
+      "task": "メーカー調査 R1: 事実とデータの収集",
+      "startedAt": "2026-10-20T01:43:28.610Z",
+      "finishedAt": "2026-10-20T01:43:41.768Z"
     },
     "prediction-market-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T01:41:30.243Z",
+  "updatedAt": "2026-10-20T01:43:53.542Z",
   "usage": {
-    "todayInputTokens": 3974,
-    "todayOutputTokens": 361936,
-    "asOf": "2026-10-20T01:41:30.243Z"
+    "todayInputTokens": 4144,
+    "todayOutputTokens": 384200,
+    "asOf": "2026-10-20T01:43:53.542Z"
   }
 }
