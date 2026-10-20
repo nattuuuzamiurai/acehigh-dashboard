@@ -20,9 +20,9 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "メーカー調査 R5: 批判役が結果に反証",
-      "startedAt": "2026-10-20T03:47:37.914Z",
-      "finishedAt": "2026-10-20T03:47:38.686Z"
+      "task": "スプレッド型・報酬型 基準書の批判役の事前点検",
+      "startedAt": "2026-10-20T04:47:19.463Z",
+      "finishedAt": "2026-10-20T04:47:19.515Z"
     },
     "dev-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T04:41:37.414Z",
+  "updatedAt": "2026-10-20T04:47:34.037Z",
   "usage": {
-    "todayInputTokens": 16262,
-    "todayOutputTokens": 735912,
-    "asOf": "2026-10-20T04:41:37.414Z"
+    "todayInputTokens": 16550,
+    "todayOutputTokens": 765373,
+    "asOf": "2026-10-20T04:47:34.037Z"
   }
 }
