@@ -20,9 +20,9 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "Kalshi再計算の反証と板記録の中間確認",
-      "startedAt": "2026-10-15T11:58:12.816Z",
-      "finishedAt": "2026-10-15T11:58:13.497Z"
+      "task": "メーカー調査 R2: 批判役が手順書を事前点検",
+      "startedAt": "2026-10-20T02:06:06.579Z",
+      "finishedAt": "2026-10-20T02:06:07.592Z"
     },
     "dev-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T01:44:39.722Z",
+  "updatedAt": "2026-10-20T02:06:16.774Z",
   "usage": {
-    "todayInputTokens": 4474,
-    "todayOutputTokens": 391112,
-    "asOf": "2026-10-20T01:44:39.722Z"
+    "todayInputTokens": 7024,
+    "todayOutputTokens": 427873,
+    "asOf": "2026-10-20T02:06:16.774Z"
   }
 }
