@@ -50,9 +50,9 @@
     },
     "prediction-market-lead": {
       "status": "idle",
-      "task": "メーカー調査 ラウンド0: 受け入れ基準と論点の定義",
-      "startedAt": "2026-10-20T01:38:17.591Z",
-      "finishedAt": "2026-10-20T01:38:18.004Z"
+      "task": "メーカー調査 最終報告の統合",
+      "startedAt": "2026-10-20T04:10:20.333Z",
+      "finishedAt": "2026-10-20T04:10:20.383Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T03:51:10.054Z",
+  "updatedAt": "2026-10-20T04:10:37.928Z",
   "usage": {
-    "todayInputTokens": 14112,
-    "todayOutputTokens": 633836,
-    "asOf": "2026-10-20T03:51:10.054Z"
+    "todayInputTokens": 15502,
+    "todayOutputTokens": 657175,
+    "asOf": "2026-10-20T04:10:37.928Z"
   }
 }
