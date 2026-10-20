@@ -50,9 +50,9 @@
     },
     "prediction-market-lead": {
       "status": "idle",
-      "task": "メーカー型の検討: 判定基準の事前固定",
-      "startedAt": "2026-10-20T01:30:40.346Z",
-      "finishedAt": "2026-10-20T01:30:40.800Z"
+      "task": "メーカー調査 ラウンド0: 受け入れ基準と論点の定義",
+      "startedAt": "2026-10-20T01:38:17.591Z",
+      "finishedAt": "2026-10-20T01:38:18.004Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T01:37:31.290Z",
+  "updatedAt": "2026-10-20T01:38:28.557Z",
   "usage": {
-    "todayInputTokens": 3924,
-    "todayOutputTokens": 339257,
-    "asOf": "2026-10-20T01:37:31.290Z"
+    "todayInputTokens": 3946,
+    "todayOutputTokens": 345347,
+    "asOf": "2026-10-20T01:38:28.557Z"
   }
 }
