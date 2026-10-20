@@ -20,9 +20,9 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "スプレッド型・報酬型 基準書の批判役の事前点検",
-      "startedAt": "2026-10-20T04:47:19.463Z",
-      "finishedAt": "2026-10-20T04:47:19.515Z"
+      "task": "スプレッド型・報酬型 基準書の批判役の事前点検(再実行)",
+      "startedAt": "2026-10-20T05:05:33.520Z",
+      "finishedAt": "2026-10-20T05:05:34.106Z"
     },
     "dev-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T04:47:34.037Z",
+  "updatedAt": "2026-10-20T05:05:47.700Z",
   "usage": {
-    "todayInputTokens": 16550,
-    "todayOutputTokens": 765373,
-    "asOf": "2026-10-20T04:47:34.037Z"
+    "todayInputTokens": 17466,
+    "todayOutputTokens": 773903,
+    "asOf": "2026-10-20T05:05:47.700Z"
   }
 }
