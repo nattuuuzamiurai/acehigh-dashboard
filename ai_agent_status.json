@@ -50,9 +50,9 @@
     },
     "prediction-market-lead": {
       "status": "idle",
-      "task": "メーカー調査 最終報告の統合",
-      "startedAt": "2026-10-20T04:10:20.333Z",
-      "finishedAt": "2026-10-20T04:10:20.383Z"
+      "task": "スプレッド型・報酬型の調査: 判定基準と記録要件の事前固定",
+      "startedAt": "2026-10-20T04:41:21.088Z",
+      "finishedAt": "2026-10-20T04:41:25.679Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T04:39:42.851Z",
+  "updatedAt": "2026-10-20T04:41:37.414Z",
   "usage": {
-    "todayInputTokens": 16240,
-    "todayOutputTokens": 726970,
-    "asOf": "2026-10-20T04:39:42.851Z"
+    "todayInputTokens": 16262,
+    "todayOutputTokens": 735912,
+    "asOf": "2026-10-20T04:41:37.414Z"
   }
 }
