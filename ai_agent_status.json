@@ -50,9 +50,9 @@
     },
     "prediction-market-lead": {
       "status": "idle",
-      "task": "フェーズ6の準備計画書",
-      "startedAt": "2026-10-19T15:53:55.004Z",
-      "finishedAt": "2026-10-19T15:53:55.541Z"
+      "task": "メーカー型の検討: 判定基準の事前固定",
+      "startedAt": "2026-10-20T01:30:40.346Z",
+      "finishedAt": "2026-10-20T01:30:40.800Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T01:28:19.288Z",
+  "updatedAt": "2026-10-20T01:31:00.316Z",
   "usage": {
-    "todayInputTokens": 3844,
-    "todayOutputTokens": 289567,
-    "asOf": "2026-10-20T01:28:19.288Z"
+    "todayInputTokens": 3864,
+    "todayOutputTokens": 296761,
+    "asOf": "2026-10-20T01:31:00.316Z"
   }
 }
