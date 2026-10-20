@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "板の深さの記録(シャドー運転)の開発",
-      "startedAt": "2026-10-20T00:44:26.840Z",
-      "finishedAt": "2026-10-20T00:44:27.295Z"
+      "task": "報酬・板の記録装置(読み取り専用)の開発",
+      "startedAt": "2026-10-20T05:25:24.977Z",
+      "finishedAt": "2026-10-20T05:25:25.029Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T05:20:38.822Z",
+  "updatedAt": "2026-10-20T05:25:39.438Z",
   "usage": {
-    "todayInputTokens": 17604,
-    "todayOutputTokens": 846331,
-    "asOf": "2026-10-20T05:20:38.822Z"
+    "todayInputTokens": 17646,
+    "todayOutputTokens": 881297,
+    "asOf": "2026-10-20T05:25:39.438Z"
   }
 }
