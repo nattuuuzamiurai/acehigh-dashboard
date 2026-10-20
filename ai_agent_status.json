@@ -50,9 +50,9 @@
     },
     "prediction-market-lead": {
       "status": "idle",
-      "task": "スプレッド型・報酬型の調査: 判定基準と記録要件の事前固定",
-      "startedAt": "2026-10-20T04:41:21.088Z",
-      "finishedAt": "2026-10-20T04:41:25.679Z"
+      "task": "記録装置の指示書(要件)の作成",
+      "startedAt": "2026-10-20T05:10:13.135Z",
+      "finishedAt": "2026-10-20T05:10:13.578Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T05:06:55.519Z",
+  "updatedAt": "2026-10-20T05:10:26.777Z",
   "usage": {
-    "todayInputTokens": 17490,
-    "todayOutputTokens": 777306,
-    "asOf": "2026-10-20T05:06:55.519Z"
+    "todayInputTokens": 17522,
+    "todayOutputTokens": 800421,
+    "asOf": "2026-10-20T05:10:26.777Z"
   }
 }
