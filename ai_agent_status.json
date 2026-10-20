@@ -20,9 +20,9 @@
     },
     "prediction-market-critic": {
       "status": "idle",
-      "task": "メーカー調査 R3: 批判役が手順書第2版を再点検",
-      "startedAt": "2026-10-20T02:41:09.744Z",
-      "finishedAt": "2026-10-20T02:41:10.301Z"
+      "task": "メーカー調査 R4: 批判役が手順書第3版を再点検",
+      "startedAt": "2026-10-20T03:10:34.509Z",
+      "finishedAt": "2026-10-20T03:10:34.969Z"
     },
     "dev-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T03:02:19.537Z",
+  "updatedAt": "2026-10-20T03:10:45.531Z",
   "usage": {
-    "todayInputTokens": 10412,
-    "todayOutputTokens": 500272,
-    "asOf": "2026-10-20T03:02:19.537Z"
+    "todayInputTokens": 11074,
+    "todayOutputTokens": 534994,
+    "asOf": "2026-10-20T03:10:45.531Z"
   }
 }
