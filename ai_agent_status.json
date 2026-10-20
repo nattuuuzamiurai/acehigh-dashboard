@@ -2,15 +2,15 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "メーカー調査 R1: 取得後のセキュリティ検査",
-      "startedAt": "2026-10-20T02:43:47.233Z",
-      "finishedAt": "2026-10-20T02:43:47.692Z"
+      "task": "記録装置の要件: セキュリティの事前レビュー",
+      "startedAt": "2026-10-20T05:18:15.444Z",
+      "finishedAt": "2026-10-20T05:18:21.959Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
-      "task": "PR#32のリスク確認",
-      "startedAt": "2026-10-19T17:33:20.995Z",
-      "finishedAt": "2026-10-19T17:33:25.841Z"
+      "task": "記録装置の要件: リスク管理の事前レビュー",
+      "startedAt": "2026-10-20T05:18:21.414Z",
+      "finishedAt": "2026-10-20T05:18:21.969Z"
     },
     "review-lead": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-20T05:10:26.777Z",
+  "updatedAt": "2026-10-20T05:18:34.248Z",
   "usage": {
-    "todayInputTokens": 17522,
-    "todayOutputTokens": 800421,
-    "asOf": "2026-10-20T05:10:26.777Z"
+    "todayInputTokens": 17574,
+    "todayOutputTokens": 843062,
+    "asOf": "2026-10-20T05:18:34.248Z"
   }
 }
