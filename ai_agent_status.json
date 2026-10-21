@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "報酬・板の記録装置(読み取り専用)の開発",
-      "startedAt": "2026-10-20T05:25:24.977Z",
-      "finishedAt": "2026-10-20T05:25:25.029Z"
+      "task": "B-lite集計の不具合調査と実行",
+      "startedAt": "2026-10-21T06:33:15.252Z",
+      "finishedAt": "2026-10-21T06:33:15.632Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -67,10 +67,10 @@
       "finishedAt": "2026-10-18T01:07:19.627Z"
     }
   },
-  "updatedAt": "2026-10-21T01:39:11.294Z",
+  "updatedAt": "2026-10-21T06:33:21.481Z",
   "usage": {
-    "todayInputTokens": 70,
-    "todayOutputTokens": 12269,
-    "asOf": "2026-10-21T01:39:11.294Z"
+    "todayInputTokens": 88,
+    "todayOutputTokens": 16657,
+    "asOf": "2026-10-21T06:33:21.481Z"
   }
 }
