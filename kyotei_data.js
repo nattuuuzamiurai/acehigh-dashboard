@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-10-24 08:00",
+  "updated": "2026-10-24 08:31",
   "today_label": "2026年10月24日",
   "pred_date": "2026/10/24",
   "pred_is_today": true,
@@ -1525,13 +1525,71 @@ window.KYOTEI_DATA = {
       "is_current": false
     }
   ],
-  "today_preds": [],
+  "today_preds": [
+    {
+      "venue_name": "鳴門",
+      "race_no": "1",
+      "start_time": "08:35",
+      "combo": "1-5-4",
+      "actual_combo": "",
+      "ev": 1.79,
+      "odds": "27.7",
+      "prob_pct": "6.5",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
+    },
+    {
+      "venue_name": "三国",
+      "race_no": "1",
+      "start_time": "08:51",
+      "combo": "1-5-3",
+      "actual_combo": "",
+      "ev": 1.45,
+      "odds": "29.6",
+      "prob_pct": "4.9",
+      "hit": "",
+      "payout": "",
+      "final_odds": "",
+      "actual_ev": null
+    }
+  ],
   "pred_days": [
     {
       "date_str": "20261024",
       "date_label": "2026/10/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "鳴門",
+          "race_no": "1",
+          "start_time": "08:35",
+          "combo": "1-5-4",
+          "actual_combo": "",
+          "ev": 1.79,
+          "odds": "27.7",
+          "prob_pct": "6.5",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:51",
+          "combo": "1-5-3",
+          "actual_combo": "",
+          "ev": 1.45,
+          "odds": "29.6",
+          "prob_pct": "4.9",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20261023",
@@ -10754,28 +10812,28 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "1.15": {
-          "bets": 2879,
+          "bets": 2889,
           "hits": 97,
           "hit_rate": 3.4,
-          "invested": 287900,
+          "invested": 288900,
           "returned": 226650,
-          "roi": -21.3
+          "roi": -21.5
         },
         "1.2": {
-          "bets": 2758,
+          "bets": 2768,
           "hits": 97,
           "hit_rate": 3.5,
-          "invested": 275800,
+          "invested": 276800,
           "returned": 226650,
-          "roi": -17.8
+          "roi": -18.1
         },
         "1.3": {
-          "bets": 2538,
+          "bets": 2547,
           "hits": 91,
           "hit_rate": 3.6,
-          "invested": 253800,
+          "invested": 254700,
           "returned": 214390,
-          "roi": -15.5
+          "roi": -15.8
         }
       }
     },
@@ -12542,7 +12600,53 @@ window.KYOTEI_DATA = {
       "date_str": "20261024",
       "date_label": "2026/10/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "鳴門",
+          "race_no": "1",
+          "start_time": "08:35",
+          "combo": "1-2-5",
+          "actual_combo": "",
+          "ev": 0.88,
+          "has_ev": false,
+          "odds": "7.7",
+          "prob_pct": "11.4",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "1",
+          "start_time": "08:43",
+          "combo": "1-5-4",
+          "actual_combo": "",
+          "ev": 0.85,
+          "has_ev": false,
+          "odds": "8.2",
+          "prob_pct": "10.4",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:51",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "ev": 0.8,
+          "has_ev": false,
+          "odds": "8.1",
+          "prob_pct": "9.9",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20261023",
@@ -27610,7 +27714,53 @@ window.KYOTEI_DATA = {
       "date_str": "20261024",
       "date_label": "2026/10/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "鳴門",
+          "race_no": "1",
+          "start_time": "08:35",
+          "combo": "1-2-5",
+          "actual_combo": "",
+          "prob_pct": "11.4",
+          "top1_pct": "80",
+          "ev": 0.88,
+          "odds": "7.7",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "1",
+          "start_time": "08:43",
+          "combo": "1-5-4",
+          "actual_combo": "",
+          "prob_pct": "10.4",
+          "top1_pct": "75",
+          "ev": 0.85,
+          "odds": "8.2",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:51",
+          "combo": "1-3-4",
+          "actual_combo": "",
+          "prob_pct": "9.9",
+          "top1_pct": "70",
+          "ev": 0.8,
+          "odds": "8.1",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20261023",
@@ -34923,7 +35073,53 @@ window.KYOTEI_DATA = {
       "date_str": "20261024",
       "date_label": "2026/10/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:51",
+          "combo": "1-3-4",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "9.9",
+          "ev": 0.8,
+          "odds": "8.1",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "鳴門",
+          "race_no": "1",
+          "start_time": "08:35",
+          "combo": "1-2-5",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "11.4",
+          "ev": 0.88,
+          "odds": "7.7",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "芦屋",
+          "race_no": "1",
+          "start_time": "08:43",
+          "combo": "1-5-4",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "10.4",
+          "ev": 0.85,
+          "odds": "8.2",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20261023",
@@ -49849,7 +50045,38 @@ window.KYOTEI_DATA = {
       "date_str": "20261024",
       "date_label": "2026/10/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:51",
+          "combo": "1-4-3",
+          "n_bets": 2,
+          "actual_combo": "",
+          "prob_pct": "7.5",
+          "ev": 1.31,
+          "odds": "17.5",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "鳴門",
+          "race_no": "1",
+          "start_time": "08:35",
+          "combo": "1-5-2",
+          "n_bets": 3,
+          "actual_combo": "",
+          "prob_pct": "9.8",
+          "ev": 1.43,
+          "odds": "14.6",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20261023",
@@ -60230,7 +60457,38 @@ window.KYOTEI_DATA = {
       "date_str": "20261024",
       "date_label": "2026/10/24",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:51",
+          "combo": "1-4-3",
+          "n_bets": 2,
+          "actual_combo": "",
+          "prob_pct": "7.5",
+          "ev": 1.31,
+          "odds": "17.5",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "鳴門",
+          "race_no": "1",
+          "start_time": "08:35",
+          "combo": "1-5-2",
+          "n_bets": 3,
+          "actual_combo": "",
+          "prob_pct": "9.8",
+          "ev": 1.43,
+          "odds": "14.6",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20261023",
