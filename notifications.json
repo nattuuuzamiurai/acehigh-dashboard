@@ -66,5 +66,29 @@
         "url": "https://www.kucoin.com/news/flash/flop-labs-reveals-updated-flop-tokenomics-no-vc-no-presale-18-1-billion-supply-in-year-10"
       }
     ]
+  },
+  {
+    "id": "flop-20261026-1808",
+    "ts": "2026-10-26T18:08:29+09:00",
+    "title": "Flop Labs、「Devnet」を数日以内に公開予定と発表",
+    "body": "Arthur Hayesが10/26、テストネット/エアドロップより前段の「Devnet」を数日以内に一般公開すると発表。誰でもマイナー・バリデーターとして参加可能になり、AIエージェントも接続できるとした。ただしDevnetへの参加はトークン配分(エアドロップ資格)には一切カウントされないと明言しており、これまでの「テストネット・エアドロップは数週間以内」という発言とは別の、より早い段階の公開テスト環境という位置づけ。テストネット本体の開始日・適格条件は依然未発表。",
+    "links": [
+      {
+        "label": "TokenPost",
+        "url": "https://www.tokenpost.com/news/technology/40846"
+      },
+      {
+        "label": "ChainCatcher",
+        "url": "https://www.chaincatcher.com/en/article/2298915"
+      },
+      {
+        "label": "Phemex",
+        "url": "https://phemex.com/news/article/arthur-hayes-flop-labs-to-launch-devnet-with-no-token-rewards-for-early-participants-101043"
+      },
+      {
+        "label": "PANews",
+        "url": "https://panews.io/articles/01a17718-1e6f-741e-a854-3001593144c9"
+      }
+    ]
   }
 ]
