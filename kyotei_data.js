@@ -1,5 +1,5 @@
 window.KYOTEI_DATA = {
-  "updated": "2026-10-27 08:00",
+  "updated": "2026-10-27 08:31",
   "today_label": "2026年10月27日",
   "pred_date": "2026/10/27",
   "pred_is_today": true,
@@ -11572,28 +11572,28 @@ window.KYOTEI_DATA = {
       "is_current": true,
       "perf": {
         "1.15": {
-          "bets": 617,
+          "bets": 621,
           "hits": 17,
-          "hit_rate": 2.8,
-          "invested": 61700,
+          "hit_rate": 2.7,
+          "invested": 62100,
           "returned": 56900,
-          "roi": -7.8
+          "roi": -8.4
         },
         "1.2": {
-          "bets": 594,
+          "bets": 596,
           "hits": 17,
           "hit_rate": 2.9,
-          "invested": 59400,
+          "invested": 59600,
           "returned": 56900,
-          "roi": -4.2
+          "roi": -4.5
         },
         "1.3": {
-          "bets": 556,
+          "bets": 558,
           "hits": 17,
-          "hit_rate": 3.1,
-          "invested": 55600,
+          "hit_rate": 3.0,
+          "invested": 55800,
           "returned": 56900,
-          "roi": 2.3
+          "roi": 2.0
         }
       }
     },
@@ -13352,7 +13352,38 @@ window.KYOTEI_DATA = {
       "date_str": "20261027",
       "date_label": "2026/10/27",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "唐津",
+          "race_no": "1",
+          "start_time": "08:35",
+          "combo": "1-5-2",
+          "actual_combo": "",
+          "ev": 0.82,
+          "has_ev": false,
+          "odds": "10.6",
+          "prob_pct": "7.8",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:47",
+          "combo": "1-4-3",
+          "actual_combo": "",
+          "ev": 1.17,
+          "has_ev": false,
+          "odds": "17.5",
+          "prob_pct": "6.7",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20261026",
@@ -29087,7 +29118,38 @@ window.KYOTEI_DATA = {
       "date_str": "20261027",
       "date_label": "2026/10/27",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "唐津",
+          "race_no": "1",
+          "start_time": "08:35",
+          "combo": "1-5-2",
+          "actual_combo": "",
+          "prob_pct": "7.8",
+          "top1_pct": "69",
+          "ev": 0.82,
+          "odds": "10.6",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:47",
+          "combo": "1-4-3",
+          "actual_combo": "",
+          "prob_pct": "6.7",
+          "top1_pct": "72",
+          "ev": 1.17,
+          "odds": "17.5",
+          "hit": "",
+          "payout": "",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20261026",
@@ -36977,7 +37039,38 @@ window.KYOTEI_DATA = {
       "date_str": "20261027",
       "date_label": "2026/10/27",
       "is_today": true,
-      "preds": []
+      "preds": [
+        {
+          "venue_name": "三国",
+          "race_no": "1",
+          "start_time": "08:47",
+          "combo": "1-4-3",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "6.7",
+          "ev": 1.17,
+          "odds": "17.5",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        },
+        {
+          "venue_name": "唐津",
+          "race_no": "1",
+          "start_time": "08:35",
+          "combo": "1-5-2",
+          "n_bets": 6,
+          "actual_combo": "",
+          "prob_pct": "7.8",
+          "ev": 0.82,
+          "odds": "10.6",
+          "hit": "",
+          "payout": "0",
+          "final_odds": "",
+          "actual_ev": null
+        }
+      ]
     },
     {
       "date_str": "20261026",
