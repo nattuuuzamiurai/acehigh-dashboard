@@ -38302,7 +38302,7 @@ window.KYOTEI_DATA = {
       "is_today": true,
       "preds": [
         {
-          "venue_name": "江戸川",
+          "venue_name": "鳴門",
           "race_no": "1",
           "start_time": "10:59",
           "combo": "1-2-4",
@@ -38514,8 +38514,8 @@ window.KYOTEI_DATA = {
         {
           "venue_name": "三国",
           "race_no": "3",
-          "start_time": "09:39",
-          "combo": "1-4-3",
+          "start_time": "09:24",
+          "combo": "1-3-4",
           "n_bets": 6,
           "actual_combo": "",
           "prob_pct": "12.2",
@@ -54635,7 +54635,7 @@ window.KYOTEI_DATA = {
           "race_no": "4",
           "start_time": "09:53",
           "combo": "1-2-3",
-          "n_bets": 3,
+          "n_bets": 1,
           "actual_combo": "",
           "prob_pct": "9.5",
           "ev": 1.57,
@@ -66134,7 +66134,7 @@ window.KYOTEI_DATA = {
           "race_no": "4",
           "start_time": "09:53",
           "combo": "1-2-3",
-          "n_bets": 3,
+          "n_bets": 1,
           "actual_combo": "",
           "prob_pct": "9.5",
           "ev": 1.57,
