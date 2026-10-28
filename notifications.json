@@ -90,5 +90,29 @@
         "url": "https://panews.io/articles/01a17718-1e6f-741e-a854-3001593144c9"
       }
     ]
+  },
+  {
+    "id": "flop-20261028-1808",
+    "ts": "2026-10-28T18:08:17+09:00",
+    "title": "Hayes、FLOPでAI計算力デリバティブ市場を構想",
+    "body": "Arthur HayesがFLOPを使い、AI計算力(コンピュート)の世界的な価格指標を作る新構想を発表した。毎時算出の指標価格「Flop Reference Compute Rate」を基準に、四半期先物・パーペチュアル契約、サプライヤーが差し入れる「FLOPボンド」などの仕組みを提案しているが、現時点ではあくまで構想・エッセイ段階で実装・稼働はしていない。発表日はソースにより10/26(月)/10/27(火)で食い違いがある。この発表は、HayesがETH・ENA・UNIを計約2,200万ドル分売却したと報じられた直後に出されたもので、テストネット/Devnetの具体的な開始日・適格条件には言及がなく依然未発表のまま。",
+    "links": [
+      {
+        "label": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/hayes-flop-ai-compute-vision-selling-altcoin"
+      },
+      {
+        "label": "KuCoin News",
+        "url": "https://www.kucoin.com/news/flash/hayes-outlines-flop-ai-compute-derivatives-plan-after-altcoin-exit"
+      },
+      {
+        "label": "Benzinga",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/10/62637075/arthur-hayes-says-ai-is-missing-a-global-price-proposes-derivatives-solution"
+      },
+      {
+        "label": "CryptoPotato",
+        "url": "https://cryptopotato.com/arthur-hayes-plans-to-build-derivatives-around-ai-compute/"
+      }
+    ]
   }
 ]
