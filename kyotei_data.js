@@ -1551,20 +1551,6 @@ window.KYOTEI_DATA = {
   ],
   "today_preds": [
     {
-      "venue_name": "徳山",
-      "race_no": "4",
-      "start_time": "10:09",
-      "combo": "2-1-3",
-      "actual_combo": "",
-      "ev": 1.87,
-      "odds": "25.4",
-      "prob_pct": "7.4",
-      "hit": "",
-      "payout": "",
-      "final_odds": "",
-      "actual_ev": null
-    },
-    {
       "venue_name": "鳴門",
       "race_no": "1",
       "start_time": "08:35",
@@ -2005,20 +1991,6 @@ window.KYOTEI_DATA = {
       "date_label": "2026/10/29",
       "is_today": true,
       "preds": [
-        {
-          "venue_name": "徳山",
-          "race_no": "4",
-          "start_time": "10:09",
-          "combo": "2-1-3",
-          "actual_combo": "",
-          "ev": 1.87,
-          "odds": "25.4",
-          "prob_pct": "7.4",
-          "hit": "",
-          "payout": "",
-          "final_odds": "",
-          "actual_ev": null
-        },
         {
           "venue_name": "鳴門",
           "race_no": "1",
@@ -14081,8 +14053,8 @@ window.KYOTEI_DATA = {
         },
         {
           "venue_name": "鳴門",
-          "race_no": "3",
-          "start_time": "09:27",
+          "race_no": "2",
+          "start_time": "08:58",
           "combo": "1-2-3",
           "actual_combo": "",
           "ev": 0.39,
@@ -38118,22 +38090,7 @@ window.KYOTEI_DATA = {
         {
           "venue_name": "鳴門",
           "race_no": "2",
-          "start_time": "09:01",
-          "combo": "1-2-6",
-          "n_bets": 6,
-          "actual_combo": "",
-          "prob_pct": "5.5",
-          "ev": 0.47,
-          "odds": "8.4",
-          "hit": "",
-          "payout": "0",
-          "final_odds": "",
-          "actual_ev": null
-        },
-        {
-          "venue_name": "鳴門",
-          "race_no": "3",
-          "start_time": "09:27",
+          "start_time": "08:58",
           "combo": "1-2-3",
           "n_bets": 6,
           "actual_combo": "",
@@ -38454,7 +38411,7 @@ window.KYOTEI_DATA = {
           "actual_combo": "",
           "prob_pct": "7.2",
           "ev": 0.71,
-          "odds": "9.9",
+          "odds": "5.2",
           "hit": "",
           "payout": "0",
           "final_odds": "",
