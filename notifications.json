@@ -114,5 +114,25 @@
         "url": "https://cryptopotato.com/arthur-hayes-plans-to-build-derivatives-around-ai-compute/"
       }
     ]
+  },
+  {
+    "id": "flop-20261101-0808",
+    "ts": "2026-11-01T08:08:05+09:00",
+    "title": "Devnetのfaucet/RPCが実際に稼働していることを確認",
+    "body": "Arthur Hayesが10/26に予告した「数日以内のDevnet公開」が実際に実現し、GitHub(flop-labs/network)上の技術者報告により10/30〜31時点でfaucetとRPC(wss://rpc.devnet.flop.network、@flop-labs/cli 0.4.0)が実際に稼働していることが確認された。ただしfaucet UIが表示するRPCホスト名がドキュメントと不整合という不備も同時に報告されている。これはあくまで前段のDevnetであり、インセンティブ付きテストネット本体の開始日・適格条件は依然未発表。一部メディア(Phemex、CoinGabbar等)は本番テストネットの暫定ターゲットとして「11月3日・約90日サイクル」を報じているが公式には未確認・暫定扱いで、別の報道はQ4という期間のみを示すなど一致していない。",
+    "links": [
+      {
+        "label": "GitHub (flop-labs/network Issue #9)",
+        "url": "https://github.com/flop-labs/network/issues/9"
+      },
+      {
+        "label": "Phemex",
+        "url": "https://phemex.com/news/article/flop-labs-confirms-testnet-launch-in-coming-weeks-following-token2049-99490"
+      },
+      {
+        "label": "CoinGabbar",
+        "url": "https://www.coingabbar.com/en/flop-labs-devnet"
+      }
+    ]
   }
 ]
