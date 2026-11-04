@@ -158,5 +158,21 @@
         "url": "https://www.coingabbar.com/en/flop-network-devnet-live-builders"
       }
     ]
+  },
+  {
+    "id": "flop-20261105-0810",
+    "ts": "2026-11-05T08:10:59+09:00",
+    "title": "Hayes、テストネット開始日を来週早々に確定と表明",
+    "body": "Arthur HayesがX上で、FLOP Devnetの開発は順調に進んでおり、一部プロトコルを調整中であると述べた上で、インセンティブ付きテストネット本体の正式な開始日を「来週早々(early next week)」に確定すると表明した。これまで報じられていた「11月3日が暫定ターゲット」という目標日はこの時点で正式に迎えられておらず、確定日時はまだ発表されていない。適格条件・スナップショット日・請求方法も依然未公開。",
+    "links": [
+      {
+        "label": "ChainCatcher",
+        "url": "https://www.chaincatcher.com/en/article/2301835"
+      },
+      {
+        "label": "TechFlow",
+        "url": "https://www.techflowpost.com/en-US/newsletter/143028"
+      }
+    ]
   }
 ]
