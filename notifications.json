@@ -174,5 +174,21 @@
         "url": "https://www.techflowpost.com/en-US/newsletter/143028"
       }
     ]
+  },
+  {
+    "id": "flop-20261108-1806",
+    "ts": "2026-11-08T18:06:00+09:00",
+    "title": "FLOPテストネット開始日、さらに「来週中」に後退",
+    "body": "Arthur Hayesが11/6にX上で、テストネット開始スケジュールの発表を「来週中」に行うと表明。これは11/4〜5時点で述べていた「来週早々に確定」からさらに後退した表現で、既報の「11月3日暫定ターゲット」は依然未達のまま開始日の確定が繰り返し先送りされている。Devnet自体は稼働を継続しており、適格条件・スナップショット日・請求方法は依然未公開。",
+    "links": [
+      {
+        "label": "Bloomingbit",
+        "url": "https://en.bloomingbit.io/feed/news/123814"
+      },
+      {
+        "label": "Phemex",
+        "url": "https://phemex.com/news/article/arthur-hayes-flop-labs-testnet-and-airdrop-launching-within-weeks-warns-against-fake-flop-token-scams-100514"
+      }
+    ]
   }
 ]
