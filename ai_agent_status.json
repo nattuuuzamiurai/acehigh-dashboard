@@ -32,9 +32,9 @@
     },
     "prediction-market-quant": {
       "status": "idle",
-      "task": "メーカー調査 R1: 計算手順書(定量分析)",
-      "startedAt": "2026-10-20T01:43:36.930Z",
-      "finishedAt": "2026-10-20T01:43:41.772Z"
+      "task": "層1データの判定(事前基準)",
+      "startedAt": "2026-11-12T15:12:11.621Z",
+      "finishedAt": "2026-11-12T15:12:11.749Z"
     },
     "qa-lead": {
       "status": "running",
@@ -73,10 +73,10 @@
       "finishedAt": "2026-11-12T15:11:17.729Z"
     }
   },
-  "updatedAt": "2026-11-12T15:11:34.950Z",
+  "updatedAt": "2026-11-12T15:12:18.011Z",
   "usage": {
-    "todayInputTokens": 44,
-    "todayOutputTokens": 17291,
-    "asOf": "2026-11-12T15:11:34.950Z"
+    "todayInputTokens": 156,
+    "todayOutputTokens": 24802,
+    "asOf": "2026-11-12T15:12:18.011Z"
   }
 }
