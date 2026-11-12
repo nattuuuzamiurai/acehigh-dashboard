@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "kondate-planner UI/UXラウンド3修正",
-      "startedAt": "2026-11-07T05:07:06.304Z",
-      "finishedAt": "2026-11-07T05:07:06.655Z"
+      "task": "kondate-plannerカレンダーUI再設計",
+      "startedAt": "2026-11-12T15:14:07.464Z",
+      "finishedAt": "2026-11-12T15:14:07.552Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -73,10 +73,10 @@
       "finishedAt": "2026-11-12T15:11:17.729Z"
     }
   },
-  "updatedAt": "2026-11-12T15:13:45.962Z",
+  "updatedAt": "2026-11-12T15:14:12.655Z",
   "usage": {
-    "todayInputTokens": 798,
-    "todayOutputTokens": 58173,
-    "asOf": "2026-11-12T15:13:45.962Z"
+    "todayInputTokens": 812,
+    "todayOutputTokens": 62515,
+    "asOf": "2026-11-12T15:14:12.655Z"
   }
 }
