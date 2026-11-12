@@ -2,9 +2,9 @@
   "departments": {
     "prediction-market-security": {
       "status": "idle",
-      "task": "記録装置の要件: セキュリティの事前レビュー",
-      "startedAt": "2026-10-20T05:18:15.444Z",
-      "finishedAt": "2026-10-20T05:18:21.959Z"
+      "task": "EC2配備スクリプトのセキュリティ確認",
+      "startedAt": "2026-11-12T16:14:40.041Z",
+      "finishedAt": "2026-11-12T16:14:40.189Z"
     },
     "prediction-market-risk-manager": {
       "status": "idle",
@@ -79,10 +79,10 @@
       "finishedAt": "2026-11-12T15:54:25.477Z"
     }
   },
-  "updatedAt": "2026-11-12T16:13:50.503Z",
+  "updatedAt": "2026-11-12T16:14:47.236Z",
   "usage": {
-    "todayInputTokens": 5164,
-    "todayOutputTokens": 1164736,
-    "asOf": "2026-11-12T16:13:50.503Z"
+    "todayInputTokens": 5198,
+    "todayOutputTokens": 1189620,
+    "asOf": "2026-11-12T16:14:47.236Z"
   }
 }
