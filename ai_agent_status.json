@@ -44,9 +44,9 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "メーカー調査 R1: 事実とデータの収集",
-      "startedAt": "2026-10-20T01:43:28.610Z",
-      "finishedAt": "2026-10-20T01:43:41.768Z"
+      "task": "予測市場の候補戦略を広く洗い出し",
+      "startedAt": "2026-11-12T15:56:13.584Z",
+      "finishedAt": "2026-11-12T15:56:13.807Z"
     },
     "prediction-market-lead": {
       "status": "idle",
@@ -79,10 +79,10 @@
       "finishedAt": "2026-11-12T15:54:25.477Z"
     }
   },
-  "updatedAt": "2026-11-12T15:55:29.879Z",
+  "updatedAt": "2026-11-12T15:56:18.456Z",
   "usage": {
-    "todayInputTokens": 4576,
-    "todayOutputTokens": 878709,
-    "asOf": "2026-11-12T15:55:29.879Z"
+    "todayInputTokens": 4604,
+    "todayOutputTokens": 894401,
+    "asOf": "2026-11-12T15:56:18.456Z"
   }
 }
