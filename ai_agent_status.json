@@ -65,12 +65,18 @@
       "task": "AI実務ナビ Week14記事執筆(7本)",
       "startedAt": "2026-10-18T00:53:00.167Z",
       "finishedAt": "2026-10-18T01:07:19.627Z"
+    },
+    "web-fetch": {
+      "status": "idle",
+      "task": "Fetch FLOP testnet join details",
+      "startedAt": "2026-11-12T15:11:02.894Z",
+      "finishedAt": "2026-11-12T15:11:17.729Z"
     }
   },
-  "updatedAt": "2026-11-07T09:34:48.743Z",
+  "updatedAt": "2026-11-12T15:11:34.950Z",
   "usage": {
-    "todayInputTokens": 1006,
-    "todayOutputTokens": 285120,
-    "asOf": "2026-11-07T09:34:48.743Z"
+    "todayInputTokens": 44,
+    "todayOutputTokens": 17291,
+    "asOf": "2026-11-12T15:11:34.950Z"
   }
 }
