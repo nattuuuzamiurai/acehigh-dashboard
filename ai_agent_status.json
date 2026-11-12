@@ -56,9 +56,9 @@
     },
     "planning-lead": {
       "status": "idle",
-      "task": "AI実務ナビ Week14企画",
-      "startedAt": "2026-10-18T00:34:51.781Z",
-      "finishedAt": "2026-10-18T00:52:19.304Z"
+      "task": "福岡ポーカー検索の攻略企画",
+      "startedAt": "2026-11-12T17:26:22.325Z",
+      "finishedAt": "2026-11-12T17:26:22.385Z"
     },
     "content-writer": {
       "status": "idle",
@@ -79,10 +79,10 @@
       "finishedAt": "2026-11-12T15:54:25.477Z"
     }
   },
-  "updatedAt": "2026-11-12T17:25:11.712Z",
+  "updatedAt": "2026-11-12T17:26:27.384Z",
   "usage": {
-    "todayInputTokens": 5380,
-    "todayOutputTokens": 1253337,
-    "asOf": "2026-11-12T17:25:11.712Z"
+    "todayInputTokens": 5408,
+    "todayOutputTokens": 1260974,
+    "asOf": "2026-11-12T17:26:27.384Z"
   }
 }
