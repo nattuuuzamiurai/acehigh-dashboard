@@ -26,9 +26,9 @@
     },
     "dev-lead": {
       "status": "idle",
-      "task": "kondate-plannerカレンダーUI再設計",
-      "startedAt": "2026-11-12T15:14:07.464Z",
-      "finishedAt": "2026-11-12T15:14:07.552Z"
+      "task": "ロンドン・東京測定コード準備",
+      "startedAt": "2026-11-12T15:50:48.128Z",
+      "finishedAt": "2026-11-12T15:50:48.264Z"
     },
     "prediction-market-quant": {
       "status": "idle",
@@ -73,10 +73,10 @@
       "finishedAt": "2026-11-12T15:11:17.729Z"
     }
   },
-  "updatedAt": "2026-11-12T15:50:17.898Z",
+  "updatedAt": "2026-11-12T15:50:54.236Z",
   "usage": {
-    "todayInputTokens": 4264,
-    "todayOutputTokens": 766782,
-    "asOf": "2026-11-12T15:50:17.898Z"
+    "todayInputTokens": 4312,
+    "todayOutputTokens": 779038,
+    "asOf": "2026-11-12T15:50:54.236Z"
   }
 }
