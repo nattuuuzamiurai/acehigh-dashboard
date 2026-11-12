@@ -14,9 +14,9 @@
     },
     "review-lead": {
       "status": "idle",
-      "task": "PR156 再レビュー",
-      "startedAt": "2026-11-12T15:53:14.255Z",
-      "finishedAt": "2026-11-12T15:53:14.738Z"
+      "task": "PR157 レビュー",
+      "startedAt": "2026-11-12T15:58:41.583Z",
+      "finishedAt": "2026-11-12T15:58:41.771Z"
     },
     "prediction-market-critic": {
       "status": "idle",
@@ -79,10 +79,10 @@
       "finishedAt": "2026-11-12T15:54:25.477Z"
     }
   },
-  "updatedAt": "2026-11-12T15:58:15.787Z",
+  "updatedAt": "2026-11-12T15:59:01.855Z",
   "usage": {
-    "todayInputTokens": 4768,
-    "todayOutputTokens": 979676,
-    "asOf": "2026-11-12T15:58:15.787Z"
+    "todayInputTokens": 4820,
+    "todayOutputTokens": 1017018,
+    "asOf": "2026-11-12T15:59:01.855Z"
   }
 }
