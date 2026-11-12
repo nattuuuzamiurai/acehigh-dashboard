@@ -50,9 +50,9 @@
     },
     "prediction-market-lead": {
       "status": "idle",
-      "task": "記録装置の指示書(要件)の作成",
-      "startedAt": "2026-10-20T05:10:13.135Z",
-      "finishedAt": "2026-10-20T05:10:13.578Z"
+      "task": "予測市場の情報優位型を調査",
+      "startedAt": "2026-11-12T15:54:20.208Z",
+      "finishedAt": "2026-11-12T15:54:25.463Z"
     },
     "planning-lead": {
       "status": "idle",
@@ -71,12 +71,18 @@
       "task": "Fetch FLOP testnet join details",
       "startedAt": "2026-11-12T15:11:02.894Z",
       "finishedAt": "2026-11-12T15:11:17.729Z"
+    },
+    "marketing-lead": {
+      "status": "idle",
+      "task": "既存サイトの収益改善余地を調査",
+      "startedAt": "2026-11-12T15:54:25.314Z",
+      "finishedAt": "2026-11-12T15:54:25.477Z"
     }
   },
-  "updatedAt": "2026-11-12T15:53:21.512Z",
+  "updatedAt": "2026-11-12T15:54:30.935Z",
   "usage": {
-    "todayInputTokens": 4394,
-    "todayOutputTokens": 805594,
-    "asOf": "2026-11-12T15:53:21.512Z"
+    "todayInputTokens": 4468,
+    "todayOutputTokens": 845106,
+    "asOf": "2026-11-12T15:54:30.935Z"
   }
 }
