@@ -32,9 +32,9 @@
     },
     "prediction-market-quant": {
       "status": "idle",
-      "task": "層1データの判定(事前基準)",
-      "startedAt": "2026-11-12T15:12:11.621Z",
-      "finishedAt": "2026-11-12T15:12:11.749Z"
+      "task": "天気市場の前向き紙取引を設計・開始",
+      "startedAt": "2026-11-12T17:27:36.838Z",
+      "finishedAt": "2026-11-12T17:27:39.263Z"
     },
     "qa-lead": {
       "status": "running",
@@ -44,9 +44,9 @@
     },
     "prediction-market-researcher": {
       "status": "idle",
-      "task": "予測市場の候補戦略を広く洗い出し",
-      "startedAt": "2026-11-12T15:56:13.584Z",
-      "finishedAt": "2026-11-12T15:56:13.807Z"
+      "task": "Kalshi日本居住者資格を公式で確認",
+      "startedAt": "2026-11-12T17:27:39.125Z",
+      "finishedAt": "2026-11-12T17:27:39.273Z"
     },
     "prediction-market-lead": {
       "status": "idle",
@@ -79,10 +79,10 @@
       "finishedAt": "2026-11-12T15:54:25.477Z"
     }
   },
-  "updatedAt": "2026-11-12T17:26:27.384Z",
+  "updatedAt": "2026-11-12T17:27:44.324Z",
   "usage": {
-    "todayInputTokens": 5408,
-    "todayOutputTokens": 1260974,
-    "asOf": "2026-11-12T17:26:27.384Z"
+    "todayInputTokens": 5440,
+    "todayOutputTokens": 1286760,
+    "asOf": "2026-11-12T17:27:44.324Z"
   }
 }
