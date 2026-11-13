@@ -190,5 +190,25 @@
         "url": "https://phemex.com/news/article/arthur-hayes-flop-labs-testnet-and-airdrop-launching-within-weeks-warns-against-fake-flop-token-scams-100514"
       }
     ]
+  },
+  {
+    "id": "flop-20261113-1200",
+    "ts": "2026-11-13T12:00:00+09:00",
+    "title": "FLOPテストネット・エアドロップ、11月24日開始と発表",
+    "body": "Arthur HayesがX上で、FLOPテストネットとエアドロップを11月24日に開始すると発表した。これまでの「来週早々」「来週中」といった曖昧な表現から一転し、初めて具体的な日付が示された。ただし適格条件・配分規模・請求方法などの詳細は依然未公開で、スケジュール変更があれば事前告知するとしている。",
+    "links": [
+      {
+        "label": "PANews",
+        "url": "https://panews.io/articles/01a1d3d5-425a-7074-8e85-3116fdf883d5"
+      },
+      {
+        "label": "Bloomingbit",
+        "url": "https://en.bloomingbit.io/feed/news/124358"
+      },
+      {
+        "label": "Phemex",
+        "url": "https://phemex.com/news/article/arthur-hayes-sets-november-24-launch-for-flop-labs-testnet-and-airdrop-103424"
+      }
+    ]
   }
 ]
