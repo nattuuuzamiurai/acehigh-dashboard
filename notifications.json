@@ -210,5 +210,29 @@
         "url": "https://phemex.com/news/article/arthur-hayes-sets-november-24-launch-for-flop-labs-testnet-and-airdrop-103424"
       }
     ]
+  },
+  {
+    "id": "flop-20261125-0807",
+    "ts": "2026-11-25T08:07:00+09:00",
+    "title": "エアドロップのスナップショット・請求方式を公式発表",
+    "body": "Flop Labs公式サイトに新設された/testnet/・/airdrop/ページで、エアドロップのスナップショットと請求方式が初めて具体的に発表された。スナップショットはガバナンス承認済みの確定ブロック高で固定し、配分リストとそのハッシュをジェネシス前に公開して検証・異議申し立てを可能にするとしている。配分はジェネシスブロックで凍結され、請求期限なしで保有者が任意のタイミングで請求トランザクションにより解除可能。マイナーはジェネシス時25%即時解放+残りをメインネット獲得量と1:1で解放、バリデーターは即時解放なしで約10年かけ線形解放という役割別の差も判明した(総供給量はソースにより36億FLOP/44億FLOPで食い違いが続いている)。なお11/13発表の11月24日テストネット開始日について、一部報道は本稼働中('Live')と伝えているが、独立した確認は取れていない。",
+    "links": [
+      {
+        "label": "FLOP Network — Airdrop (flop.finance)",
+        "url": "https://flop.finance/airdrop/"
+      },
+      {
+        "label": "FLOP Network — Testnet (flop.finance)",
+        "url": "https://flop.finance/testnet/"
+      },
+      {
+        "label": "FLOP Network Yellow Paper",
+        "url": "https://flop.finance/intro/yellowpaper/"
+      },
+      {
+        "label": "KuCoin News (3.6B cap報道)",
+        "url": "https://www.kucoin.com/news/flash/flop-network-launches-testnet-with-3-6-billion-token-airdrop-cap"
+      }
+    ]
   }
 ]
