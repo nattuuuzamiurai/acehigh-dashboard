@@ -234,5 +234,37 @@
         "url": "https://www.kucoin.com/news/flash/flop-network-launches-testnet-with-3-6-billion-token-airdrop-cap"
       }
     ]
+  },
+  {
+    "id": "flop-20261126-0806",
+    "ts": "2026-11-26T08:06:00+09:00",
+    "title": "FLOPテストネットが11/24に正式ライブ化",
+    "body": "Arthur Hayes本人とFlop Labs公式Xが、FLOPテストネットが11月24日に稼働開始したことを確認しました(Hayes「testnet is now live」、Flop Labs公式も稼働後の変更点を報告)。flop.finance公式ステータスページもLive・unscored openingと表示し、創設バリデーター6ノード(約1ブロック/秒)、パブリックRPC・ブートノード・テストネットフォーセットが稼働中です。バリデーター登録は最初の50スロットが先行オープンし、以後1日ごとに25%ずつ増枠予定で、エアドロップ向けポイントはまだ計算されておらずDevnet参加は引き続き資格にカウントされません。なお公式ドキュメントページ(flop.finance/official、11/20更新)は依然「planned」表記のままで、表示の遅れがGitHub上で指摘されています。",
+    "links": [
+      {
+        "label": "Arthur Hayes(@CryptoHayes) on X",
+        "url": "https://x.com/CryptoHayes/status/2125212554754773376"
+      },
+      {
+        "label": "Flop Labs(@flop_labs) on X",
+        "url": "https://x.com/flop_labs/status/2125460942700101748"
+      },
+      {
+        "label": "FLOP Network — Testnet (flop.finance)",
+        "url": "https://flop.finance/testnet/"
+      },
+      {
+        "label": "KuCoin News (バリデーター50スロット/ポイント未計算)",
+        "url": "https://www.kucoin.com/news/flash/flop-network-testnet-opens-50-validator-slots-no-points-calculated-yet"
+      },
+      {
+        "label": "CoinGabbar (Testnet Day 2)",
+        "url": "https://www.coingabbar.com/en/flop-network-testnet-is-live-new-features-activate-now"
+      },
+      {
+        "label": "GitHub flop-labs/network issue #1041(ドキュメント表記遅延)",
+        "url": "https://github.com/flop-labs/network/issues/1041"
+      }
+    ]
   }
 ]
