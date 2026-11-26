@@ -266,5 +266,21 @@
         "url": "https://github.com/flop-labs/network/issues/1041"
       }
     ]
+  },
+  {
+    "id": "flop-20261127-0807",
+    "ts": "2026-11-27T08:07:00+09:00",
+    "title": "テストネット採点開始は未発表の将来ブロック、遡及なし",
+    "body": "公式FAQ更新(11/25)により、テストネットのエアドロップ向け採点は、未発表の将来のランタイムアップグレードの「activation block」到達後にのみ開始されると判明。11/24ローンチ以降の現行「unscored opening」期間の活動は遡及計上(バックフィル)されず、ゼロカウントとなることが明言された。活性化ブロック・日時は依然未発表。別のGitHub報告では、11/24ローンチ直後にフォーセット・ゲートウェイのDNSが一時解決できない等のロールアウト上の不備もあったことが確認されている。",
+    "links": [
+      {
+        "label": "GitHub flop-labs/network issue #752(採点開始条件)",
+        "url": "https://github.com/flop-labs/network/issues/752"
+      },
+      {
+        "label": "GitHub flop-labs/network issue #645(ローンチ不備報告)",
+        "url": "https://github.com/flop-labs/network/issues/645"
+      }
+    ]
   }
 ]
