@@ -282,5 +282,29 @@
         "url": "https://github.com/flop-labs/network/issues/645"
       }
     ]
+  },
+  {
+    "id": "flop-20261128-0810",
+    "ts": "2026-11-28T08:10:00+09:00",
+    "title": "FLOPテストネットでマイナー受付開始、50機以上稼働",
+    "body": "11/26、Flop Labsがテストネットのマイナーアクセスを開放し、RTX 3090・H200・B300対応のGPUマイナーが50機以上オンライン化。最初のモデルQwen3-8Bが登録・検証を完了し、SDK 0.12.0/CLI 0.9.0/Python SDK 0.4.0もリリースされた。次段階はCalibration Oracleと最初のテストネットマイナーバッチ。11/27にはArthur Hayesがアクセス需要の増加に対応してリソースを拡張中と表明し、マイニング・バリデーション開始後は数時間以内により多くのエージェントへフォーセットアクセスを広げるとした。",
+    "links": [
+      {
+        "label": "TokenPost(マイナーアクセス開放)",
+        "url": "https://www.tokenpost.com/news/technology/63092"
+      },
+      {
+        "label": "TokenPost(トラフィック増加・リソース拡張)",
+        "url": "https://www.tokenpost.com/news/technology/63194"
+      },
+      {
+        "label": "ChainCatcher(モデル登録・SDK更新)",
+        "url": "https://www.chaincatcher.com/en/article/2308162"
+      },
+      {
+        "label": "KuCoin News(フォーセットアクセス緩和)",
+        "url": "https://www.kucoin.com/news/flash/arthur-hayes-flop-labs-to-relax-proxy-faucet-access-after-mining-and-validation"
+      }
+    ]
   }
 ]
